@@ -1,0 +1,32 @@
+\BOOKMARK [0][-]{chapter.1}{1 Einf\374hrung}{}% 1
+\BOOKMARK [1][-]{section.1.1}{1.1 Motivation}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{1.2 Kontextabgrenzung}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{1.3 Relevante Produkte und Meilensteine}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 \334berblick}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Big Table}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Map/Reduce}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.4}{1.3.4 Hadoop}{section.1.3}% 8
+\BOOKMARK [0][-]{chapter.2}{2 Vorstellung von Apache Spark}{}% 9
+\BOOKMARK [1][-]{section.2.1}{2.1 \334bersicht}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Architektur\374bersicht}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Standardbibliotheken}{section.2.1}% 12
+\BOOKMARK [1][-]{section.2.2}{2.2 Wesentliche Konzepte}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Abgrenzung zu Hadoop}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Resilient Distributed Datasets}{section.2.2}% 15
+\BOOKMARK [0][-]{chapter.3}{3 Vorstellung des Beispiels}{}% 16
+\BOOKMARK [1][-]{section.3.1}{3.1 Aufgabenbeschreibung}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{3.2 L\366sungsidee}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 1. Schritt: \304hnlichkeitsma\337 f\374r W\366rter erzeugen}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 2. Schritt: Echtzeitbewertung von Textnachrichten aus einem Datenstrom}{section.3.2}% 20
+\BOOKMARK [0][-]{chapter.4}{4 Implementation und Bewertung}{}% 21
+\BOOKMARK [1][-]{section.4.1}{4.1 Technischer Rahmen}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 OpenStack}{section.4.1}% 23
+\BOOKMARK [1][-]{section.4.2}{4.2 Architektur\374bersicht}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.3}{4.3 Architekturdetails}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Modell f\374r \304hnlichkeit von W\366rtern mit MLlib erzeugen}{section.4.3}% 26
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Einlesen von Nachrichten aus dem Twitter Livestream}{section.4.3}% 27
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Verarbeiten und Bewerten der Nachrichten}{section.4.3}% 28
+\BOOKMARK [1][-]{section.4.4}{4.4 Bewertung der Verfahren}{chapter.4}% 29
+\BOOKMARK [0][-]{chapter.5}{5 Schlussbetrachtung}{}% 30
+\BOOKMARK [1][-]{section.5.1}{5.1 Kritische W\374rdigung der Ergebnisse}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.2}{5.2 Ausblick und offene Punkte}{chapter.5}% 32
