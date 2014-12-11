@@ -1,0 +1,7 @@
+28.11. 
+
+--- Databricks Twitter Example ---
+http://databricks.gitbooks.io/databricks-spark-reference-applications/content/twitter_classifier/predict.html
+
+--- Twitter-Utils ---
+https://spark.apache.org/docs/1.0.0/api/java/org/apache/spark/streaming/twitter/TwitterUtils.html

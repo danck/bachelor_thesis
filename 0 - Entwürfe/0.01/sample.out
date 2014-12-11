@@ -19,8 +19,8 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 1. Schritt: \304hnlichkeitsma\337 f\374r W\366rter erzeugen}{section.3.2}% 19
 \BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 2. Schritt: Echtzeitbewertung von Textnachrichten aus einem Datenstrom}{section.3.2}% 20
 \BOOKMARK [0][-]{chapter.4}{4 Implementation und Bewertung}{}% 21
-\BOOKMARK [1][-]{section.4.1}{4.1 Technischer Rahmen}{chapter.4}% 22
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 OpenStack}{section.4.1}% 23
+\BOOKMARK [1][-]{section.4.1}{4.1 Betriebsumgebung}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Verteilungsdiagramm}{section.4.1}% 23
 \BOOKMARK [1][-]{section.4.2}{4.2 Architektur\374bersicht}{chapter.4}% 24
 \BOOKMARK [1][-]{section.4.3}{4.3 Architekturdetails}{chapter.4}% 25
 \BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Modell f\374r \304hnlichkeit von W\366rtern mit MLlib erzeugen}{section.4.3}% 26

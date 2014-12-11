@@ -139,20 +139,19 @@
 \chapter{Einf\"uhrung}
 
 \section{Motivation}
-Der Bedarf auf großen Datenmengen zu operieren ist nicht neu. Spätestens seit in den sp\"aten Neunzigerjahren Suchmaschinenanbieter mit Mengen von Daten und Anfragen konfrontiert wurden, die eine nicht mehr wirtschaftlich durch einzelne Rechner zu bew\"altigen waren, wurden neue Verfahren benötigt. 
-Algorithmen wurden nun auf die Eigenschaft optimiert möglichst effizient und fehlertolerant auf verschiedene Maschinen verteilbar zu sein.
+Der Bedarf auf großen Datenmengen zu operieren ist nicht neu. Spätestens seit in den sp\"aten Neunzigerjahren Suchmaschinenanbieter mit Mengen von Daten und Anfragen konfrontiert wurden, die nicht mehr wirtschaftlich durch einzelne Rechner zu bew\"altigen waren, wurden neue Verfahren benötigt. 
+Algorithmen wurden auf Verteilbarkeit und Fehlertoleranz optimiert.
 \break
 
-Inzwischen ist die Analyse großer Datenmengen auch für Unternehmen und Einrichtungen interessant geworden, deren Kerngesch\"aft nicht die Daten selbst sind. Regierungen, Wissenschaftler, Industrieunternehmen, Militärs, Handelssoftware und viele andere treffen Entscheidungen auf Grundlage von Daten die die Kapazitäten einzelner Systeme weit übeschreiten.
+Die Analyse großer Datenmengen ist auch für Unternehmen und Einrichtungen interessant geworden, deren Kerngesch\"aft nicht die Daten selbst sind. Regierungen, Wissenschaft, Industrieunternehmen, Militär, B\"orsenh\"andel und viele andere treffen Entscheidungen auf Grundlage von Daten die die Kapazitäten einzelner Maschinen weit überschreiten.
 \break
 
-St\"andige Ver\"anderung und Unvorhersehbarkeit der Anforderungen sind allt\"agliche Praxis. Daten denen man in dem Moment keine Bedeutung beimisst, können sich in Zukunft als sehr kritisch erweisen und in einem anderen Kontext eine wichtige Rolle spielen. 
-Dabei hat sich ein Paradigma als besonders wirksam herausgestellt: Daten werden erst durch die Abfrage in eine höhere Struktur gebracht, während bei der Speicherung nur ein Minimum an Struktur eingefordert wird.
+Häufige Ver\"anderung und Unvorhersehbarkeit der Anforderungen sind allt\"aglich. Daten denen man zunächst keine Bedeutung beimisst, können sich später als sehr kritisch erweisen und in anderem Zusammenhang eine wichtige Rolle spielen. 
+Ein Verfahren hat sich in diesem Rahmen als besonders wirksam herausgestellt: Daten werden schwach strukturiert gespeichert und erst zum Zeitpunkt einer Operation in die jeweils gewünschte Struktur gebracht.
 \break
 
-Ein weiteres Problem ist die Vielfalt der möglichen Abfragen. Für bestimmte Aufgaben gen\"ugen Anfragen wie an eine klassische Datenbank. F\"ur andere Probleme sind möglicherweise komplexere Graph-Analysen, das Anlernen von Maschinenlernalgorithmen oder eine Quasi-Echtzeit-Auswertung von Datenströmen gefordert.
-An dieser Stelle kommt Apache Spark ins Spiel, dass einen Versuch macht alle bisher genannten Probleme zu lösen.
-
+Solche Abfragen werden bei aktuellen Systemen oft in Form kleiner Programme gestellt, die auf den Knoten eines Clusters nach einem vorgegebenem Paradigma ausgeführt werden.
+Hier kommt das Cluster-Computing-Framework Apache Spark ins Spiel, das mehrere solcher Paradigmen vereint und als universelle Lösung für viele aktuelle Aufgaben der "`Big Data"' Analyse antritt.
 
 \section{Kontextabgrenzung}
 
@@ -186,8 +185,39 @@ An dieser Stelle kommt Apache Spark ins Spiel, dass einen Versuch macht alle bis
 
 
 \chapter{Implementation und Bewertung}
-\section{Technischer Rahmen}
-\subsection{OpenStack}
+\section{Betriebsumgebung}
+Die Wahl einer Betriebsumgebung für Cluster-Computing-Frameworks stellt besondere Anforderungen. Obwohl Installationen einer lauffähigen Instanz von Apache Spark auch für einzelne Maschinen möglich ist, werden solche Setups einer Demonstration und Untersuchung von verteiltem Rechnen offenbar nicht gerecht.
+
+Auf der anderen Seite bringen verteilte und auf physikalischen Rechnern laufende Installationen zusätzliche Probleme mit. Ausfälle von Hardwarekomponenten auf Rechenknoten und Netzwerken, Stromkosten für Betrieb und Kühlung, sowie Beschaffungs- oder Mietkosten für Räumlichkeiten und Komponenten sind nur die offensichtlichsten.
+\break
+
+Im Rahmen dieser Arbeit sollen Konzepte demonstriert und bewertet werden. Ein produktionstaugliches System ist hingegen nicht gefordert. Es ergeben sich die folgenden Punkte. 
+
+Anforderungen:
+\begin{itemize}
+	\item echte Verteilung der Komponenten
+	\item volle Kontrolle über die lokalen Abläufe
+\end{itemize}
+
+Keine Anforderungen:
+\begin{itemize}
+	\item hohe Performance
+	\item authentische Bedingungen eines Rechenzentrums
+\end{itemize}
+
+Gemäß dieser Anforderungen kommt ein KVM-virtualisierter Host zum Einsatz mit folgender Ausstattung:
+\begin{itemize}
+	\item Intel® Xeon® E5-2670V2
+	\item 4 dedizierte Kerne
+	\item 16GB DDR3 RAM
+	\item Betriebssystem Fedora 20 GNU/Linux
+\end{itemize}
+
+Die Verteilung erfolgt auf virtuellen Maschinen innerhalb dieses Hosts. Diese Maschinen und deren Netzwerkverbindungen werden durch die Cloud Computing Software OpenStack (Release Juno) erzeugt und verwaltet.
+
+\subsection{Verteilungsdiagramm}
+
+
 \section{Architekturübersicht}
 \section{Architekturdetails}
 \subsection{Modell f\"ur \"Ahnlichkeit von W\"ortern mit MLlib erzeugen}
