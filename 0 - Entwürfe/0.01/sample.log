@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.7)  11 DEC 2014 19:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.7)  12 DEC 2014 11:35
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.tex"
@@ -790,7 +790,7 @@ Class scrbook Warning: \float@addtolists detected!
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 142--145
-
+\T1/LinuxLibertineT-TLF/m/n/10.95 (+20) Feh-ler-to-le-ranz op-ti-miert. 
  []
 
 
@@ -800,13 +800,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 146--148
-\T1/LinuxLibertineT-TLF/m/n/10.95 (+20) von Da-ten die die Ka-pa-zi-tä-ten ein-zel-ner Ma-schi-nen weit über-schrei-ten.
- 
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--148
-
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
+\T1/LinuxLibertineT-TLF/m/n/10.95 (+20) ge-bracht. 
  []
 
 
@@ -840,22 +839,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 198.
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
+
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 199.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\ts1linuxlibertinet-tlf.fd
 File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 198.
+(Font)              scaled to size 10.95pt on input line 199.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [5
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
+\T1/LinuxLibertineT-TLF/m/n/10.95 (+20) zu Ver-fü-gung zu stel-len. 
+ []
 
 
-] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
+
+ []
+
+[5
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 221--224
+\T1/LinuxLibertineT-TLF/m/n/10.95 (+20) zess: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--224
+
+ []
+
+[6] [7]
 Kapitel 5.
-[7
+[8
 
 
 ]
@@ -865,7 +889,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 11.
 )
 ===== Section: nomenclature
-[8
+[9
 
 
 
@@ -874,27 +898,27 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 No file sample.nls.
 ===== Section: index
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.ind")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
- [9
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
+ [10
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 286.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 286.
 Package rerunfilecheck Info: File `sample.out' has not changed.
 (rerunfilecheck)             Checksum: F31CFDF341DA1CD8F2081333E2A0260D;2530.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
  ) 
 Here is how much of TeX's memory you used:
- 13397 strings out of 493921
- 215002 string characters out of 3144874
+ 13389 strings out of 493921
+ 214787 string characters out of 3144874
  463091 words of memory out of 3000000
  16352 multiletter control sequences out of 15000+200000
- 87077 words of font info for 98 fonts, out of 3000000 for 9000
+ 86264 words of font info for 92 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,10n,55p,365b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,10n,55p,372b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming
 /MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libert
 ine/lbtn_naooyc.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/Dani
@@ -904,9 +928,9 @@ umT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine
 ata/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/
 type1/public/libertine/LinLibertineTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLi
 bertineTI.pfb>
-Output written on sample.pdf (14 pages, 392446 bytes).
+Output written on sample.pdf (15 pages, 394331 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
+ 286 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
  23302 words of extra memory for PDF output out of 24883 (max. 10000000)
 

@@ -139,19 +139,19 @@
 \chapter{Einf\"uhrung}
 
 \section{Motivation}
-Der Bedarf auf großen Datenmengen zu operieren ist nicht neu. Spätestens seit in den sp\"aten Neunzigerjahren Suchmaschinenanbieter mit Mengen von Daten und Anfragen konfrontiert wurden, die nicht mehr wirtschaftlich durch einzelne Rechner zu bew\"altigen waren, wurden neue Verfahren benötigt. 
+Der Bedarf auf großen Datenmengen zu operieren ist nicht neu. Spätestens seit in den sp\"aten Neunzigerjahren Suchmaschinenanbieter mit Mengen von Daten und Anfragen konfrontiert wurden, die nicht mehr wirtschaftlich durch einzelne Rechner oder kleine Rechnerverbünde zu bew\"altigen waren, wurden neue Verfahren benötigt. 
 Algorithmen wurden auf Verteilbarkeit und Fehlertoleranz optimiert.
 \break
 
-Die Analyse großer Datenmengen ist auch für Unternehmen und Einrichtungen interessant geworden, deren Kerngesch\"aft nicht die Daten selbst sind. Regierungen, Wissenschaft, Industrieunternehmen, Militär, B\"orsenh\"andel und viele andere treffen Entscheidungen auf Grundlage von Daten die die Kapazitäten einzelner Maschinen weit überschreiten.
+Die Menge verfügbarer Daten wuchs und wurde auch für Unternehmen und Einrichtungen interessant, deren Kerngesch\"aft nicht die Daten selbst sind. Regierungen, Wissenschaft, Industrieunternehmen, Militär, B\"orsenh\"andel und viele andere treffen Entscheidungen auf Grundlage von Daten die die Kapazitäten einzelner Maschinen weit überschreiten.
 \break
 
 Häufige Ver\"anderung und Unvorhersehbarkeit der Anforderungen sind allt\"aglich. Daten denen man zunächst keine Bedeutung beimisst, können sich später als sehr kritisch erweisen und in anderem Zusammenhang eine wichtige Rolle spielen. 
-Ein Verfahren hat sich in diesem Rahmen als besonders wirksam herausgestellt: Daten werden schwach strukturiert gespeichert und erst zum Zeitpunkt einer Operation in die jeweils gewünschte Struktur gebracht.
+Ein Verfahren hat sich in diesem Rahmen als besonders wirksam herausgestellt: Daten werden schwach strukturiert gespeichert und erst zum Zeitpunkt einer Abfrage (oder beliebigen Operation) in eine jeweils sinnvolle Struktur gebracht.
 \break
 
-Solche Abfragen werden bei aktuellen Systemen oft in Form kleiner Programme gestellt, die auf den Knoten eines Clusters nach einem vorgegebenem Paradigma ausgeführt werden.
-Hier kommt das Cluster-Computing-Framework Apache Spark ins Spiel, das mehrere solcher Paradigmen vereint und als universelle Lösung für viele aktuelle Aufgaben der "`Big Data"' Analyse antritt.
+Solche Abfragen werden bei aktuellen Systemen oft in Form kleiner Programme gestellt, die auf den Knoten eines Clusters verteilt und nach einem vorgegebenem Paradigma ausgeführt werden.
+Hier kommt das Cluster-Computing-Framework Apache Spark ins Spiel, das mehrere solcher Paradigmen vereint und als bisher vielseitigste Lösung für viele aktuelle Aufgaben der "`Big Data"' Analyse antritt.
 
 \section{Kontextabgrenzung}
 
@@ -186,12 +186,13 @@ Hier kommt das Cluster-Computing-Framework Apache Spark ins Spiel, das mehrere s
 
 \chapter{Implementation und Bewertung}
 \section{Betriebsumgebung}
-Die Wahl einer Betriebsumgebung für Cluster-Computing-Frameworks stellt besondere Anforderungen. Obwohl Installationen einer lauffähigen Instanz von Apache Spark auch für einzelne Maschinen möglich ist, werden solche Setups einer Demonstration und Untersuchung von verteiltem Rechnen offenbar nicht gerecht.
+Die Wahl einer Betriebsumgebung für Cluster-Computing-Frameworks stellt besondere Anforderungen. Obwohl Installationen einer lauffähigen Instanz von Apache Spark auch für einzelne Maschinen möglich ist, werden solche Setups einer Demonstration und Untersuchung von verteiltem Rechnen offensichtlich nicht gerecht.
 
 Auf der anderen Seite bringen verteilte und auf physikalischen Rechnern laufende Installationen zusätzliche Probleme mit. Ausfälle von Hardwarekomponenten auf Rechenknoten und Netzwerken, Stromkosten für Betrieb und Kühlung, sowie Beschaffungs- oder Mietkosten für Räumlichkeiten und Komponenten sind nur die offensichtlichsten.
 \break
 
-Im Rahmen dieser Arbeit sollen Konzepte demonstriert und bewertet werden. Ein produktionstaugliches System ist hingegen nicht gefordert. Es ergeben sich die folgenden Punkte. 
+Im Rahmen dieser Arbeit sollen Konzepte demonstriert und bewertet werden. Ein produktionstaugliches System ist  nicht gefordert. Es ergeben sich die folgenden Vorgaben. 
+\break
 
 Anforderungen:
 \begin{itemize}
@@ -205,15 +206,36 @@ Keine Anforderungen:
 	\item authentische Bedingungen eines Rechenzentrums
 \end{itemize}
 
-Gemäß dieser Anforderungen kommt ein KVM-virtualisierter Host zum Einsatz mit folgender Ausstattung:
+Gemäß dieser Anforderungen kommt ein KVM-virtualisierter Host zum Einsatz der als Plattform für eine Cloud Computing Software dient, um ein kleines Cluster von virtuellen Maschinen zu Verfügung zu stellen.
+\break
+
+Technische Daten des Hosts
 \begin{itemize}
-	\item Intel® Xeon® E5-2670V2
+	\item CPU Intel® Xeon® E5-2670V2
 	\item 4 dedizierte Kerne
 	\item 16GB DDR3 RAM
 	\item Betriebssystem Fedora 20 GNU/Linux
+	\item Cloud Software OpenStack (Release Juno)
 \end{itemize}
 
-Die Verteilung erfolgt auf virtuellen Maschinen innerhalb dieses Hosts. Diese Maschinen und deren Netzwerkverbindungen werden durch die Cloud Computing Software OpenStack (Release Juno) erzeugt und verwaltet.
+Das Cluster selbst besteht aus 3 gleichartigen virtuellen Maschinen innerhalb eines OpenStack Tenants und dem Host selbst. Um die untersuchte Installation in andere Betriebsumgebungen zu bringen oder schnell wiederherstellen zu können, sind die Installationen der Apache Spark Komponenten jeweils in Docker Containern (basierend auf LXC) durchgeführt.
+Dadurch daraus ergeben sich drei Laufzeitumgebungen für den Entwicklungs- und Untersuchungsprozess:
+\break
+
+\begin{itemize}
+	\item Lokale Single-Node-Installation: Exploration, Entwicklung, Debugging
+	\item {[}Docker{]} Virtuelles Cluster auf einzelner physiklischen Maschine: Entwicklung und Debugging im verteilten Betrieb
+	\item {[}Docker{]} Virtuelles Cluster auf verteilten physikalischen Maschinen: Performance-Messungen, Analyse von Skalierungsverhalten
+\end{itemize}
+
+
+Technische Daten der virtuellen Cluster-Knoten
+\begin{itemize}
+	\item 2 virtuelle CPUs
+	\item 2GB RAM
+	\item Betriebssystem CoreOS
+	\item Netzwerkvirtualisierung mit der OpenStack-Komponente Neutron
+\end{itemize}
 
 \subsection{Verteilungsdiagramm}
 
