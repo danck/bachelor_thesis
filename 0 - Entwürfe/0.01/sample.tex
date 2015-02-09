@@ -6,6 +6,7 @@
               ,BCOR10mm
               ,DIV11
               ]{scrbook}
+\usepackage{graphicx}
 \usepackage[ngerman,english]{babel}
 %% see http://www.tex.ac.uk/cgi-bin/texfaq2html?label=uselmfonts
 \usepackage[T1]{fontenc}
@@ -88,7 +89,7 @@
 %% customize (see readme.pdf for supported values)
 \HAWThesisProperties{Author={Daniel Kirchner}
                     ,Title={Skalierbare Datenanalyse mit Apache Spark}
-										,SubTitle={Beispielimplementation eines Influenza-Frühwarnsystems}
+										,SubTitle={Architekturanalyse und Performancetests in verschiedenen Anwendungsfällen}
                     ,EnglishTitle={Scalable Data Analysis with Apache Spark}
                     ,ThesisType={Bachelorarbeit}
                     ,ExaminationType={Bachelorprüfung}
@@ -139,28 +140,44 @@
 \chapter{Einf\"uhrung}
 
 \section{Motivation}
-Der Bedarf auf großen Datenmengen zu operieren ist nicht neu. Spätestens seit in den sp\"aten Neunzigerjahren Suchmaschinenanbieter mit Mengen von Daten und Anfragen konfrontiert wurden, die nicht mehr wirtschaftlich durch einzelne Rechner oder kleine Rechnerverbünde zu bew\"altigen waren, wurden neue Verfahren benötigt. 
-Algorithmen wurden auf Verteilbarkeit und Fehlertoleranz optimiert.
+
+Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und sehr im Fokus von Medien und Unternehmen [VERWEIS]. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördenden Nutzen abzuringen.
 \break
 
-Die Menge verfügbarer Daten wuchs und wurde auch für Unternehmen und Einrichtungen interessant, deren Kerngesch\"aft nicht die Daten selbst sind. Regierungen, Wissenschaft, Industrieunternehmen, Militär, B\"orsenh\"andel und viele andere treffen Entscheidungen auf Grundlage von Daten die die Kapazitäten einzelner Maschinen weit überschreiten.
+Unter dem Begriff "`große Datenmengen"' oder "`Big Data"' werden solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety [VERWEIS, Doug Laney] erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter SLAs auf einzelnen Maschinen verarbeitet werden können"' [VERWEIS, Hadoop/Yarn Entwickler].
+
+Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma [VERWEIS] als Framework zur Ausnutzung vieler "`Mittelklasse"'-Rechner um Webseiten einzustufen und für andere Aufgaben [VERWEIS]. 
+
+In Folge der Veröffentlichung ihrer Idee im Jahr 2005 [VERWEIS] wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) [VERWEIS] zum de-facto Standard für Big-Data-Analyseaufgaben [VERWEIS?].
 \break
 
-Häufige Ver\"anderung und Unvorhersehbarkeit der Anforderungen sind allt\"aglich. Daten denen man zunächst keine Bedeutung beimisst, können sich später als sehr kritisch erweisen und in anderem Zusammenhang eine wichtige Rolle spielen. 
-Ein Verfahren hat sich in diesem Rahmen als besonders wirksam herausgestellt: Daten werden schwach strukturiert gespeichert und erst zum Zeitpunkt einer Abfrage (oder beliebigen Operation) in eine jeweils sinnvolle Struktur gebracht.
+Map-Reduce als Programmierparadigma zur effizienten Stapelverarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
+\begin{itemize}
+	\item Daten, die in hoher Frequenz verändert werden erfordern das ständige Neustarten eines Map-Reduce-Jobs. 	Iterative Algorithmen sind also nicht vorgesehen.
+	\item Die Anfrage an ein solches System erfolgt in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so deklarativ und leicht erlernbar wie SQL-Anfragen an klassische Datenbanken.
+\end{itemize}
+
+In der Folge entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen.
+
+\begin{itemize}
+	\item {[}VERWEIS: A survey of large scale...{]} oder Aufzählung.
+\end{itemize}
+
+Eine der Alternativen zu der Map-Reduce-Komponente in Hadoop die "`general engine for large-scale data processing"' Apache Spark.
+
+Zum aktuellen Zeitpunkt hat das Interesse an Apache Spark das Apache Hadoop Framework bereits überholt:
 \break
 
-Solche Abfragen werden bei aktuellen Systemen oft in Form kleiner Programme gestellt, die auf den Knoten eines Clusters verteilt und nach einem vorgegebenem Paradigma ausgeführt werden.
-Hier kommt das Cluster-Computing-Framework Apache Spark ins Spiel, das mehrere solcher Paradigmen vereint und als bisher vielseitigste Lösung für viele aktuelle Aufgaben der "`Big Data"' Analyse antritt.
+\includegraphics[scale=0.4]{bilder/trends_spark_vs_hadoop.PNG}
 
 \section{Kontextabgrenzung}
 
-\section{Relevante Produkte und Meilensteine}
+\section{Verwandte Produkte}
 
 \subsection{\"Uberblick}
-\subsection{Big Table}
-\subsection{Map/Reduce}
-\subsection{Hadoop}
+\subsection{YARN}
+\subsection{Flink}
+\subsection{...}
 
 \chapter{Vorstellung von Apache Spark}
 

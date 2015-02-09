@@ -1,11 +1,11 @@
 \BOOKMARK [0][-]{chapter.1}{1 Einf\374hrung}{}% 1
 \BOOKMARK [1][-]{section.1.1}{1.1 Motivation}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{1.2 Kontextabgrenzung}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{1.3 Relevante Produkte und Meilensteine}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{1.3 Verwandte Produkte}{chapter.1}% 4
 \BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 \334berblick}{section.1.3}% 5
-\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Big Table}{section.1.3}% 6
-\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Map/Reduce}{section.1.3}% 7
-\BOOKMARK [2][-]{subsection.1.3.4}{1.3.4 Hadoop}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 YARN}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Flink}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.4}{1.3.4 ...}{section.1.3}% 8
 \BOOKMARK [0][-]{chapter.2}{2 Vorstellung von Apache Spark}{}% 9
 \BOOKMARK [1][-]{section.2.1}{2.1 \334bersicht}{chapter.2}% 10
 \BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Architektur\374bersicht}{section.2.1}% 11

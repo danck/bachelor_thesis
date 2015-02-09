@@ -9,11 +9,11 @@
 \contentsline {chapter}{\numberline {1}Einf\"uhrung}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Kontextabgrenzung}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}Relevante Produkte und Meilensteine}{2}{section.1.3}
+\contentsline {section}{\numberline {1.3}Verwandte Produkte}{2}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}\"Uberblick}{2}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Big Table}{2}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Map/Reduce}{2}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Hadoop}{2}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.2}YARN}{2}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Flink}{2}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}...}{2}{subsection.1.3.4}
 \contentsline {chapter}{\numberline {2}Vorstellung von Apache Spark}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}\"Ubersicht}{3}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Architektur\"ubersicht}{3}{subsection.2.1.1}
