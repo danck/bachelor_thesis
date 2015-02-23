@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.7)  23 FEB 2015 17:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.7)  23 FEB 2015 17:34
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -957,31 +957,44 @@ runsystem("C:/Program Files/Inkscape/inkscape.exe"= -z -C -f./versuchsaufbau.svg
 File: ./versuchsaufbau.pdf Graphic file (type pdf)
  <use ./versuchsaufbau.pdf>
 Package pdftex.def Info: ./versuchsaufbau.pdf used on input line 206.
-(pdftex.def)             Requested size: 100.0pt x 141.42534pt.
+(pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\versuchsaufbau.pdf_tex"
 <versuchsaufbau.pdf, id=244, page=1, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
-(pdftex.def)             Requested size: 100.0pt x 141.42534pt.
+(pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
 <versuchsaufbau.pdf, id=245, page=2, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
-(pdftex.def)             Requested size: 100.0pt x 141.42534pt.
-) [4
+(pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
+)
+Overfull \hbox (183.6496pt too wide) in paragraph at lines 61--209
+[]
+ []
 
 
- <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf> <C:/Users/Daniel/Do
-cuments/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf
+Underfull \hbox (badness 10000) in paragraph at lines 61--209
+
+ []
+
+[4
+
+
+]
+Overfull \vbox (450.41817pt too high) has occurred while \output is active []
+
+ [5 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf> <C:/Users/Daniel
+/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuc
 hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [5]
+>] [6]
 Kapitel 4.
-[6
+[7
 
 
 ]
@@ -991,7 +1004,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 11.
 )
 ===== Section: nomenclature
-[7
+[8
 
 
 
@@ -1005,7 +1018,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 264.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
- [8
+ [9
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
@@ -1018,8 +1031,8 @@ Package rerunfilecheck Info: File `sample.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
  ) 
 Here is how much of TeX's memory you used:
- 15324 strings out of 493921
- 246674 string characters out of 3144874
+ 15325 strings out of 493921
+ 246680 string characters out of 3144874
  501985 words of memory out of 3000000
  18236 multiletter control sequences out of 15000+200000
  106095 words of font info for 97 fonts, out of 3000000 for 9000
@@ -1034,9 +1047,9 @@ umT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine
 ata/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/
 type1/public/libertine/LinLibertineTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLi
 bertineTI.pfb>
-Output written on sample.pdf (14 pages, 527797 bytes).
+Output written on sample.pdf (15 pages, 533004 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
  25418 words of extra memory for PDF output out of 29859 (max. 10000000)
 
