@@ -10,10 +10,9 @@
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Kontextabgrenzung}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Verwandte Produkte}{2}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}\"Uberblick}{2}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}YARN}{2}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.1}YARN}{2}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Mesos}{2}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}Flink}{2}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}...}{2}{subsection.1.3.4}
 \contentsline {chapter}{\numberline {2}Vorstellung von Apache Spark}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}\"Ubersicht}{3}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Architektur\"ubersicht}{3}{subsection.2.1.1}
@@ -23,22 +22,26 @@
 \contentsline {subsubsection}{\nonumberline Streaming}{3}{section*.5}
 \contentsline {subsubsection}{\nonumberline GraphX}{3}{section*.6}
 \contentsline {section}{\numberline {2.2}Wesentliche Konzepte}{3}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Abgrenzung zu Hadoop}{3}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Lineage}{3}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Resilient Distributed Datasets}{3}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {3}Vorstellung des Beispiels}{4}{chapter.3}
-\contentsline {section}{\numberline {3.1}Aufgabenbeschreibung}{4}{section.3.1}
-\contentsline {section}{\numberline {3.2}L\"osungsidee}{4}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}1. Schritt: \"Ahnlichkeitsma{\ss } f\"ur W\"orter erzeugen}{4}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}2. Schritt: Echtzeitbewertung von Textnachrichten aus einem Datenstrom}{4}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Implementation und Bewertung}{5}{chapter.4}
-\contentsline {section}{\numberline {4.1}Betriebsumgebung}{5}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Verteilungsdiagramm}{7}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Architektur\"ubersicht}{7}{section.4.2}
-\contentsline {section}{\numberline {4.3}Architekturdetails}{7}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Modell f\"ur \"Ahnlichkeit von W\"ortern mit MLlib erzeugen}{7}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Einlesen von Nachrichten aus dem Twitter Livestream}{7}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Verarbeiten und Bewerten der Nachrichten}{7}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Bewertung der Verfahren}{7}{section.4.4}
-\contentsline {chapter}{\numberline {5}Schlussbetrachtung}{8}{chapter.5}
-\contentsline {section}{\numberline {5.1}Kritische W\"urdigung der Ergebnisse}{8}{section.5.1}
-\contentsline {section}{\numberline {5.2}Ausblick und offene Punkte}{8}{section.5.2}
+\contentsline {chapter}{\numberline {3}Architekturanalyse anhand von Anwendungsf\"allen}{4}{chapter.3}
+\contentsline {section}{\numberline {3.1}Vorgehen}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Versuchsaufbau}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Hardware Setup}{5}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Performance-Basisdaten}{5}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Verteilungsdiagramm}{5}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Beispiel 1}{5}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Problemstellung}{5}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}L\"osungsbeschreibung}{5}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Ergebnisse}{5}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Beispiel 2}{5}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Problemstellung}{5}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}L\"osungsbeschreibung}{5}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Ergebnisse}{5}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Beispiel 3}{5}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Problemstellung}{5}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}L\"osungsbeschreibung}{5}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Ergebnisse}{5}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4}Schlussbetrachtung}{6}{chapter.4}
+\contentsline {section}{\numberline {4.1}Kritische W\"urdigung der Ergebnisse}{6}{section.4.1}
+\contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{6}{section.4.2}

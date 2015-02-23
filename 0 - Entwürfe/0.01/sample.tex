@@ -151,7 +151,7 @@ Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementiert
 In Folge der Veröffentlichung ihrer Idee im Jahr 2005 [VERWEIS] wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) [VERWEIS] zum de-facto Standard für Big-Data-Analyseaufgaben [VERWEIS?].
 \break
 
-Map-Reduce als Programmierparadigma zur effizienten Stapelverarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
+Map-Reduce als Programmierparadigma zur effizienten Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
 \begin{itemize}
 	\item Daten, die in hoher Frequenz verändert werden erfordern das ständige Neustarten eines Map-Reduce-Jobs. 	Iterative Algorithmen sind also nicht vorgesehen.
 	\item Die Anfrage an ein solches System erfolgt in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so deklarativ und leicht erlernbar wie SQL-Anfragen an klassische Datenbanken.
@@ -165,7 +165,7 @@ In der Folge entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen 
 
 Eine der Alternativen zu der Map-Reduce-Komponente in Hadoop die "`general engine for large-scale data processing"' Apache Spark.
 
-Zum aktuellen Zeitpunkt hat das Interesse an Apache Spark das Apache Hadoop Framework bereits überholt:
+Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ein Vergleich des Interesses an Hadoop und Spark auf Google:
 \break
 
 \includegraphics[scale=0.4]{bilder/trends_spark_vs_hadoop.PNG}
@@ -173,96 +173,47 @@ Zum aktuellen Zeitpunkt hat das Interesse an Apache Spark das Apache Hadoop Fram
 \section{Kontextabgrenzung}
 
 \section{Verwandte Produkte}
-
-\subsection{\"Uberblick}
 \subsection{YARN}
+\subsection{Mesos}
 \subsection{Flink}
-\subsection{...}
+
 
 \chapter{Vorstellung von Apache Spark}
 
-\section{\"Ubersicht}
-\subsection{Architekturübersicht}
+\section{Architekturübersicht}
+
+\subsection{Kernkomponenten}
+\subsubsection{Lineage}
+\subsubsection{Resilient Distributed Datasets}
+
 \subsection{Standardbibliotheken}
 \subsubsection{Spark SQL}
 \subsubsection{MLlib}
 \subsubsection{Streaming}
 \subsubsection{GraphX}
 
-\section{Wesentliche Konzepte}
-\subsection{Abgrenzung zu Hadoop}
-\subsection{Resilient Distributed Datasets}
 
-
-\chapter{Vorstellung des Beispiels}
-\section{Aufgabenbeschreibung}
-\section{L\"osungsidee}
-\subsection{1. Schritt: \"Ahnlichkeitsma{\ss} für W\"orter erzeugen}
-\subsection{2. Schritt: Echtzeitbewertung von Textnachrichten aus einem Datenstrom}
-
-
-\chapter{Implementation und Bewertung}
-\section{Betriebsumgebung}
-Die Wahl einer Betriebsumgebung für Cluster-Computing-Frameworks stellt besondere Anforderungen. Obwohl Installationen einer lauffähigen Instanz von Apache Spark auch für einzelne Maschinen möglich ist, werden solche Setups einer Demonstration und Untersuchung von verteiltem Rechnen offensichtlich nicht gerecht.
-
-Auf der anderen Seite bringen verteilte und auf physikalischen Rechnern laufende Installationen zusätzliche Probleme mit. Ausfälle von Hardwarekomponenten auf Rechenknoten und Netzwerken, Stromkosten für Betrieb und Kühlung, sowie Beschaffungs- oder Mietkosten für Räumlichkeiten und Komponenten sind nur die offensichtlichsten.
-\break
-
-Im Rahmen dieser Arbeit sollen Konzepte demonstriert und bewertet werden. Ein produktionstaugliches System ist  nicht gefordert. Es ergeben sich die folgenden Vorgaben. 
-\break
-
-Anforderungen:
-\begin{itemize}
-	\item echte Verteilung der Komponenten
-	\item volle Kontrolle über die lokalen Abläufe
-\end{itemize}
-
-Keine Anforderungen:
-\begin{itemize}
-	\item hohe Performance
-	\item authentische Bedingungen eines Rechenzentrums
-\end{itemize}
-
-Gemäß dieser Anforderungen kommt ein KVM-virtualisierter Host zum Einsatz der als Plattform für eine Cloud Computing Software dient, um ein kleines Cluster von virtuellen Maschinen zu Verfügung zu stellen.
-\break
-
-Technische Daten des Hosts
-\begin{itemize}
-	\item CPU Intel® Xeon® E5-2670V2
-	\item 4 dedizierte Kerne
-	\item 16GB DDR3 RAM
-	\item Betriebssystem Fedora 20 GNU/Linux
-	\item Cloud Software OpenStack (Release Juno)
-\end{itemize}
-
-Das Cluster selbst besteht aus 3 gleichartigen virtuellen Maschinen innerhalb eines OpenStack Tenants und dem Host selbst. Um die untersuchte Installation in andere Betriebsumgebungen zu bringen oder schnell wiederherstellen zu können, sind die Installationen der Apache Spark Komponenten jeweils in Docker Containern (basierend auf LXC) durchgeführt.
-Dadurch daraus ergeben sich drei Laufzeitumgebungen für den Entwicklungs- und Untersuchungsprozess:
-\break
-
-\begin{itemize}
-	\item Lokale Single-Node-Installation: Exploration, Entwicklung, Debugging
-	\item {[}Docker{]} Virtuelles Cluster auf einzelner physiklischen Maschine: Entwicklung und Debugging im verteilten Betrieb
-	\item {[}Docker{]} Virtuelles Cluster auf verteilten physikalischen Maschinen: Performance-Messungen, Analyse von Skalierungsverhalten
-\end{itemize}
-
-
-Technische Daten der virtuellen Cluster-Knoten
-\begin{itemize}
-	\item 2 virtuelle CPUs
-	\item 2GB RAM
-	\item Betriebssystem CoreOS
-	\item Netzwerkvirtualisierung mit der OpenStack-Komponente Neutron
-\end{itemize}
-
+\chapter{Architektur und Skalierungsverhalten}
+\section{Vorgehen}
+\section{Versuchsaufbau}
+\subsection{Hardware Setup}
+\subsection{Performance-Basisdaten}
 \subsection{Verteilungsdiagramm}
 
+\section{Beispiel 1}
+\subsection{Problemstellung}
+\subsection{Lösungsbeschreibung}
+\subsection{Ergebnisse}
 
-\section{Architekturübersicht}
-\section{Architekturdetails}
-\subsection{Modell f\"ur \"Ahnlichkeit von W\"ortern mit MLlib erzeugen}
-\subsection{Einlesen von Nachrichten aus dem Twitter Livestream}
-\subsection{Verarbeiten und Bewerten der Nachrichten}
-\section{Bewertung der Verfahren}
+\section{Beispiel 2}
+\subsection{Problemstellung}
+\subsection{Lösungsbeschreibung}
+\subsection{Ergebnisse}
+
+\section{Beispiel 3}
+\subsection{Problemstellung}
+\subsection{Lösungsbeschreibung}
+\subsection{Ergebnisse}
 
 \chapter{Schlussbetrachtung}
 \section{Kritische W\"urdigung der Ergebnisse}
