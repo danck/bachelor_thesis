@@ -26,6 +26,11 @@
 \usepackage{hawstyle}
 \usepackage{lipsum} %% for sample text
 
+\usepackage{svg}
+\usepackage{amsmath}
+
+\setsvg{inkscape={"C:/Program Files/Inkscape/inkscape.exe"= -z -C}}
+
 %% define some colors
 \colorlet{BackgroundColor}{gray!20}
 \colorlet{KeywordColor}{blue}
@@ -195,6 +200,13 @@ Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ei
 \chapter{Architektur und Skalierungsverhalten}
 \section{Vorgehen}
 \section{Versuchsaufbau}
+
+%%\begin{figure}[htbp]
+  %%\centering
+  \includesvg[clean,width=100pt,height=100pt]{versuchsaufbau}
+%%  \caption{svg image}
+%%\end{figure}
+
 \subsection{Hardware Setup}
 \subsection{Performance-Basisdaten}
 \subsection{Verteilungsdiagramm}
