@@ -28,6 +28,7 @@
 
 \usepackage{svg}
 \usepackage{amsmath}
+\usepackage{xcolor}
 
 \setsvg{inkscape={"C:/Program Files/Inkscape/inkscape.exe"= -z -C}}
 
@@ -94,7 +95,7 @@
 %% customize (see readme.pdf for supported values)
 \HAWThesisProperties{Author={Daniel Kirchner}
                     ,Title={Skalierbare Datenanalyse mit Apache Spark}
-										,SubTitle={Architekturanalyse und Performancetests in verschiedenen Anwendungsfällen}
+										,SubTitle={Evaluation von Anwendungsfällen aus Klimaforschung und Text-Mining}
                     ,EnglishTitle={Scalable Data Analysis with Apache Spark}
                     ,ThesisType={Bachelorarbeit}
                     ,ExaminationType={Bachelorprüfung}
@@ -156,10 +157,11 @@ Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementiert
 In Folge der Veröffentlichung ihrer Idee im Jahr 2005 [VERWEIS] wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) [VERWEIS] zum de-facto Standard für Big-Data-Analyseaufgaben [VERWEIS?].
 \break
 
-Reines Map-Reduce als Programmierparadigma zur effizienten Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
+Reines Map-Reduce (nach Art von Hadoop) als Programmierparadigma zur Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
 \begin{itemize}
-	\item Daten, die in hoher Frequenz verändert werden erfordern das ständige Neustarten eines Map-Reduce-Jobs. 	Iterative Algorithmen sind also nicht vorgesehen.
-	\item Die Anfrage an ein solches System erfolgt in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so deklarativ und leicht erlernbar wie SQL-Anfragen an klassische Datenbanken.
+	\item Daten, die in hoher Frequenz entstehen und schnell verarbeitet werden sollen erfordern häufiges Neustarten von Map-Reduce-Jobs.
+	\item Algorithmen die während ihrer Ausführung iterativ Zwischenergebnisse erzeugen und auf vorherige angewiesen sind (typischerweise Maschinenlernalgorithmen) können nur durch persistentes Speichern der Daten und wiederholtes Auslesen zwischen allen Iterationsschritten implementiert werden.
+	\item Generell erfolgen Anfragen an ein solches System immer in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so deklarativ und leicht erlernbar wie beispielsweise SQL-Anfragen an klassische Datenbanken.
 \end{itemize}
 
 In der Folge entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen.
@@ -176,27 +178,39 @@ Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ei
 \includegraphics[scale=0.4]{bilder/trends_spark_vs_hadoop.PNG}
 
 \section{Kontextabgrenzung}
+Das Ziel dieser Arbeit ist es einen Einblick in die grundlegenden Konzepte und Anwendungsmöglichkeiten von Apache Spark zu vermitteln.
 
+Für ein tieferes Verständnis werden zwei Anwendungsfälle untersucht und deren Lösung detailiert dokumentiert und bewertet.
+\break
+
+Nur am Rande wird betrachtet:
+\begin{itemize}
+	\item Vergleich mit ähnlichen Produkten
+	\item Empirische Messung des Skalierungsverhaltens
+	\item Konkrete Hinweise zu Installation und Nutzung
+\end{itemize}
 
 \chapter{Vorstellung von Apache Spark}
 
 \section{Überblick}
 
 \section{Kernkonzepte}
---- Warum ist Spark so schnell ---
+\textcolor{gray}{--- Warum ist Spark so schnell (und wo vielleicht nicht)? ---}
 \subsection{Resilient Distributed Datasets}
 \subsection{Lineage}
 \subsection{DAG Scheduler}
 
 \section{Standardbibliotheken}
---- Warum ist Spark so einfach ---
+\textcolor{gray}{--- Warum ist Spark so einfach (und wo vielleicht nicht)? ---}
 \subsection{Spark SQL}
 \subsection{MLlib}
 \subsection{Streaming}
 \subsection{GraphX}
 
+\section{Entwicklergemeinschaft}
+
 \section{Verwandte Produkte}
---- Ergänzende oder konkurrierende Produkte ---
+\textcolor{gray}{--- Ergänzende oder konkurrierende Produkte ---}
 \subsection{YARN}
 \subsection{Mesos}
 \subsection{Flink}
@@ -204,18 +218,21 @@ Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ei
 
 \chapter{Untersuchung von Anwendungsfällen}
 Im Folgenden wird Apache Spark im Rahmen zweier grundsätzlich verschiedener Anwendungsfälle betrachtet.
+\break
 
-Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Spark als "`Client"' eines bestehenden Yarn Clustermanagers. Commodity Hardware (Rasperry Pi Cluster).
+Beispiel 1: Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Spark als "`Client"' eines bestehenden Yarn Clustermanagers. \textcolor{gray}{--- Commodity Hardware (Rasperry Pi Cluster). ---}
+\break
 
-Eine untypische Anwendung mit verteiltem entfernten Storage und dem Spark Standalone Clustermanager. HPC Hardware ("`Thunder"' des Hamburger KlimaCampus).
+Beispiel 2: Eine untypische Anwendung mit verteiltem entfernten Storage und dem Spark Standalone Clustermanager. \textcolor{gray}{--- HPC Hardware ("`Thunder"' des Hamburger KlimaCampus). ---}
 
-\section{Beispiel 1 - Hot Topics in der Spark Community}
-Fusion von Tweets und Mailinglisten 
+\section{Identifikation von Hot Topics in der Spark Community}
+\textcolor{gray}{--- Fusion von Tweets und Mailinglisten 
 https://spark.apache.org/docs/1.3.0/mllib-feature-extraction.html
-Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager
+Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager ---}
 \subsection{Beschreibung des Problems}
+
 \subsection{Hardwarekontext und Performance-Basisdaten}
---- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---
+\textcolor{gray}{--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---}
 
 %%\begin{figure}[htbp]
 %%  \centering
@@ -224,24 +241,28 @@ Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager
 %%\end{figure}
 
 \subsection{Architekturübersicht}
---- hier kommen Verteilungs- und Komponentendiagramm hin ---
+\textcolor{gray}{--- hier kommen Verteilungs- und Komponentendiagramm hin ---}
 \subsection{Detailierte Lösungsbeschreibung}
---- hier kommen laufzeitdiagramme und codeschnipsel hin ---
+\textcolor{gray}{--- hier kommen laufzeitdiagramme und codeschnipsel hin ---}
 \subsection{Ergebnisse}
+\textcolor{gray}{--- Tabellen und Diagramme Ergebnissen, evt. Skalierungsverhalten ---}
+\textcolor{gray}{--- Bewertung ---}
 
-\section{Beispiel 2 - (Evaluierung einer spark-basierten Implementation von CDOs auf einem HPC Cluster mit nicht-lokalem Storage)}
-Implementation ausgewählter CDOs (sehr wenige, möglicherweise nur 1-2) mit der Core-API von Spark. Testlauf auf einem HPC Cluster mit nicht-lokalem, allerdings per Infiniband angeschlossenen Storage.
-Insbesondere Betrachtung des Skalierungsverhaltens und der "`Sinnhaftigkeit"'.
+\section{Evaluierung einer spark-basierten Implementation von CDOs auf einem HPC Cluster mit nicht-lokalem Storage}
+\textcolor{gray}{--- Implementation ausgewählter CDOs (sehr wenige, möglicherweise nur 1-2) mit der Core-API von Spark. Testlauf auf einem HPC Cluster mit nicht-lokalem, allerdings per Infiniband angeschlossenen Storage.
+Insbesondere Betrachtung des Skalierungsverhaltens und der "`Sinnhaftigkeit"'. ---}
 
 \subsection{Beschreibung des Problems}
-Erläuterung von CDOs (Climate Data Operators).
+\textcolor{gray}{--- Erläuterung von CDOs (Climate Data Operators). ---}
 \subsection{Hardwarekontext und Performance-Basisdaten}
---- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---
+\textcolor{gray}{--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---}
 \subsection{Architekturübersicht}
---- hier kommen Verteilungs- und Komponentendiagramm hin ---
+\textcolor{gray}{--- hier kommen Verteilungs- und Komponentendiagramm hin ---}
 \subsection{Detailierte Lösungsbeschreibung}
---- hier kommen laufzeitdiagramme und codeschnipsel hin ---
+\textcolor{gray}{--- hier kommen laufzeitdiagramme und codeschnipsel hin ---}
 \subsection{Ergebnisse}
+\textcolor{gray}{--- Tabellen und Diagramme Ergebnissen, evt. Skalierungsverhalten ---}
+\textcolor{gray}{--- Bewertung ---}
 
 \chapter{Schlussbetrachtung}
 \section{Kritische W\"urdigung der Ergebnisse}
