@@ -183,26 +183,36 @@ Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ei
 \section{Überblick}
 
 \section{Kernkonzepte}
+--- Warum ist Spark so schnell ---
 \subsection{Resilient Distributed Datasets}
 \subsection{Lineage}
 \subsection{DAG Scheduler}
 
 \section{Standardbibliotheken}
+--- Warum ist Spark so einfach ---
 \subsection{Spark SQL}
 \subsection{MLlib}
 \subsection{Streaming}
 \subsection{GraphX}
 
 \section{Verwandte Produkte}
+--- Ergänzende oder konkurrierende Produkte ---
 \subsection{YARN}
 \subsection{Mesos}
 \subsection{Flink}
 
 
-\chapter{Implementation von Anwendungsfällen}
+\chapter{Untersuchung von Anwendungsfällen}
 Im Folgenden wird Apache Spark im Rahmen zweier grundsätzlich verschiedener Anwendungsfälle betrachtet.
 
-\section{Beispiel 1}
+Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Spark als "`Client"' eines bestehenden Yarn Clustermanagers. Commodity Hardware (Rasperry Pi Cluster).
+
+Eine untypische Anwendung mit verteiltem entfernten Storage und dem Spark Standalone Clustermanager. HPC Hardware ("`Thunder"' des Hamburger KlimaCampus).
+
+\section{Beispiel 1 - Hot Topics in der Spark Community}
+Fusion von Tweets und Mailinglisten 
+https://spark.apache.org/docs/1.3.0/mllib-feature-extraction.html
+Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager
 \subsection{Beschreibung des Problems}
 \subsection{Hardwarekontext und Performance-Basisdaten}
 --- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---
@@ -219,7 +229,10 @@ Im Folgenden wird Apache Spark im Rahmen zweier grundsätzlich verschiedener Anwe
 --- hier kommen laufzeitdiagramme und codeschnipsel hin ---
 \subsection{Ergebnisse}
 
-\section{Beispiel 2 ??? (Evaluierung einer spark-basierten Implementation von CDOs auf einem HPC Cluster mit nicht-lokalem Storage)}
+\section{Beispiel 2 - (Evaluierung einer spark-basierten Implementation von CDOs auf einem HPC Cluster mit nicht-lokalem Storage)}
+Implementation ausgewählter CDOs (sehr wenige, möglicherweise nur 1-2) mit der Core-API von Spark. Testlauf auf einem HPC Cluster mit nicht-lokalem, allerdings per Infiniband angeschlossenen Storage.
+Insbesondere Betrachtung des Skalierungsverhaltens und der "`Sinnhaftigkeit"'.
+
 \subsection{Beschreibung des Problems}
 Erläuterung von CDOs (Climate Data Operators).
 \subsection{Hardwarekontext und Performance-Basisdaten}
