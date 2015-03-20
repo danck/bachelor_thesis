@@ -151,12 +151,12 @@ Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmen
 
 Unter dem Begriff "`große Datenmengen"' oder "`Big Data"' werden solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety [VERWEIS, Doug Laney] erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter SLAs auf einzelnen Maschinen verarbeitet werden können"' [VERWEIS, Hadoop/Yarn Entwickler].
 
-Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma [VERWEIS] als Framework zur Ausnutzung vieler "`Mittelklasse"'-Rechner um Webseiten einzustufen und für andere Aufgaben [VERWEIS]. 
+Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma [VERWEIS] als Framework zur Ausnutzung vieler kostengünstiger Rechner um Webseiten einzustufen und für andere Aufgaben [VERWEIS]. 
 
 In Folge der Veröffentlichung ihrer Idee im Jahr 2005 [VERWEIS] wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) [VERWEIS] zum de-facto Standard für Big-Data-Analyseaufgaben [VERWEIS?].
 \break
 
-Map-Reduce als Programmierparadigma zur effizienten Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
+Reines Map-Reduce als Programmierparadigma zur effizienten Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
 \begin{itemize}
 	\item Daten, die in hoher Frequenz verändert werden erfordern das ständige Neustarten eines Map-Reduce-Jobs. 	Iterative Algorithmen sind also nicht vorgesehen.
 	\item Die Anfrage an ein solches System erfolgt in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so deklarativ und leicht erlernbar wie SQL-Anfragen an klassische Datenbanken.
@@ -177,13 +177,15 @@ Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ei
 
 \section{Kontextabgrenzung}
 
+
 \chapter{Vorstellung von Apache Spark}
 
 \section{Überblick}
 
-\section{Kernkomponenten}
-\subsection{Lineage}
+\section{Kernkonzepte}
 \subsection{Resilient Distributed Datasets}
+\subsection{Lineage}
+\subsection{DAG Scheduler}
 
 \section{Standardbibliotheken}
 \subsection{Spark SQL}
@@ -197,9 +199,13 @@ Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ei
 \subsection{Flink}
 
 
-\chapter{Architektur und Skalierungsverhalten}
-\section{Vorgehen}
-\section{Versuchsaufbau}
+\chapter{Implementation von Anwendungsfällen}
+Im Folgenden wird Apache Spark im Rahmen zweier grundsätzlich verschiedener Anwendungsfälle betrachtet.
+
+\section{Beispiel 1}
+\subsection{Beschreibung des Problems}
+\subsection{Hardwarekontext und Performance-Basisdaten}
+--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---
 
 %%\begin{figure}[htbp]
 %%  \centering
@@ -207,23 +213,21 @@ Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ei
 %%  \caption{svg image}
 %%\end{figure}
 
-\subsection{Hardware Setup}
-\subsection{Performance-Basisdaten}
-\subsection{Verteilungsdiagramm}
-
-\section{Beispiel 1}
-\subsection{Problemstellung}
-\subsection{Lösungsbeschreibung}
+\subsection{Architekturübersicht}
+--- hier kommen Verteilungs- und Komponentendiagramm hin ---
+\subsection{Detailierte Lösungsbeschreibung}
+--- hier kommen laufzeitdiagramme und codeschnipsel hin ---
 \subsection{Ergebnisse}
 
-\section{Beispiel 2}
-\subsection{Problemstellung}
-\subsection{Lösungsbeschreibung}
-\subsection{Ergebnisse}
-
-\section{Beispiel 3}
-\subsection{Problemstellung}
-\subsection{Lösungsbeschreibung}
+\section{Beispiel 2 ??? (Evaluierung einer spark-basierten Implementation von CDOs auf einem HPC Cluster mit nicht-lokalem Storage)}
+\subsection{Beschreibung des Problems}
+Erläuterung von CDOs (Climate Data Operators).
+\subsection{Hardwarekontext und Performance-Basisdaten}
+--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---
+\subsection{Architekturübersicht}
+--- hier kommen Verteilungs- und Komponentendiagramm hin ---
+\subsection{Detailierte Lösungsbeschreibung}
+--- hier kommen laufzeitdiagramme und codeschnipsel hin ---
 \subsection{Ergebnisse}
 
 \chapter{Schlussbetrachtung}
