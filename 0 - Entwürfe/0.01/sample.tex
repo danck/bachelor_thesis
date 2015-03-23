@@ -95,7 +95,7 @@
 %% customize (see readme.pdf for supported values)
 \HAWThesisProperties{Author={Daniel Kirchner}
                     ,Title={Skalierbare Datenanalyse mit Apache Spark}
-										,SubTitle={Evaluation von Anwendungsfällen aus Klimaforschung und Text-Mining}
+										,SubTitle={Zugrunde liegende Konzepte und praktische Anwendung}
                     ,EnglishTitle={Scalable Data Analysis with Apache Spark}
                     ,ThesisType={Bachelorarbeit}
                     ,ExaminationType={Bachelorprüfung}
@@ -159,9 +159,9 @@ In Folge der Veröffentlichung ihrer Idee im Jahr 2005 [VERWEIS] wurde Map-Reduce
 
 Reines Map-Reduce (nach Art von Hadoop) als Programmierparadigma zur Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
 \begin{itemize}
-	\item Daten, die in hoher Frequenz entstehen und schnell verarbeitet werden sollen erfordern häufiges Neustarten von Map-Reduce-Jobs.
-	\item Algorithmen die während ihrer Ausführung iterativ Zwischenergebnisse erzeugen und auf vorherige angewiesen sind (typischerweise Maschinenlernalgorithmen) können nur durch persistentes Speichern der Daten und wiederholtes Auslesen zwischen allen Iterationsschritten implementiert werden.
-	\item Generell erfolgen Anfragen an ein solches System immer in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so deklarativ und leicht erlernbar wie beispielsweise SQL-Anfragen an klassische Datenbanken.
+	\item Daten, die in hoher Frequenz entstehen und schnell verarbeitet werden sollen erfordern häufiges Neustarten von Map-Reduce-Jobs. Die Folge ist kostspieliger Overhead durch Verwaltung/Scheduling der Jobs und gegebenenfalls wiederholtem Einlesen von Daten.
+	\item Algorithmen die während ihrer Ausführung iterativ Zwischenergebnisse erzeugen und auf vorherige angewiesen sind (häufig bei Maschinenlernalgorithmen) können nur durch persistentes Speichern der Daten und wiederholtes Einlesen zwischen allen Iterationsschritten implementiert werden.
+	\item Anfragen an ein solches reines Map-Reduce-System erfolgen imperativ in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so intuitiv und leicht erlernbar wie deklarative Abfragesprachen klassischer Datenbanken (z.B. SQL).
 \end{itemize}
 
 In der Folge entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen.
@@ -187,7 +187,7 @@ Nur am Rande wird betrachtet:
 \begin{itemize}
 	\item Vergleich mit ähnlichen Produkten
 	\item Empirische Messung des Skalierungsverhaltens
-	\item Konkrete Hinweise zu Installation und Nutzung
+	\item Konkrete Hinweise zu Installation und Betrieb
 \end{itemize}
 
 \chapter{Vorstellung von Apache Spark}
@@ -195,7 +195,7 @@ Nur am Rande wird betrachtet:
 \section{Überblick}
 
 \section{Kernkonzepte}
-\textcolor{gray}{--- Warum ist Spark so schnell (und wo vielleicht nicht)? ---}
+\textcolor{gray}{--- Warum ist Spark schnell, ausfallsicher, secure (und wo vielleicht nicht)? ---}
 \textcolor{gray}{--- Annahme: Durchsatzfaktoren RAM, Netzwerk, Festplatte ---}
 \subsection{Resilient Distributed Datasets}
 \subsection{Lineage}
@@ -208,7 +208,10 @@ Nur am Rande wird betrachtet:
 \subsection{Streaming}
 \subsection{GraphX}
 
+\section{Betrieb und Security}
+
 \section{Entwicklergemeinschaft}
+\textcolor{gray}{--- Herkunft, Apache Foundation, Entwicklungsphilosophien, Anzahl Entwickler, ... ---}
 
 \section{Verwandte Produkte}
 \textcolor{gray}{--- Ergänzende oder konkurrierende Produkte ---}
@@ -217,7 +220,7 @@ Nur am Rande wird betrachtet:
 \subsection{Flink}
 
 
-\chapter{Untersuchung von Anwendungsfällen}
+\chapter{Spark in der Praxis}
 Im Folgenden wird Apache Spark im Rahmen zweier grundsätzlich verschiedener Anwendungsfälle betrachtet.
 \break
 
@@ -226,11 +229,14 @@ Beispiel 1: Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Sp
 
 Beispiel 2: Eine untypische Anwendung mit verteiltem entfernten Storage und dem Spark Standalone Clustermanager. \textcolor{gray}{--- HPC Hardware ("`Thunder"' des Hamburger KlimaCampus). ---}
 
-\section{Identifikation von Hot Topics in der Spark Community}
+\section{Echtzeitbewertung von Twitter-Accounts nach ihrer Relvanz für Spark}
 \textcolor{gray}{--- Fusion von Tweets und Mailinglisten 
 https://spark.apache.org/docs/1.3.0/mllib-feature-extraction.html
 Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager ---}
 \subsection{Beschreibung des Problems}
+\textcolor{gray}{--- Es sollen die beiden Spark Mailingslisten (Developer, User) zur Identifikation relevanter und aktueller Themen genutzt werden. Mit den so bewerteten Begriffen können wiederum Tweets bewertet werden. Mit den Tweets können dann ganze Accounts nach ihrer Relevanz beurteilt werden. ---}
+\textcolor{gray}{--- Zwei Datenquellen: Tweets (Nahe-Echtzeit), Entwickler-Emails (Sporadisch) ---}
+\textcolor{gray}{--- Stichworte: HDFS, Yarn, Rasperri Pi Cluster, Machine Learning, Feature Extraction, Big Data Life Cycle ---}
 
 \subsection{Hardwarekontext und Performance-Basisdaten}
 \textcolor{gray}{--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---}
