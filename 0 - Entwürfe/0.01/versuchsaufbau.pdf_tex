@@ -50,16 +50,16 @@
   \makeatother%
   \begin{picture}(1,1.41428571)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{versuchsaufbau.pdf}}%
-    \put(0.02374171,1.09070109){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{1 2 3 4 5 6 7 8}}}}%
+    \put(0.11269666,1.19592175){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{1 2 3 4 5 6 7 8}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{versuchsaufbau.pdf}}%
-    \put(0.04005037,1.25042006){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.06355624\unitlength}\raggedright Switch\end{minipage}}}%
-    \put(0.06668652,1.30198962){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.06355624\unitlength}\raggedright \end{minipage}}}%
-    \put(0.17854606,1.38891391){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05691604\unitlength}\raggedright Worker\end{minipage}}}%
-    \put(0.2747626,1.38936383){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05691604\unitlength}\raggedright Worker\end{minipage}}}%
-    \put(0.37341706,1.38829848){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05691604\unitlength}\raggedright Worker\end{minipage}}}%
-    \put(0.47396878,1.38829848){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05691604\unitlength}\raggedright Worker\end{minipage}}}%
+    \put(0.12342991,1.29406369){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.04182847\unitlength}\raggedright Switch\end{minipage}}}%
+    \put(0.14096005,1.32575147){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.04182847\unitlength}\raggedright \end{minipage}}}%
+    \put(0.21457852,1.37916353){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.03745833\unitlength}\raggedright Worker\end{minipage}}}%
+    \put(0.2779018,1.37944){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.03745833\unitlength}\raggedright Worker\end{minipage}}}%
+    \put(0.34282955,1.37878538){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.03745833\unitlength}\raggedright Worker\end{minipage}}}%
+    \put(0.40900597,1.37878538){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.03745833\unitlength}\raggedright Worker\end{minipage}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{versuchsaufbau.pdf}}%
-    \put(0.33742825,1.05487726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.06355624\unitlength}\raggedright Master\end{minipage}}}%
+    \put(0.31914414,1.1739092){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.04182847\unitlength}\raggedright Master\end{minipage}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{versuchsaufbau.pdf}}%
   \end{picture}%
 \endgroup%

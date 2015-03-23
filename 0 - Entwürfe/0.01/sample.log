@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.7)  23 MAR 2015 12:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.7)  23 MAR 2015 14:40
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entw√ºrfe\0.01\sample.tex"
@@ -654,16 +654,463 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 72.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 72.
-Package hyperref Info: Option `linktocpage' set `true' on input line 72.
-LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on input line 86.
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\preprint\fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip67
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.sty
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen147
+\pgfutil@tempdimb=\dimen148
 
-(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxlibertinet-tlf.fd
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-latex.def
+\pgfutil@abb=\box33
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.code.tex
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+))
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.sty
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.sty
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen149
+\pgf@y=\dimen150
+\pgf@xa=\dimen151
+\pgf@ya=\dimen152
+\pgf@xb=\dimen153
+\pgf@yb=\dimen154
+\pgf@xc=\dimen155
+\pgf@yc=\dimen156
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count138
+\c@pgf@countb=\count139
+\c@pgf@countc=\count140
+\c@pgf@countd=\count141
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count142
+\pgfsyssoftpath@bigbuffer@items=\count143
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen157
+\pgfmath@count=\count144
+\pgfmath@box=\box34
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.random.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex)))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count145
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen158
+\pgf@picmaxx=\dimen159
+\pgf@picminy=\dimen160
+\pgf@picmaxy=\dimen161
+\pgf@pathminx=\dimen162
+\pgf@pathmaxx=\dimen163
+\pgf@pathminy=\dimen164
+\pgf@pathmaxy=\dimen165
+\pgf@xx=\dimen166
+\pgf@xy=\dimen167
+\pgf@yx=\dimen168
+\pgf@yy=\dimen169
+\pgf@zx=\dimen170
+\pgf@zy=\dimen171
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen172
+\pgf@path@lasty=\dimen173
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen174
+\pgf@shorten@start@additional=\dimen175
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+\pgfpic=\box35
+\pgf@hbox=\box36
+\pgf@layerbox@main=\box37
+\pgf@picture@serial@count=\count146
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen176
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen177
+\pgf@pt@y=\dimen178
+\pgf@pt@temp=\dimen179
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen180
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen181
+\pgf@sys@shading@range@num=\count147
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+\pgfexternal@startupbox=\box38
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+\pgfnodeparttextbox=\box39
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen182
+\pgf@nodesepend=\dimen183
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.sty
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.sty
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.code.tex))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.sty
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex)
+\pgffor@iter=\dimen184
+\pgffor@skip=\dimen185
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count148
+\pgfplotmarksize=\dimen186
+)
+\tikz@lastx=\dimen187
+\tikz@lasty=\dimen188
+\tikz@lastxsaved=\dimen189
+\tikz@lastysaved=\dimen190
+\tikzleveldistance=\dimen191
+\tikzsiblingdistance=\dimen192
+\tikz@figbox=\box40
+\tikz@figbox@bg=\box41
+\tikz@tempbox=\box42
+\tikz@tempbox@bg=\box43
+\tikztreelevel=\count149
+\tikznumberofchildren=\count150
+\tikznumberofcurrentchild=\count151
+\tikz@fig@count=\count152
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count153
+\pgfmatrixcurrentcolumn=\count154
+\pgf@matrix@numberofcolumns=\count155
+)
+\tikz@expandcount=\count156
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+)))
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entw√ºrfe\0.01\tikz-uml.sty"
+Package: tikz-uml 2011/01/26
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
+\@xs@message=\write4
+\integerpart=\count157
+\decimalpart=\count158
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgfopts\pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks44
+\pgfopts@list@add@b@toks=\toks45
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.0 (rcs-revision 1.3)
+\pgf@layerbox@background=\box44
+\pgf@layerboxsaved@background=\box45
+) (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
+\arrowsize=\dimen193
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.cod
+e.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+ (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.0 (rcs-revision 1.5)
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.symbols.code.
+tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+ (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.0 (rcs-revision 1.6)
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.arrows.code.t
+ex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+ (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.callouts.code
+.tex (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.callouts.code.tex))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.multipart.cod
+e.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+ (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.0 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box46
+\pgfnodeparttwobox=\box47
+\pgfnodepartthreebox=\box48
+\pgfnodepartfourbox=\box49
+\pgfnodeparttwentybox=\box50
+\pgfnodepartnineteenbox=\box51
+\pgfnodeparteighteenbox=\box52
+\pgfnodepartseventeenbox=\box53
+\pgfnodepartsixteenbox=\box54
+\pgfnodepartfifteenbox=\box55
+\pgfnodepartfourteenbox=\box56
+\pgfnodepartthirteenbox=\box57
+\pgfnodeparttwelvebox=\box58
+\pgfnodepartelevenbox=\box59
+\pgfnodeparttenbox=\box60
+\pgfnodepartninebox=\box61
+\pgfnodeparteightbox=\box62
+\pgfnodepartsevenbox=\box63
+\pgfnodepartsixbox=\box64
+\pgfnodepartfivebox=\box65
+))) (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2013/07/12 v3.0.0 (rcs-revision 1.5)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.0 (rcs-revision 1.3)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.0 (rcs-revision 1.2)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.0 (rcs-revision 1.3)
+)))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.markings
+.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen194
+\pgfdecoratedremainingdistance=\dimen195
+\pgfdecoratedinputsegmentcompleteddistance=\dimen196
+\pgfdecoratedinputsegmentremainingdistance=\dimen197
+\pgf@decorate@distancetomove=\dimen198
+\pgf@decorate@repeatstate=\count159
+\pgfdecorationsegmentamplitude=\dimen199
+\pgfdecorationsegmentlength=\dimen200
+)
+\tikz@lib@dec@box=\box66
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.markings.code.te
+x))
+\c@tikzumlPackageLayers=\count160
+\pgf@layerbox@package0=\box67
+\pgf@layerboxsaved@package0=\box68
+\pgf@layerbox@package1=\box69
+\pgf@layerboxsaved@package1=\box70
+\pgf@layerbox@package2=\box71
+\pgf@layerboxsaved@package2=\box72
+\pgf@layerbox@package3=\box73
+\pgf@layerboxsaved@package3=\box74
+\c@tikzumlFragmentLayers=\count161
+\pgf@layerbox@fragment0=\box75
+\pgf@layerboxsaved@fragment0=\box76
+\pgf@layerbox@fragment1=\box77
+\pgf@layerboxsaved@fragment1=\box78
+\pgf@layerbox@fragment2=\box79
+\pgf@layerboxsaved@fragment2=\box80
+\pgf@layerbox@fragment3=\box81
+\pgf@layerboxsaved@fragment3=\box82
+\c@tikzumlStateLayers=\count162
+\pgf@layerbox@state0=\box83
+\pgf@layerboxsaved@state0=\box84
+\pgf@layerbox@state1=\box85
+\pgf@layerboxsaved@state1=\box86
+\pgf@layerbox@state2=\box87
+\pgf@layerboxsaved@state2=\box88
+\pgf@layerbox@state3=\box89
+\pgf@layerboxsaved@state3=\box90
+\c@tikzumlComponentLayers=\count163
+\pgf@layerbox@component0=\box91
+\pgf@layerboxsaved@component0=\box92
+\pgf@layerbox@component1=\box93
+\pgf@layerboxsaved@component1=\box94
+\pgf@layerbox@component2=\box95
+\pgf@layerboxsaved@component2=\box96
+\pgf@layerbox@component3=\box97
+\pgf@layerboxsaved@component3=\box98
+\pgf@layerbox@lifelines=\box99
+\pgf@layerboxsaved@lifelines=\box100
+\pgf@layerbox@activity=\box101
+\pgf@layerboxsaved@activity=\box102
+\pgf@layerbox@connections=\box103
+\pgf@layerboxsaved@connections=\box104
+\c@tikzumlPackageClassNum=\count164
+\c@tikzumlPackageSubPackageNum=\count165
+\c@tikzumlRelationNum=\count166
+\c@tikzumlNoteNum=\count167
+\c@pos=\count168
+\c@posT=\count169
+\c@posStereo=\count170
+\c@tikzumlPackageLevel=\count171
+\c@tikzumlSystemUseCaseNum=\count172
+\c@tikzumlSystemLevel=\count173
+\c@tikzumlUseCaseNum=\count174
+\c@tikzumlActorNum=\count175
+\c@tikzumlStateJoinNum=\count176
+\c@tikzumlStateDecisionNum=\count177
+\c@tikzumlStateInitialNum=\count178
+\c@tikzumlStateFinalNum=\count179
+\c@tikzumlStateEnterNum=\count180
+\c@tikzumlStateExitNum=\count181
+\c@tikzumlStateEndNum=\count182
+\c@tikzumlStateHistoryNum=\count183
+\c@tikzumlStateDeepHistoryNum=\count184
+\c@tikzumlStateLevel=\count185
+\c@tikzumlStateSubStateNum=\count186
+\c@tikzumlStateText=\count187
+\c@tikzumlObjectNum=\count188
+\c@tikzumlCallLevel=\count189
+\c@tikzumlCallNum=\count190
+\c@tikzumlFragmentLevel=\count191
+\c@tikzumlFragmentLevelNum=\count192
+\c@tikzumlFragmentNum=\count193
+\c@tikzumlFragmentPartNum=\count194
+\c@tikzumlCallStartFragmentNum=\count195
+\c@tikzumlCallEndFragmentNum=\count196
+\tikzumlCall@xa=\skip68
+\tikzumlCall@xb=\skip69
+\c@tikzumlComponentLevel=\count197
+\c@tikzumlComponentSubComponentNum=\count198
+\c@tikzumlConnectorNum=\count199
+\tikzuml@AC@xa=\skip70
+\tikzuml@AC@ya=\skip71
+\tikzuml@AC@xb=\skip72
+\tikzuml@AC@yb=\skip73
+\tikzuml@AC@xi=\skip74
+\tikzuml@AC@yi=\skip75
+\tikzuml@AC@xic=\skip76
+\tikzuml@AC@yic=\skip77
+\tikzuml@AC@xio=\skip78
+\tikzuml@AC@yio=\skip79
+\tikzuml@AC@AB=\skip80
+\tikzuml@AC@lambda=\skip81
+\tikzuml@AC@xtrc=\skip82
+\tikzuml@AC@ytrc=\skip83
+\tikzuml@AC@xtlc=\skip84
+\tikzuml@AC@ytlc=\skip85
+\tikzuml@AC@xblc=\skip86
+\tikzuml@AC@yblc=\skip87
+\tikzuml@AC@xbrc=\skip88
+\tikzuml@AC@ybrc=\skip89
+\tikzuml@AC@middleArm=\skip90
+)
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 75.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 75.
+Package hyperref Info: Option `linktocpage' set `true' on input line 75.
+LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on input line 89.
+ (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxlibertinet-tlf.fd
 File: T1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for T1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 86.
+(Font)              scaled to size 10.95pt on input line 89.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 11
 (typearea)             BCOR = 28.45274pt
@@ -680,52 +1127,52 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 86.
-\@indexfile=\write3
+(typearea)              on input line 89.
+\@indexfile=\write5
 
 Writing index file sample.idx
-\@nomenclaturefile=\write4
+\@nomenclaturefile=\write6
 Writing nomenclature file sample.nlo
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entw√ºrfe\0.01\sample.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 94.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count138
-\scratchdimen=\dimen147
-\scratchbox=\box33
-\nofMPsegments=\count139
-\nofMParguments=\count140
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count141
-\MPscratchDim=\dimen148
-\MPnumerator=\count142
-\makeMPintoPDFobject=\count143
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count200
+\scratchdimen=\dimen201
+\scratchbox=\box105
+\nofMPsegments=\count201
+\nofMParguments=\count202
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count203
+\MPscratchDim=\dimen202
+\MPnumerator=\count204
+\makeMPintoPDFobject=\count205
+\everyMPtoPDFconversion=\toks47
 )
-\c@mv@tabular=\count144
-\c@mv@boldtabular=\count145
-LaTeX Info: Redefining \microtypecontext on input line 91.
+\c@mv@tabular=\count206
+\c@mv@boldtabular=\count207
+LaTeX Info: Redefining \microtypecontext on input line 94.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -739,48 +1186,48 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c@lstlisting=\count146
-\AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring ON on input line 91.
+\c@lstlisting=\count208
+\AtBeginShipoutBox=\box106
+Package hyperref Info: Link coloring ON on input line 94.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count147
+\c@section@level=\count209
 )
-LaTeX Info: Redefining \ref on input line 91.
-LaTeX Info: Redefining \pageref on input line 91.
-LaTeX Info: Redefining \nameref on input line 91.
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entw√ºrfe\0.01\sample.out")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entw√ºrfe\0.01\sample.out")
-\@outlinefile=\write5
+\@outlinefile=\write7
 
 ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 111.
+LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 114.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxbiolinumt-tlf.fd
 File: T1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 111.
+(Font)              scaled to size 10.95pt on input line 114.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<./logo/HAW_logo.png, id=147, 768.8725pt x 231.86626pt>
+<./logo/HAW_logo.png, id=174, 768.8725pt x 231.86626pt>
 File: ./logo/HAW_logo.png Graphic file (type png)
  <use ./logo/HAW_logo.png>
-Package pdftex.def Info: ./logo/HAW_logo.png used on input line 111.
+Package pdftex.def Info: ./logo/HAW_logo.png used on input line 114.
 (pdftex.def)             Requested size: 284.52756pt x 85.80685pt.
 
-Overfull \hbox (227.62206pt too wide) in paragraph at lines 111--111
+Overfull \hbox (227.62206pt too wide) in paragraph at lines 114--114
 [][] 
  []
 
@@ -788,33 +1235,33 @@ Overfull \hbox (227.62206pt too wide) in paragraph at lines 111--111
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 111.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 114.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 111.
+(Font)              scaled to size 10.95pt on input line 114.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 111.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 114.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 24.88pt on input line 111.
+(Font)              scaled to size 24.88pt on input line 114.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 111.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 114.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 111.
+(Font)              scaled to size 14.4pt on input line 114.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <12> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 111.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 114.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 111.
+(Font)              scaled to size 12.0pt on input line 114.
 
-Overfull \hbox (318.98038pt too wide) in paragraph at lines 111--111
+Overfull \hbox (318.98038pt too wide) in paragraph at lines 114--114
 [][][][][][][] 
  []
 
-\haw@xpos=\skip67
-\haw@fw=\skip68
-\haw@tw=\skip69
+\haw@xpos=\skip91
+\haw@fw=\skip92
+\haw@tw=\skip93
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 111.
+(Font)              scaled to size 10.95pt on input line 114.
 
-Overfull \hbox (455.24419pt too wide) in paragraph at lines 111--111
+Overfull \hbox (455.24419pt too wide) in paragraph at lines 114--114
 []$[]$ 
  []
 
@@ -825,13 +1272,13 @@ Overfull \hbox (455.24419pt too wide) in paragraph at lines 111--111
 
  <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entw√ºrfe/0.01/logo/HAW_logo.png>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 111.
+(Font)              scaled to size 14.4pt on input line 114.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 111.
+(Font)              scaled to size 14.4pt on input line 114.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 111.
+(Font)              scaled to size 12.0pt on input line 114.
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--111
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 
  []
 
@@ -840,13 +1287,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--111
 Package hawstyle Warning: Only German subtitle has been set.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 123.
+(Font)              scaled to size 10.95pt on input line 126.
 [3]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 128.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 131.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 128.
-Package tocbasic Info: character protrusion at toc deactivated on input line 128.
+(Font)              scaled to size 20.74pt on input line 131.
+Package tocbasic Info: character protrusion at toc deactivated on input line 131.
  ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entw√ºrfe\0.01\sample.toc"
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 42.
@@ -856,7 +1303,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 
 
 ])
-\tf@toc=\write6
+\tf@toc=\write8
  [5]
 
 Class scrbook Warning: \float@listhead detected!
@@ -869,10 +1316,10 @@ Class scrbook Warning: \float@listhead detected!
 (scrbook)              Loading of package `scrhack' may help to
 (scrbook)              avoid this warning, if you are using a
 (scrbook)              a package that still implements the
-(scrbook)              deprecated \float@listhead interface  on input line 134.
+(scrbook)              deprecated \float@listhead interface  on input line 137.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entw√ºrfe\0.01\sample.lol")
-\tf@lol=\write7
+\tf@lol=\write9
  [6
 
 
@@ -895,31 +1342,31 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 \T1/LinuxLibertineT-TLF/m/n/10.95 (+20) groˇen Da-ten-men-gen einen ge-sch‰fts-fˆr-den-den Nut-zen ab-zu-rin-gen. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 \T1/LinuxLibertineT-TLF/m/n/10.95 (+20) WEIS?]. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 162.
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 165.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\ts1linuxlibertinet-tlf.fd
 File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 162.
+(Font)              scaled to size 10.95pt on input line 165.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -929,27 +1376,27 @@ Package microtype Info: Loading generic settings for font family
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 175--177
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
 \T1/LinuxLibertineT-TLF/m/n/10.95 (+20) des In-ter-es-ses an Ha-doop und Spark auf Goo-gle: 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--177
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
 
-<bilder/trends_spark_vs_hadoop.PNG, id=223, 963.6pt x 519.81703pt>
+<bilder/trends_spark_vs_hadoop.PNG, id=250, 963.6pt x 519.81703pt>
 File: bilder/trends_spark_vs_hadoop.PNG Graphic file (type png)
  <use bilder/trends_spark_vs_hadoop.PNG>
-Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 178.
+Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 181.
 (pdftex.def)             Requested size: 385.43317pt x 207.92313pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
 \T1/LinuxLibertineT-TLF/m/n/10.95 (+20) tai-liert do-ku-men-tiert und be-wer-tet. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
  []
 
@@ -962,79 +1409,221 @@ Kapitel 2.
 ] [5]
 Kapitel 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 \T1/LinuxLibertineT-TLF/m/n/10.95 (+20) f‰l-le be-trach-tet. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
 \T1/LinuxLibertineT-TLF/m/n/10.95 (+20) ter). ---[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
 
  []
 
 
-Overfull \hbox (38.43945pt too wide) in paragraph at lines 235--236
+Overfull \hbox (38.43945pt too wide) in paragraph at lines 238--239
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) --- Fu-si-on von Tweets und Mai-ling-lis-ten https://spark.apache.org/docs/1.3
 .0/mllib-feature-extraction.html
  []
 
-<./versuchsaufbau.pdf, id=241, 597.50786pt x 845.04686pt>
+<./versuchsaufbau.pdf, id=268, 597.50786pt x 845.04686pt>
 File: ./versuchsaufbau.pdf Graphic file (type pdf)
  <use ./versuchsaufbau.pdf>
-Package pdftex.def Info: ./versuchsaufbau.pdf used on input line 243.
+Package pdftex.def Info: ./versuchsaufbau.pdf used on input line 248.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entw√ºrfe\0.01\versuchsaufbau.pdf_tex"
-<versuchsaufbau.pdf, id=242, page=1, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=269, page=1, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
-<versuchsaufbau.pdf, id=243, page=2, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=270, page=2, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
-<versuchsaufbau.pdf, id=244, page=3, 597.50786pt x 845.04686pt>
+Overfull \hbox (4.89542pt too wide) in paragraph at lines 55--55
+[]\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Switch  
+ []
+
+
+Overfull \hbox (9.89595pt too wide) in paragraph at lines 57--57
+[]\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
+ []
+
+
+Overfull \hbox (9.89595pt too wide) in paragraph at lines 58--58
+[]\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
+ []
+
+
+Overfull \hbox (9.89595pt too wide) in paragraph at lines 59--59
+[]\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
+ []
+
+
+Overfull \hbox (9.89595pt too wide) in paragraph at lines 60--60
+[]\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
+ []
+
+<versuchsaufbau.pdf, id=271, page=3, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 3>
 Package pdftex.def Info: versuchsaufbau.pdf, page3 used on input line 61.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
-<versuchsaufbau.pdf, id=245, page=4, 597.50786pt x 845.04686pt>
+Overfull \hbox (5.07368pt too wide) in paragraph at lines 62--62
+[]\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Master  
+ []
+
+<versuchsaufbau.pdf, id=272, page=4, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 4>
 Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 )
-Overfull \hbox (194.53748pt too wide) in paragraph at lines 64--246
+Overfull \hbox (183.6496pt too wide) in paragraph at lines 64--250
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--246
+Underfull \hbox (badness 10000) in paragraph at lines 64--250
 
  []
+
+
+LaTeX Warning: Float too large for page by 300.05005pt on input line 251.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 Nachrichtengrˆﬂe & Worker \rightarrow
+                                            Worker & Master \rightarrow Work...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.258 ...ichtengrˆﬂe & Worker \rightarrow Worker &
+                                                   Master \rightarrow Worker...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...ichtengrˆﬂe & Worker \rightarrow Worker &
+                                                   Master \rightarrow Worker...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 ...ichtengrˆﬂe & Worker \rightarrow Worker &
+                                                   Master \rightarrow Worker...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...r \rightarrow Worker & Master \rightarrow
+                                                   Worker & Worker \rightarr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.258 ...rrow Worker & Master \rightarrow Worker &
+                                                   Worker \rightarrow Master...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...rrow Worker & Master \rightarrow Worker &
+                                                   Worker \rightarrow Master...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 ...rrow Worker & Master \rightarrow Worker &
+                                                   Worker \rightarrow Master...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...r \rightarrow Worker & Worker \rightarrow
+                                                   Master \\ [0.5ex] % inser...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.258 ...er & Worker \rightarrow Master \\ [0.5ex]
+                                                   % inserts table
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 ...er & Worker \rightarrow Master \\ [0.5ex]
+                                                   % inserts table
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 ...er & Worker \rightarrow Master \\ [0.5ex]
+                                                   % inserts table
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 [6
 
 
-]
-Overfull \vbox (279.34682pt too high) has occurred while \output is active []
-
- [7 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entw√ºrfe/0.01/versuchsaufbau.pdf> <C:/Users/Daniel
-/Documents/1 current projects/Bachelorarbeit/0 - Entw√ºrfe/0.01/versuchsaufbau.pdf
+] [7 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entw√ºrfe/0.01/versuchsaufbau.pdf> <C:/Users/Danie
+l/Documents/1 current projects/Bachelorarbeit/0 - Entw√ºrfe/0.01/versuchsaufbau.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entw√ºrfe/0.01/versuc
 hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -1046,9 +1635,17 @@ hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entw√ºrfe/0.01/versuc
 hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [8]
+>]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 277.
+
+Overfull \hbox (23.91565pt too wide) in paragraph at lines 302--303
+ [] 
+ []
+
+[8] [9] [10]
 Kapitel 4.
-[9
+[11
 
 
 ]
@@ -1058,7 +1655,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 11.
 )
 ===== Section: nomenclature
-[10
+[12
 
 
 
@@ -1068,30 +1665,30 @@ No file sample.nls.
 ===== Section: index
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entw√ºrfe\0.01\sample.ind")
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 306.
+(Font)              scaled to size 8.0pt on input line 361.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 306.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
- [11
+(Font)              scaled to size 6.0pt on input line 361.
+ [13
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entw√ºrfe\0.01\sample.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 362.
 Package rerunfilecheck Info: File `sample.out' has not changed.
 (rerunfilecheck)             Checksum: DA17B9F153576C59B7A85DDEA3D7E506;2799.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 362.
  ) 
 Here is how much of TeX's memory you used:
- 15356 strings out of 493921
- 247463 string characters out of 3144874
- 501985 words of memory out of 3000000
- 18240 multiletter control sequences out of 15000+200000
- 108534 words of font info for 115 fonts, out of 3000000 for 9000
+ 30710 strings out of 493921
+ 606538 string characters out of 3144874
+ 948982 words of memory out of 3000000
+ 33279 multiletter control sequences out of 15000+200000
+ 115535 words of font info for 130 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 76i,10n,114p,399b,610s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,10n,114p,417b,1313s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming
 /MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libert
 ine/lbtn_naooyc.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/Dani
@@ -1100,10 +1697,11 @@ s/enc/dvips/libertine/lbtn_7grukw.enc}<C:/Users/Daniel/AppData/Roaming/MiKTeX/2.
 umT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/Daniel/AppD
 ata/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/
 type1/public/libertine/LinLibertineTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLi
-bertineTI.pfb>
-Output written on sample.pdf (17 pages, 538482 bytes).
+bertineTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on sample.pdf (19 pages, 572269 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
- 25412 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 366 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 29616 words of extra memory for PDF output out of 29859 (max. 10000000)
 

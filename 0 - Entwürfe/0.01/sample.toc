@@ -31,14 +31,14 @@
 \contentsline {subsection}{\numberline {3.1.1}Beschreibung des Problems}{6}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Hardwarekontext und Performance-Basisdaten}{6}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Architektur\"ubersicht}{8}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Detailierte L\"osungsbeschreibung}{8}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Ergebnisse}{8}{subsection.3.1.5}
-\contentsline {section}{\numberline {3.2}Evaluierung einer spark-basierten Implementation von CDOs auf einem HPC Cluster mit nicht-lokalem Storage}{8}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Beschreibung des Problems}{8}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Hardwarekontext und Performance-Basisdaten}{8}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Architektur\"ubersicht}{8}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Detailierte L\"osungsbeschreibung}{8}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{8}{subsection.3.2.5}
-\contentsline {chapter}{\numberline {4}Schlussbetrachtung}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Kritische W\"urdigung der Ergebnisse}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{9}{section.4.2}
+\contentsline {subsection}{\numberline {3.1.4}Detailierte L\"osungsbeschreibung}{9}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Ergebnisse}{10}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}Evaluierung einer spark-basierten Implementation von CDOs auf einem HPC Cluster mit nicht-lokalem Storage}{10}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Beschreibung des Problems}{10}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Hardwarekontext und Performance-Basisdaten}{10}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Architektur\"ubersicht}{10}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Detailierte L\"osungsbeschreibung}{10}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{10}{subsection.3.2.5}
+\contentsline {chapter}{\numberline {4}Schlussbetrachtung}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Kritische W\"urdigung der Ergebnisse}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{11}{section.4.2}

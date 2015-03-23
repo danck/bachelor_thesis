@@ -29,6 +29,9 @@
 \usepackage{svg}
 \usepackage{amsmath}
 \usepackage{xcolor}
+\usepackage{fullpage} %% Wirklich?
+\usepackage{tikz}
+\usepackage{tikz-uml}
 
 \setsvg{inkscape={"C:/Program Files/Inkscape/inkscape.exe"= -z -C}}
 
@@ -150,7 +153,7 @@
 Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und sehr im Fokus von Medien und Unternehmen [VERWEIS]. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördenden Nutzen abzuringen.
 \break
 
-Unter dem Begriff "`große Datenmengen"' oder "`Big Data"' werden solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety [VERWEIS, Doug Laney] erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter SLAs auf einzelnen Maschinen verarbeitet werden können"' [VERWEIS, Hadoop/Yarn Entwickler].
+Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety [VERWEIS, Doug Laney] erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter SLAs auf einzelnen Maschinen verarbeitet werden können"' [VERWEIS, Hadoop/Yarn Entwickler].
 
 Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma [VERWEIS] als Framework zur Ausnutzung vieler kostengünstiger Rechner um Webseiten einzustufen und für andere Aufgaben [VERWEIS]. 
 
@@ -164,7 +167,7 @@ Reines Map-Reduce (nach Art von Hadoop) als Programmierparadigma zur Verarbeitun
 	\item Anfragen an ein solches reines Map-Reduce-System erfolgen imperativ in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so intuitiv und leicht erlernbar wie deklarative Abfragesprachen klassischer Datenbanken (z.B. SQL).
 \end{itemize}
 
-In der Folge entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen.
+In der Folge dieser Probleme entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen.
 
 \begin{itemize}
 	\item {[}VERWEIS: A survey of large scale...{]} oder Aufzählung.
@@ -241,15 +244,64 @@ Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager -
 \subsection{Hardwarekontext und Performance-Basisdaten}
 \textcolor{gray}{--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---}
 
-%%\begin{figure}[htbp]
-%%  \centering
+\begin{figure}[htbp]
   \includesvg[width=\paperwidth]{versuchsaufbau}
-%%  \caption{svg image}
-%%\end{figure}
+	\caption{svg image asd afasfffffffffffffffffffffff 
+	sdgdfg d d gh dg hgh sdhs gh  gh sgh fsj}
+\end{figure}
+
+\begin{table}[ht]
+\caption{---DUMMY--- Netzwerkdurchsatz} % title of Table
+\centering % used for centering table
+\begin{tabular}{c c c c} % centered columns (4 columns)
+\hline\hline %inserts double horizontal lines
+Nachrichtengröße & Worker \rightarrow Worker & Master \rightarrow Worker & Worker \rightarrow Master \\ [0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+1kB & 50ms & 837ms & 970ms \\ % inserting body of the table
+64kB & 47ms & 877ms & 230ms \\
+1MB & 31ms & 25ms & 415ms \\
+64MB & 35ms & 144ms & 2356ms \\ [1ex] 
+\hline %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
 
 \subsection{Architekturübersicht}
 \textcolor{gray}{--- hier kommen Verteilungs- und Komponentendiagramm hin ---}
 \subsection{Detailierte Lösungsbeschreibung}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{umlcomponent}{A}
+\umlbasiccomponent{B}
+\umlbasiccomponent[y=-2]{C}
+
+\umlrequiredinterface[interface=C-interface]{C}
+\umlprovidedinterface[interface=B-interface, with port, distance=3cm, padding=2.5cm]{B}
+\end{umlcomponent}
+\umlbasiccomponent[x=-10,y=1]{D}
+\umlbasiccomponent[x=3,y=-7.5]{E}
+\umlbasiccomponent[x=-2, y=-9]{F}
+\umlbasiccomponent[x=-7,y=-8]{G}
+\umlbasiccomponent[x=-7,y=-11]{H}
+
+\umlassemblyconnector[interface=DA, with port, name=toto]{D}{A}
+\umldelegateconnector{A-west-port}{B-west-interface}
+\umlVHVassemblyconnector[interface=AE, with port]{A}{E}
+\umlHVHassemblyconnector[interface=EF, with port, first arm]{E}{F}
+\umlHVHassemblyconnector[interface=GHF, with port, arm2=-2cm, last arm]{G}{F}
+\umlHVHassemblyconnector[with port, arm2=-2cm, last arm]{H}{F}
+
+\umlnote[x=-4, y=4, width=3.4cm]{B-west-interface}{I am the node named B-west-interface}
+\umlnote[x=2, y=4, width=3.4cm]{C-east-interface}{I am the node named C-east-interface}
+\umlnote[x=-8.5, y=-2, width=3.4cm]{toto-interface}{I am the node named toto-interface}
+\umlnote[x=-5.5, y=-4.5, width=3.4cm]{A-south-port}{I am the node named A-south-port}
+\umlnote[x=-1, y=-6, width=3.4cm]{AE-interface}{I am the node named AE-interface}
+\umlnote[x=2, y=-11, width=3.4cm]{F-east-port}{I am the node named F-east-port}
+\end{tikzpicture}
+\end{center}
+
 \textcolor{gray}{--- hier kommen laufzeitdiagramme und codeschnipsel hin ---}
 \subsection{Ergebnisse}
 \textcolor{gray}{--- Tabellen und Diagramme Ergebnissen, evt. Skalierungsverhalten ---}
