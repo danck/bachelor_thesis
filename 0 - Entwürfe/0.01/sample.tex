@@ -151,15 +151,13 @@
 
 \section{Motivation}
 
-Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und sehr im Fokus von Medien und Unternehmen [VERWEIS]. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördenden Nutzen abzuringen.
-\break
+Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und sehr im Fokus von Medien und Unternehmen [VERWEIS]. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördenden Nutzen abzuringen.\\
 
-Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety [VERWEIS, Doug Laney] erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter SLAs auf einzelnen Maschinen verarbeitet werden können"' [VERWEIS, Hadoop/Yarn Entwickler].
+Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety [VERWEIS, Doug Laney] erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter SLAs auf einzelnen Maschinen verarbeitet werden können"' [VERWEIS, Hadoop/Yarn Entwickler].\\
 
-Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma [VERWEIS] als Framework zur Ausnutzung vieler kostengünstiger Rechner um Webseiten einzustufen und für andere Aufgaben [VERWEIS]. 
+Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma [VERWEIS] als Framework zur Ausnutzung vieler kostengünstiger Rechner um Webseiten einzustufen und für andere Aufgaben [VERWEIS]. \\
 
-In Folge der Veröffentlichung ihrer Idee im Jahr 2005 [VERWEIS] wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) [VERWEIS] zum de-facto Standard für Big-Data-Analyseaufgaben [VERWEIS?].
-\break
+In Folge der Veröffentlichung ihrer Idee im Jahr 2005 [VERWEIS] wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) [VERWEIS] zum de-facto Standard für Big-Data-Analyseaufgaben [VERWEIS?].\\
 
 Reines Map-Reduce (nach Art von Hadoop) als Programmierparadigma zur Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
 \begin{itemize}
@@ -176,38 +174,38 @@ In der Folge dieser Probleme entstanden viele Ansätze dieses Paradigma zu ersetz
 
 Eine der Alternativen zu der Map-Reduce-Komponente in Hadoop ist die "`general engine for large-scale data processing"' Apache Spark.
 
-Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ein Vergleich des Interesses an Hadoop und Spark auf Google:
-\break
+Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ein Vergleich des Interesses an Hadoop und Spark auf Google:\\
 
 \includegraphics[scale=0.4]{bilder/trends_spark_vs_hadoop.PNG}
 
 \section{Kontextabgrenzung}
 Das Ziel dieser Arbeit ist es einen Einblick in die grundlegenden Konzepte und Anwendungsmöglichkeiten von Apache Spark zu vermitteln.
 
-Für ein tieferes Verständnis werden zwei Anwendungsfälle untersucht und deren Lösung detailiert dokumentiert und bewertet.
-\break
+Für ein tieferes Verständnis werden zwei Anwendungsfälle untersucht und deren Lösung detailiert dokumentiert und bewertet.\\
 
 Nur am Rande wird betrachtet:
 \begin{itemize}
-	\item Vergleich mit ähnlichen Produkten
-	\item Empirische Messung des Skalierungsverhaltens
+	\item Der Vergleich mit ähnlichen Produkten
+	\item Die Empirische Messung des Skalierungsverhaltens
 	\item Konkrete Hinweise zu Installation und Betrieb
 \end{itemize}
 
 \chapter{Vorstellung von Apache Spark}
 
 \section{Überblick}
+\textcolor{gray}{--- Was ist es, wofür ist es, wie funktioniert es, (JVM, Scala) ---}
 
 \section{Kernkonzepte}
 \textcolor{gray}{--- Warum ist Spark schnell, ausfallsicher, secure (und wo vielleicht nicht)? ---}
 \textcolor{gray}{--- Annahme: Durchsatzfaktoren RAM, Netzwerk, Festplatte ---}
-\subsection{Resilient Distributed Datasets}
-\subsection{Lineage}
-\subsection{DAG Scheduler}
+\subsection{Nutzung von Arbeitsspeicher}
+\subsection{Nutzung von persistentem Speicher}
+\subsection{Nutzung von CPUs}
+\subsection{Scheduling/Shuffling}
 
 \section{Standardbibliotheken}
 \textcolor{gray}{--- Warum ist Spark so einfach (und wo vielleicht nicht)? ---}
-\subsection{Spark SQL}
+\subsection{Dataframes/Spark SQL}
 \subsection{MLlib}
 \subsection{Streaming}
 \subsection{GraphX}
@@ -225,8 +223,7 @@ Nur am Rande wird betrachtet:
 
 
 \chapter{Spark in der Praxis}
-Im Folgenden wird Apache Spark im Rahmen zweier grundsätzlich verschiedener Anwendungsfälle betrachtet.
-\break
+Im Folgenden wird Apache Spark im Rahmen zweier grundsätzlich verschiedener Anwendungsfälle betrachtet. \\
 
 Beispiel 1: Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Spark als "`Client"' eines bestehenden Yarn Clustermanagers. \textcolor{gray}{--- Commodity Hardware (Rasperry Pi Cluster). ---}
 \break
