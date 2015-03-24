@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.7)  23 MAR 2015 20:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.7)  24 MAR 2015 17:02
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.tex"
@@ -1221,7 +1221,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<./logo/HAW_logo.png, id=174, 768.8725pt x 231.86626pt>
+<./logo/HAW_logo.png, id=178, 768.8725pt x 231.86626pt>
 File: ./logo/HAW_logo.png Graphic file (type png)
  <use ./logo/HAW_logo.png>
 Package pdftex.def Info: ./logo/HAW_logo.png used on input line 115.
@@ -1305,6 +1305,19 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 ])
 \tf@toc=\write8
  [5]
+Package tocbasic Info: character protrusion at lot deactivated on input line 136.
+
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.lot")
+\tf@lot=\write9
+ [6
+
+
+]
+Package tocbasic Info: character protrusion at lof deactivated on input line 137.
+
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.lof")
+\tf@lof=\write10
+
 
 Class scrbook Warning: \float@listhead detected!
 (scrbook)              Implementation of \float@listhead became
@@ -1318,9 +1331,12 @@ Class scrbook Warning: \float@listhead detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@listhead interface  on input line 138.
 
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.lol")
-\tf@lol=\write9
- [6
+[7
+
+
+] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.lol")
+\tf@lol=\write11
+ [8
 
 
 ]
@@ -1376,66 +1392,126 @@ Package microtype Info: Loading generic settings for font family
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-<bilder/trends_spark_vs_hadoop.PNG, id=252, 963.6pt x 519.81703pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+<bilder/trends_spark_vs_hadoop.PNG, id=277, 963.6pt x 519.81703pt>
 File: bilder/trends_spark_vs_hadoop.PNG Graphic file (type png)
  <use bilder/trends_spark_vs_hadoop.PNG>
-Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 179.
+Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 176.
 (pdftex.def)             Requested size: 385.43317pt x 207.92313pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+ [2 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - EntwÃ¼rfe/0.01/bilder/trends_spark_vs_hadoop.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-[2 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - EntwÃ¼rfe/0.01/bilder/trends_spark_vs_hadoop.PNG>]
 [3]
 Kapitel 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+LinuxLibertineMonoT-TLF on input line 198.
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxlibertinemonot-tlf.fd
+File: T1LinuxLibertineMonoT-TLF.fd 2012/12/06 (autoinst) Font definitions for T1/LinuxLibertineMonoT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 198.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinuxLibertineMonoT-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 198.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 199.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 199.
+
+Overfull \hbox (0.14587pt too wide) in paragraph at lines 208--209
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.14587pt too wide) in paragraph at lines 216--217
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
 [4
 
 
-] [5]
+] [5] [6]
 Kapitel 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--228
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
 \T1/LinuxLibertineT-TLF/m/n/10.95 (+20) ter). ---[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--228
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
  []
 
 
-Overfull \hbox (38.43945pt too wide) in paragraph at lines 234--235
+Overfull \hbox (38.43945pt too wide) in paragraph at lines 267--268
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) --- Fu-si-on von Tweets und Mai-ling-lis-ten https://spark.apache.org/docs/1.3
 .0/mllib-feature-extraction.html
  []
 
-runsystem("C:/Program Files/Inkscape/inkscape.exe"= -z -C -f./versuchsaufbau.svg -A./versuchsaufbau.pdf --export-latex).
-..executed.
-
-<./versuchsaufbau.pdf, id=270, 597.50786pt x 845.04686pt>
+<./versuchsaufbau.pdf, id=324, 597.50786pt x 845.04686pt>
 File: ./versuchsaufbau.pdf Graphic file (type pdf)
  <use ./versuchsaufbau.pdf>
-Package pdftex.def Info: ./versuchsaufbau.pdf used on input line 244.
+Package pdftex.def Info: ./versuchsaufbau.pdf used on input line 277.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\versuchsaufbau.pdf_tex"
-<versuchsaufbau.pdf, id=271, page=1, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=325, page=1, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
-<versuchsaufbau.pdf, id=272, page=2, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=326, page=2, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
@@ -1465,7 +1541,7 @@ Overfull \hbox (9.89595pt too wide) in paragraph at lines 60--60
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
  []
 
-<versuchsaufbau.pdf, id=273, page=3, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=327, page=3, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 3>
 Package pdftex.def Info: versuchsaufbau.pdf, page3 used on input line 61.
@@ -1475,28 +1551,28 @@ Overfull \hbox (5.07368pt too wide) in paragraph at lines 62--62
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Master  
  []
 
-<versuchsaufbau.pdf, id=274, page=4, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=328, page=4, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 4>
 Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 )
-Overfull \hbox (183.6496pt too wide) in paragraph at lines 64--245
+Overfull \hbox (183.6496pt too wide) in paragraph at lines 64--278
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--245
+Underfull \hbox (badness 10000) in paragraph at lines 64--278
 
  []
 
 
-LaTeX Warning: Float too large for page by 300.05005pt on input line 246.
+LaTeX Warning: Float too large for page by 300.05005pt on input line 279.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 Nachrichtengröße & Worker \rightarrow
+l.286 Nachrichtengröße & Worker \rightarrow
                                             Worker & Master \rightarrow Work...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1504,7 +1580,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \endtemplate 
-l.253 ...ichtengröße & Worker \rightarrow Worker &
+l.286 ...ichtengröße & Worker \rightarrow Worker &
                                                    Master \rightarrow Worker...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1515,7 +1591,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...ichtengröße & Worker \rightarrow Worker &
+l.286 ...ichtengröße & Worker \rightarrow Worker &
                                                    Master \rightarrow Worker...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1523,7 +1599,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.253 ...ichtengröße & Worker \rightarrow Worker &
+l.286 ...ichtengröße & Worker \rightarrow Worker &
                                                    Master \rightarrow Worker...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1534,7 +1610,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...r \rightarrow Worker & Master \rightarrow
+l.286 ...r \rightarrow Worker & Master \rightarrow
                                                    Worker & Worker \rightarr...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1542,7 +1618,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \endtemplate 
-l.253 ...rrow Worker & Master \rightarrow Worker &
+l.286 ...rrow Worker & Master \rightarrow Worker &
                                                    Worker \rightarrow Master...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1553,7 +1629,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...rrow Worker & Master \rightarrow Worker &
+l.286 ...rrow Worker & Master \rightarrow Worker &
                                                    Worker \rightarrow Master...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1561,7 +1637,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.253 ...rrow Worker & Master \rightarrow Worker &
+l.286 ...rrow Worker & Master \rightarrow Worker &
                                                    Worker \rightarrow Master...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1572,7 +1648,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...r \rightarrow Worker & Worker \rightarrow
+l.286 ...r \rightarrow Worker & Worker \rightarrow
                                                    Master \\ [0.5ex] % inser...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1580,7 +1656,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \endtemplate 
-l.253 ...er & Worker \rightarrow Master \\ [0.5ex]
+l.286 ...er & Worker \rightarrow Master \\ [0.5ex]
                                                    % inserts table
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1591,7 +1667,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...er & Worker \rightarrow Master \\ [0.5ex]
+l.286 ...er & Worker \rightarrow Master \\ [0.5ex]
                                                    % inserts table
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1599,7 +1675,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.253 ...er & Worker \rightarrow Master \\ [0.5ex]
+l.286 ...er & Worker \rightarrow Master \\ [0.5ex]
                                                    % inserts table
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1629,17 +1705,15 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no k in font nullfont!
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 271.
 
-Overfull \hbox (34.47556pt too wide) in paragraph at lines 297--298
+Overfull \hbox (34.47556pt too wide) in paragraph at lines 330--331
  [] 
  []
 
-[6
+[7
 
 
-] [7 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - EntwÃ¼rfe/0.01/versuchsaufbau.pdf> <C:/Users/Danie
+] [8 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - EntwÃ¼rfe/0.01/versuchsaufbau.pdf> <C:/Users/Danie
 l/Documents/1 current projects/Bachelorarbeit/0 - EntwÃ¼rfe/0.01/versuchsaufbau.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - EntwÃ¼rfe/0.01/versuc
@@ -1652,7 +1726,7 @@ hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - EntwÃ¼rfe/0.01/versuc
 hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [8] (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+>] [9] (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang2.sty
@@ -1661,48 +1735,33 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang3.sty
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+LinuxLibertineMonoT-TLF on input line 304.
-
-(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxlibertinemonot-tlf.fd
-File: T1LinuxLibertineMonoT-TLF.fd 2012/12/06 (autoinst) Font definitions for T1/LinuxLibertineMonoT-TLF.
-)
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 304.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `LinuxLibertineMonoT-TLF' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 304.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 305.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/bx/n' in size <10> not available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/b/n' tried instead on input line 305.
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/b/n' tried instead on input line 338.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 305.
- [9]
-Overfull \hbox (12.146pt too wide) in paragraph at lines 327--328
+(Font)              scaled to size 10.0pt on input line 338.
+ [10]
+Overfull \hbox (12.146pt too wide) in paragraph at lines 360--361
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (5.8342pt too wide) in paragraph at lines 375--376
+Overfull \hbox (5.8342pt too wide) in paragraph at lines 408--409
  [] 
  []
 
-[10] [11] [12]
+[11] [12] [13]
 Kapitel 4.
-[13
+[14
 
 
 ]
 ===== Section: literature
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.bbl"
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 11.
+(Font)              scaled to size 10.95pt on input line 17.
 )
 ===== Section: nomenclature
-[14
+[15
 
 
 
@@ -1712,28 +1771,28 @@ No file sample.nls.
 ===== Section: index
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.ind")
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 434.
- [15
+(Font)              scaled to size 8.0pt on input line 466.
+ [16
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 467.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 467.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - EntwÃ¼rfe\0.01\sample.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 467.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 467.
 Package rerunfilecheck Info: File `sample.out' has not changed.
-(rerunfilecheck)             Checksum: DA17B9F153576C59B7A85DDEA3D7E506;2799.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
+(rerunfilecheck)             Checksum: 7FA4572B4B432238FD90EC83BC4E2F2C;2917.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 467.
  ) 
 Here is how much of TeX's memory you used:
- 32208 strings out of 493921
- 633489 string characters out of 3144874
- 971299 words of memory out of 3000000
- 34728 multiletter control sequences out of 15000+200000
- 117515 words of font info for 136 fonts, out of 3000000 for 9000
+ 32325 strings out of 493921
+ 635582 string characters out of 3144874
+ 973521 words of memory out of 3000000
+ 34798 multiletter control sequences out of 15000+200000
+ 118688 words of font info for 145 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 76i,11n,114p,438b,2025s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,11n,114p,438b,2020s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming
 /MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libert
 ine/lbtn_d6jdyt.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Dani
@@ -1746,9 +1805,9 @@ neMTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/liberti
 pData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fon
 ts/type1/public/libertine/LinLibertineTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on sample.pdf (21 pages, 641875 bytes).
+Output written on sample.pdf (24 pages, 660989 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 31152 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 31160 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{3}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -7,10 +7,23 @@
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
 
-\bibitem[One und Two(2010)]{sample_bib}
-\dinatlabel{One und Two 2010} \textsc{One}, Author~; \textsc{Two}, Author:
-\newblock A Sample Publication.
+\bibitem[Hail99(1999)]{Hail99}
+\dinatlabel{Hail99 1999} \emph{Concrete Abstractions: An Introduction to
+  Computer Science Using Scheme}.
+\newblock 1999. --
+\newblock 278ff.~S
+
+\bibitem[Singh und Reddy(2014)]{Sin14}
+\dinatlabel{Singh und Reddy 2014} \textsc{Singh}, Dilpreet~; \textsc{Reddy},
+  Chandan~K.:
+\newblock A survey on platforms for big data analytics.
 \newblock
-\newblock (2010)
+\newblock (2014)
+
+\bibitem[Wootters(2001)]{Woo01}
+\dinatlabel{Wootters 2001} \textsc{Wootters}, W.~K.:
+\newblock Entanglement of formation and concurrence.
+\newblock In: \emph{Quantum Information and Computation}
+\newblock 1 (2001), S.~27--47
 
 \end{thebibliography}
