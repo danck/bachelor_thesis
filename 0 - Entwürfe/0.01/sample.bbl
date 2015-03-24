@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{8}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -7,11 +7,44 @@
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
 
-\bibitem[Hail99(1999)]{Hail99}
-\dinatlabel{Hail99 1999} \emph{Concrete Abstractions: An Introduction to
-  Computer Science Using Scheme}.
+\bibitem[Dean und Ghemawat(2004)]{Dean04}
+\dinatlabel{Dean und Ghemawat 2004} \textsc{Dean}, Jeffrey~; \textsc{Ghemawat},
+  Sanjay:
+\newblock MapReduce: Simplied Data Processing on Large Clusters.
+\newblock In: \emph{OSDI}
+\newblock (2004)
+
+\bibitem[Google()]{googletrends}
+\dinatlabel{Google } \textsc{Google}:
+\newblock \emph{Google Trends}. --
+\newblock URL \url{https://www.google.com/trends}
+
+\bibitem[Laney(2001)]{Lan01}
+\dinatlabel{Laney 2001} \textsc{Laney}, Doug:
+\newblock 3D Data Management: Controlling Data Volume, Velocity and Variety.
+\newblock In: \emph{Application Delivery Strategies}
+\newblock (2001)
+
+\bibitem[Max~Hailperin(1999)]{Hail}
+\dinatlabel{Max~Hailperin 1999} \textsc{Max~Hailperin}, Karl~K.:
+\newblock \emph{Concrete Abstractions: An Introduction to Computer Science
+  Using Scheme}.
 \newblock 1999. --
 \newblock 278ff.~S
+
+\bibitem[Page(2001)]{page2001method}
+\dinatlabel{Page 2001} \textsc{Page}, Lawrence:
+\newblock \emph{Method for node ranking in a linked database}.
+\newblock September~4 2001. --
+\newblock URL \url{http://www.google.com/patents/US6285999}. --
+\newblock US Patent 6,285,999
+
+\bibitem[Sanjay~Ghemawat(2003)]{Ghema03}
+\dinatlabel{Sanjay~Ghemawat 2003} \textsc{Sanjay~Ghemawat}, Shun-Tak~L.:
+\newblock The Google File System
+\newblock / Google.
+\newblock 2003.
+\newblock  -- Forschungsbericht
 
 \bibitem[Singh und Reddy(2014)]{Sin14}
 \dinatlabel{Singh und Reddy 2014} \textsc{Singh}, Dilpreet~; \textsc{Reddy},

@@ -33,6 +33,10 @@
 \usepackage{tikz}
 \usepackage{tikz-uml}
 \usepackage{listings}
+\def\dollar{\$}
+\lstset{
+        literate={my_dollar}{\$}1
+}
 
 \setsvg{inkscape={"C:/Program Files/Inkscape/inkscape.exe"= -z -C}}
 
@@ -99,12 +103,12 @@
 %% customize (see readme.pdf for supported values)
 \HAWThesisProperties{Author={Daniel Kirchner}
                     ,Title={Skalierbare Datenanalyse mit Apache Spark}
-										,SubTitle={Zugrunde liegende Konzepte und praktische Anwendung}
+										,SubTitle={}
                     ,EnglishTitle={Scalable Data Analysis with Apache Spark}
                     ,ThesisType={Bachelorarbeit}
                     ,ExaminationType={Bachelorprüfung}
                     ,DegreeProgramme={Bachelor of Science Angewandte Informatik}
-                    ,ThesisExperts={Prof. Dr. Kahlbrandt \and Prof. Dr. Zweitprüfer}
+                    ,ThesisExperts={Prof. Dr. Kahlbrandt \and Prof. Dr. Zukunft}
                     ,ReleaseDate={1. Januar 2345}
                   }
 
@@ -153,17 +157,17 @@
 
 Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und sehr im Fokus von Medien und Unternehmen [VERWEIS]. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördenden Nutzen abzuringen.\\
 
-Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety [VERWEIS, Doug Laney] erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter SLAs auf einzelnen Maschinen verarbeitet werden können"' [VERWEIS, Hadoop/Yarn Entwickler].\\
+Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety [\cite{Lan01}] erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter SLAs auf einzelnen Maschinen verarbeitet werden können"' [VERWEIS, Hadoop/Yarn Entwickler].\\
 
-Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma [VERWEIS] als Framework zur Ausnutzung vieler kostengünstiger Rechner um Webseiten einzustufen und für andere Aufgaben [VERWEIS]. \\
+Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma [\cite{Dean04}] als Framework zur Ausnutzung vieler kostengünstiger Rechner für verschiedene Aufgaben (u.a.  Indizierung von Webseiten und PageRank [\cite{page2001method}]). \\
 
-In Folge der Veröffentlichung ihrer Idee im Jahr 2005 [VERWEIS] wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) [VERWEIS] zum de-facto Standard für Big-Data-Analyseaufgaben [VERWEIS?].\\
+In Folge der Veröffentlichung dieser Idee im Jahr 2004 wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) [\cite{Ghema03}] zum de-facto Standard für Big-Data-Analyseaufgaben [VERWEIS?].\\
 
 Reines Map-Reduce (nach Art von Hadoop) als Programmierparadigma zur Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
 \begin{itemize}
 	\item Daten, die in hoher Frequenz entstehen und schnell verarbeitet werden sollen erfordern häufiges Neustarten von Map-Reduce-Jobs. Die Folge ist kostspieliger Overhead durch Verwaltung/Scheduling der Jobs und gegebenenfalls wiederholtem Einlesen von Daten.
 	\item Algorithmen die während ihrer Ausführung iterativ Zwischenergebnisse erzeugen und auf vorherige angewiesen sind (häufig bei Maschinenlernalgorithmen) können nur durch persistentes Speichern der Daten und wiederholtes Einlesen zwischen allen Iterationsschritten implementiert werden.
-	\item Anfragen an ein solches reines Map-Reduce-System erfolgen imperativ in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so intuitiv und leicht erlernbar wie deklarative Abfragesprachen klassischer Datenbanken (z.B. SQL).
+	\item Anfragen an ein solches Map-Reduce-System erfolgen imperativ in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so intuitiv und leicht erlernbar wie deklarative Abfragesprachen klassischer Datenbanken (z.B. SQL).
 \end{itemize}
 
 In der Folge dieser Probleme entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen [\cite{Sin14}].\\
@@ -173,8 +177,8 @@ Eine der Alternativen zu der Map-Reduce-Komponente in Hadoop ist die "`general e
 Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ein Vergleich des Interesses an Hadoop und Spark auf Google:\\
 
 \begin{figure}[h]
-\includegraphics[scale=0.4]{bilder/trends_spark_vs_hadoop.PNG}
-\caption[Google Trends]{Vergleich der Suchanfragen von Spark und Hadoop auf Google}
+\includegraphics[scale=0.6]{bilder/trends_spark_vs_hadoop.PNG}
+\caption[Google Trends]{Vergleich der Suchanfragen zu Spark und Hadoop, Stand 24.03.2014 [\cite{googletrends}]}
 \end{figure}
 
 \section{Kontextabgrenzung}
@@ -192,11 +196,11 @@ Nur am Rande wird betrachtet:
 \chapter{Vorstellung von Apache Spark}
 Aus Sicht eines Nutzers ist Apache Spark eine API zum Zugriff auf Daten und deren Verarbeitung.\\
 
-Diese API (für die Sprachen Scala, Java und Python verfügbar), kann im einfachsten Fall über eine eigene Spark Konsole mit REPL-Pattern [\cite{Hail}] verwendet werden.\\
-Eine Zählung von Wortvorkommen - das "`Hello World"' der Big Data Szene - lässt sich dort mit zwei Befehlen realisieren:\\
+Diese API (wahlweise für die Sprachen Scala, Java und Python verfügbar), kann im einfachsten Fall über eine eigene Spark Konsole mit REPL-Pattern [\cite{Hail}] verwendet werden.\\
+Die Zählung von Wortvorkommen in einem Text - das "`Hello World"' der Big Data Szene - lässt sich dort mit zwei Befehlen realisieren:\\
 
 \begin{lstlisting}[caption=Word Count in der Spark Konsole]
-$ ./spark-shell
+my_dollar ./spark-shell
 [...]
      / __/__  ___ _____/ /__
     _\ \/ _ \/ _ `/ __/  '_/
@@ -213,18 +217,22 @@ text.flatMap(line => line.split(" "))
 .reduceByKey(_ + _)
 .collect()
 [...]
-res0: Array[(String, Int)] = Array((Tyrann,,1), (im,2), (Doch,1), ...	
+res0: Array[(String, Int)] = Array((Tyrann,,1), (im,2), (Doch,1) ...)
+
 \end{lstlisting}
 
 \\
 
-Aus Sicht eines Administrators ist Apache Spark eine Applikation auf einem Rechencluster, die sich in der Anwendungsschicht befindet und charakteristische Anforderungen insbesondere an Lokalität des Storages und Netzwerkperformance stellt.\\
+Aus Sicht eines Administrators ist Apache Spark eine Applikation auf einem Rechencluster, die sich in der Anwendungsschicht befindet und charakteristische Anforderungen insbesondere an Lokalität des Storages und die Netzwerkperformance stellt.\\
 
 Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in welchem Ökosystem von Anwendungen sich Apache Spark bewegt wird im nächsten Abschnitt beleuchtet.
 
 \section{Überblick}
 \textcolor{gray}{--- Was ist es, wofür ist es, wie funktioniert es, (JVM, Scala) ---}
 
+\begin{tikzpicture}
+  \node[cylinder,draw=black,thick,aspect=0.7,minimum height=1.7cm,minimum width=1.5cm,shape border rotate=90,cylinder uses custom fill, cylinder body fill=blue!30,cylinder end fill=blue!10] (Storage) {Storage};
+\end{tikzpicture}
 
 \section{Kernkonzepte}
 \textcolor{gray}{--- Warum ist Spark schnell, ausfallsicher, secure (und wo vielleicht nicht)? ---}
@@ -233,9 +241,20 @@ Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in 
 \subsection{Nutzung von persistentem Speicher}
 \subsection{Nutzung von CPUs}
 \subsection{Scheduling/Shuffling}
+\subsection{Kern-API}
 
 \section{Standardbibliotheken}
-\textcolor{gray}{--- Warum ist Spark so einfach (und wo vielleicht nicht)? ---}
+\textcolor{gray}{--- Warum ist Spark so einfach (und wo vielleicht nicht)? ---}\\
+Die vier Standardbibliotheken erweitern die Kern-API für bestimmte, häufig genutzte Aufgaben aus Bereichen der Datenanalyse.\\
+
+Die bedienten Bereiche sind
+\begin{itemize}
+	\item Deklaratives Abfragen und On-the-Fly-Transformationen (\textit{Spark SQL})
+	\item Maschinenlernverfahren (\textit{MLlib})
+	\item Echtzeitbehandlung von eingehenden Daten (\textit{Streaming})
+	\item Operationen auf Graph-artigen Strukturen (\textit{GraphX})
+\end{itemize}
+
 \subsection{Dataframes/Spark SQL}
 \subsection{MLlib}
 \subsection{Streaming}
@@ -244,10 +263,10 @@ Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in 
 \section{Betrieb und Security}
 
 \section{Entwicklergemeinschaft}
-\textcolor{gray}{--- Herkunft, Apache Foundation, Entwicklungsphilosophien, Anzahl Entwickler, ... ---}
+\textcolor{gray}{--- Herkunft, Apache Foundation, Entwicklungsphilosophien, Anzahl Entwickler, ... ---}\\
 
 \section{Verwandte Produkte}
-\textcolor{gray}{--- Ergänzende oder konkurrierende Produkte ---}
+\textcolor{gray}{--- Ergänzende oder konkurrierende Produkte ---}\\
 \subsection{YARN}
 \subsection{Mesos}
 \subsection{Flink}
@@ -256,22 +275,22 @@ Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in 
 \chapter{Spark in der Praxis}
 Im Folgenden wird Apache Spark im Rahmen zweier grundsätzlich verschiedener Anwendungsfälle betrachtet. \\
 
-Beispiel 1: Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Spark als "`Client"' eines bestehenden Yarn Clustermanagers. \textcolor{gray}{--- Commodity Hardware (Rasperry Pi Cluster). ---}
-\break
+Beispiel 1: Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Spark als "`Client"' eines bestehenden Yarn Clustermanagers. \textcolor{gray}{--- Commodity Hardware (Rasperry Pi Cluster). ---}\\
 
-Beispiel 2: Eine untypische Anwendung mit verteiltem entfernten Storage und dem Spark Standalone Clustermanager. \textcolor{gray}{--- HPC Hardware ("`Thunder"' des Hamburger KlimaCampus). ---}
+
+Beispiel 2: Eine untypische Anwendung mit verteiltem entfernten Storage und dem Spark Standalone Clustermanager. \textcolor{gray}{--- HPC Hardware ("`Thunder"' des Hamburger KlimaCampus). ---}\\
 
 \section{Echtzeitbewertung von Twitter-Accounts nach ihrer Relvanz für Spark}
 \textcolor{gray}{--- Fusion von Tweets und Mailinglisten 
 https://spark.apache.org/docs/1.3.0/mllib-feature-extraction.html
-Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager ---}
+Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager ---}\\
 \subsection{Beschreibung des Problems}
-\textcolor{gray}{--- Es sollen die beiden Spark Mailingslisten (Developer, User) zur Identifikation relevanter und aktueller Themen genutzt werden. Mit den so bewerteten Begriffen können wiederum Tweets bewertet werden. Mit den Tweets können dann ganze Accounts nach ihrer Relevanz beurteilt werden. ---}
-\textcolor{gray}{--- Zwei Datenquellen: Tweets (Nahe-Echtzeit), Entwickler-Emails (Sporadisch) ---}
-\textcolor{gray}{--- Stichworte: HDFS, Yarn, Rasperri Pi Cluster, Machine Learning, Feature Extraction, Big Data Life Cycle ---}
+\textcolor{gray}{--- Es sollen die beiden Spark Mailingslisten (Developer, User) zur Identifikation relevanter und aktueller Themen genutzt werden. Mit den so bewerteten Begriffen können wiederum Tweets bewertet werden. Mit den Tweets können dann ganze Accounts nach ihrer Relevanz beurteilt werden. ---}\\
+\textcolor{gray}{--- Zwei Datenquellen: Tweets (Nahe-Echtzeit), Entwickler-Emails (Sporadisch) ---}\\
+\textcolor{gray}{--- Stichworte: HDFS, Yarn, Rasperri Pi Cluster, Machine Learning, Feature Extraction, Big Data Life Cycle ---}\\
 
 \subsection{Hardwarekontext und Performance-Basisdaten}
-\textcolor{gray}{--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---}
+\textcolor{gray}{--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---}\\
 
 \begin{figure}[htbp]
   \includesvg[width=\paperwidth]{versuchsaufbau}
@@ -332,7 +351,7 @@ Nachrichtengröße & Worker \rightarrow Worker & Master \rightarrow Worker & Worke
 
 
 \subsection{Detailierte Lösungsbeschreibung}
-\textcolor{gray}{--- hier kommen diagramme und codeschnipsel hin ---}
+\textcolor{gray}{--- hier kommen diagramme und codeschnipsel hin ---}\\
 
 \begin{lstlisting}[language=Scala, caption=Treiber für Testanwendung (Programmiersprache Scala)]
 import org.apache.spark.SparkContext
