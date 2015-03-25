@@ -26,11 +26,7 @@
 \usepackage{hawstyle}
 \usepackage{lipsum} %% for sample text
 
-\usepackage[backend=bibtex,bibstyle=alphabetic,citestyle=alphabetic,]{biblatex}
-\addbibresource{sample.bib}
-\renewcommand{\bibfootnotewrapper}[1]{%
-  \bibsentence\mkbibbrackets{#1}\addperiod}
-%\bibliography{sample}
+%\usepackage[style=footnote-dw]{biblatex}
 \usepackage{svg}
 \usepackage{amsmath}
 \usepackage{xcolor}
@@ -162,7 +158,7 @@
 
 Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und sehr im Fokus von Medien und Unternehmen [VERWEIS]. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördenden Nutzen abzuringen.\\
 
-Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety \footcite{Lan01} erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter SLAs auf einzelnen Maschinen verarbeitet werden können"' [VERWEIS, Hadoop/Yarn Entwickler].\\
+Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety [\cite{Lan01}] erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter SLAs auf einzelnen Maschinen verarbeitet werden können"' [VERWEIS, Hadoop/Yarn Entwickler].\\
 
 Als Unternehmen, das früh mit solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma [\cite{Dean04}] als Framework zur Ausnutzung vieler kostengünstiger Rechner für verschiedene Aufgaben (u.a.  Indizierung von Webseiten und PageRank [\cite{page2001method}]). \\
 
@@ -171,7 +167,7 @@ In Folge der Veröffentlichung dieser Idee im Jahr 2004 wurde Map-Reduce in Form 
 Reines Map-Reduce (nach Art von Hadoop) als Programmierparadigma zur Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
 \begin{itemize}
 	\item Daten, die in hoher Frequenz entstehen und schnell verarbeitet werden sollen erfordern häufiges Neustarten von Map-Reduce-Jobs. Die Folge ist kostspieliger Overhead durch Verwaltung/Scheduling der Jobs und gegebenenfalls wiederholtem Einlesen von Daten.
-	\item Algorithmen die während ihrer Ausführung iterativ Zwischenergebnisse erzeugen und auf vorherige angewiesen sind (häufig bei Maschinenlernalgorithmen) können nur durch persistentes Speichern der Daten und wiederholtes Einlesen zwischen allen Iterationsschritten implementiert werden.
+	\item Algorithmen die während 	ihrer Ausführung iterativ Zwischenergebnisse erzeugen und auf vorherige angewiesen sind (häufig bei Maschinenlernalgorithmen) können nur durch persistentes Speichern der Daten und wiederholtes Einlesen zwischen allen Iterationsschritten implementiert werden.
 	\item Anfragen an ein solches Map-Reduce-System erfolgen imperativ in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so intuitiv und leicht erlernbar wie deklarative Abfragesprachen klassischer Datenbanken (z.B. SQL).
 \end{itemize}
 
@@ -472,8 +468,7 @@ See also \cite{Woo01}.
 \typeout{===== Section: literature}
 %% read the documentation for customizing the style
 \bibliographystyle{dinat}
-%\bibliography{sample}
-\printbibliography{sample}
+\bibliography{sample}
 
 \typeout{===== Section: nomenclature}
 %% uncomment if a TOC entry is needed

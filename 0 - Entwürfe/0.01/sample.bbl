@@ -1,62 +1,182 @@
-\begin{thebibliography}{8}
-% this bibliography was produced with the style dinat.bst v2.5
+% $ biblatex auxiliary file $
+% $ biblatex version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
 \makeatletter
-\newcommand{\dinatlabel}[1]%
-{\ifNAT@numbers\else\NAT@biblabelnum{#1}\hspace{2\labelsep}\fi}
-\makeatother
-\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
-\expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem[Dean und Ghemawat(2004)]{Dean04}
-\dinatlabel{Dean und Ghemawat 2004} \textsc{Dean}, Jeffrey~; \textsc{Ghemawat},
-  Sanjay:
-\newblock MapReduce: Simplied Data Processing on Large Clusters.
-\newblock In: \emph{OSDI}
-\newblock (2004)
+\entry{Dean04}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Dean}{D.}%
+     {Jeffrey}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ghemawat}{G.}%
+     {Sanjay}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DJGS1}
+  \strng{fullhash}{DJGS1}
+  \field{labelalpha}{DG04}
+  \field{sortinit}{D}
+  \field{title}{MapReduce: Simplied Data Processing on Large Clusters}
+  \field{journaltitle}{OSDI}
+  \field{year}{2004}
+\endentry
 
-\bibitem[Google()]{googletrends}
-\dinatlabel{Google } \textsc{Google}:
-\newblock \emph{Google Trends}. --
-\newblock URL \url{https://www.google.com/trends}
+\entry{googletrends}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Google}{G.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{G1}
+  \strng{fullhash}{G1}
+  \field{labelalpha}{Goo}
+  \field{sortinit}{G}
+  \field{title}{Google Trends}
+  \verb{url}
+  \verb https://www.google.com/trends
+  \endverb
+\endentry
 
-\bibitem[Laney(2001)]{Lan01}
-\dinatlabel{Laney 2001} \textsc{Laney}, Doug:
-\newblock 3D Data Management: Controlling Data Volume, Velocity and Variety.
-\newblock In: \emph{Application Delivery Strategies}
-\newblock (2001)
+\entry{Lan01}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Laney}{L.}%
+     {Doug}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LD1}
+  \strng{fullhash}{LD1}
+  \field{labelalpha}{Lan01}
+  \field{sortinit}{L}
+  \field{title}{3D Data Management: Controlling Data Volume, Velocity and
+  Variety}
+  \field{journaltitle}{Application Delivery Strategies}
+  \field{year}{2001}
+\endentry
 
-\bibitem[Max~Hailperin(1999)]{Hail}
-\dinatlabel{Max~Hailperin 1999} \textsc{Max~Hailperin}, Karl~K.:
-\newblock \emph{Concrete Abstractions: An Introduction to Computer Science
-  Using Scheme}.
-\newblock 1999. --
-\newblock 278ff.~S
+\entry{Hail}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Max~Hailperin}{M.~H.}%
+     {Karl~Knight}{K.~K.}%
+     {}{}%
+     {Barbara~Kaiser}{B.~K.}}%
+  }
+  \strng{namehash}{MHBKKK1}
+  \strng{fullhash}{MHBKKK1}
+  \field{labelalpha}{MH99}
+  \field{sortinit}{M}
+  \field{pages}{278ff.}
+  \field{title}{Concrete Abstractions: An Introduction to Computer Science
+  Using Scheme}
+  \field{year}{1999}
+\endentry
 
-\bibitem[Page(2001)]{page2001method}
-\dinatlabel{Page 2001} \textsc{Page}, Lawrence:
-\newblock \emph{Method for node ranking in a linked database}.
-\newblock September~4 2001. --
-\newblock URL \url{http://www.google.com/patents/US6285999}. --
-\newblock US Patent 6,285,999
+\entry{page2001method}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Page}{P.}%
+     {Lawrence}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Google Patents}%
+  }
+  \strng{namehash}{PL1}
+  \strng{fullhash}{PL1}
+  \field{labelalpha}{Pag01}
+  \field{sortinit}{P}
+  \field{note}{US Patent 6,285,999}
+  \field{title}{Method for node ranking in a linked database}
+  \verb{url}
+  \verb http://www.google.com/patents/US6285999
+  \endverb
+  \field{year}{2001}
+  \warn{\item Invalid format of field 'month'}
+\endentry
 
-\bibitem[Sanjay~Ghemawat(2003)]{Ghema03}
-\dinatlabel{Sanjay~Ghemawat 2003} \textsc{Sanjay~Ghemawat}, Shun-Tak~L.:
-\newblock The Google File System
-\newblock / Google.
-\newblock 2003.
-\newblock  -- Forschungsbericht
+\entry{Ghema03}{report}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sanjay~Ghemawat}{S.~G.}%
+     {Shun-Tak~Leung}{S.-T.~L.}%
+     {}{}%
+     {Howard~Gobioff}{H.~G.}}%
+  }
+  \strng{namehash}{SGHGSTL1}
+  \strng{fullhash}{SGHGSTL1}
+  \field{labelalpha}{SG03}
+  \field{sortinit}{S}
+  \field{title}{The Google File System}
+  \list{institution}{1}{%
+    {Google}%
+  }
+  \field{type}{techreport}
+  \field{year}{2003}
+\endentry
 
-\bibitem[Singh und Reddy(2014)]{Sin14}
-\dinatlabel{Singh und Reddy 2014} \textsc{Singh}, Dilpreet~; \textsc{Reddy},
-  Chandan~K.:
-\newblock A survey on platforms for big data analytics.
-\newblock
-\newblock (2014)
+\entry{Sin14}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Singh}{S.}%
+     {Dilpreet}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Reddy}{R.}%
+     {Chandan~K}{C.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SDRCK1}
+  \strng{fullhash}{SDRCK1}
+  \field{labelalpha}{SR14}
+  \field{sortinit}{S}
+  \field{title}{A survey on platforms for big data analytics}
+  \field{year}{2014}
+\endentry
 
-\bibitem[Wootters(2001)]{Woo01}
-\dinatlabel{Wootters 2001} \textsc{Wootters}, W.~K.:
-\newblock Entanglement of formation and concurrence.
-\newblock In: \emph{Quantum Information and Computation}
-\newblock 1 (2001), S.~27--47
+\entry{Woo01}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wootters}{W.}%
+     {W.~K.}{W.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WWK1}
+  \strng{fullhash}{WWK1}
+  \field{labelalpha}{Woo01}
+  \field{sortinit}{W}
+  \field{pages}{27\bibrangedash 47}
+  \field{title}{Entanglement of formation and concurrence}
+  \field{volume}{1}
+  \field{journaltitle}{Quantum Information and Computation}
+  \field{year}{2001}
+\endentry
 
-\end{thebibliography}
+\lossort
+\endlossort
+
+\endinput

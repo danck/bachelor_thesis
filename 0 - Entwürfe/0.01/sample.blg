@@ -1,5 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sample.aux
-The style file: dinat.bst
-Database file #1: sample.bib
-Warning--empty note in Ghema03
-(There was 1 warning)
+The style file: biblatex.bst
+Database file #1: sample-blx.bib
+Database file #2: sample.bib
+Biblatex version: 2.9
