@@ -1,0 +1,30 @@
+\ifglsentryexists{repl}{}%
+{%
+\gls@defglossaryentry{repl}%
+{%
+name={Request Evaluate Reply Loop},%
+sort={Request Evaluate Reply Loop},%
+type={main},%
+first={Request Evaluate Reply Loop},%
+firstplural={Request Evaluate Reply Loops},%
+text={Request Evaluate Reply Loop},%
+plural={Request Evaluate Reply Loops},%
+description={sadadf dsfsdgf},%
+descriptionplural={sadadf dsfsdgf},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

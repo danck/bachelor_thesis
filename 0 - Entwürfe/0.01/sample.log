@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.7)  25 MAR 2015 15:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  26 MAR 2015 18:54
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -10,52 +10,46 @@ ian, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, icelandic, 
 -x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
 ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, w
 elsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrbook.cls"
-Document Class: scrbook 2013/12/19 v3.12 KOMA-Script document class (book)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
-Package: scrkbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbook.cls
+Document Class: scrbook 2015/02/07 v3.16 KOMA-Script document class (book)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
+Package: scrkbase 2015/02/07 v3.16 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty"
-Package: scrbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
+Package: scrbase 2015/02/07 v3.16 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
-Package: scrlfile 2013/12/19 v3.12 KOMA-Script package (loading files)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
+Package: scrlfile 2015/02/07 v3.16 KOMA-Script package (loading files)
 
-Package scrlfile, 2013/12/19 v3.12 KOMA-Script package (loading files)
+Package scrlfile, 2015/02/07 v3.16 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\tocbasic.sty"
-Package: tocbasic 2013/12/19 v3.12 KOMA-Script package (handling toc-files)
+))) (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.sty
+Package: tocbasic 2015/02/07 v3.16 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 117.
+(tocbasic)             for `toc' on input line 118.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 118.
+(tocbasic)             for `lof' on input line 119.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 119.
-Package tocbasic Info: defining new hook before heading of `' on input line 1118.
-Package scrbase Info: Unknown processing state.
-(scrbase)             Processing option `twoside=false'
-(scrbase)             of member `.scrbook.cls' of family
-(scrbase)             `KOMA' doesn't set
-(scrbase)             a valid state. This will be interpreted
-(scrbase)             as \FamilyKeyStateProcessed on input line 1269.
-Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input line 1655.
+(tocbasic)             for `lot' on input line 120.
+Package tocbasic Info: defining new hook before heading of `' on input line 1175.
+Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input line 1712.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrsize11pt.clo"
-File: scrsize11pt.clo 2013/12/19 v3.12 KOMA-Script font size class option (11pt)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize11pt.clo
+File: scrsize11pt.clo 2015/02/07 v3.16 KOMA-Script font size class option (11pt)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\typearea.sty"
-Package: typearea 2013/12/19 v3.12 KOMA-Script package (type area)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
+Package: typearea 2015/02/07 v3.16 KOMA-Script package (type area)
 
-Package typearea, 2013/12/19 v3.12 KOMA-Script package (type area)
+Package typearea, 2015/02/07 v3.16 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -81,7 +75,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1330.
+(typearea)              on input line 1342.
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -133,8 +127,8 @@ Package: babel 2008/07/08 v3.8m The Babel package
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\ngermanb.ldf"
-Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-german\ngermanb.ldf
+Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
@@ -142,10 +136,11 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \U@D=\dimen105
 )
 \l@naustrian = a dialect from \language\l@ngerman 
-Package babel Info: Making " an active character on input line 92.
+\l@nswissgerman = a dialect from \language\l@ngerman 
+Package babel Info: Making " an active character on input line 88.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
-Language: english 2005/03/30 v3.3o English support from the babel system
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-english\english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -162,11 +157,218 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
-File: latin1.def 2008/03/30 v1.1d Input encoding file
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
 ))
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\libertine.sty
-Package: libertine 2014/02/19 (Bob Tennent) Supports Libertine and Biolinum fonts for all LaTeX engines.
+Package: libertine 2014/11/25 (Bob Tennent) Supports Libertine and Biolinum fonts for all LaTeX engines.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
@@ -201,7 +403,81 @@ Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
 LaTeX Info: Redefining \oldstylenums on input line 266.
 Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
 Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
@@ -282,7 +558,7 @@ LaTeX Info: Redefining \itshape on input line 31.
 LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
 )
-LaTeX Info: Redefining \oldstylenums on input line 477.
+LaTeX Info: Redefining \oldstylenums on input line 478.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\LinLibertine_I.tex))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
@@ -297,7 +573,7 @@ LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype.sty"
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks19
 \MT@count=\count92
@@ -306,7 +582,7 @@ LaTeX Info: Redefining \textls on input line 766.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 \MT@listname@count=\count93
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def"
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
@@ -314,15 +590,9 @@ LaTeX Info: Redefining \lslig on input line 915.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype.cfg"
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
-(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\nomencl\nomencl.sty
-Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen107
-\nom@tempdim=\dimen108
-\nomitemsep=\skip49
-)
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
@@ -334,14 +604,14 @@ Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 \lst@gtempboxa=\box27
 \lst@token=\toks20
 \lst@length=\count95
-\lst@currlwidth=\dimen109
+\lst@currlwidth=\dimen107
 \lst@column=\count96
 \lst@pos=\count97
-\lst@lostspace=\dimen110
-\lst@width=\dimen111
+\lst@lostspace=\dimen108
+\lst@width=\dimen109
 \lst@newlines=\count98
 \lst@lineno=\count99
-\lst@maxwidth=\dimen112
+\lst@maxwidth=\dimen110
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
@@ -354,13 +624,6 @@ File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip50
-\bibsep=\skip51
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count102
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -411,14 +674,16 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen113
-\Hy@linkcounter=\count103
-\Hy@pagecounter=\count104
+\@linkdim=\dimen111
+\Hy@linkcounter=\count102
+\Hy@pagecounter=\count103
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count105
+\Hy@SavedSpaceFactor=\count104
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -432,17 +697,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count106
+\c@Hy@tempcnt=\count105
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen114
-\Fld@menulength=\count107
-\Field@Width=\dimen115
-\Fld@charsize=\dimen116
+\XeTeXLinkMargin=\dimen112
+\Fld@menulength=\count106
+\Field@Width=\dimen113
+\Fld@charsize=\dimen114
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -452,23 +717,23 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count108
-\c@Item=\count109
-\c@Hfootnote=\count110
+\Hy@abspage=\count107
+\c@Item=\count108
+\c@Hfootnote=\count109
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count111
-\c@bookmark@seq@number=\count112
+\Fld@listcount=\count110
+\c@bookmark@seq@number=\count111
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
-\Hy@SectionHShift=\skip52
+\Hy@SectionHShift=\skip49
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\soul\soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
@@ -477,10 +742,10 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@cmds=\toks23
 \SOUL@buffer=\toks24
 \SOUL@token=\toks25
-\SOUL@spaceskip=\skip53
-\SOUL@ttwidth=\dimen117
-\SOUL@uldp=\dimen118
-\SOUL@ulht=\dimen119
+\SOUL@spaceskip=\skip50
+\SOUL@ttwidth=\dimen115
+\SOUL@uldp=\dimen116
+\SOUL@ulht=\dimen117
 )
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\hawstyle.sty"
 Package: hawstyle 2010/04/26 v1.0 HAW Thesis Style
@@ -488,7 +753,7 @@ Package: hawstyle 2010/04/26 v1.0 HAW Thesis Style
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
@@ -507,16 +772,16 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count113
-\calc@Bcount=\count114
-\calc@Adimen=\dimen120
-\calc@Bdimen=\dimen121
-\calc@Askip=\skip54
-\calc@Bskip=\skip55
+\calc@Acount=\count112
+\calc@Bcount=\count113
+\calc@Adimen=\dimen118
+\calc@Bdimen=\dimen119
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count115
-\calc@Cskip=\skip56
+\calc@Ccount=\count114
+\calc@Cskip=\skip53
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\textpos\textpos.sty
 Package: textpos 2014/01/03 v1.7j
@@ -527,25 +792,25 @@ Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )
 \TP@textbox=\box29
 \TP@holdbox=\box30
-\TPHorizModule=\dimen122
-\TPVertModule=\dimen123
-\TP@margin=\dimen124
-\TP@absmargin=\dimen125
+\TPHorizModule=\dimen120
+\TPVertModule=\dimen121
+\TP@margin=\dimen122
+\TP@absmargin=\dimen123
 
 Grid set 16 x 16 = 37.34424pt x 52.81543pt
-\TPboxrulesize=\dimen126
-\TP@ox=\dimen127
-\TP@oy=\dimen128
+\TPboxrulesize=\dimen124
+\TP@ox=\dimen125
+\TP@oy=\dimen126
 \TP@tbargs=\toks26
-\TP@prevdepth=\dimen129
+\TP@prevdepth=\dimen127
 TextBlockOrigin set to 0pt x 0pt
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrpage2.sty"
-Package: scrpage2 2013/12/19 v3.12 KOMA-Script package (page head and foot)
+) (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrpage2.sty
+Package: scrpage2 2015/02/07 v3.16 KOMA-Script package (page head and foot)
 LaTeX Info: Redefining \pagemark on input line 174.
 ))
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count116
+\c@lips@count=\count115
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.sty
 Package: biblatex 2014/06/25 v2.9a programmable bibliographies (PK/JW/AB)
@@ -553,167 +818,140 @@ Package: biblatex 2014/06/25 v2.9a programmable bibliographies (PK/JW/AB)
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex1.sty
 Package: biblatex1 2014/06/25 v2.9a programmable bibliographies (bibtex) (PK/JW/AB)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
-Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2015/03/19 v2.1d e-TeX tools for LaTeX (JAW)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count117
+\et@xins=\count116
 )
-\etb@tempcnta=\count118
+\etb@tempcnta=\count117
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count119
+\lrq@indent=\count118
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count120
-\c@listtotal=\count121
-\c@listcount=\count122
-\c@liststart=\count123
-\c@liststop=\count124
-\c@citecount=\count125
-\c@citetotal=\count126
-\c@multicitecount=\count127
-\c@multicitetotal=\count128
-\c@instcount=\count129
-\c@maxnames=\count130
-\c@minnames=\count131
-\c@maxitems=\count132
-\c@minitems=\count133
-\c@citecounter=\count134
-\c@savedcitecounter=\count135
-\c@uniquelist=\count136
-\c@uniquename=\count137
-\c@refsection=\count138
-\c@refsegment=\count139
-\c@maxextrayear=\count140
-\c@maxextraalpha=\count141
-\c@abbrvpenalty=\count142
-\c@highnamepenalty=\count143
-\c@lownamepenalty=\count144
-\c@maxparens=\count145
-\c@parenlevel=\count146
-\blx@tempcnta=\count147
-\blx@tempcntb=\count148
-\blx@tempcntc=\count149
-\blx@maxsection=\count150
-\blx@maxsegment=\count151
-\blx@notetype=\count152
-\blx@parenlevel@text=\count153
-\blx@parenlevel@foot=\count154
-\labelnumberwidth=\skip57
-\labelalphawidth=\skip58
-\shorthandwidth=\skip59
-\biblabelsep=\skip60
-\bibitemsep=\skip61
-\bibnamesep=\skip62
-\bibinitsep=\skip63
-\bibparsep=\skip64
-
-
-! LaTeX Error: Command \bibhang already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.428 \newlength{\bibhang}
-                          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+\c@tabx@nest=\count119
+\c@listtotal=\count120
+\c@listcount=\count121
+\c@liststart=\count122
+\c@liststop=\count123
+\c@citecount=\count124
+\c@citetotal=\count125
+\c@multicitecount=\count126
+\c@multicitetotal=\count127
+\c@instcount=\count128
+\c@maxnames=\count129
+\c@minnames=\count130
+\c@maxitems=\count131
+\c@minitems=\count132
+\c@citecounter=\count133
+\c@savedcitecounter=\count134
+\c@uniquelist=\count135
+\c@uniquename=\count136
+\c@refsection=\count137
+\c@refsegment=\count138
+\c@maxextrayear=\count139
+\c@maxextraalpha=\count140
+\c@abbrvpenalty=\count141
+\c@highnamepenalty=\count142
+\c@lownamepenalty=\count143
+\c@maxparens=\count144
+\c@parenlevel=\count145
+\blx@tempcnta=\count146
+\blx@tempcntb=\count147
+\blx@tempcntc=\count148
+\blx@maxsection=\count149
+\blx@maxsegment=\count150
+\blx@notetype=\count151
+\blx@parenlevel@text=\count152
+\blx@parenlevel@foot=\count153
+\labelnumberwidth=\skip54
+\labelalphawidth=\skip55
+\shorthandwidth=\skip56
+\biblabelsep=\skip57
+\bibitemsep=\skip58
+\bibnamesep=\skip59
+\bibinitsep=\skip60
+\bibparsep=\skip61
+\bibhang=\skip62
 \blx@auxin=\read1
 \blx@auxout=\write3
-\c@mincomprange=\count155
-\c@maxcomprange=\count156
-\c@mincompwidth=\count157
-\c@labelname=\count158
-\c@savedlabelname=\count159
-\c@author=\count160
-\c@savedauthor=\count161
-\c@shortauthor=\count162
-\c@savedshortauthor=\count163
-\c@editor=\count164
-\c@savededitor=\count165
-\c@editora=\count166
-\c@savededitora=\count167
-\c@editorb=\count168
-\c@savededitorb=\count169
-\c@editorc=\count170
-\c@savededitorc=\count171
-\c@shorteditor=\count172
-\c@savedshorteditor=\count173
-\c@bookauthor=\count174
-\c@savedbookauthor=\count175
-\c@translator=\count176
-\c@savedtranslator=\count177
-\c@annotator=\count178
-\c@savedannotator=\count179
-\c@commentator=\count180
-\c@savedcommentator=\count181
-\c@introduction=\count182
-\c@savedintroduction=\count183
-\c@foreword=\count184
-\c@savedforeword=\count185
-\c@afterword=\count186
-\c@savedafterword=\count187
-\c@holder=\count188
-\c@savedholder=\count189
-\c@namea=\count190
-\c@savednamea=\count191
-\c@nameb=\count192
-\c@savednameb=\count193
-\c@namec=\count194
-\c@savednamec=\count195
-\c@institution=\count196
-\c@savedinstitution=\count197
-\c@language=\count198
-\c@savedlanguage=\count199
-\c@location=\count200
-\c@savedlocation=\count201
-\c@organization=\count202
-\c@savedorganization=\count203
-\c@origlocation=\count204
-\c@savedoriglocation=\count205
-\c@origpublisher=\count206
-\c@savedorigpublisher=\count207
-\c@pageref=\count208
-\c@savedpageref=\count209
-\c@publisher=\count210
-\c@savedpublisher=\count211
-\c@lista=\count212
-\c@savedlista=\count213
-\c@listb=\count214
-\c@savedlistb=\count215
-\c@listc=\count216
-\c@savedlistc=\count217
-\c@listd=\count218
-\c@savedlistd=\count219
-\c@liste=\count220
-\c@savedliste=\count221
-\c@listf=\count222
-\c@savedlistf=\count223
-
-! LaTeX Error: Command \citename already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8664 ...d*{\citename}{\blx@citexpunct{citename}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+\c@mincomprange=\count154
+\c@maxcomprange=\count155
+\c@mincompwidth=\count156
+\c@labelname=\count157
+\c@savedlabelname=\count158
+\c@author=\count159
+\c@savedauthor=\count160
+\c@shortauthor=\count161
+\c@savedshortauthor=\count162
+\c@editor=\count163
+\c@savededitor=\count164
+\c@editora=\count165
+\c@savededitora=\count166
+\c@editorb=\count167
+\c@savededitorb=\count168
+\c@editorc=\count169
+\c@savededitorc=\count170
+\c@shorteditor=\count171
+\c@savedshorteditor=\count172
+\c@bookauthor=\count173
+\c@savedbookauthor=\count174
+\c@translator=\count175
+\c@savedtranslator=\count176
+\c@annotator=\count177
+\c@savedannotator=\count178
+\c@commentator=\count179
+\c@savedcommentator=\count180
+\c@introduction=\count181
+\c@savedintroduction=\count182
+\c@foreword=\count183
+\c@savedforeword=\count184
+\c@afterword=\count185
+\c@savedafterword=\count186
+\c@holder=\count187
+\c@savedholder=\count188
+\c@namea=\count189
+\c@savednamea=\count190
+\c@nameb=\count191
+\c@savednameb=\count192
+\c@namec=\count193
+\c@savednamec=\count194
+\c@institution=\count195
+\c@savedinstitution=\count196
+\c@language=\count197
+\c@savedlanguage=\count198
+\c@location=\count199
+\c@savedlocation=\count200
+\c@organization=\count201
+\c@savedorganization=\count202
+\c@origlocation=\count203
+\c@savedoriglocation=\count204
+\c@origpublisher=\count205
+\c@savedorigpublisher=\count206
+\c@pageref=\count207
+\c@savedpageref=\count208
+\c@publisher=\count209
+\c@savedpublisher=\count210
+\c@lista=\count211
+\c@savedlista=\count212
+\c@listb=\count213
+\c@savedlistb=\count214
+\c@listc=\count215
+\c@savedlistc=\count216
+\c@listd=\count217
+\c@savedlistd=\count218
+\c@liste=\count219
+\c@savedliste=\count220
+\c@listf=\count221
+\c@savedlistf=\count222
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
+
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-compat.def
 File: blx-compat.def 2014/06/25 v2.9a biblatex compatibility (PK/JW/AB)
 )
@@ -722,60 +960,26 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.def
 File: biblatex.def 
-\c@textcitecount=\count224
-\c@textcitetotal=\count225
-\c@textcitemaxnames=\count226
-\c@biburlnumpenalty=\count227
-\c@biburlucpenalty=\count228
-\c@biburllcpenalty=\count229
-
-
-! LaTeX Error: Command \bibfont already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 ...ommand*{\bibfont}{\normalfont\normalsize}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-\c@smartand=\count230
-
-Package biblatex Warning: Redefining '\citeauthor'.
-
-
-Package biblatex Warning: Redefining '\citeyear'.
-
-
-! LaTeX Error: Command \Citeauthor already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2148 ...e\citeauthor*}{\bibsentence\citeauthor}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+\c@textcitecount=\count223
+\c@textcitetotal=\count224
+\c@textcitemaxnames=\count225
+\c@biburlnumpenalty=\count226
+\c@biburlucpenalty=\count227
+\c@biburllcpenalty=\count228
+\c@smartand=\count229
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
- (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\alphabetic.bbx
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\alphabetic.bbx
 File: alphabetic.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\standard.bbx
 File: standard.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count231
-\c@bbx:relatedtotal=\count232
+\c@bbx:relatedcount=\count230
+\c@bbx:relatedtotal=\count231
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
@@ -799,10 +1003,10 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg
 File: biblatex.cfg 
 )))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\svg\svg.sty"
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\svg\svg.sty
 Package: svg 2012/09/05 v1.0 SVG inclusion and extraction
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
@@ -811,33 +1015,33 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen130
-\captionmargin@=\dimen131
-\captionwidth=\dimen132
-\caption@tempdima=\dimen133
-\caption@indent=\dimen134
-\caption@parindent=\dimen135
-\caption@hangindent=\dimen136
+\captionmargin=\dimen128
+\captionmargin@=\dimen129
+\captionwidth=\dimen130
+\caption@tempdima=\dimen131
+\caption@indent=\dimen132
+\caption@parindent=\dimen133
+\caption@hangindent=\dimen134
 )
 Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count233
+\c@ContinuedFloat=\count232
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
+\c@KVtest=\count233
+\sf@farskip=\skip63
+\sf@captopadj=\dimen135
+\sf@capskip=\skip64
+\sf@nearskip=\skip65
 Normal \count register pool exhausted, switching to extended pool.
-\c@KVtest=\count277
-\sf@farskip=\skip65
-\sf@captopadj=\dimen137
-\sf@capskip=\skip66
-\sf@nearskip=\skip67
-\c@subfigure=\count278
-\c@subfigure@save=\count279
-\c@lofdepth=\count280
-\c@subtable=\count281
-\c@subtable@save=\count282
-\c@lotdepth=\count283
-\sf@top=\skip68
-\sf@bottom=\skip69
+\c@subfigure=\count277
+\c@subfigure@save=\count278
+\c@lofdepth=\count279
+\c@subtable=\count280
+\c@subtable@save=\count281
+\c@lotdepth=\count282
+\sf@top=\skip66
+\sf@bottom=\skip67
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\import\import.sty
 Package: import 2009/03/23  v 5.1
@@ -845,13 +1049,13 @@ Package: import 2009/03/23  v 5.1
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\transparent.sty"
 Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)
 )
-\SVG@out@width=\skip70
-\SVG@out@height=\skip71
-\c@svgfigure=\count284
+\SVG@out@width=\skip68
+\SVG@out@height=\skip69
+\c@svgfigure=\count283
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip72
+\@mathmargin=\skip70
 
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
@@ -860,64 +1064,64 @@ Package: amstext 2000/06/29 v2.01
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks27
-\ex@=\dimen138
+\ex@=\dimen136
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen139
+\pmbraise@=\dimen137
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count285
+\inf@bad=\count284
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count286
-\leftroot@=\count287
+\uproot@=\count285
+\leftroot@=\count286
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count288
-\DOTSCASE@=\count289
+\classnum@=\count287
+\DOTSCASE@=\count288
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box31
 \strutbox@=\box32
-\big@size=\dimen140
+\big@size=\dimen138
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count290
-\c@MaxMatrixCols=\count291
+\macc@depth=\count289
+\c@MaxMatrixCols=\count290
 \dotsspace@=\muskip11
-\c@parentequation=\count292
-\dspbrk@lvl=\count293
+\c@parentequation=\count291
+\dspbrk@lvl=\count292
 \tag@help=\toks28
-\row@=\count294
-\column@=\count295
-\maxfields@=\count296
+\row@=\count293
+\column@=\count294
+\maxfields@=\count295
 \andhelp@=\toks29
-\eqnshift@=\dimen141
-\alignsep@=\dimen142
-\tagshift@=\dimen143
-\tagwidth@=\dimen144
-\totwidth@=\dimen145
-\lineht@=\dimen146
+\eqnshift@=\dimen139
+\alignsep@=\dimen140
+\tagshift@=\dimen141
+\tagwidth@=\dimen142
+\totwidth@=\dimen143
+\lineht@=\dimen144
 \@envbody=\toks30
-\multlinegap=\skip73
-\multlinetaggap=\skip74
+\multlinegap=\skip71
+\multlinetaggap=\skip72
 \mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\preprint\fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
-\FP@margin=\skip75
+\FP@margin=\skip73
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.sty
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen147
-\pgfutil@tempdimb=\dimen148
+\pgfutil@tempdima=\dimen145
+\pgfutil@tempdimb=\dimen146
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex))
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-latex.def
@@ -940,20 +1144,20 @@ Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks35
 ))
-\pgf@x=\dimen149
-\pgf@y=\dimen150
-\pgf@xa=\dimen151
-\pgf@ya=\dimen152
-\pgf@xb=\dimen153
-\pgf@yb=\dimen154
-\pgf@xc=\dimen155
-\pgf@yc=\dimen156
+\pgf@x=\dimen147
+\pgf@y=\dimen148
+\pgf@xa=\dimen149
+\pgf@ya=\dimen150
+\pgf@xb=\dimen151
+\pgf@yb=\dimen152
+\pgf@xc=\dimen153
+\pgf@yc=\dimen154
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count297
-\c@pgf@countb=\count298
-\c@pgf@countc=\count299
-\c@pgf@countd=\count300
+\c@pgf@counta=\count296
+\c@pgf@countb=\count297
+\c@pgf@countc=\count298
+\c@pgf@countd=\count299
 \t@pgf@toka=\toks36
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
@@ -971,8 +1175,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count301
-\pgfsyssoftpath@bigbuffer@items=\count302
+\pgfsyssoftpath@smallbuffer@items=\count300
+\pgfsyssoftpath@bigbuffer@items=\count301
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -984,8 +1188,8 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.code.tex
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.code.tex)
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen157
-\pgfmath@count=\count303
+\pgfmath@dimen=\dimen155
+\pgfmath@count=\count302
 \pgfmath@box=\box34
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
@@ -1001,51 +1205,51 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex)))
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count304
+\c@pgfmathroundto@lastzeros=\count303
 ))
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen158
-\pgf@picmaxx=\dimen159
-\pgf@picminy=\dimen160
-\pgf@picmaxy=\dimen161
-\pgf@pathminx=\dimen162
-\pgf@pathmaxx=\dimen163
-\pgf@pathminy=\dimen164
-\pgf@pathmaxy=\dimen165
-\pgf@xx=\dimen166
-\pgf@xy=\dimen167
-\pgf@yx=\dimen168
-\pgf@yy=\dimen169
-\pgf@zx=\dimen170
-\pgf@zy=\dimen171
+\pgf@picminx=\dimen156
+\pgf@picmaxx=\dimen157
+\pgf@picminy=\dimen158
+\pgf@picmaxy=\dimen159
+\pgf@pathminx=\dimen160
+\pgf@pathmaxx=\dimen161
+\pgf@pathminy=\dimen162
+\pgf@pathmaxy=\dimen163
+\pgf@xx=\dimen164
+\pgf@xy=\dimen165
+\pgf@yx=\dimen166
+\pgf@yy=\dimen167
+\pgf@zx=\dimen168
+\pgf@zy=\dimen169
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen172
-\pgf@path@lasty=\dimen173
+\pgf@path@lastx=\dimen170
+\pgf@path@lasty=\dimen171
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen174
-\pgf@shorten@start@additional=\dimen175
+\pgf@shorten@end@additional=\dimen172
+\pgf@shorten@start@additional=\dimen173
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box35
 \pgf@hbox=\box36
 \pgf@layerbox@main=\box37
-\pgf@picture@serial@count=\count305
+\pgf@picture@serial@count=\count304
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen176
+\pgflinewidth=\dimen174
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen177
-\pgf@pt@y=\dimen178
-\pgf@pt@temp=\dimen179
+\pgf@pt@x=\dimen175
+\pgf@pt@y=\dimen176
+\pgf@pt@temp=\dimen177
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1058,12 +1262,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen180
+\pgfarrowsep=\dimen178
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen181
-\pgf@sys@shading@range@num=\count306
+\pgf@max=\dimen179
+\pgf@sys@shading@range@num=\count305
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1090,8 +1294,8 @@ File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen182
-\pgf@nodesepend=\dimen183
+\pgf@nodesepstart=\dimen180
+\pgf@nodesepend=\dimen181
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
@@ -1105,8 +1309,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex)
-\pgffor@iter=\dimen184
-\pgffor@skip=\dimen185
+\pgffor@iter=\dimen182
+\pgffor@skip=\dimen183
 \pgffor@stack=\toks42
 \pgffor@toks=\toks43
 ))
@@ -1115,31 +1319,31 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count307
-\pgfplotmarksize=\dimen186
+\pgf@plot@mark@count=\count306
+\pgfplotmarksize=\dimen184
 )
-\tikz@lastx=\dimen187
-\tikz@lasty=\dimen188
-\tikz@lastxsaved=\dimen189
-\tikz@lastysaved=\dimen190
-\tikzleveldistance=\dimen191
-\tikzsiblingdistance=\dimen192
+\tikz@lastx=\dimen185
+\tikz@lasty=\dimen186
+\tikz@lastxsaved=\dimen187
+\tikz@lastysaved=\dimen188
+\tikzleveldistance=\dimen189
+\tikzsiblingdistance=\dimen190
 \tikz@figbox=\box40
 \tikz@figbox@bg=\box41
 \tikz@tempbox=\box42
 \tikz@tempbox@bg=\box43
-\tikztreelevel=\count308
-\tikznumberofchildren=\count309
-\tikznumberofcurrentchild=\count310
-\tikz@fig@count=\count311
+\tikztreelevel=\count307
+\tikznumberofchildren=\count308
+\tikznumberofcurrentchild=\count309
+\tikz@fig@count=\count310
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count312
-\pgfmatrixcurrentcolumn=\count313
-\pgf@matrix@numberofcolumns=\count314
+\pgfmatrixcurrentrow=\count311
+\pgfmatrixcurrentcolumn=\count312
+\pgf@matrix@numberofcolumns=\count313
 )
-\tikz@expandcount=\count315
+\tikz@expandcount=\count314
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
@@ -1150,8 +1354,8 @@ Package: tikz-uml 2011/01/26
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
 \@xs@message=\write5
-\integerpart=\count316
-\decimalpart=\count317
+\integerpart=\count315
+\decimalpart=\count316
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
@@ -1169,7 +1373,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen193
+\arrowsize=\dimen191
 ))
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
@@ -1240,20 +1444,20 @@ File: pgflibraryfadings.code.tex 2008/02/07 v3.0.0 (rcs-revision 1.3)
 .code.tex
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen194
-\pgfdecoratedremainingdistance=\dimen195
-\pgfdecoratedinputsegmentcompleteddistance=\dimen196
-\pgfdecoratedinputsegmentremainingdistance=\dimen197
-\pgf@decorate@distancetomove=\dimen198
-\pgf@decorate@repeatstate=\count318
-\pgfdecorationsegmentamplitude=\dimen199
-\pgfdecorationsegmentlength=\dimen200
+\pgfdecoratedcompleteddistance=\dimen192
+\pgfdecoratedremainingdistance=\dimen193
+\pgfdecoratedinputsegmentcompleteddistance=\dimen194
+\pgfdecoratedinputsegmentremainingdistance=\dimen195
+\pgf@decorate@distancetomove=\dimen196
+\pgf@decorate@repeatstate=\count317
+\pgfdecorationsegmentamplitude=\dimen197
+\pgfdecorationsegmentlength=\dimen198
 )
 \tikz@lib@dec@box=\box66
 )
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.markings.code.te
 x))
-\c@tikzumlPackageLayers=\count319
+\c@tikzumlPackageLayers=\count318
 \pgf@layerbox@package0=\box67
 \pgf@layerboxsaved@package0=\box68
 \pgf@layerbox@package1=\box69
@@ -1262,7 +1466,7 @@ x))
 \pgf@layerboxsaved@package2=\box72
 \pgf@layerbox@package3=\box73
 \pgf@layerboxsaved@package3=\box74
-\c@tikzumlFragmentLayers=\count320
+\c@tikzumlFragmentLayers=\count319
 \pgf@layerbox@fragment0=\box75
 \pgf@layerboxsaved@fragment0=\box76
 \pgf@layerbox@fragment1=\box77
@@ -1271,7 +1475,7 @@ x))
 \pgf@layerboxsaved@fragment2=\box80
 \pgf@layerbox@fragment3=\box81
 \pgf@layerboxsaved@fragment3=\box82
-\c@tikzumlStateLayers=\count321
+\c@tikzumlStateLayers=\count320
 \pgf@layerbox@state0=\box83
 \pgf@layerboxsaved@state0=\box84
 \pgf@layerbox@state1=\box85
@@ -1280,7 +1484,7 @@ x))
 \pgf@layerboxsaved@state2=\box88
 \pgf@layerbox@state3=\box89
 \pgf@layerboxsaved@state3=\box90
-\c@tikzumlComponentLayers=\count322
+\c@tikzumlComponentLayers=\count321
 \pgf@layerbox@component0=\box91
 \pgf@layerboxsaved@component0=\box92
 \pgf@layerbox@component1=\box93
@@ -1295,75 +1499,254 @@ x))
 \pgf@layerboxsaved@activity=\box102
 \pgf@layerbox@connections=\box103
 \pgf@layerboxsaved@connections=\box104
-\c@tikzumlPackageClassNum=\count323
-\c@tikzumlPackageSubPackageNum=\count324
-\c@tikzumlRelationNum=\count325
-\c@tikzumlNoteNum=\count326
-\c@pos=\count327
-\c@posT=\count328
-\c@posStereo=\count329
-\c@tikzumlPackageLevel=\count330
-\c@tikzumlSystemUseCaseNum=\count331
-\c@tikzumlSystemLevel=\count332
-\c@tikzumlUseCaseNum=\count333
-\c@tikzumlActorNum=\count334
-\c@tikzumlStateJoinNum=\count335
-\c@tikzumlStateDecisionNum=\count336
-\c@tikzumlStateInitialNum=\count337
-\c@tikzumlStateFinalNum=\count338
-\c@tikzumlStateEnterNum=\count339
-\c@tikzumlStateExitNum=\count340
-\c@tikzumlStateEndNum=\count341
-\c@tikzumlStateHistoryNum=\count342
-\c@tikzumlStateDeepHistoryNum=\count343
-\c@tikzumlStateLevel=\count344
-\c@tikzumlStateSubStateNum=\count345
-\c@tikzumlStateText=\count346
-\c@tikzumlObjectNum=\count347
-\c@tikzumlCallLevel=\count348
-\c@tikzumlCallNum=\count349
-\c@tikzumlFragmentLevel=\count350
-\c@tikzumlFragmentLevelNum=\count351
-\c@tikzumlFragmentNum=\count352
-\c@tikzumlFragmentPartNum=\count353
-\c@tikzumlCallStartFragmentNum=\count354
-\c@tikzumlCallEndFragmentNum=\count355
-\tikzumlCall@xa=\skip76
-\tikzumlCall@xb=\skip77
-\c@tikzumlComponentLevel=\count356
-\c@tikzumlComponentSubComponentNum=\count357
-\c@tikzumlConnectorNum=\count358
-\tikzuml@AC@xa=\skip78
-\tikzuml@AC@ya=\skip79
-\tikzuml@AC@xb=\skip80
-\tikzuml@AC@yb=\skip81
-\tikzuml@AC@xi=\skip82
-\tikzuml@AC@yi=\skip83
-\tikzuml@AC@xic=\skip84
-\tikzuml@AC@yic=\skip85
-\tikzuml@AC@xio=\skip86
-\tikzuml@AC@yio=\skip87
-\tikzuml@AC@AB=\skip88
-\tikzuml@AC@lambda=\skip89
-\tikzuml@AC@xtrc=\skip90
-\tikzuml@AC@ytrc=\skip91
-\tikzuml@AC@xtlc=\skip92
-\tikzuml@AC@ytlc=\skip93
-\tikzuml@AC@xblc=\skip94
-\tikzuml@AC@yblc=\skip95
-\tikzuml@AC@xbrc=\skip96
-\tikzuml@AC@ybrc=\skip97
-\tikzuml@AC@middleArm=\skip98
+\c@tikzumlPackageClassNum=\count322
+\c@tikzumlPackageSubPackageNum=\count323
+\c@tikzumlRelationNum=\count324
+\c@tikzumlNoteNum=\count325
+\c@pos=\count326
+\c@posT=\count327
+\c@posStereo=\count328
+\c@tikzumlPackageLevel=\count329
+\c@tikzumlSystemUseCaseNum=\count330
+\c@tikzumlSystemLevel=\count331
+\c@tikzumlUseCaseNum=\count332
+\c@tikzumlActorNum=\count333
+\c@tikzumlStateJoinNum=\count334
+\c@tikzumlStateDecisionNum=\count335
+\c@tikzumlStateInitialNum=\count336
+\c@tikzumlStateFinalNum=\count337
+\c@tikzumlStateEnterNum=\count338
+\c@tikzumlStateExitNum=\count339
+\c@tikzumlStateEndNum=\count340
+\c@tikzumlStateHistoryNum=\count341
+\c@tikzumlStateDeepHistoryNum=\count342
+\c@tikzumlStateLevel=\count343
+\c@tikzumlStateSubStateNum=\count344
+\c@tikzumlStateText=\count345
+\c@tikzumlObjectNum=\count346
+\c@tikzumlCallLevel=\count347
+\c@tikzumlCallNum=\count348
+\c@tikzumlFragmentLevel=\count349
+\c@tikzumlFragmentLevelNum=\count350
+\c@tikzumlFragmentNum=\count351
+\c@tikzumlFragmentPartNum=\count352
+\c@tikzumlCallStartFragmentNum=\count353
+\c@tikzumlCallEndFragmentNum=\count354
+\tikzumlCall@xa=\skip74
+\tikzumlCall@xb=\skip75
+\c@tikzumlComponentLevel=\count355
+\c@tikzumlComponentSubComponentNum=\count356
+\c@tikzumlConnectorNum=\count357
+\tikzuml@AC@xa=\skip76
+\tikzuml@AC@ya=\skip77
+\tikzuml@AC@xb=\skip78
+\tikzuml@AC@yb=\skip79
+\tikzuml@AC@xi=\skip80
+\tikzuml@AC@yi=\skip81
+\tikzuml@AC@xic=\skip82
+\tikzuml@AC@yic=\skip83
+\tikzuml@AC@xio=\skip84
+\tikzuml@AC@yio=\skip85
+\tikzuml@AC@AB=\skip86
+\tikzuml@AC@lambda=\skip87
+\tikzuml@AC@xtrc=\skip88
+\tikzuml@AC@ytrc=\skip89
+\tikzuml@AC@xtlc=\skip90
+\tikzuml@AC@ytlc=\skip91
+\tikzuml@AC@xblc=\skip92
+\tikzuml@AC@yblc=\skip93
+\tikzuml@AC@xbrc=\skip94
+\tikzuml@AC@ybrc=\skip95
+\tikzuml@AC@middleArm=\skip96
+) (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base\glossaries.sty
+Package: glossaries 2015/03/16 v4.15 (NLCT)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base\mfirstuc.sty
+Package: mfirstuc 2015/02/03 v1.10 (NLCT)
+\@glsmfirst=\toks46
+\@glsmrest=\toks47
 )
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 85.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 85.
-Package hyperref Info: Option `linktocpage' set `true' on input line 85.
-LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on input line 99.
- (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxlibertinet-tlf.fd
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\textcase\textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\xfor\xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datatool-base.sty
+Package: datatool-base 2014/06/10 v2.22 (NLCT)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\substr\substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count358
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datatool-fp.sty
+Package: datatool-fp 2013/08/29 v2.17 (NLCT)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count359
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count360
+\FP@xia=\count361
+\FP@xib=\count362
+\FP@xfa=\count363
+\FP@xfb=\count364
+\FP@rega=\count365
+\FP@regb=\count366
+\FP@regs=\count367
+\FP@times=\count368
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count369
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks48
+\@dtl@tmpcount=\count370
+\dtl@tmplength=\skip97
+\dtl@sortresult=\count371
+\@dtl@numgrpsepcount=\count372
+\@dtl@datatype=\count373
+\dtl@codeA=\count374
+\dtl@codeB=\count375
+\@dtl@foreach@level=\count376
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base\glossaries-compatible-307.sty
+Package: glossaries-compatible-307 2013/11/14 v4.0 (NLCT)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tracklang\tracklang.sty"
+Package: tracklang 2014/11/21 v1.1 (NLCT) Track Languages
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\tracklang\tracklang.tex")
+Package tracklang Info: babel loaded but \bb@loaded not defined. Will attempt to track known languages. on input line 17
+5.
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\translator-language-mappings.tex))
+
+Package glossaries Warning: No language module detected for `naustrian'.
+(glossaries)                Language modules need to be installed separately.
+(glossaries)                Please check on CTAN for a bundle called
+(glossaries)                `glossaries-german' or similar.
+
+
+Package glossaries Warning: No language module detected for `english'.
+(glossaries)                Language modules need to be installed separately.
+(glossaries)                Please check on CTAN for a bundle called
+(glossaries)                `glossaries-english' or similar.
+
+
+Package glossaries Warning: No language module detected for `ngerman'.
+(glossaries)                Language modules need to be installed separately.
+(glossaries)                Please check on CTAN for a bundle called
+(glossaries)                `glossaries-german' or similar.
+
+\gls@level=\count377
+\@gls@tmpb=\toks49
+\gls@tmplen=\skip98
+\glskeylisttok=\toks50
+\glslabeltok=\toks51
+\glsshorttok=\toks52
+\glslongtok=\toks53
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary-hypernav.sty
+Package: glossary-hypernav 2013/11/14 v4.0 (NLCT)
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary-list.sty
+Package: glossary-list 2015/02/03 v4.13 (NLCT)
+\glslistdottedwidth=\skip99
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary-long.sty
+Package: glossary-long 2013/11/14 v4.0 (NLCT)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip100
+\LTright=\skip101
+\LTpre=\skip102
+\LTpost=\skip103
+\LTchunksize=\count378
+\LTcapwidth=\dimen199
+\LT@head=\box105
+\LT@firsthead=\box106
+\LT@foot=\box107
+\LT@lastfoot=\box108
+\LT@cols=\count379
+\LT@rows=\count380
+\c@LT@tables=\count381
+\c@LT@chunks=\count382
+\LT@p@ftn=\toks54
+)
+Class scrbook Info: longtable captions redefined on input line 43.
+\glsdescwidth=\skip104
+\glspagelistwidth=\skip105
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary-super.sty
+Package: glossary-super 2013/11/14 v4.0 (NLCT)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\supertabular\supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count383
+\ST@wd=\dimen200
+\ST@rightskip=\skip106
+\ST@leftskip=\skip107
+\ST@parfillskip=\skip108
+\ST@pageleft=\dimen201
+\ST@headht=\dimen202
+\ST@tailht=\dimen203
+\ST@pagesofar=\dimen204
+\ST@pboxht=\dimen205
+\ST@lineht=\dimen206
+\ST@stretchht=\dimen207
+\ST@prevht=\dimen208
+\ST@toadd=\dimen209
+\ST@dimen=\dimen210
+\ST@pbox=\box109
+))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary-tree.sty
+Package: glossary-tree 2015/02/03 v4.13 (NLCT)
+\glstreeindent=\skip109
+))
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 93.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 93.
+Package hyperref Info: Option `linktocpage' set `true' on input line 93.
+LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on input line 107.
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxlibertinet-tlf.fd
 File: T1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for T1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 99.
+(Font)              scaled to size 10.95pt on input line 107.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 11
 (typearea)             BCOR = 28.45274pt
@@ -1380,23 +1763,13 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 99.
+(typearea)              on input line 107.
 \@indexfile=\write6
 
 Writing index file sample.idx
-\@nomenclaturefile=\write7
-Writing nomenclature file sample.nlo
-
-! Package biblatex Error: Incompatible package 'natbib'.
-
-See the biblatex package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104 \begin{document}
-                      
-The 'natbib' package and biblatex are incompatible.
-
+\glswrite=\write7
+\glo@main@file=\write8
+Package glossaries Info: Writing glossary file sample.glo on input line 111.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\english.lbx
@@ -1406,8 +1779,8 @@ File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count359
-\@quotereset=\count360
+\@quotelevel=\count384
+\@quotereset=\count385
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.aux"
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
@@ -1419,46 +1792,51 @@ Package biblatex Info: ... file 'german.lbx' found.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\german.lbx
 File: german.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
-)))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 104.
+))
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\glossar.aux")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\einfuehrung.aux")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\vorstellung.aux")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.aux")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.aux"))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 113.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count361
-\scratchdimen=\dimen201
-\scratchbox=\box105
-\nofMPsegments=\count362
-\nofMParguments=\count363
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count364
-\MPscratchDim=\dimen202
-\MPnumerator=\count365
-\makeMPintoPDFobject=\count366
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count386
+\scratchdimen=\dimen211
+\scratchbox=\box110
+\nofMPsegments=\count387
+\nofMParguments=\count388
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count389
+\MPscratchDim=\dimen212
+\MPnumerator=\count390
+\makeMPintoPDFobject=\count391
+\everyMPtoPDFconversion=\toks56
 )
-\c@mv@tabular=\count367
-\c@mv@boldtabular=\count368
-LaTeX Info: Redefining \microtypecontext on input line 104.
+\c@mv@tabular=\count392
+\c@mv@boldtabular=\count393
+LaTeX Info: Redefining \microtypecontext on input line 113.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1472,33 +1850,33 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c@lstlisting=\count369
-\AtBeginShipoutBox=\box106
-Package hyperref Info: Link coloring ON on input line 104.
+\c@lstlisting=\count394
+\AtBeginShipoutBox=\box111
+Package hyperref Info: Link coloring ON on input line 113.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count370
+\c@section@level=\count395
 )
-LaTeX Info: Redefining \ref on input line 104.
-LaTeX Info: Redefining \pageref on input line 104.
-LaTeX Info: Redefining \nameref on input line 104.
+LaTeX Info: Redefining \ref on input line 113.
+LaTeX Info: Redefining \pageref on input line 113.
+LaTeX Info: Redefining \nameref on input line 113.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.out")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.out")
-\@outlinefile=\write8
+\@outlinefile=\write9
 
 ABD: EveryShipout initializing macros
-Package biblatex Info: Input encoding 'latin1' detected.
+Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'latin1'.
+(biblatex)             Assuming data encoding 'utf8'.
 
 
-Package biblatex Warning: Data encoding is 'latin1'.
-(biblatex)                Use backend=bibtex8 or backend=biber.
+Package biblatex Warning: Data encoding is 'utf8'.
+(biblatex)                Use backend=biber.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'sample.bbl' found.
@@ -1509,63 +1887,84 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 104.
-Package biblatex Info: Reference segment=0 on input line 104.
+Package biblatex Info: Reference section=0 on input line 113.
+Package biblatex Info: Reference segment=0 on input line 113.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: longtable package is loaded.
+ (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 124.
- (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxbiolinumt-tlf.fd
+
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.glsdefs")
+LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 133.
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxbiolinumt-tlf.fd
 File: T1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 124.
+(Font)              scaled to size 10.95pt on input line 133.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<./logo/HAW_logo.png, id=182, 768.8725pt x 231.86626pt>
+<./logo/HAW_logo.png, id=186, 768.8725pt x 231.86626pt>
 File: ./logo/HAW_logo.png Graphic file (type png)
  <use ./logo/HAW_logo.png>
-Package pdftex.def Info: ./logo/HAW_logo.png used on input line 124.
+Package pdftex.def Info: ./logo/HAW_logo.png used on input line 133.
 (pdftex.def)             Requested size: 284.52756pt x 85.80685pt.
 
-Overfull \hbox (227.62206pt too wide) in paragraph at lines 124--124
+Overfull \hbox (227.62206pt too wide) in paragraph at lines 133--133
 [][] 
  []
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg"
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 124.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 133.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 124.
+(Font)              scaled to size 10.95pt on input line 133.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 124.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 133.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 24.88pt on input line 124.
+(Font)              scaled to size 24.88pt on input line 133.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 124.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 133.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 124.
+(Font)              scaled to size 14.4pt on input line 133.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <12> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 124.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 133.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 124.
+(Font)              scaled to size 12.0pt on input line 133.
 
-Overfull \hbox (318.98038pt too wide) in paragraph at lines 124--124
+Overfull \hbox (318.98038pt too wide) in paragraph at lines 133--133
 [][][][][][][] 
  []
 
-\haw@xpos=\skip99
-\haw@fw=\skip100
-\haw@tw=\skip101
+\haw@xpos=\skip110
+\haw@fw=\skip111
+\haw@tw=\skip112
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 124.
+(Font)              scaled to size 10.95pt on input line 133.
 
-Overfull \hbox (455.24419pt too wide) in paragraph at lines 124--124
+! Package inputenc Error: Unicode char \u8:�tT not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 \maketitle
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (455.24419pt too wide) in paragraph at lines 133--133
 []$[]$ 
  []
 
@@ -1576,76 +1975,119 @@ Overfull \hbox (455.24419pt too wide) in paragraph at lines 124--124
 
  <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/logo/HAW_logo.png>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 124.
+(Font)              scaled to size 14.4pt on input line 133.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 124.
+(Font)              scaled to size 14.4pt on input line 133.
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 
  []
 
+
+! Package inputenc Error: Unicode char \u8:�tT not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 \maketitle
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 \maketitle
+                
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 \maketitle
+                
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
 [2]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 136.
+(Font)              scaled to size 10.95pt on input line 145.
  [3]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 141.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 150.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 141.
-Package tocbasic Info: character protrusion at toc deactivated on input line 141.
+(Font)              scaled to size 20.74pt on input line 150.
+Package tocbasic Info: character protrusion at toc deactivated on input line 150.
  ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.toc"
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 85.
+(Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 87.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 85.
+(Font)              scaled to size 10.95pt on input line 87.
  [4
 
 
 ])
-\tf@toc=\write9
+\tf@toc=\write10
  [5]
-Package tocbasic Info: character protrusion at lot deactivated on input line 145.
+Package tocbasic Info: character protrusion at lot deactivated on input line 154.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.lot")
-\tf@lot=\write10
+\tf@lot=\write11
  [6
 
 
 ]
-Package tocbasic Info: character protrusion at lof deactivated on input line 146.
+Package tocbasic Info: character protrusion at lof deactivated on input line 155.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.lof")
-\tf@lof=\write11
+\tf@lof=\write12
 
 
 Class scrbook Warning: \float@listhead detected!
 (scrbook)              Implementation of \float@listhead became
 (scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
-(scrbook)              has been replaced by more several more flexible
+(scrbook)              has been replaced by several more flexible
 (scrbook)              features of package `tocbasic`.
 (scrbook)              Maybe implementation of \float@listhead will
 (scrbook)              be removed from KOMA-Script soon.
 (scrbook)              Loading of package `scrhack' may help to
 (scrbook)              avoid this warning, if you are using a
 (scrbook)              a package that still implements the
-(scrbook)              deprecated \float@listhead interface  on input line 147.
+(scrbook)              deprecated \float@listhead interface  on input line 156.
 
 [7
 
 
 ] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.lol")
-\tf@lol=\write12
+\tf@lol=\write13
  [8
 
 
 ]
 ===== File: chapter 1
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\glossar.tex"
+\@gls@deffile=\write14
+)
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\einfuehrung.tex"
 Kapitel 1.
 
 Class scrbook Warning: \float@addtolists detected!
 (scrbook)              Implementation of \float@addtolist became
 (scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
-(scrbook)              has been replaced by more several more flexible
+(scrbook)              has been replaced by several more flexible
 (scrbook)              features of package `tocbasic`.
 (scrbook)              Since Version 3.12 support for deprecated
 (scrbook)              \float@addtolist interface has been
@@ -1657,37 +2099,37 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 165.
+(Font)              scaled to size 8.0pt on input line 7.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 165.
+(Font)              scaled to size 9.0pt on input line 7.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 165.
+(Font)              scaled to size 6.0pt on input line 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 173.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 15.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\ts1linuxlibertinet-tlf.fd
 File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 173.
+(Font)              scaled to size 10.95pt on input line 15.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1696,156 +2138,170 @@ Package microtype Info: Loading generic settings for font family
 
 
 
+
+
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<bilder/trends_spark_vs_hadoop.PNG, id=291, 629.72766pt x 220.19766pt>
+<bilder/trends_spark_vs_hadoop.PNG, id=308, 629.72766pt x 220.19766pt>
 File: bilder/trends_spark_vs_hadoop.PNG Graphic file (type png)
  <use bilder/trends_spark_vs_hadoop.PNG>
-Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 185.
+Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 27.
 (pdftex.def)             Requested size: 377.83951pt x 132.1196pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+ [2 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/bilder/trends_spark_vs_hadoop.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-[2 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/bilder/trends_spark_vs_hadoop.PNG>]
-[3]
+) [3] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\vorstellung.tex"
 Kapitel 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--206
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+LinuxLibertineMonoT-TLF on input line 207.
+LaTeX Font Info:    Try loading font information for T1+LinuxLibertineMonoT-TLF on input line 7.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxlibertinemonot-tlf.fd
 File: T1LinuxLibertineMonoT-TLF.fd 2012/12/06 (autoinst) Font definitions for T1/LinuxLibertineMonoT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 207.
+(Font)              scaled to size 10.95pt on input line 7.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineMonoT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 207.
+(Font)              scaled to size 10.0pt on input line 7.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 208.
+(Font)              scaled to size 10.0pt on input line 8.
 
-Overfull \hbox (0.14587pt too wide) in paragraph at lines 217--218
+Overfull \hbox (0.14587pt too wide) in paragraph at lines 17--18
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (0.14587pt too wide) in paragraph at lines 225--227
+Overfull \hbox (0.14587pt too wide) in paragraph at lines 25--27
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.230 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 [4
 
 
+
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 252--254
+Missing character: There is no A in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
-[6]
+[6]) [7] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
 Kapitel 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 
-Overfull \hbox (38.43945pt too wide) in paragraph at lines 291--292
+Overfull \hbox (38.43945pt too wide) in paragraph at lines 12--13
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) --- Fu-si-on von Tweets und Mai-ling-lis-ten https://spark.apache.org/docs/1.3
 .0/mllib-feature-extraction.html
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--296
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-<./versuchsaufbau.pdf, id=339, 597.50786pt x 845.04686pt>
+<./versuchsaufbau.pdf, id=364, 597.50786pt x 845.04686pt>
 File: ./versuchsaufbau.pdf Graphic file (type pdf)
  <use ./versuchsaufbau.pdf>
-Package pdftex.def Info: ./versuchsaufbau.pdf used on input line 301.
+Package pdftex.def Info: ./versuchsaufbau.pdf used on input line 22.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\versuchsaufbau.pdf_tex"
-<versuchsaufbau.pdf, id=340, page=1, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=365, page=1, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
-<versuchsaufbau.pdf, id=341, page=2, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=366, page=2, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
@@ -1875,7 +2331,7 @@ Overfull \hbox (9.89595pt too wide) in paragraph at lines 60--60
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
  []
 
-<versuchsaufbau.pdf, id=342, page=3, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=367, page=3, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 3>
 Package pdftex.def Info: versuchsaufbau.pdf, page3 used on input line 61.
@@ -1885,142 +2341,30 @@ Overfull \hbox (5.07368pt too wide) in paragraph at lines 62--62
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Master  
  []
 
-<versuchsaufbau.pdf, id=343, page=4, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=368, page=4, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 4>
 Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 )
-Overfull \hbox (183.6496pt too wide) in paragraph at lines 64--302
+Overfull \hbox (183.6496pt too wide) in paragraph at lines 64--23
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--302
+Underfull \hbox (badness 10000) in paragraph at lines 64--23
 
  []
 
 
-LaTeX Warning: Float too large for page by 300.05005pt on input line 303.
+LaTeX Warning: Float too large for page by 300.05005pt on input line 24.
 
-[7
+[8
+
+
 
 
 ]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.310 Nachrichtengr��e & Worker \rightarrow
-                                            Worker & Master \rightarrow Work...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.310 ...ichtengr��e & Worker \rightarrow Worker &
-                                                   Master \rightarrow Worker...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.310 ...ichtengr��e & Worker \rightarrow Worker &
-                                                   Master \rightarrow Worker...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.310 ...ichtengr��e & Worker \rightarrow Worker &
-                                                   Master \rightarrow Worker...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.310 ...r \rightarrow Worker & Master \rightarrow
-                                                   Worker & Worker \rightarr...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.310 ...rrow Worker & Master \rightarrow Worker &
-                                                   Worker \rightarrow Master...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.310 ...rrow Worker & Master \rightarrow Worker &
-                                                   Worker \rightarrow Master...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.310 ...rrow Worker & Master \rightarrow Worker &
-                                                   Worker \rightarrow Master...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.310 ...r \rightarrow Worker & Worker \rightarrow
-                                                   Master \\ [0.5ex] % inser...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.310 ...er & Worker \rightarrow Master \\ [0.5ex]
-                                                   % inserts table
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.310 ...er & Worker \rightarrow Master \\ [0.5ex]
-                                                   % inserts table
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.310 ...er & Worker \rightarrow Master \\ [0.5ex]
-                                                   % inserts table
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 Missing character: There is no A in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -2044,12 +2388,12 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no k in font nullfont!
 
-Overfull \hbox (34.47556pt too wide) in paragraph at lines 354--355
+Overfull \hbox (34.47556pt too wide) in paragraph at lines 75--76
  [] 
  []
 
-[8] [9 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf> <C:/Users/Dan
-iel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf
+[9] [10 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf> <C:/Users/Da
+niel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuc
 hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -2062,7 +2406,7 @@ hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuc
 hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
@@ -2076,84 +2420,69 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/bx/n' in size <10> not available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/b/n' tried instead on input line 362.
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/b/n' tried instead on input line 83.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 362.
- [10]
-Overfull \hbox (12.146pt too wide) in paragraph at lines 384--385
+(Font)              scaled to size 10.0pt on input line 83.
+ [11]
+Overfull \hbox (12.146pt too wide) in paragraph at lines 105--106
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (5.8342pt too wide) in paragraph at lines 432--433
+Overfull \hbox (5.8342pt too wide) in paragraph at lines 153--154
  [] 
  []
 
-[11] [12] [13]
+[12] [13]) [14] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.tex"
 Kapitel 4.
-[14
+) [15
+
+
 
 
 ]
 ===== Section: literature
-
-! Package biblatex Error: '\bibliographystyle' invalid.
-
-See the biblatex package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.474 \bibliographystyle{dinat}
-                               
-Use the package option 'style' instead.
-I'm ignoring this command.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.476 \printbibliography{
-                         sample}
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 476.
-===== Section: nomenclature
-[15
+(Font)              scaled to size 10.95pt on input line 183.
+[16
+
 
 
 
 
 ]
-No file sample.nls.
 ===== Section: index
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [16
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls") [17
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 492.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
 
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
+
+
+] [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
+
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.aux"
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\glossar.aux")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\einfuehrung.aux")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\vorstellung.aux")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.aux")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.aux"))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `sample.out' has not changed.
-(rerunfilecheck)             Checksum: F48FCCBF1C764E90EFF920E9443EAD7B;2986.
+(rerunfilecheck)             Checksum: 83168892C42BC4F5BD7C9853824FDC08;3032.
 Package logreq Info: Writing requests to 'sample.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 492.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 37316 strings out of 493921
- 722317 string characters out of 3144874
- 1276193 words of memory out of 3000000
- 39718 multiletter control sequences out of 15000+200000
- 120683 words of font info for 151 fonts, out of 3000000 for 9000
+ 41535 strings out of 493921
+ 795688 string characters out of 3144873
+ 1396172 words of memory out of 3000000
+ 43766 multiletter control sequences out of 15000+200000
+ 120412 words of font info for 149 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
- 76i,11n,114p,939b,3368s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,12n,114p,1816b,3368s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming
 /MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libert
 ine/lbtn_d6jdyt.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Dani
@@ -2164,11 +2493,11 @@ oaming/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/Danie
 /public/libertine/LinLibertineMT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLiberti
 neMTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Daniel/Ap
 pData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fon
-ts/type1/public/libertine/LinLibertineTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on sample.pdf (24 pages, 553612 bytes).
+ts/type1/public/libertine/LinLibertineTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b>
+Output written on sample.pdf (26 pages, 550164 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
- 35776 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 518 PDF objects out of 1000 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
+ 35784 words of extra memory for PDF output out of 35830 (max. 10000000)
 

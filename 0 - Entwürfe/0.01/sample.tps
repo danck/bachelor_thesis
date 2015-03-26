@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2201
-NormalPos.bottom=770
+NormalPos.bottom=843
 Class=LaTeXView
 Document=sample.tex
 
 [Frame0_View0,0]
-TopLine=27
-Cursor=777
+TopLine=94
+Cursor=2755
 
 [SessionInfo]
 FrameCount=1

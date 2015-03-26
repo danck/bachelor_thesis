@@ -33,7 +33,7 @@
   \strng{fullhash}{DJGS1}
   \field{labelalpha}{DG04}
   \field{sortinit}{D}
-  \field{title}{MapReduce: Simplied Data Processing on Large Clusters}
+  \field{title}{MapReduce: Simplified Data Processing on Large Clusters}
   \field{journaltitle}{OSDI}
   \field{year}{2004}
 \endentry
@@ -157,23 +157,21 @@
   \field{year}{2014}
 \endentry
 
-\entry{Woo01}{article}{}
+\entry{Sam14}{book}{}
   \name{author}{1}{}{%
     {{}%
-     {Wootters}{W.}%
-     {W.~K.}{W.~K.}%
+     {Sameer~Wadkar}{S.~W.}%
+     {Jasson~Venner}{J.~V.}%
      {}{}%
-     {}{}}%
+     {Madhu~Siddalingaiah}{M.~S.}}%
   }
-  \strng{namehash}{WWK1}
-  \strng{fullhash}{WWK1}
-  \field{labelalpha}{Woo01}
-  \field{sortinit}{W}
-  \field{pages}{27\bibrangedash 47}
-  \field{title}{Entanglement of formation and concurrence}
-  \field{volume}{1}
-  \field{journaltitle}{Quantum Information and Computation}
-  \field{year}{2001}
+  \strng{namehash}{SWMSJV1}
+  \strng{fullhash}{SWMSJV1}
+  \field{labelalpha}{SW14}
+  \field{sortinit}{S}
+  \field{pages}{1}
+  \field{title}{Pro Apache Hadoop}
+  \field{year}{2014}
 \endentry
 
 \lossort
