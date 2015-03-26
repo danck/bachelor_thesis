@@ -2,15 +2,15 @@
 {%
 \gls@defglossaryentry{repl}%
 {%
-name={Request Evaluate Reply Loop},%
-sort={Request Evaluate Reply Loop},%
+name={Read Evaluate Print Loop},%
+sort={Read Evaluate Print Loop},%
 type={main},%
-first={Request Evaluate Reply Loop},%
-firstplural={Request Evaluate Reply Loops},%
-text={Request Evaluate Reply Loop},%
-plural={Request Evaluate Reply Loops},%
-description={sadadf dsfsdgf},%
-descriptionplural={sadadf dsfsdgf},%
+first={Read Evaluate Print Loop},%
+firstplural={Read Evaluate Print Loops},%
+text={Read Evaluate Print Loop},%
+plural={Read Evaluate Print Loops},%
+description={Pattern zum Erzeugen einer Konsole, die in Endlosschleife Eingaben liest, die auswertet und das Ergebnis wieder ausgibt.},%
+descriptionplural={Pattern zum Erzeugen einer Konsole, die in Endlosschleife Eingaben liest, die auswertet und das Ergebnis wieder ausgibt.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

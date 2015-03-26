@@ -20,7 +20,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Kontextabgrenzung}{3}{section.1.2}
+\contentsline {section}{\numberline {1.2}Kontextabgrenzung}{2}{section.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Vorstellung von Apache Spark}{4}{chapter.2}
 \defcounter {refsection}{0}\relax 
@@ -92,4 +92,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{15}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{17}{section*.10}
+\contentsline {chapter}{Glossar}{16}{section*.9}
