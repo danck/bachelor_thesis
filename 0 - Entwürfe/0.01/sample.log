@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  26 MAR 2015 19:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  28 MAR 2015 12:02
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -1737,16 +1737,23 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 Package: glossary-tree 2015/02/03 v4.13 (NLCT)
 \glstreeindent=\skip109
 ))
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 93.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 93.
-Package hyperref Info: Option `linktocpage' set `true' on input line 93.
-LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on input line 107.
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\appendix\appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count384
+\c@@ppsavesec=\count385
+\c@@ppsaveapp=\count386
+)
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\glossar.tex")
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 96.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 96.
+Package hyperref Info: Option `linktocpage' set `true' on input line 96.
+LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on input line 110.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxlibertinet-tlf.fd
 File: T1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for T1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 107.
+(Font)              scaled to size 10.95pt on input line 110.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 11
 (typearea)             BCOR = 28.45274pt
@@ -1763,13 +1770,15 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 107.
+(typearea)              on input line 110.
 \@indexfile=\write6
 
 Writing index file sample.idx
 \glswrite=\write7
 \glo@main@file=\write8
-Package glossaries Info: Writing glossary file sample.glo on input line 111.
+Package glossaries Info: Writing glossary file sample.glo on input line 114.
+\glo@acronym@file=\write9
+Package glossaries Info: Writing glossary file sample.acn on input line 114.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\english.lbx
@@ -1779,8 +1788,8 @@ File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count384
-\@quotereset=\count385
+\@quotelevel=\count387
+\@quotereset=\count388
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.aux"
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
@@ -1793,50 +1802,50 @@ Package biblatex Info: ... file 'german.lbx' found.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\german.lbx
 File: german.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 ))
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\glossar.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\einfuehrung.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\vorstellung.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.aux")
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.aux"))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 113.
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.aux")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.aux"))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 116.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count386
+\scratchcounter=\count389
 \scratchdimen=\dimen211
 \scratchbox=\box110
-\nofMPsegments=\count387
-\nofMParguments=\count388
+\nofMPsegments=\count390
+\nofMParguments=\count391
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count389
+\MPscratchCnt=\count392
 \MPscratchDim=\dimen212
-\MPnumerator=\count390
-\makeMPintoPDFobject=\count391
+\MPnumerator=\count393
+\makeMPintoPDFobject=\count394
 \everyMPtoPDFconversion=\toks56
 )
-\c@mv@tabular=\count392
-\c@mv@boldtabular=\count393
-LaTeX Info: Redefining \microtypecontext on input line 113.
+\c@mv@tabular=\count395
+\c@mv@boldtabular=\count396
+LaTeX Info: Redefining \microtypecontext on input line 116.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1850,24 +1859,24 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c@lstlisting=\count394
+\c@lstlisting=\count397
 \AtBeginShipoutBox=\box111
-Package hyperref Info: Link coloring ON on input line 113.
+Package hyperref Info: Link coloring ON on input line 116.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count395
+\c@section@level=\count398
 )
-LaTeX Info: Redefining \ref on input line 113.
-LaTeX Info: Redefining \pageref on input line 113.
-LaTeX Info: Redefining \nameref on input line 113.
+LaTeX Info: Redefining \ref on input line 116.
+LaTeX Info: Redefining \pageref on input line 116.
+LaTeX Info: Redefining \nameref on input line 116.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.out")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.out")
-\@outlinefile=\write9
+\@outlinefile=\write10
 
 ABD: EveryShipout initializing macros
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1887,8 +1896,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 113.
-Package biblatex Info: Reference segment=0 on input line 113.
+Package biblatex Info: Reference section=0 on input line 116.
+Package biblatex Info: Reference segment=0 on input line 116.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: longtable package is loaded.
@@ -1897,25 +1906,25 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 133.
+LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 136.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxbiolinumt-tlf.fd
 File: T1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 133.
+(Font)              scaled to size 10.95pt on input line 136.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<./logo/HAW_logo.png, id=186, 768.8725pt x 231.86626pt>
+<./logo/HAW_logo.png, id=198, 768.8725pt x 231.86626pt>
 File: ./logo/HAW_logo.png Graphic file (type png)
  <use ./logo/HAW_logo.png>
-Package pdftex.def Info: ./logo/HAW_logo.png used on input line 133.
+Package pdftex.def Info: ./logo/HAW_logo.png used on input line 136.
 (pdftex.def)             Requested size: 284.52756pt x 85.80685pt.
 
-Overfull \hbox (227.62206pt too wide) in paragraph at lines 133--133
+Overfull \hbox (227.62206pt too wide) in paragraph at lines 136--136
 [][] 
  []
 
@@ -1923,23 +1932,23 @@ Overfull \hbox (227.62206pt too wide) in paragraph at lines 133--133
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 133.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 133.
+(Font)              scaled to size 10.95pt on input line 136.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 133.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 24.88pt on input line 133.
+(Font)              scaled to size 24.88pt on input line 136.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 133.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 133.
+(Font)              scaled to size 14.4pt on input line 136.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <12> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 133.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 133.
+(Font)              scaled to size 12.0pt on input line 136.
 
-Overfull \hbox (318.98038pt too wide) in paragraph at lines 133--133
+Overfull \hbox (318.98038pt too wide) in paragraph at lines 136--136
 [][][][][][][] 
  []
 
@@ -1947,7 +1956,7 @@ Overfull \hbox (318.98038pt too wide) in paragraph at lines 133--133
 \haw@fw=\skip111
 \haw@tw=\skip112
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 133.
+(Font)              scaled to size 10.95pt on input line 136.
 
 ! Package inputenc Error: Unicode char \u8:�tT not set up for use with LaTeX.
 
@@ -1955,14 +1964,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 \maketitle
+l.136 \maketitle
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (455.24419pt too wide) in paragraph at lines 133--133
+Overfull \hbox (455.24419pt too wide) in paragraph at lines 136--136
 []$[]$ 
  []
 
@@ -1973,11 +1982,11 @@ Overfull \hbox (455.24419pt too wide) in paragraph at lines 133--133
 
  <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/logo/HAW_logo.png>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 133.
+(Font)              scaled to size 14.4pt on input line 136.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 133.
+(Font)              scaled to size 14.4pt on input line 136.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 
  []
 
@@ -1988,7 +1997,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 \maketitle
+l.136 \maketitle
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2002,7 +2011,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 \maketitle
+l.136 \maketitle
                 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2015,20 +2024,20 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 \maketitle
+l.136 \maketitle
                 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
 [2]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 145.
+(Font)              scaled to size 10.95pt on input line 148.
  [3]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 150.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 150.
-Package tocbasic Info: character protrusion at toc deactivated on input line 150.
+(Font)              scaled to size 20.74pt on input line 153.
+Package tocbasic Info: character protrusion at toc deactivated on input line 153.
  ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.toc"
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 87.
@@ -2038,20 +2047,20 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 
 
 ])
-\tf@toc=\write10
+\tf@toc=\write11
  [5]
-Package tocbasic Info: character protrusion at lot deactivated on input line 154.
+Package tocbasic Info: character protrusion at lot deactivated on input line 157.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.lot")
-\tf@lot=\write11
+\tf@lot=\write12
  [6
 
 
 ]
-Package tocbasic Info: character protrusion at lof deactivated on input line 155.
+Package tocbasic Info: character protrusion at lof deactivated on input line 158.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.lof")
-\tf@lof=\write12
+\tf@lof=\write13
 
 
 Class scrbook Warning: \float@listhead detected!
@@ -2064,21 +2073,18 @@ Class scrbook Warning: \float@listhead detected!
 (scrbook)              Loading of package `scrhack' may help to
 (scrbook)              avoid this warning, if you are using a
 (scrbook)              a package that still implements the
-(scrbook)              deprecated \float@listhead interface  on input line 156.
+(scrbook)              deprecated \float@listhead interface  on input line 159.
 
 [7
 
 
 ] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.lol")
-\tf@lol=\write13
+\tf@lol=\write14
  [8
 
 
 ]
-===== File: chapter 1
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\glossar.tex"
-\@gls@deffile=\write14
-)
+===== Chapter Files
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\einfuehrung.tex"
 Kapitel 1.
 
@@ -2137,8 +2143,6 @@ Package microtype Info: Loading generic settings for font family
 
 
 
-
-
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
@@ -2154,7 +2158,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<bilder/trends_spark_vs_hadoop.PNG, id=307, 629.72766pt x 220.19766pt>
+<bilder/trends_spark_vs_hadoop.PNG, id=326, 629.72766pt x 220.19766pt>
 File: bilder/trends_spark_vs_hadoop.PNG Graphic file (type png)
  <use bilder/trends_spark_vs_hadoop.PNG>
 Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 27.
@@ -2287,20 +2291,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-<./versuchsaufbau.pdf, id=364, 597.50786pt x 845.04686pt>
+<./versuchsaufbau.pdf, id=383, 597.50786pt x 845.04686pt>
 File: ./versuchsaufbau.pdf Graphic file (type pdf)
  <use ./versuchsaufbau.pdf>
 Package pdftex.def Info: ./versuchsaufbau.pdf used on input line 22.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\versuchsaufbau.pdf_tex"
-<versuchsaufbau.pdf, id=365, page=1, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=384, page=1, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 597.50793pt x 845.0448pt.
 
-<versuchsaufbau.pdf, id=366, page=2, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=385, page=2, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
@@ -2330,7 +2334,7 @@ Overfull \hbox (9.89595pt too wide) in paragraph at lines 60--60
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
  []
 
-<versuchsaufbau.pdf, id=367, page=3, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=386, page=3, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 3>
 Package pdftex.def Info: versuchsaufbau.pdf, page3 used on input line 61.
@@ -2340,7 +2344,7 @@ Overfull \hbox (5.07368pt too wide) in paragraph at lines 62--62
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Master  
  []
 
-<versuchsaufbau.pdf, id=368, page=4, 597.50786pt x 845.04686pt>
+<versuchsaufbau.pdf, id=387, page=4, 597.50786pt x 845.04686pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 4>
 Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
@@ -2441,47 +2445,68 @@ Kapitel 4.
 
 ]
 ===== Section: literature
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls") [16
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.acr")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [16
 
 
 
+
+
+
+
+]) [17
 
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 189.
- [17
+(Font)              scaled to size 10.95pt on input line 187.
+ [18
 
 
 ]
+===== File: appendices
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.tex"
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 24.88pt on input line 1.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 24.88pt on input line 1.
+ [19
+
+
+
+
+
+]) [20]
 ===== Section: index
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [21
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.aux"
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\glossar.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\einfuehrung.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\vorstellung.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.aux")
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.aux")
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.aux"))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
 Package rerunfilecheck Info: File `sample.out' has not changed.
-(rerunfilecheck)             Checksum: 60B900E066544D983C31525C0A207FD9;3031.
+(rerunfilecheck)             Checksum: A1BD23DB7B0C44A63EA028428B5871A6;3190.
 Package logreq Info: Writing requests to 'sample.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 212.
  ) 
 Here is how much of TeX's memory you used:
- 41531 strings out of 493921
- 795458 string characters out of 3144873
- 1397172 words of memory out of 3000000
- 43764 multiletter control sequences out of 15000+200000
- 120412 words of font info for 149 fonts, out of 3000000 for 9000
+ 41747 strings out of 493921
+ 798965 string characters out of 3144873
+ 1400072 words of memory out of 3000000
+ 43970 multiletter control sequences out of 15000+200000
+ 129705 words of font info for 146 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
- 76i,12n,114p,1816b,3368s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,12n,114p,1826b,3368s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming
 /MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libert
 ine/lbtn_d6jdyt.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Dani
@@ -2494,9 +2519,9 @@ neMTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/liberti
 pData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fon
 ts/type1/public/libertine/LinLibertineTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b>
-Output written on sample.pdf (26 pages, 549861 bytes).
+Output written on sample.pdf (29 pages, 555687 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 138 named destinations out of 1000 (max. 500000)
- 35784 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 555 PDF objects out of 1000 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
+ 36832 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -36,10 +36,11 @@
 \usepackage{svg}
 \usepackage{amsmath}
 \usepackage{xcolor}
-\usepackage{fullpage} %% Wirklich?
+\usepackage{fullpage}
 \usepackage{tikz}
 \usepackage{tikz-uml}
-\usepackage[toc]{glossaries}
+\usepackage[toc,acronym]{glossaries}
+\usepackage[toc,page]{appendix}
 \usepackage{listings}
 \def\dollar{\$}
 \lstset{
@@ -50,7 +51,9 @@
 
 \tikzstyle{RectObject}=[rectangle,fill=white,draw,line width=0.5mm]
 \tikzstyle{line}=[draw]
-\tikzstyle{arrow}=[draw, -latex] 
+\tikzstyle{arrow}=[draw, -latex]
+
+\input{glossar}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% define some colors
@@ -159,19 +162,13 @@
 \mainmatter
 \onehalfspacing
 %% write to the log/stdout
-\typeout{===== File: chapter 1}
-
-\include{glossar}
+\typeout{===== Chapter Files}
 \include{einfuehrung}
 \include{vorstellung}
 \include{praxis}
 \include{schluss}
+%\include{glossar}
 
-
-%% appendix if used
-%%\appendix
-%%\typeout{===== File: appendix}
-%%\include{appendix}
 
 % bibliography and other stuff
 \backmatter
@@ -181,12 +178,19 @@
 %% Glossar
 \newpage
 \glstoctrue
+\printglossary[type=\acronymtype]
 \printglossary[title=Glossar, toctitle=Glossar]
 
 %% read the documentation for customizing the style
 %\bibliographystyle{dinat}
 %\bibliography{sample}
 \printbibliography
+
+%% appendix
+\newpage
+\appendix
+\typeout{===== File: appendices}
+\include{appendices}
 
 %\typeout{===== Section: nomenclature}
 %% uncomment if a TOC entry is needed

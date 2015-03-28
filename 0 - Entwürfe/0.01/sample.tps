@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=sample.tex
 
 [Frame0_View0,0]
-TopLine=0
-Cursor=364
+TopLine=174
+Cursor=4429
 
 [Frame1]
 Flags=0
@@ -126,9 +126,9 @@ Document=glossar.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=193
+Cursor=119
 
 [SessionInfo]
 FrameCount=7
-ActiveFrame=6
+ActiveFrame=0
 
