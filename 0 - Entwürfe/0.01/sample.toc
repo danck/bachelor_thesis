@@ -92,10 +92,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{15}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{16}{section*.9}
+\contentsline {chapter}{Acronyme}{16}{section*.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Glossar}{17}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{19}{section*.14}
+\contentsline {chapter}{Anhang}{19}{section*.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Appendix A}{20}{section.1..1}

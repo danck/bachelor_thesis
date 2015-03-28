@@ -47,6 +47,10 @@
         literate={my_dollar}{\$}1
 }
 
+% Appendix Name
+\addto\captionsngerman{\let\appendixtocname\appendixname%
+\let\appendixpagename\appendixname}
+
 \setsvg{inkscape={"C:/Program Files/Inkscape/inkscape.exe"= -z -C}}
 
 \tikzstyle{RectObject}=[rectangle,fill=white,draw,line width=0.5mm]
@@ -178,7 +182,7 @@
 %% Glossar
 \newpage
 \glstoctrue
-\printglossary[type=\acronymtype]
+\printglossary[title=Acronyme,toctitle=Acronyme,type=\acronymtype]
 \printglossary[title=Glossar, toctitle=Glossar]
 
 %% read the documentation for customizing the style
@@ -187,9 +191,9 @@
 \printbibliography
 
 %% appendix
+\typeout{===== File: appendices}
 \newpage
 \appendix
-\typeout{===== File: appendices}
 \include{appendices}
 
 %\typeout{===== Section: nomenclature}
