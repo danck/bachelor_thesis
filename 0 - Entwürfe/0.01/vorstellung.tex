@@ -27,17 +27,24 @@ res0: Array[(String, Int)] = Array((Tyrann,,1), (im,2), (Doch,1) ...)
 \end{lstlisting}
 
 
-Aus Sicht eines Administrators oder Softwarearchitekten ist Apache Spark eine Applikation auf einem Rechencluster, die sich in der Anwendungsschicht befindet und charakteristische Anforderungen insbesondere an Lokalität des Storages und die Netzwerkperformance stellt.\\
+Aus Sicht eines Administrators oder Softwarearchitekten ist Apache Spark eine Applikation auf einem \gls{cluster}, die sich in der Anwendungsschicht befindet und charakteristische Anforderungen insbesondere an Lokalität des Storages und die Netzwerkperformance stellt.\\
 
 Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in welchem Ökosystem von Anwendungen sich Apache Spark bewegt wird in den folgenden Abschnitten dieses Kapitels beleuchtet.
 
 \section{Überblick}
 \textcolor{gray}{--- Was ist es, wofür ist es, wie funktioniert es, (JVM, Scala) ---}
 
+\newsavebox{\mybox}
+\sbox{\mybox}{%
+   \begin{tikzpicture}
+     % Inner picture
+   \end{tikzpicture}
+ }
+
 \begin{figure}[h]
 \centering
   \begin{tikzpicture}
-  \draw (7,0) node[RectObject, inner xsep=1cm] (Big2) {Big Node};
+  \draw (0,0) node[RectObject, inner xsep=1cm] (Big2) {Big Node};
   \draw (6,2) node[RectObject] (Small2A) {A};
   \draw (8,2) node[RectObject] (Small2B) {B};
   \draw[arrow] (Small2A.north)--(Small2A|-Big2.south);
@@ -54,7 +61,7 @@ Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in 
 
 Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu können ist es offensichtlich wichtig, welche Eigenschaften der unterliegenden Hardware angenommen werden.
 
-Weil Spark explizit für den Betrieb innerhalb eines Hadoop/YARN \textcolor{red}{[VERWEIS auf Abschnitt Scheduling]} geeignet ist und YARN wiederum für den Betrieb auf einem Rechnercluster auf Mittelklasse-Mehrzweckrechnern (Commodity Hardware) optimiert ist \textcolor{red}{[VERWEIS Apache Hadoop Yarn S. 42]}, kann für Spark von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
+Weil Spark explizit für den Betrieb innerhalb eines Hadoop/YARN \textcolor{red}{[VERWEIS auf Abschnitt Scheduling]} geeignet ist und YARN wiederum für den Betrieb auf einem \gls{cluster} auf Mittelklasse-Mehrzweckmaschinen (Commodity Hardware) optimiert ist \textcolor{red}{[VERWEIS Apache Hadoop Yarn S. 42]}, kann für Spark von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
 
 Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grundausstattung) \textcolor{red}{[VERWEIS Anhang]} - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen.
 
@@ -72,10 +79,10 @@ Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grund
 	\label{table:vgldurchsatz} % is used to refer this table in the text
 \end{table}
 
-Auf eine detaillierte Analyse des Zugriffsverhaltens wird im Rahmen dieser Arbeit verzichtet. Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes der verschiedenen Datenkanäle zu vergegenwärtigen:
+Auf eine detaillierte Analyse des Zugriffsverhaltens wird im Rahmen dieser Arbeit verzichtet. Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes (D) der verschiedenen Datenkanäle zu vergegenwärtigen:
 
 \begin{equation*}
-	Netzwerk < Festspeicher < Arbeitsspeicher
+	D_{Netzwerk} < D_{Festspeicher} < D_{Arbeitsspeicher}
 \end{equation*}
 
 \section{Kernkonzepte}
