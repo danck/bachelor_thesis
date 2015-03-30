@@ -1,6 +1,6 @@
 %% Creator: Inkscape 0.91_64bit, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'versuchsaufbau.pdf' (pdf, eps, ps)
+%% Accompanies image file 'versuchsaufbau.pdf_tex.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -49,17 +49,17 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,1.05324295)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{versuchsaufbau.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{versuchsaufbau.pdf_tex.pdf}}%
     \put(0.0402317,0.54484895){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{1 2 3 4 5 6 7 8}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{versuchsaufbau.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{versuchsaufbau.pdf_tex.pdf}}%
     \put(0.07043099,0.8209831){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11768943\unitlength}\raggedright Switch\end{minipage}}}%
     \put(0.11975415,0.91014049){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11768943\unitlength}\raggedright \end{minipage}}}%
     \put(0.32688858,1.06042175){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10539352\unitlength}\raggedright Worker\end{minipage}}}%
     \put(0.50505627,1.06119963){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10539352\unitlength}\raggedright Worker\end{minipage}}}%
     \put(0.68773831,1.05935778){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10539352\unitlength}\raggedright Worker\end{minipage}}}%
     \put(0.87393364,1.05935778){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10539352\unitlength}\raggedright Worker\end{minipage}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{versuchsaufbau.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{versuchsaufbau.pdf_tex.pdf}}%
     \put(0.62109655,0.48291398){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11768943\unitlength}\raggedright Master\end{minipage}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{versuchsaufbau.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{versuchsaufbau.pdf_tex.pdf}}%
   \end{picture}%
 \endgroup%

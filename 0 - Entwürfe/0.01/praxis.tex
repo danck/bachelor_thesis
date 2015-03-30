@@ -33,14 +33,14 @@ An die Software werden folgende Anforderungen gestellt. Mit \textit{Information}
 \end{itemize}
 
 \subsection{Hardwarekontext und Performance-Basisdaten}
-\textcolor{gray}{--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---}\\
 
-Als Testumgebung dient ein \gls{cluster} aus vier identischen \gls{worker}n und einem speziellen \gls{master}knoten.
+Als Testumgebung dient ein \gls{cluster} aus vier identischen \gls{worker}n und einem speziellen \gls{master}knoten (Abb. \ref{figure:versuchsaufbau}).
 
-\begin{figure}[htbp]
+\begin{figure}[h]
 	\centering
-  \includesvg[png,width=\paperwidth]{versuchsaufbau}
+  \includesvg[pdf]{versuchsaufbau}
 	\caption{Hardwareumgebung des Programms zur Tweetanalyse}
+	\label{figure:versuchsaufbau}
 \end{figure}
 
 \paragraph{Worker}
@@ -65,7 +65,6 @@ Als Betriebssystem komm Ubuntu\footcite{ubuntu} 14.04 32-Bit zum Einsatz.
 
 \paragraph{Netzwerk}
 Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch mit maximalem Durchsatz von 100MBit/s.
-
 
 \begin{table}[ht]
 \caption{---DUMMY--- Netzwerkdurchsatz} % title of Table

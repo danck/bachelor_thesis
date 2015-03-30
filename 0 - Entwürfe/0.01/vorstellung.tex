@@ -29,7 +29,7 @@ res0: Array[(String, Int)] = Array((Tyrann,,1), (im,2), (Doch,1) ...)
 
 Aus Sicht eines Administrators oder Softwarearchitekten ist Apache Spark eine Applikation auf einem Rechencluster, die sich in der Anwendungsschicht befindet und charakteristische Anforderungen insbesondere an Lokalität des Storages und die Netzwerkperformance stellt.\\
 
-Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in welchem Ökosystem von Anwendungen sich Apache Spark bewegt wird im nächsten Abschnitt beleuchtet.
+Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in welchem Ökosystem von Anwendungen sich Apache Spark bewegt wird in den folgenden Abschnitten dieses Kapitels beleuchtet.
 
 \section{Überblick}
 \textcolor{gray}{--- Was ist es, wofür ist es, wie funktioniert es, (JVM, Scala) ---}
@@ -52,20 +52,31 @@ Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in 
   \caption{TODO: Verteilung der Software-Komponenten im Cluster}
 \end{figure}
 
+Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu können ist es offensichtlich wichtig, welche Eigenschaften der unterliegenden Hardware angenommen werden.
+
+Weil Spark explizit für den Betrieb innerhalb eines Hadoop/YARN \textcolor{red}{[VERWEIS auf Abschnitt Scheduling]} geeignet ist und YARN wiederum für den Betrieb auf einem Rechnercluster auf Mittelklasse-Mehrzweckrechnern (Commodity Hardware) optimiert ist \textcolor{red}{[VERWEIS Apache Hadoop Yarn S. 42]}, kann für Spark von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
+
+Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grundausstattung) \textcolor{red}{[VERWEIS Anhang]} - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen.
 
 \begin{table}[ht]
 	\centering % used for centering table
 	\begin{tabular}{c c c} % centered columns (4 columns)
 		\hline\hline %inserts double horizontal lines
-		Festspeicher & Netzwerk (1GbE) & Arbeitsspeicher (DDR4)\\ [0.5ex] % inserts table
+		Festspeicher & Netzwerk & Arbeitsspeicher\\ [0.5ex] % inserts table
 		%heading
 		\hline % inserts single horizontal line
 		??? & 1,25 GB/s & 17GB/s \\ % inserting body of the table
 		\hline %inserts single line
 	\end{tabular}
-	\label{table:nonlin} % is used to refer this table in the text
 	\caption{Vergleich von theoretischen Spitzenleistungen bei Mehrzweck-Servern der 2000 Euro Klasse} % title of Table
+	\label{table:vgldurchsatz} % is used to refer this table in the text
 \end{table}
+
+Auf eine detaillierte Analyse des Zugriffsverhaltens wird im Rahmen dieser Arbeit verzichtet. Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes der verschiedenen Datenkanäle zu vergegenwärtigen:
+
+\begin{equation*}
+	Netzwerk < Festspeicher < Arbeitsspeicher
+\end{equation*}
 
 \section{Kernkonzepte}
 \textcolor{gray}{--- Warum ist Spark schnell, ausfallsicher, secure (und wo vielleicht nicht)? ---}
