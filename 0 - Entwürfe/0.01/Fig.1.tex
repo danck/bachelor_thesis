@@ -11,25 +11,50 @@
 
 \usepackage [T1]{fontenc}
 
-\usepackage [latin1]{inputenc}
+\usepackage [utf8]{inputenc}
 \usepackage {libertine}
 \usepackage {pifont}
 \usepackage {microtype}
 \usepackage {textcomp}
-\usepackage [german,refpage]{nomencl}
+
 \usepackage {setspace}
 \usepackage {makeidx}
 \usepackage {listings}
-\usepackage {natbib}
+
 \usepackage [ngerman,colorlinks=true]{hyperref}
 \usepackage {soul}
 \usepackage {hawstyle}
 \usepackage {lipsum} 
 
+
+
+\usepackage [backend=bibtex,bibstyle=alphabetic,citestyle=alphabetic,]{biblatex}
+\addbibresource {sample.bib}
+\renewcommand {\bibfootnotewrapper }[1]{\bibsentence \mkbibbrackets {#1}\addperiod }
+
 \usepackage {svg}
 \usepackage {amsmath}
+\usepackage {xcolor}
+\usepackage {fullpage}
+\usepackage {tikz}
+\usepackage {tikz-uml}
+\usepackage [toc,acronym]{glossaries}
+\usepackage [toc,page]{appendix}
+\usepackage {listings}
+\def \dollar {\$}
+\lstset {literate={my_dollar}{\$}1}
+
+
+\addto \captionsngerman {\let \appendixtocname \appendixname \let \appendixpagename \appendixname }
 
 \setsvg {inkscape={"C:/Program Files/Inkscape/inkscape.exe"= -z -C}}
+
+\tikzstyle {RectObject}=[rectangle,fill=white,draw,line width=0.5mm]
+\tikzstyle {line}=[draw]
+\tikzstyle {arrow}=[draw, -latex]
+
+\input {glossar}
+
 
 
 \colorlet {BackgroundColor}{gray!20}
@@ -60,11 +85,12 @@
 \typearea [current]{last}
 
 \makeindex 
-\makenomenclature 
+
+\makeglossaries 
 
 \makeatletter \@ifpackageloaded {import}{}{\RequirePackage {import}}\@ifpackageloaded {graphicx}{}{\RequirePackage {graphicx}}\@ifpackageloaded {transparent}{}{\RequirePackage {transparent}}\@ifpackageloaded {xcolor}{}{\RequirePackage {xcolor}}\makeatother 
-\setlength {\pdfpagewidth }{80.0pt}
-\setlength {\pdfpageheight }{113.13512pt}
+\setlength {\pdfpagewidth }{597.50793pt}
+\setlength {\pdfpageheight }{845.0448pt}
 \setlength {\paperheight }{\pdfpageheight }
 \setlength {\paperwidth }{\pdfpagewidth }
 \setlength {\textheight }{\paperheight }

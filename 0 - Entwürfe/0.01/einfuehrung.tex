@@ -2,7 +2,7 @@
 
 \section{Motivation}
 
-Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und zunehmend im Fokus von Medien und Unternehmen. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördenden Nutzen abzuringen.\\
+Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und zunehmend im Fokus von Medien und Unternehmen. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördernden Nutzen abzuringen \textcolor{red}{Verweis???} .\\
 
 Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety \footcite{Lan01} erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter \gls{sla}s auf einzelnen Maschinen verarbeitet werden können"' (Vgl. \cite{Sam14}).\\
 
@@ -19,7 +19,7 @@ Reines Map-Reduce (nach Art von Hadoop) als Programmierparadigma zur Verarbeitun
 
 In der Folge dieser Probleme entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen \footcite{Sin14}.\\
 
-Eine der Alternativen zu der Map-Reduce-Komponente in Hadoop ist die "`general engine for large-scale data processing"' Apache Spark.\\
+Eine der Alternativen zu der klassischen Map-Reduce-Komponente in Hadoop ist die "`general engine for large-scale data processing"' Apache Spark.\\
 
 Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ein Vergleich des Interesses an Hadoop und Spark auf Google:\\
 
@@ -29,13 +29,19 @@ Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem e
 \end{figure}
 
 \section{Kontextabgrenzung}
-Das Ziel dieser Arbeit ist es eine Analyse und Bewertung der grundlegenden Konzepte und Anwendungsmöglichkeiten von Apache Spark zu vermitteln.
+Das Ziel dieser Arbeit ist es die grundlegenden Konzepte und Möglichkeiten von Apache Spark zu untersuchen und ausgewählte Aspekte im Rahmen konkreter Anwendungen zu betrachten.\\
 
 Für ein tieferes Verständnis werden Installation, Cluster-Betrieb und die Modellierung und Implementation von Treiberprogrammen beispielhaft durchgeführt, dokumentiert und bewertet. Hierbei kommt Apache Spark in der Version 1.3.0 zum Einsatz.\\
 
 Nur am Rande wird betrachtet:
 \begin{itemize}
 	\item Der Vergleich mit ähnlichen Produkten
-	\item Die Empirische Messung des Skalierungsverhaltens
+	\item Die empirische Analyse des Skalierungsverhaltens
 	\item Details zu Installation und Betrieb
 \end{itemize}
+
+Apache Spark ist überwiegend in der Programmiersprache Scala geschrieben. Die Beispiele in dieser Arbeit werden ebenfalls in Scala verfasst um
+\begin{enumerate}
+	\item einen einheitlichen Stil und Vergleichbarkeit zwischen Quellcode-Auszügen und eigenen Beispielen zu gewährleisten.
+	\item Ausdrücke in kurzer, prägnanter Form darzustellen.
+\end{enumerate}

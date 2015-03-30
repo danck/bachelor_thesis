@@ -1,4 +1,4 @@
-\chapter{Spark in der Praxis}
+\chapter{Anwendung von Spark zur Datenanalyse}
 Im Folgenden wird Apache Spark im Rahmen zweier grundsätzlich verschiedener Anwendungsfälle betrachtet. \\
 
 Beispiel 1: Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Spark als "`Client"' eines bestehenden Yarn Clustermanagers. \textcolor{gray}{--- Commodity Hardware (Rasperry Pi Cluster). ---}\\
@@ -6,22 +6,66 @@ Beispiel 1: Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Sp
 
 Beispiel 2: Eine untypische Anwendung mit verteiltem entfernten Storage und dem Spark Standalone Clustermanager. \textcolor{gray}{--- HPC Hardware ("`Thunder"' des Hamburger KlimaCampus). ---}\\
 
-\section{Echtzeitbewertung von Twitter-Accounts nach ihrer Relvanz für Spark}
+\section{Echtzeitbewertung von Twitter-Meldungen nach ihrer Relvanz für Spark}
 \textcolor{gray}{--- Fusion von Tweets und Mailinglisten 
 https://spark.apache.org/docs/1.3.0/mllib-feature-extraction.html
 Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager ---}\\
-\subsection{Beschreibung des Problems}
+\subsection{Problembeschreibung}
 \textcolor{gray}{--- Es sollen die beiden Spark Mailingslisten (Developer, User) zur Identifikation relevanter und aktueller Themen genutzt werden. Mit den so bewerteten Begriffen können wiederum Tweets bewertet werden. Mit den Tweets können dann ganze Accounts nach ihrer Relevanz beurteilt werden. ---}\\
 \textcolor{gray}{--- Zwei Datenquellen: Tweets (Nahe-Echtzeit), Entwickler-Emails (Sporadisch) ---}\\
 \textcolor{gray}{--- Stichworte: HDFS, Yarn, Rasperri Pi Cluster, Machine Learning, Feature Extraction, Big Data Life Cycle ---}\\
 
+Es sollen aktuelle Informationen bereitgestellt werden, die besonders für Nutzer und Entwickler des Softwareproduktes Apache Spark relevant sind.\\
+
+
+
+\subsection{Anforderungen}
+
+An die Software werden folgende Anforderungen gestellt. Mit \textit{Information} ist im Folgenden eine Auflistung von Twitter-Meldungen gemeint.
+
+\begin{itemize}
+	\item \textbf{A1: Einfacher Zugriff auf die Information}\\
+	Es soll nicht nötig sein Konfigurationen durchzuführen oder explizit anzugeben wie die Informationen aufbereitet oder erhoben werden.
+	\item \textbf{A2: Sehr hohe Aktualität der Information}\\
+	Es sollen stets Informationen dargestellt werden, die unmittelbar erzeugt wurden und in Quasi-Echtzeit\footnote{Eine Latenz von unter einer Minute sei hier tolerabel} verarbeitet wurden.
+	\item \textbf{A3: Hohe Relevanz der Information}\\
+	Die Relevanz soll an aktuellen Themen der Entwicklergemeinschaft gemessen werden.
+\end{itemize}
+
 \subsection{Hardwarekontext und Performance-Basisdaten}
 \textcolor{gray}{--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---}\\
 
+Als Testumgebung dient ein \gls{cluster} aus vier identischen \gls{worker}n und einem speziellen \gls{master}knoten.
+
 \begin{figure}[htbp]
-  \includesvg[width=\paperwidth]{versuchsaufbau}
-	\caption{svg image}
+	\centering
+  \includesvg[png,width=\paperwidth]{versuchsaufbau}
+	\caption{Hardwareumgebung des Programms zur Tweetanalyse}
 \end{figure}
+
+\paragraph{Worker}
+Rasperry Pi 2
+\begin{itemize}
+	\item CPU: 900MHz Quad-Core ARM Cortex A7
+	\item RAM: 1GB SDRAM
+	\item Ethernet: 100MBit/s
+	\item Festspeicher: SDHC Class 4 Speicherkarte 16GB
+\end{itemize}
+Als Betriebssystem kommt das Debian-Derivat Raspbian\footcite{raspbian} 32-Bit zum Einsatz.
+
+\paragraph{Master}
+Dell d420
+\begin{itemize}
+	\item CPU: 1,2 GHz Core2 Duo U2500
+	\item RAM: 2GB DDR2 SDRAM
+	\item Ethernet: 100MBit/s
+	\item Festspeicher: 60GB 4200RPM Hard Drive
+\end{itemize}
+Als Betriebssystem komm Ubuntu\footcite{ubuntu} 14.04 32-Bit zum Einsatz.
+
+\paragraph{Netzwerk}
+Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch mit maximalem Durchsatz von 100MBit/s.
+
 
 \begin{table}[ht]
 \caption{---DUMMY--- Netzwerkdurchsatz} % title of Table
@@ -40,8 +84,22 @@ Nachrichtengröße & Worker $\rightarrow$ Worker & Master $\rightarrow$ Worker &
 \label{table:nonlin} % is used to refer this table in the text
 \end{table}
 
-\subsection{Architekturübersicht}
+\subsection{Lösungsskizze}
 
+
+\paragraph{Wahl des Dateisystems}
+
+\textcolor{gray}{--- HDFS ---}\\
+
+\paragraph{Wahl des Cluster-Managers}
+
+\textcolor{gray}{--- YARN ---}\\
+
+\paragraph{Verteilungsdiagramm}
+\paragraph{Komponentendiagramm}
+\paragraph{Laufzeitdiagramme}
+
+\iffalse %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
 \begin{tikzpicture}
 \begin{umlpackage}{Apache Spark}
@@ -75,8 +133,6 @@ Nachrichtengröße & Worker $\rightarrow$ Worker & Master $\rightarrow$ Worker &
 \end{tikzpicture}
 \end{center}
 
-
-\subsection{Detailierte Lösungsbeschreibung}
 \textcolor{gray}{--- hier kommen diagramme und codeschnipsel hin ---}\\
 
 \begin{lstlisting}[language=Scala, caption=Treiber für Testanwendung (Programmiersprache Scala)]
@@ -152,11 +208,12 @@ object ScalaApp {
 \end{umlseqdiag}
 \end{tikzpicture}
 \end{center}
+\fi %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\subsection{Ergebnisse}
-\textcolor{gray}{--- Tabellen und Diagramme Ergebnissen, evt. Skalierungsverhalten ---}
-\textcolor{gray}{--- Bewertung ---}
+\subsection{Ergebnis und Bewertung}
+\paragraph{Dashboard}
+\paragraph{Laufzeitverhalten}
+\paragraph{Bewertung und Probleme}
 
 \section{Evaluierung einer spark-basierten Implementation von CDOs auf einem HPC Cluster mit nicht-lokalem Storage}
 \textcolor{gray}{--- Implementation ausgewählter CDOs (sehr wenige, möglicherweise nur 1-2) mit der Core-API von Spark. Testlauf auf einem HPC Cluster mit nicht-lokalem, allerdings per Infiniband angeschlossenen Storage.
@@ -165,7 +222,7 @@ Insbesondere Betrachtung des Skalierungsverhaltens und der "`Sinnhaftigkeit"'. -
 \subsection{Beschreibung des Problems}
 \textcolor{gray}{--- Erläuterung von CDOs (Climate Data Operators). ---}
 \subsection{Hardwarekontext und Performance-Basisdaten}
-\textcolor{gray}{--- hier kommen die eingesetzten systeme, und relevante laufzeitmessungen (netzwerk, storage, cpu) hin ---}
+\textcolor{gray}{--- hier kommen die eingesetzten Systeme, und relevante Laufzeitmessungen (netzwerk, storage, cpu) hin ---}
 \subsection{Architekturübersicht}
 \textcolor{gray}{--- hier kommen Verteilungs- und Komponentendiagramm hin ---}
 \subsection{Detailierte Lösungsbeschreibung}

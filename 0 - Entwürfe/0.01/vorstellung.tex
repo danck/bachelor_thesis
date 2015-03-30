@@ -1,8 +1,8 @@
 \chapter{Vorstellung von Apache Spark}
 Aus Sicht eines Nutzers ist Apache Spark eine API zum Zugriff auf Daten und deren Verarbeitung.\\
 
-Diese API (wahlweise für die Sprachen Scala, Java und Python verfügbar), kann im einfachsten Fall über eine eigene Spark Konsole mit \gls{repl}\footcite{Hail} verwendet werden.\\
-Die Zählung von Wortvorkommen in einem Text - das "`Hello World"' der Big Data Szene - lässt sich dort mit zwei Befehlen realisieren:\\
+Diese API (wahlweise für die Programmiersprachen Scala, Java und Python verfügbar), kann im einfachsten Fall über eine eigene Spark Konsole mit \gls{repl}\footcite{Hail} verwendet werden.\\
+Die Zählung von Wortvorkommen in einem Text - das "`Hello World"' der Big Data Szene - lässt sich dort mit zwei Befehlen realisieren (Listing 2.1).\\
 
 \begin{lstlisting}[caption=Word Count in der Spark Konsole]
 my_dollar ./spark-shell
@@ -49,8 +49,24 @@ Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in 
 		\end{umlcomponent}
 	\end{umlpackage}
   \end{tikzpicture}
-  \caption{Verteilung der Software-Komponenten im Cluster}
+  \caption{TODO: Verteilung der Software-Komponenten im Cluster}
 \end{figure}
+
+
+\begin{table}[ht]
+	\centering % used for centering table
+	\begin{tabular}{c c c} % centered columns (4 columns)
+		\hline\hline %inserts double horizontal lines
+		Festspeicher & Netzwerk (1GbE) & Arbeitsspeicher (DDR4)\\ [0.5ex] % inserts table
+		%heading
+		\hline % inserts single horizontal line
+		??? & 1,25 GB/s & 17GB/s \\ % inserting body of the table
+		\hline %inserts single line
+	\end{tabular}
+	\label{table:nonlin} % is used to refer this table in the text
+	\caption{Vergleich von theoretischen Spitzenleistungen bei Mehrzweck-Servern der 2000 Euro Klasse} % title of Table
+\end{table}
+
 \section{Kernkonzepte}
 \textcolor{gray}{--- Warum ist Spark schnell, ausfallsicher, secure (und wo vielleicht nicht)? ---}
 \textcolor{gray}{--- Annahme: Durchsatzfaktoren RAM, Netzwerk, Festplatte ---}
