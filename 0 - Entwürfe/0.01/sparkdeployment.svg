@@ -57,8 +57,8 @@
      inkscape:window-height="661"
      id="namedview324"
      showgrid="false"
-     inkscape:zoom="0.60050891"
-     inkscape:cx="-13.436439"
+     inkscape:zoom="1.2010178"
+     inkscape:cx="232.99107"
      inkscape:cy="196.5"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
@@ -198,6 +198,86 @@
            d="M 0,0 141,0 141,161 0,161 0,0 Z" />
       </clipPath>
     </defs>
+    <clipPath
+       id="clipPath7-9"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path27-2"
+         d="m -7,-7 133,0 0,66 -133,0 0,-66 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4268"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4270"
+         d="m -7,-7 133,0 0,66 -133,0 0,-66 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4272"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4274"
+         d="m -7,-7 133,0 0,66 -133,0 0,-66 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4276"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4278"
+         d="m -7,-7 133,0 0,66 -133,0 0,-66 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4280"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4282"
+         d="m -7,-7 133,0 0,66 -133,0 0,-66 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4284"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4286"
+         d="m -7,-7 133,0 0,66 -133,0 0,-66 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4288"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4290"
+         d="m -7,-7 133,0 0,66 -133,0 0,-66 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4292"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4294"
+         d="m -7,-7 133,0 0,66 -133,0 0,-66 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4296"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4298"
+         d="m -7,-7 133,0 0,66 -133,0 0,-66 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4300"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4302"
+         d="m -7,-7 133,0 0,66 -133,0 0,-66 z" />
+    </clipPath>
   </defs>
   <g
      style="font-weight:bold;font-size:11px;font-family:sans-serif;fill:#7acff5;fill-opacity:1;stroke:#7acff5;stroke-opacity:1;text-rendering:geometricPrecision"
@@ -357,7 +437,7 @@
      id="g124"
      stroke-miterlimit="0"
      font-weight="bold"
-     transform="matrix(0.87920403,0,0,0.86228301,47.363007,222.26684)"
+     transform="matrix(0.97373843,0,0,0.86132286,42.390859,222.2894)"
      font-size="11">
     <rect
        style="fill:none"
@@ -439,151 +519,6 @@
        x2="99"
        x1="99"
        clip-path="url(#clipPath7)" />
-  </g>
-  <g
-     style="font-size:11px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;text-rendering:geometricPrecision"
-     id="g144"
-     transform="matrix(0.87920403,0,0,0.86228301,47.363007,222.26684)"
-     font-size="11">
-    <text
-       style="stroke:none"
-       id="text146"
-       clip-path="url(#clipPath9)"
-       y="15"
-       xml:space="preserve"
-       x="4">&lt;&lt;component&gt;&gt;</text>
-    <text
-       style="font-weight:bold;stroke:none"
-       id="text148"
-       clip-path="url(#clipPath9)"
-       font-weight="bold"
-       y="30"
-       xml:space="preserve"
-       x="5">Spark Executor</text>
-  </g>
-  <g
-     style="font-weight:bold;font-size:11px;font-family:sans-serif;fill:#7acff5;fill-opacity:1;stroke:#7acff5;stroke-opacity:1;text-rendering:geometricPrecision"
-     id="g180"
-     font-weight="bold"
-     transform="matrix(0.87920403,0,0,0.86228301,367.39327,222.26684)"
-     font-size="11">
-    <rect
-       style="stroke:none"
-       id="rect182"
-       clip-path="url(#clipPath7)"
-       y="0"
-       height="48"
-       width="115"
-       x="0" />
-  </g>
-  <g
-     style="font-weight:bold;font-size:11px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:1;text-rendering:geometricPrecision"
-     id="g184"
-     stroke-miterlimit="0"
-     font-weight="bold"
-     transform="matrix(0.87920403,0,0,0.86228301,367.39327,222.26684)"
-     font-size="11">
-    <rect
-       style="fill:none"
-       id="rect186"
-       clip-path="url(#clipPath7)"
-       y="0"
-       height="47"
-       width="114"
-       x="0" />
-    <line
-       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="line188"
-       stroke-miterlimit="10"
-       y2="5"
-       y1="5"
-       x2="109"
-       x1="99"
-       clip-path="url(#clipPath7)" />
-    <line
-       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="line190"
-       stroke-miterlimit="10"
-       y2="21"
-       y1="5"
-       x2="109"
-       x1="109"
-       clip-path="url(#clipPath7)" />
-    <line
-       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="line192"
-       stroke-miterlimit="10"
-       y2="21"
-       y1="21"
-       x2="109"
-       x1="99"
-       clip-path="url(#clipPath7)" />
-    <line
-       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="line194"
-       stroke-miterlimit="10"
-       y2="8"
-       y1="5"
-       x2="99"
-       x1="99"
-       clip-path="url(#clipPath7)" />
-    <rect
-       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect196"
-       stroke-miterlimit="10"
-       height="4"
-       width="7"
-       clip-path="url(#clipPath7)"
-       y="8"
-       x="96" />
-    <line
-       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="line198"
-       stroke-miterlimit="10"
-       y2="14"
-       y1="12"
-       x2="99"
-       x1="99"
-       clip-path="url(#clipPath7)" />
-    <rect
-       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect200"
-       stroke-miterlimit="10"
-       height="4"
-       width="7"
-       clip-path="url(#clipPath7)"
-       y="14"
-       x="96" />
-    <line
-       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="line202"
-       stroke-miterlimit="10"
-       y2="21"
-       y1="18"
-       x2="99"
-       x1="99"
-       clip-path="url(#clipPath7)" />
-  </g>
-  <g
-     style="font-size:11px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;text-rendering:geometricPrecision"
-     id="g204"
-     transform="matrix(0.87920403,0,0,0.86228301,367.39327,222.26684)"
-     font-size="11">
-    <text
-       style="stroke:none"
-       id="text206"
-       clip-path="url(#clipPath9)"
-       y="15"
-       xml:space="preserve"
-       x="4">&lt;&lt;component&gt;&gt;</text>
-    <text
-       style="font-weight:bold;stroke:none"
-       id="text208"
-       clip-path="url(#clipPath9)"
-       font-weight="bold"
-       y="30"
-       xml:space="preserve"
-       x="5">Spark Executor</text>
   </g>
   <g
      style="font-weight:bold;font-size:11px;font-family:sans-serif;fill:#7acff5;fill-opacity:1;stroke:#7acff5;stroke-opacity:1;text-rendering:geometricPrecision"
@@ -807,4 +742,146 @@
      height="53.926003"
      x="242.80168"
      y="188.93394" />
-</svg>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="-96.584747"
+     y="283.09323"
+     id="text4244"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4246"
+       x="-96.584747"
+       y="283.09323" /></text>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4248"
+     style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(91.588983,27.476695)"><flowRegion
+       id="flowRegion4250"><rect
+         id="rect4252"
+         width="85.760605"
+         height="31.639835"
+         x="-41.631355"
+         y="199.83051"
+         style="font-size:8.75px" /></flowRegion><flowPara
+       id="flowPara4254">&lt;&lt;component&gt;&gt;</flowPara><flowPara
+       id="flowPara4256"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">Spark Executor</flowPara></flowRoot>  <g
+     style="font-weight:bold;font-size:11px;font-family:sans-serif;fill:#7acff5;fill-opacity:1;stroke:#7acff5;stroke-opacity:1;text-rendering:geometricPrecision"
+     id="g120-6"
+     font-weight="bold"
+     transform="matrix(0.87920403,0,0,0.86228301,366.81175,223.48053)"
+     font-size="11">
+    <rect
+       style="stroke:none"
+       id="rect122-5"
+       clip-path="url(#clipPath7-9)"
+       y="0"
+       height="48"
+       width="115"
+       x="0" />
+  </g>
+  <g
+     style="font-weight:bold;font-size:11px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:1;text-rendering:geometricPrecision"
+     id="g124-6"
+     stroke-miterlimit="0"
+     font-weight="bold"
+     transform="matrix(0.95919526,0,0,0.86146742,363.50119,223.49969)"
+     font-size="11">
+    <rect
+       style="fill:none"
+       id="rect126-6"
+       clip-path="url(#clipPath7-9)"
+       y="0"
+       height="47"
+       width="114"
+       x="0" />
+    <line
+       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+       id="line128-8"
+       stroke-miterlimit="10"
+       y2="5"
+       y1="5"
+       x2="109"
+       x1="99"
+       clip-path="url(#clipPath7-9)" />
+    <line
+       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+       id="line130-3"
+       stroke-miterlimit="10"
+       y2="21"
+       y1="5"
+       x2="109"
+       x1="109"
+       clip-path="url(#clipPath7-9)" />
+    <line
+       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+       id="line132-2"
+       stroke-miterlimit="10"
+       y2="21"
+       y1="21"
+       x2="109"
+       x1="99"
+       clip-path="url(#clipPath7-9)" />
+    <line
+       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+       id="line134-7"
+       stroke-miterlimit="10"
+       y2="8"
+       y1="5"
+       x2="99"
+       x1="99"
+       clip-path="url(#clipPath7-9)" />
+    <rect
+       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+       id="rect136-9"
+       stroke-miterlimit="10"
+       height="4"
+       width="7"
+       clip-path="url(#clipPath7-9)"
+       y="8"
+       x="96" />
+    <line
+       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+       id="line138-7"
+       stroke-miterlimit="10"
+       y2="14"
+       y1="12"
+       x2="99"
+       x1="99"
+       clip-path="url(#clipPath7-9)" />
+    <rect
+       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+       id="rect140-9"
+       stroke-miterlimit="10"
+       height="4"
+       width="7"
+       clip-path="url(#clipPath7-9)"
+       y="14"
+       x="96" />
+    <line
+       style="fill:none;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+       id="line142-1"
+       stroke-miterlimit="10"
+       y2="21"
+       y1="18"
+       x2="99"
+       x1="99"
+       clip-path="url(#clipPath7-9)" />
+  </g>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4248-0"
+     style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(411.03773,28.690383)"><flowRegion
+       id="flowRegion4250-1"><rect
+         id="rect4252-1"
+         width="91.588997"
+         height="30.807207"
+         x="-41.631355"
+         y="199.83051"
+         style="font-size:8.75px" /></flowRegion><flowPara
+       id="flowPara4254-8">&lt;&lt;component&gt;&gt;</flowPara><flowPara
+       id="flowPara4256-8"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">Spark Executor</flowPara></flowRoot></svg>
