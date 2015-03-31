@@ -2,4 +2,27 @@
 \section{Installation der Plattform}
 \section{Quellcode (Auszüge)}
 \section{Sonstiges}
+\subsection{Einschätzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}
+\label{subsec:commodity_servers}
+Um zu einer groben Einschätzung des möglichen Datendurchsatzes verschiedener Schnittstellen bei "`Commodity Servern"' zu gelangen, wurden drei Systeme von großen Herstellern ausgewählt.\\
+In der Grundkonfiguration kosten diese Systeme (zum Zeitpunkt dieser Arbeit) um die € 2000,- und lassen damit auf die Größenordnungen bei dem Datendurchsatz bestimmter Schnittstellen bei preisgünstigen Mehrzweck-Rechenknoten schließen.
+
+\begin{table}[ht]
+	\centering % used for centering table
+	\begin{tabular}{c c c c} % centered columns (4 columns)
+		\hline\hline %inserts double horizontal lines
+		Modell & Netzwerkschnittstelle & Interner Bus für Festspeicher & Arbeitsspeicher\\ [0.5ex] % inserts table
+		%heading
+		\hline % inserts single horizontal line
+		Dell PowerEdge R530 & 1Gb/s Ethernet & PCIe 3.0 & DDR4\\ 
+		HP Proliant DL160 Gen8 & 1Gb/s Ethernet & PCIe 3.0 & DDR3\\ 
+		System x3650 M5 & 1Gb/s Ethernet & PCIe 3.0 & DDR4\\ % inserting body of the table
+		\hline %inserts single line
+	\end{tabular}
+	\caption{Theoretische Spitzenleistungen bei Mehrzweck-Servern der 2000 Euro Klasse} % title of Table
+	\label{table:vglinterfaces} % is used to refer this table in the text
+\end{table}
+
+Mit \cite{PCI14} und \cite{Fuj11} lassen sich grobe obere Abschätzungen errechnen, die in Tabelle~\ref{table:vgldurchsatz} angegeben sind.
+
 \end{appendices}

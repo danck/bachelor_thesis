@@ -61,21 +61,21 @@ Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in 
 
 Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu können ist es offensichtlich wichtig, welche Eigenschaften der unterliegenden Hardware angenommen werden.
 
-Weil Spark explizit für den Betrieb innerhalb eines Hadoop/YARN \textcolor{red}{[VERWEIS auf Abschnitt Scheduling]} geeignet ist und YARN wiederum für den Betrieb auf einem \gls{cluster} auf Mittelklasse-Mehrzweckmaschinen (Commodity Hardware) optimiert ist \textcolor{red}{[VERWEIS Apache Hadoop Yarn S. 42]}, kann für Spark von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
+Weil Spark explizit für den Betrieb innerhalb eines Hadoop/YARN \textcolor{red}{[VERWEIS auf Abschnitt Scheduling]} geeignet ist und YARN wiederum für den Betrieb auf einem \gls{cluster} auf Mittelklasse-Mehrzweckmaschinen (Commodity Hardware) optimiert ist\footcite{Mer14}, kann für Spark von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
 
-Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grundausstattung) \textcolor{red}{[VERWEIS Anhang]} - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen.
+Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grundausstattung) - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen (Siehe Anhang~\ref{subsec:commodity_servers}).
 
 \begin{table}[ht]
 	\centering % used for centering table
-	\begin{tabular}{c c c} % centered columns (4 columns)
+	\begin{tabular}{c c c} % centered columns (4 columns)	
 		\hline\hline %inserts double horizontal lines
-		Festspeicher & Netzwerk & Arbeitsspeicher\\ [0.5ex] % inserts table
+		Netzwerk & Festspeicher & Arbeitsspeicher\\ [0.5ex] % inserts table
 		%heading
 		\hline % inserts single horizontal line
-		??? & 1,25 GB/s & 17GB/s \\ % inserting body of the table
+		0,125 GB/s & 1GB/s & 17GB/s \\ % inserting body of the table
 		\hline %inserts single line
 	\end{tabular}
-	\caption{Vergleich von theoretischen Spitzenleistungen bei Mehrzweck-Servern der 2000 Euro Klasse} % title of Table
+	\caption{Theoretische Spitzenleistungen bei Mehrzweck-Servern der 2000 Euro Klasse} % title of Table
 	\label{table:vgldurchsatz} % is used to refer this table in the text
 \end{table}
 

@@ -16,6 +16,23 @@
   {}
 \endgroup
 
+\entry{Mer14}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Arun~Merthy}{A.~M.}%
+     {Vinod Kumar~Vavilapalli}{V.~K.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AMVKV1}
+  \strng{fullhash}{AMVKV1}
+  \field{labelalpha}{AM14}
+  \field{sortinit}{A}
+  \field{pages}{42}
+  \field{title}{Apache Hadoop YARN}
+  \field{year}{2014}
+\endentry
+
 \entry{Dean04}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -74,6 +91,25 @@
   \field{year}{2001}
 \endentry
 
+\entry{PCI14}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Lawley}{L.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {XILINX}%
+  }
+  \strng{namehash}{LJ1}
+  \strng{fullhash}{LJ1}
+  \field{labelalpha}{Law14}
+  \field{sortinit}{L}
+  \field{title}{Understanding Performance of PCI Express Systems}
+  \field{year}{2014}
+\endentry
+
 \entry{Hail}{book}{}
   \name{author}{1}{}{%
     {{}%
@@ -90,6 +126,25 @@
   \field{title}{Concrete Abstractions: An Introduction to Computer Science
   Using Scheme}
   \field{year}{1999}
+\endentry
+
+\entry{Fuj11}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {N/A}{N.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Fujitsu}%
+  }
+  \strng{namehash}{N1}
+  \strng{fullhash}{N1}
+  \field{labelalpha}{N/A11}
+  \field{sortinit}{N}
+  \field{title}{Fujitsu PRIMERGY SERVER - Basics of Disk I/O Performance}
+  \field{year}{2011}
 \endentry
 
 \entry{page2001method}{misc}{}
