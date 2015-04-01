@@ -83,14 +83,19 @@ Für eine effiziente Verarbeitung von Daten ist es - ganz allgemein - also wüns
 Es ist das oberste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente Verarbeitung \textit{großer Datenmengen}\footcite{Sam14} zu gewährleisten.\\
 
 \section{Kernkonzepte}
-Die universelle Einheit mit der ein Datenelement auf Spark repräsentiert wird ist ein sogenanntes \gls{rdd}\footcite{Mat12}.
-Die gesamte operative Kern-API dreht sich um die Steuerung dieser Datenelemente. Insbesondere sind auch die in den Standardbibliotheken verfügbaren "`höheren"' APIs auf diesen \glspl{rdd} implementiert.
+Die universelle Einheit mit der ein Datenelement auf Spark repräsentiert wird ist ein sogenanntes \gls{rdd}\footcite{Mat12}.\\
 
-\glspl{rdd} sind damit die wichtigste Abstraktion des Applikationskerns.
+Die gesamte operative Kern-API dreht sich um die Steuerung dieser Datenelemente. Insbesondere sind auch die in den Standardbibliotheken verfügbaren "`höheren"' APIs auf diesen \glspl{rdd} implementiert.
+\glspl{rdd} sind damit die wichtigste Abstraktion des Applikationskerns.\\
 
 In erster Näherung können \glspl{rdd} als eine Variante von \gls{dsm}\footcite{Nitzberg:1991:DSM:112827.112855} \cite{Mat12} verstanden werden, haben allerdings sehr charakteristische Einschränkungen und Erweiterungen, die im Folgenden erläutert werden.\\
 
-
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[pdf,scale=0.7]{RDDs1}
+	\caption{Resilient Distributed Datasets aus Verteilungssicht}
+	\label{figure:rdds1}
+\end{figure}
 
 \subsection{Nutzung von Arbeitsspeicher}
 

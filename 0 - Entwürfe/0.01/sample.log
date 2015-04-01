@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  1 APR 2015 20:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  1 APR 2015 21:34
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -2146,7 +2146,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<bilder/trends_spark_vs_hadoop.PNG, id=367, 629.72766pt x 220.19766pt>
+<bilder/trends_spark_vs_hadoop.PNG, id=369, 629.72766pt x 220.19766pt>
 File: bilder/trends_spark_vs_hadoop.PNG Graphic file (type png)
  <use bilder/trends_spark_vs_hadoop.PNG>
 Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 27.
@@ -2220,7 +2220,7 @@ l.50 ...egraphics[pdf,scale=0.7]{sparkdeployment2}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<sparkdeployment2.pdf, id=420, 433.62pt x 504.284pt>
+<sparkdeployment2.pdf, id=422, 433.62pt x 504.284pt>
 File: sparkdeployment2.pdf Graphic file (type pdf)
  <use sparkdeployment2.pdf>
 Package pdftex.def Info: sparkdeployment2.pdf used on input line 50.
@@ -2241,26 +2241,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-) [8] [9] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
+
+! Package xkeyval Error: `pdf' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95   \includegraphics[pdf,scale=0.7]{RDDs1}
+                                             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<RDDs1.pdf, id=918, 545.09041pt x 175.91435pt>
+File: RDDs1.pdf Graphic file (type pdf)
+ <use RDDs1.pdf>
+Package pdftex.def Info: RDDs1.pdf used on input line 95.
+(pdftex.def)             Requested size: 381.56067pt x 123.13919pt.
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+[8 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/RDDs1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+) [9] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
 Kapitel 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -2293,17 +2325,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
 [10
 
 
 
 
-] <./versuchsaufbau.png, id=947, 211.992pt x 224.037pt>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+<./versuchsaufbau.png, id=959, 211.992pt x 224.037pt>
 File: ./versuchsaufbau.png Graphic file (type png)
  <use ./versuchsaufbau.png>
 Package pdftex.def Info: ./versuchsaufbau.png used on input line 41.
@@ -2320,13 +2352,13 @@ runsystem(mv Fig.1.pdf ./Fig.1.pdf)...executed.
 
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\versuchsaufbau.pdf_tex"
-<versuchsaufbau.pdf, id=948, page=1, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=960, page=1, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 211.99147pt x 223.27982pt.
 
-<versuchsaufbau.pdf, id=949, page=2, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=961, page=2, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
@@ -2356,7 +2388,7 @@ Overfull \hbox (9.93648pt too wide) in paragraph at lines 60--60
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
  []
 
-<versuchsaufbau.pdf, id=950, page=3, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=962, page=3, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 3>
 Package pdftex.def Info: versuchsaufbau.pdf, page3 used on input line 61.
@@ -2366,7 +2398,7 @@ Overfull \hbox (5.11456pt too wide) in paragraph at lines 62--62
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Master  
  []
 
-<versuchsaufbau.pdf, id=951, page=4, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=963, page=4, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 4>
 Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
@@ -2463,16 +2495,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `sample.out' has not changed.
-(rerunfilecheck)             Checksum: C752F5FCE927B9DAD3934425BC9B580E;3827.
+(rerunfilecheck)             Checksum: 879D1E58EF3156760F27117EA9FF0EBA;3837.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'sample.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 39083 strings out of 493921
- 741763 string characters out of 3144873
- 1364926 words of memory out of 3000000
- 41280 multiletter control sequences out of 15000+200000
- 130593 words of font info for 157 fonts, out of 3000000 for 9000
+ 39093 strings out of 493921
+ 741930 string characters out of 3144873
+ 1365926 words of memory out of 3000000
+ 41285 multiletter control sequences out of 15000+200000
+ 130864 words of font info for 159 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
  74i,12n,112p,1826b,3036s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{glo:dsm} has been referenced but does not exist, replaced by a fixed one
@@ -2489,9 +2525,9 @@ T.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/L
 ta/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on sample.pdf (30 pages, 682848 bytes).
+Output written on sample.pdf (30 pages, 692583 bytes).
 PDF statistics:
- 1128 PDF objects out of 1200 (max. 8388607)
- 167 named destinations out of 1000 (max. 500000)
- 34341 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1140 PDF objects out of 1200 (max. 8388607)
+ 168 named destinations out of 1000 (max. 500000)
+ 34346 words of extra memory for PDF output out of 35830 (max. 10000000)
 
