@@ -56,7 +56,7 @@ Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu
 
 Weil Spark explizit für den Betrieb innerhalb eines Hadoop/YARN \textcolor{red}{[VERWEIS auf Abschnitt Scheduling]} geeignet ist und YARN wiederum für den Betrieb auf einem \gls{cluster} auf Mittelklasse-Mehrzweckmaschinen (Commodity Hardware) optimiert ist\footcite{Mer14}, kann für Spark von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
 
-Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grundausstattung) - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen (Siehe Anhang~\ref{subsec:commodity_servers}).
+Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grundausstattung) - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen zueinander (Siehe Anhang~\ref{subsec:commodity_servers}).
 
 \begin{table}[ht]
 	\centering % used for centering table
@@ -78,18 +78,23 @@ Auf eine detaillierte Analyse des Zugriffsverhaltens wird im Rahmen dieser Arbei
 	D_{Netzwerk} < D_{Festspeicher} < D_{Arbeitsspeicher}
 \end{equation*}
 
-Für eine effiziente Verarbeitung von Daten ist es - ganz allgemein - also wünschenswert viele Operationen im Arbeitsspeicher auszuführen, weniger Operationen auf der Festplatte und noch weniger Operationen über Netzwerkverbindungen.\\
+Für eine effiziente Verarbeitung von Daten ist es - ganz allgemein - also wünschenswert den größten Anteil des Datentransfers im Arbeitsspeicher zu haben, einen kleineren Anteil auf der Festplatte und einen noch kleineren Anteil auf Netzwerkverbindungen.\\
 
-Es ist das oberste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente Verarbeitung großer Datenmengen\cite{Sam14} zu gewährleisten.\\
+Es ist das oberste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente Verarbeitung \textit{großer Datenmengen}\footcite{Sam14} zu gewährleisten.\\
 
 \section{Kernkonzepte}
-\textcolor{gray}{--- Warum ist Spark schnell, ausfallsicher, secure (und wo vielleicht nicht)? ---}
-\textcolor{gray}{--- Annahme: Durchsatzfaktoren RAM, Netzwerk, Festplatte ---}
+Die wichtigste Abstraktion des Applikationskerns sind sogenannte \glspl{rdd}.
+
+\glspl{rdd} sind eine Variante von 
+
 \subsection{Nutzung von Arbeitsspeicher}
+
 \subsection{Nutzung von persistentem Speicher}
 \subsection{Nutzung von CPUs}
 \subsection{Scheduling/Shuffling}
 \subsection{Kern-API}
+\paragraph{Transformationen}
+\paragraph{Aktionen}
 
 \section{Standardbibliotheken}
 \textcolor{gray}{--- Warum ist Spark so einfach (und wo vielleicht nicht)? ---}\\
