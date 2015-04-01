@@ -71,8 +71,8 @@ Class=LaTeXView
 Document=vorstellung.tex
 
 [Frame3_View0,0]
-TopLine=42
-Cursor=2158
+TopLine=44
+Cursor=2210
 
 [Frame4]
 Flags=0
@@ -89,7 +89,7 @@ Class=LaTeXView
 Document=praxis.tex
 
 [Frame4_View0,0]
-TopLine=90
+TopLine=94
 Cursor=2641
 
 [Frame5]

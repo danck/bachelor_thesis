@@ -32,31 +32,24 @@ Aus Sicht eines Administrators oder Softwarearchitekten ist Apache Spark eine Ap
 Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in welchem Ökosystem von Anwendungen sich Apache Spark bewegt wird in den folgenden Abschnitten dieses Kapitels beleuchtet.
 
 \section{Überblick}
-\textcolor{gray}{--- Was ist es, wofür ist es, wie funktioniert es, (JVM, Scala) ---}
+Im Allgemeinen Fall läuft eine Spark-Anwendung auf drei Arten von Rechnern (s. Abb. \ref{figure:sparkdeployment}):
 
-\begin{figure}[h]
+\begin{enumerate}
+	\item \textbf{Clientknoten}\\
+	Auf Nutzerseite greift die Anwendung auf die API eines lokalen Spark-Kontextes zu, der die Kontaktdaten eines Clustermanagers sowie verschiedene Konfigurationseinstellungen enthält. 
+	
+	\item \textbf{Masterknoten}\\
+	Der Masterknoten betreibt den \textit{Clustermanager} läuft auf einem entfernten Rechner und ist der Einstiegspunkt in den \gls{cluster}. Hier werden Aufträge des Anwenders an die Arbeitsknoten verteilt und Ergebnisse eingesammelt und zurückgereicht.
+	
+	\item \textbf{Arbeitsknoten}\\
+	Die Arbeitsknoten beherbergen die Spark \textit{Executors} und sind die ausführenden Elemente der Aktionen und Transformationen. Die \textit{Executors} können untereinander Zwischenergebnisse austauschen und melden ihre Ressourcenverfügbarkeit an den \textit{Clustermanager}.
+\end{enumerate}
+
+\begin{figure}[ht!]
 	\centering
-  \includesvg[pdf]{sparkdeployment}
+  \includegraphics[pdf,scale=0.7]{sparkdeployment2}
 	\caption{Verteilungsdiagramm einer typischen Sparkinstallation}
 	\label{figure:sparkdeployment}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-  \begin{tikzpicture}
-  \draw (0,0) node[RectObject, inner xsep=1cm] (Big2) {Big Node};
-  \draw (6,2) node[RectObject] (Small2A) {A};
-  \draw (8,2) node[RectObject] (Small2B) {B};
-  \draw[arrow] (Small2A.north)--(Small2A|-Big2.south);
-  \draw[arrow] (Small2B.south)--(Small2B|-Big2.north);
-	\begin{umlpackage}{Apache Spark}
-    \begin{umlcomponent}{A}
-      \umlbasiccomponent{B}
-      \umlbasiccomponent[y=-2]{C}
-		\end{umlcomponent}
-	\end{umlpackage}
-  \end{tikzpicture}
-  \caption{TODO: Verteilung der Software-Komponenten im Cluster}
 \end{figure}
 
 Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu können ist es offensichtlich wichtig, welche Eigenschaften der unterliegenden Hardware angenommen werden.
@@ -72,18 +65,22 @@ Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grund
 		Netzwerk & Festspeicher & Arbeitsspeicher\\ [0.5ex] % inserts table
 		%heading
 		\hline % inserts single horizontal line
-		0,125 GB/s & 1GB/s & 17GB/s \\ % inserting body of the table
+		0,125 GB/s & 1 GB/s & 17 GB/s \\ % inserting body of the table
 		\hline %inserts single line
 	\end{tabular}
-	\caption{Theoretische Spitzenleistungen bei Mehrzweck-Servern der 2000 Euro Klasse} % title of Table
+	\caption{Theoretische Spitzenleistungen bei Mittelklasse-Servern} % title of Table
 	\label{table:vgldurchsatz} % is used to refer this table in the text
 \end{table}
 
-Auf eine detaillierte Analyse des Zugriffsverhaltens wird im Rahmen dieser Arbeit verzichtet. Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes (D) der verschiedenen Datenkanäle zu vergegenwärtigen:
+Auf eine detaillierte Analyse des Zugriffsverhaltens wird im Rahmen dieser Arbeit verzichtet. Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes (\textit{D}) der verschiedenen Datenkanäle zu vergegenwärtigen:
 
 \begin{equation*}
 	D_{Netzwerk} < D_{Festspeicher} < D_{Arbeitsspeicher}
 \end{equation*}
+
+Für eine effiziente Verarbeitung von Daten ist es - ganz allgemein - also wünschenswert viele Operationen im Arbeitsspeicher auszuführen, weniger Operationen auf der Festplatte und noch weniger Operationen über Netzwerkverbindungen.\\
+
+Es ist das oberste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente Verarbeitung großer Datenmengen\cite{Sam14} zu gewährleisten.\\
 
 \section{Kernkonzepte}
 \textcolor{gray}{--- Warum ist Spark schnell, ausfallsicher, secure (und wo vielleicht nicht)? ---}
