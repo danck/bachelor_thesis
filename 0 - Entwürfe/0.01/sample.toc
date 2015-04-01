@@ -66,6 +66,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.7.3}Flink}{9}{subsection.2.7.3}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.4}MPI}{9}{subsection.2.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.5}Kafka}{9}{subsection.2.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.6}HBase}{9}{subsection.2.7.6}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Anwendung von Spark zur Datenanalyse}{10}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Echtzeitbewertung von Twitter-Meldungen nach ihrer Relvanz f\IeC {\"u}r Spark}{10}{section.3.1}

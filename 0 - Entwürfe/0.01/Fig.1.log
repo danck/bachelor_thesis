@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  1 APR 2015 19:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  1 APR 2015 19:44
 entering extended mode
 **./Fig.1.tex
 
@@ -2109,10 +2109,10 @@ Package logreq Info: Writing requests to 'Fig.1.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 37876 strings out of 493921
- 717291 string characters out of 3144873
- 1315791 words of memory out of 3000000
- 40471 multiletter control sequences out of 15000+200000
+ 37906 strings out of 493921
+ 717719 string characters out of 3144873
+ 1316089 words of memory out of 3000000
+ 40501 multiletter control sequences out of 15000+200000
  14742 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  74i,7n,112p,1828b,1456s stack positions out of 5000i,500n,10000p,200000b,50000s

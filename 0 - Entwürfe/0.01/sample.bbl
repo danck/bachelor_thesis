@@ -55,6 +55,20 @@
   \field{year}{2004}
 \endentry
 
+\entry{Fuj11}{misc}{}
+  \list{publisher}{1}{%
+    {Fujitsu}%
+  }
+  \field{labelalpha}{Fuj}
+  \field{sortinit}{F}
+  \field{title}{Fujitsu PRIMERGY SERVER - Basics of Disk I/O Performance}
+  \verb{url}
+  \verb http://globalsp.ts.fujitsu.com/dmsp/Publications/public/wp-basics-of-di
+  \verb sk-io-performance-ww-en.pdf
+  \endverb
+  \field{year}{2011}
+\endentry
+
 \entry{googletrends}{misc}{}
   \name{author}{1}{}{%
     {{}%
@@ -128,23 +142,22 @@
   \field{year}{1999}
 \endentry
 
-\entry{Fuj11}{misc}{}
+\entry{Zah12}{article}{}
   \name{author}{1}{}{%
     {{}%
-     {N/A}{N.}%
+     {Matei~Zaharia}{M.~Z.}%
+     {et~al.}{e.~a.}%
      {}{}%
-     {}{}%
-     {}{}}%
+     {Mosharaf~Chowdhury}{M.~C.}}%
   }
-  \list{publisher}{1}{%
-    {Fujitsu}%
-  }
-  \strng{namehash}{N1}
-  \strng{fullhash}{N1}
-  \field{labelalpha}{N/A11}
-  \field{sortinit}{N}
-  \field{title}{Fujitsu PRIMERGY SERVER - Basics of Disk I/O Performance}
-  \field{year}{2011}
+  \strng{namehash}{MZMCea1}
+  \strng{fullhash}{MZMCea1}
+  \field{labelalpha}{MZ12}
+  \field{sortinit}{M}
+  \field{title}{Resilient Distributed Datasets: A Fault-Tolerant Abstraction
+  for In-Memory Cluster Computing}
+  \field{journaltitle}{NSDI}
+  \field{year}{2012}
 \endentry
 
 \entry{page2001method}{misc}{}
