@@ -20,7 +20,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Kontextabgrenzung}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}Kontextabgrenzung}{3}{section.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Vorstellung von Apache Spark}{4}{chapter.2}
 \defcounter {refsection}{0}\relax 
@@ -72,9 +72,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.7.6}HBase}{9}{subsection.2.7.6}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.7}Lustre}{9}{subsection.2.7.7}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Anwendung von Spark zur Datenanalyse}{10}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Echtzeitbewertung von Twitter-Meldungen nach ihrer Relvanz f\IeC {\"u}r Spark}{10}{section.3.1}
+\contentsline {section}{\numberline {3.1}Anwendung zur Echtzeitanalyse eines Datenstroms anhand eines ver\IeC {\"a}nderlichen Stammdatenbestandes}{10}{section.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Problembeschreibung}{10}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
@@ -100,7 +102,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Laufzeitdiagramme}{13}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Ergebnis und Bewertung}{13}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.5}Ergebnisse und Bewertung}{13}{subsection.3.1.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Dashboard}{13}{section*.20}
 \defcounter {refsection}{0}\relax 
@@ -108,7 +110,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Bewertung und Probleme}{13}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Evaluierung einer spark-basierten Implementation von CDOs auf einem HPC Cluster mit nicht-lokalem Storage}{13}{section.3.2}
+\contentsline {section}{\numberline {3.2}Spark-basierte Implementation von Operatoren aus der Klimaforschung}{13}{section.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Beschreibung des Problems}{13}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
