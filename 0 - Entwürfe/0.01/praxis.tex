@@ -6,7 +6,7 @@ Beispiel 1: Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Sp
 
 Beispiel 2: Eine untypische Anwendung mit verteiltem entfernten Storage und dem Spark Standalone Clustermanager. \textcolor{gray}{--- HPC Hardware ("`Thunder"' des Hamburger KlimaCampus). ---}\\
 
-\section{Echtzeitbewertung von Twitter-Meldungen nach ihrer Relvanz für Spark}
+\section{Anwendung zur Echtzeitanalyse eines Datenstroms anhand eines veränderlichen Stammdatenbestandes}
 \textcolor{gray}{--- Fusion von Tweets und Mailinglisten 
 https://spark.apache.org/docs/1.3.0/mllib-feature-extraction.html
 Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager ---}\\
@@ -209,12 +209,13 @@ object ScalaApp {
 \end{center}
 \fi %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Ergebnis und Bewertung}
+\subsection{Ergebnisse und Bewertung}
 \paragraph{Dashboard}
 \paragraph{Laufzeitverhalten}
 \paragraph{Bewertung und Probleme}
 
-\section{Evaluierung einer spark-basierten Implementation von CDOs auf einem HPC Cluster mit nicht-lokalem Storage}
+
+\section{Spark-basierte Implementation von Operatoren aus der Klimaforschung}
 \textcolor{gray}{--- Implementation ausgewählter CDOs (sehr wenige, möglicherweise nur 1-2) mit der Core-API von Spark. Testlauf auf einem HPC Cluster mit nicht-lokalem, allerdings per Infiniband angeschlossenen Storage.
 Insbesondere Betrachtung des Skalierungsverhaltens und der "`Sinnhaftigkeit"'. ---}
 

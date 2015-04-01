@@ -142,7 +142,7 @@
   \field{year}{1999}
 \endentry
 
-\entry{Zah12}{article}{}
+\entry{Mat12}{article}{}
   \name{author}{1}{}{%
     {{}%
      {Matei~Zaharia}{M.~Z.}%
@@ -158,6 +158,45 @@
   for In-Memory Cluster Computing}
   \field{journaltitle}{NSDI}
   \field{year}{2012}
+\endentry
+
+\entry{Nitzberg:1991:DSM:112827.112855}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Nitzberg}{N.}%
+     {Bill}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lo}{L.}%
+     {Virginia}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society Press}%
+  }
+  \strng{namehash}{NBLV1}
+  \strng{fullhash}{NBLV1}
+  \field{labelalpha}{NL91}
+  \field{sortinit}{N}
+  \verb{doi}
+  \verb 10.1109/2.84877
+  \endverb
+  \field{issn}{0018-9162}
+  \field{number}{8}
+  \field{pages}{52\bibrangedash 60}
+  \field{title}{Distributed Shared Memory: A Survey of Issues and Algorithms}
+  \verb{url}
+  \verb http://dx.doi.org/10.1109/2.84877
+  \endverb
+  \field{volume}{24}
+  \list{location}{1}{%
+    {Los Alamitos, CA, USA}%
+  }
+  \field{journaltitle}{Computer}
+  \field{month}{08}
+  \field{year}{1991}
 \endentry
 
 \entry{page2001method}{misc}{}
