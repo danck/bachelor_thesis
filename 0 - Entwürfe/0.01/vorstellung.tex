@@ -4,9 +4,7 @@ Aus Sicht eines Nutzers ist Apache Spark eine API zum Zugriff auf Daten und dere
 Diese API (wahlweise für die Programmiersprachen Scala, Java und Python verfügbar), kann im einfachsten Fall über eine eigene Spark Konsole mit \gls{repl}\footcite{Hail} verwendet werden.\\
 Die Zählung von Wortvorkommen in einem Text - das "`Hello World"' der Big Data Szene - lässt sich dort mit zwei Befehlen realisieren (Listing \ref{lst:sconsole_wordcount}).\\
 
-\begin{lstlisting}%[caption=Word Count in der Spark Konsole]
-\caption{Word Count in der Spark Konsole}
-\label{lst:sconsole_wordcount}
+\begin{lstlisting}[caption={Word Count in der Spark Konsole},label={lst:sconsole_wordcount}]
 my_dollar ./spark-shell
 [...]
      / __/__  ___ _____/ /__
@@ -40,7 +38,7 @@ Im Allgemeinen Fall läuft eine Spark-Anwendung auf drei Arten von Rechnern (s. 
 	Auf Nutzerseite greift die Anwendung auf die API eines lokalen Spark-Kontextes zu, der die Kontaktdaten eines Clustermanagers sowie verschiedene Konfigurationseinstellungen enthält. 
 	
 	\item \textbf{\gls{master}knoten}\\
-	Der \gls{master}knoten betreibt den \textit{Clustermanager} läuft auf einem entfernten Rechner und ist der Einstiegspunkt in den \gls{cluster}. Hier werden Aufträge des Anwenders an die Arbeitsknoten verteilt und Ergebnisse eingesammelt und zurückgereicht.
+	Der \gls{master}knoten betreibt den \textit{Clustermanager}, läuft auf einem entfernten Rechner und ist der Einstiegspunkt in den \gls{cluster}. Hier werden Aufträge des Anwenders an die Arbeitsknoten verteilt und Ergebnisse eingesammelt und zurückgereicht.
 	
 	\item \textbf{\gls{worker}knoten}\\
 	Die \gls{worker}knoten beherbergen die Spark \textit{Executors} und sind die ausführenden Elemente der Aktionen und Transformationen. Die \textit{Executors} können untereinander Zwischenergebnisse austauschen und melden ihre Ressourcenverfügbarkeit an den \textit{Clustermanager}.
@@ -81,44 +79,100 @@ Auf eine detaillierte Analyse des Zugriffsverhaltens wird im Rahmen dieser Arbei
 
 Für eine effiziente Verarbeitung von Daten ist es - ganz allgemein - also wünschenswert den größten Anteil des Datentransfers im Arbeitsspeicher zu haben, einen kleineren Anteil auf der Festplatte und einen noch kleineren Anteil auf Netzwerkverbindungen.\\
 
-Es ist das oberste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente Verarbeitung \textit{großer Datenmengen}\footcite{Sam14} zu gewährleisten.\\
+Es ist das wichtigste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente und stabile Verarbeitung \textit{großer Datenmengen}\footcite{Sam14} zu gewährleisten.\\
 
 \section{Kernkonzepte}
+
+\subsection{Resilient Distributed Datasets}
 Die universelle Einheit mit der ein Datenelement auf Spark repräsentiert wird ist ein sogenanntes \gls{rdd}\footcite{Mat12}.\\
 
 Ein Beispiel für ein solches \gls{rdd} wurde bereits erwähnt, nämlich das in Listing \ref{lst:sconsole_wordcount} erzeugte Objekt \lstinline|text|:\\
 
-\lstinline|val text = sc.textFile("../Heinrich Heine - Der Ex-Lebendige")|\\
+\begin{lstlisting}
+	val text = sc.textFile("../Heinrich Heine - Der Ex-Lebendige")|\\
+\end{lstlisting}
 
+\Glspl{rdd} können auch explizit erzeugt werden, ohne dass dazu vorhandene Daten genutzt werden:\\
+
+\begin{lstlisting}
+	val list = sc.parallelize(List(1,2,3,4,5,6))|\\
+\end{lstlisting}
 
 Die gesamte operative Kern-\gls{api} dreht sich um die Steuerung dieser Dateneinheiten. Insbesondere sind auch die in den Standardbibliotheken verfügbaren "`höheren"' \glspl{api} auf diesen \glspl{rdd} implementiert.
-\glspl{rdd} sind damit die wichtigste Abstraktion des Applikationskerns.\\
+
+Sie sind damit die wichtigste Abstraktion des Applikationskerns.\\
 
 In erster Näherung können \glspl{rdd} als eine Variante von \gls{dsm}\footcite{Nitzberg:1991:DSM:112827.112855} \cite{Mat12} verstanden werden, haben allerdings sehr charakteristische Einschränkungen und Erweiterungen, die in diesem Kapitel erläutert werden.\\
 
-\paragraph{Verteilungssicht}
+\paragraph{Verteilungssicht}\\
 
-Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeicher mehrerer Maschinen partitioniert ist (Abb. \ref{fig:rdds1}).
+Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeicher mehrerer Maschinen partitioniert ist (Abb.~\ref{fig:rdds1}).
 
 \begin{figure}[ht!]
 	\centering
   \includegraphics[scale=0.7]{RDDs1.pdf}
 	\caption{Resilient Distributed Datasets aus Verteilungssicht}
-	\label{figure:rdds1}
+	\label{fig:rdds1}
 \end{figure}
 
-Ein möglicher Vorteil dieser Art von Arbeitsdatensatz wird sofort deutlich: Im optimalen Fall sind die zu ladenden Daten bereits gleichmäßig über den lokalen Festspeicher der \gls{worker} partitioniert.
+\paragraph{Laufzeitsicht}\\
+
+\Glspl{rdd} sind nicht veränderbar. Anstatt durch feingranulare Schreiboperationen modifiziert zu werden ist es nur möglich ein einmal definiertes \gls{rdd} durch Operationen in ein anderes zu überführen.\\
+
+Diese Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gls{rdd} bezeichnet. Die \textit{Lineage} kann als das "`Rezept"' zur Erstellung eines Datensatzes verstanden werden.
+
+Dabei gibt es zwei grundsätzlich verschiedene Operationen, nämlich \textit{Transformationen} und \textit{Aktionen}.\\
+
+\textbf{\textit{Transformationen}} sind ... \\
+
+\textbf{\textit{Aktionen}} sind ... \\
+
+Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv:\\
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.8]{rdds_no_action.pdf}
+	\caption{RDD Lineage ohne Aktion}
+	\label{fig:rdds_no_action}
+\end{figure}
+
+Sobald die erste \textit{Aktion} aufgerufen wird, werden die Transformationen nach der vorgegebenen Reihenfolge ausgeführt und die geforderte \textit{Aktion} ausgeführt:\\
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.8]{rdds_action.pdf}
+	\caption{RDD Lineage mit Aktion}
+	\label{fig:rdds_action}
+\end{figure}
+
+Wie in Abb. \ref{fig:rdds_action} zu erkennen, werden während der Transformationsvorgänge keine Zwischenergebnisse gespeichert. Möchte Zwischenergebnisse zu einem späteren Zeitpunkt oder in anderem Zusammenhang wiederverwenden, kann man dies explizit über das Kommando \lstinline|persist()| anweisen:\\
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.8]{rdds_action_persist.pdf}
+	\caption{RDD Lineage mit Aktion und Persist()}
+	\label{fig:rdds_action_persist}
+\end{figure}
 
 
+Ein möglicher Vorteil dieser Art von Arbeitsdatensatz wird sofort deutlich: Im optimalen Fall sind die zu ladenden Daten von jedem der \gls{worker} auf unabhängigen Kanälen erreichbar (z.B. auf dem lokalen Festspeicher) und gleichmäßig auf diesen Kanälen partitioniert.
 
-\subsection{Nutzung von Arbeitsspeicher}
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.7]{RDDs2.pdf}
+	\caption{Resilient Distributed Datasets mit Datenquelle aus Verteilungssicht}
+	\label{fig:rdds2}
+\end{figure}
 
-\subsection{Nutzung von persistentem Speicher}
-\subsection{Nutzung von CPUs}
+Im optimalen Fall ergibt sich mit einer Anzahl \gls{worker} $n$ und einem Durchsatz $\delta$ zu der jeweiligen Datenquelle also ein Gesamtdurchsatz beim Einlesen von Daten von:
+
+\begin{equation}
+	\sum_{i=1}^{n} \delta_i
+\end{equation}
+
+
 \subsection{Scheduling/Shuffling}
-\subsection{Kern-API}
-\paragraph{Transformationen}
-\paragraph{Aktionen}
+\subsection{Zusammenfassung und Bewertung}
 
 \section{Standardbibliotheken}
 \textcolor{gray}{--- Warum ist Spark so einfach (und wo vielleicht nicht)? ---}\\

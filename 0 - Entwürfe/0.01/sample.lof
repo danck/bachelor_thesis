@@ -24,10 +24,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Verteilungsdiagramm einer typischen Sparkinstallation\relax }}{6}{figure.caption.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Resilient Distributed Datasets aus Verteilungssicht\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Resilient Distributed Datasets aus Verteilungssicht\relax }}{8}{figure.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces RDD Lineage ohne Aktion\relax }}{9}{figure.caption.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces RDD Lineage mit Aktion\relax }}{9}{figure.caption.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces RDD Lineage mit Aktion und Persist()\relax }}{9}{figure.caption.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Resilient Distributed Datasets mit Datenquelle aus Verteilungssicht\relax }}{10}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Hardwareumgebung des Programms zur Tweetanalyse\relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Hardwareumgebung des Programms zur Tweetanalyse\relax }}{14}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
