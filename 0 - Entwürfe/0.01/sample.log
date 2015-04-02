@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  1 APR 2015 21:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  2 APR 2015 10:38
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -2066,7 +2066,70 @@ Class scrbook Warning: \float@listhead detected!
 [7
 
 
-] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.lol")
+] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.lol"
+
+! Package caption Error: \GenericError {(caption) }{Package caption Error: \GenericError {(caption)                }{Pac
+kage caption Error: \caption outside float}{See the caption package documentation for explanation.}{If you do not unders
+tand this error, please take a closer look
+(caption) at the documentation of the `caption' package, especially the
+(caption) section about errors.
+(caption) Try typing  <return>  to proceed.
+(caption) If that doesn't work, type  X <return>  to quit.}\caption@gobble outside float}{See the caption package docume
+ntation for explanation.}{If you do not understand this error, please take a closer look
+(caption) at the documentation of the `caption' package, especially the
+(caption) section about errors.
+(caption) Try typing <return> to proceed.
+(caption) If that doesn't work, type X <return> to quit.}\caption@gobble outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...quit.}\caption@gobble }{4}{lstlisting.2.-1}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+! Argument of \@gobbletwo has an extra }.
+<inserted text> 
+                \par 
+l.6 ...quit.}\caption@gobble }{4}{lstlisting.2.-1}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobbletwo was complete.
+<to be read again> 
+                   \par 
+l.6 ...quit.}\caption@gobble }{4}{lstlisting.2.-1}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+ [][]  
+ []
+
+! Leaders not followed by proper glue.
+<to be read again> 
+                   \hfill 
+l.6 ...quit.}\caption@gobble }{4}{lstlisting.2.-1}
+                                                  
+You should say `\leaders <box or rule><hskip or vskip>'.
+I found the <box or rule>, but there's no suitable
+<hskip or vskip>, so I'm ignoring these leaders.
+
+)
 \tf@lol=\write14
  [8
 
@@ -2169,38 +2232,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
  []
 
 
+LaTeX Warning: Reference `lst:sconsole_wordcount' on page 4 undefined on input line 5.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+LinuxLibertineMonoT-TLF on input line 7.
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.8 \caption
+            {Word Count in der Spark Konsole}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \caption
+            {Word Count in der Spark Konsole}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+LinuxLibertineMonoT-TLF on input line 8.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxlibertinemonot-tlf.fd
 File: T1LinuxLibertineMonoT-TLF.fd 2012/12/06 (autoinst) Font definitions for T1/LinuxLibertineMonoT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 7.
+(Font)              scaled to size 10.95pt on input line 8.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineMonoT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 7.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 8.
 
-Overfull \hbox (0.14587pt too wide) in paragraph at lines 17--18
+
+Package Listings Warning: Text dropped after begin of listing on input line 8.
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 9.
+
+Overfull \hbox (0.14587pt too wide) in paragraph at lines 19--20
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (0.14587pt too wide) in paragraph at lines 25--27
+Overfull \hbox (0.14587pt too wide) in paragraph at lines 27--28
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.28 \end{lstlisting}
+                     
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
+! Extra \endcsname.
+\lst@SaveFirstNumber ...st@intname \fi \endcsname 
+                                                  {\the \c@lstnumber }
+l.28 \end{lstlisting}
+                     
+I'm ignoring this, since I wasn't doing a \csname.
 
 [4
 
@@ -2208,91 +2311,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
-! Package xkeyval Error: `pdf' undefined in families `Gin'.
+ []
 
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 ...egraphics[pdf,scale=0.7]{sparkdeployment2}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<sparkdeployment2.pdf, id=422, 433.62pt x 504.284pt>
+<sparkdeployment2.pdf, id=423, 433.62pt x 504.284pt>
 File: sparkdeployment2.pdf Graphic file (type pdf)
  <use sparkdeployment2.pdf>
-Package pdftex.def Info: sparkdeployment2.pdf used on input line 50.
+Package pdftex.def Info: sparkdeployment2.pdf used on input line 51.
 (pdftex.def)             Requested size: 303.53192pt x 352.99638pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 [5] [6 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/sparkdeployment2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
+LaTeX Warning: Reference `lst:sconsole_wordcount' on page 7 undefined on input line 89.
+
+
+Overfull \hbox (26.46124pt too wide) in paragraph at lines 89--91
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-
-! Package xkeyval Error: `pdf' undefined in families `Gin'.
-
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.95   \includegraphics[pdf,scale=0.7]{RDDs1}
-                                             
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<RDDs1.pdf, id=918, 545.09041pt x 175.91435pt>
+<RDDs1.pdf, id=920, 545.09041pt x 175.91435pt>
 File: RDDs1.pdf Graphic file (type pdf)
  <use RDDs1.pdf>
-Package pdftex.def Info: RDDs1.pdf used on input line 95.
+Package pdftex.def Info: RDDs1.pdf used on input line 99.
 (pdftex.def)             Requested size: 381.56067pt x 123.13919pt.
  [7]
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
 [8 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/RDDs1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-) [9] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
+) [9]
+! Extra \else.
+\@include ...ediate \closeout \@partaux \fi \else 
+                                                  \deadcycles \z@ \@nameuse ...
+l.172 \include{vorstellung}
+                           
+I'm ignoring this; it doesn't match any \if.
+
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
 Kapitel 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -2335,7 +2434,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-<./versuchsaufbau.png, id=959, 211.992pt x 224.037pt>
+<./versuchsaufbau.png, id=961, 211.992pt x 224.037pt>
 File: ./versuchsaufbau.png Graphic file (type png)
  <use ./versuchsaufbau.png>
 Package pdftex.def Info: ./versuchsaufbau.png used on input line 41.
@@ -2352,13 +2451,13 @@ runsystem(mv Fig.1.pdf ./Fig.1.pdf)...executed.
 
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\versuchsaufbau.pdf_tex"
-<versuchsaufbau.pdf, id=960, page=1, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=962, page=1, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 211.99147pt x 223.27982pt.
 
-<versuchsaufbau.pdf, id=961, page=2, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=963, page=2, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
@@ -2388,7 +2487,7 @@ Overfull \hbox (9.93648pt too wide) in paragraph at lines 60--60
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
  []
 
-<versuchsaufbau.pdf, id=962, page=3, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=964, page=3, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 3>
 Package pdftex.def Info: versuchsaufbau.pdf, page3 used on input line 61.
@@ -2398,7 +2497,7 @@ Overfull \hbox (5.11456pt too wide) in paragraph at lines 62--62
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Master  
  []
 
-<versuchsaufbau.pdf, id=963, page=4, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=965, page=4, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 4>
 Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
@@ -2498,20 +2597,22 @@ Package rerunfilecheck Info: File `sample.out' has not changed.
 (rerunfilecheck)             Checksum: 879D1E58EF3156760F27117EA9FF0EBA;3837.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'sample.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
- ) 
+ )
+(\end occurred when \ifnum on line 172 was incomplete) 
 Here is how much of TeX's memory you used:
- 39093 strings out of 493921
- 741930 string characters out of 3144873
- 1365926 words of memory out of 3000000
- 41285 multiletter control sequences out of 15000+200000
- 130864 words of font info for 159 fonts, out of 3000000 for 9000
+ 39124 strings out of 493921
+ 742342 string characters out of 3144873
+ 1366345 words of memory out of 3000000
+ 41318 multiletter control sequences out of 15000+200000
+ 130593 words of font info for 157 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
  74i,12n,112p,1826b,3036s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{glo:dsm} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{glo:dsm} has been referenced but does 
+not exist, replaced by a fixed one
 
 {C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming/M
 iKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertin
@@ -2525,9 +2626,9 @@ T.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/L
 ta/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on sample.pdf (30 pages, 692583 bytes).
+Output written on sample.pdf (30 pages, 694494 bytes).
 PDF statistics:
- 1140 PDF objects out of 1200 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
+ 1143 PDF objects out of 1200 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
  34346 words of extra memory for PDF output out of 35830 (max. 10000000)
 

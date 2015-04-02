@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="RDDs1.svg">
+   sodipodi:docname="RDDs2.svg">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -229,6 +229,25 @@
        x="166.33034"
        y="-48.277901"
        transform="matrix(0.01328882,0.9999117,-0.9999117,0.01328882,0,0)" />
+    <rect
+       style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:#000000;stroke-width:0.52089596;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4181"
+       width="129.72191"
+       height="39.741295"
+       x="100.26532"
+       y="262.74408" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.48369026px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="131.61034"
+       y="286.987"
+       id="text4183"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99905489,1.000946)"><tspan
+         sodipodi:role="line"
+         id="tspan4185"
+         x="131.61034"
+         y="286.987">Storage</tspan></text>
     <flowRoot
        transform="translate(239.56978,-298.40685)"
        xml:space="preserve"
@@ -277,6 +296,25 @@
          id="tspan4207-2-6-3"
          x="278.79443"
          y="222.52188">Partition</tspan></text>
+    <rect
+       style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:#000000;stroke-width:0.52089596;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4181-5"
+       width="129.72191"
+       height="39.741295"
+       x="250.26532"
+       y="262.74408" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.48369026px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="281.75223"
+       y="286.987"
+       id="text4183-0"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99905489,1.000946)"><tspan
+         sodipodi:role="line"
+         id="tspan4185-8"
+         x="281.75223"
+         y="286.987">Storage</tspan></text>
     <flowRoot
        transform="translate(540.28407,-298.19764)"
        xml:space="preserve"
@@ -325,5 +363,24 @@
          id="tspan4207-2-6-8"
          x="579.50873"
          y="222.73108">Partition</tspan></text>
+    <rect
+       style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:#000000;stroke-width:0.52089596;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4181-2"
+       width="129.72191"
+       height="39.741295"
+       x="550.97961"
+       y="262.95331" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.48369026px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="582.75098"
+       y="287.19601"
+       id="text4183-9"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99905489,1.000946)"><tspan
+         sodipodi:role="line"
+         id="tspan4185-3"
+         x="582.75098"
+         y="287.19601">Storage</tspan></text>
   </g>
 </svg>
