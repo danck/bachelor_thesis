@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=826
+NormalPos.bottom=889
 Class=LaTeXView
 Document=sample.tex
 
 [Frame0_View0,0]
-TopLine=21
-Cursor=949
+TopLine=66
+Cursor=2388
 
 [Frame1]
 Flags=0
@@ -30,7 +30,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=826
+NormalPos.bottom=889
 Class=BibTeXView
 Document=sample.bib
 
@@ -48,13 +48,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=826
+NormalPos.bottom=889
 Class=LaTeXView
 Document=einfuehrung.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=947
+TopLine=24
+Cursor=2992
 
 [Frame3]
 Flags=0
@@ -66,13 +66,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=826
+NormalPos.bottom=889
 Class=LaTeXView
 Document=vorstellung.tex
 
 [Frame3_View0,0]
-TopLine=106
-Cursor=5862
+TopLine=144
+Cursor=632
 
 [Frame4]
 Flags=0
@@ -84,13 +84,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=826
+NormalPos.bottom=889
 Class=LaTeXView
 Document=praxis.tex
 
 [Frame4_View0,0]
-TopLine=9
-Cursor=1287
+TopLine=211
+Cursor=8309
 
 [Frame5]
 Flags=0
@@ -102,7 +102,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=826
+NormalPos.bottom=889
 Class=LaTeXView
 Document=schluss.tex
 
@@ -120,13 +120,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=826
+NormalPos.bottom=889
 Class=LaTeXView
 Document=glossar.tex
 
 [Frame6_View0,0]
-TopLine=18
-Cursor=1072
+TopLine=0
+Cursor=258
 
 [Frame7]
 Flags=0
@@ -138,7 +138,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=826
+NormalPos.bottom=889
 Class=LaTeXView
 Document=appendices.tex
 
@@ -148,5 +148,5 @@ Cursor=1200
 
 [SessionInfo]
 FrameCount=8
-ActiveFrame=3
+ActiveFrame=4
 

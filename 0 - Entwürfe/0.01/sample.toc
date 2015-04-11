@@ -98,42 +98,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Laufzeitdiagramme}{15}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Ergebnisse und Bewertung}{15}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.5}Ergebnisse und Bewertung}{18}{subsection.3.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Dashboard}{15}{section*.25}
+\contentsline {paragraph}{\nonumberline Dashboard}{18}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Laufzeitverhalten}{15}{section*.26}
+\contentsline {paragraph}{\nonumberline Laufzeitverhalten}{19}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Bewertung und Probleme}{15}{section*.27}
+\contentsline {paragraph}{\nonumberline Bewertung und Probleme}{19}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Spark-basierte Implementation von Operatoren aus der Klimaforschung}{15}{section.3.2}
+\contentsline {section}{\numberline {3.2}Spark-basierte Implementation von Operatoren aus der Klimaforschung}{19}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Beschreibung des Problems}{15}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Beschreibung des Problems}{19}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Hardwarekontext und Performance-Basisdaten}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Hardwarekontext und Performance-Basisdaten}{19}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Architektur\IeC {\"u}bersicht}{16}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Architektur\IeC {\"u}bersicht}{19}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Detailierte L\IeC {\"o}sungsbeschreibung}{16}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Detailierte L\IeC {\"o}sungsbeschreibung}{19}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{16}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{19}{subsection.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Schlussbetrachtung}{17}{chapter.4}
+\contentsline {chapter}{\numberline {4}Schlussbetrachtung}{20}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Kritische W\"urdigung der Ergebnisse}{17}{section.4.1}
+\contentsline {section}{\numberline {4.1}Kritische W\"urdigung der Ergebnisse}{20}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{17}{section.4.2}
+\contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{20}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyme}{18}{section*.28}
+\contentsline {chapter}{Acronyme}{21}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{19}{section*.30}
+\contentsline {chapter}{Glossar}{22}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{22}{section*.33}
+\contentsline {chapter}{Anhang}{25}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Installation der Plattform}{23}{section.1..1}
+\contentsline {section}{\numberline {1}Installation der Plattform}{26}{section.1..1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Quellcode (Ausz\IeC {\"u}ge)}{23}{section.1..2}
+\contentsline {section}{\numberline {2}Quellcode (Ausz\IeC {\"u}ge)}{26}{section.1..2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Sonstiges}{23}{section.1..3}
+\contentsline {section}{\numberline {3}Sonstiges}{26}{section.1..3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Einsch\IeC {\"a}tzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}{23}{subsection.1..3.1}
+\contentsline {subsection}{\numberline {3.1}Einsch\IeC {\"a}tzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}{26}{subsection.1..3.1}

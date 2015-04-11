@@ -89,13 +89,13 @@ Die universelle Einheit mit der ein Datenelement auf Spark repräsentiert wird i
 Ein Beispiel für ein solches \gls{rdd} wurde bereits erwähnt, nämlich das in Listing \ref{lst:sconsole_wordcount} erzeugte Objekt \lstinline|text|:\\
 
 \begin{lstlisting}
-	val text = sc.textFile("../Heinrich Heine - Der Ex-Lebendige")|\\
+val text = sc.textFile("../Heinrich Heine - Der Ex-Lebendige")
 \end{lstlisting}
 
 \Glspl{rdd} können auch explizit erzeugt werden, ohne dass dazu vorhandene Daten genutzt werden:\\
 
 \begin{lstlisting}
-	val list = sc.parallelize(List(1,2,3,4,5,6))|\\
+val list = sc.parallelize(List(1,2,3,4,5,6))
 \end{lstlisting}
 
 Die gesamte operative Kern-\gls{api} dreht sich um die Steuerung dieser Dateneinheiten. Insbesondere sind auch die in den Standardbibliotheken verfügbaren "`höheren"' \glspl{api} auf diesen \glspl{rdd} implementiert.
