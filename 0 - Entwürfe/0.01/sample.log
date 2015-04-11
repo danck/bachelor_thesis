@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  11 APR 2015 16:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  11 APR 2015 17:54
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -1988,7 +1988,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<./logo/HAW_logo.png, id=222, 768.8725pt x 231.86626pt>
+<./logo/HAW_logo.png, id=226, 768.8725pt x 231.86626pt>
 File: ./logo/HAW_logo.png Graphic file (type png)
  <use ./logo/HAW_logo.png>
 Package pdftex.def Info: ./logo/HAW_logo.png used on input line 142.
@@ -2110,9 +2110,9 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 Package tocbasic Info: character protrusion at toc deactivated on input line 159.
  ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.toc"
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 113.
+(Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 115.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 113.
+(Font)              scaled to size 10.95pt on input line 115.
  [4
 
 
@@ -2228,7 +2228,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<bilder/trends_spark_vs_hadoop.PNG, id=371, 629.72766pt x 220.19766pt>
+<bilder/trends_spark_vs_hadoop.PNG, id=380, 629.72766pt x 220.19766pt>
 File: bilder/trends_spark_vs_hadoop.PNG Graphic file (type png)
  <use bilder/trends_spark_vs_hadoop.PNG>
 Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 27.
@@ -2289,7 +2289,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
 
 
-] <sparkdeployment2.pdf, id=425, 433.62pt x 504.284pt>
+] <sparkdeployment2.pdf, id=434, 433.62pt x 504.284pt>
 File: sparkdeployment2.pdf Graphic file (type pdf)
  <use sparkdeployment2.pdf>
 Package pdftex.def Info: sparkdeployment2.pdf used on input line 49.
@@ -2348,7 +2348,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<RDDs1.pdf, id=942, 545.09041pt x 172.78854pt>
+<RDDs1.pdf, id=951, 545.09041pt x 172.78854pt>
 File: RDDs1.pdf Graphic file (type pdf)
  <use RDDs1.pdf>
 Package pdftex.def Info: RDDs1.pdf used on input line 113.
@@ -2394,7 +2394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
-<rdds_no_action.pdf, id=947, 365.6546pt x 50.82341pt>
+<rdds_no_action.pdf, id=956, 365.6546pt x 50.82341pt>
 File: rdds_no_action.pdf Graphic file (type pdf)
  <use rdds_no_action.pdf>
 Package pdftex.def Info: rdds_no_action.pdf used on input line 134.
@@ -2404,7 +2404,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-<rdds_action.pdf, id=967, 510.28033pt x 50.82341pt>
+<rdds_action.pdf, id=976, 510.28033pt x 50.82341pt>
 File: rdds_action.pdf Graphic file (type pdf)
  <use rdds_action.pdf>
 Package pdftex.def Info: rdds_action.pdf used on input line 143.
@@ -2414,24 +2414,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-<rdds_action_persist.pdf, id=969, 510.28033pt x 63.05325pt>
+<rdds_action_persist.pdf, id=978, 510.28033pt x 63.05325pt>
 File: rdds_action_persist.pdf Graphic file (type pdf)
  <use rdds_action_persist.pdf>
 Package pdftex.def Info: rdds_action_persist.pdf used on input line 152.
 (pdftex.def)             Requested size: 408.22482pt x 50.44266pt.
 
-<RDDs2.pdf, id=971, 545.09041pt x 209.20233pt>
+<RDDs2.pdf, id=980, 545.09041pt x 209.20233pt>
 File: RDDs2.pdf Graphic file (type pdf)
  <use RDDs2.pdf>
 Package pdftex.def Info: RDDs2.pdf used on input line 162.
 (pdftex.def)             Requested size: 381.56067pt x 146.44063pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_no_action.pdf> <C:/Users/Daniel/
-Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_action.pdf
+<spark_deployment_process.pdf, id=982, 568.81337pt x 509.50351pt>
+File: spark_deployment_process.pdf Graphic file (type pdf)
+ <use spark_deployment_process.pdf>
+Package pdftex.def Info: spark_deployment_process.pdf used on input line 180.
+(pdftex.def)             Requested size: 398.16663pt x 356.65002pt.
+ [9 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_no_action.pdf> <C:/Users/Daniel
+/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_action.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_a
 ction.pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -2440,16 +2444,26 @@ ction.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_a
 ction_persist.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
-[10 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/RDDs2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
-Package pgfplots info on input line 216: Overriding colorspace to rgb due to xcolor configuration.
+[10 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/RDDs2.pdf>] [11 <C:/Users/Daniel/Doc
+uments/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/spark_deployment_process.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+Package pgfplots info on input line 226: Overriding colorspace to rgb due to xcolor configuration.
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2457,18 +2471,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.250 
+l.260 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
-[11]) [12] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
+[12]) [13] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
 Kapitel 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -2501,7 +2515,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
  []
 
-[13
+[14
 
 
 
@@ -2511,7 +2525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-<./versuchsaufbau.png, id=1032, 211.992pt x 224.037pt>
+<./versuchsaufbau.png, id=1366, 211.992pt x 224.037pt>
 File: ./versuchsaufbau.png Graphic file (type png)
  <use ./versuchsaufbau.png>
 Package pdftex.def Info: ./versuchsaufbau.png used on input line 41.
@@ -2528,13 +2542,13 @@ runsystem(mv Fig.1.pdf ./Fig.1.pdf)...executed.
 
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\versuchsaufbau.pdf_tex"
-<versuchsaufbau.pdf, id=1033, page=1, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=1367, page=1, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 211.99147pt x 223.27982pt.
 
-<versuchsaufbau.pdf, id=1034, page=2, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=1368, page=2, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
@@ -2564,7 +2578,7 @@ Overfull \hbox (9.93648pt too wide) in paragraph at lines 60--60
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
  []
 
-<versuchsaufbau.pdf, id=1035, page=3, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=1369, page=3, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 3>
 Package pdftex.def Info: versuchsaufbau.pdf, page3 used on input line 61.
@@ -2574,7 +2588,7 @@ Overfull \hbox (5.11456pt too wide) in paragraph at lines 62--62
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Master  
  []
 
-<versuchsaufbau.pdf, id=1036, page=4, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=1370, page=4, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 4>
 Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
@@ -2583,7 +2597,7 @@ Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
@@ -2606,7 +2620,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<demo_app_deployment.pdf, id=1050, 600.64403pt x 536.39526pt>
+<demo_app_deployment.pdf, id=1384, 600.64403pt x 536.39526pt>
 File: demo_app_deployment.pdf Graphic file (type pdf)
  <use demo_app_deployment.pdf>
 Package pdftex.def Info: demo_app_deployment.pdf used on input line 101.
@@ -2616,7 +2630,7 @@ Overfull \hbox (6.58961pt too wide) in paragraph at lines 101--102
  [][] 
  []
 
-[15 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf> <C:/Users/Daniel
+[16 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf> <C:/Users/Daniel
 /Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuc
@@ -2643,7 +2657,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<demo_app_components.pdf, id=1065, 648.02098pt x 445.48189pt>
+<demo_app_components.pdf, id=1398, 648.02098pt x 445.48189pt>
 File: demo_app_components.pdf Graphic file (type pdf)
  <use demo_app_components.pdf>
 Package pdftex.def Info: demo_app_components.pdf used on input line 110.
@@ -2656,11 +2670,11 @@ Overfull \hbox (7.35031pt too wide) in paragraph at lines 110--111
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_deployment.pdf>] [17 <C:/Us
-ers/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_components.pdf>]) [18]
+[17 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_deployment.pdf>] [18 <C:/Us
+ers/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_components.pdf>]) [19]
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.tex"
 Kapitel 4.
-) [19
+) [20
 
 
 
@@ -2668,7 +2682,7 @@ Kapitel 4.
 ]
 ===== Section: literature
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.acr")
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [20
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [21
 
 
 
@@ -2676,7 +2690,7 @@ Kapitel 4.
 
 
 
-]) [21
+]) [22
 
 
 
@@ -2684,17 +2698,17 @@ Kapitel 4.
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 193.
- [22
+ [23
 
 
 ]
 ===== File: appendices
-[23] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.tex"
+[24] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.tex"
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 1.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 1.
- [24
+ [25
 
 
 
@@ -2706,9 +2720,9 @@ Overfull \hbox (41.53557pt too wide) in paragraph at lines 12--22
  [][] 
  []
 
-) [25]
+) [26]
 ===== Section: index
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [26
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [27
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
@@ -2722,59 +2736,37 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
-
-
-Package rerunfilecheck Warning: File `sample.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `sample.out':
-(rerunfilecheck)             Before: B489876AB2725DEB08608A34F3610FD5;3690
-(rerunfilecheck)             After:  BCDEA7AE16B1597B7C81A279AEBA7058;3690.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `sample.out' has not changed.
+(rerunfilecheck)             Checksum: 48CAAFFE35EC14E6FF51A8802D6485D9;3772.
 Package logreq Info: Writing requests to 'sample.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 48158 strings out of 493921
- 1043269 string characters out of 3144873
- 1731348 words of memory out of 3000000
- 50192 multiletter control sequences out of 15000+200000
+ 48162 strings out of 493921
+ 1043425 string characters out of 3144873
+ 1732348 words of memory out of 3000000
+ 50198 multiletter control sequences out of 15000+200000
  136301 words of font info for 161 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
  74i,19n,112p,1826b,3036s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{table.caption.36} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.19} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.23} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.35} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.32} has been referenced but does not exist, replaced by a fixed one
-
-{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming/M
-iKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertin
-e/lbtn_ki75ao.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_d6jdyt.enc}{C:/Users/Daniel
-/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/
-enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_76gpa5.en
-c}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_7grukw.enc}<C:/Users/Daniel/AppData/Roaming
-/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public
-/libertine/LinBiolinumTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineMT.pfb
-><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Daniel/AppData/Roa
-ming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/
-public/libertine/LinLibertineTBI.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLiberti
-neTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on sample.pdf (34 pages, 982748 bytes).
+{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming
+/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libert
+ine/lbtn_ki75ao.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_d6jdyt.enc}{C:/Users/Dani
+el/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/font
+s/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_76gpa5.
+enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_7grukw.enc}<C:/Users/Daniel/AppData/Roami
+ng/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/publ
+ic/libertine/LinBiolinumTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineMT.p
+fb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Daniel/AppData/R
+oaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type
+1/public/libertine/LinLibertineTBI.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLiber
+tineTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on sample.pdf (35 pages, 1045830 bytes).
 PDF statistics:
- 2259 PDF objects out of 2487 (max. 8388607)
- 189 named destinations out of 1000 (max. 500000)
- 34872 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 2585 PDF objects out of 2984 (max. 8388607)
+ 186 named destinations out of 1000 (max. 500000)
+ 34885 words of extra memory for PDF output out of 35830 (max. 10000000)
 

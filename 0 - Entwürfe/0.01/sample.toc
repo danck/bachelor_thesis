@@ -36,104 +36,106 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Scheduling/Shuffling}{10}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Zusammenfassung und Bewertung}{10}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Anwendungs Deployment}{10}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}Zusammenfassung und Bewertung}{10}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Standardbibliotheken}{10}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Dataframes/Spark SQL}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}Dataframes/Spark SQL}{12}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}MLlib}{11}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}MLlib}{12}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Streaming}{11}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Streaming}{12}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}GraphX}{11}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.4}GraphX}{12}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Betrieb und Security}{11}{section.2.4}
+\contentsline {section}{\numberline {2.4}Betrieb und Security}{12}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Spark im Kontext von Parallelisierungspattern}{11}{section.2.5}
+\contentsline {section}{\numberline {2.5}Spark im Kontext von Parallelisierungspattern}{12}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Entwicklergemeinschaft}{11}{section.2.6}
+\contentsline {section}{\numberline {2.6}Entwicklergemeinschaft}{12}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Verwandte Produkte}{12}{section.2.7}
+\contentsline {section}{\numberline {2.7}Verwandte Produkte}{13}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.1}YARN}{12}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.1}YARN}{13}{subsection.2.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.2}Mesos}{12}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.2}Mesos}{13}{subsection.2.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.3}Flink}{12}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.3}Flink}{13}{subsection.2.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.4}MPI}{12}{subsection.2.7.4}
+\contentsline {subsection}{\numberline {2.7.4}MPI}{13}{subsection.2.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.5}Kafka}{12}{subsection.2.7.5}
+\contentsline {subsection}{\numberline {2.7.5}Kafka}{13}{subsection.2.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.6}HBase}{12}{subsection.2.7.6}
+\contentsline {subsection}{\numberline {2.7.6}HBase}{13}{subsection.2.7.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.7}Lustre}{12}{subsection.2.7.7}
+\contentsline {subsection}{\numberline {2.7.7}Lustre}{13}{subsection.2.7.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Beispielanwendungen von Spark zur Datenanalyse}{13}{chapter.3}
+\contentsline {chapter}{\numberline {3}Beispielanwendungen von Spark zur Datenanalyse}{14}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Anwendung zur Echtzeitanalyse eines Datenstroms anhand eines ver\IeC {\"a}nderlichen Stammdatenbestandes}{13}{section.3.1}
+\contentsline {section}{\numberline {3.1}Anwendung zur Echtzeitanalyse eines Datenstroms anhand eines ver\IeC {\"a}nderlichen Stammdatenbestandes}{14}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Problembeschreibung}{13}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.1}Problembeschreibung}{14}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Anforderungen}{14}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Anforderungen}{15}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Hardwarekontext und Performance-Basisdaten}{14}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.3}Hardwarekontext und Performance-Basisdaten}{15}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Worker}{14}{section*.17}
+\contentsline {paragraph}{\nonumberline Worker}{15}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Master}{15}{section*.18}
+\contentsline {paragraph}{\nonumberline Master}{16}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Netzwerk}{15}{section*.19}
+\contentsline {paragraph}{\nonumberline Netzwerk}{16}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}L\IeC {\"o}sungsskizze}{15}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.4}L\IeC {\"o}sungsskizze}{16}{subsection.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Wahl des Dateisystems}{15}{section*.21}
+\contentsline {paragraph}{\nonumberline Wahl des Dateisystems}{16}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Wahl des Cluster-Managers}{15}{section*.22}
+\contentsline {paragraph}{\nonumberline Wahl des Cluster-Managers}{16}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Verteilungsdiagramm}{16}{figure.caption.24}
+\contentsline {paragraph}{\nonumberline Verteilungsdiagramm}{17}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Komponentendiagramm}{16}{figure.caption.26}
+\contentsline {paragraph}{\nonumberline Komponentendiagramm}{17}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Laufzeitdiagramme}{17}{section*.27}
+\contentsline {paragraph}{\nonumberline Laufzeitdiagramme}{18}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Ergebnisse und Bewertung}{17}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.5}Ergebnisse und Bewertung}{18}{subsection.3.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Dashboard}{17}{section*.28}
+\contentsline {paragraph}{\nonumberline Dashboard}{18}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Laufzeitverhalten}{17}{section*.29}
+\contentsline {paragraph}{\nonumberline Laufzeitverhalten}{18}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Bewertung und Probleme}{17}{section*.30}
+\contentsline {paragraph}{\nonumberline Bewertung und Probleme}{18}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Spark-basierte Implementation von Operatoren aus der Klimaforschung}{17}{section.3.2}
+\contentsline {section}{\numberline {3.2}Spark-basierte Implementation von Operatoren aus der Klimaforschung}{18}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Beschreibung des Problems}{18}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Beschreibung des Problems}{19}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Hardwarekontext und Performance-Basisdaten}{18}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Hardwarekontext und Performance-Basisdaten}{19}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Architektur\IeC {\"u}bersicht}{18}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Architektur\IeC {\"u}bersicht}{19}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Detailierte L\IeC {\"o}sungsbeschreibung}{18}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Detailierte L\IeC {\"o}sungsbeschreibung}{19}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{18}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{19}{subsection.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Schlussbetrachtung}{19}{chapter.4}
+\contentsline {chapter}{\numberline {4}Schlussbetrachtung}{20}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Kritische W\"urdigung der Ergebnisse}{19}{section.4.1}
+\contentsline {section}{\numberline {4.1}Kritische W\"urdigung der Ergebnisse}{20}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{19}{section.4.2}
+\contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{20}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyme}{20}{section*.31}
+\contentsline {chapter}{Acronyme}{21}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{21}{section*.33}
+\contentsline {chapter}{Glossar}{22}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{24}{section*.36}
+\contentsline {chapter}{Anhang}{25}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Installation der Plattform}{25}{section.1..1}
+\contentsline {section}{\numberline {1}Installation der Plattform}{26}{section.1..1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Quellcode (Ausz\IeC {\"u}ge)}{25}{section.1..2}
+\contentsline {section}{\numberline {2}Quellcode (Ausz\IeC {\"u}ge)}{26}{section.1..2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Sonstiges}{25}{section.1..3}
+\contentsline {section}{\numberline {3}Sonstiges}{26}{section.1..3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Einsch\IeC {\"a}tzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}{25}{subsection.1..3.1}
+\contentsline {subsection}{\numberline {3.1}Einsch\IeC {\"a}tzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}{26}{subsection.1..3.1}
