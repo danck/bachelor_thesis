@@ -117,7 +117,7 @@ Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeic
 
 \paragraph{Laufzeitsicht}\\
 
-\Glspl{rdd} sind nicht veränderbar. Anstatt durch feingranulare Schreiboperationen modifiziert zu werden ist es nur möglich ein einmal definiertes \gls{rdd} durch Operationen in ein anderes zu überführen.\\
+\Glspl{rdd} sind nicht veränderbar. Anstatt durch feingranulare Schreiboperationen modifiziert zu werden ist es nur möglich ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
 
 Diese Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gls{rdd} bezeichnet. Die \textit{Lineage} kann als das "`Rezept"' zur Erstellung eines Datensatzes verstanden werden.
 
@@ -157,14 +157,14 @@ Wie in Abb. \ref{fig:rdds_action} zu erkennen, werden während der Transformatio
 
 Ein möglicher Vorteil dieser Art von Arbeitsdatensatz wird sofort deutlich: Im optimalen Fall sind die zu ladenden Daten von jedem der \gls{worker} auf unabhängigen Kanälen erreichbar (z.B. auf dem lokalen Festspeicher) und gleichmäßig auf diesen Kanälen partitioniert.
 
-\begin{figure}[ht!]
+\begin{figure}[h!]
 	\centering
   \includegraphics[scale=0.7]{RDDs2.pdf}
 	\caption{Resilient Distributed Datasets mit Datenquelle aus Verteilungssicht}
 	\label{fig:rdds2}
 \end{figure}
 
-Im optimalen Fall ergibt sich mit einer Anzahl \gls{worker} $n$ und einem Durchsatz $\delta$ zu der jeweiligen Datenquelle also ein Gesamtdurchsatz beim Einlesen von Daten von:
+Im diesem Fall ergäbe sich mit einer Anzahl \gls{worker} $n$ und einem Durchsatz $\delta$ zu der jeweiligen Datenquelle also ein Gesamtdurchsatz beim Einlesen von Daten von:
 
 \begin{equation}
 	\sum_{i=1}^{n} \delta_i
@@ -172,6 +172,11 @@ Im optimalen Fall ergibt sich mit einer Anzahl \gls{worker} $n$ und einem Durchs
 
 
 \subsection{Scheduling/Shuffling}
+
+\subsection{Anwendungs Deployment}
+
+
+
 \subsection{Zusammenfassung und Bewertung}
 
 \section{Standardbibliotheken}
@@ -198,6 +203,55 @@ Die bedienten Bereiche sind
 
 \section{Entwicklergemeinschaft}
 \textcolor{gray}{--- Herkunft, Apache Foundation, Entwicklungsphilosophien, Anzahl Entwickler, ... ---}\\
+
+\begin{figure}[ht!]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+			title={Aktivität auf den Spark-Mailinglisten},
+			xlabel={Monat},
+			ylabel={Nachrichten pro Tag},
+			%xmin=0, xmax=100,
+			ymin=0, ymax=100,
+			symbolic x coords={2014/11,2014/12,2015/01,2015/02,2015/03},
+			ytick={0,20,40,60,80,100},
+			legend pos=north west,
+			ymajorgrids=true,
+			grid style=dashed,
+	]
+	 
+	\addplot[
+			color=blue,
+			mark=square,
+			]
+			coordinates {
+			(2014/11,16.43)
+			(2014/12,13.35)
+			(2015/01,12.06)
+			(2015/02,15.89)
+			(2015/03,14.61)
+			};
+
+	\addplot[
+			color=red,
+			mark=square,
+			]
+			coordinates {
+			(2014/11,64.43)
+			(2014/12,59.58)
+			(2015/01,67.64)
+			(2015/02,75.64)
+			(2015/03,80.58)
+			};
+			\legend{dev@spark.apache.org,user@spark.apache.org}
+
+	 
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Aktivität auf den offiziellen Spark Mailinglisten}
+	\label{fig:mailinglisten}
+\end{figure}
+\\
 
 \section{Verwandte Produkte}
 \textcolor{gray}{--- Ergänzende oder konkurrierende Produkte ---}\\

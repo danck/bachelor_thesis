@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  11 APR 2015 14:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  11 APR 2015 16:08
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -1732,17 +1732,94 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count380
 \c@@ppsaveapp=\count381
 )
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\pgfplots\pgfplots.sty
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2015/01/31 v1.12 Data Visualization (1.12)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks55
+\t@pgfplots@tokb=\toks56
+\t@pgfplots@tokc=\toks57
+\pgfplots@tmpa=\dimen210
+\c@pgfplots@coordindex=\count382
+\c@pgfplots@scanlineindex=\count383
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\sys\pgfplotssysgeneric.code.tex))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\libs\pgfplotslibrary.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.te
+x)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count384
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsupp_trig_format.code.tex)
+) (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsutil.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\pgfplotsliststructure.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\pgfplotsliststructureext.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count385
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\pgfplotsmatrix.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count386
+\t@pgfplotstable@a=\toks58
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\pgfplotsdeque.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsbinary.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsbinary.data.code.tex))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsutil.verb.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count387
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def)))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotscolormap.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotscolor.code.tex))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsstackedplots.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsplothandlers.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsmeshplothandler.code.tex))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.scaling.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotscoordprocessing.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.errorbars.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.markers.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsticks.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.paths.code.tex)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathmorp
+hing.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathmorphing.cod
+e.tex))
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathrepl
+acing.code.tex
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathreplacing.co
+de.tex))
+\pgfplots@numplots=\count388
+\pgfplots@xmin@reg=\dimen211
+\pgfplots@xmax@reg=\dimen212
+\pgfplots@ymin@reg=\dimen213
+\pgfplots@ymax@reg=\dimen214
+\pgfplots@zmin@reg=\dimen215
+\pgfplots@zmax@reg=\dimen216
+)
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2013/07/20 v3.0.0 (rcs-revision 1.13)
+)))
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\glossar.tex")
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 100.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 100.
-Package hyperref Info: Option `linktocpage' set `true' on input line 100.
-LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on input line 115.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 101.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 101.
+Package hyperref Info: Option `linktocpage' set `true' on input line 101.
+LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on input line 116.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxlibertinet-tlf.fd
 File: T1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for T1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 115.
+(Font)              scaled to size 10.95pt on input line 116.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 11
 (typearea)             BCOR = 28.45274pt
@@ -1759,15 +1836,15 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 115.
+(typearea)              on input line 116.
 \@indexfile=\write6
 
 Writing index file sample.idx
 \glswrite=\write7
 \glo@main@file=\write8
-Package glossaries Info: Writing glossary file sample.glo on input line 119.
+Package glossaries Info: Writing glossary file sample.glo on input line 120.
 \glo@acronym@file=\write9
-Package glossaries Info: Writing glossary file sample.acn on input line 119.
+Package glossaries Info: Writing glossary file sample.acn on input line 120.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\english.lbx
@@ -1777,8 +1854,8 @@ File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count382
-\@quotereset=\count383
+\@quotelevel=\count389
+\@quotereset=\count390
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.aux"
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
@@ -1796,45 +1873,45 @@ File: german.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.aux"))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 121.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 122.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
 
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count384
-\scratchdimen=\dimen210
+\scratchcounter=\count391
+\scratchdimen=\dimen217
 \scratchbox=\box110
-\nofMPsegments=\count385
-\nofMParguments=\count386
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count387
-\MPscratchDim=\dimen211
-\MPnumerator=\count388
-\makeMPintoPDFobject=\count389
-\everyMPtoPDFconversion=\toks56
+\nofMPsegments=\count392
+\nofMParguments=\count393
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count394
+\MPscratchDim=\dimen218
+\MPnumerator=\count395
+\makeMPintoPDFobject=\count396
+\everyMPtoPDFconversion=\toks60
 )
-\c@mv@tabular=\count390
-\c@mv@boldtabular=\count391
-LaTeX Info: Redefining \microtypecontext on input line 121.
+\c@mv@tabular=\count397
+\c@mv@boldtabular=\count398
+LaTeX Info: Redefining \microtypecontext on input line 122.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1848,20 +1925,20 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c@lstlisting=\count392
+\c@lstlisting=\count399
 \AtBeginShipoutBox=\box111
-Package hyperref Info: Link coloring ON on input line 121.
+Package hyperref Info: Link coloring ON on input line 122.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count393
+\c@section@level=\count400
 )
-LaTeX Info: Redefining \ref on input line 121.
-LaTeX Info: Redefining \pageref on input line 121.
-LaTeX Info: Redefining \nameref on input line 121.
+LaTeX Info: Redefining \ref on input line 122.
+LaTeX Info: Redefining \pageref on input line 122.
+LaTeX Info: Redefining \nameref on input line 122.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.out")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.out")
@@ -1885,8 +1962,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 121.
-Package biblatex Info: Reference segment=0 on input line 121.
+Package biblatex Info: Reference section=0 on input line 122.
+Package biblatex Info: Reference segment=0 on input line 122.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: longtable package is loaded.
  (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
@@ -1894,13 +1971,18 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 141.
 
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider w
+riting \pgfplotsset{compat=1.12} into your preamble.
+ on input line 122.
+
+LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 142.
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\libertine\t1linuxbiolinumt-tlf.fd
 File: T1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 141.
+(Font)              scaled to size 10.95pt on input line 142.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1909,10 +1991,10 @@ Package microtype Info: Loading generic settings for font family
 <./logo/HAW_logo.png, id=222, 768.8725pt x 231.86626pt>
 File: ./logo/HAW_logo.png Graphic file (type png)
  <use ./logo/HAW_logo.png>
-Package pdftex.def Info: ./logo/HAW_logo.png used on input line 141.
+Package pdftex.def Info: ./logo/HAW_logo.png used on input line 142.
 (pdftex.def)             Requested size: 284.52756pt x 85.80685pt.
 
-Overfull \hbox (227.62206pt too wide) in paragraph at lines 141--141
+Overfull \hbox (227.62206pt too wide) in paragraph at lines 142--142
 [][] 
  []
 
@@ -1920,23 +2002,23 @@ Overfull \hbox (227.62206pt too wide) in paragraph at lines 141--141
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 141.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 142.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 141.
+(Font)              scaled to size 10.95pt on input line 142.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 141.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 142.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 24.88pt on input line 141.
+(Font)              scaled to size 24.88pt on input line 142.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 141.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 142.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 141.
+(Font)              scaled to size 14.4pt on input line 142.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <12> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 141.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 142.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 141.
+(Font)              scaled to size 12.0pt on input line 142.
 
-Overfull \hbox (318.98038pt too wide) in paragraph at lines 141--141
+Overfull \hbox (318.98038pt too wide) in paragraph at lines 142--142
 [][][][][][][] 
  []
 
@@ -1944,7 +2026,7 @@ Overfull \hbox (318.98038pt too wide) in paragraph at lines 141--141
 \haw@fw=\skip106
 \haw@tw=\skip107
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 141.
+(Font)              scaled to size 10.95pt on input line 142.
 
 ! Package inputenc Error: Unicode char \u8:�tT not set up for use with LaTeX.
 
@@ -1952,14 +2034,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 \maketitle
+l.142 \maketitle
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (455.24419pt too wide) in paragraph at lines 141--141
+Overfull \hbox (455.24419pt too wide) in paragraph at lines 142--142
 []$[]$ 
  []
 
@@ -1970,11 +2052,11 @@ Overfull \hbox (455.24419pt too wide) in paragraph at lines 141--141
 
  <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/logo/HAW_logo.png>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 141.
+(Font)              scaled to size 14.4pt on input line 142.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 141.
+(Font)              scaled to size 14.4pt on input line 142.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
 
  []
 
@@ -1985,7 +2067,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 \maketitle
+l.142 \maketitle
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1999,7 +2081,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 \maketitle
+l.142 \maketitle
                 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -2012,20 +2094,20 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 \maketitle
+l.142 \maketitle
                 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
 [2]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 153.
+(Font)              scaled to size 10.95pt on input line 154.
  [3]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 158.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 159.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 158.
-Package tocbasic Info: character protrusion at toc deactivated on input line 158.
+(Font)              scaled to size 20.74pt on input line 159.
+Package tocbasic Info: character protrusion at toc deactivated on input line 159.
  ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.toc"
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 113.
@@ -2037,7 +2119,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 ])
 \tf@toc=\write11
  [5]
-Package tocbasic Info: character protrusion at lof deactivated on input line 162.
+Package tocbasic Info: character protrusion at lof deactivated on input line 163.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.lof")
 \tf@lof=\write12
@@ -2045,7 +2127,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 162
 
 
 ]
-Package tocbasic Info: character protrusion at lot deactivated on input line 163.
+Package tocbasic Info: character protrusion at lot deactivated on input line 164.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.lot")
 \tf@lot=\write13
@@ -2061,7 +2143,7 @@ Class scrbook Warning: \float@listhead detected!
 (scrbook)              Loading of package `scrhack' may help to
 (scrbook)              avoid this warning, if you are using a
 (scrbook)              a package that still implements the
-(scrbook)              deprecated \float@listhead interface  on input line 164.
+(scrbook)              deprecated \float@listhead interface  on input line 165.
 
 [7
 
@@ -2367,12 +2449,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
+Package pgfplots info on input line 216: Overriding colorspace to rgb due to xcolor configuration.
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.250 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
-) [11] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
+[11]) [12] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
 Kapitel 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -2405,7 +2501,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
  []
 
-[12
+[13
 
 
 
@@ -2415,7 +2511,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-<./versuchsaufbau.png, id=1027, 211.992pt x 224.037pt>
+<./versuchsaufbau.png, id=1032, 211.992pt x 224.037pt>
 File: ./versuchsaufbau.png Graphic file (type png)
  <use ./versuchsaufbau.png>
 Package pdftex.def Info: ./versuchsaufbau.png used on input line 41.
@@ -2432,13 +2528,13 @@ runsystem(mv Fig.1.pdf ./Fig.1.pdf)...executed.
 
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\versuchsaufbau.pdf_tex"
-<versuchsaufbau.pdf, id=1028, page=1, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=1033, page=1, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 211.99147pt x 223.27982pt.
 
-<versuchsaufbau.pdf, id=1029, page=2, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=1034, page=2, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
@@ -2468,7 +2564,7 @@ Overfull \hbox (9.93648pt too wide) in paragraph at lines 60--60
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
  []
 
-<versuchsaufbau.pdf, id=1030, page=3, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=1035, page=3, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 3>
 Package pdftex.def Info: versuchsaufbau.pdf, page3 used on input line 61.
@@ -2478,7 +2574,7 @@ Overfull \hbox (5.11456pt too wide) in paragraph at lines 62--62
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Master  
  []
 
-<versuchsaufbau.pdf, id=1031, page=4, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=1036, page=4, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 4>
 Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
@@ -2487,7 +2583,7 @@ Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
@@ -2497,17 +2593,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-<demo_app_deployment.pdf, id=1045, 600.64403pt x 536.39526pt>
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<demo_app_deployment.pdf, id=1050, 600.64403pt x 536.39526pt>
 File: demo_app_deployment.pdf Graphic file (type pdf)
  <use demo_app_deployment.pdf>
-Package pdftex.def Info: demo_app_deployment.pdf used on input line 100.
+Package pdftex.def Info: demo_app_deployment.pdf used on input line 101.
 (pdftex.def)             Requested size: 420.44795pt x 375.47412pt.
 
-Overfull \hbox (6.58961pt too wide) in paragraph at lines 100--101
+Overfull \hbox (6.58961pt too wide) in paragraph at lines 101--102
  [][] 
  []
 
-[14 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf> <C:/Users/Daniel
+[15 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf> <C:/Users/Daniel
 /Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuc
@@ -2520,24 +2629,38 @@ hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuc
 hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] <demo_app_components.pdf, id=1059, 648.02098pt x 445.48189pt>
+>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<demo_app_components.pdf, id=1065, 648.02098pt x 445.48189pt>
 File: demo_app_components.pdf Graphic file (type pdf)
  <use demo_app_components.pdf>
-Package pdftex.def Info: demo_app_components.pdf used on input line 108.
+Package pdftex.def Info: demo_app_components.pdf used on input line 110.
 (pdftex.def)             Requested size: 421.20865pt x 289.55978pt.
 
-Overfull \hbox (7.35031pt too wide) in paragraph at lines 108--109
+Overfull \hbox (7.35031pt too wide) in paragraph at lines 110--111
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_deployment.pdf>] [16 <C:/Us
-ers/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_components.pdf>]) [17]
+[16 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_deployment.pdf>] [17 <C:/Us
+ers/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_components.pdf>]) [18]
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.tex"
 Kapitel 4.
-) [18
+) [19
 
 
 
@@ -2545,7 +2668,7 @@ Kapitel 4.
 ]
 ===== Section: literature
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.acr")
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [19
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [20
 
 
 
@@ -2553,25 +2676,25 @@ Kapitel 4.
 
 
 
-]) [20
+]) [21
 
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 192.
- [21
+(Font)              scaled to size 10.95pt on input line 193.
+ [22
 
 
 ]
 ===== File: appendices
-[22] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.tex"
+[23] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.tex"
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 1.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 1.
- [23
+ [24
 
 
 
@@ -2583,13 +2706,13 @@ Overfull \hbox (41.53557pt too wide) in paragraph at lines 12--22
  [][] 
  []
 
-) [24]
+) [25]
 ===== Section: index
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [25
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [26
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.aux"
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\einfuehrung.aux")
@@ -2597,43 +2720,61 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
-Package rerunfilecheck Info: File `sample.out' has not changed.
-(rerunfilecheck)             Checksum: B489876AB2725DEB08608A34F3610FD5;3690.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
 
+
+Package rerunfilecheck Warning: File `sample.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `sample.out':
+(rerunfilecheck)             Before: B489876AB2725DEB08608A34F3610FD5;3690
+(rerunfilecheck)             After:  BCDEA7AE16B1597B7C81A279AEBA7058;3690.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'sample.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 39179 strings out of 493921
- 743486 string characters out of 3144873
- 1365345 words of memory out of 3000000
- 41350 multiletter control sequences out of 15000+200000
+ 48158 strings out of 493921
+ 1043269 string characters out of 3144873
+ 1731348 words of memory out of 3000000
+ 50192 multiletter control sequences out of 15000+200000
  136301 words of font info for 161 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
- 74i,12n,112p,1826b,3036s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming
-/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libert
-ine/lbtn_ki75ao.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_d6jdyt.enc}{C:/Users/Dani
-el/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/font
-s/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_76gpa5.
-enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_7grukw.enc}<C:/Users/Daniel/AppData/Roami
-ng/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/publ
-ic/libertine/LinBiolinumTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineMT.p
-fb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Daniel/AppData/R
-oaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type
-1/public/libertine/LinLibertineTBI.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLiber
-tineTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb>
-Output written on sample.pdf (33 pages, 970492 bytes).
+ 74i,19n,112p,1826b,3036s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{table.caption.36} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.19} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.23} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.35} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.32} has been referenced but does not exist, replaced by a fixed one
+
+{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming/M
+iKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertin
+e/lbtn_ki75ao.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_d6jdyt.enc}{C:/Users/Daniel
+/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/
+enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_76gpa5.en
+c}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_7grukw.enc}<C:/Users/Daniel/AppData/Roaming
+/MiKTeX/2.9/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public
+/libertine/LinBiolinumTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineMT.pfb
+><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Daniel/AppData/Roa
+ming/MiKTeX/2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/
+public/libertine/LinLibertineTBI.pfb><C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/libertine/LinLiberti
+neTI.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on sample.pdf (34 pages, 982748 bytes).
 PDF statistics:
- 2243 PDF objects out of 2487 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
+ 2259 PDF objects out of 2487 (max. 8388607)
+ 189 named destinations out of 1000 (max. 500000)
  34872 words of extra memory for PDF output out of 35830 (max. 10000000)
 
