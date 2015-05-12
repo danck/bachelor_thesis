@@ -31,7 +31,7 @@ Aus Sicht eines Administrators oder Softwarearchitekten ist Apache Spark eine Ap
 Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in welchem Ökosystem von Anwendungen sich Apache Spark bewegt wird in den folgenden Abschnitten dieses Kapitels beleuchtet.
 
 \section{Überblick}
-Im Allgemeinen Fall läuft eine Spark-Anwendung auf drei Arten von Rechnern (s. Abb. \ref{figure:sparkdeployment}):
+Im Allgemeinen Fall läuft eine Spark-Anwendung auf drei Arten von Rechnern (s. Abb.~\ref{fig:sparkdeployment}):
 
 \begin{enumerate}
 	\item \textbf{Clientknoten}\\
@@ -48,7 +48,7 @@ Im Allgemeinen Fall läuft eine Spark-Anwendung auf drei Arten von Rechnern (s. 
 	\centering
   \includegraphics[scale=0.7]{sparkdeployment2.pdf}
 	\caption{Verteilungsdiagramm einer typischen Sparkinstallation}
-	\label{figure:sparkdeployment}
+	\label{fig:sparkdeployment}
 \end{figure}
 
 Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu können ist es offensichtlich wichtig, welche Eigenschaften der unterliegenden Hardware angenommen werden.
@@ -127,12 +127,12 @@ Dabei gibt es zwei grundsätzlich verschiedene Operationen, nämlich \textit{Tra
 
 \textbf{\textit{Aktionen}} sind ... \\
 
-Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv:\\
+Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv\footcite{Mat12}:\\
 
 \begin{figure}[ht!]
 	\centering
   \includegraphics[scale=0.8]{rdds_no_action.pdf}
-	\caption{RDD Lineage ohne Aktion}
+	\caption{RDD Lineage vor Aktion}
 	\label{fig:rdds_no_action}
 \end{figure}
 
@@ -141,7 +141,7 @@ Sobald die erste \textit{Aktion} aufgerufen wird, werden die Transformationen na
 \begin{figure}[ht!]
 	\centering
   \includegraphics[scale=0.8]{rdds_action.pdf}
-	\caption{RDD Lineage mit Aktion}
+	\caption{RDD Lineage nach Aktion}
 	\label{fig:rdds_action}
 \end{figure}
 
@@ -150,7 +150,7 @@ Wie in Abb. \ref{fig:rdds_action} zu erkennen, werden während der Transformatio
 \begin{figure}[ht!]
 	\centering
   \includegraphics[scale=0.8]{rdds_action_persist.pdf}
-	\caption{RDD Lineage mit Aktion und Persist()}
+	\caption{RDD Lineage nach Aktion und mit Persist()}
 	\label{fig:rdds_action_persist}
 \end{figure}
 
@@ -173,14 +173,58 @@ Im diesem Fall ergäbe sich mit einer Anzahl \gls{worker} $n$ und einem Durchsat
 
 \subsection{Scheduling/Shuffling}
 
-\subsection{Anwendungs Deployment}
+\subsection{Anwendungsdeployment und -lebenszyklus}
 
-\begin{figure}[h!]
+\paragraph{Anwendungsdeployment}\\
+
+Die Komponente einer Anwendung, die von der Spark API Gebrauch macht wird in der Spark-Terminologie als \textit{Treiberprogramm} bezeichnet. \\
+
+Es gibt verschiedene Szenarien des Deployments. Das Treiberprogramm kann grundsätzlich auf zwei verschiedene Arten gestartet werden:\\
+
+\begin{enumerate}
+	\item Übermittlung des Treibers als kompiliertes Package (z.B. als \gls{jarfile}) mit statischer Verlinkung aller erforderlichen Bibliotheken (Ausnahmen sind Bibliotheken die auf allen Knoten bereits verfügbar sind, z.B. Spark, Hadoop, etc.). Standardbibiotheken von Spark und Konfigurationseinstellungen wie z.B. die Angabe des \textit{Clustermanagers} können zur Startzeit des Treibers durch das Spark \textit{Submission-Skript} erfolgen.
+	\item Start eines eigenständig lauffähigen Treibers mit vollständig konfigurierter und verlinkter Spark-Umgebung und expliziter Angabe eines \textit{Clustermanagers}.
+\end{enumerate}
+
+Der zweite Fall ist eher exotisch, weil eine derart enge Kopplung zwischen dem Treiber und der Konfiguration des Clusters offensichtlich aus Wartungsgründen nicht wünschenswert ist.\\
+
+Im ersten Fall ergeben sich zwei weitere Möglichkeiten zum Ort der Ausführung des Treibers:\\
+
+\begin{enumerate}
+	\item \textbf{Client-Modus}	Der Treiber wird direkt auf dem Host (Gateway-Rechner) ausgeführt auf dem der Treiber übermittelt wurde (Abb.~\ref{fig:spark_deployment_clientmode}). Tatsächlich wird er sogar innerhalb des Submission-Skript-Prozesses gestartet \textbf{(VERWEIS)}.
+	\item \textbf{Cluster-Modus}	Der Treiber wird von dem Gateway-Rechner an \gls{worker} des Clusters übertragen und dort ausgeführt (Abb.~\ref{fig:spark_deployment_clustermode}).
+\end{enumerate}
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.62]{spark_deployment_clientmode.pdf}
+	\caption{Application Deployment im Client Modus}
+	\label{fig:spark_deployment_clientmode}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.62]{spark_deployment_clustermode.pdf}
+	\caption{Application Deployment im Cluster Modus}
+	\label{fig:spark_deployment_clustermode}
+\end{figure}
+
+Offensichtlich kann die Lokalität des Treibers (der mit den Executors auf den \gls{worker}n kommunizieren muss) Einfluss auf Laufzeit und Latenzverhalten des Programms haben.\\
+
+Im Fall eines clusterfernen Gateway-Rechners kann also Treiberdeployment im Clustermodus sinnvoll sein, die Standardeinstellung ist jedoch der Clientmodus (siehe auch \cite{spark_submission}).\\
+
+Abb.~\ref{fig:app_deployment_process} zeigt das Sequenzdiagramm eines typischen Deploymentprozesses, wie er auch im praktischen Teil dieser Arbeit zum Einsatz kommt.
+
+\begin{figure}[ht!]
 	\centering
   \includegraphics[scale=0.7]{spark_deployment_process.pdf}
-	\caption{Application Deployment Prozess im Client Modus}
-	\label{fig:app_deplyment_process}
+	\caption{Application Deployment Prozess im Client Modus (vereinfacht)}
+	\label{fig:app_deployment_process}
 \end{figure}
+
+\paragraph{Lebenszyklus einer Spark-Applikation}
+
+\textcolor{gray}{Beginn und End eines Treiberprogramms. Beginn un Ende eines Tasks / Executorallokation?}\\
 
 \subsection{Zusammenfassung und Bewertung}
 
@@ -188,15 +232,18 @@ Im diesem Fall ergäbe sich mit einer Anzahl \gls{worker} $n$ und einem Durchsat
 \textcolor{gray}{--- Warum ist Spark so einfach (und wo vielleicht nicht)? ---}\\
 Die vier Standardbibliotheken erweitern die Kern-API für bestimmte, häufig genutzte Aufgaben aus Bereichen der Datenanalyse.\\
 
-Die bedienten Bereiche sind
+Die bedienten Bereiche
 \begin{itemize}
 	\item Deklaratives Abfragen auf strukturierten Datensätzen (\textit{Spark SQL})
 	\item Maschinenlernverfahren (\textit{MLlib})
 	\item Echtzeitbehandlung von eingehenden Daten (\textit{Streaming})
 	\item Operationen auf Graph-Strukturen (\textit{GraphX})
 \end{itemize}
+werden in diesem Abschnitt erläutert.
 
 \subsection{Dataframes/Spark SQL}
+
+
 \subsection{MLlib}
 \subsection{Streaming}
 \subsection{GraphX}
@@ -208,6 +255,15 @@ Die bedienten Bereiche sind
 
 \section{Entwicklergemeinschaft}
 \textcolor{gray}{--- Herkunft, Apache Foundation, Entwicklungsphilosophien, Anzahl Entwickler, ... ---}\\
+
+Apache Spark begann als Entwicklung einer Gruppe von Forschern der University of California, Berkely. Spark ist eine Implementation der von dieser Gruppe untersuchten \glspl{rdd}\footcite{Mat12}. Als wesentlicher Meilenstein der Entwicklung von Apache Spark, kann die Veröffentlichung eines gemeinsamen Papers der Forschungsgruppe um Matei Zaharia im Jahr 2012 gelten.\\
+
+Seit dem 27. Februar 2014\footcite{apacheblog} ist Spark ein Top-Level Projekt der Apache Software Foundation\footcite{apache} und wird dort unter der Apache License 2.0\footcite{apachelic} weiterentwickelt.\\
+
+Eine Übersicht der verantwortlichen Committer kann unter \cite{committer} eingesehen werden.
+Zum Zeitpunkt dieser Arbeit gehören u.a. Entwickler von Intel, Yahoo! und Alibaba zu den Stammentwicklern.\\
+
+Die Kommunikation innerhalb der Entwickler- und Anwendergemeinschaft findet wesentlich in den offiziellen Mailinglisten (Abb. \ref{fig:mailinglisten}) und dem Issue-Tracker\footcite{issuetracker} der Apache Software Foundation statt.
 
 \begin{figure}[ht!]
 	\centering

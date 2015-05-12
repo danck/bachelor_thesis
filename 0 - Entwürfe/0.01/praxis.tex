@@ -7,17 +7,12 @@ Beispiel 1: Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Sp
 Beispiel 2: Eine untypische Anwendung mit verteiltem entfernten Storage und dem Spark Standalone Clustermanager. \textcolor{gray}{--- HPC Hardware ("`Thunder"' des Hamburger KlimaCampus). ---}\\
 
 \section{Anwendung zur Echtzeitanalyse eines Datenstroms anhand eines veränderlichen Stammdatenbestandes}
-\textcolor{gray}{--- Fusion von Tweets und Mailinglisten 
-https://spark.apache.org/docs/1.3.0/mllib-feature-extraction.html
-Implementation auf einem Raspberry Pi Cluster mit HDFS und Yarn Clustermanager ---}\\
-\subsection{Problembeschreibung}
-\textcolor{gray}{--- Es sollen die beiden Spark Mailingslisten (Developer, User) zur Identifikation relevanter und aktueller Themen genutzt werden. Mit den so bewerteten Begriffen können wiederum Tweets bewertet werden. Mit den Tweets können dann ganze Accounts nach ihrer Relevanz beurteilt werden. ---}\\
-\textcolor{gray}{--- Zwei Datenquellen: Tweets (Nahe-Echtzeit), Entwickler-Emails (Sporadisch) ---}\\
-\textcolor{gray}{--- Stichworte: HDFS, Yarn, Rasperri Pi Cluster, Machine Learning, Feature Extraction, Big Data Life Cycle ---}\\
 
 Es sollen aktuelle Informationen bereitgestellt werden, die besonders für Nutzer und Entwickler des Softwareproduktes Apache Spark relevant sind.\\
 
+Dazu werden die beiden Mailinglisten user@spark.apache.org und dev@spark.apache.org als Textquellen herangezogen. Aus diesen Quellen sollen Informationen über aktuelle Themen innerhalb der Nutzer- und Entwicklergemeinschaft gewonnen werden.\\
 
+Mit diesen Informationen über aktuelle Themen, sollen dann in einem Echtzeitverfahren Nachrichten aus dem Twitter-Datenstrom nach der gemessenen Relevanz bewertet werden.
 
 \subsection{Anforderungen}
 
@@ -88,11 +83,55 @@ Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch m
 
 \paragraph{Wahl des Dateisystems}
 
-\textcolor{gray}{--- HDFS 1.2.1 ---}\\
+Als Quelle der persistenten Daten (Nachrichtenkorpus der Mailinglisten) kommen verschiedene Technologien in Frage:
+
+\begin{table}[ht]
+	\caption{Übersicht ausgewählter Datenquellen für Spark} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c} % centered columns (4 columns)
+	\hline\hline %inserts double horizontal lines
+	Name & Typ & Beschreibung\\ [0.5ex] % inserts table
+	%heading
+	\hline % inserts single horizontal line
+	Cassandra & Datenbank & ...\\ % inserting body of the table
+	HBase & Datenbank & ...\\
+	HDFS & Verteiltes Dateisystem & ...\\
+	Kafka & ?? & ...\\
+	\hline %inserts single line
+	\end{tabular}
+	\label{table:dsources} % is used to refer this table in the text
+\end{table}
+
+Für diesen Versuch wird HDFS zum Verwalten der Textdatei gewählt. Für das Einlesen des Textkorpus wird keine Echtzeitfunktionalität benötigt. Weil an den Textdateien nichts geändert wird ist Versionierung ebenso unnötig wie Verknüpfungen zu anderen Datensätzen.\\
+
+Die "`In-Memory"'-Funktionen (VERWEIS Glossar?) anderer Systeme, sind hier eher hinderlich, weil der lokale Arbeitsspeicher der Arbeitsknoten im Versuchsaufbau stark beschränkt ist und eine leicht erhöhte Latenz beim Einlesen in Kauf genommen werden kann. Das Erstellen des Feature Vektors (VERWEIS) ist nicht zeitkritisch für die Echtzeitkomponente.\\
+
+HDFS als Komponente von Apache Hadoop ist in den Versionen 2.x deutlich bezüglich der Verfügbarkeit und Skalierbarkeit verbessert worden (VERWEIS), allerdings auch aufwändiger zu installieren. Für den Zweck dieses Versuchs wird Version 1.2.1 gewählt.
+
+\begin{itemize}
+	\item item 
+	\item item
+\end{itemize}
 
 \paragraph{Wahl des Cluster-Managers}
 
-\textcolor{gray}{--- Standalone ---}\\
+\begin{table}[ht]
+	\caption{Übersicht verfügbarer Clustermanager für Spark} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c} % centered columns (4 columns)
+	\hline\hline %inserts double horizontal lines
+	Name & Typ & Beschreibung\\ [0.5ex] % inserts table
+	%heading
+	\hline % inserts single horizontal line
+	Standalone & Apache Spark & ...\\ % inserting body of the table
+	Mesos & Datenbank & ...\\
+	YARN & Apache Hadoop 2.x & ...\\
+	\hline %inserts single line
+	\end{tabular}
+	\label{table:cmngrs} % is used to refer this table in the text
+\end{table}
+
+Spark läuft in diesem Versuch als alleinige Computeanwendung auf dem Cluster. Es ist also nicht nötig Konkurrenz um Ressourcen zu berücksichtigen. Für diesen Versuch wird daher der Standalone Clustermanager gewählt.
 
 \paragraph{Verteilungsdiagramm}\\
 

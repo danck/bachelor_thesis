@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=885
+NormalPos.bottom=924
 Class=LaTeXView
-Document=vorstellung.tex
+Document=sample.tex
 
 [Frame0_View0,0]
-TopLine=207
-Cursor=9445
+TopLine=24
+Cursor=1278
 
 [Frame1]
 Flags=0
@@ -30,13 +30,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=885
-Class=LaTeXView
-Document=sample.tex
+NormalPos.bottom=924
+Class=BibTeXView
+Document=sample.bib
 
 [Frame1_View0,0]
-TopLine=24
-Cursor=1278
+TopLine=142
+Cursor=4154
 
 [Frame2]
 Flags=0
@@ -48,13 +48,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=885
-Class=BibTeXView
-Document=sample.bib
+NormalPos.bottom=924
+Class=LaTeXView
+Document=einfuehrung.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=584
+TopLine=32
+Cursor=2927
 
 [Frame3]
 Flags=0
@@ -66,13 +66,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=885
+NormalPos.bottom=924
 Class=LaTeXView
-Document=einfuehrung.tex
+Document=vorstellung.tex
 
 [Frame3_View0,0]
-TopLine=24
-Cursor=2992
+TopLine=269
+Cursor=12594
 
 [Frame4]
 Flags=0
@@ -84,12 +84,12 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=885
+NormalPos.bottom=924
 Class=LaTeXView
 Document=praxis.tex
 
 [Frame4_View0,0]
-TopLine=102
+TopLine=104
 Cursor=2648
 
 [Frame5]
@@ -102,7 +102,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=885
+NormalPos.bottom=924
 Class=LaTeXView
 Document=schluss.tex
 
@@ -120,7 +120,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=885
+NormalPos.bottom=924
 Class=LaTeXView
 Document=glossar.tex
 
@@ -138,7 +138,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
 NormalPos.right=2202
-NormalPos.bottom=885
+NormalPos.bottom=924
 Class=LaTeXView
 Document=appendices.tex
 
@@ -148,5 +148,5 @@ Cursor=1200
 
 [SessionInfo]
 FrameCount=8
-ActiveFrame=0
+ActiveFrame=3
 

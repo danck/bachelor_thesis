@@ -33,6 +33,69 @@
   \field{year}{2014}
 \endentry
 
+\entry{apacheblog}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {apache}{a.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{a1}
+  \strng{fullhash}{a1}
+  \field{labelalpha}{apa}
+  \field{sortinit}{A}
+  \field{note}{Abgerufen am 11.04.2015}
+  \field{title}{Apache Blog}
+  \verb{url}
+  \verb https://blogs.apache.org/foundation/entry/the_apache_software_foundatio
+  \verb n_announces50
+  \endverb
+\endentry
+
+\entry{apache}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Apache}{A.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{A1}
+  \strng{fullhash}{A1}
+  \field{labelalpha}{Apa}
+  \field{extraalpha}{1}
+  \field{sortinit}{A}
+  \field{title}{Apache Software Foundation}
+  \verb{url}
+  \verb http://apache.org
+  \endverb
+\endentry
+
+\entry{apachelic}{misc}{}
+  \list{publisher}{1}{%
+    {Apache Software Foundation}%
+  }
+  \field{labelalpha}{Apa}
+  \field{extraalpha}{2}
+  \field{sortinit}{A}
+  \field{title}{Apache License, Version 2.0}
+  \verb{url}
+  \verb https://www.apache.org/licenses/LICENSE-2.0
+  \endverb
+  \field{year}{2004}
+\endentry
+
+\entry{committer}{misc}{}
+  \field{labelalpha}{Com}
+  \field{sortinit}{C}
+  \field{note}{Abgerufen am 11.04.2015}
+  \field{title}{Apache Spark Confluence}
+  \verb{url}
+  \verb https://cwiki.apache.org/confluence/display/SPARK/Committers
+  \endverb
+\endentry
+
 \entry{Dean04}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -84,6 +147,17 @@
   \field{title}{Google Trends}
   \verb{url}
   \verb https://www.google.com/trends
+  \endverb
+\endentry
+
+\entry{issuetracker}{misc}{}
+  \field{labelalpha}{Iss}
+  \field{sortinit}{I}
+  \field{note}{Abgerufen am 11.04.2015}
+  \field{title}{Apache Spark Issue Tracker}
+  \verb{url}
+  \verb https://issues.apache.org/jira/browse/SPARK/?selectedTab=com.atlassian.
+  \verb jira.jira-projects-plugin:summary-panel
   \endverb
 \endentry
 
@@ -259,6 +333,16 @@
   }
   \field{type}{techreport}
   \field{year}{2003}
+\endentry
+
+\entry{spark_submission}{misc}{}
+  \field{labelalpha}{Spa}
+  \field{sortinit}{S}
+  \field{note}{abgerufen am 12.04.2015}
+  \field{title}{Spark Submission Guide}
+  \verb{url}
+  \verb https://spark.apache.org/docs/1.3.0/submitting-applications.html
+  \endverb
 \endentry
 
 \entry{Sin14}{article}{}
