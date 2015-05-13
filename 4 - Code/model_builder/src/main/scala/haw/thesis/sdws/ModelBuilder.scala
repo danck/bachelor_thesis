@@ -1,5 +1,3 @@
-package haw.thesis.sdws
-
 /**
  *
  * Created by Daniel on 12.05.2015.
