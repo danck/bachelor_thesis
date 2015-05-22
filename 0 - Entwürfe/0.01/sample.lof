@@ -26,21 +26,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Resilient Distributed Datasets aus Verteilungssicht\relax }}{8}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces RDD Lineage vor Aktion\relax }}{9}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces RDD Lineage vor Aktion\relax }}{8}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces RDD Lineage nach Aktion\relax }}{9}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces RDD Lineage nach Aktion und mit Persist()\relax }}{9}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Resilient Distributed Datasets mit Datenquelle aus Verteilungssicht\relax }}{10}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Resilient Distributed Datasets mit Datenquelle aus Verteilungssicht\relax }}{9}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Application Deployment im Client Modus\relax }}{11}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Application Deployment im Cluster Modus\relax }}{12}{figure.caption.17}
+\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Application Deployment im Cluster Modus\relax }}{11}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.9}{\ignorespaces Application Deployment Prozess im Client Modus (vereinfacht)\relax }}{13}{figure.caption.18}
+\contentsline {figure}{\numberline {\relax 2.9}{\ignorespaces Application Deployment Prozess im Client Modus (vereinfacht)\relax }}{12}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.10}{\ignorespaces Aktivit\IeC {\"a}t auf den offiziellen Spark Mailinglisten\relax }}{15}{figure.caption.20}
+\contentsline {figure}{\numberline {\relax 2.10}{\ignorespaces Aktivit\IeC {\"a}t auf den offiziellen Spark Mailinglisten\relax }}{14}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

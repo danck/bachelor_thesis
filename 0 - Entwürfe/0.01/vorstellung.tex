@@ -1,7 +1,7 @@
 \chapter{Vorstellung von Apache Spark}
 Aus Sicht eines Nutzers ist Apache Spark eine API zum Zugriff auf Daten und deren Verarbeitung.\\
 
-Diese API (wahlweise für die Programmiersprachen Scala, Java und Python verfügbar), kann im einfachsten Fall über eine eigene Spark Konsole mit \gls{repl}\footcite{Hail} verwendet werden.\\
+Diese API (wahlweise für die Programmiersprachen Scala, Java und Python verfügbar), kann im einfachsten Fall über eine eigene Spark Konsole mit \gls{repl}\cite{Hail} verwendet werden.\\
 Die Zählung von Wortvorkommen in einem Text - das "`Hello World"' der Big Data Szene - lässt sich dort mit zwei Befehlen realisieren (Listing \ref{lst:sconsole_wordcount}).\\
 
 \begin{lstlisting}[caption={Word Count in der Spark Konsole},label={lst:sconsole_wordcount}]
@@ -53,7 +53,7 @@ Im Allgemeinen Fall läuft eine Spark-Anwendung auf drei Arten von Rechnern (s. 
 
 Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu können ist es offensichtlich wichtig, welche Eigenschaften der unterliegenden Hardware angenommen werden.
 
-Weil Spark explizit für den Betrieb innerhalb eines Hadoop/YARN \textcolor{red}{[VERWEIS auf Abschnitt Scheduling]} geeignet ist und YARN wiederum für den Betrieb auf einem \gls{cluster} auf Mittelklasse-Mehrzweckmaschinen (Commodity Hardware) optimiert ist\footcite{Mer14}, kann für Spark von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
+Weil Spark explizit für den Betrieb innerhalb eines Hadoop/YARN \textcolor{red}{[VERWEIS auf Abschnitt Scheduling]} geeignet ist und YARN wiederum für den Betrieb auf einem \gls{cluster} auf Mittelklasse-Mehrzweckmaschinen (Commodity Hardware) optimiert ist\cite{Mer14}, kann für Spark von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
 
 Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grundausstattung) - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen zueinander (Siehe Anhang~\ref{subsec:commodity_servers}).
 
@@ -79,12 +79,12 @@ Auf eine detaillierte Analyse des Zugriffsverhaltens wird im Rahmen dieser Arbei
 
 Für eine effiziente Verarbeitung von Daten ist es - ganz allgemein - also wünschenswert den größten Anteil des Datentransfers im Arbeitsspeicher zu haben, einen kleineren Anteil auf der Festplatte und einen noch kleineren Anteil auf Netzwerkverbindungen.\\
 
-Es ist das wichtigste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente und stabile Verarbeitung \textit{großer Datenmengen}\footcite{Sam14} zu gewährleisten.\\
+Es ist das wichtigste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente und stabile Verarbeitung \textit{großer Datenmengen}\cite{Sam14} zu gewährleisten.\\
 
 \section{Kernkonzepte}
 
 \subsection{Resilient Distributed Datasets}
-Die universelle Einheit mit der ein Datenelement auf Spark repräsentiert wird ist ein sogenanntes \gls{rdd}\footcite{Mat12}.\\
+Die universelle Einheit mit der ein Datenelement auf Spark repräsentiert wird ist ein sogenanntes \gls{rdd}\cite{Mat12}.\\
 
 Ein Beispiel für ein solches \gls{rdd} wurde bereits erwähnt, nämlich das in Listing \ref{lst:sconsole_wordcount} erzeugte Objekt \lstinline|text|:\\
 
@@ -102,7 +102,7 @@ Die gesamte operative Kern-\gls{api} dreht sich um die Steuerung dieser Datenein
 
 Sie sind damit die wichtigste Abstraktion des Applikationskerns.\\
 
-In erster Näherung können \glspl{rdd} als eine Variante von \gls{dsm}\footcite{Nitzberg:1991:DSM:112827.112855} \cite{Mat12} verstanden werden, haben allerdings sehr charakteristische Einschränkungen und Erweiterungen, die in diesem Kapitel erläutert werden.\\
+In erster Näherung können \glspl{rdd} als eine Variante von \gls{dsm}\cite{Nitzberg:1991:DSM:112827.112855} \cite{Mat12} verstanden werden, haben allerdings sehr charakteristische Einschränkungen und Erweiterungen, die in diesem Kapitel erläutert werden.\\
 
 \paragraph{Verteilungssicht}\\
 
@@ -127,7 +127,7 @@ Dabei gibt es zwei grundsätzlich verschiedene Operationen, nämlich \textit{Tra
 
 \textbf{\textit{Aktionen}} sind ... \\
 
-Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv\footcite{Mat12}:\\
+Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv\cite{Mat12}:\\
 
 \begin{figure}[ht!]
 	\centering
@@ -256,14 +256,14 @@ werden in diesem Abschnitt erläutert.
 \section{Entwicklergemeinschaft}
 \textcolor{gray}{--- Herkunft, Apache Foundation, Entwicklungsphilosophien, Anzahl Entwickler, ... ---}\\
 
-Apache Spark begann als Entwicklung einer Gruppe von Forschern der University of California, Berkely. Spark ist eine Implementation der von dieser Gruppe untersuchten \glspl{rdd}\footcite{Mat12}. Als wesentlicher Meilenstein der Entwicklung von Apache Spark, kann die Veröffentlichung eines gemeinsamen Papers der Forschungsgruppe um Matei Zaharia im Jahr 2012 gelten.\\
+Apache Spark begann als Entwicklung einer Gruppe von Forschern der University of California, Berkely. Spark ist eine Implementation der von dieser Gruppe untersuchten \glspl{rdd}\cite{Mat12}. Als wesentlicher Meilenstein der Entwicklung von Apache Spark, kann die Veröffentlichung eines gemeinsamen Papers der Forschungsgruppe um Matei Zaharia im Jahr 2012 gelten.\\
 
-Seit dem 27. Februar 2014\footcite{apacheblog} ist Spark ein Top-Level Projekt der Apache Software Foundation\footcite{apache} und wird dort unter der Apache License 2.0\footcite{apachelic} weiterentwickelt.\\
+Seit dem 27. Februar 2014\cite{apacheblog} ist Spark ein Top-Level Projekt der Apache Software Foundation\cite{apache} und wird dort unter der Apache License 2.0\cite{apachelic} weiterentwickelt.\\
 
 Eine Übersicht der verantwortlichen Committer kann unter \cite{committer} eingesehen werden.
 Zum Zeitpunkt dieser Arbeit gehören u.a. Entwickler von Intel, Yahoo! und Alibaba zu den Stammentwicklern.\\
 
-Die Kommunikation innerhalb der Entwickler- und Anwendergemeinschaft findet wesentlich in den offiziellen Mailinglisten (Abb. \ref{fig:mailinglisten}) und dem Issue-Tracker\footcite{issuetracker} der Apache Software Foundation statt.
+Die Kommunikation innerhalb der Entwickler- und Anwendergemeinschaft findet wesentlich in den offiziellen Mailinglisten (Abb. \ref{fig:mailinglisten}) und dem Issue-Tracker\cite{issuetracker} der Apache Software Foundation statt.
 
 \begin{figure}[ht!]
 	\centering

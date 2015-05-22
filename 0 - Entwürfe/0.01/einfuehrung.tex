@@ -4,11 +4,11 @@
 
 Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und zunehmend im Fokus von Medien und Unternehmen. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördernden Nutzen abzuringen \cite{Sin14}.\\
 
-Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety \footcite{Lan01} erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter \gls{sla}s auf einzelnen Maschinen verarbeitet werden können"' (Vgl. \cite{Sam14}).\\
+Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety \cite{Lan01} erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter \gls{sla}s auf einzelnen Maschinen verarbeitet werden können"' (Vgl. \cite{Sam14}).\\
 
-Als Unternehmen, das früh mit zeitkritischen Aufgaben (u.a.  Indizierung von Webseiten und PageRank \footcite{page2001method}) auf solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma \footcite{Dean04} als Framework zur Ausnutzung vieler kostengünstiger Rechner für verschiedene Aufgaben. \\
+Als Unternehmen, das früh mit zeitkritischen Aufgaben (u.a.  Indizierung von Webseiten und PageRank \cite{page2001method}) auf solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma \cite{Dean04} als Framework zur Ausnutzung vieler kostengünstiger Rechner für verschiedene Aufgaben. \\
 
-In Folge der Veröffentlichung dieser Idee im Jahr 2004 wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) \footcite{Ghema03} zum de-facto Standard für Big-Data-Analyseaufgaben.\\
+In Folge der Veröffentlichung dieser Idee im Jahr 2004 wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) \cite{Ghema03} zum de-facto Standard für Big-Data-Analyseaufgaben.\\
 
 Reines Map-Reduce (nach Art von Hadoop) als Programmierparadigma zur Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
 \begin{itemize}
@@ -17,7 +17,7 @@ Reines Map-Reduce (nach Art von Hadoop) als Programmierparadigma zur Verarbeitun
 	\item Anfragen an ein solches Map-Reduce-System erfolgen imperativ in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so intuitiv und leicht erlernbar wie deklarative Abfragesprachen klassischer Datenbanken (z.B. SQL).
 \end{itemize}
 
-In der Folge dieser Probleme entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen \footcite{Sin14}.\\
+In der Folge dieser Probleme entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen \cite{Sin14}.\\
 
 Eine der Alternativen zu der klassischen Map-Reduce-Komponente in Hadoop ist die "`general engine for large-scale data processing"' Apache Spark.\\
 

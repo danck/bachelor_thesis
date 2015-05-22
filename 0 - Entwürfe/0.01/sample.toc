@@ -20,7 +20,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Kontextabgrenzung}{3}{section.1.2}
+\contentsline {section}{\numberline {1.2}Kontextabgrenzung}{2}{section.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Vorstellung von Apache Spark}{4}{chapter.2}
 \defcounter {refsection}{0}\relax 
@@ -30,7 +30,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Resilient Distributed Datasets}{7}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Verteilungssicht}{8}{section*.8}
+\contentsline {paragraph}{\nonumberline Verteilungssicht}{7}{section*.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Laufzeitsicht}{8}{section*.10}
 \defcounter {refsection}{0}\relax 
@@ -40,27 +40,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Anwendungsdeployment}{10}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Lebenszyklus einer Spark-Applikation}{11}{section*.19}
+\contentsline {paragraph}{\nonumberline Lebenszyklus einer Spark-Applikation}{12}{section*.19}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.4}Zusammenfassung und Bewertung}{12}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Standardbibliotheken}{12}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Dataframes/Spark SQL}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}Dataframes/Spark SQL}{13}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}MLlib}{14}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}MLlib}{13}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Streaming}{14}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Streaming}{13}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}GraphX}{14}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.4}GraphX}{13}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Betrieb und Security}{14}{section.2.4}
+\contentsline {section}{\numberline {2.4}Betrieb und Security}{13}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Spark im Kontext von Parallelisierungspattern}{14}{section.2.5}
+\contentsline {section}{\numberline {2.5}Spark im Kontext von Parallelisierungspattern}{13}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Entwicklergemeinschaft}{14}{section.2.6}
+\contentsline {section}{\numberline {2.6}Entwicklergemeinschaft}{13}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Verwandte Produkte}{15}{section.2.7}
+\contentsline {section}{\numberline {2.7}Verwandte Produkte}{14}{section.2.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.7.1}YARN}{15}{subsection.2.7.1}
 \defcounter {refsection}{0}\relax 
@@ -98,7 +98,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Verteilungsdiagramm}{19}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Komponentendiagramm}{20}{figure.caption.33}
+\contentsline {paragraph}{\nonumberline Komponentendiagramm}{19}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Laufzeitdiagramme}{20}{section*.34}
 \defcounter {refsection}{0}\relax 
