@@ -216,24 +216,6 @@
   \field{year}{1999}
 \endentry
 
-\entry{Mat12}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Matei~Zaharia}{M.~Z.}%
-     {et~al.}{e.~a.}%
-     {}{}%
-     {Mosharaf~Chowdhury}{M.~C.}}%
-  }
-  \strng{namehash}{MZMCea1}
-  \strng{fullhash}{MZMCea1}
-  \field{labelalpha}{MZ12}
-  \field{sortinit}{M}
-  \field{title}{Resilient Distributed Datasets: A Fault-Tolerant Abstraction
-  for In-Memory Cluster Computing}
-  \field{journaltitle}{NSDI}
-  \field{year}{2012}
-\endentry
-
 \entry{Nitzberg:1991:DSM:112827.112855}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -400,6 +382,30 @@
   \verb{url}
   \verb http://www.ubuntu.com
   \endverb
+\endentry
+
+\entry{Mat12}{article}{}
+  \true{moreauthor}
+  \name{author}{2}{}{%
+    {{}%
+     {Zaharia}{Z.}%
+     {Matei}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chowdhury}{C.}%
+     {Mosharaf}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ZMCM+1}
+  \strng{fullhash}{ZMCM+1}
+  \field{labelalpha}{ZC+12}
+  \field{sortinit}{Z}
+  \field{title}{Resilient Distributed Datasets: A Fault-Tolerant Abstraction
+  for In-Memory Cluster Computing}
+  \field{journaltitle}{NSDI}
+  \field{year}{2012}
 \endentry
 
 \lossort

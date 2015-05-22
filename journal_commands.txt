@@ -1,0 +1,1 @@
+hadoop fs -copyFromLocal /tmp/Spark-User_20150514.txt /spark_user_msgs.txt

@@ -98,7 +98,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Verteilungsdiagramm}{19}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Komponentendiagramm}{19}{figure.caption.33}
+\contentsline {paragraph}{\nonumberline Komponentendiagramm}{20}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Laufzeitdiagramme}{20}{section*.34}
 \defcounter {refsection}{0}\relax 
