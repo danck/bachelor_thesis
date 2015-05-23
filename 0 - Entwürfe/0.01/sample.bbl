@@ -86,6 +86,32 @@
   \field{year}{2004}
 \endentry
 
+\entry{Bit14}{misc}{}
+  \true{moreauthor}
+  \name{author}{2}{}{%
+    {{}%
+     {Bartel}{B.}%
+     {Jört}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Böken}{B.}%
+     {Arnd}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BJBA+1}
+  \strng{fullhash}{BJBA+1}
+  \field{labelalpha}{BB+14}
+  \field{sortinit}{B}
+  \field{title}{Big-Data-Technologien – Wissen für Entscheider}
+  \verb{url}
+  \verb http://www.bitkom.org/files/documents/BITKOM_Leitfaden_Big-Data-Technol
+  \verb ogien-Wissen_fuer_Entscheider_Febr_2014.pdf
+  \endverb
+  \field{year}{1914}
+\endentry
+
 \entry{committer}{misc}{}
   \field{labelalpha}{Com}
   \field{sortinit}{C}
@@ -132,6 +158,36 @@
   \field{year}{2011}
 \endentry
 
+\entry{Ghema03}{report}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Ghemawat}{G.}%
+     {Sanjay}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gobioff}{G.}%
+     {Howard}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leung}{L.}%
+     {Shun-Tak}{S.-T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GSGHLST1}
+  \strng{fullhash}{GSGHLST1}
+  \field{labelalpha}{GGL03}
+  \field{sortinit}{G}
+  \field{title}{The Google File System}
+  \list{institution}{1}{%
+    {Google}%
+  }
+  \field{type}{techreport}
+  \field{year}{2003}
+\endentry
+
 \entry{googletrends}{misc}{}
   \name{author}{1}{}{%
     {{}%
@@ -148,6 +204,34 @@
   \verb{url}
   \verb https://www.google.com/trends
   \endverb
+\endentry
+
+\entry{Hail}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Hailperin}{H.}%
+     {Max}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kaiser}{K.}%
+     {Barbara}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Knight}{K.}%
+     {Karl}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HMKBKK1}
+  \strng{fullhash}{HMKBKK1}
+  \field{labelalpha}{HKK99}
+  \field{sortinit}{H}
+  \field{pages}{278ff.}
+  \field{title}{Concrete Abstractions: An Introduction to Computer Science
+  Using Scheme}
+  \field{year}{1999}
 \endentry
 
 \entry{issuetracker}{misc}{}
@@ -196,24 +280,6 @@
   \field{sortinit}{L}
   \field{title}{Understanding Performance of PCI Express Systems}
   \field{year}{2014}
-\endentry
-
-\entry{Hail}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Max~Hailperin}{M.~H.}%
-     {Karl~Knight}{K.~K.}%
-     {}{}%
-     {Barbara~Kaiser}{B.~K.}}%
-  }
-  \strng{namehash}{MHBKKK1}
-  \strng{fullhash}{MHBKKK1}
-  \field{labelalpha}{MH99}
-  \field{sortinit}{M}
-  \field{pages}{278ff.}
-  \field{title}{Concrete Abstractions: An Introduction to Computer Science
-  Using Scheme}
-  \field{year}{1999}
 \endentry
 
 \entry{Nitzberg:1991:DSM:112827.112855}{article}{}
@@ -297,26 +363,6 @@
   \endverb
 \endentry
 
-\entry{Ghema03}{report}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Sanjay~Ghemawat}{S.~G.}%
-     {Shun-Tak~Leung}{S.-T.~L.}%
-     {}{}%
-     {Howard~Gobioff}{H.~G.}}%
-  }
-  \strng{namehash}{SGHGSTL1}
-  \strng{fullhash}{SGHGSTL1}
-  \field{labelalpha}{SG03}
-  \field{sortinit}{S}
-  \field{title}{The Google File System}
-  \list{institution}{1}{%
-    {Google}%
-  }
-  \field{type}{techreport}
-  \field{year}{2003}
-\endentry
-
 \entry{spark_submission}{misc}{}
   \field{labelalpha}{Spa}
   \field{sortinit}{S}
@@ -336,12 +382,12 @@
      {}{}}%
     {{}%
      {Reddy}{R.}%
-     {Chandan~K}{C.~K.}%
+     {Chandan}{C.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{SDRCK1}
-  \strng{fullhash}{SDRCK1}
+  \strng{namehash}{SDRC1}
+  \strng{fullhash}{SDRC1}
   \field{labelalpha}{SR14}
   \field{sortinit}{S}
   \field{title}{A survey on platforms for big data analytics}

@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=sample.tex
 
 [Frame0_View0,0]
-TopLine=23
-Cursor=949
+TopLine=26
+Cursor=1171
 
 [Frame1]
 Flags=0
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=einfuehrung.tex
 
 [Frame2_View0,0]
-TopLine=32
-Cursor=2927
+TopLine=52
+Cursor=4098
 
 [Frame3]
 Flags=0
@@ -71,8 +71,8 @@ Class=LaTeXView
 Document=vorstellung.tex
 
 [Frame3_View0,0]
-TopLine=363
-Cursor=13161
+TopLine=302
+Cursor=14058
 
 [Frame4]
 Flags=0
@@ -89,8 +89,8 @@ Class=LaTeXView
 Document=praxis.tex
 
 [Frame4_View0,0]
-TopLine=176
-Cursor=7076
+TopLine=48
+Cursor=2775
 
 [Frame5]
 Flags=0
@@ -143,10 +143,10 @@ Class=LaTeXView
 Document=appendices.tex
 
 [Frame7_View0,0]
-TopLine=4
-Cursor=1200
+TopLine=12
+Cursor=617
 
 [SessionInfo]
 FrameCount=8
-ActiveFrame=0
+ActiveFrame=7
 

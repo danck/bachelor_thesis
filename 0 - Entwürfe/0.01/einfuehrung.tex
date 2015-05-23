@@ -2,7 +2,7 @@
 
 \section{Motivation}
 
-Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und zunehmend im Fokus von Medien und Unternehmen. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördernden Nutzen abzuringen \cite{Sin14}.\\
+Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und zunehmend im Fokus von Medien und Unternehmen angekommen \cite{Bit14}. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördernden Nutzen abzuringen \cite{Sin14}.\\
 
 Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety \cite{Lan01} erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter \gls{sla}s auf einzelnen Maschinen verarbeitet werden können"' (Vgl. \cite{Sam14}).\\
 
@@ -28,16 +28,15 @@ Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem e
 \caption[Google Trends]{Suchanfragen zu "`Apache Spark"' (\textit{blau}) und "`Apache Hadoop"' (\textit{rot}), Stand 24.03.2015 \cite{googletrends}}
 \end{figure}
 
-\section{Kontextabgrenzung}
-Das Ziel dieser Arbeit ist es die grundlegenden Konzepte und Möglichkeiten von Apache Spark zu untersuchen und ausgewählte Aspekte im Rahmen konkreter Anwendungen zu betrachten.\\
+\section{Ziel dieser Arbeit}
+Das Ziel dieser Arbeit ist es die grundlegenden Konzepte und Möglichkeiten von Apache Spark zu beleuchten und ausgewählte Aspekte im Rahmen konkreter Anwendungen zu untersuchen.\\
 
 Für ein tieferes Verständnis werden Installation, Cluster-Betrieb und die Modellierung und Implementation von Treiberprogrammen beispielhaft durchgeführt, dokumentiert und bewertet. Hierbei kommt Apache Spark in der Version 1.3.0 zum Einsatz.\\
 
-Nur am Rande wird betrachtet:
+Die Beispielimplementationen in dieser Arbeit umfassen
 \begin{itemize}
-	\item Der Vergleich mit ähnlichen Produkten
-	\item Die empirische Untersuchung des Skalierungsverhaltens
-	\item Sämtliche Features der Spark Standardbibliotheken
+\item eine hybride Anwendung mit einer Echtzeitkomponente (Spark Streaming Library) und einer Batch-Komponente (Spark Machine Learning Library) und
+\item eine atypische Sparkanwendung im Bereich des High-Performance-Computing mit besonderem Augenmerk auf die Low-Level Aspekte von Spark.
 \end{itemize}
 
 Apache Spark ist überwiegend in der Programmiersprache Scala geschrieben. Die Beispiele in dieser Arbeit werden ebenfalls in Scala verfasst um
