@@ -118,15 +118,17 @@ Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeic
 \paragraph{Laufzeitsicht}\\
 
 \Glspl{rdd} sind nicht veränderbar. Es ist nicht möglich einzelne Elemente \gls{RDD} durch gezielte Operationen zu verändern. Statdessen ist es nur möglich ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
-Solche globalen (also auf sämtlichen Partitionen des \gls{RDD} durchgeführten) Operationen können sich zwar auf einzelne Elemente eines beschränken, die Ausführung erfolgt jedoch nicht \textit{gezielt}.
+Solche globalen (also auf sämtlichen Partitionen des \gls{RDD} durchgeführten) Operationen können zwar ihren Effekt auf einzelne Elemente eines \gls{RDD} beschränken, die Ausführung erfolgt jedoch in jedem Fall auf allen Partitionen.\\
 
 Eine Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gls{rdd} bezeichnet. Die \textit{Lineage} kann als das "`Rezept"' zur Erstellung eines Datensatzes verstanden werden.
 
 Dabei gibt es zwei grundsätzlich verschiedene Operationen, nämlich \textit{Transformationen} und \textit{Aktionen}.\\
 
-\textbf{\textit{Transformationen}} sind ... \\
+\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{RDD} auf ein anderes abbilden ohne dabei Elemente untereinander zu verknüpfen oder den Datensatz auf ein externes Medium übertragen (z.B. Datenbanken, Dateisysteme, Messaging Systeme).\\
+Beispiele für solche Operationen sind \textit{filter} und \textit{join}.\\
 
-\textbf{\textit{Aktionen}} sind ... \\
+\textbf{\textit{Aktionen}} sind Operationen, die Elemente untereinander verknüpfen oder das \gls{RDD} auf ein externes Medium übertragen.\\
+Beispiele für Aktionen sind die Methoden \textit{reduce}, \textit{count}, \textit{collect} oder \textit{saveAs}.\\
 
 Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv\cite{Mat12}:\\
 
@@ -137,7 +139,7 @@ Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, is
 	\label{fig:rdds_no_action}
 \end{figure}
 
-Sobald die erste \textit{Aktion} aufgerufen wird, werden die Transformationen nach der vorgegebenen Reihenfolge ausgeführt und die geforderte \textit{Aktion} ausgeführt:\\
+Sobald die erste \textit{Aktion} aufgerufen wird, werden die Transformationen nach der vorgegebenen Reihenfolge ausgeführt und die geforderte \textit{Aktion} ausgeführt. Die Berechnung erfolgt also "`lazy"':\\
 
 \begin{figure}[ht!]
 	\centering
