@@ -157,8 +157,8 @@ Wie in Abb. \ref{fig:rdds_action} zu erkennen, werden während der Transformatio
 	\label{fig:rdds_action_persist}
 \end{figure}
 
-Das Konzept der \textit{Lineage} ist zentral für die Fehlertoleranz der \{RDD}s:
-Geht eine Partition verloren - beispielsweise durch Defekt eines Knotens - ist das "`Rezept"' zur Erstellung des Datensatzes in der \textit{Lineage} des \gls{RDD} weiterhin vorhanden und die Partition kann gezielt wiederhergestellt werden.\\
+Das Konzept der \textit{Lineage} ist zentral für die Fehlertoleranz der \gls{rdd}s:
+Geht eine Partition verloren - beispielsweise durch Defekt eines Knotens - ist das "`Rezept"' zur Erstellung des Datensatzes in der \textit{Lineage} des \gls{rdd} weiterhin vorhanden und die Partition kann gezielt wiederhergestellt werden.\\
 
 Ein weiterer Vorteil dieser Art von Arbeitsdatensatz wird ebenfalls sofort deutlich: Im optimalen Fall sind die zu ladenden Daten von jedem der \gls{worker} auf unabhängigen Kanälen erreichbar (z.B. auf dem lokalen Festspeicher) und gleichmäßig auf diesen Kanälen partitioniert.
 
@@ -174,6 +174,24 @@ Im diesem Fall ergäbe sich mit einer Anzahl \gls{worker} $n$ und einem Durchsat
 \begin{equation}
 	\sum_{i=1}^{n} \delta_i
 \end{equation}
+
+Kommen in einem Anwendungsfall \gls{rdd}s zum Einsatz, die über eine oder mehrere Aktionen untereinander verknüpft werden, kann es sinnvoll sein diese schon im Vorfeld der Verarbeitung entsprechend erwarteter Cluster zu partitionieren. Cluster seien hierbei Teilmengen des \gls{rdd}, die mit besonders hoher Wahrscheinlichkeit oder besonders häufig untereinander verknüpft werden.\\
+
+Dadurch kann ein größerer Teil der Operationen auf den einzelnen Datensätzen bereits lokal auf dem Knoten der jeweiligen Partition durchgeführt werden. Die Netzwerklast bei dem anschließenden \textit{Shuffle} der Daten (siehe Abschnitt 2.2.2) fällt dann geringer aus.\\
+
+Solch eine Partitionierung kann - entsprechende Erwartung über das Verhalten der Verarbeitung vorausgesetzt - mit einem maßgeschneiderten Partitionierer erreicht werden (Abb.~\ref{lst:partitioner}).\\
+
+\begin{lstlisting}[caption={Minimaler Partitionierer},label={lst:partitioner}]
+class MinimalPartitioner extends Partitioner {
+ def numPartitions = 10
+
+ def getPartition(key: Any): Int =
+   key.hashCode % numPartitions
+	
+ def equals(other: Any): Boolean =
+   other.isInstanceOf[MinimalPartitioner]
+}
+\end{lstlisting}
 
 \subsection{Scheduling/Shuffling}
 

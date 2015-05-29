@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2202
-NormalPos.bottom=797
+NormalPos.right=1536
+NormalPos.bottom=392
 Class=LaTeXView
 Document=sample.tex
 
 [Frame0_View0,0]
-TopLine=155
-Cursor=4938
+TopLine=65
+Cursor=2015
 
 [Frame1]
 Flags=0
@@ -29,13 +29,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2202
-NormalPos.bottom=797
+NormalPos.right=1536
+NormalPos.bottom=392
 Class=BibTeXView
 Document=sample.bib
 
 [Frame1_View0,0]
-TopLine=190
+TopLine=200
 Cursor=5274
 
 [Frame2]
@@ -47,8 +47,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2202
-NormalPos.bottom=797
+NormalPos.right=1536
+NormalPos.bottom=392
 Class=LaTeXView
 Document=einfuehrung.tex
 
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2202
-NormalPos.bottom=797
+NormalPos.right=1536
+NormalPos.bottom=392
 Class=LaTeXView
 Document=vorstellung.tex
 
 [Frame3_View0,0]
-TopLine=336
-Cursor=13010
+TopLine=279
+Cursor=11889
 
 [Frame4]
 Flags=0
@@ -83,14 +83,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2202
-NormalPos.bottom=797
+NormalPos.right=1536
+NormalPos.bottom=392
 Class=LaTeXView
 Document=praxis.tex
 
 [Frame4_View0,0]
-TopLine=155
-Cursor=7332
+TopLine=28
+Cursor=6755
 
 [Frame5]
 Flags=0
@@ -101,8 +101,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2202
-NormalPos.bottom=797
+NormalPos.right=1536
+NormalPos.bottom=392
 Class=LaTeXView
 Document=schluss.tex
 
@@ -119,8 +119,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2202
-NormalPos.bottom=797
+NormalPos.right=1536
+NormalPos.bottom=392
 Class=LaTeXView
 Document=glossar.tex
 
@@ -137,16 +137,16 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2202
-NormalPos.bottom=797
+NormalPos.right=1536
+NormalPos.bottom=392
 Class=LaTeXView
 Document=appendices.tex
 
 [Frame7_View0,0]
-TopLine=12
+TopLine=14
 Cursor=617
 
 [SessionInfo]
 FrameCount=8
-ActiveFrame=4
+ActiveFrame=3
 
