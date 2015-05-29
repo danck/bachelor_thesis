@@ -117,9 +117,10 @@ Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeic
 
 \paragraph{Laufzeitsicht}\\
 
-\Glspl{rdd} sind nicht veränderbar. Anstatt durch feingranulare Schreiboperationen modifiziert zu werden ist es nur möglich ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
+\Glspl{rdd} sind nicht veränderbar. Es ist nicht möglich einzelne Elemente \gls{RDD} durch gezielte Operationen zu verändern. Statdessen ist es nur möglich ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
+Solche globalen (also auf sämtlichen Partitionen des \gls{RDD} durchgeführten) Operationen können sich zwar auf einzelne Elemente eines beschränken, die Ausführung erfolgt jedoch nicht \textit{gezielt}.
 
-Diese Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gls{rdd} bezeichnet. Die \textit{Lineage} kann als das "`Rezept"' zur Erstellung eines Datensatzes verstanden werden.
+Eine Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gls{rdd} bezeichnet. Die \textit{Lineage} kann als das "`Rezept"' zur Erstellung eines Datensatzes verstanden werden.
 
 Dabei gibt es zwei grundsätzlich verschiedene Operationen, nämlich \textit{Transformationen} und \textit{Aktionen}.\\
 
@@ -154,8 +155,10 @@ Wie in Abb. \ref{fig:rdds_action} zu erkennen, werden während der Transformatio
 	\label{fig:rdds_action_persist}
 \end{figure}
 
+Das Konzept der \textit{Lineage} ist zentral für die Fehlertoleranz der \{RDD}s:
+Geht eine Partition verloren - beispielsweise durch Defekt eines Knotens - ist das "`Rezept"' zur Erstellung des Datensatzes in der \textit{Lineage} des \gls{RDD} weiterhin vorhanden und die Partition kann gezielt wiederhergestellt werden.\\
 
-Ein möglicher Vorteil dieser Art von Arbeitsdatensatz wird sofort deutlich: Im optimalen Fall sind die zu ladenden Daten von jedem der \gls{worker} auf unabhängigen Kanälen erreichbar (z.B. auf dem lokalen Festspeicher) und gleichmäßig auf diesen Kanälen partitioniert.
+Ein weiterer Vorteil dieser Art von Arbeitsdatensatz wird ebenfalls sofort deutlich: Im optimalen Fall sind die zu ladenden Daten von jedem der \gls{worker} auf unabhängigen Kanälen erreichbar (z.B. auf dem lokalen Festspeicher) und gleichmäßig auf diesen Kanälen partitioniert.
 
 \begin{figure}[h!]
 	\centering
@@ -164,12 +167,11 @@ Ein möglicher Vorteil dieser Art von Arbeitsdatensatz wird sofort deutlich: Im 
 	\label{fig:rdds2}
 \end{figure}
 
-Im diesem Fall ergäbe sich mit einer Anzahl \gls{worker} $n$ und einem Durchsatz $\delta$ zu der jeweiligen Datenquelle also ein Gesamtdurchsatz beim Einlesen von Daten von:
+Im diesem Fall ergäbe sich mit einer Anzahl \gls{worker} $n$ und einem Durchsatz $\delta$ zu der jeweiligen Datenquelle also ein idealer Gesamtdurchsatz beim Einlesen von Daten von:
 
 \begin{equation}
 	\sum_{i=1}^{n} \delta_i
 \end{equation}
-
 
 \subsection{Scheduling/Shuffling}
 
@@ -315,10 +317,23 @@ Die Kommunikation innerhalb der Entwickler- und Anwendergemeinschaft findet wese
 \\
 
 \section{Auswahl verwandter Produkte}
-\textcolor{gray}{--- Ergänzende oder konkurrierende Produkte ---}\\
-\subsection{Hadoop/YARN}
-\subsection{Mesos}
-\subsection{Flink}
-\subsection{MPI}
-\subsection{Samza}
-\subsection{Storm}
+Um Spark besser im Bereich bestehender Lösungen einzuordnen werden im Folgenden einige Produkte genannt die häufig zusammen mit Spark verwendet oder ähnliche Aufgaben erfüllen.
+\paragraph{Hadoop/YARN}\\
+Hadoop lässt sich als eine Art Betriebssystem für Cluster zur Datenanalyse beschreiben. Zu den wesentlichen Komponenten zählen ein Dateisystem (HDFS) ein Datenverarbeitungsmodell (MapReduce) und ein Scheduler (YARN).
+Alle genannten Komponenten sind für den fehlertoleranten und skalierbaren Betrieb auf verteilten Hardware-Komponenten vorgesehen.\\
+Zwar wird mit MapReduce auch eine Komponente zur Verarbeitung/Analyse von verteilt gespeicherten Daten zu Verfügung gestellt, andere Datenverarbeitungsmodelle können jedoch gleichberechtigt und unter Aufsicht des Ressourcenschedulers YARN betrieben werden.\\
+
+Spark liefert eine mögliche Implementation eines solchen alternativen Datenverarbeitungsmodells.
+
+\paragraph{Mesos}\\
+Apache Mesos ist seit Beginn der Entwicklung von Spark ein optionaler Clustermanager für Sparkapplikationen \cite{Mat12}.\\
+Als reiner Clustermanager ersetzt Mesos die Spark Master-Komponente in der Funktion des knotenübergreifenden Ressourcenmanagements.\\
+Wie bei YARN ermöglicht dies auch anderen Anwendungen die über Mesos verwaltet werden einen gleichberechtigten Betrieb auf dem selben Cluster.\\
+
+\paragraph{Flink}\\
+
+\paragraph{MPI}\\
+
+\paragraph{Samza}\\
+
+\paragraph{Storm}\\

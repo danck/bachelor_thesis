@@ -133,6 +133,13 @@ HDFS als Komponente von Apache Hadoop ist in den Versionen 2.x deutlich bezügli
 
 Spark läuft in diesem Versuch als alleinige Computeanwendung auf dem Cluster. Es ist also nicht nötig Konkurrenz um Ressourcen zu berücksichtigen. Für diesen Versuch wird daher der Standalone Clustermanager gewählt.\\
 
+\paragraph{Architekturübersicht}\\
+
+Die Implementation des Anwendungsfalles soll in drei Schichten erfolgen. \\
+In einer Schicht findet die Verarbeitung eingehender Emails statt und es werden die Relevanz der Begriffe bewertet (\textit{Batch Layer}).
+In einer zweiten Schicht werden die Tweets aus einem Datenstrom eingelesen und deren Relevanz anhand der Bewertungen aus der ersten Schicht bewertet (\textit{Streaming Layer}).\\
+In der dritten Schicht werden die als relevant eingestuften Emails in einer grafischen Oberfläche dem Benutzer zur Verfügung gestellt (\textit{Presentation Layer}).
+
 \begin{figure}[ht!]
 	\centering
   \includegraphics[scale=0.7]{data_centric_layers.pdf}
@@ -140,8 +147,11 @@ Spark läuft in diesem Versuch als alleinige Computeanwendung auf dem Cluster. E
 	\label{figure:data_centrice_layers}
 \end{figure}
 
+\paragraph{Batch Layer}\\
 
-\paragraph{Verteilungsdiagramm}\\
+\paragraph{Streaming Layer}\\
+
+\paragraph{Presentation Layer}\\
 
 \begin{figure}[ht!]
 	\centering
@@ -150,7 +160,6 @@ Spark läuft in diesem Versuch als alleinige Computeanwendung auf dem Cluster. E
 	\label{figure:demo_app_verteilung}
 \end{figure}
 
-\paragraph{Komponentendiagramm}\\
 
 \begin{figure}[ht!]
 	\centering
@@ -159,7 +168,11 @@ Spark läuft in diesem Versuch als alleinige Computeanwendung auf dem Cluster. E
 	\label{figure:demo_app_komponenten}
 \end{figure}
 
-\paragraph{Laufzeitdiagramme}
+\paragraph{Batch Komponente}\\
+
+\paragraph{Streaming-Komponente}\\
+
+\paragraph{Presentation-Komponente}\\
 
 
 \subsection{Ergebnisse und Bewertung}

@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=sample.tex
 
 [Frame0_View0,0]
-TopLine=26
-Cursor=1171
+TopLine=155
+Cursor=4938
 
 [Frame1]
 Flags=0
@@ -35,8 +35,8 @@ Class=BibTeXView
 Document=sample.bib
 
 [Frame1_View0,0]
-TopLine=38
-Cursor=1526
+TopLine=190
+Cursor=5274
 
 [Frame2]
 Flags=0
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=einfuehrung.tex
 
 [Frame2_View0,0]
-TopLine=52
-Cursor=4098
+TopLine=0
+Cursor=3884
 
 [Frame3]
 Flags=0
@@ -71,8 +71,8 @@ Class=LaTeXView
 Document=vorstellung.tex
 
 [Frame3_View0,0]
-TopLine=302
-Cursor=14058
+TopLine=336
+Cursor=13010
 
 [Frame4]
 Flags=0
@@ -89,8 +89,8 @@ Class=LaTeXView
 Document=praxis.tex
 
 [Frame4_View0,0]
-TopLine=48
-Cursor=2775
+TopLine=155
+Cursor=7332
 
 [Frame5]
 Flags=0
@@ -108,7 +108,7 @@ Document=schluss.tex
 
 [Frame5_View0,0]
 TopLine=0
-Cursor=116
+Cursor=114
 
 [Frame6]
 Flags=0
@@ -148,5 +148,5 @@ Cursor=617
 
 [SessionInfo]
 FrameCount=8
-ActiveFrame=7
+ActiveFrame=4
 
