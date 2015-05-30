@@ -117,21 +117,21 @@ Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeic
 
 \paragraph{Laufzeitsicht}\\
 
-\Glspl{rdd} sind nicht veränderbar. Es ist nicht möglich einzelne Elemente \gls{RDD} durch gezielte Operationen zu verändern. Statdessen ist es nur möglich ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
+\Glspl{rdd} sind nicht veränderbar. Es ist nicht möglich einzelne Elemente \gls{RDD} durch gezielte Operationen zu verändern. Stattdessen ist es nur möglich ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
 Solche globalen (also auf sämtlichen Partitionen des \gls{RDD} durchgeführten) Operationen können zwar ihren Effekt auf einzelne Elemente eines \gls{RDD} beschränken, die Ausführung erfolgt jedoch in jedem Fall auf allen Partitionen.\\
 
 Eine Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gls{rdd} bezeichnet. Die \textit{Lineage} kann als das "`Rezept"' zur Erstellung eines Datensatzes verstanden werden.
 
 Dabei gibt es zwei grundsätzlich verschiedene Operationen, nämlich \textit{Transformationen} und \textit{Aktionen}.\\
 
-\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{RDD} auf ein anderes abbilden ohne dabei Elemente untereinander zu verknüpfen oder Elemente exportieren (z.B. zu Datenbanken, Dateisysteme, Messaging Systeme, dem Treiberprogramm).\\
+\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{RDD} - grob gesagt - nur die abstrakte Repräsentation des Datensatzes ändern, ohne tatsächlich dessen Datenelemente für den Programmfluss im Treiberprogramm abzurufen.\\
 Beispiele für solche Operationen sind:
 \begin{itemize}
 	\item \textit{filter}
-	\item \textit{join}.
+	\item \textit{join}
 \end{itemize}\\
 
-\textbf{\textit{Aktionen}} sind Operationen, die Elemente untereinander verknüpfen oder das \gls{RDD} auf ein externes Medium übertragen.\\
+\textbf{\textit{Aktionen}} sind Operationen, die Elemente miteinander verknüpfen oder das \gls{RDD} und für den tatsächlichen Abruf von Werten aufbereiten.\\
 Beispiele für Aktionen sind die Methoden:
 \begin{itemize}
 	\item \textit{reduce}
@@ -239,11 +239,30 @@ class MinimalPartitioner extends Partitioner {
 }
 \end{lstlisting}
 
-\subsection{Scheduling/Shuffling}
+\subsection{Scheduling/Shuffling}\\
 
+Bisher wurden insbesondere drei Aspekte eines \gls{rdd} betrachtet:
+\begin{itemize}
+	\item die \textbf{Partitionierung} der Elemente über verschiedene Rechner
+	\item die \textbf{Vorgänger} eines \gls{rdd} bezüglich dessen \textit{Lineage}
+	\item die \textbf{Funktion} mit der ein \gls{rdd} aus einem oder mehreren direkten Vorgängern berechnet wird
+\end{itemize}
 
+Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine Baumstruktur.\\
 
-\subsection{Anwendungsdeployment und -lebenszyklus}
+Betrachtet man zusätzlich die Partitionierung und die Art der Funktion mit der \glspl{rdd} verknüpft werden, sieht man einen wichtigen Unterschied zwischen verschiedenen Vorgängerbeziehungen:
+\begin{itemize}
+\item Solche deren einzelne Partitionen höchstens eine Vorgängerpartition haben
+\item Solche bei denen mindestens eine Partition mehr als eine Vorgängerpartition hat
+\end{itemize}
+
+Wird eine Partition aus höchstens einer anderen erzeugt, lässt sich diese direkt auf dem selben Knoten berechnen. Werden jedoch verschiedene Partitionen benötigt um eine Folgepartition zu erzeugen stellt sich die Frage auf welchen Knoten das am Besten geschieht.\\
+Spark unterteilt diese beiden Fälle in \textit{narrow dependencies} (erster Fall) und \textit{wide dependencies} (zweiter Fall) (\cite{Mat12}). 
+Der Abhängigkeitsgraph eines \gls{rdd} wird nun in sogenannte \textit{Stages} zerlegt. Eine \textit{Stage} ist dabei ein Untergraph, dessen Elemente (von den Blättern in Richtung Wurzel betrachtet) auf eine gemeinsame \textit{wide dependency} stoßen.\\
+
+Elemente innerhalb einer Stage, können nach dieser Konstruktion völlig unabhängig auf den Knoten berechnet werden, die die jeweilige Partition vorhalten. Pro Datenelement x kann in einer Art Pipeline die Transformation über die Elemente der Vorgänger-\glspl{rdd} lokal der Wert berechnet werden.
+
+\subsection{Anwendungsdeployment und -lebenszyklus}\\
 
 \paragraph{Anwendungsdeployment}\\
 
