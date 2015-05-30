@@ -84,18 +84,18 @@ Es ist das wichtigste Ziel der folgenden Kernkonzepte von Apache Spark unter die
 \section{Kernkonzepte}
 
 \subsection{Resilient Distributed Datasets}
-Die universelle Einheit mit der ein Datenelement auf Spark repräsentiert wird ist ein sogenanntes \gls{rdd}\cite{Mat12}.\\
+Die universelle Einheit mit der Datenelemente auf Spark repräsentiert wird ist ein sogenanntes \gls{rdd}\cite{Mat12}.\\
 
 Ein Beispiel für ein solches \gls{rdd} wurde bereits erwähnt, nämlich das in Listing \ref{lst:sconsole_wordcount} erzeugte Objekt \lstinline|text|:\\
 
-\begin{lstlisting}[language=Scala, firstline=10, lastline=10, ]
+\begin{lstlisting}[language=Scala]
 val text = sc.textFile("../Heinrich Heine - Der Ex-Lebendige")
 \end{lstlisting}
 
-\Glspl{rdd} können auch explizit erzeugt werden, ohne dass dazu vorhandene Daten genutzt werden:\\
+\Glspl{rdd} können auch explizit von einem Treiberprogramm erzeugt werden, ohne dass dazu vorhandene Daten genutzt werden:\\
 
 \begin{lstlisting}
-val list = sc.parallelize(List(1,2,3,4,5,6))
+val listRDD = sc.parallelize(List(1,2,3,4,5,6))
 \end{lstlisting}
 
 Die gesamte operative Kern-\gls{api} dreht sich um die Steuerung dieser Dateneinheiten. Insbesondere sind auch die in den Standardbibliotheken verfügbaren "`höheren"' \glspl{api} auf diesen \glspl{rdd} implementiert.
@@ -124,7 +124,7 @@ Eine Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gl
 
 Dabei gibt es zwei grundsätzlich verschiedene Operationen, nämlich \textit{Transformationen} und \textit{Aktionen}.\\
 
-\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{RDD} auf ein anderes abbilden ohne dabei Elemente untereinander zu verknüpfen oder den Datensatz auf ein externes Medium übertragen (z.B. Datenbanken, Dateisysteme, Messaging Systeme).\\
+\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{RDD} auf ein anderes abbilden ohne dabei Elemente untereinander zu verknüpfen oder Elemente exportieren (z.B. zu Datenbanken, Dateisysteme, Messaging Systeme, dem Treiberprogramm).\\
 Beispiele für solche Operationen sind:
 \begin{itemize}
 	\item \textit{filter}
@@ -137,19 +137,21 @@ Beispiele für Aktionen sind die Methoden:
 	\item \textit{reduce}
 	\item \textit{count}
 	\item \textit{collect}
-	\item \textit{saveAs}
+	\item \textit{foreach}
 \end{itemize}\\
+
+Jeder dieser Operationen, kann im Sinne des Command-Patterns (\cite{FPP13}) eine Funktion bzw. ein Funktionsobjekt übergeben werden, dass die gewählte Operation spezifiziert.
 
 Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv\cite{Mat12}:\\
 
 \begin{figure}[ht!]
 	\centering
   \includegraphics[scale=0.8]{rdds_no_action.pdf}
-	\caption{RDD Lineage vor Aktion}
+	\caption{RDD Lineage vor Aktion (gestrichelte Linie steht für \textit{nicht initialisiert}}
 	\label{fig:rdds_no_action}
 \end{figure}
 
-Sobald die erste \textit{Aktion} aufgerufen wird, werden die Transformationen nach der vorgegebenen Reihenfolge ausgeführt und die geforderte \textit{Aktion} ausgeführt. Die Berechnung erfolgt also "`lazy"':\\
+Sobald die erste \textit{Aktion} aufgerufen wird, werden die Transformationen nach der vorgegebenen Reihenfolge ausgeführt und die geforderte \textit{Aktion} ausgeführt. Die Initialisierung des \gls{rdd} erfolgt also "`lazy"':\\
 
 \begin{figure}[ht!]
 	\centering
@@ -167,12 +169,14 @@ Wie in Abb. \ref{fig:rdds_action} dargestellt ist, werden während der Transform
 	\label{fig:rdds_action_persist}
 \end{figure}
 \\
-Realisiert ist das Konzept der \textit{Lineage} und der "`Lazy Computation"' von \glspl{rdd} durch Transformations-Methoden, die das Factory-Pattern (\cite{FPP13}) implementieren. Die erzeugten Objekte sind dabei wiederum Derivate von \gls{rdd}:\\
+Realisiert ist das Konzept der \textit{Lineage} und der "`Lazy Computation"' von \glspl{rdd} durch Transformations-Methoden, die eine Variante des Factory-Pattern (\cite{FPP13}) implementieren. Die erzeugten Objekte sind dabei wiederum Unterklassen von \gls{rdd}:\\
 Jedes \gls{rdd}-Objekt führt eine Liste von Vorgängern mit. Aus dieser lässt sich auch die Art der Berechnung des jeweiligen Nachfolgers ableiten.\\
-Jede weitere Transformations-Methode konstruiert nun lediglich eine neues \gls{rdd}-Objekt. Dieses basiert auf dem aktuellen Objekt und der jeweiligen Transformation.\\
-Als Beispiel für solch eine Transformation auf einem \gls{rdd} ist die Methode \textit{Map}\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala#L285} (Listing \ref{lst:spark_map}).\\
 
-In den Zeilen 7 und 8 ist zu sehen, wie ein neues \gls{rdd} erzeugt wird und diesem das aktuelle \gls{rdd} sowie die auf dessen Elemente anzuwendende Funktion f (bzw. \textit{cleanF}) übergeben wird.\\
+Jede weitere Transformations-Methode konstruiert nun lediglich eine neues \gls{rdd}-Objekt. Dieses basiert auf dem aktuellen Objekt und der jeweiligen Transformation.\\
+
+Ein Beispiel für solch eine Transformation auf einem \gls{rdd} ist die Methode \textit{map}\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala#L285 (abgerufen am 30.05.2015)} (Listing \ref{lst:spark_map}).\\
+
+In den Zeilen 7 und 8 ist zu sehen, wie ein neues \gls{rdd} erzeugt wird und diesem das aktuelle \gls{rdd} sowie die auf dessen Elemente anzuwendende Funktion \lstinline|f| (bzw. \lstinline|cleanF|) übergeben wird.\\
 
 \begin{lstlisting}[language=Scala,caption={Map-Methode aus org.apache.spark.rdd.RDD v1.3.0},label={lst:spark_map}]
   /**
@@ -186,8 +190,8 @@ In den Zeilen 7 und 8 ist zu sehen, wie ein neues \gls{rdd} erzeugt wird und die
   }
 \end{lstlisting}
 \\
-Die tatsächliche Berechnung eines \glspl{rdd} wird dann bei Aufruf einer Aktion gestartet. Als Beispiel hierfür sei die Methode \textit{foreach}\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala#L793} aufgeführt (Listing \ref{lst:spark_foreach}).\\
-In Zeile 6 wird auf dem Spark-Context die Methode \textit{runJob} aufgerufen, der die Aufgabe weiter an den Scheduler delegiert. Dort werden dann die rekursiven Abhängigkeiten des aktuellen \gls{rdd} aufgelöst und - je nach Konfiguration - die Tasks verteilt.\\
+Die tatsächliche Berechnung eines \glspl{rdd} wird dann bei Aufruf einer Aktion gestartet. Als Beispiel hierfür sei die Methode \lstinline|foreach|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala#L793 (abgerufen am 30.05.2015)} aufgeführt (Listing \ref{lst:spark_foreach}).\\
+In Zeile 6 wird auf dem Spark-Context die Methode \lstinline|runJob| aufgerufen, der die Aufgabe weiter an den Scheduler delegiert. Dort werden dann die rekursiven Abhängigkeiten des aktuellen \gls{rdd} aufgelöst und - je nach Konfiguration - die Tasks verteilt.\\
 
 \begin{lstlisting}[language=Scala,caption={foreach-Methode aus org.apache.spark.rdd.RDD v1.3.0},label={lst:spark_foreach}]
   /**
@@ -200,7 +204,7 @@ In Zeile 6 wird auf dem Spark-Context die Methode \textit{runJob} aufgerufen, de
 \end{lstlisting}
 \\
 Das Konzept der \textit{Lineage} ist zentral für die Fehlertoleranz der \gls{rdd}s:
-Geht eine Partition verloren - beispielsweise durch Defekt eines Knotens - ist das "`Rezept"' zur Erstellung des Datensatzes in der \textit{Lineage} des \gls{rdd} weiterhin vorhanden und die Partition kann gezielt wiederhergestellt werden.\\
+Geht eine Partition verloren - beispielsweise durch Defekt eines Knotens - ist das "`Rezept"' zur Erstellung des Datensatzes in der \textit{Lineage} des \gls{rdd}-Objektes weiterhin vorhanden und die Partition kann gezielt wiederhergestellt werden.\\
 
 Ein weiterer Vorteil dieser Art von Arbeitsdatensatz wird ebenfalls sofort deutlich: Im optimalen Fall sind die zu ladenden Daten von jedem der \gls{worker} auf unabhängigen Kanälen erreichbar (z.B. auf dem lokalen Festspeicher) und gleichmäßig auf diesen Kanälen partitioniert.\\
 
@@ -223,7 +227,7 @@ Dadurch kann ein größerer Teil der Operationen auf den einzelnen Datensätzen 
 
 Solch eine Partitionierung kann - entsprechende Erwartung über das Verhalten der Verarbeitung vorausgesetzt - mit einem maßgeschneiderten Partitionierer erreicht werden (Abb.~\ref{lst:partitioner}) der dann dem betroffenen \gls{rdd} übergeben wird.\\
 
-\begin{lstlisting}[language=Scala,caption={Minimaler Partitionierer},label={lst:partitioner}]
+\begin{lstlisting}[language=Scala,caption={Beispiel: Minimaler Partitionierer},label={lst:partitioner}]
 class MinimalPartitioner extends Partitioner {
  def numPartitions = 10
 
@@ -236,6 +240,8 @@ class MinimalPartitioner extends Partitioner {
 \end{lstlisting}
 
 \subsection{Scheduling/Shuffling}
+
+
 
 \subsection{Anwendungsdeployment und -lebenszyklus}
 
@@ -293,7 +299,6 @@ Abb.~\ref{fig:app_deployment_process} zeigt das Sequenzdiagramm eines typischen 
 \subsection{Zusammenfassung und Bewertung}
 
 \section{Standardbibliotheken}
-\textcolor{gray}{--- Warum ist Spark so einfach (und wo vielleicht nicht)? ---}\\
 Die vier Standardbibliotheken erweitern die Kern-API für bestimmte, häufig genutzte Aufgaben aus Bereichen der Datenanalyse.\\
 
 Die bedienten Bereiche
