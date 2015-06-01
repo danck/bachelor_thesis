@@ -71,7 +71,7 @@ Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grund
 	\label{table:vgldurchsatz} % is used to refer this table in the text
 \end{table}
 
-Auf eine detaillierte Analyse des Zugriffsverhaltens wird im Rahmen dieser Arbeit verzichtet. Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes (\textit{D}) der verschiedenen Datenkanäle zu vergegenwärtigen:
+Eine detaillierte Analyse des Zugriffsverhaltens ist nicht Gegenstand dieser Arbeit. Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes (\textit{D}) der verschiedenen Datenkanäle zu vergegenwärtigen:
 
 \begin{equation*}
 	D_{Netzwerk} < D_{Festspeicher} < D_{Arbeitsspeicher}
@@ -124,14 +124,21 @@ Eine Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gl
 
 Dabei gibt es zwei grundsätzlich verschiedene Operationen, nämlich \textit{Transformationen} und \textit{Aktionen}.\\
 
-\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{RDD} - grob gesagt - nur die abstrakte Repräsentation des Datensatzes ändern, ohne tatsächlich dessen Datenelemente für den Programmfluss im Treiberprogramm abzurufen.\\
+\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{RDD} auf ein anderes Abbilden:\\
+\[Transformation: RDD \times RDD\ \longrightarrow RDD\]
+oder
+\[Transformation: RDD\ \longrightarrow RDD\]
+\\
+Es werden also - grob gesagt - nur die abstrakte Repräsentation des Datensatzes ändern, ohne tatsächlich dessen Datenelemente für den Programmfluss im Treiberprogramm abzurufen.\\
 Beispiele für solche Operationen sind:
 \begin{itemize}
 	\item \textit{filter}
 	\item \textit{join}
 \end{itemize}\\
 
-\textbf{\textit{Aktionen}} sind Operationen, die Elemente miteinander verknüpfen oder das \gls{RDD} und für den tatsächlichen Abruf von Werten aufbereiten.\\
+\textbf{\textit{Aktionen}} sind Operationen, die \glspl{rdd} in eine andere Domäne abbilden:\\
+\[Action: RDD \longrightarrow Domain_x, Domain_x \neq RDD\]
+\\
 Beispiele für Aktionen sind die Methoden:
 \begin{itemize}
 	\item \textit{reduce}
@@ -221,13 +228,19 @@ Im diesem Fall ergäbe sich mit einer Anzahl \gls{worker} $n$ und einem Durchsat
 	\sum_{i=1}^{n} \delta_i
 \end{equation}
 
-Kommen in einem Anwendungsfall \gls{rdd}s zum Einsatz, die über eine oder mehrere Aktionen untereinander verknüpft werden, kann es sinnvoll sein diese schon im Vorfeld der Verarbeitung entsprechend erwarteter Cluster zu partitionieren. Cluster seien hierbei Teilmengen des \gls{rdd}, die mit besonders hoher Wahrscheinlichkeit oder besonders häufig untereinander verknüpft werden.\\
+Kommen in einem Anwendungsfall \gls{rdd}s zum Einsatz, deren Elemente einzeln über eine oder mehrere Operationen untereinander verknüpft werden, kann es sinnvoll sein diese schon im Vorfeld der Verarbeitung entsprechend erwarteter Cluster zu partitionieren. Cluster seien hierbei Teilmengen des \gls{rdd}, die mit besonders hoher Wahrscheinlichkeit oder besonders häufig untereinander verknüpft werden.\\
 
 Dadurch kann ein größerer Teil der Operationen auf den einzelnen Datensätzen bereits lokal auf dem Knoten der jeweiligen Partition durchgeführt werden. Die Netzwerklast bei dem anschließenden \textit{Shuffle} der Daten (siehe Abschnitt 2.2.2) fällt dann geringer aus.\\
 
 Solch eine Partitionierung kann - entsprechende Erwartung über das Verhalten der Verarbeitung vorausgesetzt - mit einem maßgeschneiderten Partitionierer erreicht werden (Abb.~\ref{lst:partitioner}) der dann dem betroffenen \gls{rdd} übergeben wird.\\
 
 \begin{lstlisting}[language=Scala,caption={Beispiel: Minimaler Partitionierer},label={lst:partitioner}]
+/*
+ * Beispiel für einen minimalen Partitionierer. 
+ * Ueber selbstdefinierte Hash Codes kann hier eine 
+ * massgeschneiderte physische Verteilung ueber die 
+ * Knoten erreicht werden.
+ */
 class MinimalPartitioner extends Partitioner {
  def numPartitions = 10
 
@@ -248,7 +261,7 @@ Bisher wurden insbesondere drei Aspekte eines \gls{rdd} betrachtet:
 	\item die \textbf{Funktion} mit der ein \gls{rdd} aus einem oder mehreren direkten Vorgängern berechnet wird
 \end{itemize}
 
-Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine Baumstruktur.\\
+Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine einfache Baumstruktur.\\
 
 Betrachtet man zusätzlich die Partitionierung und die Funktion mit der \glspl{rdd} transformiert werden, sieht man einen wichtigen Unterschied zwischen verschiedenen Vorgängerbeziehungen:
 \begin{itemize}
