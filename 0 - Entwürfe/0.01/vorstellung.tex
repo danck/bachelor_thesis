@@ -104,8 +104,8 @@ Sie sind damit die wichtigste Abstraktion des Applikationskerns.\\
 
 In erster Näherung können \glspl{rdd} als eine Variante von \gls{dsm}\cite{Nitzberg:1991:DSM:112827.112855} \cite{Mat12} verstanden werden, haben allerdings sehr charakteristische Einschränkungen und Erweiterungen, die in diesem Kapitel erläutert werden.\\
 
-\paragraph{Verteilungssicht}\\
-
+\paragraph{Verteilungssicht}
+\\
 Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeicher mehrerer Maschinen partitioniert ist (Abb.~\ref{fig:rdds1}).
 
 \begin{figure}[ht!]
@@ -115,8 +115,8 @@ Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeic
 	\label{fig:rdds1}
 \end{figure}
 
-\paragraph{Laufzeitsicht}\\
-
+\paragraph{Laufzeitsicht}
+\\
 \Glspl{rdd} sind nicht veränderbar. Es ist nicht möglich einzelne Elemente \gls{RDD} durch gezielte Operationen zu verändern. Stattdessen ist es nur möglich ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
 Solche globalen (also auf sämtlichen Partitionen des \gls{RDD} durchgeführten) Operationen können zwar ihren Effekt auf einzelne Elemente eines \gls{RDD} beschränken, die Ausführung erfolgt jedoch in jedem Fall auf allen Partitionen.\\
 
@@ -124,7 +124,7 @@ Eine Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gl
 
 Dabei gibt es zwei grundsätzlich verschiedene Operationen, nämlich \textit{Transformationen} und \textit{Aktionen}.\\
 
-\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{RDD} auf ein anderes Abbilden:\\
+\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{RDD} auf ein anderes abbilden:\\
 \[Transformation: RDD \times RDD\ \longrightarrow RDD\]
 oder
 \[Transformation: RDD\ \longrightarrow RDD\]
@@ -154,7 +154,7 @@ Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, is
 \begin{figure}[ht!]
 	\centering
   \includegraphics[scale=0.8]{rdds_no_action.pdf}
-	\caption{RDD Lineage vor Aktion (gestrichelte Linie steht für \textit{nicht initialisiert}}
+	\caption{RDD Lineage vor Aktion (gestrichelte Linie steht für \textit{nicht initialisiert})}
 	\label{fig:rdds_no_action}
 \end{figure}
 
@@ -176,7 +176,7 @@ Wie in Abb. \ref{fig:rdds_action} dargestellt ist, werden während der Transform
 	\label{fig:rdds_action_persist}
 \end{figure}
 \\
-Realisiert ist das Konzept der \textit{Lineage} und der "`Lazy Computation"' von \glspl{rdd} durch Transformations-Methoden, die eine Variante des Factory-Pattern (\cite{FPP13}) implementieren. Die erzeugten Objekte sind dabei wiederum Unterklassen von \gls{rdd}:\\
+Realisiert ist das Konzept der \textit{Lineage} und der "`Lazy Initialization"' von \glspl{rdd} durch Transformations-Methoden, die eine Variante des Factory-Pattern (\cite{FPP13}) implementieren. Die erzeugten Objekte sind dabei wiederum Unterklassen von \gls{rdd}:\\
 Jedes \gls{rdd}-Objekt führt eine Liste von Vorgängern mit. Aus dieser lässt sich auch die Art der Berechnung des jeweiligen Nachfolgers ableiten.\\
 
 Jede weitere Transformations-Methode konstruiert nun lediglich eine neues \gls{rdd}-Objekt. Dieses basiert auf dem aktuellen Objekt und der jeweiligen Transformation.\\
@@ -236,9 +236,9 @@ Solch eine Partitionierung kann - entsprechende Erwartung über das Verhalten de
 
 \begin{lstlisting}[language=Scala,caption={Beispiel: Minimaler Partitionierer},label={lst:partitioner}]
 /*
- * Beispiel für einen minimalen Partitionierer. 
+ * Beispiel fuer einen minimalen Partitionierer. 
  * Ueber selbstdefinierte Hash Codes kann hier eine 
- * massgeschneiderte physische Verteilung ueber die 
+ * massgeschneiderte Verteilung ueber die 
  * Knoten erreicht werden.
  */
 class MinimalPartitioner extends Partitioner {
@@ -254,14 +254,17 @@ class MinimalPartitioner extends Partitioner {
 
 \subsection{Scheduling/Shuffling}\\
 
-Bisher wurden insbesondere drei Aspekte eines \gls{rdd} betrachtet:
+Dieser Abschnitt vertieft die Betrachtung des Berechnungsmodells von Spark. Mit Berechnungsmodell ist gemeint die Art, wie mit den High-Level \glspl{api} und den bisher vorgestellten Komponenten die verteilte Berechnung realisiert wird.\\
+Dabei werden insbesondere die Begriffe \textit{\textbf{Task}}, \textit{\textbf{Job}} und \textit{\textbf{Stage}} näher erläutert.\\
+
+Bei den \glspl{rdd} wurden bisher insbesondere drei Aspekte behandelt:
 \begin{itemize}
 	\item die \textbf{Partitionierung} der Elemente über verschiedene Rechner
 	\item die \textbf{Vorgänger} eines \gls{rdd} bezüglich dessen \textit{Lineage}
 	\item die \textbf{Funktion} mit der ein \gls{rdd} aus einem oder mehreren direkten Vorgängern berechnet wird
 \end{itemize}
 
-Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine einfache Baumstruktur.\\
+Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine einfache Baumstruktur für die Berechnung eines \gls{rdd}.\\
 
 Betrachtet man zusätzlich die Partitionierung und die Funktion mit der \glspl{rdd} transformiert werden, sieht man einen wichtigen Unterschied zwischen verschiedenen Vorgängerbeziehungen:
 \begin{itemize}
@@ -270,12 +273,19 @@ Betrachtet man zusätzlich die Partitionierung und die Funktion mit der \glspl{r
 \end{itemize}
 
 Wird eine Partition aus höchstens einer anderen erzeugt, lässt sich diese direkt auf dem selben Knoten berechnen. Werden jedoch verschiedene Partitionen benötigt um eine Folgepartition zu erzeugen stellt sich die Frage auf welchen Knoten das am Besten geschieht.\\
-Spark unterteilt diese beiden Fälle in \textit{narrow dependencies} (erster Fall) und \textit{wide dependencies} (zweiter Fall) (\cite{Mat12}). 
+Spark unterteilt diese beiden Fälle in \textit{narrow dependencies} (erster Fall) und \textit{wide dependencies} (zweiter Fall) (\cite{Mat12}).\\
+
 Der Abhängigkeitsgraph eines \gls{rdd} wird nun in sogenannte \textit{Stages} zerlegt. Eine \textit{Stage} ist dabei ein Untergraph, dessen Elemente (von den Blättern in Richtung Wurzel betrachtet) auf eine gemeinsame \textit{wide dependency} stoßen.\\
 
-Elemente innerhalb einer Stage, können nach dieser Konstruktion völlig unabhängig auf den Knoten berechnet werden, die die jeweilige Partition vorhalten. Pro Datenelement x kann in einer Art Pipeline die Transformation über die Elemente der Vorgänger-\glspl{rdd} lokal der Wert berechnet werden.\\
+Elemente innerhalb einer Stage, können nach dieser Konstruktion unabhängig auf den Knoten berechnet werden, die die jeweilige Partition vorhalten. Ein Datenelement \(x_{i,j}\) sei dabei Element eines \gls{rdd} \(j\) und Element einer lokalen Partition \(P_{i,j}\) (d.h. es existiert auf einem Knoten \(i\)):
 
-Für den Übergang zwischen Stages ist die Berechnung der Nachfolger etwas aufwändiger:\\
+\[x_{i,j} \in Partition_{i,j} \subseteq RDD_j\]
+
+Weil nach Definition der \textit{narrow dependencies} innerhalb einer Stage die Elemente einer Partition \(P_{i,j}\) aus den Elementen genau einer Vorgängerpartition \(P_{i,j-1}\) berechnet werden können, lässt sich jedes Element \(x_{i,j}\) des Nachfolger-\gls{rdd} über eine Komposition lokaler Transformationen \(trans_{i,k}, k = 0..j\) berechnen:\\ 
+
+\[x_{i,j} = (trans_{i,j} \circ trans_{i,j-1} \circ ... \circ trans_{i,1}\circ trans_{i,0})(x_{i,0})\]
+
+Für den Übergang zwischen Stages ist die Berechnung der Nachfolger etwas aufwändiger. Hier stammen - nach Definition der \textit{wide dependencies} - die direkten Vorgänger eines Elementes nicht aus der selben Partition.\\
 
 Um eine neue Partition aus mehreren Vorgänger-Partitionen zu erzeugen werden zunächst geeignete Ausführungsorte\footnote{Geeignete Ausführungsorte (\textit{preferred locations}) können sich z.B. aus dem Ort eines Blocks bei HDFS ermitteln lassen (Node-Local, Rack-Local, etc.) oder daraus, ob ein Executor bereits einen Datensatz geladen hat (Process-Local)} ermittelt, von denen dann jeder per geeignetem Partitionierer mindestens einen \textit{bucket} von Elementen verarbeitet. Diese Elemente stammen dann in der Regel aus verschiedenen Vorgängerpartitionen.\\
 Das so neu-partitionierte und verarbeitete \gls{RDD} wird so zum Ausgangspunkt des folgenden \gls{rdd}.\\
