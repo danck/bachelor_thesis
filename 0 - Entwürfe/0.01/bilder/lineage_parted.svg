@@ -506,7 +506,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="318.82137"
+     inkscape:cx="154.1665"
      inkscape:cy="775.76614"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -530,7 +530,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -559,14 +559,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="22.943361"
+       x="46.176868"
        y="46.112198"
        id="text4595-1"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4597-7"
-         x="22.943361"
-         y="46.112198">Transformation</tspan></text>
+         x="46.176868"
+         y="46.112198">Task</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.00071287;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5297)"
        d="m 17.667092,52.799751 83.155718,-0.45668"

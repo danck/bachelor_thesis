@@ -264,18 +264,39 @@ Bei den \glspl{rdd} wurden bisher insbesondere drei Aspekte behandelt:
 	\item die \textbf{Funktion} mit der ein \gls{rdd} aus einem oder mehreren direkten Vorgängern berechnet wird
 \end{itemize}
 
-Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine einfache Baumstruktur für die Berechnung eines \gls{rdd}.\\
+Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine einfache Baumstruktur für die Berechnung eines \gls{rdd} (Abb.~\ref{fig:lineage_basic}.\\
 
-Betrachtet man zusätzlich die Partitionierung und die Funktion mit der \glspl{rdd} transformiert werden, sieht man einen wichtigen Unterschied zwischen verschiedenen Vorgängerbeziehungen:
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.7]{lineage_basic.pdf}
+	\caption{Einfacher Abhängigkeitsbaum eines RDD}
+	\label{fig:lineage_basic}
+\end{figure}
+
+Betrachtet man zusätzlich die Partitionierung und die Funktion mit der \glspl{rdd} transformiert werden, sieht man einen wichtigen Unterschied zwischen verschiedenen Vorgängerbeziehungen (siehe Abb.~\ref{fig:lineage_parted}):
 \begin{itemize}
 \item Solche deren einzelne Partitionen höchstens eine Vorgängerpartition haben
 \item Solche bei denen mindestens eine Partition mehr als eine Vorgängerpartition hat
 \end{itemize}
 
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.7]{lineage_parted.pdf}
+	\caption{Gerichteter azyklischer Graph der Abhängigkeiten auf Partitionen}
+	\label{fig:lineage_parted}
+\end{figure}
+
 Wird eine Partition aus höchstens einer anderen erzeugt, lässt sich diese direkt auf dem selben Knoten berechnen. Werden jedoch verschiedene Partitionen benötigt um eine Folgepartition zu erzeugen stellt sich die Frage auf welchen Knoten das am Besten geschieht.\\
 Spark unterteilt diese beiden Fälle in \textit{narrow dependencies} (erster Fall) und \textit{wide dependencies} (zweiter Fall) (\cite{Mat12}).\\
 
-Der Abhängigkeitsgraph eines \gls{rdd} wird nun in sogenannte \textit{Stages} zerlegt. Eine \textit{Stage} ist dabei ein Untergraph, dessen Elemente (von den Blättern in Richtung Wurzel betrachtet) auf eine gemeinsame \textit{wide dependency} stoßen.\\
+Der Abhängigkeitsgraph eines \gls{rdd} wird nun in sogenannte \textit{Stages} zerlegt (Abb.~\ref{fig:lineage_stages}). Eine \textit{Stage} ist dabei ein Untergraph, dessen Elemente (von den Blättern in Richtung Wurzel betrachtet) auf eine gemeinsame \textit{wide dependency} stoßen.\\
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.7]{lineage_stages.pdf}
+	\caption{Stages als Untermenge des Ahängigkeitsgraphen von Partitionen}
+	\label{fig:lineage_stages}
+\end{figure}
 
 Elemente innerhalb einer Stage, können nach dieser Konstruktion unabhängig auf den Knoten berechnet werden, die die jeweilige Partition vorhalten. Ein Datenelement \(x_{i,j}\) sei dabei Element eines \gls{rdd} \(j\) und Element einer lokalen Partition \(P_{i,j}\) (d.h. es existiert auf einem Knoten \(i\)):
 
