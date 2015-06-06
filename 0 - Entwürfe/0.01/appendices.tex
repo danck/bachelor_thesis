@@ -1,6 +1,36 @@
 \begin{appendices}
 \section{Installation der Plattform}
 \section{Quellcode (Auszüge)}
+\subsection{Realisierung einer einfachen Continuous Deployment Pipeline}
+\textit{post-receive}-Hook von dem Git-Repository\footnote{https://git-scm.com/, abgerufen am 06.06.2015} der ModelBuilder-Komponente
+\begin{lstlisting}[language=Bash,caption={Primitive Continuous Deployment Pipeline. Beispiel: ModelBuilder},label={lst:cdp_modelbuilder}]
+#/bin/bash
+
+export SPARK_HOME=/opt/spark/
+
+# clean up previous build
+rm -rf ~/autobuilds/model_builder
+cd ~/autobuilds
+git clone ~/git/model_builder
+cd model_builder
+
+# run build
+sbt package
+if [ $? -ne "0" ]; then exit 1; fi
+
+# run test suite
+sbt test
+if [ $? -ne "0" ]; then exit 1; fi
+
+# deploy to cluster
+/opt/spark/bin/spark-submit --class "de.haw.bachelorthesis.dkirchner\
+.ModelBuilder" --master spark://192.168.206.131:7077 --driver-memory\
+256m --executor-memory 384m \
+~/autobuilds/model_builder/ [...] /model-builder_2.10-1.0.jar\
+hdfs://192.168.206.131:54310/user/daniel/user_emails_corpus1.txt\
+<emailaccount> <passwort>
+\end{lstlisting}
+
 \section{Sonstiges}
 \subsection{Einschätzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}
 \label{subsec:commodity_servers}
@@ -11,7 +41,7 @@ In der Grundkonfiguration kosten diese Systeme (zum Zeitpunkt dieser Arbeit) um 
 	\centering % used for centering table
 	\begin{tabular}{c c c c} % centered columns (4 columns)
 		\hline\hline %inserts double horizontal lines
-		Modell & Netzwerkschnittstelle & Interner Bus für Festspeicher & Arbeitsspeicher\\ [0.5ex] % inserts table
+		Modell & Netzwerkschnittstelle & Festspeicher & Arbeitsspeicher\\ [0.5ex] % inserts table
 		%heading
 		\hline % inserts single horizontal line
 		Dell PowerEdge R530 & 1Gb/s Ethernet & PCIe 3.0 & DDR4\\ 

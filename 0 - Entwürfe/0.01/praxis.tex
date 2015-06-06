@@ -1,20 +1,20 @@
 \chapter{Beispielanwendung von Spark zur Datenanalyse}
 
-Zur vertiefenden Betrachtung von Spark wird im Folgenden die Implementation einer realitätsnahen Beispielanwendung gezeigt.\\
+Zur vertiefenden Betrachtung von Spark wird im Folgenden die Implementation einer Beispielanwendung gezeigt.\\
 
 Dazu sollen mindestens zwei verschiedene Standardbibliotheken und deren Integration in eine gemeinsame Anwendung durchgeführt werden.\\
 
 Anschließend werden rudimentäre Skalierungs- und Stresstests der Anwendung durchgeführt und der durchgeführte Versuch unter den Kriterien \textit{Einfachheit}, \textit{Skalierbarkeit}, \textit{Erweiterbarkeit}, \textit{Robustheit}, \textit{Sicherheit} und \textit{Wartbarkeit} zusammengefasst und bewertet.
 
 \section{Anwendungsfall}
-In dem Anwendungsfall soll ein Dashboard erstellt werden, auf dem ##################
-en Textnachrichten aus einem Datenstrom gelesen werden und dabei - entsprechend ihrer aktuellen Relevanz für einen Sparkbenutzer - bewertet und gefiltert werden. Als Maßstab für die Relevanz sollen Begriffen dienen, die kürzlich in der Mailingliste der Sparkbenutzer diskutiert wurden.\\
+In dem Anwendungsfall soll ein Dashboard erstellt werden, auf dem Textnachrichten angezeigt werden.
+Die Textnachrichten werden aus einem Datenstrom gelesen und dabei - entsprechend ihrer aktuellen Relevanz für einen Sparkbenutzer - bewertet und gefiltert. Als Maßstab für die Relevanz sollen Begriffen dienen, die kürzlich in der Mailingliste der Sparkbenutzer diskutiert wurden.\\
 
-Als Datenquellen dienen einerseits die Emails aus der Malingliste\footnote{user@spark.apache.org} und andererseits der von Twitter kostenlose Datenstrom\footnote{https://dev.twitter.com/streaming/sitestreams} mit Textnachrichten (\glspl{tweet}).
+Als Datenquellen dienen einerseits die Emails aus der Malingliste\footnote{user@spark.apache.org} und andererseits der öffentliche Datenstrom\footnote{https://dev.twitter.com/streaming/sitestreams} mit Textnachrichten (\glspl{tweet}) der Plattform Twitter\footnote{https://twitter.com, abgerufen am 06.06.2015}.
 
 \subsection{Anforderungen}
 
-Für die Software soll folgende lose Sammlung funktionaler und nicht-funktionaler Anforderungen gelten. Mit \textit{Information} ist jeweils eine Auflistung von Twitter-Meldungen gemeint.
+Für die Software soll folgende lose Sammlung funktionaler und nicht-funktionaler Anforderungen gelten. Mit \textit{Information} ist jeweils eine Auflistung von \glspl{tweet} gemeint.
 
 \begin{itemize}
 	\item \textbf{A1: Zugriff auf die Information}\\
@@ -25,9 +25,9 @@ Für die Software soll folgende lose Sammlung funktionaler und nicht-funktionale
 	Die Relevanz soll an aktuellen Themen der Entwicklergemeinschaft gemessen werden.
 \end{itemize}
 
-\subsection{Hardwarekontext und Performance-Basisdaten}
+\subsection{Technische Rahmenbedingungen}
 
-Als Testumgebung dient ein \gls{cluster} aus vier identischen \gls{worker}n und einem speziellen \gls{master}knoten (Abb. \ref{figure:versuchsaufbau}).
+Als Versuchsumgebung dient ein \gls{cluster} aus vier identischen \gls{worker}n und einem speziellen \gls{master}knoten (Abb. \ref{figure:versuchsaufbau}).
 
 \begin{figure}[h]
 	\centering
@@ -77,7 +77,6 @@ Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch m
 \end{table}
 
 \subsection{Lösungsskizze}
-
 
 \paragraph{Wahl des Dateisystems}
 
@@ -172,25 +171,25 @@ In der dritten Schicht werden die als relevant eingestuften Emails in einer graf
 
 \paragraph{Presentation-Komponente}\\
 
+\paragraph{Hinweise zur Entwicklung}
+Die Komponenten werden in jeweils eigenen Projekten entwickelt, die sich einzeln auf dem Cluster deployen lassen. Das hat den Vorteil, dass eine einfache Continuous Deployment Pipeline (Abb.~\ref{figure:cd_pipeline}) eingesetzt werden kann, die Änderungen an den jeweiligen Projekten automatisiert auf dem Cluster deployt und so schnellstmögliches Feedback ermöglicht, sowie eine stets lauffähige Codebasis begünstigt.\\
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.5]{Pipeline.pdf}
+	\caption{Einfache Continuous Deployment Pipeline}
+	\label{figure:cd_pipeline}
+\end{figure}
 
 \subsection{Ergebnisse und Bewertung}
 \paragraph{Dashboard}
 \paragraph{Laufzeitverhalten}
+Blockgröße, Anzahl Worker, Anzahl Replikationen der Blöcke
 \paragraph{Bewertung und Probleme}
 
-
-\section{Spark-basierte Implementation von Operatoren aus der Klimaforschung}
-\textcolor{gray}{--- Implementation ausgewählter CDOs (sehr wenige, möglicherweise nur 1-2) mit der Core-API von Spark. Testlauf auf einem HPC Cluster mit nicht-lokalem, allerdings per Infiniband angeschlossenen Storage.
-Insbesondere Betrachtung des Skalierungsverhaltens und der "`Sinnhaftigkeit"'. ---}
-
-\subsection{Beschreibung des Problems}
-\textcolor{gray}{--- Erläuterung von CDOs (Climate Data Operators). ---}
-\subsection{Hardwarekontext und Performance-Basisdaten}
-\textcolor{gray}{--- hier kommen die eingesetzten Systeme, und relevante Laufzeitmessungen (netzwerk, storage, cpu) hin ---}
-\subsection{Architekturübersicht}
-\textcolor{gray}{--- hier kommen Verteilungs- und Komponentendiagramm hin ---}
-\subsection{Detailierte Lösungsbeschreibung}
-\textcolor{gray}{--- hier kommen laufzeitdiagramme und codeschnipsel hin ---}
-\subsection{Ergebnisse}
-\textcolor{gray}{--- Tabellen und Diagramme Ergebnissen, evt. Skalierungsverhalten ---}
-\textcolor{gray}{--- Bewertung ---}
+\textit{Einfachheit}
+\textit{Skalierbarkeit}
+\textit{Erweiterbarkeit}
+\textit{Robustheit}
+\textit{Sicherheit}
+\textit{Wartbarkeit}
