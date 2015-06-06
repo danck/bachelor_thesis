@@ -66,6 +66,7 @@
   \field{labelalpha}{Apa}
   \field{extraalpha}{1}
   \field{sortinit}{A}
+  \field{note}{Abgerufen am 06.06.2015}
   \field{title}{Apache Software Foundation}
   \verb{url}
   \verb http://apache.org
@@ -84,6 +85,91 @@
   \verb https://www.apache.org/licenses/LICENSE-2.0
   \endverb
   \field{year}{2004}
+\endentry
+
+\entry{Armbrust:2015:SSR:2723372.2742797}{inproceedings}{}
+  \name{author}{11}{}{%
+    {{}%
+     {Armbrust}{A.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Xin}{X.}%
+     {Reynold~S.}{R.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lian}{L.}%
+     {Cheng}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Huai}{H.}%
+     {Yin}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Davies}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bradley}{B.}%
+     {Joseph~K.}{J.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Meng}{M.}%
+     {Xiangrui}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kaftan}{K.}%
+     {Tomer}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Franklin}{F.}%
+     {Michael~J.}{M.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ghodsi}{G.}%
+     {Ali}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zaharia}{Z.}%
+     {Matei}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{data warehouse, databases, hadoop, machine learning, spark}
+  \strng{namehash}{AM+1}
+  \strng{fullhash}{AMXRSLCHYLDBJKMXKTFMJGAZM1}
+  \field{labelalpha}{Arm+15}
+  \field{sortinit}{A}
+  \field{booktitle}{Proceedings of the 2015 ACM SIGMOD International Conference
+  on Management of Data}
+  \verb{doi}
+  \verb 10.1145/2723372.2742797
+  \endverb
+  \field{isbn}{978-1-4503-2758-9}
+  \field{pages}{1383\bibrangedash 1394}
+  \field{series}{SIGMOD '15}
+  \field{title}{Spark SQL: Relational Data Processing in Spark}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2723372.2742797
+  \endverb
+  \list{location}{1}{%
+    {Melbourne, Victoria, Australia}%
+  }
+  \field{year}{2015}
+  \warn{\item Can't use 'location' + 'address'}
 \endentry
 
 \entry{Bit14}{misc}{}
@@ -207,6 +293,62 @@
   \field{year}{2003}
 \endentry
 
+\entry{Gonzalez:2014:GGP:2685048.2685096}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Gonzalez}{G.}%
+     {Joseph~E.}{J.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Xin}{X.}%
+     {Reynold~S.}{R.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dave}{D.}%
+     {Ankur}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Crankshaw}{C.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Franklin}{F.}%
+     {Michael~J.}{M.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stoica}{S.}%
+     {Ion}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{GJE+1}
+  \strng{fullhash}{GJEXRSDACDFMJSI1}
+  \field{labelalpha}{Gon+14}
+  \field{sortinit}{G}
+  \field{booktitle}{Proceedings of the 11th USENIX Conference on Operating
+  Systems Design and Implementation}
+  \field{isbn}{978-1-931971-16-4}
+  \field{pages}{599\bibrangedash 613}
+  \field{series}{OSDI'14}
+  \field{title}{GraphX: Graph Processing in a Distributed Dataflow Framework}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2685048.2685096
+  \endverb
+  \list{location}{1}{%
+    {Broomfield, CO}%
+  }
+  \field{year}{2014}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
 \entry{googletrends}{misc}{}
   \name{author}{1}{}{%
     {{}%
@@ -219,6 +361,7 @@
   \strng{fullhash}{G1}
   \field{labelalpha}{Goo}
   \field{sortinit}{G}
+  \field{note}{Abgerufen am 06.06.2015}
   \field{title}{Google Trends}
   \verb{url}
   \verb https://www.google.com/trends
@@ -376,6 +519,7 @@
   \strng{fullhash}{R1}
   \field{labelalpha}{Ras}
   \field{sortinit}{R}
+  \field{note}{Abgerufen am 06.06.2015}
   \field{title}{Raspbian Operating System}
   \verb{url}
   \verb http://www.raspbian.org
@@ -443,6 +587,7 @@
   \strng{fullhash}{U1}
   \field{labelalpha}{Ubu}
   \field{sortinit}{U}
+  \field{note}{Abgerufen am 06.06.2015}
   \field{title}{Ubuntu Operating System}
   \verb{url}
   \verb http://www.ubuntu.com

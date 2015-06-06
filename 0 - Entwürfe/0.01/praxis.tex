@@ -1,18 +1,16 @@
-\chapter{Beispielanwendungen von Spark zur Datenanalyse}
-Im Folgenden wird Apache Spark im Rahmen zweier grundsätzlich verschiedener Anwendungsfälle betrachtet. \\
+\chapter{Beispielanwendung von Spark zur Datenanalyse}
 
-Beispiel 1: Eine typische Anwendung mit verteilten lokalem Storage (HDFS) und Spark als "`Client"' eines bestehenden Yarn Clustermanagers. \textcolor{gray}{--- Commodity Hardware (Rasperry Pi Cluster). ---}\\
+Zur vertiefenden Betrachtung von Spark wird im Folgenden die Implementation einer realitätsnahen Beispielanwendung gezeigt.\\
 
+Dazu sollen mindestens zwei verschiedene Standardbibliotheken und deren Integration in eine gemeinsame Anwendung durchgeführt werden.\\
 
-Beispiel 2: Eine untypische Anwendung mit verteiltem entfernten Storage und dem Spark Standalone Clustermanager. \textcolor{gray}{--- HPC Hardware ("`Thunder"' des Hamburger KlimaCampus). ---}\\
+Anschließend werden rudimentäre Skalierungs- und Stresstests der Anwendung durchgeführt und der durchgeführte Versuch unter den Kriterien \textit{Einfachheit}, \textit{Skalierbarkeit}, \textit{Erweiterbarkeit}, \textit{Robustheit}, \textit{Sicherheit} und \textit{Wartbarkeit} zusammengefasst und bewertet.
 
-\section{Anwendung zur Echtzeitanalyse eines Datenstroms anhand eines veränderlichen Stammdatenbestandes}
+\section{Anwendungsfall}
+In dem Anwendungsfall soll ein Dashboard erstellt werden, auf dem ##################
+en Textnachrichten aus einem Datenstrom gelesen werden und dabei - entsprechend ihrer aktuellen Relevanz für einen Sparkbenutzer - bewertet und gefiltert werden. Als Maßstab für die Relevanz sollen Begriffen dienen, die kürzlich in der Mailingliste der Sparkbenutzer diskutiert wurden.\\
 
-Es sollen aktuelle Informationen bereitgestellt werden, die besonders für Nutzer und Entwickler des Softwareproduktes Apache Spark relevant sind.\\
-
-Dazu werden die beiden Mailinglisten user@spark.apache.org und dev@spark.apache.org als Textquellen herangezogen. Aus diesen Quellen sollen Informationen über aktuelle Themen innerhalb der Nutzer- und Entwicklergemeinschaft gewonnen werden.\\
-
-Mit diesen Informationen über aktuelle Themen, sollen dann in einem Echtzeitverfahren Nachrichten aus dem Twitter-Datenstrom nach der gemessenen Relevanz bewertet werden.
+Als Datenquellen dienen einerseits die Emails aus der Malingliste\footnote{user@spark.apache.org} und andererseits der von Twitter kostenlose Datenstrom\footnote{https://dev.twitter.com/streaming/sitestreams} mit Textnachrichten (\glspl{tweet}).
 
 \subsection{Anforderungen}
 
