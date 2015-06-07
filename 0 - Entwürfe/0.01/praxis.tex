@@ -138,6 +138,7 @@ HDFS als Komponente von Apache Hadoop ist in den Versionen 2.x deutlich bezügli
 Spark läuft in diesem Versuch als alleinige Computeanwendung auf dem Cluster. Es ist also nicht nötig Konkurrenz um Ressourcen zu berücksichtigen. Für diesen Versuch wird daher der Standalone Clustermanager gewählt.\\
 
 \paragraph{Architekturübersicht}\\
+\\
 
 Die Implementation des Anwendungsfalles soll in drei Schichten erfolgen. \\
 In einer Schicht findet die Verarbeitung eingehender Emails statt und es werden die Relevanz der Begriffe bewertet (\textit{Batch Layer}).
@@ -152,6 +153,7 @@ In der dritten Schicht werden die als relevant eingestuften Emails in einer graf
 \end{figure}
 
 \paragraph{Batch Layer}\\
+\\
 
 In dieser Schicht wird die Verarbeitung von Emails aus der Spark-User-Mailingliste zu einem Modell von relevanten Wörtern geleistet.\\
 
@@ -161,14 +163,13 @@ Diese Bewertung soll das Maß für die Relevanz eines Wortes in der betrachteten
 
 TF-IDF steht für \textit{Term Frequency - Inverse Document Frequency} (\cite{SparckJones:1988:SIT:106765.106782}). Dieses Verfahren bewertet die Relevanz eines Wortes für einen Text nach der Häufigkeit dieses Wortes in dem Text (\textit{Term Frequency}). Die Bewertung eines Wortes wird jedoch abgeschwächt je häufiger es in einem Textkorpus vorkommt (\textit{Inverse Document Frequency}).\\
 
-Eine Implementation dieses Verfahrens ist in der Spark Standardbibliothek \textit{MLLib} in dem Bereich \textit{Feature Extraction} verfügbar.\\
+Eine Implementation dieses Verfahrens ist in der Spark Standardbibliothek \textit{MLLib} in dem Bereich \textit{Feature Extraction} verfügbar\footnote{https://github.com/apache/spark/tree/branch-1.3/mllib/src/main/scala/org/apache/spark/mllib/feature, abgerufen am 04.06.2015}.\\
 
 In diesem Anwendungsfall gilt:
 \begin{itemize}
 \item Email-Bodies\footnote{Textbereich einer Email} werden jeweils als Dokumente verarbeitet
 \item Das Archiv aller Email-Bodies ist der Textkorpus\footnote{Ein unabhängiger Textkorpus (wie etwa Wikipedia) würde wahrscheinlich bessere Ergebnisse liefern. Beispielsweise würden Begriffe wie \textit{Spark} und \textit{Apache} durch ihre geringere Häufigkeit in dessen Dokumenten höher bewertet werden. Für diese Demonstration bietet aber die Gesamtheit der Email-Texte ausreichend Volumen und zeitliche Dynamik und verringert außerdem die Komplexität der Implementierung.}
 \end{itemize}
-
 
 \begin{figure}[ht!]
 	\centering
@@ -177,7 +178,14 @@ In diesem Anwendungsfall gilt:
 	\label{figure:demo_app_batchlayer}
 \end{figure}
 
+
+
 \paragraph{Streaming Layer}\\
+\\
+
+In dieser Schicht werden die Nachrichten aus dem Twitter-Datenstrom bewertet und gefiltert.\\
+
+Dazu wird über die Spark-Komponente \textit{TwitterUtils}\footnote{TwitterUtils sind Teil der Spark-Standardbibliothek org.apache.spark.streaming.twitter} eine Verbindung über HTTP zu einem Twitter-Endpunkt aufgebaut\footnote{https://dev.twitter.com/streaming/overview/connecting, abgerufen am 01.06.2015}. Über diese Verbindung werden - bei unpriveligiertem Zugriff - etwa zehn Tweets pro Sekunde über einen dauerhaften Datenstrom zur Verfügung gestellt.\\
 
 \begin{figure}[ht!]
 	\centering
@@ -186,7 +194,49 @@ In diesem Anwendungsfall gilt:
 	\label{figure:demo_app_streaminglayer}
 \end{figure}
 
+In der Komponente RealtimeAnalyzer wurden vor dem Start des Datenstroms Funktionen zur Bewertung einzelner Tweets registriert (VERWEIS?).\\
+
+Die Funktion \lstinline|ScoreTweets| zur Bewertung einzelner Tweets
+
+\[\lstinline|ScoreTweets|: Tweets \longrightarrow \rm I\!R \times Tweets\]
+\[tweet \mapsto (score, tweet)\]
+
+wird dabei wie in Listing \ref{lst:tweet_score} dargestellt implementiert:
+
+\begin{lstlisting}[language=Scala,caption={Bewertung von Tweets},label={lst:tweet_score}]
+val scoredTweets = {
+  stream.map(status => (
+    status.getText.split(" ")
+      .map(word =>
+        scores.apply(
+          hashingTF.indexOf(word
+            .toLowerCase
+            .replaceAll("[^a-zA-Z0-9]", " ")
+          )
+        )
+      )
+      .reduce(_ + _)
+      ./(status.getText.split(" ").length)
+    , status)
+  )
+}
+\end{lstlisting}
+
+Folgendes wird dabei gemacht:
+\begin{enumerate}
+	\item Extrahieren des Textinhaltes (Metadaten werden ignoriert)
+	\item Zerlegen des Textes in einzelne Wörter
+	\item Normalisieren der Wörter durch Umwandeln in Kleinbuchstaben und Entfernen von Sonderzeichen
+	\item Index der einzelnen Wörter im TF-IDF-Vektor berechnen und dem eingetragenen Score zuweisen (Map)
+	\item Scores aller Wörter eines Tweets summieren (Reduce)
+	\item Normalisieren des Scores per Division durch die Anzahl aller Wörter des Tweets
+	\item Rückgabe des Tupels \textit{(Score, Status)}
+\end{enumerate}
+
+Anschließend werden die erzeugten Tupel nach der Größe des erreichten Scores gefiltert und die verbleibenden Status-Texte an den TweetSink weitergegeben.\\
+
 \paragraph{Presentation Layer}\\
+\\
 
 \begin{figure}[ht!]
 	\centering
