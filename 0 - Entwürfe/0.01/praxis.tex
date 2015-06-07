@@ -10,6 +10,13 @@ Anschließend werden rudimentäre Skalierungs- und Stresstests der Anwendung dur
 In dem Anwendungsfall soll ein Dashboard erstellt werden, auf dem Textnachrichten angezeigt werden.
 Die Textnachrichten werden aus einem Datenstrom gelesen und dabei - entsprechend ihrer aktuellen Relevanz für einen Sparkbenutzer - bewertet und gefiltert. Als Maßstab für die Relevanz sollen Begriffen dienen, die kürzlich in der Mailingliste der Sparkbenutzer diskutiert wurden.\\
 
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.7]{demo_app_usecase.pdf}
+	\caption{Anwendungsfalldiagramm der Demo-Applikation}
+	\label{figure:demo_app_usecase}
+\end{figure}
+
 Als Datenquellen dienen einerseits die Emails aus der Malingliste\footnote{user@spark.apache.org} und andererseits der öffentliche Datenstrom\footnote{https://dev.twitter.com/streaming/sitestreams} mit Textnachrichten (\glspl{tweet}) der Plattform Twitter\footnote{https://twitter.com, abgerufen am 06.06.2015}.
 
 \subsection{Anforderungen}

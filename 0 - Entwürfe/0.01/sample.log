@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  7 JUN 2015 00:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  7 JUN 2015 09:32
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -2980,35 +2980,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-[23
+<demo_app_usecase.pdf, id=2350, 468.95201pt x 475.376pt>
+File: demo_app_usecase.pdf Graphic file (type pdf)
+ <use demo_app_usecase.pdf>
+Package pdftex.def Info: demo_app_usecase.pdf used on input line 15.
+(pdftex.def)             Requested size: 328.26416pt x 332.76093pt.
+ [23
 
 
 
 
-] <./versuchsaufbau.png, id=2369, 211.992pt x 224.037pt>
+]
+<./versuchsaufbau.png, id=2370, 211.992pt x 224.037pt>
 File: ./versuchsaufbau.png Graphic file (type png)
  <use ./versuchsaufbau.png>
-Package pdftex.def Info: ./versuchsaufbau.png used on input line 34.
+Package pdftex.def Info: ./versuchsaufbau.png used on input line 41.
 (pdftex.def)             Requested size: 211.99147pt x 224.03644pt.
 File: ./versuchsaufbau.png Graphic file (type png)
  <use ./versuchsaufbau.png>
-Package pdftex.def Info: ./versuchsaufbau.png used on input line 34.
+Package pdftex.def Info: ./versuchsaufbau.png used on input line 41.
 (pdftex.def)             Requested size: 211.99147pt x 224.03644pt.
 \SVG@out@file=\write15
 \SVG@in@file=\read3
-runsystem(pdflatex ./Fig.1.tex)...executed.
+runsystem(pdflatex ./Fig.2.tex)...executed.
 
-runsystem(mv Fig.1.pdf ./Fig.1.pdf)...executed.
+runsystem(mv Fig.2.pdf ./Fig.2.pdf)...executed.
 
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\versuchsaufbau.pdf_tex"
-<versuchsaufbau.pdf, id=2370, page=1, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=2371, page=1, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 211.99147pt x 223.27982pt.
 
-<versuchsaufbau.pdf, id=2371, page=2, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=2372, page=2, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
@@ -3038,7 +3044,7 @@ Overfull \hbox (9.93648pt too wide) in paragraph at lines 60--60
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
  []
 
-<versuchsaufbau.pdf, id=2372, page=3, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=2373, page=3, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 3>
 Package pdftex.def Info: versuchsaufbau.pdf, page3 used on input line 61.
@@ -3048,13 +3054,14 @@ Overfull \hbox (5.11456pt too wide) in paragraph at lines 62--62
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Master  
  []
 
-<versuchsaufbau.pdf, id=2373, page=4, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=2374, page=4, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 4>
 Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
 (pdftex.def)             Requested size: 211.99147pt x 223.27982pt.
-) [24 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf> <C:/Users/Dani
-el/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf
+) [24 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_usecase.pdf>] [25 <C:/Use
+rs/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf> <C:/Users/Daniel/Documents/
+1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuc
 hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -3067,22 +3074,22 @@ hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuc
 hsaufbau.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Overfull \hbox (5.5441pt too wide) in paragraph at lines 118--129
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+[26]
+Overfull \hbox (5.5441pt too wide) in paragraph at lines 125--136
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
@@ -3093,16 +3100,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 
+l.141 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<data_centric_layers.pdf, id=2395, 514.02556pt x 216.65051pt>
+<data_centric_layers.pdf, id=2561, 514.02556pt x 216.65051pt>
 File: data_centric_layers.pdf Graphic file (type pdf)
  <use data_centric_layers.pdf>
-Package pdftex.def Info: data_centric_layers.pdf used on input line 142.
+Package pdftex.def Info: data_centric_layers.pdf used on input line 149.
 (pdftex.def)             Requested size: 359.81543pt x 151.65431pt.
 
 
@@ -3112,21 +3119,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[26]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.150 
+l.155 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3139,29 +3132,42 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.152 
+l.157 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<demo_app_deployment.pdf, id=2402, 600.64403pt x 536.39526pt>
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<demo_app_deployment.pdf, id=2562, 600.64403pt x 536.39526pt>
 File: demo_app_deployment.pdf Graphic file (type pdf)
  <use demo_app_deployment.pdf>
-Package pdftex.def Info: demo_app_deployment.pdf used on input line 155.
+Package pdftex.def Info: demo_app_deployment.pdf used on input line 162.
 (pdftex.def)             Requested size: 420.44795pt x 375.47412pt.
 
-Overfull \hbox (6.58961pt too wide) in paragraph at lines 155--156
+Overfull \hbox (6.58961pt too wide) in paragraph at lines 162--163
  [][] 
  []
 
-<demo_app_components.pdf, id=2403, 648.02098pt x 445.48189pt>
+<demo_app_components.pdf, id=2563, 648.02098pt x 445.48189pt>
 File: demo_app_components.pdf Graphic file (type pdf)
  <use demo_app_components.pdf>
-Package pdftex.def Info: demo_app_components.pdf used on input line 163.
+Package pdftex.def Info: demo_app_components.pdf used on input line 170.
 (pdftex.def)             Requested size: 421.20865pt x 289.55978pt.
 
-Overfull \hbox (7.35031pt too wide) in paragraph at lines 163--164
+Overfull \hbox (7.35031pt too wide) in paragraph at lines 170--171
  [][] 
  []
 
@@ -3172,7 +3178,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 
+l.176 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3185,7 +3191,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.171 
+l.178 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3198,34 +3204,34 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173 
+l.180 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
-<Pipeline.pdf, id=2405, 845.03705pt x 597.36174pt>
+<Pipeline.pdf, id=2576, 845.03705pt x 597.36174pt>
 File: Pipeline.pdf Graphic file (type pdf)
  <use Pipeline.pdf>
-Package pdftex.def Info: Pipeline.pdf used on input line 179.
+Package pdftex.def Info: Pipeline.pdf used on input line 186.
 (pdftex.def)             Requested size: 422.51749pt x 298.68013pt.
 
-Overfull \hbox (8.65915pt too wide) in paragraph at lines 179--180
+Overfull \hbox (8.65915pt too wide) in paragraph at lines 186--187
  [][] 
  []
 
-) [27 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/data_centric_layers.pdf>] [28 <C:/
-Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_deployment.pdf>] [29 <C:/Users/Dani
-el/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_components.pdf>] [30 <C:/Users/Daniel/Documen
+) [28 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/data_centric_layers.pdf>] [29 <C:/
+Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_deployment.pdf>] [30 <C:/Users/Dani
+el/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_components.pdf>] [31 <C:/Users/Daniel/Documen
 ts/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/Pipeline.pdf>]
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.tex"
 Kapitel 4.
-) [31
+) [32
 
 
 
@@ -3233,7 +3239,7 @@ Kapitel 4.
 ]
 ===== Section: literature
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.acr")
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [32
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [33
 
 
 
@@ -3243,7 +3249,7 @@ Kapitel 4.
 
 ])
 ===== File: appendices
-[33
+[34
 
 
 
@@ -3253,7 +3259,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 1.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 1.
- [34
+ [35
 
 
 
@@ -3276,12 +3282,7 @@ Overfull \hbox (0.14587pt too wide) in paragraph at lines 27--28
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[35]
-Overfull \hbox (41.53557pt too wide) in paragraph at lines 42--52
- [][] 
- []
-
-) [36]
+[36]) [37]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 201.
 
@@ -3301,7 +3302,7 @@ Overfull \hbox (34.41228pt too wide) in paragraph at lines 202--202
 \T1/LinuxLibertineMonoT-TLF/m/n/10.95 Leitfaden _ Big -[] Data -[] Technologien -[] Wissen _ fuer _ Entscheider _
  []
 
-[37
+[38
 
 
 
@@ -3317,9 +3318,9 @@ Overfull \hbox (28.70749pt too wide) in paragraph at lines 202--202
 \T1/LinuxLibertineMonoT-TLF/m/n/10.95 apache . org / jira / browse / SPARK / ?selectedTab = com . atlassian .
  []
 
-[38] [39]
+[39] [40]
 ===== Section: index
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [40]
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [41]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
 
@@ -3331,20 +3332,48 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
-Package rerunfilecheck Info: File `sample.out' has not changed.
-(rerunfilecheck)             Checksum: C194B3B38EB079C7CF9595F0DD7F0B7E;2720.
+
+
+Package rerunfilecheck Warning: File `sample.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `sample.out':
+(rerunfilecheck)             Before: C194B3B38EB079C7CF9595F0DD7F0B7E;2720
+(rerunfilecheck)             After:  21DA1493168CE0B2056389ED61A95F00;2720.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'sample.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
  ) 
 Here is how much of TeX's memory you used:
- 48712 strings out of 493921
- 1052497 string characters out of 3144873
- 1733922 words of memory out of 3000000
- 50581 multiletter control sequences out of 15000+200000
+ 48729 strings out of 493921
+ 1052802 string characters out of 3144873
+ 1733925 words of memory out of 3000000
+ 50586 multiletter control sequences out of 15000+200000
  152173 words of font info for 199 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
  74i,19n,112p,1826b,3037s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{glo:tweet} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.59} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.38} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.36} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.34} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.50} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.44} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.40} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.58} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.56} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming/M
 iKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertin
@@ -3363,9 +3392,9 @@ s/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on sample.pdf (48 pages, 1489109 bytes).
+Output written on sample.pdf (49 pages, 1525931 bytes).
 PDF statistics:
- 3722 PDF objects out of 4296 (max. 8388607)
- 279 named destinations out of 1000 (max. 500000)
- 39936 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 3899 PDF objects out of 4296 (max. 8388607)
+ 290 named destinations out of 1000 (max. 500000)
+ 39941 words of extra memory for PDF output out of 42996 (max. 10000000)
 
