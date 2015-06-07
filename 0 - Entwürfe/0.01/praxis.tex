@@ -162,6 +162,13 @@ In der dritten Schicht werden die als relevant eingestuften Emails in einer graf
 
 \paragraph{Streaming Layer}\\
 
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[scale=0.7]{streaming_layer.pdf}
+	\caption{Innenansicht der Streaming-Layer Komponente}
+	\label{figure:demo_app_streaminglayer}
+\end{figure}
+
 \paragraph{Presentation Layer}\\
 
 \begin{figure}[ht!]
@@ -179,25 +186,21 @@ In der dritten Schicht werden die als relevant eingestuften Emails in einer graf
 	\label{figure:demo_app_komponenten}
 \end{figure}
 
-\paragraph{Batch Komponente}\\
-
-\paragraph{Streaming-Komponente}\\
-
-\paragraph{Presentation-Komponente}\\
-
 \paragraph{Hinweise zur Entwicklung}
 Die Komponenten werden in jeweils eigenen Projekten entwickelt, die sich einzeln auf dem Cluster deployen lassen. Das hat den Vorteil, dass eine einfache Continuous Deployment Pipeline (Abb.~\ref{figure:cd_pipeline}) eingesetzt werden kann, die Änderungen an den jeweiligen Projekten automatisiert auf dem Cluster deployt und so schnellstmögliches Feedback ermöglicht, sowie eine stets lauffähige Codebasis begünstigt.\\
 
 \begin{figure}[ht!]
 	\centering
-  \includegraphics[scale=0.5]{Pipeline.pdf}
+  \includegraphics[scale=0.67]{Pipeline.pdf}
 	\caption{Einfache Continuous Deployment Pipeline}
 	\label{figure:cd_pipeline}
 \end{figure}
 
+Diese Pipeline ist durch ein \textit{post-receive}-Skript in den jeweiligen Repositories der Komponenten auf dem Gateway-Rechner realisiert (Beispiel im Anhang~\ref{subsec:pipeline}).\\
+
 \subsection{Ergebnisse und Bewertung}
-\paragraph{Dashboard}
-\paragraph{Laufzeitverhalten}
+\paragraph{Funktionale Aspekte}
+\paragraph{Nicht-Funktionale Aspekte}
 Blockgröße, Anzahl Worker, Anzahl Replikationen der Blöcke
 \paragraph{Bewertung und Probleme}
 
