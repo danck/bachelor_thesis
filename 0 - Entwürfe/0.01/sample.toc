@@ -96,27 +96,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Architektur\IeC {\"u}bersicht}{27}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Batch Layer}{27}{section*.42}
+\contentsline {paragraph}{\nonumberline Batch Layer}{27}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Streaming Layer}{27}{section*.43}
+\contentsline {paragraph}{\nonumberline Streaming Layer}{27}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Presentation Layer}{27}{figure.caption.46}
+\contentsline {paragraph}{\nonumberline Presentation Layer}{27}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Batch Komponente}{27}{section*.47}
+\contentsline {paragraph}{\nonumberline Batch Komponente}{27}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Streaming-Komponente}{28}{section*.48}
+\contentsline {paragraph}{\nonumberline Streaming-Komponente}{28}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Presentation-Komponente}{28}{section*.49}
+\contentsline {paragraph}{\nonumberline Presentation-Komponente}{28}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Hinweise zur Entwicklung}{28}{section*.50}
+\contentsline {paragraph}{\nonumberline Hinweise zur Entwicklung}{28}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Ergebnisse und Bewertung}{28}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.4}Ergebnisse und Bewertung}{29}{subsection.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Dashboard}{28}{section*.52}
+\contentsline {paragraph}{\nonumberline Dashboard}{29}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Laufzeitverhalten}{28}{section*.53}
+\contentsline {paragraph}{\nonumberline Laufzeitverhalten}{29}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Bewertung und Probleme}{28}{section*.54}
+\contentsline {paragraph}{\nonumberline Bewertung und Probleme}{29}{section*.55}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Schlussbetrachtung}{32}{chapter.4}
 \defcounter {refsection}{0}\relax 
@@ -124,11 +124,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{32}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyme}{33}{section*.55}
+\contentsline {chapter}{Acronyme}{33}{section*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{34}{section*.57}
+\contentsline {chapter}{Glossar}{34}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{35}{section*.59}
+\contentsline {chapter}{Anhang}{35}{section*.60}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Installation der Plattform}{36}{section.1..1}
 \defcounter {refsection}{0}\relax 
