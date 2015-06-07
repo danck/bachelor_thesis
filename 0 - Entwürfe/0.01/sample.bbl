@@ -526,6 +526,42 @@
   \endverb
 \endentry
 
+\entry{SparckJones:1988:SIT:106765.106782}{incollection}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sparck~Jones}{S.~J.}%
+     {Karen}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{1}{}{%
+    {{}%
+     {Willett}{W.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Taylor Graham Publishing}%
+  }
+  \strng{namehash}{SJK1}
+  \strng{fullhash}{SJK1}
+  \field{labelalpha}{SJ88}
+  \field{sortinit}{S}
+  \field{chapter}{A Statistical Interpretation of Term Specificity and Its
+  Application in Retrieval}
+  \field{isbn}{0-947568-21-2}
+  \field{pages}{132\bibrangedash 142}
+  \field{title}{Document Retrieval Systems}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=106765.106782
+  \endverb
+  \list{location}{1}{%
+    {London, UK, UK}%
+  }
+  \field{year}{1988}
+\endentry
+
 \entry{spark_submission}{misc}{}
   \field{labelalpha}{Spa}
   \field{sortinit}{S}

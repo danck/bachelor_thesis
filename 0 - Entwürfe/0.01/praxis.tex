@@ -148,10 +148,27 @@ In der dritten Schicht werden die als relevant eingestuften Emails in einer graf
 	\centering
   \includegraphics[scale=0.7]{data_centric_layers.pdf}
 	\caption{Datenzentrierte Sicht auf die Komponenten}
-	\label{figure:data_centrice_layers}
+	\label{figure:data_centric_layers}
 \end{figure}
 
 \paragraph{Batch Layer}\\
+
+In dieser Schicht wird die Verarbeitung von Emails aus der Spark-User-Mailingliste zu einem Modell von relevanten Wörtern geleistet.\\
+
+Dazu werden eingehende Emails zunächst archiviert und anschließend mithilfe des Corpus aller bisher archivierten Emails und einer Untermenge von \textit{n} zuletzt empfangenen Emails eine Bewertung der vorkommenden Wörtern vorgenommen.\\
+
+Diese Bewertung soll das Maß für die Relevanz eines Wortes in der betrachteten Menge der letzten \textit{n} Emails sein. Um das zu erreichen, wird in mehreren Schritten ein TF-IDF Vektor über die Wörter dieser Nachrichten erzeugt.\\
+
+TF-IDF steht für \textit{Term Frequency - Inverse Document Frequency} (\cite{SparckJones:1988:SIT:106765.106782}). Dieses Verfahren bewertet die Relevanz eines Wortes für einen Text nach der Häufigkeit dieses Wortes in dem Text (\textit{Term Frequency}). Die Bewertung eines Wortes wird jedoch abgeschwächt je häufiger es in einem Textkorpus vorkommt (\textit{Inverse Document Frequency}).\\
+
+Eine Implementation dieses Verfahrens ist in der Spark Standardbibliothek \textit{MLLib} in dem Bereich \textit{Feature Extraction} verfügbar.\\
+
+In diesem Anwendungsfall gilt:
+\begin{itemize}
+\item Email-Bodies\footnote{Textbereich einer Email} werden jeweils als Dokumente verarbeitet
+\item Das Archiv aller Email-Bodies ist der Textkorpus\footnote{Ein unabhängiger Textkorpus (wie etwa Wikipedia) würde wahrscheinlich bessere Ergebnisse liefern. Beispielsweise würden Begriffe wie \textit{Spark} und \textit{Apache} durch ihre geringere Häufigkeit in dessen Dokumenten höher bewertet werden. Für diese Demonstration bietet aber die Gesamtheit der Email-Texte ausreichend Volumen und zeitliche Dynamik und verringert außerdem die Komplexität der Implementierung.}
+\end{itemize}
+
 
 \begin{figure}[ht!]
 	\centering
