@@ -1,0 +1,11 @@
+"Dstat 0.7.2 CSV output"
+"Author:","Dag Wieers <dag@wieers.com>",,,,"URL:","http://dag.wieers.com/home-made/dstat/"
+"Host:","dell01",,,,"User:","daniel"
+"Cmdline:","dstat --output build_once.log",,,,"Date:","13 Jun 2015 02:28:36 PDT"
+
+"total cpu usage",,,,,,"dsk/total",,"net/total",,"paging",,"system",
+"usr","sys","idl","wai","hiq","siq","read","writ","recv","send","in","out","int","csw"
+5.691,1.273,85.094,7.786,0.004,0.151,476698.959,555612.473,0.0,0.0,4747.953,18267.546,485.632,673.437
+53.266,7.035,39.698,0.0,0.0,0.0,0.0,32768.0,3697.0,5664.0,0.0,0.0,964.0,1185.0
+58.291,6.030,33.166,2.513,0.0,0.0,110592.0,0.0,0.0,0.0,0.0,0.0,887.0,977.0
+77.0,5.500,16.500,0.0,0.0,1.0,0.0,0.0,544.0,797.0,0.0,0.0,957.0,1112.0

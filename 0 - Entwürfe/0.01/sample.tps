@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=vorstellung.tex
 
 [Frame1_View0,0]
-TopLine=471
-Cursor=23478
+TopLine=374
+Cursor=26984
 
 [Frame2]
 Flags=0
@@ -54,7 +54,7 @@ Document=sample.tex
 
 [Frame2_View0,0]
 TopLine=142
-Cursor=4532
+Cursor=4059
 
 [Frame3]
 Flags=0
@@ -107,7 +107,7 @@ Class=LaTeXView
 Document=praxis.tex
 
 [Frame5_View0,0]
-TopLine=268
+TopLine=303
 Cursor=10963
 
 [Frame6]
@@ -148,5 +148,5 @@ Cursor=266
 
 [SessionInfo]
 FrameCount=8
-ActiveFrame=1
+ActiveFrame=2
 

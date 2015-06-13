@@ -1,0 +1,9 @@
+#### UPDATED AT Fri Jun 12 15:06:56 PDT 2015 ####
+# Generated new feature vector with 6226 non-zero entries  (0.5937576293945312% density)
+# New vector saved at: /tmp/tfidf
+Score for "spark": 987.022619249938
+Score for "the": 526.1973610337386
+Score for "thisShouldntHaveAScore": 0.0
+# Updated document corpus at: hdfs://dell01:54310/user/daniel/user_mails_multi.txt
+# Total time for message retrieval: 0.0 seconds
+# Total time for feature extraction: 369.017 seconds
