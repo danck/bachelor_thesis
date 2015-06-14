@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  14 JUN 2015 20:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  14 JUN 2015 22:41
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -1872,7 +1872,11 @@ File: german.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\vorstellung.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.aux")
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\schluss.aux")
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.aux"))
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.aux"
+
+LaTeX Warning: Label `lst:hdfs_config' multiply defined.
+
+))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
 LaTeX Font Info:    ... okay on input line 123.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
@@ -1887,8 +1891,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
 LaTeX Font Info:    ... okay on input line 123.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 123.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 123.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 123.
@@ -2188,7 +2191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<bilder/trends_spark_vs_hadoop.PNG, id=376, 629.72766pt x 220.19766pt>
+<bilder/trends_spark_vs_hadoop.PNG, id=378, 629.72766pt x 220.19766pt>
 File: bilder/trends_spark_vs_hadoop.PNG Graphic file (type png)
  <use bilder/trends_spark_vs_hadoop.PNG>
 Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 27.
@@ -2252,7 +2255,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
 
 
-] <sparkdeployment2.pdf, id=427, 433.62pt x 504.284pt>
+] <sparkdeployment2.pdf, id=429, 433.62pt x 504.284pt>
 File: sparkdeployment2.pdf Graphic file (type pdf)
  <use sparkdeployment2.pdf>
 Package pdftex.def Info: sparkdeployment2.pdf used on input line 49.
@@ -2329,7 +2332,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<RDDs1.pdf, id=925, 545.09041pt x 172.78854pt>
+<RDDs1.pdf, id=927, 545.09041pt x 172.78854pt>
 File: RDDs1.pdf Graphic file (type pdf)
  <use RDDs1.pdf>
 Package pdftex.def Info: RDDs1.pdf used on input line 113.
@@ -2446,7 +2449,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-<rdds_no_action.pdf, id=965, 365.6546pt x 50.82341pt>
+<rdds_no_action.pdf, id=967, 365.6546pt x 50.82341pt>
 File: rdds_no_action.pdf Graphic file (type pdf)
  <use rdds_no_action.pdf>
 Package pdftex.def Info: rdds_no_action.pdf used on input line 156.
@@ -2456,7 +2459,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-<rdds_action.pdf, id=967, 510.28033pt x 50.82341pt>
+<rdds_action.pdf, id=969, 510.28033pt x 50.82341pt>
 File: rdds_action.pdf Graphic file (type pdf)
  <use rdds_action.pdf>
 Package pdftex.def Info: rdds_action.pdf used on input line 165.
@@ -2466,7 +2469,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
-<rdds_action_persist.pdf, id=969, 510.28033pt x 63.05325pt>
+<rdds_action_persist.pdf, id=971, 510.28033pt x 63.05325pt>
 File: rdds_action_persist.pdf Graphic file (type pdf)
  <use rdds_action_persist.pdf>
 Package pdftex.def Info: rdds_action_persist.pdf used on input line 174.
@@ -2580,7 +2583,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
-<RDDs2.pdf, id=1029, 545.09041pt x 209.20233pt>
+<RDDs2.pdf, id=1031, 545.09041pt x 209.20233pt>
 File: RDDs2.pdf Graphic file (type pdf)
  <use RDDs2.pdf>
 Package pdftex.def Info: RDDs2.pdf used on input line 220.
@@ -2628,13 +2631,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
-<lineage_basic.pdf, id=1082, 470.54295pt x 331.3581pt>
+<lineage_basic.pdf, id=1084, 470.54295pt x 331.3581pt>
 File: lineage_basic.pdf Graphic file (type pdf)
  <use lineage_basic.pdf>
 Package pdftex.def Info: lineage_basic.pdf used on input line 271.
 (pdftex.def)             Requested size: 329.3778pt x 231.94908pt.
 
-<lineage_parted.pdf, id=1085, 470.54295pt x 331.3581pt>
+<lineage_parted.pdf, id=1087, 470.54295pt x 331.3581pt>
 File: lineage_parted.pdf Graphic file (type pdf)
  <use lineage_parted.pdf>
 Package pdftex.def Info: lineage_parted.pdf used on input line 284.
@@ -2649,7 +2652,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
-<lineage_stages.pdf, id=1089, 495.66714pt x 377.97662pt>
+<lineage_stages.pdf, id=1091, 495.66714pt x 377.97662pt>
 File: lineage_stages.pdf Graphic file (type pdf)
  <use lineage_stages.pdf>
 Package pdftex.def Info: lineage_stages.pdf used on input line 296.
@@ -2771,7 +2774,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<spark_deployment_clientmode.pdf, id=1144, 650.43pt x 266.19452pt>
+<spark_deployment_clientmode.pdf, id=1146, 650.43pt x 266.19452pt>
 File: spark_deployment_clientmode.pdf Graphic file (type pdf)
  <use spark_deployment_clientmode.pdf>
 Package pdftex.def Info: spark_deployment_clientmode.pdf used on input line 340.
@@ -2790,7 +2793,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<spark_deployment_clustermode.pdf, id=1145, 653.64201pt x 416.35548pt>
+<spark_deployment_clustermode.pdf, id=1147, 653.64201pt x 416.35548pt>
 File: spark_deployment_clustermode.pdf Graphic file (type pdf)
  <use spark_deployment_clustermode.pdf>
 Package pdftex.def Info: spark_deployment_clustermode.pdf used on input line 347.
@@ -2819,7 +2822,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
-<spark_deployment_process.pdf, id=1149, 568.81337pt x 509.50351pt>
+<spark_deployment_process.pdf, id=1151, 568.81337pt x 509.50351pt>
 File: spark_deployment_process.pdf Graphic file (type pdf)
  <use spark_deployment_process.pdf>
 Package pdftex.def Info: spark_deployment_process.pdf used on input line 360.
@@ -2982,7 +2985,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-<demo_app_usecase.pdf, id=2391, 468.95201pt x 475.376pt>
+<demo_app_usecase.pdf, id=2395, 468.95201pt x 475.376pt>
 File: demo_app_usecase.pdf Graphic file (type pdf)
  <use demo_app_usecase.pdf>
 Package pdftex.def Info: demo_app_usecase.pdf used on input line 15.
@@ -2993,7 +2996,7 @@ Package pdftex.def Info: demo_app_usecase.pdf used on input line 15.
 
 
 ]
-<./versuchsaufbau.png, id=2411, 211.992pt x 224.037pt>
+<./versuchsaufbau.png, id=2415, 211.992pt x 224.037pt>
 File: ./versuchsaufbau.png Graphic file (type png)
  <use ./versuchsaufbau.png>
 Package pdftex.def Info: ./versuchsaufbau.png used on input line 41.
@@ -3010,13 +3013,13 @@ runsystem(mv Fig.2.pdf ./Fig.2.pdf)...executed.
 
 
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\versuchsaufbau.pdf_tex"
-<versuchsaufbau.pdf, id=2412, page=1, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=2416, page=1, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 1>
 Package pdftex.def Info: versuchsaufbau.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 211.99147pt x 223.27982pt.
 
-<versuchsaufbau.pdf, id=2413, page=2, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=2417, page=2, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 2>
 Package pdftex.def Info: versuchsaufbau.pdf, page2 used on input line 54.
@@ -3046,7 +3049,7 @@ Overfull \hbox (9.93648pt too wide) in paragraph at lines 60--60
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worker  
  []
 
-<versuchsaufbau.pdf, id=2414, page=3, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=2418, page=3, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 3>
 Package pdftex.def Info: versuchsaufbau.pdf, page3 used on input line 61.
@@ -3056,7 +3059,7 @@ Overfull \hbox (5.11456pt too wide) in paragraph at lines 62--62
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Master  
  []
 
-<versuchsaufbau.pdf, id=2415, page=4, 212.36264pt x 223.66946pt>
+<versuchsaufbau.pdf, id=2419, page=4, 212.36264pt x 223.66946pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf, page 4>
 Package pdftex.def Info: versuchsaufbau.pdf, page4 used on input line 63.
@@ -3125,7 +3128,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<data_centric_layers.pdf, id=2611, 514.02556pt x 216.65051pt>
+<data_centric_layers.pdf, id=2615, 514.02556pt x 216.65051pt>
 File: data_centric_layers.pdf Graphic file (type pdf)
  <use data_centric_layers.pdf>
 Package pdftex.def Info: data_centric_layers.pdf used on input line 193.
@@ -3188,7 +3191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
-<batch_layer.pdf, id=2630, 510.708pt x 244.112pt>
+<batch_layer.pdf, id=2634, 510.708pt x 244.112pt>
 File: batch_layer.pdf Graphic file (type pdf)
  <use batch_layer.pdf>
 Package pdftex.def Info: batch_layer.pdf used on input line 219.
@@ -3231,7 +3234,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--232
  []
 
 [29 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/batch_layer.pdf>]
-<streaming_layer.pdf, id=2966, 517.13202pt x 260.975pt>
+<streaming_layer.pdf, id=2970, 517.13202pt x 260.975pt>
 File: streaming_layer.pdf Graphic file (type pdf)
  <use streaming_layer.pdf>
 Package pdftex.def Info: streaming_layer.pdf used on input line 235.
@@ -3300,7 +3303,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<demo_app_deployment.pdf, id=3271, 600.64403pt x 536.39526pt>
+<demo_app_deployment.pdf, id=3275, 600.64403pt x 536.39526pt>
 File: demo_app_deployment.pdf Graphic file (type pdf)
  <use demo_app_deployment.pdf>
 Package pdftex.def Info: demo_app_deployment.pdf used on input line 289.
@@ -3310,7 +3313,7 @@ Overfull \hbox (6.58961pt too wide) in paragraph at lines 289--290
  [][] 
  []
 
-<demo_app_components.pdf, id=3272, 648.02098pt x 445.48189pt>
+<demo_app_components.pdf, id=3276, 648.02098pt x 445.48189pt>
 File: demo_app_components.pdf Graphic file (type pdf)
  <use demo_app_components.pdf>
 Package pdftex.def Info: demo_app_components.pdf used on input line 297.
@@ -3320,7 +3323,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
  []
 
-<Pipeline.pdf, id=3274, 616.70403pt x 165.418pt>
+<Pipeline.pdf, id=3278, 616.70403pt x 165.418pt>
 File: Pipeline.pdf Graphic file (type pdf)
  <use Pipeline.pdf>
 Package pdftex.def Info: Pipeline.pdf used on input line 307.
@@ -3330,7 +3333,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
-<bilder/streaming_stats_dashboard.PNG, id=3301, 675.27281pt x 422.70422pt>
+<bilder/streaming_stats_dashboard.PNG, id=3305, 675.27281pt x 422.70422pt>
 File: bilder/streaming_stats_dashboard.PNG Graphic file (type png)
  <use bilder/streaming_stats_dashboard.PNG>
 Package pdftex.def Info: bilder/streaming_stats_dashboard.PNG used on input line 318.
@@ -3369,15 +3372,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
 [35
 
 
 
 
-]) [36]
+] [36]
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...tlabelname \@empty http://mean.io/##
+                                                  !/
+l.31 ...en MEAN-Stack\footnote{http://mean.io/#!/}
+                                                   oder das Play-Framework\f...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+) [37]
 ===== Section: literature
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.acr")
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [37
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [38
 
 
 
@@ -3387,7 +3406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
 ])
 ===== File: appendices
-[38
+[39
 
 
 
@@ -3397,14 +3416,14 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 1.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 1.
- [39
+ [40
 
 
 
 
 
 
-] [40]
+] [41]
 Overfull \hbox (0.14587pt too wide) in paragraph at lines 76--77
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3414,18 +3433,23 @@ Overfull \hbox (0.14587pt too wide) in paragraph at lines 77--78
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[41]
-Overfull \hbox (0.14587pt too wide) in paragraph at lines 106--107
+[42]
+Overfull \hbox (0.14587pt too wide) in paragraph at lines 105--106
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 [][][]\T1/LinuxLibertineT-TLF/m/n/9 (+20) https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-hdfs/hdfs-def
 ault.xml, ab-ge-ru-fen am
  []
 
-[42]) [43]
+
+Overfull \hbox (0.14587pt too wide) in paragraph at lines 116--117
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[43]) [44]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 201.
 
@@ -3445,7 +3469,7 @@ Overfull \hbox (34.41228pt too wide) in paragraph at lines 202--202
 \T1/LinuxLibertineMonoT-TLF/m/n/10.95 Leitfaden _ Big -[] Data -[] Technologien -[] Wissen _ fuer _ Entscheider _
  []
 
-[44
+[45
 
 
 
@@ -3461,9 +3485,9 @@ Overfull \hbox (28.70749pt too wide) in paragraph at lines 202--202
 \T1/LinuxLibertineMonoT-TLF/m/n/10.95 apache . org / jira / browse / SPARK / ?selectedTab = com . atlassian .
  []
 
-[45] [46]
+[46] [47]
 ===== Section: index
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [47]
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [48]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
 
@@ -3479,22 +3503,20 @@ Package rerunfilecheck Info: File `sample.out' has not changed.
 (rerunfilecheck)             Checksum: 97D365E56BBFC531A482C6313F964687;2939.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'sample.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
  ) 
 Here is how much of TeX's memory you used:
- 48922 strings out of 493921
- 1055618 string characters out of 3144873
+ 48950 strings out of 493921
+ 1055958 string characters out of 3144873
  1738925 words of memory out of 3000000
- 50659 multiletter control sequences out of 15000+200000
+ 50668 multiletter control sequences out of 15000+200000
  153787 words of font info for 209 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
  74i,19n,112p,1826b,3332s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{glo:tweet} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.60} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
@@ -3517,9 +3539,9 @@ s/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on sample.pdf (55 pages, 1717914 bytes).
+Output written on sample.pdf (56 pages, 1729254 bytes).
 PDF statistics:
- 4848 PDF objects out of 5155 (max. 8388607)
- 398 named destinations out of 1000 (max. 500000)
+ 4888 PDF objects out of 5155 (max. 8388607)
+ 417 named destinations out of 1000 (max. 500000)
  40492 words of extra memory for PDF output out of 42996 (max. 10000000)
 

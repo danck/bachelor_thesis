@@ -396,6 +396,27 @@
   \field{year}{1999}
 \endentry
 
+\entry{Huang:2008}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Huang}{H.}%
+     {Anna}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HA1}
+  \strng{fullhash}{HA1}
+  \field{labelalpha}{Hua08}
+  \field{sortinit}{H}
+  \field{series}{NZCSRSC '08}
+  \field{title}{Similarity Measures for Text Document Clustering}
+  \verb{url}
+  \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.332.4480&rep=r
+  \verb ep1&type=pdf
+  \endverb
+  \field{year}{2008}
+\endentry
+
 \entry{issuetracker}{misc}{}
   \field{labelalpha}{Iss}
   \field{sortinit}{I}
