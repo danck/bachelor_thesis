@@ -1,0 +1,293 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+15/06/13 15:39:59 INFO SparkContext: Running Spark version 1.3.1
+15/06/13 15:40:00 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/06/13 15:40:00 INFO SecurityManager: Changing view acls to: daniel
+15/06/13 15:40:00 INFO SecurityManager: Changing modify acls to: daniel
+15/06/13 15:40:00 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(daniel); users with modify permissions: Set(daniel)
+15/06/13 15:40:01 INFO Slf4jLogger: Slf4jLogger started
+15/06/13 15:40:01 INFO Remoting: Starting remoting
+15/06/13 15:40:02 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@dell01:58066]
+15/06/13 15:40:02 INFO Utils: Successfully started service 'sparkDriver' on port 58066.
+15/06/13 15:40:02 INFO SparkEnv: Registering MapOutputTracker
+15/06/13 15:40:02 INFO SparkEnv: Registering BlockManagerMaster
+15/06/13 15:40:02 INFO DiskBlockManager: Created local directory at /tmp/spark-a0c8554d-a077-45df-a672-105df18f5218/blockmgr-e0674306-2412-4183-b950-b3ea3551d118
+15/06/13 15:40:02 INFO MemoryStore: MemoryStore started with capacity 198.7 MB
+15/06/13 15:40:02 INFO HttpFileServer: HTTP File server directory is /tmp/spark-4b63f08e-b30e-455d-9840-e66f38924640/httpd-79dbb4d5-676e-4900-8ce9-4536c0dbb688
+15/06/13 15:40:02 INFO HttpServer: Starting HTTP Server
+15/06/13 15:40:02 INFO Server: jetty-8.y.z-SNAPSHOT
+15/06/13 15:40:02 INFO AbstractConnector: Started SocketConnector@0.0.0.0:49664
+15/06/13 15:40:02 INFO Utils: Successfully started service 'HTTP file server' on port 49664.
+15/06/13 15:40:02 INFO SparkEnv: Registering OutputCommitCoordinator
+15/06/13 15:40:03 INFO Server: jetty-8.y.z-SNAPSHOT
+15/06/13 15:40:03 INFO AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040
+15/06/13 15:40:03 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+15/06/13 15:40:03 INFO SparkUI: Started SparkUI at http://dell01:4040
+15/06/13 15:40:03 INFO SparkContext: Added JAR file:/home/daniel/autobuilds/model_builder/target/scala-2.10/model-builder_2.10-1.0.jar at http://192.168.1.5:49664/jars/model-builder_2.10-1.0.jar with timestamp 1434235203430
+15/06/13 15:40:03 INFO AppClient$ClientActor: Connecting to master akka.tcp://sparkMaster@192.168.1.5:7077/user/Master...
+15/06/13 15:40:04 INFO SparkDeploySchedulerBackend: Connected to Spark cluster with app ID app-20150613154004-0002
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor added: app-20150613154004-0002/0 on worker-20150613152315-pi03-33130 (pi03:33130) with 4 cores
+15/06/13 15:40:04 INFO SparkDeploySchedulerBackend: Granted executor ID app-20150613154004-0002/0 on hostPort pi03:33130 with 4 cores, 384.0 MB RAM
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor added: app-20150613154004-0002/1 on worker-20150613152315-pi02-35962 (pi02:35962) with 4 cores
+15/06/13 15:40:04 INFO SparkDeploySchedulerBackend: Granted executor ID app-20150613154004-0002/1 on hostPort pi02:35962 with 4 cores, 384.0 MB RAM
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor added: app-20150613154004-0002/2 on worker-20150613152316-pi01-49621 (pi01:49621) with 4 cores
+15/06/13 15:40:04 INFO SparkDeploySchedulerBackend: Granted executor ID app-20150613154004-0002/2 on hostPort pi01:49621 with 4 cores, 384.0 MB RAM
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor added: app-20150613154004-0002/3 on worker-20150613152315-pi00-42872 (pi00:42872) with 4 cores
+15/06/13 15:40:04 INFO SparkDeploySchedulerBackend: Granted executor ID app-20150613154004-0002/3 on hostPort pi00:42872 with 4 cores, 384.0 MB RAM
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor updated: app-20150613154004-0002/1 is now LOADING
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor updated: app-20150613154004-0002/2 is now LOADING
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor updated: app-20150613154004-0002/3 is now LOADING
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor updated: app-20150613154004-0002/0 is now LOADING
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor updated: app-20150613154004-0002/0 is now RUNNING
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor updated: app-20150613154004-0002/1 is now RUNNING
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor updated: app-20150613154004-0002/2 is now RUNNING
+15/06/13 15:40:04 INFO AppClient$ClientActor: Executor updated: app-20150613154004-0002/3 is now RUNNING
+15/06/13 15:40:04 INFO NettyBlockTransferService: Server created on 46697
+15/06/13 15:40:04 INFO BlockManagerMaster: Trying to register BlockManager
+15/06/13 15:40:04 INFO BlockManagerMasterActor: Registering block manager dell01:46697 with 198.7 MB RAM, BlockManagerId(<driver>, dell01, 46697)
+15/06/13 15:40:04 INFO BlockManagerMaster: Registered BlockManager
+15/06/13 15:40:05 INFO EventLoggingListener: Logging events to file:///tmp/app-20150613154004-0002
+15/06/13 15:40:05 INFO SparkDeploySchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+15/06/13 15:40:05 WARN SizeEstimator: Failed to check whether UseCompressedOops is set; assuming yes
+15/06/13 15:40:05 INFO MemoryStore: ensureFreeSpace(244319) called with curMem=0, maxMem=208373022
+15/06/13 15:40:05 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 238.6 KB, free 198.5 MB)
+15/06/13 15:40:06 INFO MemoryStore: ensureFreeSpace(36168) called with curMem=244319, maxMem=208373022
+15/06/13 15:40:06 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 35.3 KB, free 198.5 MB)
+15/06/13 15:40:06 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on dell01:46697 (size: 35.3 KB, free: 198.7 MB)
+15/06/13 15:40:06 INFO BlockManagerMaster: Updated info of block broadcast_0_piece0
+15/06/13 15:40:06 INFO SparkContext: Created broadcast 0 from textFile at ModelBuilder.scala:70
+15/06/13 15:40:07 INFO FileInputFormat: Total input paths to process : 1
+15/06/13 15:40:07 INFO SparkContext: Starting job: treeAggregate at IDF.scala:53
+15/06/13 15:40:07 INFO DAGScheduler: Registering RDD 6 (treeAggregate at IDF.scala:53)
+15/06/13 15:40:07 INFO DAGScheduler: Got job 0 (treeAggregate at IDF.scala:53) with 6 output partitions (allowLocal=false)
+15/06/13 15:40:07 INFO DAGScheduler: Final stage: Stage 1(treeAggregate at IDF.scala:53)
+15/06/13 15:40:07 INFO DAGScheduler: Parents of final stage: List(Stage 0)
+15/06/13 15:40:07 INFO DAGScheduler: Missing parents: List(Stage 0)
+15/06/13 15:40:07 INFO DAGScheduler: Submitting Stage 0 (MapPartitionsRDD[6] at treeAggregate at IDF.scala:53), which has no missing parents
+15/06/13 15:40:07 INFO MemoryStore: ensureFreeSpace(4760) called with curMem=280487, maxMem=208373022
+15/06/13 15:40:07 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.6 KB, free 198.4 MB)
+15/06/13 15:40:07 INFO MemoryStore: ensureFreeSpace(3233) called with curMem=285247, maxMem=208373022
+15/06/13 15:40:07 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.2 KB, free 198.4 MB)
+15/06/13 15:40:07 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on dell01:46697 (size: 3.2 KB, free: 198.7 MB)
+15/06/13 15:40:07 INFO BlockManagerMaster: Updated info of block broadcast_1_piece0
+15/06/13 15:40:07 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:839
+15/06/13 15:40:07 INFO DAGScheduler: Submitting 46 missing tasks from Stage 0 (MapPartitionsRDD[6] at treeAggregate at IDF.scala:53)
+15/06/13 15:40:07 INFO TaskSchedulerImpl: Adding task set 0.0 with 46 tasks
+15/06/13 15:40:20 INFO SparkDeploySchedulerBackend: Registered executor: Actor[akka.tcp://sparkExecutor@pi02:40721/user/Executor#982526243] with ID 1
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 1, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 2, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 3, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO SparkDeploySchedulerBackend: Registered executor: Actor[akka.tcp://sparkExecutor@pi00:43339/user/Executor#-1647977713] with ID 3
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 4, pi00, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 5, pi00, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, pi00, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 7, pi00, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO SparkDeploySchedulerBackend: Registered executor: Actor[akka.tcp://sparkExecutor@pi01:56182/user/Executor#724610099] with ID 2
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 8, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 9, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 10, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 12.0 in stage 0.0 (TID 11, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO SparkDeploySchedulerBackend: Registered executor: Actor[akka.tcp://sparkExecutor@pi03:44874/user/Executor#755597778] with ID 0
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 12, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:40:20 INFO BlockManagerMasterActor: Registering block manager pi02:36316 with 200.5 MB RAM, BlockManagerId(1, pi02, 36316)
+15/06/13 15:40:21 INFO BlockManagerMasterActor: Registering block manager pi01:40803 with 200.5 MB RAM, BlockManagerId(2, pi01, 40803)
+15/06/13 15:40:21 INFO BlockManagerMasterActor: Registering block manager pi00:50875 with 200.5 MB RAM, BlockManagerId(3, pi00, 50875)
+15/06/13 15:40:21 INFO BlockManagerMasterActor: Registering block manager pi03:32938 with 200.5 MB RAM, BlockManagerId(0, pi03, 32938)
+15/06/13 15:40:22 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on pi00:50875 (size: 3.2 KB, free: 200.5 MB)
+15/06/13 15:40:22 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on pi02:36316 (size: 3.2 KB, free: 200.5 MB)
+15/06/13 15:40:22 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on pi03:32938 (size: 3.2 KB, free: 200.5 MB)
+15/06/13 15:40:22 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on pi01:40803 (size: 3.2 KB, free: 200.5 MB)
+15/06/13 15:40:24 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on pi01:40803 (size: 35.3 KB, free: 200.4 MB)
+15/06/13 15:40:24 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on pi00:50875 (size: 35.3 KB, free: 200.4 MB)
+15/06/13 15:40:24 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on pi02:36316 (size: 35.3 KB, free: 200.4 MB)
+15/06/13 15:40:24 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on pi03:32938 (size: 35.3 KB, free: 200.4 MB)
+15/06/13 15:41:20 INFO BlockManagerInfo: Added rdd_4_4 in memory on pi02:36316 (size: 21.8 MB, free: 178.6 MB)
+15/06/13 15:41:20 INFO BlockManagerInfo: Added rdd_4_5 in memory on pi02:36316 (size: 24.2 MB, free: 154.4 MB)
+15/06/13 15:41:20 INFO BlockManagerInfo: Added rdd_4_7 in memory on pi01:40803 (size: 21.6 MB, free: 178.9 MB)
+15/06/13 15:41:20 INFO BlockManagerInfo: Added rdd_4_2 in memory on pi02:36316 (size: 18.2 MB, free: 136.2 MB)
+15/06/13 15:41:20 INFO BlockManagerInfo: Added rdd_4_0 in memory on pi02:36316 (size: 20.7 MB, free: 115.5 MB)
+15/06/13 15:41:21 INFO BlockManagerInfo: Added rdd_4_12 in memory on pi01:40803 (size: 23.1 MB, free: 155.8 MB)
+15/06/13 15:41:21 INFO BlockManagerInfo: Added rdd_4_13 in memory on pi03:32938 (size: 20.2 MB, free: 180.3 MB)
+15/06/13 15:41:21 INFO BlockManagerInfo: Added rdd_4_8 in memory on pi01:40803 (size: 22.8 MB, free: 133.0 MB)
+15/06/13 15:41:21 INFO BlockManagerInfo: Added rdd_4_14 in memory on pi03:32938 (size: 25.8 MB, free: 154.5 MB)
+15/06/13 15:41:21 INFO BlockManagerInfo: Added rdd_4_11 in memory on pi01:40803 (size: 22.8 MB, free: 110.2 MB)
+15/06/13 15:41:21 INFO BlockManagerInfo: Added rdd_4_6 in memory on pi00:50875 (size: 22.0 MB, free: 178.4 MB)
+15/06/13 15:41:21 INFO BlockManagerInfo: Added rdd_4_1 in memory on pi00:50875 (size: 29.7 MB, free: 148.7 MB)
+15/06/13 15:41:22 INFO BlockManagerInfo: Added rdd_4_10 in memory on pi03:32938 (size: 22.8 MB, free: 131.6 MB)
+15/06/13 15:41:22 INFO BlockManagerInfo: Added rdd_4_15 in memory on pi03:32938 (size: 25.8 MB, free: 105.8 MB)
+15/06/13 15:41:22 INFO BlockManagerInfo: Added rdd_4_9 in memory on pi00:50875 (size: 18.0 MB, free: 130.8 MB)
+15/06/13 15:41:22 INFO BlockManagerInfo: Added rdd_4_3 in memory on pi00:50875 (size: 23.6 MB, free: 107.2 MB)
+15/06/13 15:41:24 INFO TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:24 INFO TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:24 INFO TaskSetManager: Starting task 18.0 in stage 0.0 (TID 18, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:24 INFO TaskSetManager: Starting task 19.0 in stage 0.0 (TID 19, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:24 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 1) in 64154 ms on pi02 (1/46)
+15/06/13 15:41:24 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 64204 ms on pi02 (2/46)
+15/06/13 15:41:24 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 2) in 64181 ms on pi02 (3/46)
+15/06/13 15:41:24 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 3) in 64182 ms on pi02 (4/46)
+15/06/13 15:41:24 INFO TaskSetManager: Starting task 20.0 in stage 0.0 (TID 20, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:24 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 9) in 64447 ms on pi01 (5/46)
+15/06/13 15:41:24 INFO TaskSetManager: Starting task 21.0 in stage 0.0 (TID 21, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:24 INFO TaskSetManager: Finished task 12.0 in stage 0.0 (TID 11) in 64448 ms on pi01 (6/46)
+15/06/13 15:41:24 INFO TaskSetManager: Starting task 22.0 in stage 0.0 (TID 22, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:24 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 8) in 64459 ms on pi01 (7/46)
+15/06/13 15:41:24 INFO TaskSetManager: Starting task 23.0 in stage 0.0 (TID 23, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:24 INFO TaskSetManager: Finished task 11.0 in stage 0.0 (TID 10) in 64462 ms on pi01 (8/46)
+15/06/13 15:41:25 INFO TaskSetManager: Starting task 26.0 in stage 0.0 (TID 24, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:25 INFO TaskSetManager: Finished task 13.0 in stage 0.0 (TID 13) in 64759 ms on pi03 (9/46)
+15/06/13 15:41:25 INFO TaskSetManager: Starting task 28.0 in stage 0.0 (TID 25, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:25 INFO TaskSetManager: Finished task 15.0 in stage 0.0 (TID 15) in 64762 ms on pi03 (10/46)
+15/06/13 15:41:25 INFO TaskSetManager: Starting task 30.0 in stage 0.0 (TID 26, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:25 INFO TaskSetManager: Finished task 10.0 in stage 0.0 (TID 12) in 64783 ms on pi03 (11/46)
+15/06/13 15:41:25 INFO TaskSetManager: Starting task 32.0 in stage 0.0 (TID 27, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:25 INFO TaskSetManager: Finished task 14.0 in stage 0.0 (TID 14) in 64786 ms on pi03 (12/46)
+15/06/13 15:41:25 INFO TaskSetManager: Starting task 24.0 in stage 0.0 (TID 28, pi00, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:25 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 5) in 65344 ms on pi00 (13/46)
+15/06/13 15:41:25 INFO TaskSetManager: Starting task 25.0 in stage 0.0 (TID 29, pi00, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:25 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 4) in 65353 ms on pi00 (14/46)
+15/06/13 15:41:25 INFO TaskSetManager: Starting task 27.0 in stage 0.0 (TID 30, pi00, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:25 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 7) in 65355 ms on pi00 (15/46)
+15/06/13 15:41:25 INFO TaskSetManager: Starting task 29.0 in stage 0.0 (TID 31, pi00, NODE_LOCAL, 1376 bytes)
+15/06/13 15:41:25 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 65362 ms on pi00 (16/46)
+15/06/13 15:42:16 INFO BlockManagerInfo: Added rdd_4_23 in memory on pi01:40803 (size: 22.2 MB, free: 88.0 MB)
+15/06/13 15:42:16 INFO BlockManagerInfo: Added rdd_4_21 in memory on pi01:40803 (size: 23.1 MB, free: 64.9 MB)
+15/06/13 15:42:16 INFO BlockManagerInfo: Added rdd_4_19 in memory on pi02:36316 (size: 19.2 MB, free: 96.3 MB)
+15/06/13 15:42:16 INFO BlockManagerInfo: Added rdd_4_18 in memory on pi02:36316 (size: 18.3 MB, free: 78.0 MB)
+15/06/13 15:42:17 INFO TaskSetManager: Starting task 31.0 in stage 0.0 (TID 32, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:17 INFO TaskSetManager: Finished task 17.0 in stage 0.0 (TID 17) in 53116 ms on pi02 (17/46)
+15/06/13 15:42:17 INFO BlockManagerInfo: Added rdd_4_30 in memory on pi03:32938 (size: 24.9 MB, free: 81.0 MB)
+15/06/13 15:42:17 INFO TaskSetManager: Starting task 33.0 in stage 0.0 (TID 33, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:17 INFO TaskSetManager: Finished task 23.0 in stage 0.0 (TID 23) in 52730 ms on pi01 (18/46)
+15/06/13 15:42:17 INFO TaskSetManager: Starting task 34.0 in stage 0.0 (TID 34, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:17 INFO TaskSetManager: Finished task 21.0 in stage 0.0 (TID 21) in 52812 ms on pi01 (19/46)
+15/06/13 15:42:17 INFO BlockManagerInfo: Added rdd_4_16 in memory on pi02:36316 (size: 22.1 MB, free: 55.9 MB)
+15/06/13 15:42:17 INFO TaskSetManager: Starting task 35.0 in stage 0.0 (TID 35, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:17 INFO TaskSetManager: Finished task 19.0 in stage 0.0 (TID 19) in 53283 ms on pi02 (20/46)
+15/06/13 15:42:17 INFO TaskSetManager: Starting task 36.0 in stage 0.0 (TID 36, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:17 INFO TaskSetManager: Finished task 18.0 in stage 0.0 (TID 18) in 53354 ms on pi02 (21/46)
+15/06/13 15:42:17 INFO BlockManagerInfo: Added rdd_4_28 in memory on pi03:32938 (size: 20.7 MB, free: 60.2 MB)
+15/06/13 15:42:18 INFO TaskSetManager: Starting task 37.0 in stage 0.0 (TID 37, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:18 INFO TaskSetManager: Finished task 30.0 in stage 0.0 (TID 26) in 53238 ms on pi03 (22/46)
+15/06/13 15:42:18 INFO TaskSetManager: Starting task 38.0 in stage 0.0 (TID 38, pi02, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:18 INFO TaskSetManager: Finished task 16.0 in stage 0.0 (TID 16) in 54391 ms on pi02 (23/46)
+15/06/13 15:42:18 INFO TaskSetManager: Starting task 39.0 in stage 0.0 (TID 39, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:18 INFO TaskSetManager: Finished task 32.0 in stage 0.0 (TID 27) in 53495 ms on pi03 (24/46)
+15/06/13 15:42:18 INFO BlockManagerInfo: Added rdd_4_29 in memory on pi00:50875 (size: 19.4 MB, free: 87.9 MB)
+15/06/13 15:42:18 INFO TaskSetManager: Starting task 41.0 in stage 0.0 (TID 40, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:18 INFO TaskSetManager: Finished task 28.0 in stage 0.0 (TID 25) in 53941 ms on pi03 (25/46)
+15/06/13 15:42:19 INFO BlockManagerInfo: Added rdd_4_26 in memory on pi03:32938 (size: 20.0 MB, free: 40.2 MB)
+15/06/13 15:42:19 INFO TaskSetManager: Starting task 40.0 in stage 0.0 (TID 41, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:19 INFO TaskSetManager: Finished task 20.0 in stage 0.0 (TID 20) in 54507 ms on pi01 (26/46)
+15/06/13 15:42:19 INFO BlockManagerInfo: Added rdd_4_24 in memory on pi00:50875 (size: 25.2 MB, free: 62.7 MB)
+15/06/13 15:42:19 INFO TaskSetManager: Starting task 43.0 in stage 0.0 (TID 42, pi01, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:19 INFO TaskSetManager: Finished task 22.0 in stage 0.0 (TID 22) in 54964 ms on pi01 (27/46)
+15/06/13 15:42:19 INFO TaskSetManager: Starting task 42.0 in stage 0.0 (TID 43, pi00, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:19 INFO TaskSetManager: Finished task 29.0 in stage 0.0 (TID 31) in 54092 ms on pi00 (28/46)
+15/06/13 15:42:19 INFO BlockManagerInfo: Added rdd_4_27 in memory on pi00:50875 (size: 24.7 MB, free: 38.0 MB)
+15/06/13 15:42:20 INFO TaskSetManager: Starting task 44.0 in stage 0.0 (TID 44, pi00, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:20 INFO TaskSetManager: Finished task 24.0 in stage 0.0 (TID 28) in 54673 ms on pi00 (29/46)
+15/06/13 15:42:20 INFO TaskSetManager: Starting task 45.0 in stage 0.0 (TID 45, pi03, NODE_LOCAL, 1376 bytes)
+15/06/13 15:42:20 INFO TaskSetManager: Finished task 26.0 in stage 0.0 (TID 24) in 55213 ms on pi03 (30/46)
+15/06/13 15:42:20 INFO TaskSetManager: Finished task 25.0 in stage 0.0 (TID 29) in 55129 ms on pi00 (31/46)
+15/06/13 15:42:20 INFO TaskSetManager: Finished task 27.0 in stage 0.0 (TID 30) in 55393 ms on pi00 (32/46)
+15/06/13 15:42:39 INFO BlockManagerInfo: Added broadcast_1_piece0 on disk on pi03:32938 (size: 3.2 KB)
+15/06/13 15:42:39 INFO BlockManagerInfo: Added broadcast_0_piece0 on disk on pi03:32938 (size: 35.3 KB)
+15/06/13 15:42:55 INFO TaskSetManager: Finished task 45.0 in stage 0.0 (TID 45) in 35277 ms on pi03 (33/46)
+15/06/13 15:43:09 INFO TaskSetManager: Finished task 44.0 in stage 0.0 (TID 44) in 49456 ms on pi00 (34/46)
+15/06/13 15:43:10 INFO TaskSetManager: Finished task 42.0 in stage 0.0 (TID 43) in 50648 ms on pi00 (35/46)
+15/06/13 15:43:10 INFO TaskSetManager: Finished task 33.0 in stage 0.0 (TID 33) in 53417 ms on pi01 (36/46)
+15/06/13 15:43:11 INFO TaskSetManager: Finished task 31.0 in stage 0.0 (TID 32) in 54210 ms on pi02 (37/46)
+15/06/13 15:43:11 INFO TaskSetManager: Finished task 34.0 in stage 0.0 (TID 34) in 54094 ms on pi01 (38/46)
+15/06/13 15:43:11 INFO TaskSetManager: Finished task 36.0 in stage 0.0 (TID 36) in 53998 ms on pi02 (39/46)
+15/06/13 15:43:11 INFO TaskSetManager: Finished task 40.0 in stage 0.0 (TID 41) in 52519 ms on pi01 (40/46)
+15/06/13 15:43:12 INFO TaskSetManager: Finished task 43.0 in stage 0.0 (TID 42) in 52471 ms on pi01 (41/46)
+15/06/13 15:43:12 INFO TaskSetManager: Finished task 38.0 in stage 0.0 (TID 38) in 53908 ms on pi02 (42/46)
+15/06/13 15:43:12 INFO TaskSetManager: Finished task 35.0 in stage 0.0 (TID 35) in 54969 ms on pi02 (43/46)
+15/06/13 15:43:13 INFO TaskSetManager: Finished task 39.0 in stage 0.0 (TID 39) in 54925 ms on pi03 (44/46)
+15/06/13 15:43:13 INFO TaskSetManager: Finished task 37.0 in stage 0.0 (TID 37) in 55199 ms on pi03 (45/46)
+15/06/13 15:43:13 INFO TaskSetManager: Finished task 41.0 in stage 0.0 (TID 40) in 54639 ms on pi03 (46/46)
+15/06/13 15:43:13 INFO DAGScheduler: Stage 0 (treeAggregate at IDF.scala:53) finished in 185.597 s
+15/06/13 15:43:13 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+15/06/13 15:43:13 INFO DAGScheduler: looking for newly runnable stages
+15/06/13 15:43:13 INFO DAGScheduler: running: Set()
+15/06/13 15:43:13 INFO DAGScheduler: waiting: Set(Stage 1)
+15/06/13 15:43:13 INFO DAGScheduler: failed: Set()
+15/06/13 15:43:13 INFO DAGScheduler: Missing parents for Stage 1: List()
+15/06/13 15:43:13 INFO DAGScheduler: Submitting Stage 1 (MapPartitionsRDD[8] at treeAggregate at IDF.scala:53), which is now runnable
+15/06/13 15:43:13 INFO MemoryStore: ensureFreeSpace(2672) called with curMem=288480, maxMem=208373022
+15/06/13 15:43:13 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 2.6 KB, free 198.4 MB)
+15/06/13 15:43:13 INFO MemoryStore: ensureFreeSpace(1946) called with curMem=291152, maxMem=208373022
+15/06/13 15:43:13 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 1946.0 B, free 198.4 MB)
+15/06/13 15:43:13 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on dell01:46697 (size: 1946.0 B, free: 198.7 MB)
+15/06/13 15:43:13 INFO BlockManagerMaster: Updated info of block broadcast_2_piece0
+15/06/13 15:43:13 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:839
+15/06/13 15:43:13 INFO DAGScheduler: Submitting 6 missing tasks from Stage 1 (MapPartitionsRDD[8] at treeAggregate at IDF.scala:53)
+15/06/13 15:43:13 INFO TaskSchedulerImpl: Adding task set 1.0 with 6 tasks
+15/06/13 15:43:13 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 46, pi03, PROCESS_LOCAL, 1122 bytes)
+15/06/13 15:43:13 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 47, pi01, PROCESS_LOCAL, 1122 bytes)
+15/06/13 15:43:13 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 48, pi02, PROCESS_LOCAL, 1122 bytes)
+15/06/13 15:43:13 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 49, pi00, PROCESS_LOCAL, 1122 bytes)
+15/06/13 15:43:13 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 50, pi03, PROCESS_LOCAL, 1122 bytes)
+15/06/13 15:43:13 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 51, pi01, PROCESS_LOCAL, 1122 bytes)
+15/06/13 15:43:13 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on pi00:50875 (size: 1946.0 B, free: 38.0 MB)
+15/06/13 15:43:13 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on pi01:40803 (size: 1946.0 B, free: 64.9 MB)
+15/06/13 15:43:13 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on pi03:32938 (size: 1946.0 B, free: 40.3 MB)
+15/06/13 15:43:13 INFO MapOutputTrackerMasterActor: Asked to send map output locations for shuffle 0 to sparkExecutor@pi00:43339
+15/06/13 15:43:13 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 294 bytes
+15/06/13 15:43:13 INFO MapOutputTrackerMasterActor: Asked to send map output locations for shuffle 0 to sparkExecutor@pi03:44874
+15/06/13 15:43:13 INFO MapOutputTrackerMasterActor: Asked to send map output locations for shuffle 0 to sparkExecutor@pi01:56182
+15/06/13 15:43:13 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on pi02:36316 (size: 1946.0 B, free: 55.9 MB)
+15/06/13 15:43:14 INFO MapOutputTrackerMasterActor: Asked to send map output locations for shuffle 0 to sparkExecutor@pi02:40721
+15/06/13 15:43:21 INFO BlockManager: Removing broadcast 1
+15/06/13 15:43:22 INFO BlockManager: Removing block broadcast_1_piece0
+15/06/13 15:43:22 INFO MemoryStore: Block broadcast_1_piece0 of size 3233 dropped from memory (free 208083157)
+15/06/13 15:43:22 INFO BlockManagerInfo: Removed broadcast_1_piece0 on dell01:46697 in memory (size: 3.2 KB, free: 198.7 MB)
+15/06/13 15:43:22 INFO BlockManagerMaster: Updated info of block broadcast_1_piece0
+15/06/13 15:43:22 INFO BlockManager: Removing block broadcast_1
+15/06/13 15:43:22 INFO MemoryStore: Block broadcast_1 of size 4760 dropped from memory (free 208087917)
+15/06/13 15:43:23 INFO BlockManagerInfo: Removed broadcast_1_piece0 on pi02:36316 in memory (size: 3.2 KB, free: 55.9 MB)
+15/06/13 15:43:23 INFO BlockManagerInfo: Removed broadcast_1_piece0 on pi00:50875 in memory (size: 3.2 KB, free: 38.0 MB)
+15/06/13 15:43:25 INFO BlockManagerInfo: Removed broadcast_1_piece0 on pi01:40803 in memory (size: 3.2 KB, free: 64.9 MB)
+15/06/13 15:43:25 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 49) in 10361 ms on pi00 (1/6)
+15/06/13 15:43:26 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 48) in 12331 ms on pi02 (2/6)
+15/06/13 15:43:26 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 47) in 12415 ms on pi01 (3/6)
+15/06/13 15:43:26 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 51) in 12457 ms on pi01 (4/6)
+15/06/13 15:43:27 INFO BlockManagerInfo: Removed broadcast_1_piece0 on pi03:32938 on disk (size: 3.2 KB)
+15/06/13 15:43:27 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 50) in 13394 ms on pi03 (5/6)
+15/06/13 15:43:27 INFO ContextCleaner: Cleaned broadcast 1
+15/06/13 15:43:27 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 46) in 14287 ms on pi03 (6/6)
+15/06/13 15:43:27 INFO DAGScheduler: Stage 1 (treeAggregate at IDF.scala:53) finished in 14.330 s
+15/06/13 15:43:27 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+15/06/13 15:43:27 INFO DAGScheduler: Job 0 finished: treeAggregate at IDF.scala:53, took 200.232793 s
+15/06/13 15:43:28 INFO MemoryStore: ensureFreeSpace(8388664) called with curMem=285105, maxMem=208373022
+15/06/13 15:43:28 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 8.0 MB, free 190.4 MB)
+15/06/13 15:43:28 INFO MemoryStore: ensureFreeSpace(952318) called with curMem=8673769, maxMem=208373022
+15/06/13 15:43:28 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 930.0 KB, free 189.5 MB)
+15/06/13 15:43:28 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on dell01:46697 (size: 930.0 KB, free: 197.8 MB)
+15/06/13 15:43:28 INFO BlockManagerMaster: Updated info of block broadcast_3_piece0
+15/06/13 15:43:28 INFO SparkContext: Created broadcast 3 from broadcast at IDF.scala:175
+15/06/13 15:43:28 INFO SparkContext: Starting job: take at ModelBuilder.scala:86
+15/06/13 15:43:28 INFO DAGScheduler: Got job 1 (take at ModelBuilder.scala:86) with 1 output partitions (allowLocal=true)
+15/06/13 15:43:28 INFO DAGScheduler: Final stage: Stage 2(take at ModelBuilder.scala:86)
+15/06/13 15:43:28 INFO DAGScheduler: Parents of final stage: List()
+15/06/13 15:43:28 INFO DAGScheduler: Missing parents: List()
+15/06/13 15:43:28 INFO DAGScheduler: Submitting Stage 2 (MapPartitionsRDD[9] at mapPartitions at IDF.scala:176), which has no missing parents
+15/06/13 15:43:28 INFO MemoryStore: ensureFreeSpace(3608) called with curMem=9626087, maxMem=208373022
+15/06/13 15:43:28 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 3.5 KB, free 189.5 MB)
+15/06/13 15:43:28 INFO MemoryStore: ensureFreeSpace(2501) called with curMem=9629695, maxMem=208373022
+15/06/13 15:43:28 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 2.4 KB, free 189.5 MB)
+15/06/13 15:43:28 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on dell01:46697 (size: 2.4 KB, free: 197.8 MB)
+15/06/13 15:43:28 INFO BlockManagerMaster: Updated info of block broadcast_4_piece0
+15/06/13 15:43:28 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:839
+15/06/13 15:43:28 INFO DAGScheduler: Submitting 1 missing tasks from Stage 2 (MapPartitionsRDD[9] at mapPartitions at IDF.scala:176)
+15/06/13 15:43:28 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+15/06/13 15:43:28 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 52, pi02, PROCESS_LOCAL, 1387 bytes)
+15/06/13 15:43:28 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on pi02:36316 (size: 2.4 KB, free: 55.9 MB)
+15/06/13 15:43:28 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on pi02:36316 (size: 930.0 KB, free: 55.0 MB)
+15/06/13 15:43:29 INFO DAGScheduler: Stage 2 (take at ModelBuilder.scala:86) finished in 0.729 s
+15/06/13 15:43:29 INFO DAGScheduler: Job 1 finished: take at ModelBuilder.scala:86, took 0.764443 s
+15/06/13 15:43:29 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 52) in 707 ms on pi02 (1/1)
+15/06/13 15:43:29 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 

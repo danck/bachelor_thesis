@@ -1,0 +1,64 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+15/06/14 02:40:10 INFO SparkContext: Running Spark version 1.3.1
+15/06/14 02:40:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/06/14 02:40:14 INFO SecurityManager: Changing view acls to: daniel
+15/06/14 02:40:14 INFO SecurityManager: Changing modify acls to: daniel
+15/06/14 02:40:14 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(daniel); users with modify permissions: Set(daniel)
+15/06/14 02:40:15 INFO Slf4jLogger: Slf4jLogger started
+15/06/14 02:40:15 INFO Remoting: Starting remoting
+15/06/14 02:40:16 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@dell01:38997]
+15/06/14 02:40:16 INFO Utils: Successfully started service 'sparkDriver' on port 38997.
+15/06/14 02:40:16 INFO SparkEnv: Registering MapOutputTracker
+15/06/14 02:40:16 INFO SparkEnv: Registering BlockManagerMaster
+15/06/14 02:40:16 INFO DiskBlockManager: Created local directory at /tmp/spark-883d39f7-e425-4084-9698-aa054a2b8b25/blockmgr-5433f005-b84f-4071-993e-7bb8ad2a2f29
+15/06/14 02:40:16 INFO MemoryStore: MemoryStore started with capacity 198.7 MB
+15/06/14 02:40:16 INFO HttpFileServer: HTTP File server directory is /tmp/spark-be2c88df-bb79-494f-8994-3310d2132bb1/httpd-5ea43e08-4e44-4ad4-bf92-229b1db4665c
+15/06/14 02:40:16 INFO HttpServer: Starting HTTP Server
+15/06/14 02:40:17 INFO Server: jetty-8.y.z-SNAPSHOT
+15/06/14 02:40:17 INFO AbstractConnector: Started SocketConnector@0.0.0.0:52546
+15/06/14 02:40:17 INFO Utils: Successfully started service 'HTTP file server' on port 52546.
+15/06/14 02:40:17 INFO SparkEnv: Registering OutputCommitCoordinator
+15/06/14 02:40:17 INFO Server: jetty-8.y.z-SNAPSHOT
+15/06/14 02:40:17 INFO AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040
+15/06/14 02:40:17 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+15/06/14 02:40:17 INFO SparkUI: Started SparkUI at http://dell01:4040
+15/06/14 02:40:18 INFO SparkContext: Added JAR file:/home/daniel/autobuilds/model_builder/target/scala-2.10/model-builder_2.10-1.0.jar at http://192.168.1.5:52546/jars/model-builder_2.10-1.0.jar with timestamp 1434274818067
+15/06/14 02:40:18 INFO AppClient$ClientActor: Connecting to master akka.tcp://sparkMaster@192.168.1.5:7077/user/Master...
+15/06/14 02:40:19 INFO SparkDeploySchedulerBackend: Connected to Spark cluster with app ID app-20150614024019-0005
+15/06/14 02:40:19 INFO NettyBlockTransferService: Server created on 55050
+15/06/14 02:40:19 INFO BlockManagerMaster: Trying to register BlockManager
+15/06/14 02:40:19 INFO BlockManagerMasterActor: Registering block manager dell01:55050 with 198.7 MB RAM, BlockManagerId(<driver>, dell01, 55050)
+15/06/14 02:40:19 INFO BlockManagerMaster: Registered BlockManager
+15/06/14 02:40:20 INFO EventLoggingListener: Logging events to file:///tmp/app-20150614024019-0005
+15/06/14 02:40:20 INFO SparkDeploySchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+15/06/14 02:40:21 WARN SizeEstimator: Failed to check whether UseCompressedOops is set; assuming yes
+15/06/14 02:40:21 INFO MemoryStore: ensureFreeSpace(244319) called with curMem=0, maxMem=208373022
+15/06/14 02:40:21 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 238.6 KB, free 198.5 MB)
+15/06/14 02:40:21 INFO MemoryStore: ensureFreeSpace(36168) called with curMem=244319, maxMem=208373022
+15/06/14 02:40:21 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 35.3 KB, free 198.5 MB)
+15/06/14 02:40:21 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on dell01:55050 (size: 35.3 KB, free: 198.7 MB)
+15/06/14 02:40:21 INFO BlockManagerMaster: Updated info of block broadcast_0_piece0
+15/06/14 02:40:21 INFO SparkContext: Created broadcast 0 from textFile at ModelBuilder.scala:70
+15/06/14 02:40:23 INFO FileInputFormat: Total input paths to process : 1
+15/06/14 02:40:24 INFO SparkContext: Starting job: treeAggregate at IDF.scala:53
+15/06/14 02:40:24 INFO DAGScheduler: Registering RDD 6 (treeAggregate at IDF.scala:53)
+15/06/14 02:40:24 INFO DAGScheduler: Got job 0 (treeAggregate at IDF.scala:53) with 6 output partitions (allowLocal=false)
+15/06/14 02:40:24 INFO DAGScheduler: Final stage: Stage 1(treeAggregate at IDF.scala:53)
+15/06/14 02:40:24 INFO DAGScheduler: Parents of final stage: List(Stage 0)
+15/06/14 02:40:24 INFO DAGScheduler: Missing parents: List(Stage 0)
+15/06/14 02:40:24 INFO DAGScheduler: Submitting Stage 0 (MapPartitionsRDD[6] at treeAggregate at IDF.scala:53), which has no missing parents
+15/06/14 02:40:24 INFO MemoryStore: ensureFreeSpace(4760) called with curMem=280487, maxMem=208373022
+15/06/14 02:40:24 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.6 KB, free 198.4 MB)
+15/06/14 02:40:24 INFO MemoryStore: ensureFreeSpace(3233) called with curMem=285247, maxMem=208373022
+15/06/14 02:40:24 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.2 KB, free 198.4 MB)
+15/06/14 02:40:24 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on dell01:55050 (size: 3.2 KB, free: 198.7 MB)
+15/06/14 02:40:24 INFO BlockManagerMaster: Updated info of block broadcast_1_piece0
+15/06/14 02:40:24 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:839
+15/06/14 02:40:24 INFO DAGScheduler: Submitting 46 missing tasks from Stage 0 (MapPartitionsRDD[6] at treeAggregate at IDF.scala:53)
+15/06/14 02:40:24 INFO TaskSchedulerImpl: Adding task set 0.0 with 46 tasks
+15/06/14 02:40:39 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+15/06/14 02:40:54 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+15/06/14 02:41:09 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+15/06/14 02:41:24 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+15/06/14 02:41:39 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+15/06/14 02:41:54 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources

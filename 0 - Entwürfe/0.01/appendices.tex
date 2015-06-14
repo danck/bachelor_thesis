@@ -1,6 +1,13 @@
 \begin{appendices}
 \section{Installation der Plattform}
 \section{Quellcode (Auszüge)}
+\subsection{Performance-Messungen}
+
+\begin{lstlisting}[language=Bash,caption={Messung der Festplattenperformance - Beispiel: Schreiben eines 512MB Blockes},label={lst:measure_harddrive}]
+echo 3 | sudo tee /proc/sys/vm/drop_caches
+dd if=/dev/zero of=test512.out bs=512MB count=1
+\end{lstlisting}
+
 \subsection{Realisierung einer einfachen Continuous Deployment Pipeline}\label{subsec:pipeline}
 \textit{post-receive}-Hook von dem Git-Repository\footnote{https://git-scm.com/, abgerufen am 06.06.2015} der ModelBuilder-Komponente
 \begin{lstlisting}[language=Bash,caption={Primitive Continuous Deployment Pipeline. Beispiel: ModelBuilder},label={lst:cdp_modelbuilder}]
