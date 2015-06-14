@@ -67,21 +67,62 @@ Als Betriebssystem komm Ubuntu\cite{ubuntu} 14.04 32-Bit zum Einsatz.
 Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch mit maximalem Durchsatz von 100MBit/s.
 
 \begin{table}[ht]
-	\caption{---DUMMY--- Netzwerkdurchsatz} % title of Table
+	\caption{Maximaler Netzwerkdurchsatz} % title of Table
 	\centering % used for centering table
 	\begin{tabular}{c c c c} % centered columns (4 columns)
 	\hline\hline %inserts double horizontal lines
-	Nachrichtengröße & Worker $\rightarrow$ Worker & Master $\rightarrow$ Worker & Worker $\rightarrow$ Master \\ [0.5ex] % inserts table
+	Worker $\rightarrow$ Worker & Worker $\rightarrow$ Master \\ [0.5ex] % inserts table
 	%heading
 	\hline % inserts single horizontal line
-	1kB & 50ms & 837ms & 970ms \\ % inserting body of the table
-	64kB & 47ms & 877ms & 230ms \\
-	1MB & 31ms & 25ms & 415ms \\
-	64MB & 35ms & 144ms & 2356ms \\ [1ex] 
+	94,4 MBit/s & 94,4 MBit/s\\ [1ex] 
 	\hline %inserts single line
 	\end{tabular}
-	\label{table:nonlin} % is used to refer this table in the text
+	\label{table:network} % is used to refer this table in the text
 \end{table}
+
+\begin{table}[ht]
+	\caption{Festspeicher Lese-/Schreibdurchsatz dell01 (Master)} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c c} % centered columns (4 columns)
+	\hline\hline %inserts double horizontal lines
+	Operation & Blockgröße (MB) & Durchsatz (MB/s) \\ [0.5ex] % inserts table
+	%heading
+	\hline % inserts single horizontal line
+	Lesen & 1 & 17,2 \\ 
+	Lesen & 16 & 22,1 \\
+	Lesen & 64 & 31,8 \\
+	Lesen & 512 & 31,2 \\
+	Schreiben & 1 & 5,0 \\
+	Schreiben & 16 & 17,2 \\
+	Schreiben & 64 & 26,1 \\
+	Schreiben & 512 & 25,8 \\[1ex] 
+	\hline %inserts single line
+	\end{tabular}
+	\label{table:master_harddrive} % is used to refer this table in the text
+\end{table}
+
+\begin{table}[ht]
+	\caption{Festspeicher Lese-/Schreibdurchsatz pi00 (Worker)} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c c} % centered columns (4 columns)
+	\hline\hline %inserts double horizontal lines
+	Operation & Blockgröße (MB) & Durchsatz (MB/s) \\ [0.5ex] % inserts table
+	%heading
+	\hline % inserts single horizontal line
+	Lesen & 1 & 66,4 \\ 
+	Lesen & 16 & 78,1 \\
+	Lesen & 64 & 42,0 \\
+	Lesen & 512 & 9,2 \\
+	Schreiben & 1 & 17,9 \\ 
+	Schreiben & 16 & 18,4 \\
+	Schreiben & 64 & 18,4 \\
+	Schreiben & 512 & 18,4 \\[1ex] 
+	\hline %inserts single line
+	\end{tabular}
+	\label{table:worker_harddrive} % is used to refer this table in the text
+\end{table}
+
+
 
 \subsection{Lösungsskizze}
 
@@ -204,25 +245,28 @@ Die Funktion \lstinline|ScoreTweets| zur Bewertung einzelner Tweets
 wird dabei wie in Listing \ref{lst:tweet_score} dargestellt implementiert:
 
 \begin{lstlisting}[language=Scala,caption={Bewertung von Tweets},label={lst:tweet_score}]
+// Split text string into single words
+val splitTweets = {
+  stream.map(status =>
+    (status.getText.split(" "), status)
+  )
+}
+
+// calculate score for each word, then sum the scores and normalize
 val scoredTweets = {
-  stream.map(status => (
-    status.getText.split(" ")
-      .map(word =>
-        scores.apply(
-          hashingTF.indexOf(word
-            .toLowerCase
-            .replaceAll("[^a-zA-Z0-9]", " ")
-          )
-        )
-      )
-      .reduce(_ + _)
-      ./(status.getText.split(" ").length)
-    , status)
+  splitTweets.map(splitTweet => {
+    (splitTweet._1.map(word =>
+      broadcastScores.value.apply(
+         hashingTF.indexOf(word.toLowerCase
+           .replaceAll("[^a-zA-Z0-9]", " ")))
+     ).sum./(splitTweet._2.getText.split(" ").length),
+      splitTweet._2
+      )}
   )
 }
 \end{lstlisting}
 
-Folgendes wird dabei gemacht:
+Folgendes geschieht Folgendes:
 \begin{enumerate}
 	\item Extrahieren des Textinhaltes (Metadaten werden ignoriert)
 	\item Zerlegen des Textes in einzelne Wörter
@@ -266,9 +310,32 @@ Die Komponenten werden in jeweils eigenen Projekten entwickelt, die sich einzeln
 Diese Pipeline ist durch ein \textit{post-receive}-Skript in den jeweiligen Repositories der Komponenten auf dem Gateway-Rechner realisiert (Beispiel im Anhang~\ref{subsec:pipeline}).\\
 
 \subsection{Ergebnisse und Bewertung}
-\paragraph{Funktionale Aspekte}
-\paragraph{Nicht-Funktionale Aspekte}
-Blockgröße, Anzahl Worker, Anzahl Replikationen der Blöcke
+
+\begin{table}[ht]
+	\caption{Skalierungsverhalten des ModelBuilders} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c c} % centered columns (4 columns)
+	\hline\hline %inserts double horizontal lines
+	Anzahl Worker & Replikationslevel & HDFS Blockgröße (MB) & Laufzeit (Sekunden) \\ [0.5ex] % inserts table
+	%heading
+	\hline % inserts single horizontal line
+	1 & 1 & 32 & 697 \\ % inserting body of the table
+	1 & 1 & 64 & 750 \\
+	1 & 1 & 128 & 850 \\
+	2 & 2 & 32 & 366 \\
+	2 & 2 & 64 & 448 \\
+	2 & 2 & 128 & 615 \\
+	4 & 3 & 32 & 210 \\
+	4 & 4 & 32 & 209 \\
+	4 & 2 & 64 & 301 \\
+	4 & 3 & 64 & 359 \\
+	4 & 2 & 128 & 433 \\
+	4 & 3 & 128 & 856 \\ [1ex] 
+	\hline %inserts single line
+	\end{tabular}
+	\label{table:scaling} % is used to refer this table in the text
+\end{table}
+
 \paragraph{Bewertung und Probleme}
 
 \textit{Einfachheit}

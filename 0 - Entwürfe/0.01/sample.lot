@@ -24,12 +24,18 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.1}{\ignorespaces ---DUMMY--- Netzwerkdurchsatz\relax }}{26}{table.caption.34}
+\contentsline {table}{\numberline {\relax 3.1}{\ignorespaces Maximaler Netzwerkdurchsatz\relax }}{26}{table.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.2}{\ignorespaces \IeC {\"U}bersicht ausgew\IeC {\"a}hlter Datenquellen f\IeC {\"u}r Spark\relax }}{26}{table.caption.36}
+\contentsline {table}{\numberline {\relax 3.2}{\ignorespaces Festspeicher Lese-/Schreibdurchsatz dell01 (Master)\relax }}{26}{table.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.3}{\ignorespaces \IeC {\"U}bersicht verf\IeC {\"u}gbarer Clustermanager f\IeC {\"u}r Spark\relax }}{27}{table.caption.38}
+\contentsline {table}{\numberline {\relax 3.3}{\ignorespaces Festspeicher Lese-/Schreibdurchsatz pi00 (Worker)\relax }}{26}{table.caption.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {\relax 3.4}{\ignorespaces \IeC {\"U}bersicht ausgew\IeC {\"a}hlter Datenquellen f\IeC {\"u}r Spark\relax }}{27}{table.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {\relax 3.5}{\ignorespaces \IeC {\"U}bersicht verf\IeC {\"u}gbarer Clustermanager f\IeC {\"u}r Spark\relax }}{27}{table.caption.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {\relax 3.6}{\ignorespaces Skalierungsverhalten des ModelBuilders\relax }}{34}{table.caption.52}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 1}{\ignorespaces Theoretische Spitzenleistungen bei Mehrzweck-Servern der 2000 Euro Klasse\relax }}{39}{table.caption.58}
+\contentsline {table}{\numberline {\relax 1}{\ignorespaces Theoretische Spitzenleistungen bei Mehrzweck-Servern der 2000 Euro Klasse\relax }}{40}{table.caption.59}
