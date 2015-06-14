@@ -11,13 +11,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=1115
-NormalPos.bottom=788
+NormalPos.right=2421
+NormalPos.bottom=814
 Class=LaTeXView
 Document=praxis.tex
 
 [Frame0_View0,0]
-TopLine=385
+TopLine=367
 Cursor=12959
 
 [Frame1]
@@ -29,13 +29,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=1115
-NormalPos.bottom=788
+NormalPos.right=2421
+NormalPos.bottom=814
 Class=LaTeXView
 Document=glossar.tex
 
 [Frame1_View0,0]
-TopLine=32
+TopLine=27
 Cursor=1202
 
 [Frame2]
@@ -47,13 +47,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=1115
-NormalPos.bottom=788
+NormalPos.right=2421
+NormalPos.bottom=814
 Class=LaTeXView
 Document=vorstellung.tex
 
 [Frame2_View0,0]
-TopLine=666
+TopLine=561
 Cursor=26984
 
 [Frame3]
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=1115
-NormalPos.bottom=788
+NormalPos.right=2421
+NormalPos.bottom=814
 Class=LaTeXView
 Document=sample.tex
 
 [Frame3_View0,0]
-TopLine=156
-Cursor=4059
+TopLine=114
+Cursor=3409
 
 [Frame4]
 Flags=0
@@ -83,13 +83,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=1115
-NormalPos.bottom=788
+NormalPos.right=2421
+NormalPos.bottom=814
 Class=BibTeXView
 Document=sample.bib
 
 [Frame4_View0,0]
-TopLine=356
+TopLine=302
 Cursor=9896
 
 [Frame5]
@@ -101,8 +101,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=1115
-NormalPos.bottom=788
+NormalPos.right=2421
+NormalPos.bottom=814
 Class=LaTeXView
 Document=einfuehrung.tex
 
@@ -119,8 +119,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=1115
-NormalPos.bottom=788
+NormalPos.right=2421
+NormalPos.bottom=814
 Class=LaTeXView
 Document=schluss.tex
 
@@ -137,16 +137,16 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=1115
-NormalPos.bottom=788
+NormalPos.right=2421
+NormalPos.bottom=814
 Class=LaTeXView
 Document=appendices.tex
 
 [Frame7_View0,0]
-TopLine=0
-Cursor=266
+TopLine=3
+Cursor=278
 
 [SessionInfo]
 FrameCount=8
-ActiveFrame=0
+ActiveFrame=3
 

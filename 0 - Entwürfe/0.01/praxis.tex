@@ -67,7 +67,7 @@ Als Betriebssystem komm Ubuntu\cite{ubuntu} 14.04 32-Bit zum Einsatz.
 Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch mit maximalem Durchsatz von 100MBit/s.
 
 \begin{table}[ht]
-	\caption{Maximaler Netzwerkdurchsatz} % title of Table
+	\caption{Maximaler Netzwerkdurchsatz{\protect\footnotemark}} % title of Table
 	\centering % used for centering table
 	\begin{tabular}{c c c c} % centered columns (4 columns)
 	\hline\hline %inserts double horizontal lines
@@ -79,9 +79,10 @@ Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch m
 	\end{tabular}
 	\label{table:network} % is used to refer this table in the text
 \end{table}
+\footnotetext{Gemessen mit \lstinline|iperf -c <IP-Adresse des Peers> -r -P 4|}
 
 \begin{table}[ht]
-	\caption{Festspeicher Lese-/Schreibdurchsatz dell01 (Master)} % title of Table
+	\caption{Festspeicher Lese-/Schreibdurchsatz dell01 (Master){\protect\footnotemark}} % title of Table
 	\centering % used for centering table
 	\begin{tabular}{c c c c} % centered columns (4 columns)
 	\hline\hline %inserts double horizontal lines
@@ -100,6 +101,7 @@ Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch m
 	\end{tabular}
 	\label{table:master_harddrive} % is used to refer this table in the text
 \end{table}
+\footnotetext{Gemessen mit \lstinline|dd|. Siehe Anhang Listing~\ref{lst:measure_harddrive}}
 
 \begin{table}[ht]
 	\caption{Festspeicher Lese-/Schreibdurchsatz pi00 (Worker)} % title of Table
@@ -292,7 +294,7 @@ Anschließend werden die erzeugten Tupel nach der Größe des erreichten Scores 
 
 \begin{figure}[ht!]
 	\centering
-  \includegraphics[scale=0.65]{demo_app_components.pdf}
+  \includegraphics[width=0.9\textwidth]{demo_app_components.pdf}
 	\caption{Komponentendiagramm des Demo App Packages}
 	\label{figure:demo_app_komponenten}
 \end{figure}
@@ -310,6 +312,13 @@ Die Komponenten werden in jeweils eigenen Projekten entwickelt, die sich einzeln
 Diese Pipeline ist durch ein \textit{post-receive}-Skript in den jeweiligen Repositories der Komponenten auf dem Gateway-Rechner realisiert (Beispiel im Anhang~\ref{subsec:pipeline}).\\
 
 \subsection{Ergebnisse und Bewertung}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{bilder/streaming_stats_dashboard.PNG}
+	\captio{Spark-Dashboard des Realtime Analyzers}
+	\label{figure:realtime_dashboard_stats}
+\end{figure}
 
 \begin{table}[ht]
 	\caption{Skalierungsverhalten des ModelBuilders} % title of Table

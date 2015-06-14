@@ -1,3 +1,26 @@
 \chapter{Schlussbetrachtung}
-\section{Kritische Betrachtung der Ergebnisse}
+\section{Betrachtung der Ergebnisse}
+Es wurde eine Anwendung entworfen und implementiert, die einen Echtzeitdatenstrom nach vorgegebenen Kriterien analysiert und dabei dynamisch auf geänderte Vorgaben reagieren kann.\\
+Diese Anwendung wurde anschließend als Testfall für den Betrieb einer Apache Spark/Hadoop-Umgebung auf einem Low-End-Hardware-Cluster aus Raspberry Pis genutzt und das Laufzeitverhalten untersucht.\\
+
+Dieser Versuch war erfolgreich. Es ist möglich einen Spark/Hadoop-Cluster auf der beschriebenen Hardware zu betreiben und die genannte Anwendung stabil zu betreiben.\\
+
+Dabei hat sich die Hardware sogar als leistungsfähiger als nötig erwiesen. Zwar profitiert insbesondere die Batch-Komponente deutlich von dem Hinzufügen weiterer Knoten, die Streaming-Komponente ist jedoch mit einem einzelnen Knoten bereits problemlos zu betreiben und erfährt durch verteilte Ausführung keine weitere Verbesserung der Performance.\\
+
+Die geringe Last des kostenlosen Twitterdatenstroms verursacht für die weitere Bewertung der Ergebnisse zwei Probleme:
+\begin{enumerate}
+	\item Da selbst ein einzelner Knoten für die Analyse des Datenstroms mehr als ausreichend ist, lassen sich aus dem Experiment keine Aussagen über das Skalierungsverhalten der entsprechenden Komponente treffen.
+	\item Bei der Exploration mehrerer zehntausend Tweets wurde kein einziger mit einem plausiblen Bezug zu den in der Spark-Mailingliste diskutierten Themen gefunden. Eine empirische Bewertung der funktionalen Qualitäten der Implementation ist damit nicht ohne Weiteres möglich.
+\end{enumerate}
+
 \section{Ausblick und offene Punkte}
+Der Betrieb eines Spark/Hadoop-Clusters ist komplex. Für einen produktiven Betrieb der hier vorgestellten Architektur gibt es eine Reihe von Maßnahmen, die im Rahmen der betrachteten Fragestellungen ausgeblendet wurden.\\
+
+Beispiele sind
+\begin{enumerate}
+	\item \textbf{Message Queues:} Eine robuste Verbindung zur asynchronen Kommunikation zwischen Batch- und Realtime-Komponente. Hierfür kämem insbesondere Messagequeues oder auch (NoSQL-)Datenbanken in Frage.
+	\item \textbf{Textkorpus:} Als Textkorpus für das TF-IDF-Verfahren wurde für diesen \textit{Proof of Concept} der vervielfachte Inhalt von Nachrichten aus der Spark-User-Mailingliste verwendet (etwa 13000 Emails). Eine schärfere Abgrenzung relevanter Begriffe lässt sich wahrscheinlich durch einen unabhängigen Korpus erreichen (beispielsweise Wikipedia oder der klassische Reuters-Nachrichtenkorpus\footnote{https://kdd.ics.uci.edu/databases/reuters21578/reuters21578.html, abgerufen am 01.06.2015}.
+	\item \textbf{Ähnlichkeitsmaß:}
+	\item \textbf{Mehr Datenquellen} 
+\end{enumerate}
+Message Queue, Textkorpus, Ähnlichkeitsanalyse, mehr Datenquellen

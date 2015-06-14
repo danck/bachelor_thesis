@@ -1,16 +1,59 @@
 \begin{appendices}
 \section{Installation der Plattform}
-\section{Quellcode (Auszüge)}
+\section{Quellcode/Skripte (Auszüge)}
 \subsection{Performance-Messungen}
 
-\begin{lstlisting}[language=Bash,caption={Messung der Festplattenperformance - Beispiel: Schreiben eines 512MB Blockes},label={lst:measure_harddrive}]
-echo 3 | sudo tee /proc/sys/vm/drop_caches
+\begin{lstlisting}[caption={Messung der Festplattenperformance - Beispiel: Schreiben einer 512MB Datei},label={lst:measure_harddrive}]
+echo 3 > /proc/sys/vm/drop_caches
 dd if=/dev/zero of=test512.out bs=512MB count=1
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Messung der Netzwerkperformance},label={lst:measure_network}]
+iperf -c <IP-Adresse des Peers> -r -P 4
+\end{lstlisting}
+
+\subsection{Monitoring}
+
+\begin{lstlisting}[caption={Monitoring des Clusters (Betriebssystem), Beispiel ModelBuilder},label={lst:monitor_cluster}]
+#/bin/bash
+
+### ModelBuilder Wrapper Skript
+
+TIME=`date +"%H-%M"`
+WORKERS="pi00 pi01 pi02 pi03"
+
+# Start Monitoring
+	
+for host in $WORKERS; do
+  ssh $host "screen -d -m dstat -cdlsmn --output $1.log"
+done
+screen -d -m dstat -cdlsm --output $1.log
+
+# Run App
+/home/daniel/start_modelbuilder.sh $1-$TIME 2>&1 > \
+  ~/metrics/$1_$TIME.log 
+
+# Stop Monitoring
+for host in $WORKERS; do
+  ssh $host 'screen -X quit'
+done
+screen -X quit
+
+# Collect results
+for host in $WORKERS; do
+  scp $host:/home/daniel/$1.log ~/metrics/dstat/$1_$host_$TIME.csv
+done
+cp ~/$1.log ~/metrics/dstat/$1_dell01_$TIME.csv
+
+# Clean up
+for host in $WORKERS; do
+  ssh $host "rm /home/daniel/$1.log"
+done
 \end{lstlisting}
 
 \subsection{Realisierung einer einfachen Continuous Deployment Pipeline}\label{subsec:pipeline}
 \textit{post-receive}-Hook von dem Git-Repository\footnote{https://git-scm.com/, abgerufen am 06.06.2015} der ModelBuilder-Komponente
-\begin{lstlisting}[language=Bash,caption={Primitive Continuous Deployment Pipeline. Beispiel: ModelBuilder},label={lst:cdp_modelbuilder}]
+\begin{lstlisting}[caption={Einfache Continuous Deployment Pipeline. Beispiel: ModelBuilder},label={lst:cdp_modelbuilder}]
 #/bin/bash
 
 export SPARK_HOME=/opt/spark/
@@ -36,6 +79,42 @@ if [ $? -ne "0" ]; then exit 1; fi
 ~/autobuilds/model_builder/ [...] /model-builder_2.10-1.0.jar\
 hdfs://192.168.206.131:54310/user/daniel/user_emails_corpus1.txt\
 <emailaccount> <passwort>
+\end{lstlisting}
+
+\section{Konfigurationen}
+
+\begin{lstlisting}[caption={hdfs-site.xml (Auszug): Beispiel mit Replikationsfaktor 1 und Blockgröße 32MB},label={lst:hdfs_config}]
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>dfs.block.size</name>
+    <value>33554432</value>
+  </property>
+  <property>
+    <name>dfs.permissions</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>dfs.datanode.drop.cache.behind.writes</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>dfs.namenode.datanode.registration.ip-hostname-check</name>
+    <value>false</value>
+  </property>
+</configuration>
+\end{lstlisting}
+
+Eine vollständige Liste der HDFS-Optionen und -Standardeinstellungen kann unter [\footnote{https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml, abgerufen am 03.06.2015}] eingesehen werden.
+
+\begin{lstlisting}[caption={spark-defaults.conf (Auszug)},label={lst:hdfs_config}]
+spark.master                     spark://dell01:7077
+spark.eventLog.enabled           true
+spark.eventLog.dir               file:///home/spark/metrics/secondary
+spark.shuffle.memoryFraction     0.3
 \end{lstlisting}
 
 \section{Sonstiges}

@@ -1,11 +1,12 @@
 #/bin/bash
 
+WORKERS="pi00 pi01 pi02 pi03"
 
 # Start Monitoring
-ssh pi00 "screen -d -m dstat --output $1.log"
-ssh pi01 "screen -d -m dstat --output $1.log"
-ssh pi02 "screen -d -m dstat --output $1.log"
-ssh pi03 "screen -d -m dstat --output $1.log"
+ssh pi00 "screen -d -m dstat -cdlsmn --output $1.log"
+ssh pi01 "screen -d -m dstat -cdlsmn --output $1.log"
+ssh pi02 "screen -d -m dstat -cdlsmn --output $1.log"
+ssh pi03 "screen -d -m dstat -cdlsmn --output $1.log"
 screen -d -m dstat --output $1.log
 
 # Run App
@@ -24,3 +25,8 @@ scp pi01:/home/daniel/$1.log ~/metrics/dstat/$1_pi01_`date +"%H-%M"`.csv
 scp pi02:/home/daniel/$1.log ~/metrics/dstat/$1_pi02_`date +"%H-%M"`.csv
 scp pi03:/home/daniel/$1.log ~/metrics/dstat/$1_pi03_`date +"%H-%M"`.csv
 cp ~/$1.log ~/metrics/dstat/$1_dell01_`date +"%H-%M"`.csv
+
+# Clean up
+for host in $WORKERS; do
+  ssh $host "rm /home/daniel/$1.log"
+done
