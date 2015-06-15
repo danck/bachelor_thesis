@@ -30,19 +30,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Resilient Distributed Datasets}{7}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Verteilungssicht}{7}{section*.8}
+\contentsline {paragraph}{\nonumberline Verteilungssicht}{8}{section*.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Laufzeitsicht}{8}{section*.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Scheduling/Shuffling}{13}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Anwendungsdeployment und -lebenszyklus}{16}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Anwendungsdeployment}{16}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Anwendungsdeployment}{16}{section*.18}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Zusammenfassung und Bewertung}{17}{subsection.2.2.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Standardbibliotheken}{17}{section.2.3}
+\contentsline {section}{\numberline {2.3}Standardbibliotheken}{18}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Dataframes/Spark SQL}{18}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
@@ -52,88 +48,82 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.4}GraphX}{20}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Betrieb und Security}{20}{section.2.4}
+\contentsline {section}{\numberline {2.4}Spark im Kontext von Parallelisierungspattern}{20}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Spark im Kontext von Parallelisierungspattern}{20}{section.2.5}
+\contentsline {section}{\numberline {2.5}Entwicklergemeinschaft}{20}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Entwicklergemeinschaft}{20}{section.2.6}
+\contentsline {section}{\numberline {2.6}Auswahl verwandter Produkte}{21}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Auswahl verwandter Produkte}{21}{section.2.7}
+\contentsline {paragraph}{\nonumberline Hadoop/YARN}{21}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Hadoop/YARN}{21}{section*.23}
+\contentsline {paragraph}{\nonumberline Mesos}{22}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Mesos}{21}{section*.24}
+\contentsline {paragraph}{\nonumberline Flink}{22}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Flink}{22}{section*.25}
+\contentsline {paragraph}{\nonumberline MPI}{22}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline MPI}{22}{section*.26}
+\contentsline {paragraph}{\nonumberline Samza}{22}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Samza}{22}{section*.27}
+\contentsline {paragraph}{\nonumberline Storm}{22}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Storm}{22}{section*.28}
+\contentsline {chapter}{\numberline {3}Entwicklung und Betrieb einer Beispielanwendung}{23}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Beispielanwendung von Spark zur Datenanalyse}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Vorstellung der Beispielanwendung}{23}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Vorstellung des Anwendungsfalls}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Hardwareumgebung}{24}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Anforderungen}{23}{subsection.3.1.1}
+\contentsline {paragraph}{\nonumberline Worker}{25}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Hardwareumgebung}{25}{section.3.2}
+\contentsline {paragraph}{\nonumberline Master}{25}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Worker}{25}{section*.31}
+\contentsline {paragraph}{\nonumberline Netzwerk}{26}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Master}{25}{section*.32}
+\contentsline {section}{\numberline {3.3}L\IeC {\"o}sungsskizze}{26}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Netzwerk}{26}{section*.33}
+\contentsline {paragraph}{\nonumberline Wahl des Dateisystems}{26}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}L\IeC {\"o}sungsskizze}{27}{section.3.3}
+\contentsline {paragraph}{\nonumberline Wahl des Cluster-Managers}{26}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Wahl des Dateisystems}{27}{section*.37}
+\contentsline {paragraph}{\nonumberline Architektur\IeC {\"u}bersicht}{27}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Wahl des Cluster-Managers}{27}{table.caption.40}
+\contentsline {paragraph}{\nonumberline Batch Layer}{27}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Architektur\IeC {\"u}bersicht}{28}{section*.41}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Batch Layer}{28}{section*.43}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Streaming Layer}{29}{section*.45}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Presentation Layer}{31}{figure.caption.49}
+\contentsline {paragraph}{\nonumberline Streaming Layer}{28}{section*.42}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Hinweise zur Entwicklung}{31}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Ergebnisse und Bewertung}{33}{section.3.5}
+\contentsline {section}{\numberline {3.5}Ergebnisse und Bewertung}{32}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Batch-Komponente}{35}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.1}Batch-Komponente}{34}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}Echtzeitkomponente}{39}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.2}Echtzeitkomponente}{38}{subsection.3.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Zusammenfassung}{41}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}Zusammenfassung}{40}{subsection.3.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Schlussbetrachtung}{42}{chapter.4}
+\contentsline {chapter}{\numberline {4}Schlussbetrachtung}{41}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Diskussion der Ergebnisse}{42}{section.4.1}
+\contentsline {section}{\numberline {4.1}Diskussion der Ergebnisse}{41}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{43}{section.4.2}
+\contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{42}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyme}{45}{section*.59}
+\contentsline {chapter}{Acronyme}{44}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{46}{section*.61}
+\contentsline {chapter}{Glossar}{45}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{47}{section*.63}
+\contentsline {chapter}{Anhang}{46}{section*.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Installation der Plattform}{48}{section.1..1}
+\contentsline {section}{\numberline {1}Installation der Plattform}{47}{section.1..1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Quellcode/Skripte (Ausz\IeC {\"u}ge)}{48}{section.1..2}
+\contentsline {section}{\numberline {2}Quellcode/Skripte (Ausz\IeC {\"u}ge)}{47}{section.1..2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Performance-Messungen}{48}{subsection.1..2.1}
+\contentsline {subsection}{\numberline {2.1}Performance-Messungen}{47}{subsection.1..2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Monitoring}{48}{subsection.1..2.2}
+\contentsline {subsection}{\numberline {2.2}Monitoring}{47}{subsection.1..2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Realisierung einer einfachen Continuous Deployment Pipeline}{49}{subsection.1..2.3}
+\contentsline {subsection}{\numberline {2.3}Realisierung einer einfachen Continuous Deployment Pipeline}{48}{subsection.1..2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Konfigurationen}{50}{section.1..3}
+\contentsline {section}{\numberline {3}Konfigurationen}{49}{section.1..3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Sonstiges}{51}{section.1..4}
+\contentsline {section}{\numberline {4}Sonstiges}{50}{section.1..4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Einsch\IeC {\"a}tzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}{51}{subsection.1..4.1}
+\contentsline {subsection}{\numberline {4.1}Einsch\IeC {\"a}tzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}{50}{subsection.1..4.1}

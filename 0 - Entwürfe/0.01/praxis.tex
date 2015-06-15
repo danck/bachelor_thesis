@@ -1,37 +1,26 @@
-\chapter{Beispielanwendung von Spark zur Datenanalyse}
+\chapter{Entwicklung und Betrieb einer Beispielanwendung}
 
-Zur vertiefenden Betrachtung von Spark wird im Folgenden die Implementation einer Beispielanwendung gezeigt.\\
+In diesem Kapitel wird die Entwicklung einer Anwendung für Spark und der Betrieb auf einem Cluster mit leistungsschwacher Hardware demonstriert und untersucht.
 
-Dazu sollen mindestens zwei verschiedene Standardbibliotheken und deren Integration in eine gemeinsame Anwendung durchgeführt werden.\\
+\section{Vorstellung der Beispielanwendung}
 
-Anschließend werden rudimentäre Skalierungs- und Stresstests der Anwendung durchgeführt und der durchgeführte Versuch unter den Kriterien \textit{Einfachheit}, \textit{Skalierbarkeit}, \textit{Erweiterbarkeit}, \textit{Robustheit}, \textit{Sicherheit} und \textit{Wartbarkeit} zusammengefasst und bewertet.
+Als Demonstration der Anwendungsentwicklung und des -betriebes mit Spark soll ein Backend zur Nachrichtenanalyse geschrieben werden.\\
+Nachrichten sind in diesem Fall Tweets, die über die kostenlose Streaming-\gls{API}\footnote{https://dev.twitter.com/streaming/sitestreams, abgerufen am 06.06.2015} von Twitter\footnote{https://twitter.com, abgerufen am 06.06.2015} übertragen  und anschließend bewertet werden sollen.\\
+Die Bewertung soll anhand inhaltlicher Ähnlichkeit mit aktuellen Diskussionen innerhalb der Mailingliste\footnote{user@spark.apache.org, abgerufen am 15.06.2015} von Sparkbenutzern erfolgen.\\
 
-\section{Vorstellung des Anwendungsfalls}
-In dem Anwendungsfall soll ein Dashboard erstellt werden, auf dem Textnachrichten angezeigt werden.
-Die Textnachrichten werden aus einem Datenstrom gelesen und dabei - entsprechend ihrer aktuellen Relevanz für einen Sparkbenutzer - bewertet und gefiltert. Als Maßstab für die Relevanz sollen Begriffen dienen, die kürzlich in der Mailingliste der Sparkbenutzer diskutiert wurden.\\
+In Abbildung~\ref{figure:demo_app_usecase} wird der zugehörige Anwendungsfall dargestellt. Für die Beispielanwendung wird nur das Backend implementiert. Die grafische Benutzeroberfläche wird jedoch stellenweise erwähnt, um einen klaren Kontext zu setzen.\\
 
 \begin{figure}[ht!]
 	\centering
-  \includegraphics[scale=0.7]{demo_app_usecase.pdf}
+  \includegraphics[width=0.9\textwidth]{demo_app_usecase.pdf}
 	\caption{Anwendungsfalldiagramm der Demo-Applikation}
 	\label{figure:demo_app_usecase}
 \end{figure}
 
-Als Datenquellen dienen einerseits die Emails aus der Malingliste\footnote{user@spark.apache.org} und andererseits der öffentliche Datenstrom\footnote{https://dev.twitter.com/streaming/sitestreams} mit Textnachrichten (\glspl{tweet}) der Plattform Twitter\footnote{https://twitter.com, abgerufen am 06.06.2015}.
+Die Analyse der Tweets soll in Quasi-Echtzeit erfolgen und direkt anschließend an eine Datensenke weitergereicht werden (dort wäre beispielsweise eine Messagequeue oder Datenbank zur Weiterleitung an eine grafische Benutzeroberfläche).\\
+Bis zu zehn Sekunden Latenz vom Eingang der Nachricht bis zur Weiterleitung an die Senke seien hier als \textit{Quasi-Echtzeit} akzeptabel.\\
 
-\subsection{Anforderungen}
-
-Für die Software soll folgende lose Sammlung funktionaler und nicht-funktionaler Anforderungen gelten. Mit \textit{Information} ist jeweils eine Auflistung von \glspl{tweet} gemeint.
-
-\begin{itemize}
-	\item \textbf{A1: Zugriff auf die Information}\\
-	Der Zugriff soll über eine grafische Benutzerschnittstelle erfolgen und keine Konfigurationen benötigen.
-	\item \textbf{A2: Aktualität der Information}\\
-	Es sollen stets Informationen dargestellt werden, die unmittelbar zuvor entstanden sind und in Quasi-Echtzeit\footnote{Eine Latenz von unter einer Minute sei hier tolerabel} verarbeitet wurden.
-	\item \textbf{A3: Relevanz der Information}\\
-	Die Relevanz soll an aktuellen Themen der Entwicklergemeinschaft gemessen werden.
-\end{itemize}
-
+Als \textit{aktuelle Diskussionen} in der Mailingliste der Sparkbenutzer gelten solche, die innerhalb der letzten etwa 500 Nachrichten geführt wurden. Bei der Bewertung neuer Nachrichten gibt es hier keine Echtzeit-Anforderung. Die Neubewertung bei Eintreffen neuer Nachrichten - höchstens etwa alle 30 Minuten - soll genügen.
 
 \section{Hardwareumgebung}
 
@@ -44,6 +33,10 @@ Als Versuchsumgebung dient ein \gls{cluster} aus vier identischen \gls{worker}n 
 	\label{figure:versuchsaufbau}
 \end{figure}
 
+Dieser Cluster besteht aus ausschließlich aus leistungsschwacher Hardware. Mit \textit{leistungsschwach} sind Geräte gemeint, deren Leistungsfähigkeit noch deutlich unter aktueller sogenannter \textit{Commodity Hardware} liegt (Vgl. Anhang~\ref{subsec:commodity_servers}).\\
+
+Konkret kommen die folgenden Geräte zum Einsatz:
+
 \paragraph{Worker}
 Rasperry Pi 2
 \begin{itemize}
@@ -52,7 +45,7 @@ Rasperry Pi 2
 	\item Ethernet: 100MBit/s
 	\item Festspeicher: SDHC Class 4 Speicherkarte 16GB
 \end{itemize}
-Als Betriebssystem kommt das Debian-Derivat Raspbian\cite{raspbian} 32-Bit zum Einsatz.
+Als Betriebssystem wird das Debian-Derivat Raspbian\cite{raspbian} 32-Bit genutzt.
 
 \paragraph{Master}
 Dell d420
@@ -62,10 +55,12 @@ Dell d420
 	\item Ethernet: 100MBit/s
 	\item Festspeicher: 60GB 4200RPM Hard Drive
 \end{itemize}
-Als Betriebssystem komm Ubuntu (\cite{ubuntu}) 14.04 32-Bit zum Einsatz.
+Als Betriebssystem wird Ubuntu (\cite{ubuntu}) 14.04 32-Bit genutzt.
 
 \paragraph{Netzwerk}
-Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch mit maximalem Durchsatz von 100MBit/s.
+Die Rechner sind mit \gls{rj45} über einen TP-Link TL-SF1008D Switch mit theoretischem maximalem Durchsatz von 100MBit/s vernetzt.
+
+Als Basisdaten für die Leistungsfähigkeit der eingesetzten Hardware werden zusätzliche Tests durchgeführt, deren Ergebnisse in Tabelle \ref{table:network}, Tabelle \ref{table:master_harddrive} und Tabelle \ref{table:master_harddrive} aufgeführt sind.
 
 \begin{table}[ht]
 	\centering % used for centering table
@@ -125,68 +120,22 @@ Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch m
 	\label{table:worker_harddrive} % is used to refer this table in the text
 \end{table}
 
-
-
 \section{Lösungsskizze}
 \paragraph{Wahl des Dateisystems}
 
-Als Quelle der persistenten Daten (Nachrichtenkorpus der Mailinglisten) kommen verschiedene Technologien in Frage:
 
-\begin{table}[ht]
-	\caption{Übersicht ausgewählter Datenquellen für Spark} % title of Table
-	\centering % used for centering table
-	\begin{tabular}{c c c} % centered columns (4 columns)
-	\hline\hline %inserts double horizontal lines
-	Name & Typ & Beschreibung\\ [0.5ex] % inserts table
-	%heading
-	\hline % inserts single horizontal line
-	Cassandra & Datenbank & ...\\ % inserting body of the table
-	HBase & Datenbank & ...\\
-	HDFS & Verteiltes Dateisystem & ...\\
-	Kafka & ?? & ...\\
-	\hline %inserts single line
-	\end{tabular}
-	\label{table:dsources} % is used to refer this table in the text
-\end{table}
-
-Für diesen Versuch wird HDFS zum Verwalten der Textdatei gewählt. Für das Einlesen des Textkorpus wird keine Echtzeitfunktionalität benötigt. Weil an den Textdateien nichts geändert wird ist Versionierung ebenso unnötig wie Verknüpfungen zu anderen Datensätzen.\\
-
-Die "`In-Memory"'-Funktionen (VERWEIS Glossar?) anderer Systeme, sind hier eher hinderlich, weil der lokale Arbeitsspeicher der Arbeitsknoten im Versuchsaufbau stark beschränkt ist und eine leicht erhöhte Latenz beim Einlesen in Kauf genommen werden kann. Das Erstellen des Feature Vektors (VERWEIS) ist nicht zeitkritisch für die Echtzeitkomponente.\\
-
-HDFS als Komponente von Apache Hadoop ist in den Versionen 2.x deutlich bezüglich der Verfügbarkeit und Skalierbarkeit verbessert worden (VERWEIS), allerdings auch aufwändiger zu installieren. Für den Zweck dieses Versuchs wird Version 1.2.1 gewählt.
-
-\begin{itemize}
-	\item item 
-	\item item
-\end{itemize}
 
 \paragraph{Wahl des Cluster-Managers}
-
-\begin{table}[ht]
-	\caption{Übersicht verfügbarer Clustermanager für Spark} % title of Table
-	\centering % used for centering table
-	\begin{tabular}{c c c} % centered columns (4 columns)
-	\hline\hline %inserts double horizontal lines
-	Name & Typ & Beschreibung\\ [0.5ex] % inserts table
-	%heading
-	\hline % inserts single horizontal line
-	Standalone & Spezifischer Clustermanager für Spark & ...\\ % inserting body of the table
-	Mesos & General Purpose & ...\\
-	YARN & General Purpose & Apache Hadoop 2.x Clustermanager \\
-	\hline %inserts single line
-	\end{tabular}
-	\label{table:cmngrs} % is used to refer this table in the text
-\end{table}
 
 Spark läuft in diesem Versuch als alleinige Computeanwendung auf dem Cluster. Es ist also nicht nötig Konkurrenz um Ressourcen zu berücksichtigen. Für diesen Versuch wird daher der Standalone Clustermanager gewählt.\\
 
 \paragraph{Architekturübersicht}\\
 \\
 
-Die Implementation des Anwendungsfalles soll in drei Schichten erfolgen. \\
+Die Architektur der Beispielanwendung teilt die Anwendungslogik in drei Schichten auf. \\
 In einer Schicht findet die Verarbeitung eingehender Emails statt und es werden die Relevanz der Begriffe bewertet (\textit{Batch Layer}).
 In einer zweiten Schicht werden die Tweets aus einem Datenstrom eingelesen und deren Relevanz anhand der Bewertungen aus der ersten Schicht bewertet (\textit{Streaming Layer}).\\
-In der dritten Schicht werden die als relevant eingestuften Emails in einer grafischen Oberfläche dem Benutzer zur Verfügung gestellt (\textit{Presentation Layer}).
+In der dritten Schicht werden die als relevant eingestuften Emails in einer grafischen Oberfläche dem Benutzer zur Verfügung gestellt (\textit{Presentation Layer}). Diese Schicht gehört nicht zum Spark-Backend und wird für diese Demonstation nicht implementiert.
 
 \begin{figure}[ht!]
 	\centering
@@ -200,7 +149,7 @@ In der dritten Schicht werden die als relevant eingestuften Emails in einer graf
 
 In dieser Schicht wird die Verarbeitung von Emails aus der Spark-User-Mailingliste zu einem Modell von relevanten Wörtern geleistet.\\
 
-Dazu werden eingehende Emails zunächst archiviert und anschließend mithilfe des Corpus aller bisher archivierten Emails und einer Untermenge von \textit{n} zuletzt empfangenen Emails eine Bewertung der vorkommenden Wörtern vorgenommen.\\
+Dazu werden eingehende Emails zunächst archiviert und anschließend mithilfe des Korpus aller bisher archivierten Emails und einer Untermenge von \textit{n} zuletzt empfangenen Emails eine Bewertung der vorkommenden Wörtern vorgenommen.\\
 
 Diese Bewertung soll das Maß für die Relevanz eines Wortes in der betrachteten Menge der letzten \textit{n} Emails sein. Um das zu erreichen, wird in mehreren Schritten ein TF-IDF Vektor über die Wörter dieser Nachrichten erzeugt.\\
 
@@ -211,28 +160,26 @@ Eine Implementation dieses Verfahrens ist in der Spark Standardbibliothek \texti
 In diesem Anwendungsfall gilt:
 \begin{itemize}
 \item Email-Bodies\footnote{Textbereich einer Email} werden jeweils als Dokumente verarbeitet
-\item Das Archiv aller Email-Bodies ist der Textkorpus\footnote{Ein unabhängiger Textkorpus (wie etwa Wikipedia) würde wahrscheinlich bessere Ergebnisse liefern. Beispielsweise würden Begriffe wie \textit{Spark} und \textit{Apache} durch ihre geringere Häufigkeit in dessen Dokumenten höher bewertet werden. Für diese Demonstration bietet aber die Gesamtheit der Email-Texte ausreichend Volumen und zeitliche Dynamik und verringert außerdem die Komplexität der Implementierung.}
+\item Das Archiv aller Email-Bodies ist der Textkorpus
 \end{itemize}
 
 \begin{figure}[ht!]
 	\centering
-  \includegraphics[scale=0.7]{batch_layer.pdf}
+  \includegraphics[width=\textwidth]{batch_layer.pdf}
 	\caption{Innenansicht der Batch-Layer Komponente}
 	\label{figure:demo_app_batchlayer}
 \end{figure}
-
-
 
 \paragraph{Streaming Layer}\\
 \\
 
 In dieser Schicht werden die Nachrichten aus dem Twitter-Datenstrom bewertet und gefiltert.\\
 
-Dazu wird über die Spark-Komponente \textit{TwitterUtils}\footnote{TwitterUtils sind Teil der Spark-Standardbibliothek org.apache.spark.streaming.twitter} eine Verbindung über HTTP zu einem Twitter-Endpunkt aufgebaut\footnote{https://dev.twitter.com/streaming/overview/connecting, abgerufen am 01.06.2015}. Über diese Verbindung werden - bei unpriveligiertem Zugriff - etwa zehn Tweets pro Sekunde über einen dauerhaften Datenstrom zur Verfügung gestellt.\\
+Dazu wird über die Spark-Komponente \textit{TwitterUtils}\footnote{TwitterUtils sind Teil der Spark-Standardbibliothek org.apache.spark.streaming.twitter} eine Verbindung über HTTP zu einem Twitter-Endpunkt aufgebaut\footnote{https://dev.twitter.com/streaming/overview/connecting, abgerufen am 01.06.2015}. Über diese Verbindung werden - bei unpriveligiertem Zugriff - etwa 40 Tweets pro Sekunde über einen dauerhaften Datenstrom zur Verfügung gestellt.\\
 
 \begin{figure}[ht!]
 	\centering
-  \includegraphics[scale=0.7]{streaming_layer.pdf}
+  \includegraphics[width=\textwidth]{streaming_layer.pdf}
 	\caption{Innenansicht der Streaming-Layer Komponente}
 	\label{figure:demo_app_streaminglayer}
 \end{figure}
@@ -273,20 +220,17 @@ Folgendes geschieht Folgendes:
 	\item Extrahieren des Textinhaltes (Metadaten werden ignoriert)
 	\item Zerlegen des Textes in einzelne Wörter
 	\item Normalisieren der Wörter durch Umwandeln in Kleinbuchstaben und Entfernen von Sonderzeichen
-	\item Index der einzelnen Wörter im TF-IDF-Vektor berechnen und dem eingetragenen Score zuweisen (Map)
-	\item Scores aller Wörter eines Tweets summieren (Reduce)
+	\item Index der einzelnen Wörter im TF-IDF-Vektor berechnen und dem eingetragenen Score zuweisen (\textit{Map})
+	\item Scores aller Wörter eines Tweets summieren (\textit{Reduce})
 	\item Normalisieren des Scores per Division durch die Anzahl aller Wörter des Tweets
 	\item Rückgabe des Tupels \textit{(Score, Status)}
 \end{enumerate}
 
 Anschließend werden die erzeugten Tupel nach der Größe des erreichten Scores gefiltert und die verbleibenden Status-Texte an den TweetSink weitergegeben.\\
 
-\paragraph{Presentation Layer}\\
-\\
-
 \begin{figure}[ht!]
 	\centering
-  \includegraphics[scale=0.7]{demo_app_deployment.pdf}
+  \includegraphics[width=0.9\textwidth]{demo_app_deployment.pdf}
 	\caption{Verteilungssicht auf die Demo App}
 	\label{figure:demo_app_verteilung}
 \end{figure}
@@ -306,7 +250,7 @@ Die Komponenten werden in jeweils eigenen Projekten entwickelt, die sich einzeln
 
 \begin{figure}[ht!]
 	\centering
-  \includegraphics[scale=0.67]{Pipeline.pdf}
+  \includegraphics[width=0.9\textwidth]{Pipeline.pdf}
 	\caption{Einfache Continuous Deployment Pipeline}
 	\label{figure:cd_pipeline}
 \end{figure}
@@ -417,11 +361,11 @@ Tabelle~\ref{table:scaling} zeigt die Laufzeiten der Modelbuilderkomponente bei 
 	4 & 3 & 128 & 433 \\ [1ex] 
 	\hline %inserts single line
 	\end{tabular}
-	\caption{Skalierungsverhalten des ModelBuilders} % title of Table
+	\caption{Skalierungsverhalten des ModelBuilders - mit * sind jeweils die schnellste und langsamste Konfiguration markiert} % title of Table
 	\label{table:scaling} % is used to refer this table in the text
 \end{table}
 
-Einen besonderen Einfluss auf die Laufzeit hat offenbar die Blockgröße. Bei gleicher Anzahl von Workern und Replikaten verschlechtert sich die Laufzeit in jedem Versuch bei zunehmender Blockgröße. Diese Beobachtung deckt sich mit den in Tabelle~\ref{table:worker_harddrive} dargestellten Eigenschaften des Festspeichers auf den Workern: 
+Einen besonderen Einfluss auf die Laufzeit hat offenbar die Blockgröße. Bei gleicher Anzahl von Workern und Replikaten verschlechtert sich die Laufzeit in jedem Versuch bei zunehmender Größe. Diese Beobachtung deckt sich mit den in Tabelle~\ref{table:worker_harddrive} dargestellten Eigenschaften des Festspeichers auf den Workern: 
 Im Gegensatz zu den Durchsatzraten der mechanischen Festplatte des Masters verschlechtert sich auf den SD-Karten des Workers der Durchsatz bei zunehmender Blockgröße.\\
 Ab einer Blockgröße von 128MB ist es zusätzlich nicht mehr möglich vier Blöcke parallel im Arbeitsspeicher des Executor zu halten (384MB) und diese getrennt auf den 4 verfügbaren Cores verarbeiten zu lassen.
 
@@ -454,7 +398,7 @@ Betrachtet man die Summe der IO-Durchsätze über sämtliche Knoten lassen sich 
 \begin{labeling}{Anmerkung:~}
 \item[Anmerkung:] Die Methode \lstinline|treeAggregate|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala\#L978} stellt einen Spezialfall unter den \gls{rdd}-
 Transformationen dar. Sie besteht aus zwei Phasen, wobei in der ersten Phase lokal auf den Partitionen eine Aggregation von Datensätzen durchgeführt wird anschließend über \lstinline|reduce| die partitionsübergreifende Aggregation der bereits partiell aggregierten Datensätze durchgeführt wird.\\
-Aus dieser Implementation ergibt sich die Netzwerk-Spitze innerhalb von Stage 1 (Abb.~\ref{figure:4W64B2R_io}).
+Aus dieser Implementation ergibt sich die Netzwerk-Lastspitze innerhalb von Stage 1 (Abb.~\ref{figure:4W64B2R_io}).
 \end{labeling}
 
 \subsection{Echtzeitkomponente}
