@@ -6,7 +6,7 @@ Dazu sollen mindestens zwei verschiedene Standardbibliotheken und deren Integrat
 
 Anschließend werden rudimentäre Skalierungs- und Stresstests der Anwendung durchgeführt und der durchgeführte Versuch unter den Kriterien \textit{Einfachheit}, \textit{Skalierbarkeit}, \textit{Erweiterbarkeit}, \textit{Robustheit}, \textit{Sicherheit} und \textit{Wartbarkeit} zusammengefasst und bewertet.
 
-\section{Anwendungsfall}
+\section{Vorstellung des Anwendungsfalls}
 In dem Anwendungsfall soll ein Dashboard erstellt werden, auf dem Textnachrichten angezeigt werden.
 Die Textnachrichten werden aus einem Datenstrom gelesen und dabei - entsprechend ihrer aktuellen Relevanz für einen Sparkbenutzer - bewertet und gefiltert. Als Maßstab für die Relevanz sollen Begriffen dienen, die kürzlich in der Mailingliste der Sparkbenutzer diskutiert wurden.\\
 
@@ -32,7 +32,7 @@ Für die Software soll folgende lose Sammlung funktionaler und nicht-funktionale
 	Die Relevanz soll an aktuellen Themen der Entwicklergemeinschaft gemessen werden.
 \end{itemize}
 
-\subsection{Technische Rahmenbedingungen}
+\section{Technische Rahmenbedingungen}
 
 Als Versuchsumgebung dient ein \gls{cluster} aus vier identischen \gls{worker}n und einem speziellen \gls{master}knoten (Abb. \ref{figure:versuchsaufbau}).
 
@@ -61,13 +61,12 @@ Dell d420
 	\item Ethernet: 100MBit/s
 	\item Festspeicher: 60GB 4200RPM Hard Drive
 \end{itemize}
-Als Betriebssystem komm Ubuntu\cite{ubuntu} 14.04 32-Bit zum Einsatz.
+Als Betriebssystem komm Ubuntu (\cite{ubuntu}) 14.04 32-Bit zum Einsatz.
 
 \paragraph{Netzwerk}
 Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch mit maximalem Durchsatz von 100MBit/s.
 
 \begin{table}[ht]
-	\caption{Maximaler Netzwerkdurchsatz{\protect\footnotemark}} % title of Table
 	\centering % used for centering table
 	\begin{tabular}{c c c c} % centered columns (4 columns)
 	\hline\hline %inserts double horizontal lines
@@ -77,12 +76,12 @@ Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch m
 	94,4 MBit/s & 94,4 MBit/s\\ [1ex] 
 	\hline %inserts single line
 	\end{tabular}
+	\caption{Maximaler Netzwerkdurchsatz{\protect\footnotemark}} % title of Table
 	\label{table:network} % is used to refer this table in the text
 \end{table}
-\footnotetext{Gemessen mit \lstinline|iperf -c <IP-Adresse des Peers> -r -P 4|}
+\footnotetext{Siehe Anhang Listing~\ref{lst:measure_network}}
 
 \begin{table}[ht]
-	\caption{Festspeicher Lese-/Schreibdurchsatz dell01 (Master){\protect\footnotemark}} % title of Table
 	\centering % used for centering table
 	\begin{tabular}{c c c c} % centered columns (4 columns)
 	\hline\hline %inserts double horizontal lines
@@ -99,12 +98,12 @@ Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch m
 	Schreiben & 512 & 25,8 \\[1ex] 
 	\hline %inserts single line
 	\end{tabular}
+	\caption{Festspeicher Lese-/Schreibdurchsatz dell01 (Master){\protect\footnotemark}} % title of Table
 	\label{table:master_harddrive} % is used to refer this table in the text
 \end{table}
 \footnotetext{Gemessen mit \lstinline|dd|. Siehe Anhang Listing~\ref{lst:measure_harddrive}}
 
 \begin{table}[ht]
-	\caption{Festspeicher Lese-/Schreibdurchsatz pi00 (Worker)} % title of Table
 	\centering % used for centering table
 	\begin{tabular}{c c c c} % centered columns (4 columns)
 	\hline\hline %inserts double horizontal lines
@@ -121,13 +120,16 @@ Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch m
 	Schreiben & 512 & 18,4 \\[1ex] 
 	\hline %inserts single line
 	\end{tabular}
+	\caption{Festspeicher Lese-/Schreibdurchsatz pi00 (Worker)} % title of Table
 	\label{table:worker_harddrive} % is used to refer this table in the text
 \end{table}
 
 
 
-\subsection{Lösungsskizze}
+\section{Hardwareumgebung}
 
+
+\section{Lösungsskizze}
 \paragraph{Wahl des Dateisystems}
 
 Als Quelle der persistenten Daten (Nachrichtenkorpus der Mailinglisten) kommen verschiedene Technologien in Frage:
@@ -311,17 +313,57 @@ Die Komponenten werden in jeweils eigenen Projekten entwickelt, die sich einzeln
 
 Diese Pipeline ist durch ein \textit{post-receive}-Skript in den jeweiligen Repositories der Komponenten auf dem Gateway-Rechner realisiert (Beispiel im Anhang~\ref{subsec:pipeline}).\\
 
-\subsection{Ergebnisse und Bewertung}
+\section{Ergebnisse und Bewertung}
+
+Zur Beurteilung des Laufzeitverhaltens wird die Anwendung in verschiedenen Konfigurationen gestartet. Dabei wird jeweils das Verhalten der einzelnen Komponenten und des gesamten Systems erfasst und zur späteren Auswertung gespeichert.\\
+
+Die zur Laufzeit erfassten Daten sind
+\begin{enumerate}
+	\item Systemgrößen auf jedem aktiven Knoten (1 Messpunkt pro Sekunde)
+	\subitem CPU Nutzung (User, Idle, System, ...)
+	\subitem IO Festplatte (Lesen, Schreiben)
+	\subitem Swap (Benutzt, Frei)
+	\subitem Speicher (Benutzt, Frei, Cached, ...)
+	\subitem IO Netzwerk (Gesendet, Empfangen)
+	\item Sparkspezifische Größen (1 Messpunkt alle zwei Sekunden)
+	\subitem genutzte Cores
+	\subitem aktive Stages
+	\subitem parallele Receiver (bei Streaming)
+	\subitem u.a.\footnote{Bei den sparkspezifischen Messgrößen gibt es noch weitere, die nicht in die Auswertungen einbezogen wurden.}
+\end{enumerate}
+
+Als Konfigurationsparameter für die Testläufe werden verwendet
+\begin{enumerate}
+	\item die Blockgröße des Hadoop-Dateisystems (HDFS): (32MB, 64MB, 128MB)
+	\item der Replikationsfaktor der Blöcke auf HDFS (1, 2, 3, 4)
+	\item die Anzahl der Worker (1, 2, 4)
+\end{enumerate}
+
+Um eine Vergleichbarkeit der Testläufe untereinander zu erreichen werden folgende Größen festgelegt:
+\begin{itemize}
+	\item Größe des Textkorpus						: 1,5 GB
+	\item Fenstergröße des TF-IDF Vektors	: 500 Nachrichten
+	\item Erlaubte Cores Pro Executor			: 4
+	\item Arbeitsspeicher pro Executor		: 384 MB
+\end{itemize}
+
+Die \textbf{Größe des Textkorpus} ergibt sich aus der Überlegung eine Datei zu Verarbeiten, die größer als der Arbeitsspeicher eines einzelnen Workers ist, theoretisch aber noch in den geteilten Speicher von vier Executor-Prozessen passt.\\
+Die \textbf{Fenstergröße des TF-IDF Vektors} ist willkürlich gewählt. Der Wert 500 entspricht der Anzahl von Email-Nachrichten aus der Spark-User-Mailingliste.\\
+Die erlaubten \textbf{Cores pro Executor} entsprechen genau den Verfügbaren Cores auf einem Worker. Damit ist eine volle Ausnutzung der verfügbaren Rechenleistung gewährleistet.\\
+Der erlaubte \textbf{Arbeitsspeicher von 384MB pro Executor} lässt bei 1000MB Gesamtspeicher pro Knoten noch Spielraum für das Betriebssystem, den Worker-Prozess und insbesondere den HDFS Data Node für Caching von Dateiblöcken.\\
+
+Um die Testläufe darüber hinaus unter kontrollierten Bedingungen zu starten, wurde bei jeder Änderung der Konfigurationsparameter das Hadoop-Dateisystem formatiert und der Spark-Cluster zurückgesetzt (inklusive Terminierung und Neustart aller zugehörigen Prozesse).
+
+Eine laufende Anwendung startet auf dem Host des Treibers eine Weboberfläche (siehe Abb.~\ref{figure:realtime_dashboard_stats}), die den aktuellen Verlauf des Programms verfolgen lässt. Zusätzlich werden Daten über Verteilung
 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{bilder/streaming_stats_dashboard.PNG}
-	\captio{Spark-Dashboard des Realtime Analyzers}
+	\caption{Spark-Dashboard des Realtime Analyzers - Statistics}
 	\label{figure:realtime_dashboard_stats}
 \end{figure}
 
 \begin{table}[ht]
-	\caption{Skalierungsverhalten des ModelBuilders} % title of Table
 	\centering % used for centering table
 	\begin{tabular}{c c c c} % centered columns (4 columns)
 	\hline\hline %inserts double horizontal lines
@@ -338,10 +380,11 @@ Diese Pipeline ist durch ein \textit{post-receive}-Skript in den jeweiligen Repo
 	4 & 4 & 32 & 209 \\
 	4 & 2 & 64 & 301 \\
 	4 & 3 & 64 & 359 \\
-	4 & 2 & 128 & 433 \\
-	4 & 3 & 128 & 856 \\ [1ex] 
+	4 & 2 & 128 & 432 \\
+	4 & 3 & 128 & 433 \\ [1ex] 
 	\hline %inserts single line
 	\end{tabular}
+	\caption{Skalierungsverhalten des ModelBuilders} % title of Table
 	\label{table:scaling} % is used to refer this table in the text
 \end{table}
 

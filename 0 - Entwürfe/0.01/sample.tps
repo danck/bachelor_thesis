@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2421
-NormalPos.bottom=814
+NormalPos.right=1755
+NormalPos.bottom=464
 Class=LaTeXView
 Document=praxis.tex
 
 [Frame0_View0,0]
-TopLine=367
-Cursor=12959
+TopLine=398
+Cursor=16152
 
 [Frame1]
 Flags=0
@@ -29,13 +29,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2421
-NormalPos.bottom=814
+NormalPos.right=1755
+NormalPos.bottom=464
 Class=LaTeXView
 Document=glossar.tex
 
 [Frame1_View0,0]
-TopLine=27
+TopLine=20
 Cursor=1202
 
 [Frame2]
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2421
-NormalPos.bottom=814
+NormalPos.right=1755
+NormalPos.bottom=464
 Class=LaTeXView
 Document=vorstellung.tex
 
 [Frame2_View0,0]
-TopLine=561
-Cursor=26984
+TopLine=0
+Cursor=498
 
 [Frame3]
 Flags=0
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2421
-NormalPos.bottom=814
+NormalPos.right=1755
+NormalPos.bottom=464
 Class=LaTeXView
 Document=sample.tex
 
 [Frame3_View0,0]
-TopLine=114
-Cursor=3409
+TopLine=120
+Cursor=3898
 
 [Frame4]
 Flags=0
@@ -83,14 +83,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2421
-NormalPos.bottom=814
+NormalPos.right=1755
+NormalPos.bottom=464
 Class=BibTeXView
 Document=sample.bib
 
 [Frame4_View0,0]
-TopLine=302
-Cursor=9896
+TopLine=280
+Cursor=9764
 
 [Frame5]
 Flags=0
@@ -101,14 +101,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2421
-NormalPos.bottom=814
+NormalPos.right=1755
+NormalPos.bottom=464
 Class=LaTeXView
 Document=einfuehrung.tex
 
 [Frame5_View0,0]
-TopLine=0
-Cursor=201
+TopLine=31
+Cursor=3272
 
 [Frame6]
 Flags=0
@@ -119,14 +119,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2421
-NormalPos.bottom=814
+NormalPos.right=1755
+NormalPos.bottom=464
 Class=LaTeXView
 Document=schluss.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=114
+Cursor=411
 
 [Frame7]
 Flags=0
@@ -137,16 +137,16 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=44
-NormalPos.right=2421
-NormalPos.bottom=814
+NormalPos.right=1755
+NormalPos.bottom=464
 Class=LaTeXView
 Document=appendices.tex
 
 [Frame7_View0,0]
-TopLine=3
-Cursor=278
+TopLine=4
+Cursor=439
 
 [SessionInfo]
 FrameCount=8
-ActiveFrame=3
+ActiveFrame=0
 
