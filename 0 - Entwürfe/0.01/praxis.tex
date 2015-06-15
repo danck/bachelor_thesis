@@ -32,7 +32,8 @@ Für die Software soll folgende lose Sammlung funktionaler und nicht-funktionale
 	Die Relevanz soll an aktuellen Themen der Entwicklergemeinschaft gemessen werden.
 \end{itemize}
 
-\section{Technische Rahmenbedingungen}
+
+\section{Hardwareumgebung}
 
 Als Versuchsumgebung dient ein \gls{cluster} aus vier identischen \gls{worker}n und einem speziellen \gls{master}knoten (Abb. \ref{figure:versuchsaufbau}).
 
@@ -79,7 +80,7 @@ Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch m
 	\caption{Maximaler Netzwerkdurchsatz{\protect\footnotemark}} % title of Table
 	\label{table:network} % is used to refer this table in the text
 \end{table}
-\footnotetext{Siehe Anhang Listing~\ref{lst:measure_network}}
+\footnotetext{Gemessen mit \lstinline|iperf|. Siehe Anhang Listing~\ref{lst:measure_network}}
 
 \begin{table}[ht]
 	\centering % used for centering table
@@ -124,9 +125,6 @@ Vernetzt sind die Rechner mit \gls{rj45} über einen TP-Link TL-SF1008D Switch m
 	\label{table:worker_harddrive} % is used to refer this table in the text
 \end{table}
 
-
-
-\section{Hardwareumgebung}
 
 
 \section{Lösungsskizze}
@@ -301,7 +299,9 @@ Anschließend werden die erzeugten Tupel nach der Größe des erreichten Scores 
 	\label{figure:demo_app_komponenten}
 \end{figure}
 
-\paragraph{Hinweise zur Entwicklung}
+\section{Hinweise zur Entwicklung}
+Für die Entwicklung hat sich bewährt 
+
 Die Komponenten werden in jeweils eigenen Projekten entwickelt, die sich einzeln auf dem Cluster deployen lassen. Das hat den Vorteil, dass eine einfache Continuous Deployment Pipeline (Abb.~\ref{figure:cd_pipeline}) eingesetzt werden kann, die Änderungen an den jeweiligen Projekten automatisiert auf dem Cluster deployt und so schnellstmögliches Feedback ermöglicht, sowie eine stets lauffähige Codebasis begünstigt.\\
 
 \begin{figure}[ht!]
@@ -313,9 +313,10 @@ Die Komponenten werden in jeweils eigenen Projekten entwickelt, die sich einzeln
 
 Diese Pipeline ist durch ein \textit{post-receive}-Skript in den jeweiligen Repositories der Komponenten auf dem Gateway-Rechner realisiert (Beispiel im Anhang~\ref{subsec:pipeline}).\\
 
+
 \section{Ergebnisse und Bewertung}
 
-Zur Beurteilung des Laufzeitverhaltens wird die Anwendung in verschiedenen Konfigurationen gestartet. Dabei wird jeweils das Verhalten der einzelnen Komponenten und des gesamten Systems erfasst und zur späteren Auswertung gespeichert.\\
+Zur Beurteilung des Laufzeitverhaltens wird die Anwendung in verschiedenen Konfigurationen des Raspberry-Pi-Clusters gestartet. Dabei wird jeweils das Verhalten der einzelnen Komponenten und des gesamten Systems erfasst und zur späteren Auswertung gespeichert.\\
 
 Die zur Laufzeit erfassten Daten sind
 \begin{enumerate}
@@ -329,39 +330,71 @@ Die zur Laufzeit erfassten Daten sind
 	\subitem genutzte Cores
 	\subitem aktive Stages
 	\subitem parallele Receiver (bei Streaming)
-	\subitem u.a.\footnote{Bei den sparkspezifischen Messgrößen gibt es noch weitere, die nicht in die Auswertungen einbezogen wurden.}
+	\subitem u.a.\footnote{Bei den sparkspezifischen Messgrößen gibt es viele weitere, die nicht in die Auswertungen einbezogen werden.}
 \end{enumerate}
 
 Als Konfigurationsparameter für die Testläufe werden verwendet
 \begin{enumerate}
-	\item die Blockgröße des Hadoop-Dateisystems (HDFS): (32MB, 64MB, 128MB)
+	\item die Blockgröße des Hadoop-Dateisystems HDFS (32MB, 64MB, 128MB)
 	\item der Replikationsfaktor der Blöcke auf HDFS (1, 2, 3, 4)
 	\item die Anzahl der Worker (1, 2, 4)
 \end{enumerate}
 
 Um eine Vergleichbarkeit der Testläufe untereinander zu erreichen werden folgende Größen festgelegt:
-\begin{itemize}
-	\item Größe des Textkorpus						: 1,5 GB
-	\item Fenstergröße des TF-IDF Vektors	: 500 Nachrichten
-	\item Erlaubte Cores Pro Executor			: 4
-	\item Arbeitsspeicher pro Executor		: 384 MB
-\end{itemize}
+\begin{enumerate}
+	\item Größe des Textkorpus: 1,5 GB
+	\item Fenstergröße des TF-IDF Vektors: 500 Nachrichten
+	\item Erlaubte Cores Pro Executor: 4
+	\item Erlaubter Arbeitsspeicher pro Executor: 384 MB
+	\item Zeitintervall für die Diskretisierung des Datenstroms (Streaming-Komponente): 5 Sekunden
+\end{enumerate}
 
 Die \textbf{Größe des Textkorpus} ergibt sich aus der Überlegung eine Datei zu Verarbeiten, die größer als der Arbeitsspeicher eines einzelnen Workers ist, theoretisch aber noch in den geteilten Speicher von vier Executor-Prozessen passt.\\
+
 Die \textbf{Fenstergröße des TF-IDF Vektors} ist willkürlich gewählt. Der Wert 500 entspricht der Anzahl von Email-Nachrichten aus der Spark-User-Mailingliste.\\
+
 Die erlaubten \textbf{Cores pro Executor} entsprechen genau den Verfügbaren Cores auf einem Worker. Damit ist eine volle Ausnutzung der verfügbaren Rechenleistung gewährleistet.\\
+
 Der erlaubte \textbf{Arbeitsspeicher von 384MB pro Executor} lässt bei 1000MB Gesamtspeicher pro Knoten noch Spielraum für das Betriebssystem, den Worker-Prozess und insbesondere den HDFS Data Node für Caching von Dateiblöcken.\\
 
-Um die Testläufe darüber hinaus unter kontrollierten Bedingungen zu starten, wurde bei jeder Änderung der Konfigurationsparameter das Hadoop-Dateisystem formatiert und der Spark-Cluster zurückgesetzt (inklusive Terminierung und Neustart aller zugehörigen Prozesse).
+Das \textbf{Zeitintervall für die Diskretisierung des Datenstroms} richtet sich nach einem Wert, der für den behandelten Anwendungsfall noch als Echtzeit gelten kann.
+Ein höherer Wert würde den notwendigen Puffer erhöhen und vermutlich die Verarbeitungszeit pro Datenelement verringern. Ein niedrigerer Wert würde vermutlich den nötigen Puffer verringern und die relative Verarbeitungszeit eines Datenelementes erhöhen. In der folgenden Analyse der Laufzeitverhaltens wird jedoch deutlich, dass der tatsächliche Wert relativ unkritisch für die Stabilität der Komponente ist.\\
 
-Eine laufende Anwendung startet auf dem Host des Treibers eine Weboberfläche (siehe Abb.~\ref{figure:realtime_dashboard_stats}), die den aktuellen Verlauf des Programms verfolgen lässt. Zusätzlich werden Daten über Verteilung
+Um die Testläufe unter möglichst kontrollierten Bedingungen zu starten, wurde bei jeder Änderung der Konfigurationsparameter das Hadoop-Dateisystem formatiert und der Spark-Cluster zurückgesetzt (inklusive Terminierung und Neustart aller zugehörigen Prozesse).
 
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.9\textwidth]{bilder/streaming_stats_dashboard.PNG}
-	\caption{Spark-Dashboard des Realtime Analyzers - Statistics}
-	\label{figure:realtime_dashboard_stats}
-\end{figure}
+\subsection{Batch-Komponente}
+
+Die Laufzeitmessung beginnt mit dem Start der ersten Aktion auf einem \gls{RDD} und endet mit der Rückgabe des Relevanzvektors.
+Weil die Initialisierung erst zu diesem Zeitpunkt erfolgt, wird der gesamte Prozess von der Kontaktaufnahme zum Cluster und Übermittlung der Tasks bis zur Rückgabe des Ergebnisses gemessen (siehe Listing~\ref{lst:modelbuilder_measuring}).\\
+
+\begin{lstlisting}[language=Scala,caption={Laufzeitmessung},label={lst:modelbuilder_measuring}]
+    val documents: RDD[Seq[String]] = sc.textFile(textFile)
+      .map(_.toLowerCase)
+      .map(_.split(" ").filter(_.length > 2).toSeq)
+    val hashingTF = new HashingTF(1 << 20)
+    val tf: RDD[Vector] = hashingTF.transform(documents)
+    tf.cache() // keep the tf cached because we will be using it twice
+		
+    val beginFeatureExtraction = System.currentTimeMillis()
+
+    val idf = new IDF().fit(tf) // end stage 0, execution starts here
+    val tfidf: RDD[Vector] = idf.transform(tf) // end stage 1
+
+    val relevanceVector = tfidf
+      .take(docWindowSize)
+      .reduce((vector1, vector2) =>
+        addSparseVectors(vector1.asInstanceOf[SparseVector], 
+				vector2.asInstanceOf[SparseVector])
+      ) // end stage 2, execution ends here
+
+    val finishFeatureExtraction = System.currentTimeMillis()
+\end{lstlisting}
+
+Die Zeilen 1-6 in Listing~\ref{lst:modelbuilder_measuring} wurden in die Darstellung aufgenommen, um die Lineage vollständig darzustellen.\\
+
+Der übrige Teil der Anwendung - insbesondere das Abrufen und Prozessieren neu eingegangener Emails - wird nicht berücksichtigt. Bei einem laufenden System sind die dort entstehenden Lasten so gering, dass kein Bedarf für Skalierung besteht.
+
+Tabelle~\ref{table:scaling} zeigt die Laufzeiten der Modelbuilderkomponente bei verschiedenen Konfigurationseinstellungen des Clusters.
 
 \begin{table}[ht]
 	\centering % used for centering table
@@ -372,12 +405,12 @@ Eine laufende Anwendung startet auf dem Host des Treibers eine Weboberfläche (s
 	\hline % inserts single horizontal line
 	1 & 1 & 32 & 697 \\ % inserting body of the table
 	1 & 1 & 64 & 750 \\
-	1 & 1 & 128 & 850 \\
+	1 & 1 & 128 & 850 (*)\\
 	2 & 2 & 32 & 366 \\
 	2 & 2 & 64 & 448 \\
 	2 & 2 & 128 & 615 \\
 	4 & 3 & 32 & 210 \\
-	4 & 4 & 32 & 209 \\
+	4 & 4 & 32 & 209 (*)\\
 	4 & 2 & 64 & 301 \\
 	4 & 3 & 64 & 359 \\
 	4 & 2 & 128 & 432 \\
@@ -388,11 +421,39 @@ Eine laufende Anwendung startet auf dem Host des Treibers eine Weboberfläche (s
 	\label{table:scaling} % is used to refer this table in the text
 \end{table}
 
-\paragraph{Bewertung und Probleme}
+Einen besonderen Einfluss auf die Laufzeit hat offenbar die Blockgröße. Bei gleicher Anzahl von Workern und Replikaten verschlechtert sich die Laufzeit in jedem Versuch bei zunehmender Blockgröße. Diese Beobachtung deckt sich mit den in Tabelle~\ref{table:worker_harddrive} dargestellten Eigenschaften des Festspeichers auf den Workern: 
+Im Gegensatz zu den Durchsatzraten der mechanischen Festplatte des Masters verschlechtert sich auf den SD-Karten des Workers der Durchsatz bei zunehmender Blockgröße.\\
+Ab einer Blockgröße von 128MB ist es zusätzlich nicht mehr möglich vier Blöcke parallel im Arbeitsspeicher des Executor zu halten (384MB) und diese getrennt auf den 4 verfügbaren Cores verarbeiten zu lassen.
 
-\textit{Einfachheit}
-\textit{Skalierbarkeit}
-\textit{Erweiterbarkeit}
-\textit{Robustheit}
-\textit{Sicherheit}
-\textit{Wartbarkeit}
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[width=\textwidth]{runtime_vs_blocksize.pdf}
+	\caption{Laufzeit der Feature Extraction bei unterschiedlichen HDFS Blockgrößen}
+	\label{figure:runtime_vs_blocksize}
+\end{figure}
+
+Ein Hinweis auf den Flaschenhals bei der Verarbeitung auf einem einzigen Knoten ist in Abbildung~\ref{figure:1W32B1R_net_cpu} zu erkennen. Die CPU steht unter Volllast, während die Leistung beim Lesen von der SD-Karte deutlich unter dem idealen Durchsatz bleibt (siehe Tabelle~\ref{table:worker_harddrive}).\\
+Netzwerkdurchsatz spielt hier - wie bei einem einzelnen Knoten zu erwarten - offenbar keine Rolle.
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[width=\textwidth]{1W32B1R_net_cpu.pdf}
+	\caption{Auslastungskurven bei einem Worker und 32MB Blockgröße}
+	\label{figure:1W32B1R_net_cpu}
+\end{figure}
+
+
+
+\subsection{Echtzeitkomponente}
+
+Eine laufende Anwendung startet auf dem Host des Treibers eine Weboberfläche, die den aktuellen Verlauf des Programms verfolgen lässt. In Abb.~\ref{figure:realtime_dashboard_stats}) sind die dort Lauf mit einem Worker
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{bilder/streaming_stats_dashboard.PNG}
+	\caption{Spark-Dashboard des Realtime Analyzers - Statistics}
+	\label{figure:realtime_dashboard_stats}
+\end{figure}
+
+
+\subsection{Zusammenfassung}

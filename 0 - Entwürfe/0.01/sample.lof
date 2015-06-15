@@ -64,8 +64,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Komponentendiagramm des Demo App Packages\relax }}{33}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Einfache Continuous Deployment Pipeline\relax }}{33}{figure.caption.51}
+\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Einfache Continuous Deployment Pipeline\relax }}{33}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Spark-Dashboard des Realtime Analyzers - Statistics\relax }}{35}{figure.caption.52}
+\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Laufzeit der Feature Extraction bei unterschiedlichen HDFS Blockgr\IeC {\"o}\IeC {\ss }en\relax }}{37}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces Auslastungskurven bei einem Worker und 32MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{38}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces Spark-Dashboard des Realtime Analyzers - Statistics\relax }}{38}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
