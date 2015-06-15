@@ -68,8 +68,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Laufzeit der Feature Extraction bei unterschiedlichen HDFS Blockgr\IeC {\"o}\IeC {\ss }en\relax }}{37}{figure.caption.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces Auslastungskurven bei einem Worker und 32MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{38}{figure.caption.53}
+\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces Netzwerk-, SD-Karten und CPU-Auslastung w\IeC {\"a}hrend bei einem Worker und 32MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{38}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces Spark-Dashboard des Realtime Analyzers - Statistics\relax }}{38}{figure.caption.54}
+\contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces Auslastungskurven bei einem Worker und 64MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{38}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.12}{\ignorespaces Spark-Dashboard des Realtime Analyzers - Statistics Tab\relax }}{39}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.13}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{40}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.14}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{40}{figure.caption.57}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.15}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{41}{figure.caption.58}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

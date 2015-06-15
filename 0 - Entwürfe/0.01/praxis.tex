@@ -369,19 +369,19 @@ Weil die Initialisierung erst zu diesem Zeitpunkt erfolgt, wird der gesamte Proz
 
 \begin{lstlisting}[language=Scala,caption={Laufzeitmessung},label={lst:modelbuilder_measuring}]
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
-      .map(_.toLowerCase)
-      .map(_.split(" ").filter(_.length > 2).toSeq)
+      .map(_.toLowerCase)                                // stage 0
+      .map(_.split(" ").filter(_.length > 2).toSeq)      // stage 0
     val hashingTF = new HashingTF(1 << 20)
     val tf: RDD[Vector] = hashingTF.transform(documents)
-    tf.cache() // keep the tf cached because we will be using it twice
+    tf.cache() // keep the tf cached because it will be used twice
 		
     val beginFeatureExtraction = System.currentTimeMillis()
 
-    val idf = new IDF().fit(tf) // end stage 0, execution starts here
-    val tfidf: RDD[Vector] = idf.transform(tf) // end stage 1
+    val idf = new IDF().fit(tf)                          // stage 0/1
+    val tfidf: RDD[Vector] = idf.transform(tf)           // stage 2
 
     val relevanceVector = tfidf
-      .take(docWindowSize)
+      .take(docWindowSize)                               // stage 2
       .reduce((vector1, vector2) =>
         addSparseVectors(vector1.asInstanceOf[SparseVector], 
 				vector2.asInstanceOf[SparseVector])
@@ -432,28 +432,75 @@ Ab einer Blockgröße von 128MB ist es zusätzlich nicht mehr möglich vier Blö
 	\label{figure:runtime_vs_blocksize}
 \end{figure}
 
-Ein Hinweis auf den Flaschenhals bei der Verarbeitung auf einem einzigen Knoten ist in Abbildung~\ref{figure:1W32B1R_net_cpu} zu erkennen. Die CPU steht unter Volllast, während die Leistung beim Lesen von der SD-Karte deutlich unter dem idealen Durchsatz bleibt (siehe Tabelle~\ref{table:worker_harddrive}).\\
+Ein Hinweis auf den Flaschenhals bei der Verarbeitung auf einem einzigen Knoten ist in Abbildung~\ref{figure:1W32B1R_net_cpu} zu erkennen. Die CPU steht unter Volllast, während die Leistung beim Lesen von der SD-Karte mit durchschnittlich 4,3 MB/s deutlich unter dem möglichen Durchsatz bleibt (siehe Tabelle~\ref{table:worker_harddrive}).\\
 Netzwerkdurchsatz spielt hier - wie bei einem einzelnen Knoten zu erwarten - offenbar keine Rolle.
 
 \begin{figure}[ht!]
 	\centering
   \includegraphics[width=\textwidth]{1W32B1R_net_cpu.pdf}
-	\caption{Auslastungskurven bei einem Worker und 32MB Blockgröße}
+	\caption{Netzwerk-, SD-Karten und CPU-Auslastung während bei einem Worker und 32MB Blockgröße}
 	\label{figure:1W32B1R_net_cpu}
 \end{figure}
 
-
-
-\subsection{Echtzeitkomponente}
-
-Eine laufende Anwendung startet auf dem Host des Treibers eine Weboberfläche, die den aktuellen Verlauf des Programms verfolgen lässt. In Abb.~\ref{figure:realtime_dashboard_stats}) sind die dort Lauf mit einem Worker
+Betrachtet man die Summe der IO-Durchsätze über sämtliche Knoten lassen sich deutlich die verschiedenen Phasen der Feature-Extraction erkennen. Abbildung~\ref{figure:4W64B2R_io} zeigt das kommentierte Diagramm eines Testlaufs mit 4 Workern, 2 Replikaten und einer HDFS-Blockgröße von 64MB.
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{bilder/streaming_stats_dashboard.PNG}
-	\caption{Spark-Dashboard des Realtime Analyzers - Statistics}
+  \includegraphics[width=\textwidth]{4W64B2R_io.pdf}
+	\caption{Auslastungskurven bei einem Worker und 64MB Blockgröße}
+	\label{figure:4W64B2R_io}
+\end{figure}
+
+\begin{labeling}{Anmerkung:~}
+\item[Anmerkung:] Die Methode \lstinline|treeAggregate|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala\#L978} stellt einen Spezialfall unter den \gls{rdd}-
+Transformationen dar. Sie besteht aus zwei Phasen, wobei in der ersten Phase lokal auf den Partitionen eine Aggregation von Datensätzen durchgeführt wird anschließend über \lstinline|reduce| die partitionsübergreifende Aggregation der bereits partiell aggregierten Datensätze durchgeführt wird.\\
+Aus dieser Implementation ergibt sich die Netzwerk-Spitze innerhalb von Stage 1 (Abb.~\ref{figure:4W64B2R_io}).
+\end{labeling}
+
+\subsection{Echtzeitkomponente}
+
+Einen ersten Blick auf den Zustand einer Spark-Anwendung ermöglicht die Weboberfläche des Treibers.\\
+
+Jede Spark-Applikation startet gemäß der Standardeinstellungen auf dem Host des Treibers einen HTTP-Server, über den verschiedene Daten verfolgt werden können. In Abb.~\ref{figure:realtime_dashboard_stats}) sind die Statistiken einer laufenden Realtime-Komponente dargestellt.\\
+
+In dem betrachteten Fall läuft die Realtime-Komponente mit einem einzelnen Worker, der den Empfänger für den Datenstrom von Twitter startet und das Scoring und Filtern der eingehenden Nachrichten ausführt. Um den Worker nicht für die Modellerzeugung der Batch-Komponente zu blockieren, wurde nur ein Executor mit 2 Cores gewährt.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth]{bilder/streaming_stats_dashboard.PNG}
+	\caption{Spark-Dashboard des Realtime Analyzers - Statistics Tab}
 	\label{figure:realtime_dashboard_stats}
 \end{figure}
 
+Zum Zeitpunkt des Schnappschusses wurden 6260 Tweets empfangen und verarbeitet. Der letzte Batch enthielt 178 Twitter-Nachrichten (im Durchschnitt sind es etwa 200) und der Median für die Verarbeitungszeit liegt bei 373 Millisekunden (\textit{Total Delay}.\\
+
+Bei einem Zeitfenster von 5 Sekunden (\textit{Batch Interval}) pro Batch gibt es also keinen Hinweis auf Performanceprobleme bei der Verarbeitung.\\
+
+Dieser Verdacht erhärtet sich bei einem Blick auf die CPU-Last des verarbeitenden Workers (Abb.~\ref{figure:str_1W_cpu}). Die durchschnittliche Last über den beobachteten Zeitraum liegt bei 22,5\%. Die Last des Master sogar nur bei 8,1\%.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth]{str_1W_cpu.pdf}
+	\caption{CPU Last eines einzelnen Workers}
+	\label{figure:str_1W_cpu}
+\end{figure}
+
+Auch die Netzwerklast ist minimal (Abb.~\ref{figure:str_1W_net}). Ab Sekunde 51 liegt die Last des Workers bei durchschnittlich 77 KByte/s. Über den beobachteten Zeitraum von knapp 7 Minuten wurden damit 31.4 Megabyte empfangen. Die Last des Masters liegt noch darunter.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth]{str_1W_net.pdf}
+	\caption{CPU Last eines einzelnen Workers}
+	\label{figure:str_1W_net}
+\end{figure}
+
+Betrachtet man den Speicherverbrauch (Abb.~\ref{figure:str_mit_mem_pi00}), sieht man, dass sich dieser nach wenigen Sekunden bei etwa 362MB stabilisiert.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth]{str_mit_mem_pi00.pdf}
+	\caption{CPU Last eines einzelnen Workers}
+	\label{figure:str_mit_mem_pi00}
+\end{figure}
 
 \subsection{Zusammenfassung}
