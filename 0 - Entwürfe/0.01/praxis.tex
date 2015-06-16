@@ -302,7 +302,7 @@ Die erlaubten \textbf{Cores pro Executor} entsprechen genau den Verfügbaren Cor
 Der erlaubte \textbf{Arbeitsspeicher von 384MB pro Executor} lässt bei 1000MB Gesamtspeicher pro Knoten noch Spielraum für das Betriebssystem, den Worker-Prozess und insbesondere den HDFS Data Node für Caching von Dateiblöcken.\\
 
 Das \textbf{Zeitintervall für die Diskretisierung des Datenstroms} richtet sich nach einem Wert, der für den behandelten Anwendungsfall noch als Echtzeit gelten kann.
-Ein höherer Wert würde den notwendigen Puffer erhöhen und vermutlich die Verarbeitungszeit pro Datenelement verringern. Ein niedrigerer Wert würde vermutlich den nötigen Puffer verringern und die relative Verarbeitungszeit eines Datenelementes erhöhen. In der folgenden Analyse der Laufzeitverhaltens wird jedoch deutlich, dass der tatsächliche Wert relativ unkritisch für die Stabilität der Komponente ist.\\
+Ein höherer Wert würde den notwendigen Puffer erhöhen und vermutlich die Verarbeitungszeit pro Datenelement verringern. Ein niedrigerer Wert würde vermutlich den nötigen Puffer verringern und die relative Verarbeitungszeit eines Datenelementes erhöhen. In der folgenden Analyse der Laufzeitverhaltens wird jedoch deutlich, dass der tatsächliche Wert weitgehend unkritisch für die Stabilität der Komponente ist.\\
 
 Um die Testläufe unter möglichst kontrollierten Bedingungen zu starten, wurde bei jeder Änderung der Konfigurationsparameter das Hadoop-Dateisystem formatiert und der Spark-Cluster zurückgesetzt (inklusive Terminierung und Neustart aller zugehörigen Prozesse).
 
@@ -316,7 +316,7 @@ Weil die Initialisierung erst zu diesem Zeitpunkt erfolgt, wird der gesamte Proz
       .map(_.toLowerCase)                                // stage 0
       .map(_.split(" ").filter(_.length > 2).toSeq)      // stage 0
     val hashingTF = new HashingTF(1 << 20)
-    val tf: RDD[Vector] = hashingTF.transform(documents)
+    val tf: RDD[Vector] = hashingTF.transform(documents) // stage 0
     tf.cache() // keep the tf cached because it will be used twice
 		
     val beginFeatureExtraction = System.currentTimeMillis()

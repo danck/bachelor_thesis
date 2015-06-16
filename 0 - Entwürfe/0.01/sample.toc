@@ -30,15 +30,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Resilient Distributed Datasets}{7}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Verteilungssicht}{8}{section*.8}
+\contentsline {paragraph}{\nonumberline Verteilungssicht}{7}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Laufzeitsicht}{8}{section*.10}
+\contentsline {paragraph}{\nonumberline Laufzeitsicht}{7}{section*.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Scheduling/Shuffling}{13}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}Anwendungsdeployment}{16}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Standardbibliotheken}{18}{section.2.3}
+\contentsline {section}{\numberline {2.3}Standardbibliotheken}{17}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Dataframes/Spark SQL}{18}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
@@ -56,7 +56,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Hadoop/YARN}{21}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Mesos}{22}{section*.23}
+\contentsline {paragraph}{\nonumberline Mesos}{21}{section*.23}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Flink}{22}{section*.24}
 \defcounter {refsection}{0}\relax 
@@ -92,13 +92,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Hinweise zur Entwicklung}{31}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Ergebnisse und Bewertung}{32}{section.3.5}
+\contentsline {section}{\numberline {3.5}Ergebnisse und Bewertung}{33}{section.3.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.1}Batch-Komponente}{34}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.2}Echtzeitkomponente}{38}{subsection.3.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Zusammenfassung}{40}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}Funktionale Qualit\IeC {\"a}t der L\IeC {\"o}sung}{39}{subsection.3.5.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Schlussbetrachtung}{41}{chapter.4}
 \defcounter {refsection}{0}\relax 
