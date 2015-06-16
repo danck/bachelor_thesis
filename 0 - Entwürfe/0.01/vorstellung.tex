@@ -255,17 +255,35 @@ class MinimalPartitioner extends Partitioner {
 }
 \end{lstlisting}
 
-\subsection{Scheduling/Shuffling}\\
+\subsection{Scheduling}\\
 
-Dieser Abschnitt vertieft die Betrachtung des Berechnungsmodells von Spark. Mit Berechnungsmodell ist die Art gemeint, wie mit den High-Level \glspl{api} und den bisher vorgestellten Komponenten die verteilte Berechnung realisiert wird.\\
-Dabei werden insbesondere die Begriffe \textit{\textbf{Task}}, \textit{\textbf{Job}} und \textit{\textbf{Stage}} näher erläutert.\\
+In Spark gibt es drei Scheduler und drei wesentliche Laufzeit-Elemente einer Sparkanwendung.\\
+
+Die Laufzeitelemente sind
+\begin{enumerate}
+	\item \textbf{Jobs}: Ein \textit{Job} ist die Ausführung einer Aktion auf einem \gls{rdd}.
+	\item \textbf{Tasks}: Ein Task ist die kleinste Einheit eines \textit{Jobs}, die noch zentralem Scheduling unterliegt. Ein Task bezieht sich immer auf eine Partition eines \gls{rdd}.
+	\item \textbf{Stages}: \textit{Stages} sind eine Menge von Tasks, die zu demselben Job gehören und unabhängig voneinander ausgeführt werden können.
+\end{enumerate}
+
+Die Scheduler sind
+\begin{enumerate}
+	\item \textbf{DAGScheduler}: Der DAGScheduler analysiert einen Job vor der Ausführung auf dem Cluster und teilt dessen Tasks in Stages auf.
+	\item \textbf{RessourceScheduler}: Der Ressourcescheduler weist einem Treiberprogramm Ressourcen des Clusters in Form von Executorn zu.
+	\item \textbf{TaskScheduler}: Der TaskScheduler nimmt Mengen von Tasks entgegen und verteilt diese zur Ausführung an verfügbare Executor.
+\end{enumerate}
+
+Abbildung~\ref{fig:schedulers} stellt die Beziehung dieser sechs Elemente in einem Aktivitätsdiagramm dar.
 
 \begin{figure}[ht!]
 	\centering
-  \includegraphics[width=0.9\textwidth]{schedulers.pdf}
+  \includegraphics[width=\textwidth]{schedulers.pdf}
 	\caption{Aktivitätsdiagramm der Spark Scheduler}
 	\label{fig:schedulers}
 \end{figure}
+
+Von den beschriebenen Schedulern kann ein Spark-Treiberprogramm vor allem Einfluss auf die \textit{Stages} des \textit{DAGSchedulers} nehmen.
+Um zu erläutern, inwiefern durch diese Aufteilung von Tasks Geschwindigkeit und Fehlertoleranz erreicht werden kann, wird im Folgenden das Erzeugen von \textit{Stages} aus Transformationsfolgen (d.h. Jobs) auf \gls{rdd}s vertieft.\\
 
 Bei den \glspl{rdd} wurden bisher insbesondere drei Aspekte behandelt:
 \begin{itemize}
