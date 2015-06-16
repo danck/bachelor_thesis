@@ -5,7 +5,9 @@ In diesem Kapitel wird die Entwicklung einer Anwendung für Spark und der Betrie
 \section{Vorstellung der Beispielanwendung}
 
 Als Demonstration der Anwendungsentwicklung und des Anwendungsbetriebes mit Spark soll ein Backend zur Nachrichtenanalyse implementiert werden.\\
+
 Nachrichten sind in diesem Fall Tweets, die über die kostenlose Streaming-\gls{API}\footnote{https://dev.twitter.com/streaming/sitestreams, abgerufen am 06.06.2015} von Twitter\footnote{https://twitter.com, abgerufen am 06.06.2015} übertragen  und anschließend bewertet werden sollen.\\
+
 Die Bewertung soll anhand inhaltlicher Ähnlichkeit mit aktuellen Diskussionen innerhalb der Mailingliste\footnote{user@spark.apache.org, abgerufen am 15.06.2015} von Sparkbenutzern erfolgen.\\
 
 In Abbildung~\ref{figure:demo_app_usecase} wird der zugehörige Anwendungsfall dargestellt. Für die Beispielanwendung wird nur das Backend implementiert. Die grafische Benutzeroberfläche wird jedoch stellenweise erwähnt, um einen klaren Kontext zu setzen.\\
@@ -18,9 +20,10 @@ In Abbildung~\ref{figure:demo_app_usecase} wird der zugehörige Anwendungsfall d
 \end{figure}
 
 Die Analyse der Tweets soll in Quasi-Echtzeit erfolgen und direkt anschließend an eine Datensenke weitergereicht werden (dort wäre beispielsweise eine Messagequeue oder Datenbank zur Weiterleitung an eine grafische Benutzeroberfläche).\\
+
 Bis zu zehn Sekunden Latenz vom Eingang der Nachricht bis zur Weiterleitung an die Senke seien hier als \textit{Quasi-Echtzeit} akzeptabel.\\
 
-Als \textit{aktuelle Diskussionen} in der Mailingliste der Sparkbenutzer gelten solche, die innerhalb der letzten etwa 500 Nachrichten geführt wurden. Bei der Bewertung neuer Nachrichten gibt es hier keine Echtzeit-Anforderung. Die Neubewertung bei Eintreffen neuer Nachrichten - höchstens etwa alle 30 Minuten - soll genügen.
+Als \textit{aktuelle Diskussionen} in der Mailingliste der Sparkbenutzer gelten solche, die innerhalb der letzten etwa 500 Nachrichten geführt wurden. Bei der Bewertung neuer Nachrichten gibt es hier keine Echtzeit-Anforderung. Die Neubewertung bei Eintreffen neuer Nachrichten - höchstens etwa alle 30 Minuten - soll genügen.\\
 
 \section{Hardwareumgebung}
 
@@ -28,7 +31,7 @@ Als Versuchsumgebung dient ein \gls{cluster} aus vier identischen \gls{worker}n 
 
 \begin{figure}[h]
 	\centering
-  \includesvg[pdf]{versuchsaufbau}
+  \includegraphics[width=0.7\textwidth]{versuchsaufbau.pdf}
 	\caption{Hardwareumgebung des Programms zur Tweetanalyse}
 	\label{figure:versuchsaufbau}
 \end{figure}
@@ -201,7 +204,7 @@ val splitTweets = {
   )
 }
 
-// calculate score for each word, then sum the scores and normalize
+// calculate score for each word, then sum and normalize the scores
 val scoredTweets = {
   splitTweets.map(splitTweet => {
     (splitTweet._1.map(word =>

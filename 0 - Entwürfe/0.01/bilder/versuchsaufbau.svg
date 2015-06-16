@@ -34,8 +34,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="348.98908"
-     inkscape:cy="712.83918"
+     inkscape:cx="401.61718"
+     inkscape:cy="655.69632"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,6 +60,21 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5115003;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4193-5-7"
+       width="24.3584"
+       height="270.01236"
+       x="586.23346"
+       y="-561.24109"
+       rx="0.43221289"
+       ry="19.983997"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5443179;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 193.50483,373.13583 264.23313,0 0,161.7239"
+       id="path4502-6"
+       inkscape:connector-curvature="0" />
     <g
        id="g4224"
        transform="matrix(0,0.12178579,-0.12178579,0,322.32788,140.92781)">
@@ -580,15 +595,15 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot4504"
-       style="font-style:normal;font-weight:normal;font-size:90px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="matrix(0.1814393,0,0,0.1814393,467.74486,291.55848)"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:75.78292084px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.1814393,0,0,0.1814393,470.602,292.98705)"><flowRegion
          id="flowRegion4506"><rect
            id="rect4508"
            width="382.85715"
            height="125.71429"
            x="-2040"
            y="-347.63779"
-           style="font-size:90px" /></flowRegion><flowPara
+           style="font-size:75.78292084px" /></flowRegion><flowPara
          id="flowPara4510">Switch</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4504-5"
@@ -604,50 +619,71 @@
          id="flowPara4510-0">SwitWchorkeras</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4536"
-       style="font-style:normal;font-weight:normal;font-size:90px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="matrix(0.1814393,0,0,0.1814393,440.78816,289.48489)"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:75.78292084px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.1814393,0,0,0.1814393,434.93102,292.34203)"><flowRegion
          id="flowRegion4538"><rect
            id="rect4540"
-           width="342.85715"
-           height="131.42859"
+           width="594.81079"
+           height="123.55504"
            x="-1057.1428"
            y="-1079.0664"
-           style="font-size:90px" /></flowRegion><flowPara
-         id="flowPara4542">Worker</flowPara></flowRoot>    <flowRoot
+           style="font-size:75.78292084px" /></flowRegion><flowPara
+         id="flowPara4542">Worker pi00</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.50320226;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3347-2"
+       width="178.86029"
+       height="329.61646"
+       x="412.69986"
+       y="-591.18292"
+       ry="14.154226"
+       rx="5.4635973"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <flowRoot
        xml:space="preserve"
-       id="flowRoot4536-0"
-       style="font-style:normal;font-weight:normal;font-size:90px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="matrix(0.1814393,0,0,0.1814393,545.95037,289.04702)"><flowRegion
-         id="flowRegion4538-5"><rect
-           id="rect4540-0"
-           width="342.85715"
-           height="131.42859"
-           x="-1057.1428"
-           y="-1079.0664"
-           style="font-size:90px" /></flowRegion><flowPara
-         id="flowPara4542-4">Worker</flowPara></flowRoot>    <flowRoot
+       id="flowRoot4536-1"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(348.4142,101.17775)"><flowRegion
+         id="flowRegion4538-2"><rect
+           id="rect4540-5"
+           width="107.92205"
+           height="22.41774"
+           x="-0.7335977"
+           y="-4.4789338"
+           style="font-size:13.75px" /></flowRegion><flowPara
+         id="flowPara4542-9">Worker pi01</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4536-2"
-       style="font-style:normal;font-weight:normal;font-size:90px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="matrix(0.1814393,0,0,0.1814393,653.77716,290.08382)"><flowRegion
-         id="flowRegion4538-4"><rect
-           id="rect4540-7"
-           width="342.85715"
-           height="131.42859"
-           x="-1057.1428"
-           y="-1079.0664"
-           style="font-size:90px" /></flowRegion><flowPara
-         id="flowPara4542-1">Worker</flowPara></flowRoot>    <flowRoot
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(450.55706,101.74917)"><flowRegion
+         id="flowRegion4538-1"><rect
+           id="rect4540-4"
+           width="107.92205"
+           height="22.41774"
+           x="-0.7335977"
+           y="-4.4789338"
+           style="font-size:13.75px" /></flowRegion><flowPara
+         id="flowPara4542-5">Worker pi02</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
-       id="flowRoot4536-9"
-       style="font-style:normal;font-weight:normal;font-size:90px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="matrix(0.1814393,0,0,0.1814393,763.67761,290.08382)"><flowRegion
-         id="flowRegion4538-55"><rect
-           id="rect4540-76"
-           width="342.85715"
-           height="131.42859"
-           x="-1057.1428"
-           y="-1079.0664"
-           style="font-size:90px" /></flowRegion><flowPara
-         id="flowPara4542-3">Worker</flowPara></flowRoot>  </g>
+       id="flowRoot4536-3"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(567.69991,101.74917)"><flowRegion
+         id="flowRegion4538-13"><rect
+           id="rect4540-3"
+           width="107.92205"
+           height="22.41774"
+           x="-0.7335977"
+           y="-4.4789338"
+           style="font-size:13.75px" /></flowRegion><flowPara
+         id="flowPara4542-4">Worker pi03</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="372.85715"
+       y="438.07651"
+       id="text4349"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4351"
+         x="372.85715"
+         y="438.07651">Master dell01</tspan></text>
+  </g>
 </svg>

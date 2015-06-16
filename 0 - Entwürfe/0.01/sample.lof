@@ -32,13 +32,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces RDD Lineage nach Aktion und mit Persist()\relax }}{10}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Resilient Distributed Datasets mit Datenquelle aus Verteilungssicht\relax }}{11}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Resilient Distributed Datasets mit Datenquelle aus Verteilungssicht\relax }}{12}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Beispiel eines einfachen Abh\IeC {\"a}ngigkeitsbaums eines RDD\relax }}{13}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Beispiel eines einfachen Abh\IeC {\"a}ngigkeitsbaums eines RDD\relax }}{14}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Gerichteter azyklischer Graph der Abh\IeC {\"a}ngigkeiten auf Partitionen\relax }}{14}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Gerichteter azyklischer Graph der Abh\IeC {\"a}ngigkeiten auf Partitionen\relax }}{15}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.9}{\ignorespaces Stages als Untermenge des Ah\IeC {\"a}ngigkeitsgraphen von Partitionen\relax }}{15}{figure.caption.17}
+\contentsline {figure}{\numberline {\relax 2.9}{\ignorespaces Stages als Untermenge des Ah\IeC {\"a}ngigkeitsgraphen von Partitionen\relax }}{16}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 2.10}{\ignorespaces Application Deployment im Client Modus\relax }}{17}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
@@ -46,38 +46,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 2.12}{\ignorespaces Laufzeitdiagramm einer Spark-Anwendung im Client Modus (vereinfacht)\relax }}{19}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.13}{\ignorespaces Aktivit\IeC {\"a}t auf den offiziellen Spark Mailinglisten\relax }}{22}{figure.caption.21}
+\contentsline {figure}{\numberline {\relax 2.13}{\ignorespaces Aktivit\IeC {\"a}t auf den offiziellen Spark Mailinglisten\relax }}{23}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Anwendungsfalldiagramm der Demo-Applikation\relax }}{25}{figure.caption.28}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Anwendungsfalldiagramm der Demo-Applikation\relax }}{26}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Hardwareumgebung des Programms zur Tweetanalyse\relax }}{26}{figure.caption.29}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Hardwareumgebung des Programms zur Tweetanalyse\relax }}{27}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Datenzentrierte Sicht auf die Komponenten\relax }}{28}{figure.caption.39}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Datenzentrierte Sicht auf die Komponenten\relax }}{30}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Innenansicht der Batch-Layer Komponente\relax }}{30}{figure.caption.41}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Innenansicht der Batch-Layer Komponente\relax }}{31}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Innenansicht der Streaming-Layer Komponente\relax }}{30}{figure.caption.43}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Innenansicht der Streaming-Layer Komponente\relax }}{31}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Verteilungssicht auf die Demo App\relax }}{32}{figure.caption.44}
+\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Verteilungssicht auf die Demo App\relax }}{34}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Komponentendiagramm des Demo App Packages\relax }}{33}{figure.caption.45}
+\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Komponentendiagramm des Demo App Packages\relax }}{35}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Einfache Continuous Deployment Pipeline\relax }}{33}{figure.caption.46}
+\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Einfache Continuous Deployment Pipeline\relax }}{35}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Laufzeit der Feature Extraction bei unterschiedlichen HDFS Blockgr\IeC {\"o}\IeC {\ss }en\relax }}{37}{figure.caption.48}
+\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Laufzeit der Feature Extraction bei unterschiedlichen HDFS Blockgr\IeC {\"o}\IeC {\ss }en\relax }}{38}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces Netzwerk-, SD-Karten und CPU-Auslastung w\IeC {\"a}hrend bei einem Worker und 32MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{38}{figure.caption.49}
+\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces Netzwerk-, SD-Karten und CPU-Auslastung w\IeC {\"a}hrend bei einem Worker und 32MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{39}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces Auslastungskurven bei einem Worker und 64MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{38}{figure.caption.50}
+\contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces Auslastungskurven bei einem Worker und 64MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{40}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.12}{\ignorespaces Spark-Dashboard des Realtime Analyzers - Statistics Tab\relax }}{40}{figure.caption.51}
+\contentsline {figure}{\numberline {\relax 3.12}{\ignorespaces Spark-Dashboard des Realtime Analyzers - Statistics Tab\relax }}{41}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.13}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{40}{figure.caption.52}
+\contentsline {figure}{\numberline {\relax 3.13}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{41}{figure.caption.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.14}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{41}{figure.caption.53}
+\contentsline {figure}{\numberline {\relax 3.14}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{42}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.15}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{41}{figure.caption.54}
+\contentsline {figure}{\numberline {\relax 3.15}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{42}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

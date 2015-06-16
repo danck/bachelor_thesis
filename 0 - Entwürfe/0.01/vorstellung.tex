@@ -1,4 +1,4 @@
-\chapter{Vorstellung von Apache Spark}
+\chapter{Vorstellung und Architekturübersicht von Spark}
 Aus Sicht eines Nutzers ist Apache Spark eine \gls{api} zum Zugriff auf Daten und deren Verarbeitung.\\
 
 Diese API (wahlweise für die Programmiersprachen Scala, Java und Python verfügbar), kann im einfachsten Fall über eine eigene Spark Konsole mit \gls{repl} (\cite{Hail}) verwendet werden.\\
@@ -366,17 +366,10 @@ Abb.~\ref{fig:app_deployment_process} zeigt das Sequenzdiagramm eines typischen 
 \section{Standardbibliotheken}
 Die vier Standardbibliotheken erweitern die Kern-API für bestimmte, häufig genutzte Aufgaben aus Bereichen der Datenanalyse.\\
 
-Die bedienten Bereiche
-\begin{itemize}
-	\item Deklaratives Abfragen auf strukturierten Datensätzen (\textit{Spark SQL})
-	\item Maschinenlernverfahren (\textit{MLlib})
-	\item Echtzeitbehandlung von eingehenden Daten (\textit{Streaming})
-	\item Operationen auf Graph-Strukturen (\textit{GraphX})
-\end{itemize}
-werden in diesem Abschnitt erläutert.
+Dieser Abschnitt gibt einen Überblick der Bibliotheken und deren zentrale Konzepte zur Abstraktion von \glspl{rdd} für die spezifischen Zwecke.\\
 
 \subsection{SparkSQL}
-Die Spark SQL Bibliothek bietet Schnittstellen für den Zugriff auf strukturierte Daten. Dazu wird eine weitere abstrakte Datenstruktur neben den \glspl{rdd} eingeführt. Diese Datenstruktur sind \glspl{dataframe} wie sie in ähnlicher Art auch aus der Programmiersprache R\footnote{http://www.r-project.org/, abgerufen am 20.05.2015} bekannt sind.\\
+Die Spark SQL Bibliothek bietet Schnittstellen für den Zugriff auf strukturierte Daten. Dazu wird eine weitere zentrale abstrakte Datenstruktur neben den \glspl{rdd} eingeführt. Diese Datenstruktur sind \glspl{dataframe} wie sie in ähnlicher Art auch aus der Programmiersprache R\footnote{http://www.r-project.org/, abgerufen am 20.05.2015} bekannt sind.\\
 
 \Glspl{dataframe} und die SparkSQL Bibliothek bilden einen Ansatz, relationale Abfragen mit komplexen prozeduralen Algorithmen zu verknüpfen, um die Performance bei Abfragen auf großen Datenmengen zu optimieren (Vgl. \cite{Armbrust:2015:SSR:2723372.2742797}).\\
 
@@ -386,10 +379,10 @@ Diese Form des Zugriffs ist beispielsweise über einen JDBC-Adapter möglich und
 
 Ähnlich wie bei \glspl{rdd} werden komplexe Folgen von Abfragen zunächst in dem \gls{dataframe}-Referenzobjekt gespeichert, und erst bei Initialisierung ausgewertet. Dabei wird eine Optimierungspipeline genutzt, die zunächst die relationalen Ausdrücke optimiert und ihn dann in Spark-Operationen auf \glspl{rdd} übersetzt.\\
 
-Die SparkSQL-Bibliothek zerfällt dabei in vier Unterprojekte\footcite{https://github.com/apache/spark/tree/branch-1.3/sql, abgerufen am 16.06.2015}:
+Die SparkSQL-Bibliothek zerfällt dabei in vier Unterprojekte\footcite{https://github.com/apache/spark/tree/branch-1.3/sql, abgerufen am 16.06.2015}. Die ersten beiden sind essentiell für den Mechnismus zum Prozessieren von Dataframes als eine Prozess auf \glspl{rdd}:
 \begin{enumerate}
 	\item \textbf{Catalyst}: Eine Optimierungsengine für relationale Ausdrücke
-	\item \textbf{Core}: Die Ausführungsumgebung für optimierte Catalyst-Ausdrücke auf dem Apache Spark Applikationskern
+	\item \textbf{Core}: Die Benutzer-API und Ausführungsumgebung für optimierte Catalyst-Ausdrücke auf dem Apache Spark Applikationskern
 	\item \textbf{Hive}: Ein Adapter für die Datawarehouse-Software Apache Hive\footnote{https://hive.apache.org/, abgerufen am 16.06.2015}
 	\item \textbf{Thriftserver}: Eine Portierung des Hive-Servers auf Apache Spark
 \end{enumerate}
@@ -418,13 +411,22 @@ Nach Ablauf des Zeitfensters bilden diese Puffer die Partitionen eines RDD mit d
 
 Mit diesem Verfahren wird ein Großteil der Operationen klassischer \gls{rdd} auch für Datenströme verfügbar.\\
 
+Eine Reihe von Empfängern für solche Datenströme sind bereits in der Spark Streaming Bibliothek enthalten (z.B. Kafka, Twitter, ZeroMQ, ...)\footnote{https://spark.apache.org/docs/1.3.1/streaming-programming-guide.html, abgerufen am 16.06.2015}. Weitere Empfänger können selbst implementiert und übergeben werden.
+
 Eine Beispielimplementation dieses Verfahrens wird im praktischen Teil durchgeführt.
 
 \subsection{GraphX}
-\cite{Gonzalez:2014:GGP:2685048.2685096}
+Die GraphX Bibliothek implementiert Graphstrukturen auf Grundlage von \glspl{rdd} und bietet Methoden zu deren Verarbeitung.\\
 
-\section{Spark im Kontext von Parallelisierungspattern}
-\textcolor{gray}{--- Buch: Algorithms and Parallel Computing ---}\\
+Die Graphstrukturen sind dabei sogenannte Property-Graphen. Property-Graphen (wie sie beispielsweise auch aus der Datenbank Neo4j\footcite{http://neo4j.com/, abgerufen am 16.06.2015} bekannt sind) sind gerichtete Multigraphen, deren Kanten-Objekte mit Eigenschaften versehen werden können.\\
+
+Die Graphen der Spark GraphX-Bibliothek bilden dabei Tupel aus \glspl{rdd} wobei das erste die Ecken und das zweite die Kanten des Graphen enthält.\\
+
+Die Zerteilung eines Graphen über mehrere Maschinen erfolgt nach dem sogenannten \textit{Edge Cut} Verfahren (\cite{Gonzalez:2014:GGP:2685048.2685096}). Dabei werden die Graphen - logisch gesehen - entlang der Kanten geteilt.\\
+
+Eine einzelne Ecke kann daraufhin auf mehreren Maschinen gleichzeitig liegen. Aus der ID jeder dieser Kopien, lässt sich jedoch die Partition (im Sinne des darunterliegenden \gls{rdd}) einer Kante stets eindeutig berechnen.\\
+
+Die Attribute der Ecken werden ebenfalls in den Kanten gespeichert. Um Änderungen an alle Kopien einer Ecke zu propagieren wird zusätzlich zu den \glspl{rdd} der Ecken und Kanten noch eine Routingtabelle geplegt. Über diese Routing Tabelle werden die Replikate von Ecken verfolgt und bei Änderungen einer Ecke alle inzidenten Kanten entspechend angepasst.\\
 
 \section{Entwicklergemeinschaft}
 
