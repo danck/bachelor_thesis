@@ -81,7 +81,7 @@ Für eine effiziente Verarbeitung von Daten ist es - ganz allgemein - also wüns
 
 Es ist das wichtigste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente und stabile Verarbeitung \textit{großer Datenmengen} (\cite{Sam14}) zu gewährleisten.\\
 
-\section{Kernkonzepte}
+\section{Kernkonzepte und Komponenten}
 
 \subsection{Resilient Distributed Datasets}
 Die universelle Einheit mit der Daten auf Spark repräsentiert werden ist eine verteilte Datenstruktur, ein sogenanntes \gls{rdd}\cite{Mat12}.\\
@@ -134,22 +134,23 @@ oder
 Es wird also - grob gesagt - nur die abstrakte Repräsentation des Datensatzes geändert, ohne tatsächlich dessen Datenelemente für den Programmfluss im Treiberprogramm abzurufen.\\
 Beispiele für solche Operationen sind:
 \begin{itemize}
-	\item \textit{filter}
-	\item \textit{join}
+	\item \textit{filter} \newline Erstellen eines neuen \gls{rdd}, das nur die Elemente enthält die einen übergebenen boolschen Ausdruck erfüllen
+	\item \textit{join} \newline Zusammenfassen von zwei \glspl{rdd} zu einem neuen. Die Partitionen bleiben dabei erhalten
 \end{itemize}\\
+\newline
 
 \textbf{\textit{Aktionen}} sind Operationen, die \glspl{rdd} in eine andere Domäne abbilden:\\
 \[Action: RDD \longrightarrow Domain_x, Domain_x \neq RDD\]
 \\
 Beispiele für Aktionen sind die Methoden:
 \begin{itemize}
-	\item \textit{reduce}
-	\item \textit{count}
-	\item \textit{collect}
-	\item \textit{foreach}
+	\item \textit{reduce} \newline Paarweises Zusammenführen der Elemente eines \gls{rdd} und Rückgabe eines Elementes mit dem Typ der verknüpften Elemente. Dabei muss ein zweiwertiger assoziativer und kommutativer Operator übergeben werden, der je zwei Elemente verknüpft und auf ein drittes abbildet
+	\item \textit{count} \newline Zählen der Elemente eines \gls{rdd}
+	\item \textit{collect} \newline Überführen des \gls{rdd} in ein lokales Array mit dessen Elementen
+	\item \textit{foreach} \newline Ausführung einer beliebigen Prozedur pro Element eines \gls{rdd}. Der Typ des Rückgabewerts ist dabei beliebig
 \end{itemize}\\
 
-Einigen dieser Operationen, kann im Sinne des Command-Patterns (\cite{FPP13}) eine Funktion bzw. ein Funktionsobjekt übergeben werden, dass die gewählte Operation spezifiziert.
+Den meisten dieser Operationen, wird im Sinne des Command-Patterns (\cite{FPP13}) eine Funktion bzw. ein Funktionsobjekt übergeben, das die gewählte Operation spezifiziert.
 
 Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv (\cite{Mat12}):\\
 
@@ -200,7 +201,7 @@ In den Zeilen 7 und 8 ist zu sehen, wie ein neues \gls{rdd} erzeugt wird und die
 \end{lstlisting}
 \\
 Die tatsächliche Berechnung eines \glspl{rdd} wird dann bei dem Aufruf einer Aktion gestartet. Als Beispiel hierfür sei die Methode \lstinline|foreach|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala#L793 (abgerufen am 30.05.2015)} aufgeführt (Listing \ref{lst:spark_foreach}).\\
-In Zeile 6 wird auf dem Spark-Context die Methode \lstinline|runJob| aufgerufen, die die Aufgabe wiederum an den Scheduler delegiert. Dort werden dann die rekursiven Abhängigkeiten des aktuellen \gls{rdd} aufgelöst und - je nach Konfiguration - die Tasks verteilt.\\
+In Zeile 6 wird auf dem Spark-Context die Methode \lstinline|runJob| aufgerufen, die die Aufgabe wiederum an einen Scheduler delegiert. Dort werden dann die rekursiven Abhängigkeiten des aktuellen \gls{rdd} aufgelöst und - je nach Konfiguration - die Tasks verteilt.\\
 
 \begin{lstlisting}[language=Scala,caption={foreach-Methode aus org.apache.spark.rdd.RDD v1.3.0},label={lst:spark_foreach}]
   /**
@@ -258,6 +259,13 @@ class MinimalPartitioner extends Partitioner {
 
 Dieser Abschnitt vertieft die Betrachtung des Berechnungsmodells von Spark. Mit Berechnungsmodell ist die Art gemeint, wie mit den High-Level \glspl{api} und den bisher vorgestellten Komponenten die verteilte Berechnung realisiert wird.\\
 Dabei werden insbesondere die Begriffe \textit{\textbf{Task}}, \textit{\textbf{Job}} und \textit{\textbf{Stage}} näher erläutert.\\
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[width=0.9\textwidth]{schedulers.pdf}
+	\caption{Aktivitätsdiagramm der Spark Scheduler}
+	\label{fig:schedulers}
+\end{figure}
 
 Bei den \glspl{rdd} wurden bisher insbesondere drei Aspekte behandelt:
 \begin{itemize}

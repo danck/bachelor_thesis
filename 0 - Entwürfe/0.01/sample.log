@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  16 JUN 2015 17:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  16 JUN 2015 22:54
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -2001,7 +2001,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<./logo/HAW_logo.png, id=186, 768.8725pt x 231.86626pt>
+<./logo/HAW_logo.png, id=182, 768.8725pt x 231.86626pt>
 File: ./logo/HAW_logo.png Graphic file (type png)
  <use ./logo/HAW_logo.png>
 Package pdftex.def Info: ./logo/HAW_logo.png used on input line 143.
@@ -2076,9 +2076,9 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 Package tocbasic Info: character protrusion at toc deactivated on input line 160.
  ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.toc"
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 119.
+(Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 113.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 119.
+(Font)              scaled to size 10.95pt on input line 113.
  [4
 
 
@@ -2191,7 +2191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<bilder/trends_spark_vs_hadoop.PNG, id=390, 629.72766pt x 220.19766pt>
+<bilder/trends_spark_vs_hadoop.PNG, id=385, 629.72766pt x 220.19766pt>
 File: bilder/trends_spark_vs_hadoop.PNG Graphic file (type png)
  <use bilder/trends_spark_vs_hadoop.PNG>
 Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 27.
@@ -2253,7 +2253,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
 
 
-] <sparkdeployment2.pdf, id=446, 370.18298pt x 318.791pt>
+] <sparkdeployment2.pdf, id=441, 370.18298pt x 318.791pt>
 File: sparkdeployment2.pdf Graphic file (type pdf)
  <use sparkdeployment2.pdf>
 Package pdftex.def Info: sparkdeployment2.pdf used on input line 49.
@@ -2342,7 +2342,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<RDDs1.pdf, id=917, 545.09041pt x 172.78854pt>
+<RDDs1.pdf, id=912, 545.09041pt x 172.78854pt>
 File: RDDs1.pdf Graphic file (type pdf)
  <use RDDs1.pdf>
 Package pdftex.def Info: RDDs1.pdf used on input line 114.
@@ -2391,24 +2391,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-
- []
-
 [8 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/RDDs1.pdf>]
 
 ! LaTeX Error: There's no line here to end.
@@ -2417,47 +2399,128 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.151 
+l.140 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-<rdds_no_action.pdf, id=960, 365.6546pt x 50.82341pt>
+<rdds_no_action.pdf, id=961, 365.6546pt x 50.82341pt>
 File: rdds_no_action.pdf Graphic file (type pdf)
  <use rdds_no_action.pdf>
-Package pdftex.def Info: rdds_no_action.pdf used on input line 158.
+Package pdftex.def Info: rdds_no_action.pdf used on input line 159.
 (pdftex.def)             Requested size: 248.31752pt x 34.51524pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
-<rdds_action.pdf, id=962, 510.28033pt x 50.82341pt>
+<rdds_action.pdf, id=963, 510.28033pt x 50.82341pt>
 File: rdds_action.pdf Graphic file (type pdf)
  <use rdds_action.pdf>
-Package pdftex.def Info: rdds_action.pdf used on input line 167.
+Package pdftex.def Info: rdds_action.pdf used on input line 168.
 (pdftex.def)             Requested size: 372.46997pt x 37.09921pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+ [9 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_no_action.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-<rdds_action_persist.pdf, id=964, 510.28033pt x 63.05325pt>
+<rdds_action_persist.pdf, id=978, 510.28033pt x 63.05325pt>
 File: rdds_action_persist.pdf Graphic file (type pdf)
  <use rdds_action_persist.pdf>
-Package pdftex.def Info: rdds_action_persist.pdf used on input line 176.
+Package pdftex.def Info: rdds_action_persist.pdf used on input line 177.
 (pdftex.def)             Requested size: 372.46997pt x 46.02655pt.
- [9 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_no_action.pdf> <C:/Users/Daniel
-/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_action.pdf
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 R
+       ealisiert ist das Konzept der \textit{Lineage} und der "`Lazy Initial...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (28.87138pt too wide) in paragraph at lines 182--184
+[]\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Realisiert ist das Kon-zept der \T1/LinuxLibertineT-TLF/m/it/10.95 Li-nea-ge \
+T1/LinuxLibertineT-TLF/m/n/10.95 (-20) und der La-zy In-itia-li-za-ti-on von [][][]RDDs[][] durch Transformations-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...ala/org/apache/spark/rdd/RDD.scala##
+                                                  L285 (abgerufen am 30.05.2...
+l.187 ...RDD.scala#L285 (abgerufen am 30.05.2015)}
+                                                   (Listing \ref{lst:spark_m...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+[10 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_action.pdf> <C:/Users/Daniel/Do
+cuments/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_action_persist.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_a
-ction.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+ction_persist.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 
 ! LaTeX Error: There's no line here to end.
@@ -2466,56 +2529,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.181 R
-       ealisiert ist das Konzept der \textit{Lineage} und der "`Lazy Initial...
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (28.87138pt too wide) in paragraph at lines 181--183
-[]\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Realisiert ist das Kon-zept der \T1/LinuxLibertineT-TLF/m/it/10.95 Li-nea-ge \
-T1/LinuxLibertineT-TLF/m/n/10.95 (-20) und der La-zy In-itia-li-za-ti-on von [][][]RDDs[][] durch Transformations-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
-
- []
-
-! You can't use `macro parameter character #' in horizontal mode.
-<argument> ...ala/org/apache/spark/rdd/RDD.scala##
-                                                  L285 (abgerufen am 30.05.2...
-l.186 ...RDD.scala#L285 (abgerufen am 30.05.2015)}
-                                                   (Listing \ref{lst:spark_m...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.202 D
+l.203 D
        ie tatsächliche Berechnung eines \glspl{rdd} wird dann bei dem Aufru...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2524,7 +2538,7 @@ or  <return>  to continue without it.
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ala/org/apache/spark/rdd/RDD.scala##
                                                   L793 (abgerufen am 30.05.2...
-l.202 ...RDD.scala#L793 (abgerufen am 30.05.2015)}
+l.203 ...RDD.scala#L793 (abgerufen am 30.05.2015)}
                                                    aufgeführt (Listing \ref...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2532,11 +2546,10 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
+Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
-[10 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/rdds_action_persist.pdf>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2544,43 +2557,43 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.215 D
+l.216 D
        as Konzept der \textit{Lineage} ist zentral für die Fehlertoleranz d...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-<RDDs2.pdf, id=1026, 545.09041pt x 209.20233pt>
+<RDDs2.pdf, id=1018, 545.09041pt x 209.20233pt>
 File: RDDs2.pdf Graphic file (type pdf)
  <use RDDs2.pdf>
-Package pdftex.def Info: RDDs2.pdf used on input line 222.
+Package pdftex.def Info: RDDs2.pdf used on input line 223.
 (pdftex.def)             Requested size: 372.46997pt x 142.95796pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
@@ -2592,62 +2605,60 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.258 
+l.259 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
-<lineage_basic.pdf, id=1079, 470.54295pt x 331.3581pt>
+<lineage_basic.pdf, id=1071, 470.54295pt x 331.3581pt>
 File: lineage_basic.pdf Graphic file (type pdf)
  <use lineage_basic.pdf>
-Package pdftex.def Info: lineage_basic.pdf used on input line 273.
+Package pdftex.def Info: lineage_basic.pdf used on input line 274.
 (pdftex.def)             Requested size: 372.46997pt x 262.29585pt.
 
-<lineage_parted.pdf, id=1082, 470.54295pt x 331.3581pt>
+<lineage_parted.pdf, id=1074, 470.54295pt x 331.3581pt>
 File: lineage_parted.pdf Graphic file (type pdf)
  <use lineage_parted.pdf>
-Package pdftex.def Info: lineage_parted.pdf used on input line 286.
+Package pdftex.def Info: lineage_parted.pdf used on input line 287.
 (pdftex.def)             Requested size: 372.46997pt x 262.29585pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
-<lineage_stages.pdf, id=1086, 495.66714pt x 377.97662pt>
+<lineage_stages.pdf, id=1092, 495.66714pt x 377.97662pt>
 File: lineage_stages.pdf Graphic file (type pdf)
  <use lineage_stages.pdf>
-Package pdftex.def Info: lineage_stages.pdf used on input line 298.
+Package pdftex.def Info: lineage_stages.pdf used on input line 299.
 (pdftex.def)             Requested size: 372.46997pt x 284.03543pt.
- [13]
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
 [14 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/lineage_basic.pdf>]
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 313.
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
+ []
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 314.
 
 ! Package glossaries Error: Glossary entry `RDD' has not been defined.
 
@@ -2655,27 +2666,28 @@ See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314 ...artitionierte und verarbeitete \gls{RDD} 
+l.315 ...artitionierte und verarbeitete \gls{RDD} 
                                                   wird so zum Ausgangspunkt ...
 You need to define a glossary entry before you can use it.
 
 
-Overfull \hbox (28.1339pt too wide) in paragraph at lines 315--315
+Overfull \hbox (28.1339pt too wide) in paragraph at lines 316--316
 [][][]\T1/LinuxLibertineT-TLF/m/n/9 (-20) https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache
 /spark/scheduler/ShuffleMapTask.scala,
  []
 
 
-Overfull \hbox (43.6166pt too wide) in paragraph at lines 313--316
+Overfull \hbox (43.6166pt too wide) in paragraph at lines 314--317
 \T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Eine Schl�s-sel-rol-le kommt bei die-sem Pro-zess der Me-tho-de [][][][][] in de
 r Klas-se [][][][][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--316
+Underfull \hbox (badness 10000) in paragraph at lines 314--317
 
  []
 
+[15 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/lineage_parted.pdf>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2683,19 +2695,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 
+l.319 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
-[15 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/lineage_parted.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
@@ -2706,17 +2718,17 @@ See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.324 ...iliertes Package (z.B. als \gls{jarfile})
+l.325 ...iliertes Package (z.B. als \gls{jarfile})
                                                    mit statischer Verlinkung...
 You need to define a glossary entry before you can use it.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+[16 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/lineage_stages.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
-[16 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/lineage_stages.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 
  []
 
@@ -2727,16 +2739,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.338 
+l.339 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<spark_deployment_clientmode.pdf, id=1141, 656.05098pt x 272.21701pt>
+<spark_deployment_clientmode.pdf, id=1140, 656.05098pt x 272.21701pt>
 File: spark_deployment_clientmode.pdf Graphic file (type pdf)
  <use spark_deployment_clientmode.pdf>
-Package pdftex.def Info: spark_deployment_clientmode.pdf used on input line 341.
+Package pdftex.def Info: spark_deployment_clientmode.pdf used on input line 342.
 (pdftex.def)             Requested size: 413.85834pt x 171.72606pt.
 
 
@@ -2746,16 +2758,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.345 
+l.346 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<spark_deployment_clustermode.pdf, id=1142, 659.26299pt x 422.37799pt>
+<spark_deployment_clustermode.pdf, id=1141, 659.26299pt x 422.37799pt>
 File: spark_deployment_clustermode.pdf Graphic file (type pdf)
  <use spark_deployment_clustermode.pdf>
-Package pdftex.def Info: spark_deployment_clustermode.pdf used on input line 348.
+Package pdftex.def Info: spark_deployment_clustermode.pdf used on input line 349.
 (pdftex.def)             Requested size: 413.85834pt x 265.15213pt.
 
 
@@ -2765,72 +2777,93 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.352 
+l.353 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
-
- []
-
-<spark_deployment_process.pdf, id=1146, 599.038pt x 576.55403pt>
-File: spark_deployment_process.pdf Graphic file (type pdf)
- <use spark_deployment_process.pdf>
-Package pdftex.def Info: spark_deployment_process.pdf used on input line 361.
-(pdftex.def)             Requested size: 413.85834pt x 398.32417pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 [17 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/spark_deployment_clientmode.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+<spark_deployment_process.pdf, id=1519, 599.038pt x 576.55403pt>
+File: spark_deployment_process.pdf Graphic file (type pdf)
+ <use spark_deployment_process.pdf>
+Package pdftex.def Info: spark_deployment_process.pdf used on input line 362.
+(pdftex.def)             Requested size: 413.85834pt x 398.32417pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
 [18 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/spark_deployment_clustermode.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+
+ []
+
+[19 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/spark_deployment_process.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 381--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
-
- []
-
-[19 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/spark_deployment_process.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
-
- []
-
-
-LaTeX Warning: Citation 'https://github.com/apache/spark/tree/branch-1.3/sql' on page 20 undefined on input line 389.
+LaTeX Warning: Citation 'https://github.com/apache/spark/tree/branch-1.3/sql' on page 20 undefined on input line 383.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 389.
+(Font)              scaled to size 9.0pt on input line 383.
 
-LaTeX Warning: Citation 'abgerufen am 16.06.2015' on page 20 undefined on input line 389.
+LaTeX Warning: Citation 'abgerufen am 16.06.2015' on page 20 undefined on input line 383.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--400
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
@@ -2849,69 +2882,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
-
- []
-
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 429--430
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+LaTeX Warning: Citation 'http://neo4j.com/' on page 22 undefined on input line 422.
+
+
+LaTeX Warning: Citation 'abgerufen am 16.06.2015' on page 22 undefined on input line 422.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--439
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
-Package pgfplots info on input line 456: Overriding colorspace to rgb due to xcolor configuration.
 
-! LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.490 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
 
-! LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.494 H
-       adoop lässt sich als eine Art Betriebssystem für Cluster zur Datena...
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 494--497
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
 [22]
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--440
+
+ []
+
+Package pgfplots info on input line 457: Overriding colorspace to rgb due to xcolor configuration.
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2919,14 +2941,33 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.501 A
-       pache Mesos ist seit Beginn der Entwicklung von Spark ein optionaler ...
+l.491 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[23]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.496 
+      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--504
+Underfull \hbox (badness 10000) in paragraph at lines 497--499
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
@@ -2937,69 +2978,123 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.506 
+l.505 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.508 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.510 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[23])
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.174 \include{vorstellung}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[24] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
-Kapitel 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
 
  []
 
 
-! Package glossaries Error: Glossary entry `API' has not been defined.
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.513 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
+
+ []
+
+[24]
+! Undefined control sequence.
+<argument> \rdd 
+                
+l.518 ...ng-Backend (Operationen auf \glspl{\rdd})
+                                                   auf dem auch Streaming-Pr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Undefined control sequence.
+<argument> \rdd 
+                
+l.518 ...ng-Backend (Operationen auf \glspl{\rdd})
+                                                   auf dem auch Streaming-Pr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Package glossaries Error: Glossary entry `' has not been defined.
 
 See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ...die kostenlose Streaming-\gls{API}\footnote
-                                                  {https://dev.twitter.com/s...
+l.518 ...ng-Backend (Operationen auf \glspl{\rdd})
+                                                   auf dem auch Streaming-Pr...
 You need to define a glossary entry before you can use it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.523 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 526--174
+
+ []
+
+[25] ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\praxis.tex"
+Kapitel 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -3016,7 +3111,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-<demo_app_usecase.pdf, id=2432, 468.95201pt x 475.376pt>
+<demo_app_usecase.pdf, id=2460, 468.95201pt x 475.376pt>
 File: demo_app_usecase.pdf Graphic file (type pdf)
  <use demo_app_usecase.pdf>
 Package pdftex.def Info: demo_app_usecase.pdf used on input line 17.
@@ -3031,7 +3126,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[25
+[26
 
 
 
@@ -3041,17 +3136,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<versuchsaufbau.pdf, id=2444, 476.78168pt x 409.94693pt>
+<versuchsaufbau.pdf, id=2472, 476.78168pt x 409.94693pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf>
 Package pdftex.def Info: versuchsaufbau.pdf used on input line 34.
 (pdftex.def)             Requested size: 289.69957pt x 249.10394pt.
- [26 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_usecase.pdf>]
+ [27 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_usecase.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-[27 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf>]
+[28 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/versuchsaufbau.pdf>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 81.
 
@@ -3059,7 +3154,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
-[28]
+[29]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3086,7 +3181,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<data_centric_layers.pdf, id=2645, 514.02556pt x 216.65051pt>
+<data_centric_layers.pdf, id=2674, 514.02556pt x 216.65051pt>
 File: data_centric_layers.pdf Graphic file (type pdf)
  <use data_centric_layers.pdf>
 Package pdftex.def Info: data_centric_layers.pdf used on input line 145.
@@ -3139,7 +3234,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-[29]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
@@ -3149,7 +3244,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-<batch_layer.pdf, id=2657, 510.708pt x 244.112pt>
+<batch_layer.pdf, id=2685, 510.708pt x 244.112pt>
 File: batch_layer.pdf Graphic file (type pdf)
  <use batch_layer.pdf>
 Package pdftex.def Info: batch_layer.pdf used on input line 171.
@@ -3191,17 +3286,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
-<streaming_layer.pdf, id=2660, 517.13202pt x 260.975pt>
+<streaming_layer.pdf, id=2688, 517.13202pt x 260.975pt>
 File: streaming_layer.pdf Graphic file (type pdf)
  <use streaming_layer.pdf>
 Package pdftex.def Info: streaming_layer.pdf used on input line 185.
 (pdftex.def)             Requested size: 413.85834pt x 208.85594pt.
- [30 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/data_centric_layers.pdf>]
+ [31 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/data_centric_layers.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
-[31 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/batch_layer.pdf> <C:/Users/Daniel/Do
+[32 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/batch_layer.pdf> <C:/Users/Daniel/Do
 cuments/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/streaming_layer.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/stream
@@ -3235,18 +3330,18 @@ Class scrbook Warning: Usage of deprecated font command `\rm'!
 (scrbook)              But for now, KOMA-Script will replace deprecated `\rm'
 (scrbook)              by `\mathrm ' on input line 194.
 
-[32]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
-<demo_app_deployment.pdf, id=3324, 533.995pt x 656.85402pt>
+<demo_app_deployment.pdf, id=3352, 533.995pt x 656.85402pt>
 File: demo_app_deployment.pdf Graphic file (type pdf)
  <use demo_app_deployment.pdf>
 Package pdftex.def Info: demo_app_deployment.pdf used on input line 236.
 (pdftex.def)             Requested size: 372.46997pt x 458.181pt.
 
-<demo_app_components.pdf, id=3325, 648.02098pt x 445.48189pt>
+<demo_app_components.pdf, id=3353, 648.02098pt x 445.48189pt>
 File: demo_app_components.pdf Graphic file (type pdf)
  <use demo_app_components.pdf>
 Package pdftex.def Info: demo_app_components.pdf used on input line 244.
@@ -3256,7 +3351,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
-<Pipeline.pdf, id=3327, 616.70403pt x 165.418pt>
+<Pipeline.pdf, id=3355, 616.70403pt x 165.418pt>
 File: Pipeline.pdf Graphic file (type pdf)
  <use Pipeline.pdf>
 Package pdftex.def Info: Pipeline.pdf used on input line 256.
@@ -3271,8 +3366,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
-[33] [34 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_deployment.pdf>]
-[35 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_components.pdf> <C:/Users/D
+[34] [35 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_deployment.pdf>]
+[36 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/demo_app_components.pdf> <C:/Users/D
 aniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/Pipeline.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/Pipeli
@@ -3318,7 +3413,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 314--316
 
  []
 
-[36]
+[37]
 Overfull \hbox (0.14587pt too wide) in paragraph at lines 327--328
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3328,19 +3423,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
-[37] <runtime_vs_blocksize.pdf, id=4665, 762.56421pt x 258.9645pt>
+[38] <runtime_vs_blocksize.pdf, id=4693, 762.56421pt x 258.9645pt>
 File: runtime_vs_blocksize.pdf Graphic file (type pdf)
  <use runtime_vs_blocksize.pdf>
 Package pdftex.def Info: runtime_vs_blocksize.pdf used on input line 377.
 (pdftex.def)             Requested size: 413.85834pt x 140.55pt.
- [38 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/runtime_vs_blocksize.pdf>]
-<1W32B1R_net_cpu.pdf, id=4679, 727.63843pt x 344.60745pt>
+ [39 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/runtime_vs_blocksize.pdf>]
+<1W32B1R_net_cpu.pdf, id=4707, 727.63843pt x 344.60745pt>
 File: 1W32B1R_net_cpu.pdf Graphic file (type pdf)
  <use 1W32B1R_net_cpu.pdf>
 Package pdftex.def Info: 1W32B1R_net_cpu.pdf used on input line 387.
 (pdftex.def)             Requested size: 413.85834pt x 196.00237pt.
 
-<4W64B2R_io.pdf, id=4681, 571.93074pt x 241.8927pt>
+<4W64B2R_io.pdf, id=4709, 571.93074pt x 241.8927pt>
 File: 4W64B2R_io.pdf Graphic file (type pdf)
  <use 4W64B2R_io.pdf>
 Package pdftex.def Info: 4W64B2R_io.pdf used on input line 396.
@@ -3350,12 +3445,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
-[39 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/1W32B1R_net_cpu.pdf>]
+[40 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/1W32B1R_net_cpu.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
 
-<bilder/streaming_stats_dashboard.PNG, id=4698, 675.27281pt x 422.70422pt>
+<bilder/streaming_stats_dashboard.PNG, id=4726, 675.27281pt x 422.70422pt>
 File: bilder/streaming_stats_dashboard.PNG Graphic file (type png)
  <use bilder/streaming_stats_dashboard.PNG>
 Package pdftex.def Info: bilder/streaming_stats_dashboard.PNG used on input line 417.
@@ -3370,26 +3465,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
-<str_1W_cpu.pdf, id=4700, 583.31187pt x 244.73834pt>
+<str_1W_cpu.pdf, id=4728, 583.31187pt x 244.73834pt>
 File: str_1W_cpu.pdf Graphic file (type pdf)
  <use str_1W_cpu.pdf>
 Package pdftex.def Info: str_1W_cpu.pdf used on input line 430.
 (pdftex.def)             Requested size: 413.85834pt x 173.64967pt.
- [40 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/4W64B2R_io.pdf>] <str_1W_net.pdf, i
-d=4713, 583.31187pt x 239.04709pt>
+ [41 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/4W64B2R_io.pdf>] <str_1W_net.pdf, i
+d=4742, 583.31187pt x 239.04709pt>
 File: str_1W_net.pdf Graphic file (type pdf)
 
 <use str_1W_net.pdf>
 Package pdftex.def Info: str_1W_net.pdf used on input line 439.
 (pdftex.def)             Requested size: 413.85834pt x 169.61153pt.
- [41 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/bilder/streaming_stats_dashboard.PN
+ [42 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/bilder/streaming_stats_dashboard.PN
 G> <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/str_1W_cpu.pdf>]
-<str_mit_mem_pi00.pdf, id=4727, 580.46634pt x 236.20245pt>
+<str_mit_mem_pi00.pdf, id=4755, 580.46634pt x 236.20245pt>
 File: str_mit_mem_pi00.pdf Graphic file (type pdf)
  <use str_mit_mem_pi00.pdf>
 Package pdftex.def Info: str_mit_mem_pi00.pdf used on input line 448.
 (pdftex.def)             Requested size: 413.85834pt x 168.41132pt.
-) [42 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/str_1W_net.pdf> <C:/Users/Daniel/D
+) [43 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/str_1W_net.pdf> <C:/Users/Daniel/D
 ocuments/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/str_mit_mem_pi00.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/str_mi
@@ -3416,12 +3511,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[43
+[44
 
 
 
 
-] [44]
+] [45]
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...tlabelname \@empty http://mean.io/##
                                                   !/
@@ -3432,10 +3527,10 @@ I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-) [45]
+) [46]
 ===== Section: literature
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.acr")
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [46
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.gls" [47
 
 
 
@@ -3445,7 +3540,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 ])
 ===== File: appendices
-[47
+[48
 
 
 
@@ -3455,14 +3550,14 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 1.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 1.
- [48
+ [49
 
 
 
 
 
 
-] [49]
+] [50]
 Overfull \hbox (0.14587pt too wide) in paragraph at lines 75--76
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3472,7 +3567,7 @@ Overfull \hbox (0.14587pt too wide) in paragraph at lines 76--77
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[50]
+[51]
 Overfull \hbox (0.14587pt too wide) in paragraph at lines 104--105
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3488,7 +3583,7 @@ Overfull \hbox (0.14587pt too wide) in paragraph at lines 115--116
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[51]) [52]
+[52]) [53]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 201.
 
@@ -3508,7 +3603,7 @@ Overfull \hbox (34.41228pt too wide) in paragraph at lines 202--202
 \T1/LinuxLibertineMonoT-TLF/m/n/10.95 Leitfaden _ Big -[] Data -[] Technologien -[] Wissen _ fuer _ Entscheider _
  []
 
-[53
+[54
 
 
 
@@ -3524,9 +3619,9 @@ Overfull \hbox (28.70749pt too wide) in paragraph at lines 202--202
 \T1/LinuxLibertineMonoT-TLF/m/n/10.95 apache . org / jira / browse / SPARK / ?selectedTab = com . atlassian .
  []
 
-[54] [55]
+[55] [56]
 ===== Section: index
-("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [56]
+("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.ind") [57]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
 
@@ -3539,7 +3634,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
 Package rerunfilecheck Info: File `sample.out' has not changed.
-(rerunfilecheck)             Checksum: C802A22DA2C61ABCCC37518127DD0C72;2927.
+(rerunfilecheck)             Checksum: C7631417CA2901F08D94B0D6A4686A6C;2835.
 
 
 LaTeX Warning: There were undefined references.
@@ -3556,13 +3651,13 @@ Package logreq Info: Writing requests to 'sample.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
  ) 
 Here is how much of TeX's memory you used:
- 49069 strings out of 493921
- 1057608 string characters out of 3144873
+ 49076 strings out of 493921
+ 1057680 string characters out of 3144873
  1740349 words of memory out of 3000000
  50738 multiletter control sequences out of 15000+200000
  158671 words of font info for 209 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
- 74i,19n,112p,1826b,3037s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 74i,19n,112p,1826b,3374s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{glo:dataframe} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
@@ -3586,9 +3681,9 @@ s/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on sample.pdf (64 pages, 2434142 bytes).
+Output written on sample.pdf (65 pages, 2443255 bytes).
 PDF statistics:
- 5146 PDF objects out of 5155 (max. 8388607)
- 466 named destinations out of 1000 (max. 500000)
- 41014 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 5176 PDF objects out of 6186 (max. 8388607)
+ 473 named destinations out of 1000 (max. 500000)
+ 41006 words of extra memory for PDF output out of 42996 (max. 10000000)
 
