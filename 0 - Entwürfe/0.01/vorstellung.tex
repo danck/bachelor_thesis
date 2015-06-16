@@ -411,7 +411,7 @@ Nach Ablauf des Zeitfensters bilden diese Puffer die Partitionen eines RDD mit d
 
 Mit diesem Verfahren wird ein Großteil der Operationen klassischer \gls{rdd} auch für Datenströme verfügbar.\\
 
-Eine Reihe von Empfängern für solche Datenströme sind bereits in der Spark Streaming Bibliothek enthalten (z.B. Kafka, Twitter, ZeroMQ, ...)\footnote{https://spark.apache.org/docs/1.3.1/streaming-programming-guide.html, abgerufen am 16.06.2015}. Weitere Empfänger können selbst implementiert und übergeben werden.
+Eine Reihe von Empfängern für solche Datenströme sind bereits in der Spark Streaming Bibliothek enthalten (z.B. für Kafka\footnote{http://kafka.apache.org/, abgerufen am 16.06.2015}, Twitter, ZeroMQ\footnote{http://zeromq.org/, abgerufen am 16.06.2015}, ...)\footnote{https://spark.apache.org/docs/1.3.1/streaming-programming-guide.html, abgerufen am 16.06.2015}. Weitere Empfänger können selbst implementiert und übergeben werden.\\
 
 Eine Beispielimplementation dieses Verfahrens wird im praktischen Teil durchgeführt.
 
@@ -488,24 +488,39 @@ Die Kommunikation innerhalb der Entwickler- und Anwendergemeinschaft findet wese
 \end{figure}
 \\
 
-\section{Auswahl verwandter Produkte}
+\section{Übersicht verwandter Produkte}
 Um Spark besser im Bereich bestehender Lösungen einzuordnen werden im Folgenden einige Produkte genannt die häufig zusammen mit Spark verwendet oder ähnliche Aufgaben erfüllen.
+
 \paragraph{Hadoop/YARN}\\
-Hadoop lässt sich als eine Art Betriebssystem für Cluster zur Datenanalyse beschreiben. Zu den wesentlichen Komponenten zählen ein Dateisystem (HDFS) ein Datenverarbeitungsmodell (MapReduce) und ein Scheduler (YARN).
+
+Hadoop\footnote{https://hadoop.apache.org/, abgerufen am 16.06.2015} lässt sich als eine Art Betriebssystem für Cluster zur Datenanalyse beschreiben. Zu den wesentlichen Komponenten zählen ein Dateisystem (HDFS) ein Datenverarbeitungsmodell (MapReduce) und ein Scheduler (YARN).
 Alle genannten Komponenten sind für den fehlertoleranten und skalierbaren Betrieb auf verteilten Hardware-Komponenten vorgesehen.\\
-Zwar wird mit MapReduce auch eine Komponente zur Verarbeitung/Analyse von verteilt gespeicherten Daten zu Verfügung gestellt, andere Datenverarbeitungsmodelle können jedoch gleichberechtigt und unter Aufsicht des Ressourcenschedulers YARN betrieben werden.\\
+
+Zwar wird mit MapReduce auch eine Komponente zur Verarbeitung von verteilt gespeicherten Daten zu Verfügung gestellt, andere Datenverarbeitungsmodelle können jedoch gleichberechtigt und unter Aufsicht des Ressourcenschedulers YARN betrieben werden.\\
 
 Spark liefert eine mögliche Implementation eines solchen alternativen Datenverarbeitungsmodells.
 
 \paragraph{Mesos}\\
-Apache Mesos ist seit Beginn der Entwicklung von Spark ein optionaler Clustermanager für Sparkapplikationen \cite{Mat12}.\\
+
+Apache Mesos\footnote{http://mesos.apache.org/, abgerufen am 16.06.2015} ist seit Beginn der Entwicklung von Spark ein optionaler Clustermanager für Sparkapplikationen \cite{Mat12}.\\
+
 Als reiner Clustermanager ersetzt Mesos die Spark Master-Komponente in der Funktion des knotenübergreifenden Ressourcenmanagements.\\
+
 Wie bei YARN ermöglicht dies auch anderen Anwendungen die über Mesos verwaltet werden einen gleichberechtigten Betrieb auf dem selben Cluster.\\
 
 \paragraph{Flink}\\
 
-\paragraph{MPI}\\
+Apache Flink\footnote{https://flink.apache.org/, abgerufen am 16.06.2015} ist mit seiner Funktionalität ein direkter Konkurrent zu Apache Spark.\\
 
-\paragraph{Samza}\\
+Flink ist ebenfalls in Java/Scala geschrieben und bietet mit drei Standardbibliotheken zur Graphprozessierung, zum Maschinenlernverfahren und zu SQL-artigen Abfragen auf strukturierten Datensätzen einen sehr ähnlichen Funktionsumfang.\\
 
-\paragraph{Storm}\\
+Der wesentliche Unterschied in der Architektur von Flink verglichen mit Spark liegt im Applikationskern. Flink bietet ein Streaming-Backend auf dem wiederum auch Batchprozesse implementiert werden können. Spark wiederum bietet ein Batch-Processing-Backend (Operationen auf \glspl{\rdd}) auf dem auch Streaming-Prozesse implementiert werden können.\\
+
+Auffällig ist weiterhin, dass im Flink Applikationskern häufig auf Low-Level-Methoden zurückgegriffen wird und beispielsweise mit der Endianness\footnote{Art der Bytereihenfolge bei der Ablage von Daten im Arbeitsspeicher} auf verschiedenen Speicherarchitekturen umgegangen wird. Solch feingranulare Optimierungsbemühungen sind dem Autoren bei Spark nicht bekannt.\\
+
+\paragraph{Open MPI}\\
+
+Open MPI\footnote{http://www.open-mpi.de/, abgerufen am 16.06.2015} ist die Implementation des \textit{Message Passing Interface}\footnote{http://www.mcs.anl.gov/research/projects/mpi/, abgerufen am 16.06.2015}, eines Standards zum Nachrichtenaustausch zwischen Prozessen.\\
+
+Obwohl dieses Framework ebenfalls der Koordination unterschiedlicher Prozesse und einem gemeinsamen verteilten Speicherbereich dient, ist es völlig agnostisch bezüglich der ausgeführten Anwendung.\\
+Sparks Domäne dagegen ist "`Large Scale Data Processing"', sämtliche Komponenten von Spark sind für diese Aufgaben optimiert. Überschneidungen der Anwendungsbereiche von Open MPI und Spark sind daher sehr unwahrscheinlich.\\
