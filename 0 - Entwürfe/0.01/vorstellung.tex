@@ -375,17 +375,51 @@ Die bedienten Bereiche
 \end{itemize}
 werden in diesem Abschnitt erläutert.
 
-\subsection{Dataframes/Spark SQL}
-Die Spark SQL Bibliothek bietet Schnittstellen für den Zugriff auf strukturierte Daten. Dazu wird eine Abstraktion der \glspl{rdd} eingeführt. Diese Abstraktion sind Dataframes wie sie aus der Programmiersprache R\footnote{http://www.r-project.org/, abgerufen am 20.05.2015} bekannt sind.\\
+\subsection{SparkSQL}
+Die Spark SQL Bibliothek bietet Schnittstellen für den Zugriff auf strukturierte Daten. Dazu wird eine weitere abstrakte Datenstruktur neben den \glspl{rdd} eingeführt. Diese Datenstruktur sind \glspl{dataframe} wie sie in ähnlicher Art auch aus der Programmiersprache R\footnote{http://www.r-project.org/, abgerufen am 20.05.2015} bekannt sind.\\
 
-\begin{labeling}{Anmerkung:~}
-\item[\textbf{Data Frames}:] \lipsum[1]
-\end{labeling}
+\Glspl{dataframe} und die SparkSQL Bibliothek bilden einen Ansatz, relationale Abfragen mit komplexen prozeduralen Algorithmen zu verknüpfen, um die Performance bei Abfragen auf großen Datenmengen zu optimieren (Vgl. \cite{Armbrust:2015:SSR:2723372.2742797}).\\
 
-\cite{Armbrust:2015:SSR:2723372.2742797}
+Die Abfrage und Verarbeitung von Daten kann entweder über die Schnittstellen dieses Datentyps erfolgen (ähnlich wie bei \glspl{rdd} oder in Form von SQL-Syntax.\\
+
+Diese Form des Zugriffs ist beispielsweise über einen JDBC-Adapter möglich und bietet so anderen Anwendungen und Frameworks die Möglichkeit bestehende SQL-Schnittstellen mit Apache Spark zu verbinden.\\
+
+Ähnlich wie bei \glspl{rdd} werden komplexe Folgen von Abfragen zunächst in dem \gls{dataframe}-Referenzobjekt gespeichert, und erst bei Initialisierung ausgewertet. Dabei wird eine Optimierungspipeline genutzt, die zunächst die relationalen Ausdrücke optimiert und ihn dann in Spark-Operationen auf \glspl{rdd} übersetzt.\\
+
+Die SparkSQL-Bibliothek zerfällt dabei in vier Unterprojekte\footcite{https://github.com/apache/spark/tree/branch-1.3/sql, abgerufen am 16.06.2015}:
+\begin{enumerate}
+	\item \textbf{Catalyst}: Eine Optimierungsengine für relationale Ausdrücke
+	\item \textbf{Core}: Die Ausführungsumgebung für optimierte Catalyst-Ausdrücke auf dem Apache Spark Applikationskern
+	\item \textbf{Hive}: Ein Adapter für die Datawarehouse-Software Apache Hive\footnote{https://hive.apache.org/, abgerufen am 16.06.2015}
+	\item \textbf{Thriftserver}: Eine Portierung des Hive-Servers auf Apache Spark
+\end{enumerate}
 
 \subsection{MLlib}
+Die Spark \textit{Machine Learning Library} bietet Implementationen bewährter Maschinenlernverfahren und Abstraktionen deren Einsatz.\\
+Dabei werden die Komponenten eines Maschinenlernprogramms in \textit{Transformer}, \textit{Estimator} und \textit{Pipelines} aufgeteilt\footnote{https://spark.apache.org/docs/1.3.1/ml-guide.html, abgerufen am 16.06.2015}. Als Abstraktion der verarbeiteten Datensätze werden \glspl{dataframe} aus der SparkSQL-Bibliothek verwendet.\\
+
+Die Komponenten bezeichnen folgendes:
+\begin{itemize}
+	\item \textbf{Transformer} sind zustandslose Objekte, mit einer \lstinline|transform|-Methode \glspl{dataframe} verändern.
+	\item \textbf{Estimator} erzeugen Transformer aus einem Eingangsdatensatz (\gls{dataframe}). Sie sind ebenfalls zustandslos und können als Abstraktion eine Lernalgorithmus verstanden werden.
+	\item \textbf{Pipelines} sind in der MLlib eine Abstraktion der Verknüpfung von Transformern und Estimatorn. Ähnlich wie bei den Transformationen eines \gls{rdd}, werden auch dies "`lazy"' initialisiert und in Stages aufgeteilt.
+\end{itemize}
+
+Teile der Spark MLlib werden im praktischen Teil dieser Arbeit noch näher erläutert.\\
+
 \subsection{Streaming}
+Die Spark Streaming Bibliothek ermöglicht die Verarbeitung von Datenströmen mit dem Konzept der \glspl{rdd}.\\
+
+Dabei werden werden \glspl{rdd} zu diskretisierten Datenströmen (sogenannte \textit{DStreams}) erweitert.\\
+
+Dabei werden ein oder mehrere Empfänger (\textit{Receiver}) auf Workerknoten eines Sparkclusters gestartet, die anschließend eingehende Daten über ein vorgegebenes Zeitfenster puffern. Die Puffer können dabei verteilt auf mehreren verfügbaren Workerknoten angelegt werden.\\
+
+Nach Ablauf des Zeitfensters bilden diese Puffer die Partitionen eines RDD mit den empfangenen Datensätzen. Dieses \gls{rdd} wiederum ist Teil einer Sequenz von \glspl{rdd} die im Verlauf dieses Prozesses erzeugt werden.\\
+
+Mit diesem Verfahren wird ein Großteil der Operationen klassischer \gls{rdd} auch für Datenströme verfügbar.\\
+
+Eine Beispielimplementation dieses Verfahrens wird im praktischen Teil durchgeführt.
+
 \subsection{GraphX}
 \cite{Gonzalez:2014:GGP:2685048.2685096}
 

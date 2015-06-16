@@ -2,9 +2,15 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: sample.aux
 The style file: biblatex.bst
 A level-1 auxiliary file: einfuehrung.aux
 A level-1 auxiliary file: vorstellung.aux
+White space in argument---line 91 of file sample.aux
+ : \citation{abgerufen
+ :                     am 16.06.2015}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: praxis.aux
 A level-1 auxiliary file: schluss.aux
 A level-1 auxiliary file: appendices.aux
 Database file #1: sample-blx.bib
 Database file #2: sample.bib
+Warning--I didn't find a database entry for "https://github.com/apache/spark/tree/branch-1.3/sql"
 Biblatex version: 2.9
+(There was 1 error message)

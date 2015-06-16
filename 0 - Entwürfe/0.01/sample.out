@@ -8,7 +8,7 @@
 \BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Scheduling/Shuffling}{section.2.2}% 8
 \BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Anwendungsdeployment}{section.2.2}% 9
 \BOOKMARK [1][-]{section.2.3}{2.3 Standardbibliotheken}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Dataframes/Spark SQL}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 SparkSQL}{section.2.3}% 11
 \BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 MLlib}{section.2.3}% 12
 \BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Streaming}{section.2.3}% 13
 \BOOKMARK [2][-]{subsection.2.3.4}{2.3.4 GraphX}{section.2.3}% 14
@@ -30,11 +30,10 @@
 \BOOKMARK [0][-]{section*.55}{Acronyme}{}% 30
 \BOOKMARK [0][-]{section*.57}{Glossar}{}% 31
 \BOOKMARK [0][-]{section*.59}{Anhang}{}% 32
-\BOOKMARK [1][-]{section.1..1}{1 Installation der Plattform}{section*.59}% 33
-\BOOKMARK [1][-]{section.1..2}{2 Quellcode/Skripte \(Ausz\374ge\)}{section*.59}% 34
-\BOOKMARK [2][-]{subsection.1..2.1}{2.1 Performance-Messungen}{section.1..2}% 35
-\BOOKMARK [2][-]{subsection.1..2.2}{2.2 Monitoring}{section.1..2}% 36
-\BOOKMARK [2][-]{subsection.1..2.3}{2.3 Realisierung einer einfachen Continuous Deployment Pipeline}{section.1..2}% 37
-\BOOKMARK [1][-]{section.1..3}{3 Konfigurationen}{section*.59}% 38
-\BOOKMARK [1][-]{section.1..4}{4 Sonstiges}{section*.59}% 39
-\BOOKMARK [2][-]{subsection.1..4.1}{4.1 Einsch\344tzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}{section.1..4}% 40
+\BOOKMARK [1][-]{section.1..1}{1 Quellcode/Skripte \(Ausz\374ge\)}{section*.59}% 33
+\BOOKMARK [2][-]{subsection.1..1.1}{1.1 Performance-Messungen}{section.1..1}% 34
+\BOOKMARK [2][-]{subsection.1..1.2}{1.2 Monitoring}{section.1..1}% 35
+\BOOKMARK [2][-]{subsection.1..1.3}{1.3 Realisierung einer einfachen Continuous Deployment Pipeline}{section.1..1}% 36
+\BOOKMARK [1][-]{section.1..2}{2 Konfigurationen}{section*.59}% 37
+\BOOKMARK [1][-]{section.1..3}{3 Sonstiges}{section*.59}% 38
+\BOOKMARK [2][-]{subsection.1..3.1}{3.1 Einsch\344tzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}{section.1..3}% 39
