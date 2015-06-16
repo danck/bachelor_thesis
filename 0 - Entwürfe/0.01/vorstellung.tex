@@ -1,7 +1,7 @@
 \chapter{Vorstellung von Apache Spark}
-Aus Sicht eines Nutzers ist Apache Spark eine API zum Zugriff auf Daten und deren Verarbeitung.\\
+Aus Sicht eines Nutzers ist Apache Spark eine \gls{api} zum Zugriff auf Daten und deren Verarbeitung.\\
 
-Diese API (wahlweise für die Programmiersprachen Scala, Java und Python verfügbar), kann im einfachsten Fall über eine eigene Spark Konsole mit \gls{repl}\cite{Hail} verwendet werden.\\
+Diese API (wahlweise für die Programmiersprachen Scala, Java und Python verfügbar), kann im einfachsten Fall über eine eigene Spark Konsole mit \gls{repl} (\cite{Hail}) verwendet werden.\\
 Die Zählung von Wortvorkommen in einem Text - das "`Hello World"' der Big Data Szene - lässt sich dort mit zwei Befehlen realisieren (Listing \ref{lst:sconsole_wordcount}).\\
 
 \begin{lstlisting}[caption={Word Count in der Spark Konsole},label={lst:sconsole_wordcount}]
@@ -28,20 +28,20 @@ res0: Array[(String, Int)] = Array((Tyrann,,1), (im,2), (Doch,1) ...)
 
 Aus Sicht eines Administrators oder Softwarearchitekten ist Apache Spark eine Applikation auf einem \gls{cluster}, die sich in der Anwendungsschicht befindet und charakteristische Anforderungen insbesondere an Lokalität des Storages und die Netzwerkperformance stellt.\\
 
-Was das konkret bedeutet, welche Mechanismen und Konzepte dahinterstehen und in welchem Ökosystem von Anwendungen sich Apache Spark bewegt wird in den folgenden Abschnitten dieses Kapitels beleuchtet.
+Was das in der konkreten Umsetzung beudeutet und welche Mechanismen und Konzepte dahinterstehen wird in den folgenden Abschnitten dieses Kapitels beleuchtet.
 
 \section{Überblick}
 Im Allgemeinen Fall läuft eine Spark-Anwendung auf drei Arten von Rechnern (s. Abb.~\ref{fig:sparkdeployment}):
 
 \begin{enumerate}
 	\item \textbf{Clientknoten}\\
-	Auf Nutzerseite greift die Anwendung auf die API eines lokalen Spark-Kontextes zu, der die Kontaktdaten eines Clustermanagers sowie verschiedene Konfigurationseinstellungen enthält. 
+	Auf Nutzerseite greift die Anwendung (Treiberprogramm) auf die \gls{api} eines lokalen Spark-Kontextes zu, der die Kontaktdaten eines Clustermanagers sowie verschiedene Konfigurationseinstellungen enthält. 
 	
 	\item \textbf{\gls{master}knoten}\\
-	Der \gls{master}knoten betreibt den \textit{Clustermanager}, läuft auf einem entfernten Rechner und ist der Einstiegspunkt in den \gls{cluster}. Hier werden Aufträge des Anwenders an die Arbeitsknoten verteilt und Ergebnisse eingesammelt und zurückgereicht.
+	Der \gls{master}knoten betreibt den \textit{Clustermanager} und ist der Einstiegspunkt in den \gls{cluster}. Hier werden Ressourcenanforderungen des Treiberprogramms an die Arbeitsknoten verteilt und der Betrieb der \textit{Worker} überwacht.
 	
 	\item \textbf{\gls{worker}knoten}\\
-	Die \gls{worker}knoten beherbergen die Spark \textit{Executors} und sind die ausführenden Elemente der Aktionen und Transformationen. Die \textit{Executors} können untereinander Zwischenergebnisse austauschen und melden ihre Ressourcenverfügbarkeit an den \textit{Clustermanager}.
+	Die \gls{worker}knoten beherbergen die Spark Workerprozesse. Diese melden verfügbare Ressourcen und erzeugen bei Bedarf \textit{Executors}. \textit{Executors} sind die ausführenden Elemente der Aktionen und Transformationen im Rahmen einer Sparkanwendung. Die \textit{Executors} können untereinander Zwischenergebnisse austauschen und Nachrichten und Ergebnisse an das Treiberprogramm senden.
 \end{enumerate}
 
 \begin{figure}[ht!]
@@ -51,11 +51,11 @@ Im Allgemeinen Fall läuft eine Spark-Anwendung auf drei Arten von Rechnern (s. 
 	\label{fig:sparkdeployment}
 \end{figure}
 
-Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu können ist es offensichtlich wichtig, welche Eigenschaften der unterliegenden Hardware angenommen werden.
+Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu können ist es wichtig, welche Eigenschaften der unterliegenden Hardware angenommen werden.\\
 
-Weil Spark explizit für den Betrieb innerhalb eines Hadoop/YARN \textcolor{red}{[VERWEIS auf Abschnitt Scheduling]} geeignet ist und YARN wiederum für den Betrieb auf einem \gls{cluster} auf Mittelklasse-Mehrzweckmaschinen (Commodity Hardware) optimiert ist\cite{Mer14}, kann für Spark von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
+Spark ist explizit für den Betrieb innerhalb eines Hadoop/YARN \gls{cluster}s geeignet. Hadoop/YARN wiederum ist für den Betrieb auf einem \gls{cluster} auf Mittelklasse-Mehrzweckmaschinen (Commodity Hardware) optimiert (\cite{Mer14}). Für Spark kann daher von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
 
-Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grundausstattung) - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen zueinander (Siehe Anhang~\ref{subsec:commodity_servers}).
+Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse in der Grundausstattun) - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen zueinander (Siehe Anhang~\ref{subsec:commodity_servers}).
 
 \begin{table}[ht]
 	\centering % used for centering table
@@ -71,7 +71,7 @@ Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse (in der Grund
 	\label{table:vgldurchsatz} % is used to refer this table in the text
 \end{table}
 
-Eine detaillierte Analyse des Zugriffsverhaltens ist nicht Gegenstand dieser Arbeit. Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes (\textit{D}) der verschiedenen Datenkanäle zu vergegenwärtigen:
+Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes (\textit{D}) der verschiedenen Datenkanäle zu vergegenwärtigen:
 
 \begin{equation*}
 	D_{Netzwerk} < D_{Festspeicher} < D_{Arbeitsspeicher}
@@ -79,12 +79,12 @@ Eine detaillierte Analyse des Zugriffsverhaltens ist nicht Gegenstand dieser Arb
 
 Für eine effiziente Verarbeitung von Daten ist es - ganz allgemein - also wünschenswert den größten Anteil des Datentransfers im Arbeitsspeicher zu haben, einen kleineren Anteil auf der Festplatte und einen noch kleineren Anteil auf Netzwerkverbindungen.\\
 
-Es ist das wichtigste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente und stabile Verarbeitung \textit{großer Datenmengen}\cite{Sam14} zu gewährleisten.\\
+Es ist das wichtigste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente und stabile Verarbeitung \textit{großer Datenmengen} (\cite{Sam14}) zu gewährleisten.\\
 
 \section{Kernkonzepte}
 
 \subsection{Resilient Distributed Datasets}
-Die universelle Einheit mit der Datenelemente auf Spark repräsentiert wird ist ein sogenanntes \gls{rdd}\cite{Mat12}.\\
+Die universelle Einheit mit der Daten auf Spark repräsentiert werden ist eine verteilte Datenstruktur, ein sogenanntes \gls{rdd}\cite{Mat12}.\\
 
 Ein Beispiel für ein solches \gls{rdd} wurde bereits erwähnt, nämlich das in Listing \ref{lst:sconsole_wordcount} erzeugte Objekt \lstinline|text|:\\
 
@@ -92,19 +92,20 @@ Ein Beispiel für ein solches \gls{rdd} wurde bereits erwähnt, nämlich das in 
 val text = sc.textFile("../Heinrich Heine - Der Ex-Lebendige")
 \end{lstlisting}
 
-\Glspl{rdd} können auch explizit von einem Treiberprogramm erzeugt werden, ohne dass dazu vorhandene Daten genutzt werden:\\
+\Glspl{rdd} entstehen nicht nur durch Einlesen externer Datenquellen, sondern können auch explizit von einem Treiberprogramm erzeugt werden:\\
 
 \begin{lstlisting}
 val listRDD = sc.parallelize(List(1,2,3,4,5,6))
 \end{lstlisting}
 
-Die gesamte operative Kern-\gls{api} dreht sich um die Steuerung dieser Dateneinheiten. Insbesondere sind auch die in den Standardbibliotheken verfügbaren "`höheren"' \glspl{api} auf diesen \glspl{rdd} implementiert.
+Die gesamte operative Kern-\gls{api} dreht sich um die Steuerung dieser Datenstruktur. Insbesondere sind auch die in den Standardbibliotheken verfügbaren "`höheren"' \glspl{api} auf diesen \glspl{rdd} implementiert.
 
 Sie sind damit die wichtigste Abstraktion des Applikationskerns.\\
 
-In erster Näherung können \glspl{rdd} als eine Variante von \gls{dsm}\cite{Nitzberg:1991:DSM:112827.112855} \cite{Mat12} verstanden werden, haben allerdings sehr charakteristische Einschränkungen und Erweiterungen, die in diesem Kapitel erläutert werden.\\
+In erster Näherung können \glspl{rdd} als eine Variante von \gls{dsm} (\cite{Nitzberg:1991:DSM:112827.112855}, \cite{Mat12}) verstanden werden. Sie haben allerdings sehr charakteristische Einschränkungen und Erweiterungen, die in diesem Kapitel erläutert werden.\\
 
-\paragraph{Verteilungssicht}
+\paragraph{Verteilungssicht}\\
+
 \\
 Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeicher mehrerer Maschinen partitioniert ist (Abb.~\ref{fig:rdds1}).
 
@@ -115,21 +116,22 @@ Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeic
 	\label{fig:rdds1}
 \end{figure}
 
-\paragraph{Laufzeitsicht}
+\paragraph{Laufzeitsicht}\\
+
 \\
-\Glspl{rdd} sind nicht veränderbar. Es ist nicht möglich einzelne Elemente \gls{RDD} durch gezielte Operationen zu verändern. Stattdessen ist es nur möglich ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
-Solche globalen (also auf sämtlichen Partitionen des \gls{RDD} durchgeführten) Operationen können zwar ihren Effekt auf einzelne Elemente eines \gls{RDD} beschränken, die Ausführung erfolgt jedoch in jedem Fall auf allen Partitionen.\\
+\Glspl{rdd} sind nicht veränderbar. Es ist nicht möglich Operationen gezielt auf einzelnen Elementen eines \gls{rdd} anzuwenden. Stattdessen ist es nur möglich ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
+Solche globalen - auf sämtlichen Partitionen des \gls{rdd} durchgeführten - Operationen können zwar ihren Effekt auf einzelne Elemente eines \gls{rdd} beschränken, die Ausführung erfolgt jedoch in jedem Fall auf allen Partitionen.\\
 
 Eine Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gls{rdd} bezeichnet. Die \textit{Lineage} kann als das "`Rezept"' zur Erstellung eines Datensatzes verstanden werden.
 
 Dabei gibt es zwei grundsätzlich verschiedene Operationen, nämlich \textit{Transformationen} und \textit{Aktionen}.\\
 
-\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{RDD} auf ein anderes abbilden:\\
+\textbf{\textit{Transformationen}} sind Operationen, die ein \gls{rdd} auf ein anderes abbilden:\\
 \[Transformation: RDD \times RDD\ \longrightarrow RDD\]
 oder
 \[Transformation: RDD\ \longrightarrow RDD\]
 \\
-Es werden also - grob gesagt - nur die abstrakte Repräsentation des Datensatzes ändern, ohne tatsächlich dessen Datenelemente für den Programmfluss im Treiberprogramm abzurufen.\\
+Es wird also - grob gesagt - nur die abstrakte Repräsentation des Datensatzes geändert, ohne tatsächlich dessen Datenelemente für den Programmfluss im Treiberprogramm abzurufen.\\
 Beispiele für solche Operationen sind:
 \begin{itemize}
 	\item \textit{filter}
@@ -147,9 +149,9 @@ Beispiele für Aktionen sind die Methoden:
 	\item \textit{foreach}
 \end{itemize}\\
 
-Jeder dieser Operationen, kann im Sinne des Command-Patterns (\cite{FPP13}) eine Funktion bzw. ein Funktionsobjekt übergeben werden, dass die gewählte Operation spezifiziert.
+Einigen dieser Operationen, kann im Sinne des Command-Patterns (\cite{FPP13}) eine Funktion bzw. ein Funktionsobjekt übergeben werden, dass die gewählte Operation spezifiziert.
 
-Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv\cite{Mat12}:\\
+Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv (\cite{Mat12}):\\
 
 \begin{figure}[ht!]
 	\centering
@@ -158,7 +160,7 @@ Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, is
 	\label{fig:rdds_no_action}
 \end{figure}
 
-Sobald die erste \textit{Aktion} aufgerufen wird, werden die Transformationen nach der vorgegebenen Reihenfolge ausgeführt und die geforderte \textit{Aktion} ausgeführt. Die Initialisierung des \gls{rdd} erfolgt also "`lazy"':\\
+Sobald die erste \textit{Aktion} aufgerufen wird, werden die Transformationen nach der vorgegebenen Reihenfolge ausgeführt und schließlich die geforderte \textit{Aktion}. Die Initialisierung des \gls{rdd} erfolgt also "`lazy"':\\
 
 \begin{figure}[ht!]
 	\centering
@@ -167,7 +169,7 @@ Sobald die erste \textit{Aktion} aufgerufen wird, werden die Transformationen na
 	\label{fig:rdds_action}
 \end{figure}
 
-Wie in Abb. \ref{fig:rdds_action} dargestellt ist, werden während der Transformationsvorgänge keine Zwischenergebnisse gespeichert. Möchte man Zwischenergebnisse zu einem späteren Zeitpunkt oder in anderem Zusammenhang wiederverwenden, kann man dies explizit über das Kommando \lstinline|persist()| anweisen:\\
+Wie in Abb. \ref{fig:rdds_action} dargestellt ist, werden während der Transformationsvorgänge keine Zwischenergebnisse gespeichert. Möchte man Zwischenergebnisse zu einem späteren Zeitpunkt oder in anderem Zusammenhang wiederverwenden, kann man dies explizit über das Kommando \lstinline|persist()| oder \lstinline|cache()| anweisen:\\
 
 \begin{figure}[ht!]
 	\centering
@@ -183,7 +185,7 @@ Jede weitere Transformations-Methode konstruiert nun lediglich eine neues \gls{r
 
 Ein Beispiel für solch eine Transformation auf einem \gls{rdd} ist die Methode \textit{map}\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala#L285 (abgerufen am 30.05.2015)} (Listing \ref{lst:spark_map}).\\
 
-In den Zeilen 7 und 8 ist zu sehen, wie ein neues \gls{rdd} erzeugt wird und diesem das aktuelle \gls{rdd} sowie die auf dessen Elemente anzuwendende Funktion \lstinline|f| (bzw. \lstinline|cleanF|) übergeben wird.\\
+In den Zeilen 7 und 8 ist zu sehen, wie ein neues \gls{rdd} erzeugt wird und diesem das aktuelle \gls{rdd} zusammen mit der Funktion \lstinline|f| (bzw. \lstinline|cleanF|) übergeben wird. Diese Funktion beschreibt die Erzeugung der Elemente des neuen \gls{rdd} aus den Elementen des aktuellen.\\
 
 \begin{lstlisting}[language=Scala,caption={Map-Methode aus org.apache.spark.rdd.RDD v1.3.0},label={lst:spark_map}]
   /**
@@ -197,8 +199,8 @@ In den Zeilen 7 und 8 ist zu sehen, wie ein neues \gls{rdd} erzeugt wird und die
   }
 \end{lstlisting}
 \\
-Die tatsächliche Berechnung eines \glspl{rdd} wird dann bei Aufruf einer Aktion gestartet. Als Beispiel hierfür sei die Methode \lstinline|foreach|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala#L793 (abgerufen am 30.05.2015)} aufgeführt (Listing \ref{lst:spark_foreach}).\\
-In Zeile 6 wird auf dem Spark-Context die Methode \lstinline|runJob| aufgerufen, der die Aufgabe weiter an den Scheduler delegiert. Dort werden dann die rekursiven Abhängigkeiten des aktuellen \gls{rdd} aufgelöst und - je nach Konfiguration - die Tasks verteilt.\\
+Die tatsächliche Berechnung eines \glspl{rdd} wird dann bei dem Aufruf einer Aktion gestartet. Als Beispiel hierfür sei die Methode \lstinline|foreach|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala#L793 (abgerufen am 30.05.2015)} aufgeführt (Listing \ref{lst:spark_foreach}).\\
+In Zeile 6 wird auf dem Spark-Context die Methode \lstinline|runJob| aufgerufen, die die Aufgabe wiederum an den Scheduler delegiert. Dort werden dann die rekursiven Abhängigkeiten des aktuellen \gls{rdd} aufgelöst und - je nach Konfiguration - die Tasks verteilt.\\
 
 \begin{lstlisting}[language=Scala,caption={foreach-Methode aus org.apache.spark.rdd.RDD v1.3.0},label={lst:spark_foreach}]
   /**
@@ -213,7 +215,7 @@ In Zeile 6 wird auf dem Spark-Context die Methode \lstinline|runJob| aufgerufen,
 Das Konzept der \textit{Lineage} ist zentral für die Fehlertoleranz der \gls{rdd}s:
 Geht eine Partition verloren - beispielsweise durch Defekt eines Knotens - ist das "`Rezept"' zur Erstellung des Datensatzes in der \textit{Lineage} des \gls{rdd}-Objektes weiterhin vorhanden und die Partition kann gezielt wiederhergestellt werden.\\
 
-Ein weiterer Vorteil dieser Art von Arbeitsdatensatz wird ebenfalls sofort deutlich: Im optimalen Fall sind die zu ladenden Daten von jedem der \gls{worker} auf unabhängigen Kanälen erreichbar (z.B. auf dem lokalen Festspeicher) und gleichmäßig auf diesen Kanälen partitioniert.\\
+Ein weiterer Vorteil dieser Art von Arbeitsdatensatz wird ebenfalls sofort deutlich: Im optimalen Fall sind die zu ladenden Daten von jedem der \gls{worker} auf unabhängigen Kanälen erreichbar (z.B. auf dem lokalen Festspeicher) und gleichmäßig auf diesen Kanälen partitioniert (Abb.~\ref{fig:rdds2}.\\
 
 \begin{figure}[h!]
 	\centering
@@ -228,11 +230,11 @@ Im diesem Fall ergäbe sich mit einer Anzahl \gls{worker} $n$ und einem Durchsat
 	\sum_{i=1}^{n} \delta_i
 \end{equation}
 
-Kommen in einem Anwendungsfall \gls{rdd}s zum Einsatz, deren Elemente einzeln über eine oder mehrere Operationen untereinander verknüpft werden, kann es sinnvoll sein diese schon im Vorfeld der Verarbeitung entsprechend erwarteter Cluster zu partitionieren. Cluster seien hierbei Teilmengen des \gls{rdd}, die mit besonders hoher Wahrscheinlichkeit oder besonders häufig untereinander verknüpft werden.\\
+Kommen in einem Anwendungsfall \gls{rdd}s zum Einsatz, deren Elemente einzeln über eine oder mehrere Operationen untereinander verknüpft werden, kann es sinnvoll sein diese schon im Vorfeld der Verarbeitung entsprechend erwarteter Cluster zu partitionieren. Cluster sind hierbei Teilmengen des \gls{rdd}, die mit besonders hoher Wahrscheinlichkeit oder besonders häufig untereinander verknüpft werden.\\
 
 Dadurch kann ein größerer Teil der Operationen auf den einzelnen Datensätzen bereits lokal auf dem Knoten der jeweiligen Partition durchgeführt werden. Die Netzwerklast bei dem anschließenden \textit{Shuffle} der Daten (siehe Abschnitt 2.2.2) fällt dann geringer aus.\\
 
-Solch eine Partitionierung kann - entsprechende Erwartung über das Verhalten der Verarbeitung vorausgesetzt - mit einem maßgeschneiderten Partitionierer erreicht werden (Abb.~\ref{lst:partitioner}) der dann dem betroffenen \gls{rdd} übergeben wird.\\
+Solch eine Partitionierung kann - entsprechende Erwartung über das Verhalten der Verarbeitung vorausgesetzt - mit einem maßgeschneiderten Partitionierer erreicht werden (Abb.~\ref{lst:partitioner}), der dann dem betroffenen \gls{rdd} übergeben wird.\\
 
 \begin{lstlisting}[language=Scala,caption={Beispiel: Minimaler Partitionierer},label={lst:partitioner}]
 /*
@@ -254,22 +256,22 @@ class MinimalPartitioner extends Partitioner {
 
 \subsection{Scheduling/Shuffling}\\
 
-Dieser Abschnitt vertieft die Betrachtung des Berechnungsmodells von Spark. Mit Berechnungsmodell ist gemeint die Art, wie mit den High-Level \glspl{api} und den bisher vorgestellten Komponenten die verteilte Berechnung realisiert wird.\\
+Dieser Abschnitt vertieft die Betrachtung des Berechnungsmodells von Spark. Mit Berechnungsmodell ist die Art gemeint, wie mit den High-Level \glspl{api} und den bisher vorgestellten Komponenten die verteilte Berechnung realisiert wird.\\
 Dabei werden insbesondere die Begriffe \textit{\textbf{Task}}, \textit{\textbf{Job}} und \textit{\textbf{Stage}} näher erläutert.\\
 
 Bei den \glspl{rdd} wurden bisher insbesondere drei Aspekte behandelt:
 \begin{itemize}
-	\item die \textbf{Partitionierung} der Elemente über verschiedene Rechner
-	\item die \textbf{Vorgänger} eines \gls{rdd} bezüglich dessen \textit{Lineage}
-	\item die \textbf{Funktion} mit der ein \gls{rdd} aus einem oder mehreren direkten Vorgängern berechnet wird
+	\item Die \textbf{Partitionierung} der Elemente über verschiedene Rechner
+	\item Die \textbf{Vorgänger} eines \gls{rdd} bezüglich dessen \textit{Lineage}
+	\item Die \textbf{Funktion} mit der ein \gls{rdd} aus einem oder mehreren direkten Vorgängern berechnet wird
 \end{itemize}
 
-Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine einfache Baumstruktur für die Berechnung eines \gls{rdd} (Abb.~\ref{fig:lineage_basic}.\\
+Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine einfache Baumstruktur für die Berechnung eines \gls{rdd} (Abb.~\ref{fig:lineage_basic}).\\
 
 \begin{figure}[ht!]
 	\centering
   \includegraphics[width=0.9\textwidth]{lineage_basic.pdf}
-	\caption{Einfacher Abhängigkeitsbaum eines RDD}
+	\caption{Beispiel eines einfachen Abhängigkeitsbaums eines RDD}
 	\label{fig:lineage_basic}
 \end{figure}
 
@@ -286,7 +288,7 @@ Betrachtet man zusätzlich die Partitionierung und die Funktion mit der \glspl{r
 	\label{fig:lineage_parted}
 \end{figure}
 
-Wird eine Partition aus höchstens einer anderen erzeugt, lässt sich diese direkt auf dem selben Knoten berechnen. Werden jedoch verschiedene Partitionen benötigt um eine Folgepartition zu erzeugen stellt sich die Frage auf welchen Knoten das am Besten geschieht.\\
+Wird eine Partition aus höchstens einer anderen erzeugt, lässt sich diese direkt auf dem selben Knoten berechnen. Werden jedoch verschiedene Partitionen benötigt, um eine Folgepartition zu erzeugen, stellt sich die Frage auf welchen Knoten das am Besten geschieht.\\
 Spark unterteilt diese beiden Fälle in \textit{narrow dependencies} (erster Fall) und \textit{wide dependencies} (zweiter Fall) (\cite{Mat12}).\\
 
 Der Abhängigkeitsgraph eines \gls{rdd} wird nun in sogenannte \textit{Stages} zerlegt (Abb.~\ref{fig:lineage_stages}). Eine \textit{Stage} ist dabei ein Untergraph, dessen Elemente (von den Blättern in Richtung Wurzel betrachtet) auf eine gemeinsame \textit{wide dependency} stoßen.\\
@@ -306,16 +308,15 @@ Weil nach Definition der \textit{narrow dependencies} innerhalb einer Stage die 
 
 \[x_{i,j} = (trans_{i,j} \circ trans_{i,j-1} \circ ... \circ trans_{i,1}\circ trans_{i,0})(x_{i,0})\]
 
-Für den Übergang zwischen Stages ist die Berechnung der Nachfolger etwas aufwändiger. Hier stammen - nach Definition der \textit{wide dependencies} - die direkten Vorgänger eines Elementes nicht aus der selben Partition.\\
+Für den Übergang zwischen Stages ist die Berechnung der Nachfolger etwas aufwändiger. Hier stammen - nach Definition der \textit{wide dependencies} - die direkten Vorgänger eines Elementes nicht alle aus der selben Partition.\\
 
 Um eine neue Partition aus mehreren Vorgänger-Partitionen zu erzeugen werden zunächst geeignete Ausführungsorte\footnote{Geeignete Ausführungsorte (\textit{preferred locations}) können sich z.B. aus dem Ort eines Blocks bei HDFS ermitteln lassen (Node-Local, Rack-Local, etc.) oder daraus, ob ein Executor bereits einen Datensatz geladen hat (Process-Local)} ermittelt, von denen dann jeder per geeignetem Partitionierer mindestens einen \textit{bucket} von Elementen verarbeitet. Diese Elemente stammen dann in der Regel aus verschiedenen Vorgängerpartitionen.\\
 Das so neu-partitionierte und verarbeitete \gls{RDD} wird so zum Ausgangspunkt des folgenden \gls{rdd}.\\
-Eine Schlüsselrolle kommt bei diesem Prozess der Methode \lstinline|runTask| in der Klasse 
-\lstinline|ShuffleMapTasks|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/scheduler/ShuffleMapTask.scala (abgerufen am 30.05.2015)} aus \textit{org.apache.spark.scheduler.ShuffleMapTask} zu.\\
+Eine Schlüsselrolle kommt bei diesem Prozess der Methode \lstinline|runTask| in der Klasse \lstinline|ShuffleMapTasks|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/scheduler/ShuffleMapTask.scala, (abgerufen am 30.05.2015)} aus \textit{org.apache.spark.scheduler.ShuffleMapTask} zu.\\
 
 \subsection{Anwendungsdeployment}\\
 
-Die Komponente einer Anwendung, die von der Spark API Gebrauch macht wird in der Spark-Terminologie als \textit{Treiberprogramm} bezeichnet. \\
+Die Komponente einer Anwendung, die von der Spark API Gebrauch macht, wird in der Spark-Terminologie als \textit{Treiberprogramm} bezeichnet. \\
 
 Es gibt verschiedene Szenarien des Deployments. Das Treiberprogramm kann grundsätzlich auf zwei verschiedene Arten gestartet werden:\\
 
@@ -324,13 +325,15 @@ Es gibt verschiedene Szenarien des Deployments. Das Treiberprogramm kann grunds�
 	\item Start eines eigenständig lauffähigen Treibers mit vollständig konfigurierter und verlinkter Spark-Umgebung und expliziter Angabe eines \textit{Clustermanagers}.
 \end{enumerate}
 
-Der zweite Fall ist eher exotisch, weil eine derart enge Kopplung zwischen dem Treiber und der Konfiguration des Clusters offensichtlich aus Wartungsgründen nicht wünschenswert ist.\\
+Der zweite Fall ist eher exotisch, weil eine derart enge Kopplung zwischen dem Treiber und der Konfiguration des Clusters aus Wartungsgründen nicht wünschenswert ist.\\
 
 Im ersten Fall ergeben sich zwei weitere Möglichkeiten zum Ort der Ausführung des Treibers:\\
 
 \begin{enumerate}
-	\item \textbf{Client-Modus}	Der Treiber wird direkt auf dem Host (Gateway-Rechner) ausgeführt auf dem der Treiber übermittelt wurde (Abb.~\ref{fig:spark_deployment_clientmode}). Tatsächlich wird er sogar innerhalb des Submission-Skript-Prozesses gestartet \textbf{(VERWEIS)}.
-	\item \textbf{Cluster-Modus}	Der Treiber wird von dem Gateway-Rechner an \gls{worker} des Clusters übertragen und dort ausgeführt (Abb.~\ref{fig:spark_deployment_clustermode}).
+	\item \textbf{Client-Modus}
+	Der Treiber wird direkt auf dem Host (Gateway-Rechner) ausgeführt auf dem der Treiber übermittelt wurde (Abb.~\ref{fig:spark_deployment_clientmode}). Tatsächlich wird er sogar innerhalb des Submission-Skript-Prozesses gestartet \textbf{(VERWEIS)}.
+	\item \textbf{Cluster-Modus}
+	Der Treiber wird von dem Gateway-Rechner an einen \gls{worker} des Clusters übertragen und dort ausgeführt (Abb.~\ref{fig:spark_deployment_clustermode}).
 \end{enumerate}\\
 
 \begin{figure}[ht!]
@@ -347,7 +350,7 @@ Im ersten Fall ergeben sich zwei weitere Möglichkeiten zum Ort der Ausführung 
 	\label{fig:spark_deployment_clustermode}
 \end{figure}\\
 
-Offensichtlich kann die Lokalität des Treibers (der mit den Executors auf den \gls{worker}n kommunizieren muss) Einfluss auf Laufzeit und Latenzverhalten des Programms haben.\\
+Die Lokalität eines Treibers (der mit den Executors auf den \gls{worker}n kommunizieren muss) kann Einfluss auf Laufzeit und Latenzverhalten des Programms haben.\\
 
 Im Fall eines clusterfernen Gateway-Rechners kann also Treiberdeployment im Clustermodus sinnvoll sein, die Standardeinstellung ist jedoch der Clientmodus (siehe auch \cite{spark_submission}).\\
 
@@ -390,22 +393,21 @@ Die Spark SQL Bibliothek bietet Schnittstellen für den Zugriff auf strukturiert
 \textcolor{gray}{--- Buch: Algorithms and Parallel Computing ---}\\
 
 \section{Entwicklergemeinschaft}
-\textcolor{gray}{--- Herkunft, Apache Foundation, Entwicklungsphilosophien, Anzahl Entwickler, ... ---}\\
 
-Apache Spark begann als Entwicklung einer Gruppe von Forschern der University of California, Berkely. Spark ist eine Implementation der von dieser Gruppe untersuchten \glspl{rdd}\cite{Mat12}. Als wesentlicher Meilenstein der Entwicklung von Apache Spark, kann die Veröffentlichung eines gemeinsamen Papers der Forschungsgruppe um Matei Zaharia im Jahr 2012 gelten.\\
+Apache Spark begann als Entwicklung einer Gruppe von Forschern der University of California, Berkely. Spark basiert auf einer Implementation der von dieser Gruppe untersuchten \glspl{rdd}\cite{Mat12}. Als wesentlicher Meilenstein der Entwicklung von Apache Spark, kann die Veröffentlichung eines gemeinsamen Papers der Forschungsgruppe um Matei Zaharia im Jahr 2012 gelten.\\
 
-Seit dem 27. Februar 2014\cite{apacheblog} ist Spark ein Top-Level Projekt der Apache Software Foundation\cite{apache} und wird dort unter der Apache License 2.0\cite{apachelic} weiterentwickelt.\\
+Seit Februar 2014 (\cite{apacheblog}) ist Spark ein Top-Level Projekt der Apache Software Foundation (\cite{apache}) und wird dort unter der Apache License 2.0 (\cite{apachelic}) weiterentwickelt.\\
 
 Eine Übersicht der verantwortlichen Entwickler kann unter \cite{committer} eingesehen werden.
 Zum Zeitpunkt dieser Arbeit gehören u.a. Entwickler von Intel, Yahoo! und Alibaba zu den Stammentwicklern.\\
 
-Die Kommunikation innerhalb der Entwickler- und Anwendergemeinschaft findet wesentlich in den offiziellen Mailinglisten (Abb. \ref{fig:mailinglisten}) und dem Issue-Tracker\cite{issuetracker} der Apache Software Foundation statt.
+Die Kommunikation innerhalb der Entwickler- und Anwendergemeinschaft findet wesentlich in den offiziellen Mailinglisten (Abb. \ref{fig:mailinglisten}) und dem Issue-Tracker (\cite{issuetracker}) der Apache Software Foundation statt.
 
 \begin{figure}[ht!]
 	\centering
 	\begin{tikzpicture}
 	\begin{axis}[
-			title={Aktivität auf den Spark-Mailinglisten},
+			title={},
 			xlabel={Monat},
 			ylabel={Nachrichten pro Tag},
 			%xmin=0, xmax=100,

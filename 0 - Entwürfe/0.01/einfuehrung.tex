@@ -4,24 +4,24 @@
 
 Die Entwicklung und Verbesserung von Frameworks zur Verarbeitung großer Datenmengen ist zur Zeit hochaktuell und im Fokus von Medien und Unternehmen angekommen \cite{Bit14}. Verschiedene Programme und Paradigmen konkurrieren um die schnellste, bequemste und stabilste Art großen Datenmengen einen geschäftsfördernden Nutzen abzuringen \cite{Sin14}.\\
 
-Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity, Variety \cite{Lan01} erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter \gls{sla}s auf einzelnen Maschinen verarbeitet werden können"' (Vgl. \cite{Sam14}).\\
+Mit dem Begriff "`große Datenmengen"' oder "`Big Data"' werden in dieser Arbeit solche Datenmengen zusammengefasst, die die Kriterien Volume, Velocity und Variety \cite{Lan01} erfüllen oder "`Datenmengen, die nicht mehr unter Auflage bestimmter \gls{sla}s auf einzelnen Maschinen verarbeitet werden können"' (Vgl. \cite{Sam14}).\\
 
-Als Unternehmen, das früh mit zeitkritischen Aufgaben (u.a.  Indizierung von Webseiten und PageRank \cite{page2001method}) auf solchen Datenmengen konfrontiert war implementierte Google das Map-Reduce Paradigma \cite{Dean04} als Framework zur Ausnutzung vieler kostengünstiger Rechner für verschiedene Aufgaben. \\
+Als Unternehmen, das früh mit zeitkritischen Aufgaben (u.a.  Indizierung von Webseiten und PageRank \cite{page2001method}) auf solchen Datenmengen konfrontiert war, implementierte Google das Map-Reduce Paradigma \cite{Dean04} als Framework zur Ausnutzung vieler kostengünstiger Rechner für verschiedene Aufgaben. \\
 
 In Folge der Veröffentlichung dieser Idee im Jahr 2004 wurde Map-Reduce in Form der OpenSource Implementation Hadoop (gemeinsam mit einer Implementation des Google File Systems GFS, u.a.) \cite{Ghema03} zum de-facto Standard für Big-Data-Analyseaufgaben.\\
 
 Reines Map-Reduce (in der ursprünglichen Implemenation von Hadoop) als Berechnungsparadigma zur Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
 \begin{itemize}
-	\item Daten, die in hoher Frequenz entstehen und schnell verarbeitet werden sollen erfordern häufiges Neustarten von Map-Reduce-Jobs. Die Folge ist kostspieliger Overhead durch Verwaltung/Scheduling der Jobs und gegebenenfalls wiederholtem Einlesen von Daten.
-	\item Algorithmen die während ihrer Ausführung iterativ Zwischenergebnisse erzeugen und auf vorherige angewiesen sind (häufig bei Maschinenlernalgorithmen) können nur durch persistentes Speichern der Daten und wiederholtes Einlesen zwischen allen Iterationsschritten implementiert werden.
-	\item Anfragen an ein solches Map-Reduce-System erfolgen imperativ in Form von kleinen Programmen. Dieses Verfahren ist offensichtlich nicht so intuitiv und leicht erlernbar wie deklarative Abfragesprachen klassischer Datenbanken (z.B. SQL).
+	\item Daten, die in hoher Frequenz entstehen und schnell verarbeitet werden sollen, erfordern häufiges Neustarten von Map-Reduce-Jobs. Die Folge ist kostspieliger Overhead durch die Verwaltung der Jobs und gegebenenfalls wiederholtem Einlesen von Daten.
+	\item Algorithmen die während ihrer Ausführung iterativ Zwischenergebnisse erzeugen und auf vorherige Zwischenergebnisse angewiesen sind (häufig bei Maschinenlernalgorithmen) können nur durch persistentes Speichern der Daten und wiederholtes Einlesen zwischen allen Iterationsschritten implementiert werden.
+	\item Anfragen an ein solches Map-Reduce-System erfolgen imperativ in Form von kleinen Programmen. Dieses Verfahren ist nicht so intuitiv und leicht erlernbar wie deklarative Abfragesprachen klassischer Datenbanken (z.B. SQL).
 \end{itemize}
 
 In der Folge dieser Probleme entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen \cite{Sin14}.\\
 
-Eine der Alternativen zu der klassischen Map-Reduce-Komponente in Hadoop ist die "`general engine for large-scale data processing"' Apache Spark.\\
+Eine Alternative zu der klassischen Map-Reduce-Komponente in Hadoop ist die "`general engine for large-scale data processing"' Apache Spark.\\
 
-Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ein Vergleich des Interesses an Hadoop und Spark auf Google:\\
+Apache Spark hat innerhalb relativ kurzer Zeit stark an Aufmerksamkeit gewonnen. Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem ein Vergleich des Interesses an Hadoop und Spark auf Google:\\
 
 \begin{figure}[h]
 \includegraphics[width=0.9\textwidth]{bilder/trends_spark_vs_hadoop.PNG}
@@ -29,13 +29,13 @@ Ein Indiz für das steigende Interesse an diesem Produkt liefert unter anderem e
 \end{figure}
 
 \section{Ziel dieser Arbeit}
-Das Ziel dieser Arbeit ist es den Betrieb einer realitätsnahen Spark-Anwendung auf einem Cluster mit Hardware am unteren Ende des Leistungsspektrums zu begutachten.\\
+Das Ziel dieser Arbeit ist es den Betrieb einer realitätsnahen Spark-Anwendung auf einem Cluster mit Hardware am unteren Ende des Leistungsspektrums zu demonstrieren und zu begutachten.\\
 Dabei wird zunächst ein umfassender Überblick der grundlegenden Konzepte von Spark gegeben. Anschließend wird ein Anwendungsfall aus dem Bereich des Text-Mining vorgestellt und dessen Realisierung vom Entwurf bis zum Betrieb erläutert.\\
 
 Der theoretische Teil dieser Arbeit umfasst
 \begin{itemize}
   \item eine Einführung in die grundlegenden Konzepte von Apache Spark 
-	\item eine kurze Einordnung von Spark durch den Vergleich mit ähnlichen Anwendungen
+	\item einen Überblick der High-Level-\glspl{api} in den Standardbibliotheken von Spark
 \end{itemize}
 
 Der praktische Teil dieser Arbeit umfasst
