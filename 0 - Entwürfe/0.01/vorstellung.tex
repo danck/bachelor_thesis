@@ -28,7 +28,7 @@ res0: Array[(String, Int)] = Array((Tyrann,,1), (im,2), (Doch,1) ...)
 
 Aus Sicht eines Administrators oder Softwarearchitekten ist Apache Spark eine Applikation auf einem \gls{cluster}, die sich in der Anwendungsschicht befindet und charakteristische Anforderungen insbesondere an Lokalität des Storages und die Netzwerkperformance stellt.\\
 
-Was das in der konkreten Umsetzung beudeutet und welche Mechanismen und Konzepte dahinterstehen wird in den folgenden Abschnitten dieses Kapitels beleuchtet.
+Was das in der konkreten Umsetzung beudeutet und welche Mechanismen und Konzepte dahinterstehen, wird in den folgenden Abschnitten dieses Kapitels beleuchtet.
 
 \section{Überblick}
 Im Allgemeinen Fall läuft eine Spark-Anwendung auf drei Arten von Rechnern (s. Abb.~\ref{fig:sparkdeployment}):
@@ -51,11 +51,11 @@ Im Allgemeinen Fall läuft eine Spark-Anwendung auf drei Arten von Rechnern (s. 
 	\label{fig:sparkdeployment}
 \end{figure}
 
-Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu können ist es wichtig, welche Eigenschaften der unterliegenden Hardware angenommen werden.\\
+Um die Architektur und Optimierungskonzepte eines verteilten Systems bewerten zu können, ist es wichtig, welche Eigenschaften der unterliegenden Hardware angenommen werden.\\
 
 Spark ist explizit für den Betrieb innerhalb eines Hadoop/YARN \gls{cluster}s geeignet. Hadoop/YARN wiederum ist für den Betrieb auf einem \gls{cluster} auf Mittelklasse-Mehrzweckmaschinen (Commodity Hardware) optimiert (\cite{Mer14}). Für Spark kann daher von einer vergleichbaren Hardwarekonfiguration ausgegangen werden.\\
 
-Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse in der Grundausstattun) - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen zueinander (Siehe Anhang~\ref{subsec:commodity_servers}).
+Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse in der Grundausstattung - hier als Mittelklasse-Geräte bezeichnet - liefert die folgenden Verhältnisse der wesentlichen Schnittstellen zueinander (Siehe Anhang~\ref{subsec:commodity_servers}).
 
 \begin{table}[ht]
 	\centering % used for centering table
@@ -71,15 +71,15 @@ Der Vergleich von drei aktuellen Rack Servern der 2000-Euro-Klasse in der Grunda
 	\label{table:vgldurchsatz} % is used to refer this table in the text
 \end{table}
 
-Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes (\textit{D}) der verschiedenen Datenkanäle zu vergegenwärtigen:
+Bei den folgenden Bewertungen der Kernkonzepte ist es wichtig, sich die aus Tabelle \ref{table:vgldurchsatz} abgeleiteten Größenordnungen des Durchsatzes (\textit{D}) der verschiedenen Datenkanäle zu vergegenwärtigen:
 
 \begin{equation*}
 	D_{Netzwerk} < D_{Festspeicher} < D_{Arbeitsspeicher}
 \end{equation*}
 
-Für eine effiziente Verarbeitung von Daten ist es - ganz allgemein - also wünschenswert den größten Anteil des Datentransfers im Arbeitsspeicher zu haben, einen kleineren Anteil auf der Festplatte und einen noch kleineren Anteil auf Netzwerkverbindungen.\\
+Für eine effiziente Verarbeitung von Daten ist es - ganz allgemein - also wünschenswert, den größten Anteil des Datentransfers im Arbeitsspeicher zu haben, einen kleineren Anteil auf der Festplatte und einen noch kleineren Anteil auf Netzwerkverbindungen.\\
 
-Es ist das wichtigste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen die effiziente und stabile Verarbeitung \textit{großer Datenmengen} (\cite{Sam14}) zu gewährleisten.\\
+Es ist das wichtigste Ziel der folgenden Kernkonzepte von Apache Spark unter diesen Bedingungen, die effiziente und stabile Verarbeitung \textit{großer Datenmengen} (\cite{Sam14}) zu gewährleisten.\\
 
 \section{Kernkonzepte und Komponenten}
 
@@ -119,7 +119,7 @@ Aus Verteilungssicht ist ein \gls{rdd} ein Datensatz, der über den Arbeitsspeic
 \paragraph{Laufzeitsicht}\\
 
 \\
-\Glspl{rdd} sind nicht veränderbar. Es ist nicht möglich Operationen gezielt auf einzelnen Elementen eines \gls{rdd} anzuwenden. Stattdessen ist es nur möglich ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
+\Glspl{rdd} sind nicht veränderbar. Es ist nicht möglich, Operationen gezielt auf einzelnen Elementen eines \gls{rdd} anzuwenden. Stattdessen ist es nur möglich, ein einmal definiertes \gls{rdd} durch globale Anwendung von Operationen in ein anderes zu überführen.\\
 Solche globalen - auf sämtlichen Partitionen des \gls{rdd} durchgeführten - Operationen können zwar ihren Effekt auf einzelne Elemente eines \gls{rdd} beschränken, die Ausführung erfolgt jedoch in jedem Fall auf allen Partitionen.\\
 
 Eine Folge von Operationen $op_1op_2op_3...$ wird als \textit{Lineage} eines \gls{rdd} bezeichnet. Die \textit{Lineage} kann als das "`Rezept"' zur Erstellung eines Datensatzes verstanden werden.
@@ -144,13 +144,13 @@ Beispiele für solche Operationen sind:
 \\
 Beispiele für Aktionen sind die Methoden:
 \begin{itemize}
-	\item \textit{reduce} \newline Paarweises Zusammenführen der Elemente eines \gls{rdd} und Rückgabe eines Elementes mit dem Typ der verknüpften Elemente. Dabei muss ein zweiwertiger assoziativer und kommutativer Operator übergeben werden, der je zwei Elemente verknüpft und auf ein drittes abbildet
+	\item \textit{reduce} \newline Paarweises Zusammenführen der Elemente eines \gls{rdd} und Rückgabe eines Elementes mit dem Typ der verknüpften Elemente ( dabei muss ein zweiwertiger, assoziativer und kommutativer Operator übergeben werden, der je zwei Elemente verknüpft und auf ein drittes abbildet)
 	\item \textit{count} \newline Zählen der Elemente eines \gls{rdd}
 	\item \textit{collect} \newline Überführen des \gls{rdd} in ein lokales Array mit dessen Elementen
-	\item \textit{foreach} \newline Ausführung einer beliebigen Prozedur pro Element eines \gls{rdd}. Der Typ des Rückgabewerts ist dabei beliebig
+	\item \textit{foreach} \newline Ausführung einer beliebigen Prozedur pro Element eines \gls{rdd} (der Typ des Rückgabewerts ist dabei beliebig)
 \end{itemize}\\
 
-Den meisten dieser Operationen, wird im Sinne des Command-Patterns (\cite{FPP13}) eine Funktion bzw. ein Funktionsobjekt übergeben, das die gewählte Operation spezifiziert.
+Den meisten dieser Operationen wird im Sinne des Command-Patterns (\cite{FPP13}) eine Funktion bzw. ein Funktionsobjekt übergeben, das die gewählte Operation spezifiziert.
 
 Solange nur \textit{Transformationen} auf einem \gls{rdd} ausgeführt werden, ist dieses noch ein bloßes "`Rezept"' zur Erstellung eines Datensatzes. Tatsächlich wurde noch kein Speicher reserviert und der Cluster wurde noch nicht aktiv (\cite{Mat12}):\\
 
@@ -179,14 +179,14 @@ Wie in Abb. \ref{fig:rdds_action} dargestellt ist, werden während der Transform
 	\label{fig:rdds_action_persist}
 \end{figure}
 \\
-Realisiert ist das Konzept der \textit{Lineage} und der "`Lazy Initialization"' von \glspl{rdd} durch Transformations-Methoden, die eine Variante des Factory-Pattern (\cite{FPP13}) implementieren. Die erzeugten Objekte sind dabei wiederum Unterklassen von \gls{rdd}:\\
+Realisiert ist das Konzept der \textit{Lineage} und der "`Lazy Initialization"' von \glspl{rdd} durch Transformations-Methoden, die eine Variante des Factory-Pattern (\cite{FPP13}) implementieren. Die erzeugten Objekte sind dabei wiederum Unterklassen von \gls{rdd}s:\\
 Jedes \gls{rdd}-Objekt führt eine Liste von Vorgängern mit. Aus dieser lässt sich auch die Art der Berechnung des jeweiligen Nachfolgers ableiten.\\
 
-Jede weitere Transformations-Methode konstruiert nun lediglich eine neues \gls{rdd}-Objekt. Dieses basiert auf dem aktuellen Objekt und der jeweiligen Transformation.\\
+Jede weitere Transformations-Methode konstruiert nun lediglich ein neues \gls{rdd}-Referenzobjekt. Dieses basiert auf dem aktuellen Objekt und der jeweiligen Transformation.\\
 
 Ein Beispiel für solch eine Transformation auf einem \gls{rdd} ist die Methode \textit{map}\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala#L285 (abgerufen am 30.05.2015)} (Listing \ref{lst:spark_map}).\\
 
-In den Zeilen 7 und 8 ist zu sehen, wie ein neues \gls{rdd} erzeugt wird und diesem das aktuelle \gls{rdd} zusammen mit der Funktion \lstinline|f| (bzw. \lstinline|cleanF|) übergeben wird. Diese Funktion beschreibt die Erzeugung der Elemente des neuen \gls{rdd} aus den Elementen des aktuellen.\\
+In den Zeilen 7 und 8 ist zu sehen, wie ein neues \gls{rdd} erzeugt wird und diesem das aktuelle \gls{rdd} zusammen mit der Funktion \lstinline|f| (bzw. \lstinline|cleanF|) übergeben wird. Diese Funktion beschreibt die Erzeugung der Elemente des neuen \gls{rdd}s aus den Elementen des aktuellen.\\
 
 \begin{lstlisting}[language=Scala,caption={Map-Methode aus org.apache.spark.rdd.RDD v1.3.0},label={lst:spark_map}]
   /**
@@ -272,7 +272,7 @@ Im ersten Fall ergeben sich zwei weitere Möglichkeiten zum Ort der Ausführung 
 
 \begin{enumerate}
 	\item \textbf{Client-Modus}
-	Der Treiber wird direkt auf dem Host (Gateway-Rechner) ausgeführt auf dem der Treiber übermittelt wurde (Abb.~\ref{fig:spark_deployment_clientmode}). Tatsächlich wird er sogar innerhalb des Submission-Skript-Prozesses gestartet.
+	Der Treiber wird direkt auf dem Host (Gateway-Rechner) ausgeführt, auf dem der Treiber übermittelt wurde (Abb.~\ref{fig:spark_deployment_clientmode}). Tatsächlich wird er sogar innerhalb des Submission-Skript-Prozesses gestartet.
 	\item \textbf{Cluster-Modus}
 	Der Treiber wird von dem Gateway-Rechner an einen \gls{worker} des Clusters übertragen und dort ausgeführt (Abb.~\ref{fig:spark_deployment_clustermode}).
 \end{enumerate}\\
@@ -338,8 +338,8 @@ Um zu erläutern, inwiefern durch diese Aufteilung von Tasks Geschwindigkeit und
 Bei den \glspl{rdd} wurden bisher insbesondere drei Aspekte behandelt:
 \begin{itemize}
 	\item Die \textbf{Partitionierung} der Elemente über verschiedene Rechner
-	\item Die \textbf{Vorgänger} eines \gls{rdd} bezüglich dessen \textit{Lineage}
-	\item Die \textbf{Funktion} mit der ein \gls{rdd} aus einem oder mehreren direkten Vorgängern berechnet wird
+	\item Die \textbf{Vorgänger} eines \gls{rdd}s bezüglich dessen \textit{Lineage}
+	\item Die \textbf{Funktion}, mit der ein \gls{rdd} aus einem oder mehreren direkten Vorgängern berechnet wird
 \end{itemize}
 
 Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine einfache Baumstruktur für die Berechnung eines \gls{rdd} (Abb.~\ref{fig:lineage_basic}).\\
@@ -353,8 +353,8 @@ Betrachtet man nur die Vorgänger-Beziehung, dann erhält man zunächst eine ein
 
 Betrachtet man zusätzlich die Partitionierung und die Funktion mit der \glspl{rdd} transformiert werden, sieht man einen wichtigen Unterschied zwischen verschiedenen Vorgängerbeziehungen (siehe Abb.~\ref{fig:lineage_parted}):
 \begin{itemize}
-\item Solche deren einzelne Partitionen höchstens eine Vorgängerpartition haben
-\item Solche bei denen mindestens eine Partition mehr als eine Vorgängerpartition hat
+\item Solche, deren einzelne Partitionen höchstens eine Vorgängerpartition haben
+\item Solche, bei denen mindestens eine Partition mehr als eine Vorgängerpartition hat
 \end{itemize}
 
 \begin{figure}[ht!]
@@ -364,7 +364,7 @@ Betrachtet man zusätzlich die Partitionierung und die Funktion mit der \glspl{r
 	\label{fig:lineage_parted}
 \end{figure}
 
-Wird eine Partition aus höchstens einer anderen erzeugt, lässt sich diese direkt auf dem selben Knoten berechnen. Werden jedoch verschiedene Partitionen benötigt, um eine Folgepartition zu erzeugen, stellt sich die Frage auf welchen Knoten das am Besten geschieht.\\
+Wird eine Partition aus höchstens einer anderen erzeugt, lässt sich diese direkt auf dem selben Knoten berechnen. Werden jedoch verschiedene Partitionen benötigt um eine Folgepartition zu erzeugen, stellt sich die Frage auf welchen Knoten das am Besten geschieht.\\
 Spark unterteilt diese beiden Fälle in \textit{narrow dependencies} (erster Fall) und \textit{wide dependencies} (zweiter Fall) (\cite{Mat12}).\\
 
 Der Abhängigkeitsgraph eines \gls{rdd} wird nun in sogenannte \textit{Stages} zerlegt (Abb.~\ref{fig:lineage_stages}). Eine \textit{Stage} ist dabei ein Untergraph, dessen Elemente (von den Blättern in Richtung Wurzel betrachtet) auf eine gemeinsame \textit{wide dependency} stoßen.\\
@@ -376,7 +376,7 @@ Der Abhängigkeitsgraph eines \gls{rdd} wird nun in sogenannte \textit{Stages} z
 	\label{fig:lineage_stages}
 \end{figure}
 
-Elemente innerhalb einer Stage, können nach dieser Konstruktion unabhängig auf den Knoten berechnet werden, die die jeweilige Partition vorhalten. Ein Datenelement \(x_{i,j}\) sei dabei Element eines \gls{rdd} \(j\) und Element einer lokalen Partition \(P_{i,j}\) (d.h. es existiert auf einem Knoten \(i\)):
+Elemente innerhalb einer Stage können nach dieser Konstruktion unabhängig auf den Knoten berechnet werden, die die jeweilige Partition vorhalten. Ein Datenelement \(x_{i,j}\) sei dabei Element eines \gls{rdd} \(j\) und Element einer lokalen Partition \(P_{i,j}\) (d.h. es existiert auf einem Knoten \(i\)):
 
 \[x_{i,j} \in Partition_{i,j} \subseteq RDD_j\]
 
@@ -386,19 +386,19 @@ Weil nach Definition der \textit{narrow dependencies} innerhalb einer Stage die 
 
 Für den Übergang zwischen Stages ist die Berechnung der Nachfolger etwas aufwändiger. Hier stammen - nach Definition der \textit{wide dependencies} - die direkten Vorgänger eines Elementes nicht alle aus der selben Partition.\\
 
-Um eine neue Partition aus mehreren Vorgänger-Partitionen zu erzeugen werden zunächst geeignete Ausführungsorte\footnote{Geeignete Ausführungsorte (\textit{preferred locations}) können sich z.B. aus dem Ort eines Blocks bei HDFS ermitteln lassen (Node-Local, Rack-Local, etc.) oder daraus, ob ein Executor bereits einen Datensatz geladen hat (Process-Local)} ermittelt, von denen dann jeder per geeignetem Partitionierer mindestens einen \textit{Bucket}\footnote{Ein Bucket ist eine Sammelstelle für eingehende Elemente verschiedener Partitionen} von Elementen verarbeitet. Diese Elemente stammen dann in der Regel aus verschiedenen Vorgängerpartitionen.\\
-Das so neu-partitionierte und verarbeitete \gls{rdd} wird so zum Ausgangspunkt des folgenden \gls{rdd}.\\
+Um eine neue Partition aus mehreren Vorgänger-Partitionen zu erzeugen, werden zunächst geeignete Ausführungsorte\footnote{Geeignete Ausführungsorte (\textit{preferred locations}) können sich z.B. aus dem Ort eines Blocks bei HDFS ermitteln lassen (Node-Local, Rack-Local, etc.) oder daraus, ob ein Executor bereits einen Datensatz geladen hat (Process-Local)} ermittelt, von denen dann jeder per geeignetem Partitionierer mindestens einen \textit{Bucket}\footnote{Ein Bucket ist eine Sammelstelle für eingehende Elemente verschiedener Partitionen} von Elementen verarbeitet. Diese Elemente stammen dann in der Regel aus verschiedenen Vorgängerpartitionen.\\
+Das so neupartitionierte und -verarbeitete \gls{rdd} wird so zum Ausgangspunkt des folgenden \glspl{rdd}.\\
 Eine Schlüsselrolle kommt bei diesem Prozess der Methode \lstinline|runTask| in der Klasse \lstinline|ShuffleMapTasks|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/scheduler/ShuffleMapTask.scala, (abgerufen am 30.05.2015)} aus \textit{org.apache.spark.scheduler.ShuffleMapTask} zu.\\
 
 \section{Standardbibliotheken}
 Die vier Standardbibliotheken erweitern die Kern-API für bestimmte, häufig genutzte Aufgaben aus Bereichen der Datenanalyse.\\
 
-Dieser Abschnitt gibt einen Überblick der Bibliotheken und deren zentrale Konzepte zur Abstraktion von \glspl{rdd} für die spezifischen Zwecke.\\
+Dieser Abschnitt gibt einen Überblick der Bibliotheken und deren zentralen Konzepte zur Abstraktion von \glspl{rdd} für die spezifischen Zwecke.\\
 
 \subsection{SparkSQL}
-Die Spark SQL Bibliothek bietet Schnittstellen für den Zugriff auf strukturierte Daten. Dazu wird eine weitere zentrale abstrakte Datenstruktur neben den \glspl{rdd} eingeführt. Diese Datenstruktur sind \glspl{dataframe} wie sie in ähnlicher Art auch aus der Programmiersprache R\footnote{http://www.r-project.org/, abgerufen am 20.05.2015} bekannt sind.\\
+Die Spark SQL Bibliothek bietet Schnittstellen für den Zugriff auf strukturierte Daten. Dazu wird eine weitere zentrale abstrakte Datenstruktur neben den \glspl{rdd} eingeführt. Diese Datenstruktur sind \glspl{dataframe}, wie sie in ähnlicher Art auch aus der Programmiersprache R\footnote{http://www.r-project.org/, abgerufen am 20.05.2015} bekannt sind.\\
 
-\Glspl{dataframe} und die SparkSQL Bibliothek bilden einen Ansatz, relationale Abfragen mit komplexen prozeduralen Algorithmen zu verknüpfen, um die Performance bei Abfragen auf großen Datenmengen zu optimieren (Vgl. \cite{Armbrust:2015:SSR:2723372.2742797}).\\
+\Glspl{dataframe} und die SparkSQL Bibliothek bilden einen Ansatz relationale Abfragen mit komplexen prozeduralen Algorithmen zu verknüpfen, um die Performance bei Abfragen auf großen Datenmengen zu optimieren (Vgl. \cite{Armbrust:2015:SSR:2723372.2742797}).\\
 
 Die Abfrage und Verarbeitung von Daten kann entweder über die Schnittstellen dieses Datentyps erfolgen (ähnlich wie bei \glspl{rdd}) oder in Form von SQL-Syntax.\\
 
@@ -406,10 +406,10 @@ Diese Form des Zugriffs ist beispielsweise über einen JDBC-Adapter möglich und
 
 Ähnlich wie bei \glspl{rdd} werden komplexe Folgen von Abfragen zunächst in dem \gls{dataframe}-Referenzobjekt gespeichert, und erst bei Initialisierung ausgewertet. Dabei wird eine Optimierungspipeline genutzt, die zunächst die relationalen Ausdrücke optimiert und ihn dann in Spark-Operationen auf \glspl{rdd} übersetzt.\\
 
-Die SparkSQL-Bibliothek zerfällt dabei in vier Unterprojekte\footcite{https://github.com/apache/spark/tree/branch-1.3/sql, abgerufen am 16.06.2015}. Die ersten beiden sind essentiell für den Mechnismus zum Prozessieren von Dataframes als eine Prozess auf \glspl{rdd}:
+Die SparkSQL-Bibliothek zerfällt dabei in vier Unterprojekte\footcite{https://github.com/apache/spark/tree/branch-1.3/sql, abgerufen am 16.06.2015}. Die ersten beiden sind essentiell für den Mechnismus zum Prozessieren von Dataframes als ein Prozess auf \glspl{rdd}:
 \begin{enumerate}
 	\item \textbf{Catalyst}: Eine Optimierungsengine für relationale Ausdrücke
-	\item \textbf{Core}: Die Benutzer-API und Ausführungsumgebung für optimierte Catalyst-Ausdrücke auf dem Apache Spark Applikationskern
+	\item \textbf{Core}: Die Benutzer-API und Ausführungsumgebung für optimierte Catalyst-Ausdrücke auf dem Spark-Applikationskern
 	\item \textbf{Hive}: Ein Adapter für die Datawarehouse-Software Apache Hive\footnote{https://hive.apache.org/, abgerufen am 16.06.2015}
 	\item \textbf{Thriftserver}: Eine Portierung des Hive-Servers auf Apache Spark
 \end{enumerate}
@@ -418,11 +418,11 @@ Die SparkSQL-Bibliothek zerfällt dabei in vier Unterprojekte\footcite{https://g
 Die Spark \textit{Machine Learning Library} bietet Implementationen bewährter Maschinenlernverfahren und Abstraktionen deren Einsatz.\\
 Dabei werden die Komponenten eines Maschinenlernprogramms in \textit{Transformer}, \textit{Estimator} und \textit{Pipelines} aufgeteilt\footnote{https://spark.apache.org/docs/1.3.1/ml-guide.html, abgerufen am 16.06.2015}. Als Abstraktion der verarbeiteten Datensätze werden \glspl{dataframe} aus der SparkSQL-Bibliothek verwendet.\\
 
-Die Komponenten bezeichnen folgendes:
+Die Komponenten bezeichnen Folgendes:
 \begin{itemize}
-	\item \textbf{Transformer} sind zustandslose Objekte, mit einer \lstinline|transform|-Methode \glspl{dataframe} verändern.
-	\item \textbf{Estimator} erzeugen Transformer aus einem Eingangsdatensatz (\gls{dataframe}). Sie sind ebenfalls zustandslos und können als Abstraktion eine Lernalgorithmus verstanden werden.
-	\item \textbf{Pipelines} sind in der MLlib eine Abstraktion der Verknüpfung von Transformern und Estimatorn. Ähnlich wie bei den Transformationen eines \gls{rdd}, werden auch dies "`lazy"' initialisiert und in Stages aufgeteilt.
+	\item \textbf{Transformer} sind zustandslose Objekte, die mit einer \lstinline|transform|-Methode \glspl{dataframe} verändern.
+	\item \textbf{Estimator} erzeugen Transformer aus einem Eingangsdatensatz (\gls{dataframe}). Sie sind ebenfalls zustandslos und können als Abstraktion eines Lernalgorithmus verstanden werden.
+	\item \textbf{Pipelines} sind in der MLlib eine Abstraktion der Verknüpfung von Transformern und Estimatorn. Ähnlich wie bei den Transformationen eines \gls{rdd} werden auch dies "`lazy"' initialisiert und in Stages aufgeteilt.
 \end{itemize}
 
 Teile der Spark MLlib werden im praktischen Teil dieser Arbeit noch näher erläutert.\\
@@ -432,11 +432,11 @@ Die Spark Streaming Bibliothek ermöglicht die Verarbeitung von Datenströmen mi
 
 Dabei werden werden \glspl{rdd} zu diskretisierten Datenströmen (sogenannte \textit{DStreams}) erweitert.\\
 
-Dabei werden ein oder mehrere Empfänger (\textit{Receiver}) auf Workerknoten eines Sparkclusters gestartet, die anschließend eingehende Daten über ein vorgegebenes Zeitfenster puffern. Die Puffer können dabei verteilt auf mehreren verfügbaren Workerknoten angelegt werden.\\
+Ein oder mehrere Empfänger (\textit{Receiver}) werden auf Workerknoten eines Sparkclusters gestartet, die anschließend eingehende Daten über ein vorgegebenes Zeitfenster puffern. Die Puffer können dabei verteilt auf mehreren verfügbaren Workerknoten angelegt werden.\\
 
 Nach Ablauf des Zeitfensters bilden diese Puffer die Partitionen eines RDD mit den empfangenen Datensätzen. Dieses \gls{rdd} wiederum ist Teil einer Sequenz von \glspl{rdd} die im Verlauf dieses Prozesses erzeugt werden.\\
 
-Mit diesem Verfahren wird ein Großteil der Operationen klassischer \gls{rdd} auch für Datenströme verfügbar.\\
+Mit diesem Verfahren wird ein Großteil der Operationen klassischer \glspl{rdd} auch für Datenströme verfügbar.\\
 
 Eine Reihe von Empfängern für solche Datenströme sind bereits in der Spark Streaming Bibliothek enthalten (z.B. für Kafka\footnote{http://kafka.apache.org/, abgerufen am 16.06.2015}, Twitter, ZeroMQ\footnote{http://zeromq.org/, abgerufen am 16.06.2015}, ...)\footnote{https://spark.apache.org/docs/1.3.1/streaming-programming-guide.html, abgerufen am 16.06.2015}. Weitere Empfänger können selbst implementiert und übergeben werden.\\
 
@@ -457,7 +457,7 @@ Die Attribute der Ecken werden ebenfalls in den Kanten gespeichert. Um Änderung
 
 \section{Entwicklergemeinschaft}
 
-Apache Spark begann als Entwicklung einer Gruppe von Forschern der University of California, Berkely. Spark basiert auf einer Implementation der von dieser Gruppe untersuchten \glspl{rdd}\cite{Mat12}. Als wesentlicher Meilenstein der Entwicklung von Apache Spark, kann die Veröffentlichung eines gemeinsamen Papers der Forschungsgruppe um Matei Zaharia im Jahr 2012 gelten.\\
+Apache Spark begann als Entwicklung einer Gruppe von Forschern der University of California, Berkely. Spark basiert auf einer Implementation der von dieser Gruppe untersuchten \glspl{rdd}\cite{Mat12}. Als wesentlicher Meilenstein der Entwicklung von Apache Spark kann die Veröffentlichung eines gemeinsamen Papers der Forschungsgruppe um Matei Zaharia im Jahr 2012 gelten.\\
 
 Seit Februar 2014 (\cite{apacheblog}) ist Spark ein Top-Level Projekt der Apache Software Foundation (\cite{apache}) und wird dort unter der Apache License 2.0 (\cite{apachelic}) weiterentwickelt.\\
 
@@ -516,7 +516,7 @@ Die Kommunikation innerhalb der Entwickler- und Anwendergemeinschaft findet wese
 \\
 
 \section{Übersicht verwandter Produkte}
-Um Spark besser im Bereich bestehender Lösungen einzuordnen werden im Folgenden einige Produkte genannt die häufig zusammen mit Spark verwendet oder ähnliche Aufgaben erfüllen.
+Um Spark besser im Bereich bestehender Lösungen einzuordnen, werden im Folgenden einige Produkte genannt, die häufig zusammen mit Spark verwendet werden oder ähnliche Aufgaben erfüllen.
 
 \subsection{Hadoop/YARN}
 
@@ -529,11 +529,11 @@ Spark liefert eine mögliche Implementation eines solchen alternativen Datenvera
 
 \subsection{Mesos}
 
-Apache Mesos\footnote{http://mesos.apache.org/, abgerufen am 16.06.2015} ist seit Beginn der Entwicklung von Spark ein optionaler Clustermanager für Sparkapplikationen \cite{Mat12}.\\
+Apache Mesos\footnote{http://mesos.apache.org/, abgerufen am 16.06.2015} ist seit Beginn der Entwicklung von Spark ein optionaler Clustermanager für Spark-Applikationen \cite{Mat12}.\\
 
 Als reiner Clustermanager ersetzt Mesos die Spark Master-Komponente in der Funktion des knotenübergreifenden Ressourcenmanagements.\\
 
-Wie bei YARN ermöglicht dies auch anderen Anwendungen die über Mesos verwaltet werden einen gleichberechtigten Betrieb auf dem selben Cluster.\\
+Wie bei YARN ermöglicht dies auch anderen Anwendungen, die über Mesos verwaltet werden, einen gleichberechtigten Betrieb auf dem selben Cluster.\\
 
 \subsection{Flink}
 
@@ -541,9 +541,9 @@ Apache Flink\footnote{https://flink.apache.org/, abgerufen am 16.06.2015} ist mi
 
 Flink ist ebenfalls in Java/Scala geschrieben und bietet mit drei Standardbibliotheken zur Graphprozessierung, zum Maschinenlernverfahren und zu SQL-artigen Abfragen auf strukturierten Datensätzen einen sehr ähnlichen Funktionsumfang.\\
 
-Der wesentliche Unterschied in der Architektur von Flink verglichen mit Spark liegt im Applikationskern. Flink bietet ein Streaming-Backend auf dem wiederum auch Batchprozesse implementiert werden können. Spark wiederum bietet ein Batch-Processing-Backend (Operationen auf \glspl{\rdd}) auf dem auch Streaming-Prozesse implementiert werden können.\\
+Der wesentliche Unterschied in der Architektur von Flink, verglichen mit Spark, liegt im Applikationskern. Flink bietet ein Streaming-Backend auf dem wiederum auch Batchprozesse implementiert werden können. Spark wiederum bietet ein Batch-Processing-Backend (Operationen auf \glspl{rdd}) auf dem auch Streaming-Prozesse implementiert werden können.\\
 
-Auffällig ist weiterhin, dass im Flink Applikationskern häufig auf Low-Level-Methoden zurückgegriffen wird und beispielsweise mit der Endianness\footnote{Art der Bytereihenfolge bei der Ablage von Daten im Arbeitsspeicher} auf verschiedenen Speicherarchitekturen umgegangen wird. Solch feingranulare Optimierungsbemühungen sind dem Autoren bei Spark nicht bekannt.\\
+Auffällig ist weiterhin, dass im Flink-Applikationskern häufig auf Low-Level-Methoden zurückgegriffen wird und beispielsweise mit der Endianness\footnote{Art der Bytereihenfolge bei der Ablage von Daten im Arbeitsspeicher} auf verschiedenen Speicherarchitekturen umgegangen wird. Solche feingranularen Optimierungsbemühungen sind dem Autoren bei Spark nicht bekannt.\\
 
 \subsection{Open MPI}
 

@@ -12,12 +12,12 @@ In Folge der Veröffentlichung dieser Idee im Jahr 2004 wurde Map-Reduce in Form
 
 Reines Map-Reduce (in der ursprünglichen Implemenation von Hadoop) als Berechnungsparadigma zur Verarbeitung großer Datenmengen zeigt jedoch in vielen Anwendungsfällen Schwächen:
 \begin{itemize}
-	\item Daten, die in hoher Frequenz entstehen und schnell verarbeitet werden sollen, erfordern häufiges Neustarten von Map-Reduce-Jobs. Die Folge ist kostspieliger Overhead durch die Verwaltung der Jobs und gegebenenfalls wiederholtem Einlesen von Daten.
-	\item Algorithmen die während ihrer Ausführung iterativ Zwischenergebnisse erzeugen und auf vorherige Zwischenergebnisse angewiesen sind (häufig bei Maschinenlernalgorithmen) können nur durch persistentes Speichern der Daten und wiederholtes Einlesen zwischen allen Iterationsschritten implementiert werden.
+	\item Daten, die in hoher Frequenz entstehen und schnell verarbeitet werden sollen, erfordern häufiges Neustarten von Map-Reduce-Jobs. Die Folge ist kostspieliger Overhead durch die Verwaltung der Jobs und gegebenenfalls wiederholtes Einlesen von Daten.
+	\item Algorithmen die während ihrer Ausführung iterativ Zwischenergebnisse erzeugen und auf vorherige Zwischenergebnisse angewiesen sind (häufig bei Maschinenlernalgorithmen), können nur durch persistentes Speichern der Daten und wiederholtes Einlesen zwischen allen Iterationsschritten implementiert werden.
 	\item Anfragen an ein solches Map-Reduce-System erfolgen imperativ in Form von kleinen Programmen. Dieses Verfahren ist nicht so intuitiv und leicht erlernbar wie deklarative Abfragesprachen klassischer Datenbanken (z.B. SQL).
 \end{itemize}
 
-In der Folge dieser Probleme entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen \cite{Sin14}.\\
+In Folge dieser Probleme entstanden viele Ansätze dieses Paradigma zu ersetzen, zu ergänzen oder durch übergeordnete Ebenen und High-Level-APIs zu vereinfachen \cite{Sin14}.\\
 
 Eine Alternative zu der klassischen Map-Reduce-Komponente in Hadoop ist die "`general engine for large-scale data processing"' Apache Spark.\\
 
@@ -40,7 +40,7 @@ Der theoretische Teil dieser Arbeit umfasst
 
 Der praktische Teil dieser Arbeit umfasst
 \begin{itemize}
-\item den Entwurd und die Implementation einer hybriden Anwendung mit einer Echtzeitkomponente (Spark Streaming Library) und einer Batch-Komponente (Spark Machine Learning Library).
+\item den Entwurf und die Implementation einer hybriden Anwendung mit einer Echtzeit-Komponente (Spark Streaming Library) und einer Batch-Komponente (Spark Machine Learning Library).
 \item den Betrieb dieser Anwendung auf einem Cluster mit Hardware am unteren Ende des Leistungsspektrums.
 \end{itemize}
 

@@ -58,10 +58,9 @@ Dell d420
 	\item Ethernet: 100MBit/s
 	\item Festspeicher: 60GB 4200RPM Hard Drive
 \end{itemize}
-Als Betriebssystem wird Ubuntu (\cite{ubuntu}) 14.04 32-Bit genutzt.
+Als Betriebssystem wird Ubuntu (\cite{ubuntu}) 14.04 32-Bit genutzt.\\
 
-\paragraph{Netzwerk} \newline
-Die Rechner sind mit \gls{rj45} über einen TP-Link TL-SF1008D Switch mit theoretischem maximalem Durchsatz von 100MBit/s vernetzt.
+Die Rechner sind mit \gls{rj45} über einen TP-Link TL-SF1008D Switch mit theoretischem maximalem Durchsatz von 100MBit/s vernetzt.\\
 
 Als Basisdaten für die Leistungsfähigkeit der eingesetzten Hardware werden zusätzliche Tests durchgeführt, deren Ergebnisse in Tabelle \ref{table:network}, Tabelle \ref{table:master_harddrive} und Tabelle \ref{table:master_harddrive} aufgeführt sind.
 
@@ -79,8 +78,6 @@ Als Basisdaten für die Leistungsfähigkeit der eingesetzten Hardware werden zus
 	\label{table:network} % is used to refer this table in the text
 \end{table}
 \footnotetext{Gemessen mit \lstinline|iperf|. Siehe Anhang Listing~\ref{lst:measure_network}}
-
-\paragraph{Festspeicher}
 
 \begin{table}[ht]
 	\centering % used for centering table
@@ -126,24 +123,25 @@ Als Basisdaten für die Leistungsfähigkeit der eingesetzten Hardware werden zus
 \end{table}
 
 \section{Lösungsskizze}
-\paragraph{Wahl des Dateisystems}
+\subsection{Wahl des Dateisystems}
 
 Für diesen Versuch wird das Hadoop Dateisystem \textit{HDFS} in der Version 2.7.0 gewählt.\\
 
-Dieses Dateisystem gewährleistet die verteilte Speicherung von Blöcken auf dem Cluster und bietet Konfigurationsmöglichkeiten die direkten Einfluss auf die Performance von Spark haben.\\
+Dieses Dateisystem gewährleistet die verteilte Speicherung von Blöcken auf dem Cluster und bietet Konfigurationsmöglichkeiten, die direkten Einfluss auf die Performance von Spark haben.\\
 
 Zu diesen Konfigurationsmöglichkeiten gehören insbesondere die Größe der Blöcke und die Anzahl der Replikate eines Blockes.\\
 
-\paragraph{Wahl des Cluster-Managers}
+\subsection{Wahl des Cluster-Managers}
 
 Spark läuft in diesem Versuch als alleinige Computeanwendung auf dem Cluster. Es ist also nicht nötig Konkurrenz um Ressourcen zu berücksichtigen. Für diesen Versuch wird daher der Standalone Clustermanager gewählt.\\
 
-\paragraph{Architekturübersicht}\\
-\\
+\subsection{Architekturübersicht}
 
 Die Architektur der Beispielanwendung teilt die Anwendungslogik in drei Schichten auf. \\
+
 In einer Schicht findet die Verarbeitung eingehender Emails statt und es werden die Relevanz der Begriffe bewertet (\textit{Batch Layer}).
 In einer zweiten Schicht werden die Tweets aus einem Datenstrom eingelesen und deren Relevanz anhand der Bewertungen aus der ersten Schicht bewertet (\textit{Streaming Layer}).\\
+
 In der dritten Schicht werden die als relevant eingestuften Emails in einer grafischen Oberfläche dem Benutzer zur Verfügung gestellt (\textit{Presentation Layer}). Diese Schicht gehört nicht zum Spark-Backend und wird für diese Demonstation nicht implementiert.
 
 \begin{figure}[ht!]
@@ -153,8 +151,7 @@ In der dritten Schicht werden die als relevant eingestuften Emails in einer graf
 	\label{figure:data_centric_layers}
 \end{figure}
 
-\paragraph{Batch Layer}\\
-\\
+\subsection{Batch Layer}
 
 In dieser Schicht wird die Verarbeitung von Emails aus der Spark-User-Mailingliste zu einem Modell von relevanten Wörtern geleistet.\\
 
@@ -214,8 +211,7 @@ val relevanceVector = tfidf
 		vector2.asInstanceOf[SparseVector]))
 \end{lstlisting}
 
-\paragraph{Streaming Layer}\\
-\\
+\subsection{Streaming Layer}
 
 In dieser Schicht werden die Nachrichten aus dem Twitter-Datenstrom bewertet und gefiltert.\\
 
