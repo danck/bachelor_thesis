@@ -80,6 +80,8 @@ Als Basisdaten für die Leistungsfähigkeit der eingesetzten Hardware werden zus
 \end{table}
 \footnotetext{Gemessen mit \lstinline|iperf|. Siehe Anhang Listing~\ref{lst:measure_network}}
 
+\paragraph{Festspeicher}
+
 \begin{table}[ht]
 	\centering % used for centering table
 	\begin{tabular}{c c c c} % centered columns (4 columns)
@@ -126,7 +128,11 @@ Als Basisdaten für die Leistungsfähigkeit der eingesetzten Hardware werden zus
 \section{Lösungsskizze}
 \paragraph{Wahl des Dateisystems}
 
+Für diesen Versuch wird das Hadoop Dateisystem \textit{HDFS} in der Version 2.7.0 gewählt.\\
 
+Dieses Dateisystem gewährleistet die verteilte Speicherung von Blöcken auf dem Cluster und bietet Konfigurationsmöglichkeiten die direkten Einfluss auf die Performance von Spark haben.\\
+
+Zu diesen Konfigurationsmöglichkeiten gehören insbesondere die Größe der Blöcke und die Anzahl der Replikate eines Blockes.\\
 
 \paragraph{Wahl des Cluster-Managers}
 
@@ -156,6 +162,13 @@ Dazu werden eingehende Emails zunächst archiviert und anschließend mithilfe de
 
 Diese Bewertung soll das Maß für die Relevanz eines Wortes in der betrachteten Menge der letzten \textit{n} Emails sein. Um das zu erreichen, wird in mehreren Schritten ein TF-IDF Vektor über die Wörter dieser Nachrichten erzeugt.\\
 
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[width=\textwidth]{batch_layer.pdf}
+	\caption{Innenansicht der Batch-Layer Komponente}
+	\label{figure:demo_app_batchlayer}
+\end{figure}
+
 TF-IDF steht für \textit{Term Frequency - Inverse Document Frequency} (\cite{SparckJones:1988:SIT:106765.106782}). Dieses Verfahren bewertet die Relevanz eines Wortes für einen Text nach der Häufigkeit dieses Wortes in dem Text (\textit{Term Frequency}). Die Bewertung eines Wortes wird jedoch abgeschwächt je häufiger es in einem Textkorpus vorkommt (\textit{Inverse Document Frequency}).\\
 
 Eine Implementation dieses Verfahrens ist in der Spark Standardbibliothek \textit{MLLib} in dem Bereich \textit{Feature Extraction} verfügbar\footnote{https://github.com/apache/spark/tree/branch-1.3/mllib/src/main/scala/org/apache/spark/mllib/feature, abgerufen am 04.06.2015}.\\
@@ -166,19 +179,47 @@ In diesem Anwendungsfall gilt:
 \item Das Archiv aller Email-Bodies ist der Textkorpus
 \end{itemize}
 
-\begin{figure}[ht!]
-	\centering
-  \includegraphics[width=\textwidth]{batch_layer.pdf}
-	\caption{Innenansicht der Batch-Layer Komponente}
-	\label{figure:demo_app_batchlayer}
-\end{figure}
+Die Prozedur beginnt mit dem Definieren eines \gls{rdd} aus der Textdatei aller Emailnachrichten (\lstinline|textfile|).\\
+
+\begin{lstlisting}
+val documents: RDD[Seq[String]] = sc.textFile(textFile)
+  .map(_.toLowerCase)
+  .map(_.split(" ").filter(_.length > 2).toSeq)
+\end{lstlisting}
+
+Diese Textdatei wird durch \lstinline|ModelBuilder| regelmäßig ergänzt sofern der IMAP-Client neue Nachrichten aus der Mailingliste empfangen hat.\\
+
+Anschließend werden die Elemente des \gls{rdd} \lstinline|documents| von einer Sequenz von Wörtern auf einen Vektor der Worthäufigkeiten abgebildet:
+
+\begin{lstlisting}
+val tf: RDD[Vector] = hashingTF.transform(documents)
+\end{lstlisting}
+
+Mit diesem RDD von Vektoren der Worthäufigkeiten wird nun ein Modell (\lstinline|IDF|, \textit{Inverse Document Frequency}) gebildet, dass die inversen Worthäufigkeiten berechnet. Dazu für jedes vorkommende Wort die Anzahl aller Dokumente ermittelt in denen es vorkommt.\\
+
+Dieses Modell wird dann genutzt um die bereits berechneten Wortvorkommen pro Dokument anzupassen (\lstinline|idf.transform(tf)|). Es entstehen die TF-IDF Vektoren:
+
+\begin{lstlisting}
+val idf = new IDF().fit(tf)
+val tfidf: RDD[Vector] = idf.transform(tf)
+\end{lstlisting}
+
+Der Relevanzvektor wird anschließend durch Aufsummieren der TF-IDF in der gewünschten Fenstergröße berechnet. Die Fenstergröße entspricht dem Bereich dessen spezifische Wörter in der Streaming Layer für das Scoring der Tweets benutzt werden sollen.
+
+\begin{lstlisting}
+val relevanceVector = tfidf
+  .take(docWindowSize)
+  .reduce((vector1, vector2) =>
+    addSparseVectors(vector1.asInstanceOf[SparseVector], 
+		vector2.asInstanceOf[SparseVector]))
+\end{lstlisting}
 
 \paragraph{Streaming Layer}\\
 \\
 
 In dieser Schicht werden die Nachrichten aus dem Twitter-Datenstrom bewertet und gefiltert.\\
 
-Dazu wird über die Spark-Komponente \textit{TwitterUtils}\footnote{TwitterUtils sind Teil der Spark-Standardbibliothek org.apache.spark.streaming.twitter} eine Verbindung über HTTP zu einem Twitter-Endpunkt aufgebaut\footnote{https://dev.twitter.com/streaming/overview/connecting, abgerufen am 01.06.2015}. Über diese Verbindung werden - bei unpriveligiertem Zugriff - etwa 40 Tweets pro Sekunde über einen dauerhaften Datenstrom zur Verfügung gestellt.\\
+Dazu wird über die Spark-Komponente \textit{TwitterUtils}\footnote{TwitterUtils sind Teil der Spark-Standardbibliothek org.apache.spark.streaming.twitter} eine Verbindung über HTTP zu einem Twitter-Endpunkt aufgebaut\footnote{https://dev.twitter.com/streaming/overview/connecting, abgerufen am 01.06.2015}. Über diese Verbindung werden - bei unpriveligiertem Zugriff - etwa 40 Tweets pro Sekunde über einen dauerhaften Datenstrom zur Verfügung gestellt (siehe Abb.~\ref{figure:realtime_dashboard_stats}).\\
 
 \begin{figure}[ht!]
 	\centering
@@ -187,7 +228,7 @@ Dazu wird über die Spark-Komponente \textit{TwitterUtils}\footnote{TwitterUtils
 	\label{figure:demo_app_streaminglayer}
 \end{figure}
 
-In der Komponente RealtimeAnalyzer wurden vor dem Start des Datenstroms Funktionen zur Bewertung einzelner Tweets registriert (VERWEIS?).\\
+In der Komponente RealtimeAnalyzer wurden vor dem Start des Datenstroms Funktionen zur Bewertung einzelner Tweets registriert.\\
 
 Die Funktion \lstinline|ScoreTweets| zur Bewertung einzelner Tweets
 
@@ -247,8 +288,6 @@ Anschließend werden die erzeugten Tupel nach der Größe des erreichten Scores 
 \end{figure}
 
 \section{Hinweise zur Entwicklung}
-Für die Entwicklung hat sich bewährt 
-
 Die Komponenten werden in jeweils eigenen Projekten entwickelt, die sich einzeln auf dem Cluster deployen lassen. Das hat den Vorteil, dass eine einfache Continuous Deployment Pipeline (Abb.~\ref{figure:cd_pipeline}) eingesetzt werden kann, die Änderungen an den jeweiligen Projekten automatisiert auf dem Cluster deployt und so schnellstmögliches Feedback ermöglicht, sowie eine stets lauffähige Codebasis begünstigt.\\
 
 \begin{figure}[ht!]

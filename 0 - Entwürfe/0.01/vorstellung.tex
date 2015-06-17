@@ -255,6 +255,56 @@ class MinimalPartitioner extends Partitioner {
 }
 \end{lstlisting}
 
+\subsection{Anwendungsdeployment}\\
+
+Die Komponente einer Anwendung, die von der Spark API Gebrauch macht, wird in der Spark-Terminologie als \textit{Treiberprogramm} bezeichnet. \\
+
+Es gibt verschiedene Szenarien des Deployments. Das Treiberprogramm kann grundsätzlich auf zwei verschiedene Arten gestartet werden:\\
+
+\begin{enumerate}
+	\item Übermittlung des Treibers als kompiliertes Package (z.B. als \gls{jarfile}) mit statischer Verlinkung aller erforderlichen Bibliotheken (Ausnahmen sind Bibliotheken die auf allen Knoten bereits verfügbar sind, z.B. Spark, Hadoop, etc.). Standardbibliotheken von Spark und Konfigurationseinstellungen wie z.B. die Angabe des \textit{Clustermanagers} können zur Startzeit des Treibers durch das Spark Submission-Skript erfolgen.
+	\item Start eines eigenständig lauffähigen Treibers mit vollständig konfigurierter und verlinkter Spark-Umgebung und expliziter Angabe eines \textit{Clustermanagers}.
+\end{enumerate}
+
+Der zweite Fall ist eher exotisch, weil eine derart enge Kopplung zwischen dem Treiber und der Konfiguration des Clusters aus Wartungsgründen nicht wünschenswert ist.\\
+
+Im ersten Fall ergeben sich zwei weitere Möglichkeiten zum Ort der Ausführung des Treibers:\\
+
+\begin{enumerate}
+	\item \textbf{Client-Modus}
+	Der Treiber wird direkt auf dem Host (Gateway-Rechner) ausgeführt auf dem der Treiber übermittelt wurde (Abb.~\ref{fig:spark_deployment_clientmode}). Tatsächlich wird er sogar innerhalb des Submission-Skript-Prozesses gestartet \textbf{(VERWEIS)}.
+	\item \textbf{Cluster-Modus}
+	Der Treiber wird von dem Gateway-Rechner an einen \gls{worker} des Clusters übertragen und dort ausgeführt (Abb.~\ref{fig:spark_deployment_clustermode}).
+\end{enumerate}\\
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[width=\textwidth]{spark_deployment_clientmode.pdf}
+	\caption{Application Deployment im Client Modus}
+	\label{fig:spark_deployment_clientmode}
+\end{figure}\\
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[width=\textwidth]{spark_deployment_clustermode.pdf}
+	\caption{Application Deployment im Cluster Modus}
+	\label{fig:spark_deployment_clustermode}
+\end{figure}\\
+
+Die Lokalität eines Treibers (der mit den Executors auf den \gls{worker}n kommunizieren muss) kann Einfluss auf Laufzeit und Latenzverhalten des Programms haben.\\
+
+Im Fall eines clusterfernen Gateway-Rechners kann also Treiberdeployment im Clustermodus sinnvoll sein, die Standardeinstellung ist jedoch der Clientmodus (siehe auch \cite{spark_submission}).\\
+
+Abb.~\ref{fig:app_deployment_process} zeigt das Sequenzdiagramm eines typischen Deploymentprozesses, wie er auch im praktischen Teil dieser Arbeit zum Einsatz kommt.
+
+\begin{figure}[ht!]
+	\centering
+  \includegraphics[width=\textwidth]{spark_deployment_process.pdf}
+	\caption{Laufzeitdiagramm einer Spark-Anwendung im Client Modus (vereinfacht)}
+	\label{fig:app_deployment_process}
+\end{figure}
+
+
 \subsection{Scheduling}\\
 
 In Spark gibt es drei Scheduler und drei wesentliche Laufzeit-Elemente einer Sparkanwendung.\\
@@ -336,58 +386,9 @@ Weil nach Definition der \textit{narrow dependencies} innerhalb einer Stage die 
 
 Für den Übergang zwischen Stages ist die Berechnung der Nachfolger etwas aufwändiger. Hier stammen - nach Definition der \textit{wide dependencies} - die direkten Vorgänger eines Elementes nicht alle aus der selben Partition.\\
 
-Um eine neue Partition aus mehreren Vorgänger-Partitionen zu erzeugen werden zunächst geeignete Ausführungsorte\footnote{Geeignete Ausführungsorte (\textit{preferred locations}) können sich z.B. aus dem Ort eines Blocks bei HDFS ermitteln lassen (Node-Local, Rack-Local, etc.) oder daraus, ob ein Executor bereits einen Datensatz geladen hat (Process-Local)} ermittelt, von denen dann jeder per geeignetem Partitionierer mindestens einen \textit{bucket} von Elementen verarbeitet. Diese Elemente stammen dann in der Regel aus verschiedenen Vorgängerpartitionen.\\
+Um eine neue Partition aus mehreren Vorgänger-Partitionen zu erzeugen werden zunächst geeignete Ausführungsorte\footnote{Geeignete Ausführungsorte (\textit{preferred locations}) können sich z.B. aus dem Ort eines Blocks bei HDFS ermitteln lassen (Node-Local, Rack-Local, etc.) oder daraus, ob ein Executor bereits einen Datensatz geladen hat (Process-Local)} ermittelt, von denen dann jeder per geeignetem Partitionierer mindestens einen \textit{Bucket}\footnote{Ein Bucket ist eine Sammelstelle für eingehende Elemente verschiedener Partitionen} von Elementen verarbeitet. Diese Elemente stammen dann in der Regel aus verschiedenen Vorgängerpartitionen.\\
 Das so neu-partitionierte und verarbeitete \gls{RDD} wird so zum Ausgangspunkt des folgenden \gls{rdd}.\\
 Eine Schlüsselrolle kommt bei diesem Prozess der Methode \lstinline|runTask| in der Klasse \lstinline|ShuffleMapTasks|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/scheduler/ShuffleMapTask.scala, (abgerufen am 30.05.2015)} aus \textit{org.apache.spark.scheduler.ShuffleMapTask} zu.\\
-
-\subsection{Anwendungsdeployment}\\
-
-Die Komponente einer Anwendung, die von der Spark API Gebrauch macht, wird in der Spark-Terminologie als \textit{Treiberprogramm} bezeichnet. \\
-
-Es gibt verschiedene Szenarien des Deployments. Das Treiberprogramm kann grundsätzlich auf zwei verschiedene Arten gestartet werden:\\
-
-\begin{enumerate}
-	\item Übermittlung des Treibers als kompiliertes Package (z.B. als \gls{jarfile}) mit statischer Verlinkung aller erforderlichen Bibliotheken (Ausnahmen sind Bibliotheken die auf allen Knoten bereits verfügbar sind, z.B. Spark, Hadoop, etc.). Standardbibiotheken von Spark und Konfigurationseinstellungen wie z.B. die Angabe des \textit{Clustermanagers} können zur Startzeit des Treibers durch das Spark \textit{Submission-Skript} erfolgen.
-	\item Start eines eigenständig lauffähigen Treibers mit vollständig konfigurierter und verlinkter Spark-Umgebung und expliziter Angabe eines \textit{Clustermanagers}.
-\end{enumerate}
-
-Der zweite Fall ist eher exotisch, weil eine derart enge Kopplung zwischen dem Treiber und der Konfiguration des Clusters aus Wartungsgründen nicht wünschenswert ist.\\
-
-Im ersten Fall ergeben sich zwei weitere Möglichkeiten zum Ort der Ausführung des Treibers:\\
-
-\begin{enumerate}
-	\item \textbf{Client-Modus}
-	Der Treiber wird direkt auf dem Host (Gateway-Rechner) ausgeführt auf dem der Treiber übermittelt wurde (Abb.~\ref{fig:spark_deployment_clientmode}). Tatsächlich wird er sogar innerhalb des Submission-Skript-Prozesses gestartet \textbf{(VERWEIS)}.
-	\item \textbf{Cluster-Modus}
-	Der Treiber wird von dem Gateway-Rechner an einen \gls{worker} des Clusters übertragen und dort ausgeführt (Abb.~\ref{fig:spark_deployment_clustermode}).
-\end{enumerate}\\
-
-\begin{figure}[ht!]
-	\centering
-  \includegraphics[width=\textwidth]{spark_deployment_clientmode.pdf}
-	\caption{Application Deployment im Client Modus}
-	\label{fig:spark_deployment_clientmode}
-\end{figure}\\
-
-\begin{figure}[ht!]
-	\centering
-  \includegraphics[width=\textwidth]{spark_deployment_clustermode.pdf}
-	\caption{Application Deployment im Cluster Modus}
-	\label{fig:spark_deployment_clustermode}
-\end{figure}\\
-
-Die Lokalität eines Treibers (der mit den Executors auf den \gls{worker}n kommunizieren muss) kann Einfluss auf Laufzeit und Latenzverhalten des Programms haben.\\
-
-Im Fall eines clusterfernen Gateway-Rechners kann also Treiberdeployment im Clustermodus sinnvoll sein, die Standardeinstellung ist jedoch der Clientmodus (siehe auch \cite{spark_submission}).\\
-
-Abb.~\ref{fig:app_deployment_process} zeigt das Sequenzdiagramm eines typischen Deploymentprozesses, wie er auch im praktischen Teil dieser Arbeit zum Einsatz kommt.
-
-\begin{figure}[ht!]
-	\centering
-  \includegraphics[width=\textwidth]{spark_deployment_process.pdf}
-	\caption{Laufzeitdiagramm einer Spark-Anwendung im Client Modus (vereinfacht)}
-	\label{fig:app_deployment_process}
-\end{figure}
 
 \section{Standardbibliotheken}
 Die vier Standardbibliotheken erweitern die Kern-API für bestimmte, häufig genutzte Aufgaben aus Bereichen der Datenanalyse.\\
