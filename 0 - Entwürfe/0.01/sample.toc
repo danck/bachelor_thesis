@@ -70,31 +70,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Master}{30}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Netzwerk}{30}{section*.27}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Festspeicher}{30}{table.caption.31}
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}L\IeC {\"o}sungsskizze}{31}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Wahl des Dateisystems}{31}{section*.32}
+\contentsline {subsection}{\numberline {3.3.1}Wahl des Dateisystems}{31}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Wahl des Cluster-Managers}{31}{section*.33}
+\contentsline {subsection}{\numberline {3.3.2}Wahl des Cluster-Managers}{31}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Architektur\IeC {\"u}bersicht}{31}{section*.34}
+\contentsline {subsection}{\numberline {3.3.3}Architektur\IeC {\"u}bersicht}{31}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Batch Layer}{32}{section*.36}
+\contentsline {subsection}{\numberline {3.3.4}Batch Layer}{32}{subsection.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Streaming Layer}{34}{section*.38}
+\contentsline {subsection}{\numberline {3.3.5}Streaming Layer}{34}{subsection.3.3.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Hinweise zur Entwicklung}{36}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Ergebnisse und Bewertung}{36}{section.3.5}
+\contentsline {section}{\numberline {3.5}Ergebnisse und Bewertung}{37}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Batch-Komponente}{39}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.1}Batch-Komponente}{40}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.2}Echtzeitkomponente}{43}{subsection.3.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Funktionale Qualit\IeC {\"a}t der L\IeC {\"o}sung}{44}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}Funktionale Qualit\IeC {\"a}t der L\IeC {\"o}sung}{45}{subsection.3.5.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Schlussbetrachtung}{46}{chapter.4}
 \defcounter {refsection}{0}\relax 
@@ -102,11 +98,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{47}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyme}{49}{section*.50}
+\contentsline {chapter}{Acronyme}{49}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{50}{section*.52}
+\contentsline {chapter}{Glossar}{50}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{51}{section*.54}
+\contentsline {chapter}{Anhang}{51}{section*.47}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Quellcode/Skripte (Ausz\IeC {\"u}ge)}{52}{section.1..1}
 \defcounter {refsection}{0}\relax 

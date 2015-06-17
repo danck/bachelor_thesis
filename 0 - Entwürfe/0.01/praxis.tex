@@ -155,7 +155,7 @@ In der dritten Schicht werden die als relevant eingestuften Emails in einer graf
 
 In dieser Schicht wird die Verarbeitung von Emails aus der Spark-User-Mailingliste zu einem Modell von relevanten Wörtern geleistet.\\
 
-Dazu werden eingehende Emails zunächst archiviert und anschließend mithilfe des Korpus aller bisher archivierten Emails und einer Untermenge von \textit{n} zuletzt empfangenen Emails eine Bewertung der vorkommenden Wörtern vorgenommen.\\
+Dazu werden eingehende Emails zunächst archiviert und anschließend, mithilfe des Korpus aller bisher archivierten Emails und einer Untermenge von \textit{n} zuletzt empfangenen Emails, eine Bewertung der vorkommenden Wörtern vorgenommen.\\
 
 Diese Bewertung soll das Maß für die Relevanz eines Wortes in der betrachteten Menge der letzten \textit{n} Emails sein. Um das zu erreichen, wird in mehreren Schritten ein TF-IDF Vektor über die Wörter dieser Nachrichten erzeugt.\\
 
@@ -168,7 +168,7 @@ Diese Bewertung soll das Maß für die Relevanz eines Wortes in der betrachteten
 
 TF-IDF steht für \textit{Term Frequency - Inverse Document Frequency} (\cite{SparckJones:1988:SIT:106765.106782}). Dieses Verfahren bewertet die Relevanz eines Wortes für einen Text nach der Häufigkeit dieses Wortes in dem Text (\textit{Term Frequency}). Die Bewertung eines Wortes wird jedoch abgeschwächt je häufiger es in einem Textkorpus vorkommt (\textit{Inverse Document Frequency}).\\
 
-Eine Implementation dieses Verfahrens ist in der Spark Standardbibliothek \textit{MLLib} in dem Bereich \textit{Feature Extraction} verfügbar\footnote{https://github.com/apache/spark/tree/branch-1.3/mllib/src/main/scala/org/apache/spark/mllib/feature, abgerufen am 04.06.2015}.\\
+Eine Implementation dieses Verfahrens ist in der Spark-Standardbibliothek \textit{MLLib} in dem Bereich \textit{Feature Extraction} verfügbar\footnote{https://github.com/apache/spark/tree/branch-1.3/mllib/src/main/scala/org/apache/spark/mllib/feature, abgerufen am 04.06.2015}.\\
 
 In diesem Anwendungsfall gilt:
 \begin{itemize}
@@ -176,7 +176,7 @@ In diesem Anwendungsfall gilt:
 \item Das Archiv aller Email-Bodies ist der Textkorpus
 \end{itemize}
 
-Die Prozedur beginnt mit dem Definieren eines \gls{rdd} aus der Textdatei aller Emailnachrichten (\lstinline|textfile|).\\
+Die Prozedur beginnt mit dem Definieren eines \gls{rdd}s aus der Textdatei aller Emailnachrichten (\lstinline|textfile|).\\
 
 \begin{lstlisting}
 val documents: RDD[Seq[String]] = sc.textFile(textFile)
@@ -184,7 +184,7 @@ val documents: RDD[Seq[String]] = sc.textFile(textFile)
   .map(_.split(" ").filter(_.length > 2).toSeq)
 \end{lstlisting}
 
-Diese Textdatei wird durch \lstinline|ModelBuilder| regelmäßig ergänzt sofern der IMAP-Client neue Nachrichten aus der Mailingliste empfangen hat.\\
+Diese Textdatei wird durch \lstinline|ModelBuilder| regelmäßig ergänzt, sofern der IMAP-Client neue Nachrichten aus der Mailingliste empfangen hat.\\
 
 Anschließend werden die Elemente des \gls{rdd} \lstinline|documents| von einer Sequenz von Wörtern auf einen Vektor der Worthäufigkeiten abgebildet:
 
@@ -192,7 +192,7 @@ Anschließend werden die Elemente des \gls{rdd} \lstinline|documents| von einer 
 val tf: RDD[Vector] = hashingTF.transform(documents)
 \end{lstlisting}
 
-Mit diesem RDD von Vektoren der Worthäufigkeiten wird nun ein Modell (\lstinline|IDF|, \textit{Inverse Document Frequency}) gebildet, dass die inversen Worthäufigkeiten berechnet. Dazu für jedes vorkommende Wort die Anzahl aller Dokumente ermittelt in denen es vorkommt.\\
+Mit diesem RDD von Vektoren der Worthäufigkeiten wird nun ein Modell (\lstinline|IDF|, \textit{Inverse Document Frequency}) gebildet, dass die inversen Worthäufigkeiten berechnet. Dazu wird für jedes vorkommende Wort die Anzahl aller Dokumente ermittelt in denen es vorkommt.\\
 
 Dieses Modell wird dann genutzt um die bereits berechneten Wortvorkommen pro Dokument anzupassen (\lstinline|idf.transform(tf)|). Es entstehen die TF-IDF Vektoren:
 
@@ -201,7 +201,7 @@ val idf = new IDF().fit(tf)
 val tfidf: RDD[Vector] = idf.transform(tf)
 \end{lstlisting}
 
-Der Relevanzvektor wird anschließend durch Aufsummieren der TF-IDF in der gewünschten Fenstergröße berechnet. Die Fenstergröße entspricht dem Bereich dessen spezifische Wörter in der Streaming Layer für das Scoring der Tweets benutzt werden sollen.
+Der Relevanzvektor wird anschließend durch Aufsummieren der TF-IDF in der gewünschten Fenstergröße berechnet. Die Fenstergröße entspricht dem Bereich, dessen spezifische Wörter in der Streaming Layer für das Scoring der Tweets benutzt werden sollen.
 
 \begin{lstlisting}
 val relevanceVector = tfidf
@@ -224,7 +224,7 @@ Dazu wird über die Spark-Komponente \textit{TwitterUtils}\footnote{TwitterUtils
 	\label{figure:demo_app_streaminglayer}
 \end{figure}
 
-In der Komponente RealtimeAnalyzer wurden vor dem Start des Datenstroms Funktionen zur Bewertung einzelner Tweets registriert.\\
+In der Komponente \textit{RealtimeAnalyzer} wurden vor dem Start des Datenstroms Funktionen zur Bewertung einzelner Tweets registriert.\\
 
 Die Funktion \lstinline|ScoreTweets| zur Bewertung einzelner Tweets
 
@@ -255,7 +255,7 @@ val scoredTweets = {
 }
 \end{lstlisting}
 
-Folgendes geschieht Folgendes:
+Dabei geschieht Folgendes:
 \begin{enumerate}
 	\item Extrahieren des Textinhaltes (Metadaten werden ignoriert)
 	\item Zerlegen des Textes in einzelne Wörter
@@ -263,7 +263,7 @@ Folgendes geschieht Folgendes:
 	\item Index der einzelnen Wörter im TF-IDF-Vektor berechnen und dem eingetragenen Score zuweisen (\textit{Map})
 	\item Scores aller Wörter eines Tweets summieren (\textit{Reduce})
 	\item Normalisieren des Scores per Division durch die Anzahl aller Wörter des Tweets
-	\item Rückgabe des Tupels \textit{(Score, Status)}
+	\item Zzurückgeben des Tupels \textit{(Score, Status)}
 \end{enumerate}
 
 Anschließend werden die erzeugten Tupel nach der Größe des erreichten Scores gefiltert und die verbleibenden Status-Texte an den TweetSink weitergegeben.\\
@@ -314,7 +314,7 @@ Als Konfigurationsparameter für die Testläufe werden verwendet
 	\item die Anzahl der Worker (1, 2, 4)
 \end{enumerate}
 
-Um eine Vergleichbarkeit der Testläufe untereinander zu erreichen werden folgende Größen festgelegt:
+Um eine Vergleichbarkeit der Testläufe untereinander zu erreichen, werden folgende Größen festgelegt:
 \begin{enumerate}
 	\item Größe des Textkorpus: 1,5 GB
 	\item Fenstergröße des TF-IDF Vektors: 500 Nachrichten
@@ -323,7 +323,7 @@ Um eine Vergleichbarkeit der Testläufe untereinander zu erreichen werden folgen
 	\item Zeitintervall für die Diskretisierung des Datenstroms (Streaming-Komponente): 5 Sekunden
 \end{enumerate}
 
-Die \textbf{Größe des Textkorpus} ergibt sich aus der Überlegung eine Datei zu Verarbeiten, die größer als der Arbeitsspeicher eines einzelnen Workers ist, theoretisch aber noch in den geteilten Speicher von vier Executor-Prozessen passt.\\
+Die \textbf{Größe des Textkorpus} ergibt sich aus der Überlegung eine Datei zu verarbeiten, die größer als der Arbeitsspeicher eines einzelnen Workers ist, theoretisch aber noch in den geteilten Speicher von vier Executor-Prozessen passt.\\
 
 Die \textbf{Fenstergröße des TF-IDF Vektors} ist willkürlich gewählt. Der Wert 500 entspricht der Anzahl von Email-Nachrichten aus der Spark-User-Mailingliste.\\
 
@@ -338,8 +338,8 @@ Um die Testläufe unter möglichst kontrollierten Bedingungen zu starten, wurde 
 
 \subsection{Batch-Komponente}
 
-Die Laufzeitmessung beginnt mit dem Start der ersten Aktion auf einem \gls{RDD} und endet mit der Rückgabe des Relevanzvektors.
-Weil die Initialisierung erst zu diesem Zeitpunkt erfolgt, wird der gesamte Prozess von der Kontaktaufnahme zum Cluster und Übermittlung der Tasks bis zur Rückgabe des Ergebnisses gemessen (siehe Listing~\ref{lst:modelbuilder_measuring}).\\
+Die Laufzeitmessung beginnt mit dem Start der ersten Aktion auf einem \gls{rdd} und endet mit der Rückgabe des Relevanzvektors.
+Weil die Initialisierung erst zu diesem Zeitpunkt erfolgt, wird der gesamte Prozess von der Kontaktaufnahme zum Cluster und der Übermittlung der Tasks bis zur Rückgabe des Ergebnisses gemessen (siehe Listing~\ref{lst:modelbuilder_measuring}).\\
 
 \begin{lstlisting}[language=Scala,caption={Laufzeitmessung},label={lst:modelbuilder_measuring}]
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
@@ -397,7 +397,7 @@ Tabelle~\ref{table:scaling} zeigt die Laufzeiten der Modelbuilderkomponente bei 
 
 Einen besonderen Einfluss auf die Laufzeit hat offenbar die Blockgröße. Bei gleicher Anzahl von Workern und Replikaten verschlechtert sich die Laufzeit in jedem Versuch bei zunehmender Größe. Diese Beobachtung deckt sich mit den in Tabelle~\ref{table:worker_harddrive} dargestellten Eigenschaften des Festspeichers auf den Workern: 
 Im Gegensatz zu den Durchsatzraten der mechanischen Festplatte des Masters verschlechtert sich auf den SD-Karten des Workers der Durchsatz bei zunehmender Blockgröße.\\
-Ab einer Blockgröße von 128MB ist es zusätzlich nicht mehr möglich vier Blöcke parallel im Arbeitsspeicher des Executor zu halten (384MB) und diese getrennt auf den 4 verfügbaren Cores verarbeiten zu lassen.
+Ab einer Blockgröße von 128MB ist es zusätzlich nicht mehr möglich, vier Blöcke parallel im Arbeitsspeicher des Executor zu halten (384MB) und diese getrennt auf den 4 verfügbaren Cores verarbeiten zu lassen.
 
 \begin{figure}[ht!]
 	\centering
@@ -416,7 +416,7 @@ Netzwerkdurchsatz spielt hier - wie bei einem einzelnen Knoten zu erwarten - off
 	\label{figure:1W32B1R_net_cpu}
 \end{figure}
 
-Betrachtet man die Summe der IO-Durchsätze über sämtliche Knoten lassen sich deutlich die verschiedenen Phasen der Feature-Extraction erkennen. Abbildung~\ref{figure:4W64B2R_io} zeigt das kommentierte Diagramm eines Testlaufs mit 4 Workern, 2 Replikaten und einer HDFS-Blockgröße von 64MB.
+Betrachtet man die Summe der IO-Durchsätze über sämtliche Knoten, lassen sich deutlich die verschiedenen Phasen der Feature-Extraction erkennen. Abbildung~\ref{figure:4W64B2R_io} zeigt das kommentierte Diagramm eines Testlaufs mit 4 Workern, 2 Replikaten und einer HDFS-Blockgröße von 64MB.
 
 \begin{figure}[ht!]
 	\centering
@@ -426,7 +426,7 @@ Betrachtet man die Summe der IO-Durchsätze über sämtliche Knoten lassen sich 
 \end{figure}
 
 \begin{labeling}{Anmerkung:~}
-\item[Anmerkung:] Die Methode \lstinline|treeAggregate|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala\#L978} innerhalb der Methode \lstinline|IDF.fit()| stellt einen Spezialfall unter den \gls{rdd}-Transformationen dar. Sie besteht aus zwei Phasen, wobei in der ersten Phase lokal auf den Partitionen eine Aggregation von Datensätzen durchgeführt wird anschließend über \lstinline|reduce| die partitionsübergreifende Aggregation der bereits partiell aggregierten Datensätze durchgeführt wird.\\
+\item[Anmerkung:] Die Methode \lstinline|treeAggregate|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala\#L978} innerhalb der Methode \lstinline|IDF.fit()| stellt einen Spezialfall unter den \gls{rdd}-Transformationen dar. Sie besteht aus zwei Phasen, wobei in der ersten Phase lokal auf den Partitionen eine Aggregation von Datensätzen durchgeführt wird und anschließend über \lstinline|reduce| die partitionsübergreifende Aggregation der bereits partiell aggregierten Datensätze durchgeführt wird.\\
 Aus dieser Implementation ergibt sich die Netzwerk-Lastspitze ab Sekunde 251 und der Übergang zu Stage 1 (Abb.~\ref{figure:4W64B2R_io}).
 \end{labeling}
 
@@ -434,7 +434,7 @@ Aus dieser Implementation ergibt sich die Netzwerk-Lastspitze ab Sekunde 251 und
 
 Einen ersten Blick auf den Zustand einer Spark-Anwendung ermöglicht die Weboberfläche des Treibers.\\
 
-Jede Spark-Applikation startet gemäß der Standardeinstellungen auf dem Host des Treibers einen HTTP-Server, über den verschiedene Daten verfolgt werden können. In Abb.~\ref{figure:realtime_dashboard_stats}) sind die Statistiken einer laufenden Realtime-Komponente dargestellt.\\
+Jede Spark-Applikation startet gemäß der Standardeinstellungen auf dem Host des Treibers einen HTTP-Server, über den verschiedene Daten verfolgt werden können. In Abb.~\ref{figure:realtime_dashboard_stats} sind die Statistiken einer laufenden Realtime-Komponente dargestellt.\\
 
 In dem betrachteten Fall läuft die Realtime-Komponente mit einem einzelnen Worker, der den Empfänger für den Datenstrom von Twitter startet und das Scoring und Filtern der eingehenden Nachrichten ausführt. Um den Worker nicht für die Modellerzeugung der Batch-Komponente zu blockieren, wurde nur ein Executor mit 2 Cores gewährt.
 
@@ -445,7 +445,7 @@ In dem betrachteten Fall läuft die Realtime-Komponente mit einem einzelnen Work
 	\label{figure:realtime_dashboard_stats}
 \end{figure}
 
-Zum Zeitpunkt des Schnappschusses wurden 6260 Tweets empfangen und verarbeitet. Der letzte Batch enthielt 178 Twitter-Nachrichten (im Durchschnitt sind es etwa 200) und der Median für die Verarbeitungszeit liegt bei 373 Millisekunden (\textit{Total Delay}.\\
+Zum Zeitpunkt des Schnappschusses wurden 6260 Tweets empfangen und verarbeitet. Der letzte Batch enthielt 178 Twitter-Nachrichten (im Durchschnitt sind es etwa 200) und der Median für die Verarbeitungszeit liegt bei 373 Millisekunden (\textit{Total Delay}).\\
 
 Bei einem Zeitfenster von 5 Sekunden (\textit{Batch Interval}) pro Batch gibt es also keinen Hinweis auf Performanceprobleme bei der Verarbeitung.\\
 
@@ -475,5 +475,3 @@ Betrachtet man den Speicherverbrauch (Abb.~\ref{figure:str_mit_mem_pi00}), sieht
 	\caption{Nutzungsprofil des Arbeitsspeichers bei Betrieb mit einem Worker}
 	\label{figure:str_mit_mem_pi00}
 \end{figure}
-
-\subsection{Funktionale Qualität der Lösung}
