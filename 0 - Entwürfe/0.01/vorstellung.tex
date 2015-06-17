@@ -216,7 +216,7 @@ In Zeile 6 wird auf dem Spark-Context die Methode \lstinline|runJob| aufgerufen,
 Das Konzept der \textit{Lineage} ist zentral für die Fehlertoleranz der \gls{rdd}s:
 Geht eine Partition verloren - beispielsweise durch Defekt eines Knotens - ist das "`Rezept"' zur Erstellung des Datensatzes in der \textit{Lineage} des \gls{rdd}-Objektes weiterhin vorhanden und die Partition kann gezielt wiederhergestellt werden.\\
 
-Ein weiterer Vorteil dieser Art von Arbeitsdatensatz wird ebenfalls sofort deutlich: Im optimalen Fall sind die zu ladenden Daten von jedem der \gls{worker} auf unabhängigen Kanälen erreichbar (z.B. auf dem lokalen Festspeicher) und gleichmäßig auf diesen Kanälen partitioniert (Abb.~\ref{fig:rdds2}.\\
+Ein weiterer Vorteil dieser Art von Arbeitsdatensatz wird ebenfalls sofort deutlich: Im optimalen Fall sind die zu ladenden Daten von jedem der \gls{worker} auf unabhängigen Kanälen erreichbar (z.B. auf dem lokalen Festspeicher) und gleichmäßig auf diesen Kanälen partitioniert (Abb.~\ref{fig:rdds2}).\\
 
 \begin{figure}[h!]
 	\centering
@@ -233,7 +233,7 @@ Im diesem Fall ergäbe sich mit einer Anzahl \gls{worker} $n$ und einem Durchsat
 
 Kommen in einem Anwendungsfall \gls{rdd}s zum Einsatz, deren Elemente einzeln über eine oder mehrere Operationen untereinander verknüpft werden, kann es sinnvoll sein diese schon im Vorfeld der Verarbeitung entsprechend erwarteter Cluster zu partitionieren. Cluster sind hierbei Teilmengen des \gls{rdd}, die mit besonders hoher Wahrscheinlichkeit oder besonders häufig untereinander verknüpft werden.\\
 
-Dadurch kann ein größerer Teil der Operationen auf den einzelnen Datensätzen bereits lokal auf dem Knoten der jeweiligen Partition durchgeführt werden. Die Netzwerklast bei dem anschließenden \textit{Shuffle} der Daten (siehe Abschnitt 2.2.2) fällt dann geringer aus.\\
+Dadurch kann ein größerer Teil der Operationen auf den einzelnen Datensätzen bereits lokal auf dem Knoten der jeweiligen Partition durchgeführt werden. Die Netzwerklast bei dem anschließenden \textit{Shuffle} der Daten (siehe Abschnitt 2.2.3) fällt dann geringer aus.\\
 
 Solch eine Partitionierung kann - entsprechende Erwartung über das Verhalten der Verarbeitung vorausgesetzt - mit einem maßgeschneiderten Partitionierer erreicht werden (Abb.~\ref{lst:partitioner}), der dann dem betroffenen \gls{rdd} übergeben wird.\\
 
@@ -257,12 +257,12 @@ class MinimalPartitioner extends Partitioner {
 
 \subsection{Anwendungsdeployment}\\
 
-Die Komponente einer Anwendung, die von der Spark API Gebrauch macht, wird in der Spark-Terminologie als \textit{Treiberprogramm} bezeichnet. \\
+Eine Anwendung, die über ein SparkContext-Objekt von der Spark API Gebrauch macht, wird in der Spark-Terminologie als \textit{Treiberprogramm} bezeichnet. \\
 
-Es gibt verschiedene Szenarien des Deployments. Das Treiberprogramm kann grundsätzlich auf zwei verschiedene Arten gestartet werden:\\
+Es gibt grundsätzlich zwei verschiedene Arten solch ein Treiberprogramm zu deployen:\\
 
 \begin{enumerate}
-	\item Übermittlung des Treibers als kompiliertes Package (z.B. als \gls{jarfile}) mit statischer Verlinkung aller erforderlichen Bibliotheken (Ausnahmen sind Bibliotheken die auf allen Knoten bereits verfügbar sind, z.B. Spark, Hadoop, etc.). Standardbibliotheken von Spark und Konfigurationseinstellungen wie z.B. die Angabe des \textit{Clustermanagers} können zur Startzeit des Treibers durch das Spark Submission-Skript erfolgen.
+	\item Übermittlung des Treibers an einen Wrapper für den Spark-Class-Loader als kompiliertes Package (z.B. als \textit{jarfile}) mit statischer Verlinkung aller erforderlichen Bibliotheken (Ausnahmen sind Bibliotheken die auf allen Knoten bereits verfügbar sind, z.B. Spark, Hadoop, etc.). Klassenpfade zu Standardbibliotheken von Spark und weitere Konfigurationseinstellungen wie z.B. die Angabe des \textit{Clustermanagers} können zur Startzeit des Treibers durch das Submission-Skript festgelegt werden.
 	\item Start eines eigenständig lauffähigen Treibers mit vollständig konfigurierter und verlinkter Spark-Umgebung und expliziter Angabe eines \textit{Clustermanagers}.
 \end{enumerate}
 
@@ -272,7 +272,7 @@ Im ersten Fall ergeben sich zwei weitere Möglichkeiten zum Ort der Ausführung 
 
 \begin{enumerate}
 	\item \textbf{Client-Modus}
-	Der Treiber wird direkt auf dem Host (Gateway-Rechner) ausgeführt auf dem der Treiber übermittelt wurde (Abb.~\ref{fig:spark_deployment_clientmode}). Tatsächlich wird er sogar innerhalb des Submission-Skript-Prozesses gestartet \textbf{(VERWEIS)}.
+	Der Treiber wird direkt auf dem Host (Gateway-Rechner) ausgeführt auf dem der Treiber übermittelt wurde (Abb.~\ref{fig:spark_deployment_clientmode}). Tatsächlich wird er sogar innerhalb des Submission-Skript-Prozesses gestartet.
 	\item \textbf{Cluster-Modus}
 	Der Treiber wird von dem Gateway-Rechner an einen \gls{worker} des Clusters übertragen und dort ausgeführt (Abb.~\ref{fig:spark_deployment_clustermode}).
 \end{enumerate}\\
@@ -305,7 +305,7 @@ Abb.~\ref{fig:app_deployment_process} zeigt das Sequenzdiagramm eines typischen 
 \end{figure}
 
 
-\subsection{Scheduling}\\
+\subsection{Scheduling und Shuffling}\\
 
 In Spark gibt es drei Scheduler und drei wesentliche Laufzeit-Elemente einer Sparkanwendung.\\
 
@@ -387,7 +387,7 @@ Weil nach Definition der \textit{narrow dependencies} innerhalb einer Stage die 
 Für den Übergang zwischen Stages ist die Berechnung der Nachfolger etwas aufwändiger. Hier stammen - nach Definition der \textit{wide dependencies} - die direkten Vorgänger eines Elementes nicht alle aus der selben Partition.\\
 
 Um eine neue Partition aus mehreren Vorgänger-Partitionen zu erzeugen werden zunächst geeignete Ausführungsorte\footnote{Geeignete Ausführungsorte (\textit{preferred locations}) können sich z.B. aus dem Ort eines Blocks bei HDFS ermitteln lassen (Node-Local, Rack-Local, etc.) oder daraus, ob ein Executor bereits einen Datensatz geladen hat (Process-Local)} ermittelt, von denen dann jeder per geeignetem Partitionierer mindestens einen \textit{Bucket}\footnote{Ein Bucket ist eine Sammelstelle für eingehende Elemente verschiedener Partitionen} von Elementen verarbeitet. Diese Elemente stammen dann in der Regel aus verschiedenen Vorgängerpartitionen.\\
-Das so neu-partitionierte und verarbeitete \gls{RDD} wird so zum Ausgangspunkt des folgenden \gls{rdd}.\\
+Das so neu-partitionierte und verarbeitete \gls{rdd} wird so zum Ausgangspunkt des folgenden \gls{rdd}.\\
 Eine Schlüsselrolle kommt bei diesem Prozess der Methode \lstinline|runTask| in der Klasse \lstinline|ShuffleMapTasks|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/scheduler/ShuffleMapTask.scala, (abgerufen am 30.05.2015)} aus \textit{org.apache.spark.scheduler.ShuffleMapTask} zu.\\
 
 \section{Standardbibliotheken}
@@ -400,7 +400,7 @@ Die Spark SQL Bibliothek bietet Schnittstellen für den Zugriff auf strukturiert
 
 \Glspl{dataframe} und die SparkSQL Bibliothek bilden einen Ansatz, relationale Abfragen mit komplexen prozeduralen Algorithmen zu verknüpfen, um die Performance bei Abfragen auf großen Datenmengen zu optimieren (Vgl. \cite{Armbrust:2015:SSR:2723372.2742797}).\\
 
-Die Abfrage und Verarbeitung von Daten kann entweder über die Schnittstellen dieses Datentyps erfolgen (ähnlich wie bei \glspl{rdd} oder in Form von SQL-Syntax.\\
+Die Abfrage und Verarbeitung von Daten kann entweder über die Schnittstellen dieses Datentyps erfolgen (ähnlich wie bei \glspl{rdd}) oder in Form von SQL-Syntax.\\
 
 Diese Form des Zugriffs ist beispielsweise über einen JDBC-Adapter möglich und bietet so anderen Anwendungen und Frameworks die Möglichkeit bestehende SQL-Schnittstellen mit Apache Spark zu verbinden.\\
 
@@ -518,7 +518,7 @@ Die Kommunikation innerhalb der Entwickler- und Anwendergemeinschaft findet wese
 \section{Übersicht verwandter Produkte}
 Um Spark besser im Bereich bestehender Lösungen einzuordnen werden im Folgenden einige Produkte genannt die häufig zusammen mit Spark verwendet oder ähnliche Aufgaben erfüllen.
 
-\paragraph{Hadoop/YARN}\\
+\subsection{Hadoop/YARN}
 
 Hadoop\footnote{https://hadoop.apache.org/, abgerufen am 16.06.2015} lässt sich als eine Art Betriebssystem für Cluster zur Datenanalyse beschreiben. Zu den wesentlichen Komponenten zählen ein Dateisystem (HDFS) ein Datenverarbeitungsmodell (MapReduce) und ein Scheduler (YARN).
 Alle genannten Komponenten sind für den fehlertoleranten und skalierbaren Betrieb auf verteilten Hardware-Komponenten vorgesehen.\\
@@ -527,7 +527,7 @@ Zwar wird mit MapReduce auch eine Komponente zur Verarbeitung von verteilt gespe
 
 Spark liefert eine mögliche Implementation eines solchen alternativen Datenverarbeitungsmodells.
 
-\paragraph{Mesos}\\
+\subsection{Mesos}
 
 Apache Mesos\footnote{http://mesos.apache.org/, abgerufen am 16.06.2015} ist seit Beginn der Entwicklung von Spark ein optionaler Clustermanager für Sparkapplikationen \cite{Mat12}.\\
 
@@ -535,7 +535,7 @@ Als reiner Clustermanager ersetzt Mesos die Spark Master-Komponente in der Funkt
 
 Wie bei YARN ermöglicht dies auch anderen Anwendungen die über Mesos verwaltet werden einen gleichberechtigten Betrieb auf dem selben Cluster.\\
 
-\paragraph{Flink}\\
+\subsection{Flink}
 
 Apache Flink\footnote{https://flink.apache.org/, abgerufen am 16.06.2015} ist mit seiner Funktionalität ein direkter Konkurrent zu Apache Spark.\\
 
@@ -545,7 +545,7 @@ Der wesentliche Unterschied in der Architektur von Flink verglichen mit Spark li
 
 Auffällig ist weiterhin, dass im Flink Applikationskern häufig auf Low-Level-Methoden zurückgegriffen wird und beispielsweise mit der Endianness\footnote{Art der Bytereihenfolge bei der Ablage von Daten im Arbeitsspeicher} auf verschiedenen Speicherarchitekturen umgegangen wird. Solch feingranulare Optimierungsbemühungen sind dem Autoren bei Spark nicht bekannt.\\
 
-\paragraph{Open MPI}\\
+\subsection{Open MPI}
 
 Open MPI\footnote{http://www.open-mpi.de/, abgerufen am 16.06.2015} ist die Implementation des \textit{Message Passing Interface}\footnote{http://www.mcs.anl.gov/research/projects/mpi/, abgerufen am 16.06.2015}, eines Standards zum Nachrichtenaustausch zwischen Prozessen.\\
 

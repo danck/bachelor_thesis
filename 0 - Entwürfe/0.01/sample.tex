@@ -23,7 +23,8 @@
 %\usepackage{natbib}
 \usepackage[ngerman,colorlinks=true]{hyperref}
 \usepackage{soul}
-\usepackage{hawstyle}
+\usepackage[printer]{hawstyle}
+%\usepackage{hawstyle}
 \usepackage{lipsum} %% for sample text
 
 
@@ -127,8 +128,10 @@ literate={my_dollar}{\$}1
 %% customize (see readme.pdf for supported values)
 \HAWThesisProperties{Author={Daniel Kirchner}
                     ,Title={Skalierbare Datenanalyse mit Apache Spark}
-										,SubTitle={Implementation einer Text-Mining-Anwendung und Betrieb auf einem Low-End-Cluster}
+										,SubTitle={Implementation einer Text-Mining-Anwendung und Testbetrieb auf einem Low-End-Cluster}
                     ,EnglishTitle={Scalable Data Analysis with Apache Spark}
+										,EnglishSubTitle={Implementation of a Text Mining Application and Test Operation on a Low-End Cluster}
+										,SubTitleDelimiter={: }
                     ,ThesisType={Bachelorarbeit}
                     ,ExaminationType={Bachelorprüfung}
                     ,DegreeProgramme={Bachelor of Science Angewandte Informatik}
@@ -148,11 +151,11 @@ literate={my_dollar}{\$}1
 %% note: this is one command on multiple lines
 \HAWAbstractPage
 %% German abstract
-{Apache Spark, Big Data, Architekturanalyse, Text Mining, Echtzeit-Datenanalyse, Raspberry Pi}%
+{Apache Spark, Big Data, Architekturanalyse, Text Mining, Echtzeit-Datenanalyse}%
 {Apache Spark ist auf dem Weg sich als zentrale Komponente von Big-Data-Analyse-Systemen für eine Vielzahl von Anwendungsfällen durchzusetzen. Diese Arbeit schafft einen Überblick der zentralen Konzepte und Bestandteile von Apache Spark und untersucht das Verhalten von Spark auf einem Cluster mit minimalem Leistungsprofil. Grundlage dieser Untersuchung ist ein realitätsnaher Anwendungsfall, der Sparkmodule für Batch-Processing und Streaming kombiniert.}
 %% English abstract
-{keyword 1, keyword 2}%
-{This document \ldots}
+{Apache Spark, Big Data, Architecture Analysis, Text Mining, Real-Time Analysis}%
+{Apache Spark is quickly becoming a central component of Big Data analysis systems for a variety of applications. This work provides an overview of key concepts and components of Apache Spark and examines the behavior of Spark on a cluster with a minimal performance profile. This study is based on an application that is inspired by a real-world usecase. The application combines the Spark modules for batch processing and streaming.}
 
 \newpage
 \singlespacing

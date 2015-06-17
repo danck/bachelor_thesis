@@ -60,7 +60,7 @@ Dell d420
 \end{itemize}
 Als Betriebssystem wird Ubuntu (\cite{ubuntu}) 14.04 32-Bit genutzt.
 
-\paragraph{Netzwerk}
+\paragraph{Netzwerk} \newline
 Die Rechner sind mit \gls{rj45} über einen TP-Link TL-SF1008D Switch mit theoretischem maximalem Durchsatz von 100MBit/s vernetzt.
 
 Als Basisdaten für die Leistungsfähigkeit der eingesetzten Hardware werden zusätzliche Tests durchgeführt, deren Ergebnisse in Tabelle \ref{table:network}, Tabelle \ref{table:master_harddrive} und Tabelle \ref{table:master_harddrive} aufgeführt sind.
@@ -430,9 +430,8 @@ Betrachtet man die Summe der IO-Durchsätze über sämtliche Knoten lassen sich 
 \end{figure}
 
 \begin{labeling}{Anmerkung:~}
-\item[Anmerkung:] Die Methode \lstinline|treeAggregate|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala\#L978} stellt einen Spezialfall unter den \gls{rdd}-
-Transformationen dar. Sie besteht aus zwei Phasen, wobei in der ersten Phase lokal auf den Partitionen eine Aggregation von Datensätzen durchgeführt wird anschließend über \lstinline|reduce| die partitionsübergreifende Aggregation der bereits partiell aggregierten Datensätze durchgeführt wird.\\
-Aus dieser Implementation ergibt sich die Netzwerk-Lastspitze innerhalb von Stage 1 (Abb.~\ref{figure:4W64B2R_io}).
+\item[Anmerkung:] Die Methode \lstinline|treeAggregate|\footnote{https://github.com/apache/spark/blob/branch-1.3/core/src/main/scala/org/apache/spark/rdd/RDD.scala\#L978} innerhalb der Methode \lstinline|IDF.fit()| stellt einen Spezialfall unter den \gls{rdd}-Transformationen dar. Sie besteht aus zwei Phasen, wobei in der ersten Phase lokal auf den Partitionen eine Aggregation von Datensätzen durchgeführt wird anschließend über \lstinline|reduce| die partitionsübergreifende Aggregation der bereits partiell aggregierten Datensätze durchgeführt wird.\\
+Aus dieser Implementation ergibt sich die Netzwerk-Lastspitze ab Sekunde 251 und der Übergang zu Stage 1 (Abb.~\ref{figure:4W64B2R_io}).
 \end{labeling}
 
 \subsection{Echtzeitkomponente}
@@ -459,7 +458,7 @@ Dieser Verdacht erhärtet sich bei einem Blick auf die CPU-Last des verarbeitend
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=\textwidth]{str_1W_cpu.pdf}
-	\caption{CPU Last eines einzelnen Workers}
+	\caption{CPU Last bei Betrieb mit einem Worker}
 	\label{figure:str_1W_cpu}
 \end{figure}
 
@@ -468,7 +467,7 @@ Auch die Netzwerklast ist minimal (Abb.~\ref{figure:str_1W_net}). Ab Sekunde 51 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=\textwidth]{str_1W_net.pdf}
-	\caption{CPU Last eines einzelnen Workers}
+	\caption{Netzwerklast bei Betrieb mit einem Worker}
 	\label{figure:str_1W_net}
 \end{figure}
 
@@ -477,7 +476,7 @@ Betrachtet man den Speicherverbrauch (Abb.~\ref{figure:str_mit_mem_pi00}), sieht
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=\textwidth]{str_mit_mem_pi00.pdf}
-	\caption{CPU Last eines einzelnen Workers}
+	\caption{Nutzungsprofil des Arbeitsspeichers bei Betrieb mit einem Worker}
 	\label{figure:str_mit_mem_pi00}
 \end{figure}
 

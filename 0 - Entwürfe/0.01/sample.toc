@@ -36,7 +36,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Anwendungsdeployment}{13}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Scheduling}{16}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Scheduling und Shuffling}{16}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Standardbibliotheken}{20}{section.2.3}
 \defcounter {refsection}{0}\relax 
@@ -52,13 +52,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}\IeC {\"U}bersicht verwandter Produkte}{24}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Hadoop/YARN}{24}{section*.23}
+\contentsline {subsection}{\numberline {2.5.1}Hadoop/YARN}{24}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Mesos}{25}{section*.24}
+\contentsline {subsection}{\numberline {2.5.2}Mesos}{25}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Flink}{25}{section*.25}
+\contentsline {subsection}{\numberline {2.5.3}Flink}{26}{subsection.2.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Open MPI}{26}{section*.26}
+\contentsline {subsection}{\numberline {2.5.4}Open MPI}{26}{subsection.2.5.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Entwicklung und Betrieb einer Beispielanwendung}{27}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -66,25 +66,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Hardwareumgebung}{29}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Worker}{29}{section*.29}
+\contentsline {paragraph}{\nonumberline Worker}{29}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Master}{30}{section*.30}
+\contentsline {paragraph}{\nonumberline Master}{30}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Netzwerk}{30}{section*.31}
+\contentsline {paragraph}{\nonumberline Netzwerk}{30}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Festspeicher}{30}{table.caption.35}
+\contentsline {paragraph}{\nonumberline Festspeicher}{30}{table.caption.31}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}L\IeC {\"o}sungsskizze}{31}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Wahl des Dateisystems}{31}{section*.36}
+\contentsline {paragraph}{\nonumberline Wahl des Dateisystems}{31}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Wahl des Cluster-Managers}{31}{section*.37}
+\contentsline {paragraph}{\nonumberline Wahl des Cluster-Managers}{31}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Architektur\IeC {\"u}bersicht}{31}{section*.38}
+\contentsline {paragraph}{\nonumberline Architektur\IeC {\"u}bersicht}{31}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Batch Layer}{32}{section*.40}
+\contentsline {paragraph}{\nonumberline Batch Layer}{32}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Streaming Layer}{34}{section*.42}
+\contentsline {paragraph}{\nonumberline Streaming Layer}{34}{section*.38}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Hinweise zur Entwicklung}{36}{section.3.4}
 \defcounter {refsection}{0}\relax 
@@ -102,11 +102,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Ausblick und offene Punkte}{47}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyme}{49}{section*.54}
+\contentsline {chapter}{Acronyme}{49}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{50}{section*.56}
+\contentsline {chapter}{Glossar}{50}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{51}{section*.58}
+\contentsline {chapter}{Anhang}{51}{section*.54}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Quellcode/Skripte (Ausz\IeC {\"u}ge)}{52}{section.1..1}
 \defcounter {refsection}{0}\relax 

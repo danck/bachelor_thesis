@@ -52,32 +52,32 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Anwendungsfalldiagramm der Demo-Applikation\relax }}{28}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Anwendungsfalldiagramm der Demo-Applikation\relax }}{28}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Hardwareumgebung des Programms zur Tweetanalyse\relax }}{29}{figure.caption.28}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Hardwareumgebung des Programms zur Tweetanalyse\relax }}{29}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Datenzentrierte Sicht auf die Komponenten\relax }}{32}{figure.caption.39}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Datenzentrierte Sicht auf die Komponenten\relax }}{32}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Innenansicht der Batch-Layer Komponente\relax }}{33}{figure.caption.41}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Innenansicht der Batch-Layer Komponente\relax }}{33}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Innenansicht der Streaming-Layer Komponente\relax }}{35}{figure.caption.43}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Innenansicht der Streaming-Layer Komponente\relax }}{35}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Verteilungssicht auf die Demo App\relax }}{37}{figure.caption.44}
+\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Verteilungssicht auf die Demo App\relax }}{37}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Einfache Continuous Deployment Pipeline\relax }}{38}{figure.caption.45}
+\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Einfache Continuous Deployment Pipeline\relax }}{38}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Laufzeit der Feature Extraction bei unterschiedlichen HDFS Blockgr\IeC {\"o}\IeC {\ss }en\relax }}{41}{figure.caption.47}
+\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Laufzeit der Feature Extraction bei unterschiedlichen HDFS Blockgr\IeC {\"o}\IeC {\ss }en\relax }}{41}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Netzwerk-, SD-Karten und CPU-Auslastung w\IeC {\"a}hrend bei einem Worker und 32MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{42}{figure.caption.48}
+\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Netzwerk-, SD-Karten und CPU-Auslastung w\IeC {\"a}hrend bei einem Worker und 32MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{42}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces Auslastungskurven bei einem Worker und 64MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{42}{figure.caption.49}
+\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces Auslastungskurven bei einem Worker und 64MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{42}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces Spark-Dashboard des Realtime Analyzers - Statistics Tab\relax }}{43}{figure.caption.50}
+\contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces Spark-Dashboard des Realtime Analyzers - Statistics Tab\relax }}{43}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.12}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{44}{figure.caption.51}
+\contentsline {figure}{\numberline {\relax 3.12}{\ignorespaces CPU Last bei Betrieb mit einem Worker\relax }}{44}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.13}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{45}{figure.caption.52}
+\contentsline {figure}{\numberline {\relax 3.13}{\ignorespaces Netzwerklast bei Betrieb mit einem Worker\relax }}{45}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.14}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{45}{figure.caption.53}
+\contentsline {figure}{\numberline {\relax 3.14}{\ignorespaces Nutzungsprofil des Arbeitsspeichers bei Betrieb mit einem Worker\relax }}{45}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
