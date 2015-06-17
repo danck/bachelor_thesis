@@ -64,22 +64,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Verteilungssicht auf die Demo App\relax }}{37}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Komponentendiagramm des Demo App Packages\relax }}{38}{figure.caption.45}
+\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Einfache Continuous Deployment Pipeline\relax }}{38}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Einfache Continuous Deployment Pipeline\relax }}{38}{figure.caption.46}
+\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Laufzeit der Feature Extraction bei unterschiedlichen HDFS Blockgr\IeC {\"o}\IeC {\ss }en\relax }}{41}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Laufzeit der Feature Extraction bei unterschiedlichen HDFS Blockgr\IeC {\"o}\IeC {\ss }en\relax }}{42}{figure.caption.48}
+\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Netzwerk-, SD-Karten und CPU-Auslastung w\IeC {\"a}hrend bei einem Worker und 32MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{42}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces Netzwerk-, SD-Karten und CPU-Auslastung w\IeC {\"a}hrend bei einem Worker und 32MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{42}{figure.caption.49}
+\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces Auslastungskurven bei einem Worker und 64MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{42}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces Auslastungskurven bei einem Worker und 64MB Blockgr\IeC {\"o}\IeC {\ss }e\relax }}{43}{figure.caption.50}
+\contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces Spark-Dashboard des Realtime Analyzers - Statistics Tab\relax }}{43}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.12}{\ignorespaces Spark-Dashboard des Realtime Analyzers - Statistics Tab\relax }}{44}{figure.caption.51}
+\contentsline {figure}{\numberline {\relax 3.12}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{44}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 3.13}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{45}{figure.caption.52}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 3.14}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{45}{figure.caption.53}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.15}{\ignorespaces CPU Last eines einzelnen Workers\relax }}{46}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
