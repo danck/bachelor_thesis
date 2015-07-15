@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  17 JUN 2015 05:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.26)  17 JUN 2015 07:01
 entering extended mode
 **sample.tex
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.tex"
@@ -2001,6 +2001,16 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
+<./logo/HAW_logo.png, id=214, 768.8725pt x 231.86626pt>
+File: ./logo/HAW_logo.png Graphic file (type png)
+ <use ./logo/HAW_logo.png>
+Package pdftex.def Info: ./logo/HAW_logo.png used on input line 146.
+(pdftex.def)             Requested size: 284.52756pt x 85.80685pt.
+
+Overfull \hbox (227.62206pt too wide) in paragraph at lines 146--146
+[][] 
+ []
+
 (C:\Users\Daniel\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
@@ -2040,7 +2050,7 @@ Overfull \hbox (455.24419pt too wide) in paragraph at lines 146--146
 
 
 
-]
+ <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/logo/HAW_logo.png>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 146.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
@@ -2063,9 +2073,9 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 Package tocbasic Info: character protrusion at toc deactivated on input line 163.
  ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\sample.toc"
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 109.
+(Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on input line 97.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 109.
+(Font)              scaled to size 10.95pt on input line 97.
  [4
 
 
@@ -2178,7 +2188,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<bilder/trends_spark_vs_hadoop.PNG, id=402, 629.72766pt x 220.19766pt>
+<bilder/trends_spark_vs_hadoop.PNG, id=425, 629.72766pt x 220.19766pt>
 File: bilder/trends_spark_vs_hadoop.PNG Graphic file (type png)
  <use bilder/trends_spark_vs_hadoop.PNG>
 Package pdftex.def Info: bilder/trends_spark_vs_hadoop.PNG used on input line 27.
@@ -2240,7 +2250,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
 
 
-] <sparkdeployment2.pdf, id=459, 370.18298pt x 318.791pt>
+] <sparkdeployment2.pdf, id=481, 370.18298pt x 318.791pt>
 File: sparkdeployment2.pdf Graphic file (type pdf)
  <use sparkdeployment2.pdf>
 Package pdftex.def Info: sparkdeployment2.pdf used on input line 49.
@@ -2329,7 +2339,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<RDDs1.pdf, id=930, 545.09041pt x 172.78854pt>
+<RDDs1.pdf, id=952, 545.09041pt x 172.78854pt>
 File: RDDs1.pdf Graphic file (type pdf)
  <use RDDs1.pdf>
 Package pdftex.def Info: RDDs1.pdf used on input line 114.
@@ -2428,7 +2438,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-<rdds_no_action.pdf, id=979, 365.6546pt x 50.82341pt>
+<rdds_no_action.pdf, id=1001, 365.6546pt x 50.82341pt>
 File: rdds_no_action.pdf Graphic file (type pdf)
  <use rdds_no_action.pdf>
 Package pdftex.def Info: rdds_no_action.pdf used on input line 159.
@@ -2438,7 +2448,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
-<rdds_action.pdf, id=981, 510.28033pt x 50.82341pt>
+<rdds_action.pdf, id=1003, 510.28033pt x 50.82341pt>
 File: rdds_action.pdf Graphic file (type pdf)
  <use rdds_action.pdf>
 Package pdftex.def Info: rdds_action.pdf used on input line 168.
@@ -2448,7 +2458,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-<rdds_action_persist.pdf, id=996, 510.28033pt x 63.05325pt>
+<rdds_action_persist.pdf, id=1018, 510.28033pt x 63.05325pt>
 File: rdds_action_persist.pdf Graphic file (type pdf)
  <use rdds_action_persist.pdf>
 Package pdftex.def Info: rdds_action_persist.pdf used on input line 177.
@@ -2566,7 +2576,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-<RDDs2.pdf, id=1036, 545.09041pt x 209.20233pt>
+<RDDs2.pdf, id=1058, 545.09041pt x 209.20233pt>
 File: RDDs2.pdf Graphic file (type pdf)
  <use RDDs2.pdf>
 Package pdftex.def Info: RDDs2.pdf used on input line 223.
@@ -2638,7 +2648,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<spark_deployment_clientmode.pdf, id=1103, 656.05098pt x 272.21701pt>
+<spark_deployment_clientmode.pdf, id=1125, 656.05098pt x 272.21701pt>
 File: spark_deployment_clientmode.pdf Graphic file (type pdf)
  <use spark_deployment_clientmode.pdf>
 Package pdftex.def Info: spark_deployment_clientmode.pdf used on input line 282.
@@ -2657,7 +2667,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<spark_deployment_clustermode.pdf, id=1104, 659.26299pt x 422.37799pt>
+<spark_deployment_clustermode.pdf, id=1126, 659.26299pt x 422.37799pt>
 File: spark_deployment_clustermode.pdf Graphic file (type pdf)
  <use spark_deployment_clustermode.pdf>
 Package pdftex.def Info: spark_deployment_clustermode.pdf used on input line 289.
@@ -2691,7 +2701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 296--297
 
  []
 
-<spark_deployment_process.pdf, id=1911, 599.038pt x 576.55403pt>
+<spark_deployment_process.pdf, id=1933, 599.038pt x 576.55403pt>
 File: spark_deployment_process.pdf Graphic file (type pdf)
  <use spark_deployment_process.pdf>
 Package pdftex.def Info: spark_deployment_process.pdf used on input line 302.
@@ -2716,7 +2726,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 310--311
  []
 
 [15 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/spark_deployment_process.pdf>]
-<schedulers.pdf, id=2309, 584.58403pt x 459.31601pt>
+<schedulers.pdf, id=2331, 584.58403pt x 459.31601pt>
 File: schedulers.pdf Graphic file (type pdf)
  <use schedulers.pdf>
 Package pdftex.def Info: schedulers.pdf used on input line 330.
@@ -2731,13 +2741,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
-<lineage_basic.pdf, id=2316, 470.54295pt x 331.3581pt>
+<lineage_basic.pdf, id=2338, 470.54295pt x 331.3581pt>
 File: lineage_basic.pdf Graphic file (type pdf)
  <use lineage_basic.pdf>
 Package pdftex.def Info: lineage_basic.pdf used on input line 349.
 (pdftex.def)             Requested size: 372.46997pt x 262.29585pt.
  [16]
-<lineage_parted.pdf, id=2329, 470.54295pt x 331.3581pt>
+<lineage_parted.pdf, id=2351, 470.54295pt x 331.3581pt>
 File: lineage_parted.pdf Graphic file (type pdf)
  <use lineage_parted.pdf>
 Package pdftex.def Info: lineage_parted.pdf used on input line 362.
@@ -2752,7 +2762,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--371
 
  []
 
-<lineage_stages.pdf, id=2820, 495.66714pt x 377.97662pt>
+<lineage_stages.pdf, id=2842, 495.66714pt x 377.97662pt>
 File: lineage_stages.pdf Graphic file (type pdf)
  <use lineage_stages.pdf>
 Package pdftex.def Info: lineage_stages.pdf used on input line 374.
@@ -3011,7 +3021,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-<demo_app_usecase.pdf, id=2974, 468.95201pt x 475.376pt>
+<demo_app_usecase.pdf, id=2996, 468.95201pt x 475.376pt>
 File: demo_app_usecase.pdf Graphic file (type pdf)
  <use demo_app_usecase.pdf>
 Package pdftex.def Info: demo_app_usecase.pdf used on input line 17.
@@ -3036,7 +3046,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<versuchsaufbau.pdf, id=2986, 476.78168pt x 409.94693pt>
+<versuchsaufbau.pdf, id=3008, 476.78168pt x 409.94693pt>
 File: versuchsaufbau.pdf Graphic file (type pdf)
  <use versuchsaufbau.pdf>
 Package pdftex.def Info: versuchsaufbau.pdf used on input line 34.
@@ -3088,7 +3098,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--144
 
  []
 
-[31] <data_centric_layers.pdf, id=3195, 514.02556pt x 216.65051pt>
+[31] <data_centric_layers.pdf, id=3212, 514.02556pt x 216.65051pt>
 File: data_centric_layers.pdf Graphic file (type pdf)
  <use data_centric_layers.pdf>
 Package pdftex.def Info: data_centric_layers.pdf used on input line 149.
@@ -3108,7 +3118,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
-<batch_layer.pdf, id=3196, 510.708pt x 244.112pt>
+<batch_layer.pdf, id=3213, 510.708pt x 244.112pt>
 File: batch_layer.pdf Graphic file (type pdf)
  <use batch_layer.pdf>
 Package pdftex.def Info: batch_layer.pdf used on input line 164.
@@ -3148,7 +3158,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-<streaming_layer.pdf, id=3554, 517.13202pt x 260.975pt>
+<streaming_layer.pdf, id=3568, 517.13202pt x 260.975pt>
 File: streaming_layer.pdf Graphic file (type pdf)
  <use streaming_layer.pdf>
 Package pdftex.def Info: streaming_layer.pdf used on input line 222.
@@ -3191,7 +3201,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
-<demo_app_deployment.pdf, id=3888, 533.995pt x 656.85402pt>
+<demo_app_deployment.pdf, id=3900, 533.995pt x 656.85402pt>
 File: demo_app_deployment.pdf Graphic file (type pdf)
  <use demo_app_deployment.pdf>
 Package pdftex.def Info: demo_app_deployment.pdf used on input line 273.
@@ -3201,7 +3211,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
-<Pipeline.pdf, id=3890, 616.70403pt x 165.418pt>
+<Pipeline.pdf, id=3902, 616.70403pt x 165.418pt>
 File: Pipeline.pdf Graphic file (type pdf)
  <use Pipeline.pdf>
 Package pdftex.def Info: Pipeline.pdf used on input line 283.
@@ -3243,17 +3253,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 334--336
  []
 
 
-! Package glossaries Error: Glossary entry `RDD' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.341 ...rt der ersten Aktion auf einem \gls{RDD} 
-                                                  und endet mit der Rückgab...
-You need to define a glossary entry before you can use it.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 341--343
 
  []
@@ -3268,19 +3267,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
-[40] <runtime_vs_blocksize.pdf, id=4706, 762.56421pt x 258.9645pt>
+[40] <runtime_vs_blocksize.pdf, id=4717, 762.56421pt x 258.9645pt>
 File: runtime_vs_blocksize.pdf Graphic file (type pdf)
  <use runtime_vs_blocksize.pdf>
 Package pdftex.def Info: runtime_vs_blocksize.pdf used on input line 404.
 (pdftex.def)             Requested size: 413.85834pt x 140.55pt.
  [41 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/runtime_vs_blocksize.pdf>]
-<1W32B1R_net_cpu.pdf, id=4723, 727.63843pt x 344.60745pt>
+<1W32B1R_net_cpu.pdf, id=4732, 727.63843pt x 344.60745pt>
 File: 1W32B1R_net_cpu.pdf Graphic file (type pdf)
  <use 1W32B1R_net_cpu.pdf>
 Package pdftex.def Info: 1W32B1R_net_cpu.pdf used on input line 414.
 (pdftex.def)             Requested size: 413.85834pt x 196.00237pt.
 
-<4W64B2R_io.pdf, id=4725, 571.93074pt x 241.8927pt>
+<4W64B2R_io.pdf, id=4734, 571.93074pt x 241.8927pt>
 File: 4W64B2R_io.pdf Graphic file (type pdf)
  <use 4W64B2R_io.pdf>
 Package pdftex.def Info: 4W64B2R_io.pdf used on input line 423.
@@ -3295,7 +3294,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
-<bilder/streaming_stats_dashboard.PNG, id=4742, 675.27281pt x 422.70422pt>
+<bilder/streaming_stats_dashboard.PNG, id=4751, 675.27281pt x 422.70422pt>
 File: bilder/streaming_stats_dashboard.PNG Graphic file (type png)
  <use bilder/streaming_stats_dashboard.PNG>
 Package pdftex.def Info: bilder/streaming_stats_dashboard.PNG used on input line 443.
@@ -3310,13 +3309,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 450--451
 
  []
 
-<str_1W_cpu.pdf, id=4744, 583.31187pt x 244.73834pt>
+<str_1W_cpu.pdf, id=4753, 583.31187pt x 244.73834pt>
 File: str_1W_cpu.pdf Graphic file (type pdf)
  <use str_1W_cpu.pdf>
 Package pdftex.def Info: str_1W_cpu.pdf used on input line 456.
 (pdftex.def)             Requested size: 413.85834pt x 173.64967pt.
  [43 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/4W64B2R_io.pdf>] <str_1W_net.pdf, i
-d=4758, 583.31187pt x 239.04709pt>
+d=4766, 583.31187pt x 239.04709pt>
 File: str_1W_net.pdf Graphic file (type pdf)
 
 <use str_1W_net.pdf>
@@ -3324,7 +3323,7 @@ Package pdftex.def Info: str_1W_net.pdf used on input line 465.
 (pdftex.def)             Requested size: 413.85834pt x 169.61153pt.
  [44 <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/bilder/streaming_stats_dashboard.PN
 G> <C:/Users/Daniel/Documents/1 current projects/Bachelorarbeit/0 - Entwürfe/0.01/str_1W_cpu.pdf>]
-<str_mit_mem_pi00.pdf, id=4771, 580.46634pt x 236.20245pt>
+<str_mit_mem_pi00.pdf, id=4779, 580.46634pt x 236.20245pt>
 File: str_mit_mem_pi00.pdf Graphic file (type pdf)
  <use str_mit_mem_pi00.pdf>
 Package pdftex.def Info: str_mit_mem_pi00.pdf used on input line 474.
@@ -3483,15 +3482,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
 ("C:\Users\Daniel\Documents\1 current projects\Bachelorarbeit\0 - Entwürfe\0.01\appendices.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
+Package rerunfilecheck Info: File `sample.out' has not changed.
+(rerunfilecheck)             Checksum: 92B31CDE5D56A61411E379902DDB740A;3430.
 
-
-Package rerunfilecheck Warning: File `sample.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `sample.out':
-(rerunfilecheck)             Before: 06D667D6940E3D71A01B95476300B89E;3128
-(rerunfilecheck)             After:  BCF34A105FB507AE66D946D6DDF39C98;3528.
 
 LaTeX Warning: There were undefined references.
 
@@ -3507,48 +3500,18 @@ Package logreq Info: Writing requests to 'sample.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
  ) 
 Here is how much of TeX's memory you used:
- 49110 strings out of 493921
- 1058120 string characters out of 3144873
- 1740307 words of memory out of 3000000
- 50737 multiletter control sequences out of 15000+200000
+ 49105 strings out of 493921
+ 1058061 string characters out of 3144873
+ 1740348 words of memory out of 3000000
+ 50745 multiletter control sequences out of 15000+200000
  158671 words of font info for 209 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
  74i,19n,112p,1826b,3374s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{glo:dataframe} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.55} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.42} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.31} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.30} has been referenced but does not exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.49} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.48} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.47} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.46} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.45} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.44} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.43} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.35} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.54} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.52} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.50} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Daniel/AppData/Roaming/M
 iKTeX/2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Daniel/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/libertin
@@ -3567,9 +3530,9 @@ s/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on sample.pdf (67 pages, 2443441 bytes).
+Output written on sample.pdf (67 pages, 2453796 bytes).
 PDF statistics:
- 5206 PDF objects out of 6186 (max. 8388607)
- 511 named destinations out of 1000 (max. 500000)
- 41033 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 5205 PDF objects out of 6186 (max. 8388607)
+ 495 named destinations out of 1000 (max. 500000)
+ 41070 words of extra memory for PDF output out of 42996 (max. 10000000)
 

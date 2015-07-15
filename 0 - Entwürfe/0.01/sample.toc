@@ -90,8 +90,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.2}Echtzeitkomponente}{43}{subsection.3.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Funktionale Qualit\IeC {\"a}t der L\IeC {\"o}sung}{45}{subsection.3.5.3}
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Schlussbetrachtung}{46}{chapter.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Diskussion der Ergebnisse}{46}{section.4.1}

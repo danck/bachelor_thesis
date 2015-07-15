@@ -31,17 +31,16 @@
 \BOOKMARK [1][-]{section.3.5}{3.5 Ergebnisse und Bewertung}{chapter.3}% 31
 \BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 Batch-Komponente}{section.3.5}% 32
 \BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Echtzeitkomponente}{section.3.5}% 33
-\BOOKMARK [2][-]{subsection.3.5.3}{3.5.3 Funktionale Qualit\344t der L\366sung}{section.3.5}% 34
-\BOOKMARK [0][-]{chapter.4}{4 Schlussbetrachtung}{}% 35
-\BOOKMARK [1][-]{section.4.1}{4.1 Diskussion der Ergebnisse}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.2}{4.2 Ausblick und offene Punkte}{chapter.4}% 37
-\BOOKMARK [0][-]{section*.43}{Acronyme}{}% 38
-\BOOKMARK [0][-]{section*.45}{Glossar}{}% 39
-\BOOKMARK [0][-]{section*.47}{Anhang}{}% 40
-\BOOKMARK [1][-]{section.1..1}{1 Quellcode/Skripte \(Ausz\374ge\)}{section*.47}% 41
-\BOOKMARK [2][-]{subsection.1..1.1}{1.1 Performance-Messungen}{section.1..1}% 42
-\BOOKMARK [2][-]{subsection.1..1.2}{1.2 Monitoring}{section.1..1}% 43
-\BOOKMARK [2][-]{subsection.1..1.3}{1.3 Realisierung einer einfachen Continuous Deployment Pipeline}{section.1..1}% 44
-\BOOKMARK [1][-]{section.1..2}{2 Konfigurationen}{section*.47}% 45
-\BOOKMARK [1][-]{section.1..3}{3 Sonstiges}{section*.47}% 46
-\BOOKMARK [2][-]{subsection.1..3.1}{3.1 Einsch\344tzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}{section.1..3}% 47
+\BOOKMARK [0][-]{chapter.4}{4 Schlussbetrachtung}{}% 34
+\BOOKMARK [1][-]{section.4.1}{4.1 Diskussion der Ergebnisse}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.2}{4.2 Ausblick und offene Punkte}{chapter.4}% 36
+\BOOKMARK [0][-]{section*.43}{Acronyme}{}% 37
+\BOOKMARK [0][-]{section*.45}{Glossar}{}% 38
+\BOOKMARK [0][-]{section*.47}{Anhang}{}% 39
+\BOOKMARK [1][-]{section.1..1}{1 Quellcode/Skripte \(Ausz\374ge\)}{section*.47}% 40
+\BOOKMARK [2][-]{subsection.1..1.1}{1.1 Performance-Messungen}{section.1..1}% 41
+\BOOKMARK [2][-]{subsection.1..1.2}{1.2 Monitoring}{section.1..1}% 42
+\BOOKMARK [2][-]{subsection.1..1.3}{1.3 Realisierung einer einfachen Continuous Deployment Pipeline}{section.1..1}% 43
+\BOOKMARK [1][-]{section.1..2}{2 Konfigurationen}{section*.47}% 44
+\BOOKMARK [1][-]{section.1..3}{3 Sonstiges}{section*.47}% 45
+\BOOKMARK [2][-]{subsection.1..3.1}{3.1 Einsch\344tzung des theoretischen Spitzendurchsatzes von Mittelklasse-Servern}{section.1..3}% 46
